@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-beta3-*" />
+    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0-beta3-*" />
+  </ItemGroup>
+
+</Project>
