@@ -1,27 +1,25 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="@Orchard.CultureName()">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>@ViewBag.Title</title>
+
+        <title>@RenderTitleSegments(Site.SiteName)</title>
 
         <resources type="Meta" />
         <resources type="HeadLink" />
         <resources type="Stylesheet" />
         <resources type="HeadScript" />
 
+        <link rel="stylesheet" href="/Moov2.OrchardCore.ThemeBoilerplate/css/style.css">
+        <script src="/Moov2.OrchardCore.ThemeBoilerplate/js/bundle.js" async></script>
+
         @await RenderSectionAsync("Header", required: false)
     </head>
     <body>
-        <header>
-            @await RenderSectionAsync("Header", required: false)
-        </header>
-
+        @await RenderSectionAsync("Header", required: false)
         @await RenderBodyAsync()
-
-        <footer>
-            @await RenderSectionAsync("Footer", required: false)
-        </footer>
+        @await RenderSectionAsync("Footer", required: false)
 
         <resources type="FootScript" />
     </body>

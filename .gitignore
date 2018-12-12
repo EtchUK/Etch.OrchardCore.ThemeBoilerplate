@@ -32,3 +32,11 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+
+# Build artifacts
+
+wwwroot/
+
+# Dependencies
+
+node_modules/
