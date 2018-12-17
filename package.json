@@ -1,7 +1,7 @@
 {
   "name": "moov2.orchardcore.themeboilerplate",
   "version": "0.0.1",
-  "description": "Theme boilerplate is our starting point for building OrchardCore themes.",
+  "description": "Theme boilerplate is our starting point for building Orchard Core themes.",
   "author": "Moov2 Ltd.",
   "scripts": {
     "bundle": "webpack -p",

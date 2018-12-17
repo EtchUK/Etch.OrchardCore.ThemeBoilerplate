@@ -5,10 +5,10 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.1-beta</Version>
     <PackageId>Moov2.OrchardCore.ThemeBoilerplate</PackageId>
-    <Title>Moov2 OrchardCore Theme</Title>
-    <Authors>Moov2</Authors>
-    <Description>Boilerplate theme for Orchard Core.</Description>
-    <PackageTags>orchardcore;moov2</PackageTags>
+    <Title>Boilerplate Theme</Title>
+    <Authors>Moov2 Ltd.</Authors>
+    <Description>Theme boilerplate is our starting point for building Orchard Core themes.</Description>
+    <PackageTags>orchardcore</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

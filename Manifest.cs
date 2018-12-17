@@ -2,8 +2,8 @@ using OrchardCore.DisplayManagement.Manifest;
 
 [assembly: Theme(
     Name = "Boilerplate Theme",
-    Author = "Moov2",
+    Author = "Moov2 Ltd.",
     Website = "https://moov2.com",
     Version = "0.0.1",
-    Description = "Boilerplate theme used as starting point for bespoke themes."
+    Description = "Theme boilerplate is our starting point for building OrchardCore themes."
 )]
