@@ -9,7 +9,8 @@ env:
     - WORKING_DIR=content
   
 install:
-- dotnet restore
+ - cd $WORKING_DIR
+ - dotnet restore
 
 script:
  - cd $WORKING_DIR && npm install
