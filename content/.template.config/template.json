@@ -23,11 +23,6 @@
             "defaultValue": "Theme for Orchard Core.",
             "replaces": "Theme boilerplate is our starting point for building Orchard Core themes."
         },
-        "includeReadme": {
-            "type": "parameter",
-            "dataType": "bool",
-            "defaultValue": "true"
-        },
         "themeName": {
             "type": "parameter",
             "defaultValue": "Orchard Core Theme",
@@ -38,17 +33,5 @@
             "defaultValue": "https://orchardcore.readthedocs.io/en/latest/",
             "replaces": "https://moov2.com"
         }
-    },
-    "sources": [
-        {
-            "modifiers": [
-                {
-                    "condition": "(!includeReadme)",
-                    "exclude": [
-                        "README.md"
-                    ]
-                }
-            ]
-        }
-    ]
+    }
 }

@@ -2,26 +2,38 @@
 
 Theme boilerplate is our starting point for building [OrchardCore](https://orchardcore.readthedocs.io/en/latest/) themes.
 
-## Prerequisities
+## Getting Started
 
-### [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/)
+To create a new theme using the boilerplate it's quickest to use the `dotnet new` command. First you'll need to install the template, which is hosted on NuGet.
 
-Orchard Core runs on the .NET Core. Download the latest version from [https://www.microsoft.com/net/download/core](https://www.microsoft.com/net/download/core).
+    dotnet new -i Moov2.OrchardCore.ThemeBoilerplate
 
-### [NodeJS](https://nodejs.org/en/)
+Once installed successfully, run the command below, which demonstrates all the possible parameters that are available.
 
-The theme requires NodeJS to assist with gathering third party front-end dependencies and compiles front-end assets. Compilation of front-end assets is handled by [Webpack](https://webpack.js.org/).
+    dotnet new orchardcore-themeboilerplate -n Example.OrchardCore.Theme -o Example.OrchardCore.Theme -au "Your Company Ltd." -d "Description for your theme" -t "Your Theme Name" -w "https://yourwebsite.co.uk"
 
-## Commands
+### Parameters
 
-### Compiling Front-end Assets
+Below are the different parameters that can be included in the `dotnet new` command. The majority of the parameters will be used in the `package.json`, `.csproj` (to describe author of NuGet package) and the theme manifest. `-n` & `-o` are parameters required by `dotnet new`.
 
-When developing, it's likely you'll be working with front-end assets (located in `/Assets`) that need to be compiled in to files that are referenced by the theme (in `Views/Layout.cshtml`). The command shown below will compile CSS & JavaScript assets via Webpack and keep watch of files that will trigger compilation.
+#### -au/--author
 
-    npm run develop
+Author of the theme.
 
-*Hint: Running `npm start` will run the command above after running `npm install`.*
+#### -d/--description
 
-When the theme is deployed to a production environment we need to serve compressed assets for optimial delivery to improve page load times. The command below will compile assets ready for optimal delivery.
+Short description of the theme.
 
-    npm run bundle
+#### -t/--themeName
+
+Name of your theme.
+
+#### -w/--website
+
+URL for your website.
+
+## Packaging Template
+
+This template has been made available on NuGet. To create the `.nupkg` file that can be published to NuGet, run the command shown below.
+
+    nuget pack ./Moov2.OrchardCore.ThemeBoilerplate.nuspec
