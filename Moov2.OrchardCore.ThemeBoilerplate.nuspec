@@ -9,6 +9,7 @@
     </description>
     <authors>Moov2 Ltd.</authors>
     <projectUrl>https://github.com/moov2/Moov2.OrchardCore.ThemeBoilerplate</projectUrl>
+    <licenseUrl>https://github.com/moov2/Moov2.OrchardCore.ThemeBoilerplate/blob/master/LICENSE</licenseUrl>
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>
