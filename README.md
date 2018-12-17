@@ -2,6 +2,10 @@
 
 Theme boilerplate is our starting point for building [Orchard Core](https://orchardcore.readthedocs.io/en/latest/) themes.
 
+## Build Status
+
+[![Build Status](https://secure.travis-ci.org/moov2/Moov2.OrchardCore.ThemeBoilerplate.png?branch=master)](http://travis-ci.org/moov2/Moov2.OrchardCore.ThemeBoilerplate) [![NuGet](https://img.shields.io/nuget/v/Moov2.OrchardCore.ThemeBoilerplate.svg)](https://www.nuget.org/packages/Moov2.OrchardCore.ThemeBoilerplate)
+
 ## Getting Started
 
 To create a new theme using the boilerplate it's quickest to use the `dotnet new` command. First you'll need to install the template, which is hosted on NuGet.
