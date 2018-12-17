@@ -1,13 +1,19 @@
 language: csharp
 mono: none
-dotnet: 2.0.0
+dotnet: 2.1.300
 
 env:
   global:
     - DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
     - DOTNET_CLI_TELEMETRY_OPTOUT: 1   
     - WORKING_DIR=content
+  
+install:
+ - cd $WORKING_DIR
+ - dotnet restore
+
+before_script: cd $WORKING_DIR
 
 script:
- - cd $WORKING_DIR && npm install
+ - npm install
  - dotnet build
