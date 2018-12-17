@@ -12,8 +12,6 @@ install:
  - cd $WORKING_DIR
  - dotnet restore
 
-before_script: cd $WORKING_DIR
-
 script:
  - npm install
  - dotnet build
