@@ -9,21 +9,21 @@
     "start": "npm install && npm run develop"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
-    "autoprefixer": "^9.4.2",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.4.9",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.4",
+    "babel-loader": "^8.0.5",
     "babel-preset-env": "^1.7.0",
-    "clean-webpack-plugin": "^1.0.0",
-    "css-loader": "^2.0.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
