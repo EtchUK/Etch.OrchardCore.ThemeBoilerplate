@@ -2,10 +2,12 @@ const autoprefixer = require('autoprefixer');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 
 module.exports = {
     entry: {
-        bundle: './Assets/Scripts/index.js'
+        bundle: './Assets/Scripts/index.js',
+        styles: './Assets/Styles/index.scss'
     },
     output: {
         path: path.resolve(__dirname, 'wwwroot/js'),
@@ -23,9 +25,8 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    'style-loader',
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
+                    'css-loader?-url',
                     {
                         loader: 'postcss-loader',
                         options: {
@@ -40,6 +41,7 @@ module.exports = {
         ]
     },
     plugins: [
+        new FixStyleOnlyEntriesPlugin(),
         new CleanWebpackPlugin([
             'wwwroot/css',
             'wwwroot/js'
