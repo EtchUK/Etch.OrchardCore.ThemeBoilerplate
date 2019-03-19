@@ -24,6 +24,7 @@
     "webpack-fix-style-only-entries": "^0.2.1"
   },
   "dependencies": {
+    "@frctl/fractal": "^1.1.7",
     "normalize.css": "^8.0.1"
   }
 }
