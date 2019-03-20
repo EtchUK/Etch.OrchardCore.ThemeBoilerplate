@@ -1,11 +1,8 @@
 {
     "author": "Moov2 Ltd.",
-    "classifications": [
-        "OrchardCore",
-        "Web"
-    ],
+    "classifications": ["OrchardCore", "Web"],
     "name": "Orchard Core Theme Boilerplate",
-    "identity": "Moov2.OrchardCore.ThemeBoilerplat",
+    "identity": "Moov2.OrchardCore.ThemeBoilerplate",
     "shortName": "orchardcore-themeboilerplate",
     "tags": {
         "language": "C#"
