@@ -1,31 +1,41 @@
 {
-  "name": "moov2.orchardcore.themeboilerplate",
-  "version": "0.0.1",
-  "description": "Theme boilerplate is our starting point for building Orchard Core themes.",
-  "author": "Moov2 Ltd.",
-  "scripts": {
-    "bundle": "webpack -p",
-    "develop": "webpack -d --watch",
-    "start": "npm install && npm run develop"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "autoprefixer": "^9.5.0",
-    "babel-loader": "^8.0.5",
-    "clean-webpack-plugin": "^1.0.1",
-    "css-loader": "^2.1.1",
-    "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.11.0",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.1.0",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
-    "webpack-fix-style-only-entries": "^0.2.1"
-  },
-  "dependencies": {
-    "@frctl/fractal": "^1.1.7",
-    "@frctl/mandelbrot": "^1.2.0",
-    "normalize.css": "^8.0.1"
-  }
+    "name": "moov2.orchardcore.themeboilerplate",
+    "version": "0.0.1",
+    "description": "Theme boilerplate is our starting point for building Orchard Core themes.",
+    "author": "Moov2 Ltd.",
+    "scripts": {
+        "copy:patterns": "copyfiles -u 2 \"PatternLibrary/dist/**/*\" \"wwwroot/patterns\"",
+        "build": "npm run bundle:prod && npm run build:patterns && npm run copy:patterns",
+        "build:patterns": "fractal build",
+        "bundle:dev": "webpack -d",
+        "bundle:prod": "webpack -p",
+        "bundle:watch": "webpack -d --watch",
+        "develop": "npm-run-all start:patterns bundle:watch",
+        "start": "npm install && npm run develop",
+        "start:patterns": "start fractal start --sync"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.0",
+        "@babel/preset-env": "^7.4.2",
+        "@frctl/fractal": "^1.1.7",
+        "@frctl/mandelbrot": "^1.2.0",
+        "autoprefixer": "^9.5.0",
+        "babel-loader": "^8.0.5",
+        "clean-webpack-plugin": "^1.0.1",
+        "copyfiles": "^2.1.0",
+        "css-loader": "^2.1.0",
+        "mini-css-extract-plugin": "^0.5.0",
+        "node-sass": "^4.11.0",
+        "npm-run-all": "^4.1.5",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^7.1.0",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.3.0"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1"
+    },
+    "fractal": {
+        "main": "fractal.config.js"
+    }
 }

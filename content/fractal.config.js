@@ -36,10 +36,7 @@ fractal.web.set('static.path', path.join(__dirname, 'wwwroot'));
 /*
  * Tell Fractal where to export HTML pattern library.
  */
-fractal.web.set(
-    'builder.dest',
-    path.join(__dirname, 'wwwroot/pattern-library')
-);
+fractal.web.set('builder.dest', path.join(__dirname, 'PatternLibrary/dist'));
 
 /**
  * Configure theme.

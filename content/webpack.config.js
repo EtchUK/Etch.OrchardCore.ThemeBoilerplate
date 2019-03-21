@@ -2,16 +2,16 @@ const autoprefixer = require('autoprefixer');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
+const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 
 module.exports = {
     entry: {
         scripts: './Assets/Scripts/index.js',
-        styles: './Assets/Styles/index.scss'
+        styles: './Assets/Styles/index.scss',
     },
     output: {
         path: path.resolve(__dirname, 'wwwroot/js'),
-        filename: '[name].js'
+        filename: '[name].js',
     },
     module: {
         rules: [
@@ -19,8 +19,8 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader'
-                }
+                    loader: 'babel-loader',
+                },
             },
             {
                 test: /\.scss$/,
@@ -30,24 +30,27 @@ module.exports = {
                     {
                         loader: 'postcss-loader',
                         options: {
-                            plugins: function () {
-                                return [autoprefixer('last 1 version', 'ie 10')]
-                            }
-                        }
+                            plugins: function() {
+                                return [
+                                    autoprefixer('last 1 version', 'ie 10'),
+                                ];
+                            },
+                        },
                     },
-                    'sass-loader'
-                ]
-            }
-        ]
+                    'sass-loader',
+                ],
+            },
+        ],
     },
     plugins: [
         new FixStyleOnlyEntriesPlugin(),
         new CleanWebpackPlugin([
             'wwwroot/css',
-            'wwwroot/js'
+            'wwwroot/js',
+            'wwwroot/patterns',
         ]),
         new MiniCssExtractPlugin({
             filename: '../css/style.css',
-        })
-    ]
+        }),
+    ],
 };
