@@ -6,7 +6,7 @@ const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 
 module.exports = {
     entry: {
-        bundle: './Assets/Scripts/index.js',
+        scripts: './Assets/Scripts/index.js',
         styles: './Assets/Styles/index.scss'
     },
     output: {
