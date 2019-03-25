@@ -10,9 +10,9 @@
         "bundle:dev": "webpack -d",
         "bundle:prod": "webpack -p",
         "bundle:watch": "webpack -d --watch",
-        "develop": "npm-run-all start:patterns bundle:watch",
+        "develop": "concurrently \"npm run start:patterns\" \"npm run bundle:watch\"",
         "start": "npm install && npm run develop",
-        "start:patterns": "start fractal start --sync"
+        "start:patterns": "fractal start --sync"
     },
     "devDependencies": {
         "@babel/core": "^7.4.0",
@@ -22,6 +22,7 @@
         "autoprefixer": "^9.5.0",
         "babel-loader": "^8.0.5",
         "clean-webpack-plugin": "^2.0.1",
+        "concurrently": "^4.1.0",
         "copyfiles": "^2.1.0",
         "css-loader": "^2.1.1",
         "mini-css-extract-plugin": "^0.5.0",
