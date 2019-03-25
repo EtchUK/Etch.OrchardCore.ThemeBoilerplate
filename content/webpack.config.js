@@ -44,11 +44,13 @@ module.exports = {
     },
     plugins: [
         new FixStyleOnlyEntriesPlugin(),
-        new CleanWebpackPlugin([
-            'wwwroot/css',
-            'wwwroot/js',
-            'wwwroot/patterns',
-        ]),
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: [
+                path.join(process.cwd(), 'wwwroot/css'),
+                path.join(process.cwd(), 'wwwroot/js'),
+                path.join(process.cwd(), 'wwwroot/patterns'),
+            ],
+        }),
         new MiniCssExtractPlugin({
             filename: '../css/style.css',
         }),
