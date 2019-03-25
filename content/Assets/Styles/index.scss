@@ -1,6 +1,26 @@
+/* ==========================================================================
+   #Moov2.OrchardCore.ThemeBoilerplate THEME
+   ========================================================================== */
+
+@import "settings/all";
+
+@import "settings/themes/default";
+
+@import "tools/all";
+
 /**
- * CSS reset provided by normalize.css 
- * https://necolas.github.io/normalize.css/
- */
+* CSS reset provided by normalize.css 
+* https://necolas.github.io/normalize.css/
+*/
 
 @import "../../node_modules/normalize.css/normalize.css";
+
+@import "generic/box-sizing";
+
+@import "base/body";
+@import "base/html";
+@import "base/image";
+@import "base/paragraph";
+
+@import "trumps/hidden";
+   

@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #LISTS
+   ========================================================================== */
+
+/**
+ * Mixins & functions for working with lists.
+ */
+
+@mixin list-reset() {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+
+    list-style: none;
+}

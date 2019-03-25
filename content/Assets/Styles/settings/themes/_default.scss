@@ -1,0 +1,28 @@
+/* ==========================================================================
+   #DEFAULTTHEME
+   ========================================================================== */
+
+/**
+ * Default theme for the studio site.
+ */
+
+$themes: map-merge(
+    (
+        'default': (
+            'color': (
+                'text': #999
+            ),
+            'fontFamily': (
+                'default': 'Arial, sans-serif'
+            ),
+            'fontSize': (
+                'default': 1.8rem,
+                'defaultEM': 1.8em
+            ),
+            'lineHeight': (
+                'default': 2.7rem,
+            )
+        )
+    ),
+    $themes
+);

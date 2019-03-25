@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #BODY
+   ========================================================================== */
+
+/**
+ * `body` element which will control default font settings.
+ */
+
+/**
+ * 1. Sets the default font size back to 16px (unless $font-size-default has
+ *    changed value). This is the only time `em` should be used to define the
+ *    font-size. This has to be `em` because of a bug in Chrome described in
+ *    a link below.
+ *    https://code.google.com/p/chromium/issues/detail?id=320754
+ */
+body {
+    @include themify($themes) {
+        color: themed('color.text');
+        font-family: themed('fontFamily.default');
+        font-size: themed('fontSize.defaultEM'); /* 1. */
+        line-height: themed('lineHeight.default');
+    }
+}

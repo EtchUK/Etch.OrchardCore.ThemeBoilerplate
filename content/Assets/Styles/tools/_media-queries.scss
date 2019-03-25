@@ -1,0 +1,22 @@
+/* ==========================================================================
+   #MEDIAQUERIES
+   ========================================================================== */
+
+/**
+ * Mixins & functions for working with media queries.
+ */
+
+@mixin bp-min-width($width) {
+    @media all and (min-width: $width) {
+        @content;
+    }
+}
+
+/**
+ * Only use in rare circumstances, favour `bp-min-width`.
+ */
+@mixin bp-max-width($width) {
+    @media all and (max-width: $width) {
+        @content;
+    }
+}

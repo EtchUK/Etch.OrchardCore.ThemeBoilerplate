@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #HTML
+   ========================================================================== */
+
+/**
+ * `html` element that'll control font size/spacing for the paga via `rem` 
+ * unit.
+ */
+
+/**
+ * 1. Makes REM units easier to work with because 1rem = 10px.
+ */
+html {
+    font-size: 62.5%; /* 1. */
+}
