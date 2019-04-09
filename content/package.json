@@ -5,7 +5,7 @@
     "author": "Moov2 Ltd.",
     "scripts": {
         "copy:patterns": "copyfiles -u 2 \"PatternLibrary/dist/**/*\" \"wwwroot/patterns\"",
-        "build": "npm run bundle:prod && npm run build:patterns && npm run copy:patterns",
+        "build": "npm install && npm run bundle:prod && npm run build:patterns && npm run copy:patterns",
         "build:patterns": "fractal build",
         "bundle:dev": "webpack -d",
         "bundle:prod": "webpack -p",
