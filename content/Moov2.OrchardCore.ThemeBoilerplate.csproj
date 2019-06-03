@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.1-beta</Version>
     <PackageId>Moov2.OrchardCore.ThemeBoilerplate</PackageId>
     <Title>Boilerplate Theme</Title>
