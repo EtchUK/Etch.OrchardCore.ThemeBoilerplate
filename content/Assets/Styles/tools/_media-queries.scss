@@ -20,3 +20,12 @@
         @content;
     }
 }
+
+/**
+ * For targetting Internet Explorer only.
+ */
+@mixin target-ie() {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}
