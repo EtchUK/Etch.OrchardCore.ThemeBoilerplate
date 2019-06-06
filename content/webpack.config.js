@@ -3,6 +3,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -54,5 +55,15 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '../css/style.css',
         }),
+        new CopyPlugin([
+            {
+                from: path.join(process.cwd(), 'Assets/Content'),
+                to: path.join(process.cwd(), 'wwwroot/content'),
+            },
+            {
+                from: path.join(process.cwd(), 'Assets/Fonts'),
+                to: path.join(process.cwd(), 'wwwroot/fonts'),
+            }
+        ]),
     ],
 };
