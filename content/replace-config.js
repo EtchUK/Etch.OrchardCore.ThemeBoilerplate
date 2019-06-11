@@ -3,7 +3,7 @@
         /\/content\//g
     ],
     to: [
-        "/Moov2.OrchardCore.ThemeBoilerplate/content/"
+        "/Etch.OrchardCore.ThemeBoilerplate/content/"
     ],
     files: ["./PatternLibrary/dist/**/**/*.html", "./PatternLibrary/dist/**/**/*.css"]
 };

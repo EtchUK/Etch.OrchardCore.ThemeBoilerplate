@@ -4,13 +4,13 @@ Theme boilerplate is our starting point for building [Orchard Core](https://orch
 
 ## Build Status
 
-[![Build Status](https://secure.travis-ci.org/moov2/Moov2.OrchardCore.ThemeBoilerplate.png?branch=master)](http://travis-ci.org/moov2/Moov2.OrchardCore.ThemeBoilerplate) [![NuGet](https://img.shields.io/nuget/v/Moov2.OrchardCore.ThemeBoilerplate.svg)](https://www.nuget.org/packages/Moov2.OrchardCore.ThemeBoilerplate)
+[![Build Status](https://secure.travis-ci.org/etchuk/Etch.OrchardCore.ThemeBoilerplate.png?branch=master)](http://travis-ci.org/etchuk/Etch.OrchardCore.ThemeBoilerplate) [![NuGet](https://img.shields.io/nuget/v/Etch.OrchardCore.ThemeBoilerplate.svg)](https://www.nuget.org/packages/Etch.OrchardCore.ThemeBoilerplate)
 
 ## Getting Started
 
 To create a new theme using the boilerplate it's quickest to use the `dotnet new` command. First you'll need to install the template, which is hosted on NuGet.
 
-    dotnet new -i Moov2.OrchardCore.ThemeBoilerplate --nuget-source https://api.nuget.org/v3/index.json
+    dotnet new -i Etch.OrchardCore.ThemeBoilerplate --nuget-source https://api.nuget.org/v3/index.json
 
 Once installed successfully, run the command below, which demonstrates all the possible parameters that are available.
 
@@ -40,4 +40,4 @@ URL for your website.
 
 This template has been made available on NuGet. To create the `.nupkg` file that can be published to NuGet, run the command shown below.
 
-    nuget pack ./Moov2.OrchardCore.ThemeBoilerplate.nuspec
+    nuget pack ./Etch.OrchardCore.ThemeBoilerplate.nuspec

@@ -14,7 +14,7 @@ The theme requires NodeJS to assist with gathering third party front-end depende
 
 ## Pattern Library
 
-The theme comes with a Fractal pattern library baked in. Head over to the [official Fractal website](https://fractal.build/) to learn more about working with Fractal. The [commands](/#commands) used when developing on the theme are geared to encouraging development through with the pattern library. The pattern library will be included in the theme package, which makes it accessible when referenced within an Orchard Core project. While your Orchard Core site is running navigate to `/Moov2.OrchardCore.ThemeBoilerplate/patterns/index.html` to view the pattern library.
+The theme comes with a Fractal pattern library baked in. Head over to the [official Fractal website](https://fractal.build/) to learn more about working with Fractal. The [commands](/#commands) used when developing on the theme are geared to encouraging development through with the pattern library. The pattern library will be included in the theme package, which makes it accessible when referenced within an Orchard Core project. While your Orchard Core site is running navigate to `/Etch.OrchardCore.ThemeBoilerplate/patterns/index.html` to view the pattern library.
 
 ## Commands
 
