@@ -1,19 +1,19 @@
 {
-    "author": "Moov2 Ltd.",
+    "author": "Etch UK",
     "classifications": ["OrchardCore", "Web"],
     "name": "Orchard Core Theme Boilerplate",
-    "identity": "Moov2.OrchardCore.ThemeBoilerplate",
+    "identity": "Etch.OrchardCore.ThemeBoilerplate",
     "shortName": "orchardcore-themeboilerplate",
     "tags": {
         "language": "C#"
     },
-    "sourceName": "Moov2.OrchardCore.ThemeBoilerplate",
+    "sourceName": "Etch.OrchardCore.ThemeBoilerplate",
     "preferNameDirectory": "true",
     "symbols": {
         "author": {
             "type": "parameter",
             "defaultValue": "Unknown",
-            "replaces": "Moov2 Ltd."
+            "replaces": "Etch UK"
         },
         "description": {
             "type": "parameter",
@@ -28,7 +28,7 @@
         "website": {
             "type": "parameter",
             "defaultValue": "https://orchardcore.readthedocs.io/en/latest/",
-            "replaces": "https://moov2.com"
+            "replaces": "https://etchuk.com"
         }
     }
 }

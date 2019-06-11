@@ -1,8 +1,8 @@
 {
-    "name": "moov2.orchardcore.themeboilerplate",
+    "name": "etch.orchardcore.themeboilerplate",
     "version": "0.0.1",
     "description": "Theme boilerplate is our starting point for building Orchard Core themes.",
-    "author": "Moov2 Ltd.",
+    "author": "Etch UK",
     "scripts": {
         "replace:patterns": "replace-in-file --configFile=replace-config.js",
         "copy:patterns": "copyfiles -u 2 \"PatternLibrary/dist/**/*\" \"wwwroot/patterns\"",

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
-    <id>Moov2.OrchardCore.ThemeBoilerplate</id>
+    <id>Etch.OrchardCore.ThemeBoilerplate</id>
     <version>0.2.0</version>
-    <title>Moov2 Orchard Core Theme Boilerplate</title>
+    <title>Etch Orchard Core Theme Boilerplate</title>
     <description>
       Creates Orchard Core theme using boilerplate.
     </description>
-    <authors>Moov2 Ltd.</authors>
-    <projectUrl>https://github.com/moov2/Moov2.OrchardCore.ThemeBoilerplate</projectUrl>
-    <licenseUrl>https://github.com/moov2/Moov2.OrchardCore.ThemeBoilerplate/blob/master/LICENSE</licenseUrl>
+    <authors>Etch Ltd.</authors>
+    <projectUrl>https://github.com/etchuk/Etch.OrchardCore.ThemeBoilerplate</projectUrl>
+    <licenseUrl>https://github.com/etchuk/Etch.OrchardCore.ThemeBoilerplate/blob/master/LICENSE</licenseUrl>
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>
-    <tags>orchardcore;moov2</tags>
+    <tags>orchardcore;etchuk</tags>
   </metadata>
   <files>
     <file src="*\**" target="\" exclude="content\bin\**\*;content\obj\**\*;content\node_modules\**\*" />
