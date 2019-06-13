@@ -22,11 +22,14 @@
 }
 
 /**
- * For targetting Internet Explorer only. For more info and how to target
+ * For targeting Internet Explorer and Edge. For more info and how to target
  * other browsers: https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/
  */
 @mixin target-ie() {
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+    @supports (-ms-ime-align:auto) {
         @content;
     }
 }
