@@ -38,7 +38,8 @@
         "webpack-fix-style-only-entries": "^0.2.1"
     },
     "dependencies": {
-        "normalize.css": "^8.0.1"
+        "normalize.css": "^8.0.1",
+        "picturefill": "^3.0.3"
     },
     "fractal": {
         "main": "fractal.config.js"
