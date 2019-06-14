@@ -22,14 +22,19 @@
 }
 
 /**
- * For targeting Internet Explorer and Edge. For more info and how to target
- * other browsers: https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/
+ * Mixins for targeting Edge and Internet Explorer.
+ * For more info and how to target other browsers:
+ * https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/
  */
-@mixin target-ie() {
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+@mixin target-edge() {
+    @supports (-ms-ime-align:auto) {
         @content;
     }
-    @supports (-ms-ime-align:auto) {
+}
+
+@mixin target-ie() {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         @content;
     }
 }
