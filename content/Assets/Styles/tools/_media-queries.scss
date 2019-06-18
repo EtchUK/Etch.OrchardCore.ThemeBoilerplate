@@ -38,3 +38,12 @@
         @content;
     }
 }
+
+@mixin target-ie-and-edge() {
+    @include target-edge() {
+        @content;
+    }
+    @include target-ie() {
+        @content;
+    }
+}
