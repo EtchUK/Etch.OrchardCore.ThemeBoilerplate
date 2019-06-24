@@ -1,0 +1,65 @@
+/* ==========================================================================
+   #TEXT
+   ========================================================================== */
+
+/**
+ * Mixins & functions for working with text styles.
+ */
+
+@mixin text-default() {
+    font-family: $font-family-default;
+    font-weight: $font-weight-default;
+    font-style: normal;
+}
+
+@mixin text-heading() {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-bold;
+    font-style: normal;
+    line-height: $font-line-height-heading;
+}
+
+@mixin text-h1() {
+    @include text-heading();
+
+    font-size: $font-size-h1-mobile;
+
+    @include bp-min-width($bp-desktop) {
+        font-size: $font-size-h1;
+    }
+}
+
+@mixin text-h2() {
+    @include text-heading();
+
+    font-size: $font-size-h2-mobile;
+
+    @include bp-min-width($bp-desktop) {
+        font-size: $font-size-h2;
+    }
+}
+
+@mixin text-h3() {
+    @include text-heading();
+
+    font-size: $font-size-h3-mobile;
+
+    @include bp-min-width($bp-desktop) {
+        font-size: $font-size-h3;
+    }
+}
+
+@mixin text-h4() {
+    @include text-heading();
+
+    font-size: $font-size-h4-mobile;
+
+    @include bp-min-width($bp-desktop) {
+        font-size: $font-size-h4;
+    }
+}
+
+@mixin text-blockquote() {
+    @include text-default();
+    font-style: italic;
+}
