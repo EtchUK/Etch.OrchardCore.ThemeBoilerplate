@@ -1,0 +1,38 @@
+/* ==========================================================================
+   #SPACING
+   ========================================================================== */
+
+
+.margin {
+    &--bottom {
+        @include rem(margin-bottom, $spacing-default);
+    
+        &-large {
+            @include rem(margin-bottom, $spacing-large);
+        }
+
+        &-small {
+            @include rem(margin-bottom, $spacing-small);
+        }
+
+        &-none {
+            margin-bottom: 0;
+        }
+    }
+
+    &--top {
+        @include rem(margin-top, $spacing-default);
+    
+        &-large {
+            @include rem(margin-top, $spacing-large);
+        }
+
+        &-small {
+            @include rem(margin-top, $spacing-small);
+        }
+
+        &-none {
+            margin-top: 0;
+        }
+    }
+}
