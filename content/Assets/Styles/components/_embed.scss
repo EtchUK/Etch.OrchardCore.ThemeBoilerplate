@@ -1,0 +1,25 @@
+/* ==========================================================================
+   #EMBED
+   ========================================================================== */
+
+/**
+ * Embedding third party content responsibly.
+ * Source: https://embedresponsively.com/
+ */
+
+.embed {
+    height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    
+    > iframe,
+    > object,
+    > embed {
+        height: 100%;
+        left: 0;
+        position: absolute; 
+        top: 0;
+        width: 100%;
+    }
+}
