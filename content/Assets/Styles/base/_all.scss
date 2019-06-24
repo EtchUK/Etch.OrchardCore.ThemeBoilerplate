@@ -2,8 +2,13 @@
    #BASE
    ========================================================================== */
 
+@import "anchor";
+@import "blockquote";
 @import "body";
+@import "button/all";
+@import "heading";
 @import "html";
 @import "image";
 @import "paragraph";
 @import "pre";
+@import "strong";

@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #BASE/STRONG
+   ========================================================================== */
+
+/**
+ * Normalize resets <b> & <strong> to 'bolder'. This project doesn't use a font
+ * weight as heavy as that. So $font-weight-bold corrects that.
+ */
+
+b,
+strong {
+    font-weight: $font-weight-bold;
+}
