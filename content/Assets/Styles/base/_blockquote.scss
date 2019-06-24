@@ -1,0 +1,22 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $BLOCKQUOTE
+ * -----------------------------------------------------------------------------
+ */
+
+blockquote {
+    position: relative;
+
+    margin: 0 0 $spacing-default 0;
+
+    @include text-blockquote();   
+
+    @include bp-min-width($bp-tablet) {
+        font-size: $font-size-blockquote;
+    }
+
+    p {
+        hanging-punctuation: first;
+        text-indent: -0.4em;
+    }
+}
