@@ -1,0 +1,20 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $CLEARFIX
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * https://css-tricks.com/snippets/css/clear-fix/
+ */
+
+/**
+ * Adds micro clearfix to element.
+ */
+ @mixin clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
