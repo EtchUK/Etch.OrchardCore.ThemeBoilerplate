@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #LIST/HORIZONTAL
+   ========================================================================== */
+
+.list--horizontal {
+    @include list-horizontal();
+}
+
+.list--horizontal-spaced {
+    @include list-horizontal-spaced();
+}

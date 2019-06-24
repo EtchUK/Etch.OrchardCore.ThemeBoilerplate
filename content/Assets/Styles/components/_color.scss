@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #COLOR
+   ========================================================================== */
+
+.color {
+    @include rem(padding-top, $color-swatch-height);
+
+    pre {
+        margin-bottom: 0;
+        @include rem(padding, $spacing-default);
+        
+        background-color: $color-grey-1;
+        text-align: center;
+
+        span {
+            display: block;
+        }
+    }
+}
