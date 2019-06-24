@@ -1,9 +1,11 @@
 /* ==========================================================================
-   #BASE
+   #PRE
    ========================================================================== */
 
-@import "body";
-@import "html";
-@import "image";
-@import "paragraph";
-@import "pre";
+/**
+ * Styling for <pre> element.
+ */
+
+pre {
+    margin-top: 0;
+}
