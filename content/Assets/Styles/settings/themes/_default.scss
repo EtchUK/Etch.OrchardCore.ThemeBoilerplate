@@ -10,7 +10,9 @@ $themes: map-merge(
     (
         'default': (
             'color': (
-                'text': #999
+                'brandPrimary': #ff137c,
+                'brandSecondary': #070f26,
+                'text': #070f26
             ),
             'fontFamily': (
                 'default': 'Arial, sans-serif'
