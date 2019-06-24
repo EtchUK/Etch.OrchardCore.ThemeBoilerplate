@@ -1,0 +1,24 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $FIGURE
+ * -----------------------------------------------------------------------------
+ */
+
+figure {
+    position: relative;
+    margin: 0 0 $spacing-default 0;
+
+    img,
+    picture {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figcaption {
+        @include rem(padding-top, $spacing-small);
+        
+        font-style: italic;
+        text-align: center;
+    }
+}
