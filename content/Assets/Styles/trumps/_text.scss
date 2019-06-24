@@ -1,0 +1,36 @@
+/* ==========================================================================
+   #TEXT
+   ========================================================================== */
+
+/**
+ * Classes to style text in various different ways.
+ */
+   
+.font {
+    &--default {
+        font-family: $font-family-default;
+    }
+
+    &--heading {
+        font-family: $font-family-heading;
+    }
+}
+
+.text {
+    &--align {
+        &-left{ text-align: left; }
+        &-center{ text-align: center; }
+        &-right{ text-align: right; }
+    }
+
+    &--line-through { text-decoration: line-through; }
+    &--underline { text-decoration: underline; }
+    &--uppercase { text-decoration: uppercase; }
+
+    &--size {
+        &-h1 { @include text-h1(); }
+        &-h2 { @include text-h2(); }
+        &-h3 { @include text-h3(); }
+        &-h4 { @include text-h4(); }
+    }
+}  
