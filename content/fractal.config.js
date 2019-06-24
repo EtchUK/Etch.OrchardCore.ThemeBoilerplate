@@ -13,7 +13,7 @@ const fractal = (module.exports = require('@frctl/fractal').create());
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'Theme Pattern Library');
+fractal.set('project.title', 'ETCH Play - Boilerplate Pattern Library');
 
 /*
  * Tell Fractal where to look for components.
