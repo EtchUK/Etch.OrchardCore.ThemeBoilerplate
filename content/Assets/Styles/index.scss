@@ -15,12 +15,11 @@
 
 @import "../../node_modules/normalize.css/normalize.css";
 
-@import "generic/box-sizing";
+@import "generic/all";
 
-@import "base/body";
-@import "base/html";
-@import "base/image";
-@import "base/paragraph";
+@import "base/all";
 
-@import "trumps/hidden";
+@import "layout/all";
+
+@import "trumps/all";
    
