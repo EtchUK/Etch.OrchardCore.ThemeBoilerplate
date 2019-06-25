@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #MEDIA/DEFAULT
+   ========================================================================== */
+
+.media {
+    @include content-gutter();
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    @include bp-min-width($bp-tablet) {
+        display: flex; 
+    }
+
+    &__body {
+        @include rem(padding-top, $content-gutter-small);
+
+        @include bp-min-width($bp-tablet) {
+            @include rem(margin-left, $content-gutter);
+            padding-top: 0;
+        }
+    }
+}
