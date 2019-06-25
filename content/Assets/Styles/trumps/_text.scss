@@ -28,9 +28,46 @@
     &--uppercase { text-decoration: uppercase; }
 
     &--size {
-        &-h1 { @include text-h1(); }
-        &-h2 { @include text-h2(); }
-        &-h3 { @include text-h3(); }
-        &-h4 { @include text-h4(); }
+        &-h1 { 
+            font-size: $font-size-h1-mobile;
+            line-height: $font-line-height-heading;
+
+            @include bp-min-width($bp-desktop) {
+                font-size: $font-size-h1;
+            }
+        }
+        &-h2 { 
+            font-size: $font-size-h2-mobile;
+            line-height: $font-line-height-heading;
+
+            @include bp-min-width($bp-desktop) {
+                font-size: $font-size-h2;
+            }
+        }
+        &-h3 { 
+            font-size: $font-size-h3-mobile;
+            line-height: $font-line-height-heading;
+
+            @include bp-min-width($bp-desktop) {
+                font-size: $font-size-h3;
+            }
+        }
+        &-h4 { 
+            font-size: $font-size-h4-mobile;
+            line-height: $font-line-height-heading;
+
+            @include bp-min-width($bp-desktop) {
+                font-size: $font-size-h4;
+            }
+        }
+    }
+
+    &--weight {
+        &-bold {
+            font-weight: $font-weight-bold;
+        }
+        &-normal {
+            font-weight: $font-weight-default;
+        }
     }
 }  
