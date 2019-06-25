@@ -9,9 +9,11 @@
 
 .embed {
     height: 0;
-    max-width: 100%;
+    @include rem(margin-bottom, $spacing-default);
     overflow: hidden;
     padding-bottom: 56.25%;
+    position: relative;
+    max-width: 100%;
     
     > iframe,
     > object,
