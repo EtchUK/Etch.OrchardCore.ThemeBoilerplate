@@ -11,7 +11,7 @@
         padding-right: $content-gutter;
     }
 
-    @include bp-min-width($content-width + ($content-gutter * 2)) {
+    @include bp-min-width($content-width-wide + ($content-gutter * 2)) {
         padding-left: 0;
         padding-right: 0;
     }
@@ -29,7 +29,7 @@
         margin-right: -$content-gutter;
     }
     
-    @include bp-min-width($content-width + ($content-gutter * 2)) { 
+    @include bp-min-width($content-width-wide + ($content-gutter * 2)) { 
         margin-left: 0;
         margin-right: 0;
     }
