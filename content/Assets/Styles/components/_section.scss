@@ -1,0 +1,32 @@
+/* ==========================================================================
+   #SECTION/DEFAULT
+   ========================================================================== */
+
+.section {
+    display: block;
+    position: relative;
+
+    padding-bottom: $section-vertical-padding-mobile;
+    padding-top: $section-vertical-padding-mobile;
+
+    @include bp-min-width($bp-desktop) {
+        padding-bottom: $section-vertical-padding;
+        padding-top: $section-vertical-padding;
+    }
+}
+
+    .section__content {
+        @include content-gutter();
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $content-width;
+        position: relative;
+    }
+
+.section--center {
+    text-align: center;
+}
+
+.section--right {
+    text-align: right;
+}
