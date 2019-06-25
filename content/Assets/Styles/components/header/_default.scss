@@ -1,0 +1,74 @@
+/* ==========================================================================
+   #HEADER/DEFAULT
+   ========================================================================== */
+
+.header {
+    &__content {
+        @include content-gutter();
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 auto;
+        @include rem(max-width, $content-width-wide);
+        @include rem(padding-top, $header-content-padding-top);
+        position: relative;
+
+        @include bp-min-width($bp-desktop) {
+            align-items: flex-end;
+        }
+    }
+
+        &__logo {
+            @include rem(max-width, $header-logo-width-mobile);
+            margin-right: auto;
+            position: relative;
+            width: 100%;
+            z-index: $z-index-default;
+
+            @include bp-min-width($bp-tablet) {
+                @include rem(max-width, $header-logo-width);
+            }
+
+            img {
+                display: block;
+            }
+        }
+
+        &__nav-button {
+            align-items: center;
+            display: flex;
+            cursor: pointer;
+            position: relative;
+            z-index: $z-index-default;
+        
+            @include bp-min-width($bp-tablet) {
+                display: none;
+            }
+
+            &:before {
+                content: "";
+                height: $header-nav-button-height;
+                @include rem(margin-right, $header-nav-button-margin-right);
+                width: $header-nav-button-width;
+
+                background-image: url('/content/icon-menu.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+
+        &__nav {
+            display: none;
+            @include rem(padding-top, $mobile-nav-padding-top);
+            position: absolute;
+            top: 0;
+            width: 100vw;
+
+            @include bp-min-width($bp-tablet) {
+                display: block;
+                padding-top: 0;
+                position: static;
+                width: auto;
+            }
+        }
+}
