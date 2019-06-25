@@ -1,6 +1,9 @@
 .btn,
 .btn:link,
 .btn:visited {
+    display: inline-block;
+    padding: $button-padding-vertical $button-padding-horizontal;
+
     @include themify($themes) {
         background-color: themed('color.brandPrimary');
         border: $button-border-size solid themed('color.brandPrimary');
@@ -10,7 +13,6 @@
     cursor: pointer;
     text-decoration: none;
     outline: none;
-    padding: $button-padding-vertical $button-padding-horizontal;
 }
 
 .btn--primary,

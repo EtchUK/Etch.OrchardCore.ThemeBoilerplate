@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #CARD
+   ========================================================================== */
+
+.card {
+    @include content-gutter();
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    &__body {
+        @include rem(padding-top, $content-gutter-small);
+    }
+}
