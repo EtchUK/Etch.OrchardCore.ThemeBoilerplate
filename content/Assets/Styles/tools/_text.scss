@@ -19,6 +19,17 @@
     line-height: $font-line-height-heading;
 }
 
+@mixin text-hero() {
+    @include text-heading();
+
+    font-size: $font-size-hero-mobile;
+    line-height: $font-line-height-hero;
+
+    @include bp-min-width($bp-desktop) {
+        font-size: $font-size-hero;
+    }
+}
+
 @mixin text-h1() {
     @include text-heading();
 
