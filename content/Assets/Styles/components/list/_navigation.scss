@@ -28,7 +28,7 @@
     }
 
     > li {
-        &:hover {
+        &.is-selected {
             .sub-list {
                 display: block;
             }

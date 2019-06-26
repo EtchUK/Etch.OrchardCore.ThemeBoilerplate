@@ -1,3 +1,35 @@
 import 'picturefill';
 
-// entry point for theme JavaScript
+import nav from './components/nav';
+import toggleNav from './components/toggleNav';
+
+/**
+ * Called once the page is loaded and handles initialising
+ * the different components.
+ */
+const init = () => {
+    nav();
+    toggleNav();
+};
+
+const canInit = () => {
+    const regReady = window.attachEvent ? /d$|^c/ : /d$|^c|^i/;
+    return regReady.test(document.readyState || '');
+};
+
+let timer;
+
+const checkCanInit = () => {
+    if (canInit()) {
+        if (timer) {
+            clearTimeout(timer);
+        }
+
+        init();
+        return;
+    }
+
+    timer = setTimeout(checkCanInit, 100);
+};
+
+checkCanInit();
