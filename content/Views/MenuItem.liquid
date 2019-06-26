@@ -1,0 +1,21 @@
+{% assign cssClasses = "" %}
+
+{% if Model.HasItems %}
+    {% assign cssClasses = "has-sub-list" %}
+{% endif %}
+
+<li class="{{ cssClasses }}">
+    {% shape_clear_alternates Model %}
+    {% shape_type Model "MenuItemLink" %}
+    {{ Model | shape_render }}
+
+    {% if Model.HasItems %}
+        <div class="sub-list">
+            <ul class="list">
+                {% for item in Model.Items %}
+                    {{ item | shape_render }}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+</li>

@@ -52,12 +52,13 @@
                 @include rem(margin-right, $header-nav-button-margin-right);
                 width: $header-nav-button-width;
 
-                background-image: url('/content/icon-menu.svg');
+                background-image: url('../content/icon-menu.svg');
                 background-repeat: no-repeat;
                 background-size: 100%;
             }
         }
 
+        nav,
         &__nav {
             display: none;
             @include rem(padding-top, $mobile-nav-padding-top);
