@@ -1,0 +1,7 @@
+{% assign link = Model.ContentItem.Content.LinkMenuItemPart %}
+
+{% if Model.HasItems == "true" %}
+    <a href="{{ link.Url | href }}" aria-haspopup="true" aria-expanded="false">{{ link.Name }}</a>
+{% else %}
+    <a href="{{ link.Url | href }}">{{ link.Name }}</a>
+{% endif %}
