@@ -1,0 +1,53 @@
+/* ==========================================================================
+   #HERO
+   ========================================================================== */
+
+.hero {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &__body {
+        @include content-gutter();
+        max-width: $content-width-wide + ($hero-title-padding-horizontal * 2);
+        position: absolute;
+        width: 100%;
+    }
+
+        &__title {
+        
+            color: $color-white;
+
+            @include text-hero();
+
+            span {
+                padding: 0 $hero-title-padding-horizontal $hero-title-padding-bottom;
+
+                background-color: rgba($color-black, $hero-title-span-opacity);
+                box-decoration-break: clone;
+            }
+        }
+
+        &__btn {
+            @include rem(margin-left, $hero-title-padding-horizontal);
+        }
+
+    &__media {
+        max-height: $hero-media-max-height;
+        min-width: $hero-media-min-width;
+        position: relative;
+        width: 100%;
+        z-index: $z-index-back;
+
+        overflow: hidden;
+
+        @include bp-min-width($bp-tablet) {
+            min-width: auto;
+        }
+
+        .embed {
+            margin-bottom: 0;
+        }
+    }
+}
