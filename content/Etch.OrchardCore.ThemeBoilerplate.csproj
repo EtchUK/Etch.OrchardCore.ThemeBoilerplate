@@ -24,6 +24,9 @@
 
   <ItemGroup>
     <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-beta3-71077" />
+    <PackageReference Include="OrchardCore.Media" Version="1.0.0-beta3-71077" />
+    <PackageReference Include="OrchardCore.Menu" Version="1.0.0-beta3-71077" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-beta3-71077" />
     <PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0-beta3-71077" />
   </ItemGroup>
 
