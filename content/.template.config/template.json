@@ -20,6 +20,11 @@
             "defaultValue": "Theme for Orchard Core.",
             "replaces": "Theme boilerplate is our starting point for building Orchard Core themes."
         },
+        "projectNamespace": {
+            "type": "parameter",
+            "defaultValue": "Your.OrchardCore.Site",
+            "replaces": "Your.OrchardCore.Site"
+        },
         "themeName": {
             "type": "parameter",
             "defaultValue": "Orchard Core Theme",
