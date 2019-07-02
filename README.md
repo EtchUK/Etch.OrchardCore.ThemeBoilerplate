@@ -14,7 +14,7 @@ To create a new theme using the boilerplate it's quickest to use the `dotnet new
 
 Once installed successfully, run the command below, which demonstrates all the possible parameters that are available.
 
-    dotnet new orchardcore-themeboilerplate -n Example.OrchardCore.Theme -o Example.OrchardCore.Theme -au "Your Company Ltd." -d "Description for your theme" -t "Your Theme Name" -w "https://yourwebsite.co.uk"
+    dotnet new orchardcore-themeboilerplate -n Example.OrchardCore.Theme -o Example.OrchardCore.Theme -au "Your Company Ltd." -d "Description for your theme" -p "Your.OrchardCore.Site" -t "Your Theme Name" -w "https://yourwebsite.co.uk"
 
 ### Parameters
 
@@ -27,6 +27,10 @@ Author of the theme.
 #### -d/--description
 
 Short description of the theme.
+
+#### -p/--projectNamespace
+
+Namespace for project containing Orchard Core website that will have reference to theme being created.
 
 #### -t/--themeName
 
