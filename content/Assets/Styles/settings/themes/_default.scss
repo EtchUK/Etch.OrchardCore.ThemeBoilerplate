@@ -12,17 +12,19 @@ $themes: map-merge(
             'color': (
                 'brandPrimary': #3ce854,
                 'brandSecondary': #070f26,
-                'text': #070f26
+                'text': #070f26,
+                'validationError': #e20000
             ),
             'fontFamily': (
                 'default': 'Work Sans'
             ),
             'fontSize': (
                 'default': 1.6rem,
-                'defaultEM': 1.6em
+                'defaultEM': 1.6em,
+                'small': 1.4rem
             ),
             'lineHeight': (
-                'default': 2.2rem
+                'default': 1.4
             )
         )
     ),
