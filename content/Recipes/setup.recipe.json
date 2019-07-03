@@ -561,7 +561,7 @@
                                 "Author": "[js: parameters('AdminUsername')]",
                                 "Hero": {
                                     "BackgroundImage": {
-                                        "Data": "[{\"sources\":[{\"breakpoint\":1024,\"path\":\"Unsplash/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Unsplash/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Unsplash/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Unsplash/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Unsplash/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":768,\"path\":\"Unsplash/unsplash-1444090542259-3300w.jpg\"},{\"breakpoint\":375,\"path\":\"Unsplash/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":600,\"path\":\"Unsplash/unsplash-1444090542259-768w.jpg\"}]}]"
+                                        "Data": "[]"
                                     },
                                     "DisplayText": {
                                         "Text": "Etch Play Boilerplate"
