@@ -15,6 +15,7 @@
     }
 
     a {
+        @include content-gutter();
         display: block;
         padding-bottom: $list-navigation-anchor-padding-bottom;
         padding-top: $list-navigation-anchor-padding-top;
@@ -28,6 +29,16 @@
     }
 
     > li {
+        border-bottom: 1px solid darken($color-grey-1, 5%);
+
+        @include bp-min-width($bp-tablet) {
+            border-bottom: 0;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
         &.is-selected {
             .sub-list {
                 display: block;
@@ -59,12 +70,12 @@
         .sub-list {
             display: none;
 
-            background-color: $color-grey-1;
+            background-color: darken($color-grey-1, 5%);
 
             @include bp-min-width($bp-tablet) {
                 position: absolute;
 
-                background-color: transparent;
+                background-color: $color-white;
             }
 
             a {

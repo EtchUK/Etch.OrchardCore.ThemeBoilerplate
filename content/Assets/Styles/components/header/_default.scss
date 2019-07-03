@@ -24,7 +24,7 @@
             margin-right: auto;
             position: relative;
             width: 100%;
-            z-index: $z-index-default;
+            z-index: $z-index-front;
 
             @include bp-min-width($bp-tablet) {
                 @include rem(max-width, $header-logo-width);
@@ -40,7 +40,7 @@
             display: flex;
             cursor: pointer;
             position: relative;
-            z-index: $z-index-default;
+            z-index: $z-index-front;
         
             @include bp-min-width($bp-tablet) {
                 display: none;
@@ -61,16 +61,27 @@
         nav,
         &__nav {
             display: none;
-            @include rem(padding-top, $mobile-nav-padding-top);
             position: absolute;
+            left: 0;
             top: 0;
             width: 100vw;
+            height: 100vh;
+            z-index: $z-index-default;
+
+            background-color: $color-grey-1;
+            border-top-width: $mobile-nav-padding-top;
+            border-top-color: $color-white;
+            border-top-style: solid;
 
             @include bp-min-width($bp-tablet) {
                 display: block;
                 padding-top: 0;
                 position: static;
+                height: auto;
                 width: auto;
+
+                background-color: transparent;
+                border-top: 0;
             }
         }
 }
