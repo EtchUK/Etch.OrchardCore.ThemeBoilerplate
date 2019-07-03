@@ -85,3 +85,10 @@
             }
         }
 }
+
+.is-nav-visible {
+    nav,
+    .header__nav {
+        display: block;
+    }
+}
