@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #HR
+   ========================================================================== */
+hr {
+    /*  
+    By default, HR's can be styled with border-color, however this approach doesn't scale. 
+    If you make the HR taller than 1px, only the border receives the colour, not the entire element. 
+    So instead, we reset the border, then use a height and a background for thickness and colour respectively. 
+    The color property is also included, for IE's benefit only. 
+    */
+    background: $color-grey;
+    border: 0;
+    color: $color-grey;
+    display:block;
+    font-size: 0;
+    height: 1px;
+    margin-top:0;
+    margin-bottom:$spacing-default;
+}
