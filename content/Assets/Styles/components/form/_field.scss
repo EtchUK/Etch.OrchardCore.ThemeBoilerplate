@@ -12,7 +12,7 @@
 
 .field__label {
     @include themify($themes) {
-        font-size: themed('fontSize.small');
+        @include rem(font-size, themed('fontSize.small'));
     }
 
     width: 100%;

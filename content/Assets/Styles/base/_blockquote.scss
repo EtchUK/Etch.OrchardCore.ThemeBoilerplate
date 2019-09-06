@@ -12,7 +12,7 @@ blockquote {
     @include text-blockquote();   
 
     @include bp-min-width($bp-tablet) {
-        font-size: $font-size-blockquote;
+        @include rem(font-size, $font-size-blockquote);
     }
 
     p {

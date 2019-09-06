@@ -22,51 +22,51 @@
 @mixin text-hero() {
     @include text-heading();
 
-    font-size: $font-size-hero-mobile;
+    @include rem(font-size, $font-size-hero-mobile);
     line-height: $font-line-height-hero;
 
     @include bp-min-width($bp-desktop) {
-        font-size: $font-size-hero;
+        @include rem(font-size, $font-size-hero);
     }
 }
 
 @mixin text-h1() {
     @include text-heading();
 
-    font-size: $font-size-h1-mobile;
+    @include rem(font-size, $font-size-h1-mobile);
 
     @include bp-min-width($bp-desktop) {
-        font-size: $font-size-h1;
+        @include rem(font-size, $font-size-h1);
     }
 }
 
 @mixin text-h2() {
     @include text-heading();
 
-    font-size: $font-size-h2-mobile;
+    @include rem(font-size, $font-size-h2-mobile);
 
     @include bp-min-width($bp-desktop) {
-        font-size: $font-size-h2;
+        @include rem(font-size, $font-size-h2);
     }
 }
 
 @mixin text-h3() {
     @include text-heading();
 
-    font-size: $font-size-h3-mobile;
+    @include rem(font-size, $font-size-h3-mobile);
 
     @include bp-min-width($bp-desktop) {
-        font-size: $font-size-h3;
+        @include rem(font-size, $font-size-h3);
     }
 }
 
 @mixin text-h4() {
     @include text-heading();
 
-    font-size: $font-size-h4-mobile;
+    @include rem(font-size, $font-size-h4-mobile);
 
     @include bp-min-width($bp-desktop) {
-        font-size: $font-size-h4;
+        @include rem(font-size, $font-size-h4);
     }
 }
 
