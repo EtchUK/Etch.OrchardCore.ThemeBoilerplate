@@ -26,7 +26,7 @@ a {
         @include rem(padding-right, $spacing-default);
         @include rem(padding-top, $spacing-small);
         
-        font-size: $font-size-h3;
+        @include rem(font-size, $font-size-h3);
     }
 }
 
