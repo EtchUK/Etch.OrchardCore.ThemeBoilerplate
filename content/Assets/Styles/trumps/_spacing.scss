@@ -20,6 +20,46 @@
         }
     }
 
+    &--left {
+        @include rem(margin-left, $spacing-default);
+    
+        &-large {
+            @include rem(margin-left, $spacing-large);
+        }
+
+        &-small {
+            @include rem(margin-left, $spacing-small);
+        }
+
+        &-none {
+            margin-left: 0;
+        }
+
+        &-left {
+            margin-left: auto;
+        }
+    }
+
+    &--right {
+        @include rem(margin-right, $spacing-default);
+    
+        &-large {
+            @include rem(margin-right, $spacing-large);
+        }
+
+        &-small {
+            @include rem(margin-right, $spacing-small);
+        }
+
+        &-none {
+            margin-right: 0;
+        }
+
+        &-auto {
+            margin-right: auto;
+        }
+    }
+
     &--top {
         @include rem(margin-top, $spacing-default);
     
