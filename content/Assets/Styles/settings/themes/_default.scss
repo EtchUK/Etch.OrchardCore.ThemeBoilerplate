@@ -16,15 +16,35 @@ $themes: map-merge(
                 'validationError': #e20000
             ),
             'fontFamily': (
-                'default': 'Work Sans'
+                'default': ('Work Sans', sans-serif),
+                'heading': ('Manuale', sans-serif)
             ),
             'fontSize': (
                 'default': 1.6rem,
                 'defaultEM': 1.6em,
-                'small': 1.4rem
+                'small': 1.4rem,
+                'hero': 7rem,
+                'h1': 4rem,
+                'h2': 3rem,
+                'h3': 2rem,
+                'h4': 1.8rem,
+                'blockquote': 2rem,
+                'mobile': (
+                    'hero': 3.6rem,
+                    'h1': 3.6rem,
+                    'h2': 3.2rem,
+                    'h3': 2.4rem,
+                    'h4': 1.8rem
+                )
+            ),
+            'fontWeight': (
+                'default': 400,
+                'bold': 700
             ),
             'lineHeight': (
-                'default': 1.4
+                'default': 2.2rem,
+                'heading': 1.2,
+                'hero': 1.4
             )
         )
     ),

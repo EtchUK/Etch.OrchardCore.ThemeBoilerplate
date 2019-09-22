@@ -11,6 +11,7 @@ a {
 
     @include themify($themes) {
         color: themed('color.brandPrimary');
+    
     }
     text-decoration: underline;
 
@@ -25,8 +26,10 @@ a {
         @include rem(padding-left, $spacing-default);
         @include rem(padding-right, $spacing-default);
         @include rem(padding-top, $spacing-small);
-        
-        @include rem(font-size, $font-size-h3);
+
+        @include themify($themes) {
+            font-size: themed('fontSize.h3');
+        }
     }
 }
 
@@ -34,8 +37,11 @@ a {
     border-bottom: 0;
 
     color: inherit;
-    font-weight: $font-weight-default;
     text-decoration: none;
+
+    @include themify($themes) {
+        font-weight: themed('fontWeight.default');
+    }
 }
 
 .link--admin {
