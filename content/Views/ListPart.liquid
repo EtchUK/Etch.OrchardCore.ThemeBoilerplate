@@ -1,0 +1,18 @@
+<section class="section">
+    <div class="section__content">
+        <ul class="list">
+        {% for item in Model.ContentItems %}
+            <li>
+            {{ item | shape_build_display: "Summary" | shape_render }}
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section__content">
+        {% shape_pager Model.Pager next_text: 'Next Page', previous_text: 'Previous Page' %}
+        {{ Model.Pager | shape_render }}
+    </div>
+</section>
