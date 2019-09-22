@@ -26,6 +26,12 @@
         @include bp-min-width($bp-tablet) {
             @include rem(padding, 5px 10px);
         }
+
+        &.is-current-page {
+            @include themify($themes) {
+                color: themed('color.brandPrimary');
+            }
+        }
     }
 
     > li {
