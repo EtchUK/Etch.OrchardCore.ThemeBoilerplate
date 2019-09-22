@@ -23,6 +23,7 @@
                 "OrchardCore.Alias",
                 "OrchardCore.Media",
                 "Etch.OrchardCore.Fields.ResponsiveMedia",
+                "Etch.OrchardCore.SEO.MetaTags",
                 "OrchardCore.Title",
                 "OrchardCore.Widgets",
                 "OrchardCore.Flows",
@@ -178,6 +179,13 @@
                                 "ContentIndexSettings": {},
                                 "Position": "3"
                             }
+                        },
+                        {
+                            "PartName": "MetaTagsPart",
+                            "Name": "MetaTagsPart",
+                            "Settings": {
+                                "Position": "4"
+                            }
                         }
                     ]
                 },
@@ -244,6 +252,13 @@
                                 "DisplayType": "Detail",
                                 "ContentIndexSettings": {},
                                 "Position": "3"
+                            }
+                        },
+                        {
+                            "PartName": "MetaTagsPart",
+                            "Name": "MetaTagsPart",
+                            "Settings": {
+                                "Position": "5"
                             }
                         }
                     ]
