@@ -47,7 +47,9 @@ module.exports = {
         new FixStyleOnlyEntriesPlugin(),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [
+                path.join(process.cwd(), 'wwwroot/content'),
                 path.join(process.cwd(), 'wwwroot/css'),
+                path.join(process.cwd(), 'wwwroot/fonts'),
                 path.join(process.cwd(), 'wwwroot/js'),
                 path.join(process.cwd(), 'wwwroot/patterns'),
             ],
