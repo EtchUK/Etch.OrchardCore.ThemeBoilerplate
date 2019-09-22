@@ -30,6 +30,7 @@
                 "OrchardCore.Html",
                 "Etch.OrchardCore.Widgets",
                 "OrchardCore.Admin",
+                "OrchardCore.AdminMenu",
                 "OrchardCore.Autoroute",
                 "OrchardCore.ContentFields",
                 "OrchardCore.ContentPreview",
@@ -57,6 +58,9 @@
                 "OrchardCore.Roles",
                 "OrchardCore.Templates",
                 "OrchardCore.Themes",
+                "OrchardCore.Workflows",
+                "OrchardCore.Workflows.Http",
+                "OrchardCore.Workflows.Timers",
                 "Etch.OrchardCore.ThemeBoilerplate",
                 "TheAdmin"
             ],
@@ -64,7 +68,6 @@
                 "Etch.OrchardCore.Fields.Dictionary",
                 "Etch.OrchardCore.Fields.RenderAlias",
                 "Etch.OrchardCore.Fields.Values",
-                "OrchardCore.AdminMenu",
                 "OrchardCore.Apis.GraphQL",
                 "OrchardCore.BackgroundTasks",
                 "OrchardCore.DataProtection.Azure",
@@ -104,9 +107,6 @@
                 "OrchardCore.Users.Registration",
                 "OrchardCore.Users.ResetPassword",
                 "OrchardCore.Users.TimeZone",
-                "OrchardCore.Workflows",
-                "OrchardCore.Workflows.Http",
-                "OrchardCore.Workflows.Timers",
                 "SafeMode",
                 "TheAgencyTheme",
                 "TheBlogTheme",
@@ -1043,6 +1043,40 @@
                                 "Id": "b7ab411fdc32495688e36b2275b7f49a",
                                 "Name": "Media"
                             }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AdminMenu",
+            "data": [
+                {
+                    "Id": "2dcf954521874dcf931dae51100c34db",
+                    "Name": "Pattern Library",
+                    "Enabled": true,
+                    "MenuItems": [
+                        {
+                            "$type": "OrchardCore.AdminMenu.AdminNodes.LinkAdminNode, OrchardCore.AdminMenu",
+                            "LinkText": "Pattern Library",
+                            "LinkUrl": "Etch.OrchardCore.ThemeBoilerplate/patterns/index.html",
+                            "IconClass": "fas fa-puzzle-piece",
+                            "UniqueId": "ab7ed3cbef7644cc97745f54c44d5855",
+                            "Enabled": true,
+                            "Text": null,
+                            "Id": null,
+                            "Href": null,
+                            "Url": null,
+                            "Position": "5",
+                            "Priority": 0,
+                            "LinkToFirstChild": true,
+                            "LocalNav": false,
+                            "Culture": null,
+                            "Resource": null,
+                            "Items": [],
+                            "RouteValues": null,
+                            "Permissions": [],
+                            "Classes": []
                         }
                     ]
                 }
