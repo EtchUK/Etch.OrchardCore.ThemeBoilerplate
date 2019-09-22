@@ -954,6 +954,99 @@
                     "TargetPath": "Logos/logo-play@1x.svg"
                 }
             ]
+        },
+        {
+            "name": "deployment",
+            "Plans": [
+                {
+                    "Name": "Site Export",
+                    "Steps": [
+                        {
+                            "Type": "AllFeaturesDeploymentStep",
+                            "Step": {
+                                "Id": "a5ef1f436e5f47658faf85d2fa8f6080",
+                                "Name": "AllFeatures"
+                            }
+                        },
+                        {
+                            "Type": "ThemesDeploymentStep",
+                            "Step": {
+                                "Id": "25a1bbb07c7b4188ba8487ccb63a0b2b",
+                                "Name": "Themes"
+                            }
+                        },
+                        {
+                            "Type": "ContentDefinitionDeploymentStep",
+                            "Step": {
+                                "IncludeAll": true,
+                                "ContentTypes": [],
+                                "ContentParts": [],
+                                "Id": "091a2443940e4a128ffde26410c59e54",
+                                "Name": "ContentDefinition"
+                            }
+                        },
+                        {
+                            "Type": "AllContentDeploymentStep",
+                            "Step": {
+                                "Id": "e5e1c4fc44b14f3c85022bb6e11951f7",
+                                "Name": "AllContent"
+                            }
+                        },
+                        {
+                            "Type": "AllLayersDeploymentStep",
+                            "Step": {
+                                "Id": "7571147b48624cbc9b89df93f30ff3bf",
+                                "Name": "AllLayers"
+                            }
+                        },
+                        {
+                            "Type": "LuceneSettingsDeploymentStep",
+                            "Step": {
+                                "Id": "a0086bb7a55b4830820fd5b41a7c2ac0",
+                                "Name": "LuceneSettings"
+                            }
+                        },
+                        {
+                            "Type": "AllQueriesDeploymentStep",
+                            "Step": {
+                                "Id": "cf314958154f42cba56630f5243b2805",
+                                "Name": "AllQueries"
+                            }
+                        },
+                        {
+                            "Type": "AllWorkflowTypeDeploymentStep",
+                            "Step": {
+                                "Id": "f308f590bf454b629a263879feb77902",
+                                "Name": "AllWorkflowType"
+                            }
+                        },
+                        {
+                            "Type": "AllTemplatesDeploymentStep",
+                            "Step": {
+                                "Id": "fbd650e5d2074872bf9f1d1e803d1a2d",
+                                "Name": "AllTemplates"
+                            }
+                        },
+                        {
+                            "Type": "AdminMenuDeploymentStep",
+                            "Step": {
+                                "Id": "da66a6597d354bdb8da08af3a5cd0021",
+                                "Name": "AdminMenu"
+                            }
+                        },
+                        {
+                            "Type": "MediaDeploymentStep",
+                            "Step": {
+                                "IncludeAll": true,
+                                "FilePaths": [],
+                                "DirectoryPaths": [],
+                                "Id": "b7ab411fdc32495688e36b2275b7f49a",
+                                "Name": "Media"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
