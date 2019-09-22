@@ -7,66 +7,92 @@
  */
 
 @mixin text-default() {
-    font-family: $font-family-default;
-    font-weight: $font-weight-default;
     font-style: normal;
+
+    @include themify($themes) {
+        font-family: themed('fontFamily.default');
+        font-weight: themed('fontWeight.default');
+    }
 }
 
 @mixin text-heading() {
-    font-family: $font-family-heading;
-    font-weight: $font-weight-bold;
     font-style: normal;
-    line-height: $font-line-height-heading;
+
+    @include themify($themes) {
+        font-family: themed('fontFamily.heading');
+        font-weight: themed('fontWeight.bold');
+        line-height: themed('lineHeight.heading');
+    }
 }
 
 @mixin text-hero() {
     @include text-heading();
 
-    @include rem(font-size, $font-size-hero-mobile);
-    line-height: $font-line-height-hero;
+    @include themify($themes) {
+        font-size: themed('fontSize.mobile.hero');
+        line-height: themed('lineHeight.hero');
+    }
 
     @include bp-min-width($bp-desktop) {
-        @include rem(font-size, $font-size-hero);
+        @include themify($themes) {
+            font-size: themed('fontSize.hero');
+        }
     }
 }
 
 @mixin text-h1() {
     @include text-heading();
 
-    @include rem(font-size, $font-size-h1-mobile);
+    @include themify($themes) {
+        font-size: themed('fontSize.mobile.h1');
+    }
 
     @include bp-min-width($bp-desktop) {
-        @include rem(font-size, $font-size-h1);
+        @include themify($themes) {
+            font-size: themed('fontSize.h1');
+        }
     }
 }
 
 @mixin text-h2() {
     @include text-heading();
 
-    @include rem(font-size, $font-size-h2-mobile);
+    @include themify($themes) {
+        font-size: themed('fontSize.mobile.h2');
+    }
 
     @include bp-min-width($bp-desktop) {
-        @include rem(font-size, $font-size-h2);
+        @include themify($themes) {
+            font-size: themed('fontSize.h2');
+        }
     }
 }
 
 @mixin text-h3() {
     @include text-heading();
 
-    @include rem(font-size, $font-size-h3-mobile);
+    @include themify($themes) {
+        font-size: themed('fontSize.mobile.h3');
+    }
 
     @include bp-min-width($bp-desktop) {
-        @include rem(font-size, $font-size-h3);
+        @include themify($themes) {
+            font-size: themed('fontSize.h3');
+        }
     }
 }
 
 @mixin text-h4() {
     @include text-heading();
 
-    @include rem(font-size, $font-size-h4-mobile);
+    @include themify($themes) {
+        font-size: themed('fontSize.mobile.h4');
+    }
 
     @include bp-min-width($bp-desktop) {
-        @include rem(font-size, $font-size-h4);
+        @include themify($themes) {
+            font-size: themed('fontSize.h4');
+        }
     }
 }
 

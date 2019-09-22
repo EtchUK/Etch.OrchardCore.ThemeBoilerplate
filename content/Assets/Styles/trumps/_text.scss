@@ -8,11 +8,15 @@
    
 .font {
     &--default {
-        font-family: $font-family-default;
+        @include themify($themes) {
+            font-family: themed('fontFamily.default');
+        }
     }
 
     &--heading {
-        font-family: $font-family-heading;
+        @include themify($themes) {
+            font-family: themed('fontFamily.heading');
+        }
     }
 }
 
@@ -29,45 +33,69 @@
 
     &--size {
         &-h1 { 
-            @include rem(font-size, $font-size-h1-mobile);
-            line-height: $font-line-height-heading;
+            @include themify($themes) {
+                font-size: themed('fontSize.mobile.h1');
+                line-height: themed('lineHeight.heading');
+            }
 
             @include bp-min-width($bp-desktop) {
-                @include rem(font-size, $font-size-h1);
+                @include themify($themes) {
+                    font-size: themed('fontSize.h1');
+                }
             }
         }
+
         &-h2 { 
-            @include rem(font-size, $font-size-h2-mobile);
-            line-height: $font-line-height-heading;
+            @include themify($themes) {
+                font-size: themed('fontSize.mobile.h2');
+                line-height: themed('lineHeight.heading');
+            }
 
             @include bp-min-width($bp-desktop) {
-                @include rem(font-size, $font-size-h2);
+                @include themify($themes) {
+                    font-size: themed('fontSize.h2');
+                }
             }
         }
+
         &-h3 { 
-            @include rem(font-size, $font-size-h3-mobile);
-            line-height: $font-line-height-heading;
+            @include themify($themes) {
+                font-size: themed('fontSize.mobile.h3');
+                line-height: themed('lineHeight.heading');
+            }
 
             @include bp-min-width($bp-desktop) {
-                @include rem(font-size, $font-size-h3);
+                @include themify($themes) {
+                    font-size: themed('fontSize.h3');
+                }
             }
         }
-        &-h4 { 
-            @include rem(font-size, $font-size-h4-mobile);
-            line-height: $font-line-height-heading;
+
+        &-h4 {
+            @include themify($themes) {
+                font-size: themed('fontSize.mobile.h4');
+                line-height: themed('lineHeight.heading');
+            }
 
             @include bp-min-width($bp-desktop) {
-                @include rem(font-size, $font-size-h4);
+                @include themify($themes) {
+                    font-size: themed('fontSize.h4');
+                }
             }
         }
     }
 
     &--weight {
         &-bold {
-            font-weight: $font-weight-bold;
+            @include themify($themes) {
+                font-weight: themed('fontWeight.bold');
+            }
         }
+
         &-normal {
-            font-weight: $font-weight-default;
+            @include themify($themes) {
+                font-weight: themed('fontWeight.default');
+            }
         }
     }
 }  

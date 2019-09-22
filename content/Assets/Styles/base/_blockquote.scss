@@ -12,7 +12,9 @@ blockquote {
     @include text-blockquote();   
 
     @include bp-min-width($bp-tablet) {
-        @include rem(font-size, $font-size-blockquote);
+        @include themify($themes) {
+            font-size: themed('fontSize.blockquote');
+        }
     }
 
     p {
