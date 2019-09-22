@@ -53,7 +53,7 @@ module.exports = {
             ],
         }),
         new MiniCssExtractPlugin({
-            filename: '../css/style.css',
+            filename: '../css/styles.css',
         }),
         new CopyPlugin([
             {
@@ -63,7 +63,7 @@ module.exports = {
             {
                 from: path.join(process.cwd(), 'Assets/Fonts'),
                 to: path.join(process.cwd(), 'wwwroot/fonts'),
-            }
+            },
         ]),
     ],
 };
