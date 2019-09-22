@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {% render_section "HeadMeta", required: false %}
-        <title>{% page_title Site.SiteName %}</title>
+        <title>{% page_title "", position: "after", separator: "" %}</title>
         {% resources type: "Meta" %}
 
         <script>
