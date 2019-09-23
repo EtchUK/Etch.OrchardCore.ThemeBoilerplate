@@ -1,1 +1,3 @@
 *.nupkg
+
+content/package-lock.json
