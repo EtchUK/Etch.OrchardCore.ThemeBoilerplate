@@ -5,7 +5,7 @@
 .list--navigation {
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    @include rem(min-width, 30rem);
     width: 100%;
 
     @include bp-min-width($bp-tablet) {
@@ -24,7 +24,7 @@
         text-decoration: none;
 
         @include bp-min-width($bp-tablet) {
-            @include rem(padding, 5px 10px);
+            @include rem(padding, .5rem 1rem);
         }
 
         &.is-current-page {
@@ -88,7 +88,7 @@
                 padding-left: $spacing-large;
 
                 @include bp-min-width($bp-tablet) {
-                    @include rem(padding, 5px 10px);
+                    @include rem(padding, .5rem 1rem);
                 }
             }
         }
