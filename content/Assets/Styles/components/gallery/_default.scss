@@ -1,0 +1,33 @@
+/* ==========================================================================
+   #GALLERY/DEFAULT
+   ========================================================================== */
+
+.gallery {
+    @include list-reset();
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include rem(margin-bottom, $gallery-gutter-small);
+    @include rem(margin-left, -$gallery-item-gap);
+    @include rem(margin-right, -$gallery-item-gap);
+
+    @include bp-min-width($bp-mobile) {
+        @include rem(margin-bottom, $gallery-gutter);
+    }
+}
+
+    .gallery__item {
+        @include rem(margin-bottom, $gallery-gutter-small);
+        @include rem(padding-left, $gallery-item-gap);
+        @include rem(padding-right, $gallery-item-gap);
+        width: 50%;
+
+        @include bp-min-width($bp-tablet-small) {
+            width: 33.3%;
+        }
+
+        @include bp-min-width($bp-tablet) {
+            width: 25%;
+        }
+    }

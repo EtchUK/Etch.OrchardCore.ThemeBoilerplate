@@ -1,5 +1,6 @@
 import 'picturefill';
 
+import gallery from './components/gallery';
 import nav from './components/nav';
 import toggleNav from './components/toggleNav';
 
@@ -8,6 +9,7 @@ import toggleNav from './components/toggleNav';
  * the different components.
  */
 const init = () => {
+    gallery();
     nav();
     toggleNav();
 };

@@ -1,0 +1,11 @@
+{% if Model.HasMediaItems %}
+<ul class="gallery js-gallery">
+    {% for item in Model.MediaItems %}
+        <li class="gallery__item">
+            <a href="{{ item.Url }}">
+                <img src="{{ item.Thumb }}" title="{{ item.Title }}" alt="{{ item.Title }}" />
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+{% endif %}
