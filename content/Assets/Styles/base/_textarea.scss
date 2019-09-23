@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #TEXTAREA
+   ========================================================================== */
+
+textarea {
+    display: block;
+    @include rem(min-height, 12rem);
+    width: 100%;
+
+    @include themify($themes) {
+        border: 1px solid themed('color.text');
+
+        .has-error & {
+            border: 1px solid themed('color.validationError');
+        }
+    }
+}
