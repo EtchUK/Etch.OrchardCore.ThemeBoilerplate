@@ -79,6 +79,7 @@ module.exports = {
                 path.join(process.cwd(), 'wwwroot/content'),
                 path.join(process.cwd(), 'wwwroot/css'),
                 path.join(process.cwd(), 'wwwroot/fonts'),
+                path.join(process.cwd(), 'wwwroot/img'),
                 path.join(process.cwd(), 'wwwroot/js'),
                 path.join(process.cwd(), 'wwwroot/patterns'),
             ],
@@ -94,6 +95,20 @@ module.exports = {
             {
                 from: path.join(process.cwd(), 'Assets/Fonts'),
                 to: path.join(process.cwd(), 'wwwroot/fonts'),
+            },
+            {
+                from: path.join(
+                    process.cwd(),
+                    'node_modules/lightgallery.js/dist/fonts'
+                ),
+                to: path.join(process.cwd(), 'wwwroot/fonts'),
+            },
+            {
+                from: path.join(
+                    process.cwd(),
+                    'node_modules/lightgallery.js/dist/img'
+                ),
+                to: path.join(process.cwd(), 'wwwroot/img'),
             },
         ]),
     ],
