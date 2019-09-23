@@ -8,20 +8,29 @@
  */
 
 .embed {
-    height: 0;
+    display: block;
     @include rem(margin-bottom, $spacing-default);
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    max-width: 100%;
-    
-    > iframe,
-    > object,
-    > embed {
-        height: 100%;
-        left: 0;
-        position: absolute; 
-        top: 0;
-        width: 100%;
-    }
 }
+
+    .embed__source {
+        height: 0;
+        @include rem(margin-bottom, $spacing-default);
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        max-width: 100%;
+        
+        > iframe,
+        > object,
+        > embed {
+            height: 100%;
+            left: 0;
+            position: absolute; 
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    .embed__caption {
+        font-style: italic;
+    }
