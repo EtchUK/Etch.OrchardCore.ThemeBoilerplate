@@ -10,10 +10,12 @@ $themes: map-merge(
     (
         'default': (
             'color': (
+                'backgroundDark': #070f26,
                 'brandPrimary': #3ce854,
                 'brandSecondary': #070f26,
                 'text': #070f26,
-                'validationError': #e20000
+                'validationError': #e20000,
+                'white': #fff
             ),
             'fontFamily': (
                 'default': ('Work Sans', sans-serif),
