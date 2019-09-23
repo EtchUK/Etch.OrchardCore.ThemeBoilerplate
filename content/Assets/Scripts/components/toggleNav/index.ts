@@ -1,3 +1,5 @@
+import { KEY_UP, KEY_DOWN, SPACE } from '../../utils/keyCode';
+
 /**
  * Initialises the toggle nav button that's responsible for showing/hiding
  * the main menu (likely on smaller devices).
@@ -6,8 +8,8 @@ const toggleNav = () => {
     const CSS_VISIBLE = 'is-nav-visible';
     const SELECTOR = '.js-nav-button';
 
-    const validHideKeyCodes = [38];
-    const validShowKeyCodes = [40, 32];
+    const validHideKeyCodes = [KEY_UP];
+    const validShowKeyCodes = [KEY_DOWN, SPACE];
 
     const $html = document.querySelector('html') as HTMLHtmlElement;
 
