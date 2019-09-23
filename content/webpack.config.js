@@ -7,7 +7,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
-        scripts: './Assets/Scripts/index.js',
+        scripts: './Assets/Scripts/index.ts',
         styles: './Assets/Styles/index.scss',
     },
     output: {
@@ -17,11 +17,40 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                enforce: 'pre',
+                test: /(\.ts(x?)$)/,
                 exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                },
+                loader: 'tslint-loader',
+                options: { emitErrors: true },
+            },
+            {
+                test: /(\.ts(x?)$)/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: [
+                                [
+                                    '@babel/preset-env',
+                                    {
+                                        corejs: { version: 3, proposals: true },
+                                        targets: '> 0.25%, not dead',
+                                        useBuiltIns: 'usage',
+                                    },
+                                ],
+                            ],
+                        },
+                    },
+                    {
+                        loader: 'ts-loader',
+                    },
+                ],
+            },
+            {
+                test: /(\.js(x?)$)/,
+                exclude: /node_modules/,
+                use: ['babel-loader'],
             },
             {
                 test: /\.scss$/,
@@ -68,4 +97,7 @@ module.exports = {
             },
         ]),
     ],
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+    },
 };

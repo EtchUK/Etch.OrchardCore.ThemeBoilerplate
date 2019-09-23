@@ -5,57 +5,73 @@ const CSS_SELECTED = 'is-selected';
 /**
  * Reverts selected state on provided item.
  */
-const deselectItem = $el => {
+const deselectItem = ($el: Element) => {
     $el.classList.remove(CSS_SELECTED);
-    $el.querySelector('a').setAttribute('aria-expanded', 'false');
+
+    const $anchor = $el.querySelector('a');
+
+    if ($anchor) {
+        $anchor.setAttribute('aria-expanded', 'false');
+    }
 };
 
 /**
  * Returns whether the navigation item has any sub items.
  */
-const hasSubItems = $el => {
+const hasSubItems = ($el: Element): boolean => {
+    if (!$el.parentNode) {
+        return false;
+    }
+
     return $el.parentNode.children.length > 1;
 };
 
 /**
  * Sets the selected state on provided item.
  */
-const selectItem = $el => {
-    $el.parentNode.classList.add(CSS_SELECTED);
+const selectItem = ($el: Element) => {
+    const $parent = $el.parentNode as Element;
+
+    if (!$parent) {
+        return;
+    }
+
+    $parent.classList.add(CSS_SELECTED);
     $el.setAttribute('aria-expanded', 'true');
 };
 
 /**
  * Initialises a new navigation component.
  */
-const instance = $el => {
+const instance = ($el: Element) => {
     /**
      * Handles a top level item being selected but unselecting the currently
      * selected item and setting the top level item has selected, unless it
      * was already selected.
      */
-    const onItemSelect = e => {
+    const onItemSelect = (e: Event) => {
         e.stopImmediatePropagation();
         e.preventDefault();
 
-        let $selectedItem = $el.querySelector(makeSelector(CSS_SELECTED));
+        const $selectedItem = $el.querySelector(makeSelector(CSS_SELECTED));
+        const $target = e.currentTarget as Element;
 
         // de-select the currently selected item if there is one.
         if ($selectedItem) {
             deselectItem($selectedItem);
         }
 
-        if ($selectedItem !== e.currentTarget.parentNode) {
-            selectItem(e.currentTarget);
+        if ($target && $selectedItem !== $target.parentNode) {
+            selectItem($target);
         }
     };
 
-    $el.querySelectorAll('li > a').forEach($el => {
-        if (!hasSubItems($el)) {
+    $el.querySelectorAll('li > a').forEach(($anchor: Element) => {
+        if (!hasSubItems($anchor)) {
             return;
         }
 
-        $el.addEventListener('click', onItemSelect);
+        $anchor.addEventListener('click', onItemSelect);
     });
 };
 
@@ -65,7 +81,7 @@ const instance = $el => {
 const nav = () => {
     const SELECTOR = '.js-nav';
 
-    document.querySelectorAll(SELECTOR).forEach($el => {
+    document.querySelectorAll(SELECTOR).forEach(($el: Element) => {
         instance($el);
     });
 };

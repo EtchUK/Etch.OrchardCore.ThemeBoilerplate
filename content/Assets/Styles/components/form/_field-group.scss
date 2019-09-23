@@ -11,7 +11,7 @@
 
 .field-group--horizontal {
     @include bp-min-width($bp-tablet-small) {
-        align-items: end;
+        align-items: flex-end;
         display: flex;
         justify-content: space-between;
 

@@ -33,11 +33,16 @@
         "postcss-loader": "^3.0.0",
         "replace-in-file": "^4.1.0",
         "sass-loader": "^7.1.0",
+        "ts-loader": "^6.1.2",
+        "tslint": "^5.20.0",
+        "tslint-loader": "^3.5.4",
+        "typescript": "^3.6.3",
         "webpack": "^4.29.6",
         "webpack-cli": "^3.3.0",
         "webpack-fix-style-only-entries": "^0.2.1"
     },
     "dependencies": {
+        "core-js": "^3.2.1",
         "normalize.css": "^8.0.1",
         "picturefill": "^3.0.3"
     },

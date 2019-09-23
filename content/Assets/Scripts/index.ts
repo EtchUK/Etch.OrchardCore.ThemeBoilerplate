@@ -13,11 +13,11 @@ const init = () => {
 };
 
 const canInit = () => {
-    const regReady = window.attachEvent ? /d$|^c/ : /d$|^c|^i/;
+    const regReady = (window as any).attachEvent ? /d$|^c/ : /d$|^c|^i/;
     return regReady.test(document.readyState || '');
 };
 
-let timer;
+let timer: NodeJS.Timeout;
 
 const checkCanInit = () => {
     if (canInit()) {
