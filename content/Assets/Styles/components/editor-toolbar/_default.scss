@@ -1,0 +1,33 @@
+/* ==========================================================================
+   #EDITOR-TOOLBAR/DEFAULT
+   ========================================================================== */
+
+.editor-toolbar {
+    bottom: 0;
+    left: 0;
+    @include rem(padding, $spacing-default);
+    position: fixed;
+    width: 100%;
+    z-index: $editor-toolbar-z-index;
+
+    @include themify($themes) {
+        background-color: rgba(themed('color.backgroundDark'), .9);
+        
+        color: themed('color.white');
+    }
+
+    @include bp-min-width($bp-tablet) {
+        @include rem(bottom, $content-gutter-small);
+        @include rem(left, $content-gutter-small);
+        @include rem(max-width, $editor-toolbar-max-width);
+        width: auto;
+
+        @include rem(border-radius, $editor-toolbar-border-radius);
+    }
+}
+
+    .editor-toolbar__content {
+        margin-left: auto;
+        margin-right: auto;
+        @include rem(max-width, $content-width);
+    }
