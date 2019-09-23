@@ -1,4 +1,4 @@
-import { KEY_UP, KEY_DOWN, SPACE } from '../../utils/keyCode';
+import { KEY_DOWN, KEY_UP, SPACE } from '../../utils/keyCode';
 
 /**
  * Initialises the toggle nav button that's responsible for showing/hiding
