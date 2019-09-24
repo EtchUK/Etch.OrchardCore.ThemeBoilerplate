@@ -6,7 +6,7 @@ Folder for placing images that ship with the theme, typically this would be icon
 
 ## Fonts
 
-Ideally fonts will be loaded via a third party site (e.g. [Google Fonts](https://fonts.google.com/) or [Adone Fonts](https://fonts.adobe.com/)). There are some scenarios where the font won't be available via a third party site. In those cases, use this directory to include font files within the theme.
+Ideally fonts will be loaded via a third party site (e.g. [Google Fonts](https://fonts.google.com/) or [Adobe Fonts](https://fonts.adobe.com/)). There are some scenarios where the font won't be available via a third party site. In those cases, use this directory to include font files within the theme.
 
 ## Scripts
 
