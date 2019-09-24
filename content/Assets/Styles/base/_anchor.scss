@@ -28,7 +28,7 @@ a {
         @include rem(padding-top, $spacing-small);
 
         @include themify($themes) {
-            font-size: themed('fontSize.h3');
+            @include rem(font-size, themed('fontSize.h3'));
         }
     }
 }

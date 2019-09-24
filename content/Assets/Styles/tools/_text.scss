@@ -29,13 +29,13 @@
     @include text-heading();
 
     @include themify($themes) {
-        font-size: themed('fontSize.mobile.hero');
+        @include rem(font-size, themed('fontSize.mobile.hero'));
         line-height: themed('lineHeight.hero');
     }
 
     @include bp-min-width($bp-desktop) {
         @include themify($themes) {
-            font-size: themed('fontSize.hero');
+            @include rem(font-size, themed('fontSize.hero'));
         }
     }
 }
@@ -44,12 +44,12 @@
     @include text-heading();
 
     @include themify($themes) {
-        font-size: themed('fontSize.mobile.h1');
+        @include rem(font-size, themed('fontSize.mobile.h1'));
     }
 
     @include bp-min-width($bp-desktop) {
         @include themify($themes) {
-            font-size: themed('fontSize.h1');
+            @include rem(font-size, themed('fontSize.h1'));
         }
     }
 }
@@ -58,12 +58,12 @@
     @include text-heading();
 
     @include themify($themes) {
-        font-size: themed('fontSize.mobile.h2');
+        @include rem(font-size, themed('fontSize.mobile.h2'));
     }
 
     @include bp-min-width($bp-desktop) {
         @include themify($themes) {
-            font-size: themed('fontSize.h2');
+            @include rem(font-size, themed('fontSize.h2'));
         }
     }
 }
@@ -72,12 +72,12 @@
     @include text-heading();
 
     @include themify($themes) {
-        font-size: themed('fontSize.mobile.h3');
+        @include rem(font-size, themed('fontSize.mobile.h3'));
     }
 
     @include bp-min-width($bp-desktop) {
         @include themify($themes) {
-            font-size: themed('fontSize.h3');
+            @include rem(font-size, themed('fontSize.h3'));
         }
     }
 }
@@ -86,12 +86,12 @@
     @include text-heading();
 
     @include themify($themes) {
-        font-size: themed('fontSize.mobile.h4');
+        @include rem(font-size, themed('fontSize.mobile.h4'));
     }
 
     @include bp-min-width($bp-desktop) {
         @include themify($themes) {
-            font-size: themed('fontSize.h4');
+            @include rem(font-size, themed('fontSize.h4'));
         }
     }
 }
