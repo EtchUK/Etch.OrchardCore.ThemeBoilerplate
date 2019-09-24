@@ -13,7 +13,7 @@ blockquote {
 
     @include bp-min-width($bp-tablet) {
         @include themify($themes) {
-            font-size: themed('fontSize.blockquote');
+            @include rem(font-size, themed('fontSize.blockquote'));
         }
     }
 
