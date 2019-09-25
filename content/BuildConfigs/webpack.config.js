@@ -94,12 +94,17 @@ module.exports = {
                 path.join(process.cwd(), 'wwwroot/img'),
                 path.join(process.cwd(), 'wwwroot/js'),
                 path.join(process.cwd(), 'wwwroot/patterns'),
+                path.join(process.cwd(), 'wwwroot/Theme.png'),
             ],
         }),
         new MiniCssExtractPlugin({
             filename: '../css/styles.css',
         }),
         new CopyPlugin([
+            {
+                from: path.join(process.cwd(), 'Assets/Content/Theme.png'),
+                to: path.join(process.cwd(), 'wwwroot/Theme.png'),
+            },
             {
                 from: path.join(process.cwd(), 'Assets/Content'),
                 to: path.join(process.cwd(), 'wwwroot/content'),
