@@ -40,11 +40,11 @@ config.plugins.push(function() {
         var stats = statsData.toJson();
 
         if (!stats.errors.length) {
-            replaceInFile(stats.chunks, 'Views/Layout.liquid');
+            replaceInFile(stats.chunks, '../Views/Layout.liquid');
 
             replaceInFile(
                 stats.chunks,
-                'PatternLibrary/components/_preview.hbs'
+                '../PatternLibrary/components/_preview.hbs'
             );
         }
     });

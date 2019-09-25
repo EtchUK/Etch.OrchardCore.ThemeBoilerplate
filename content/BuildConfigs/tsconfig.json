@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
-        "outDir": "./wwwroot/js",
+        "outDir": "../wwwroot/js",
         "sourceMap": true,
         "strict": true,
         "noUnusedLocals": true,
@@ -11,7 +11,7 @@
         "jsx": "react",
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "typeRoots": ["types", "node_modules/@types"]
+        "typeRoots": ["types", "../node_modules/@types"]
     },
-    "include": ["./Assets/Scripts/**/*"]
+    "include": ["../Assets/Scripts/**/*"]
 }
