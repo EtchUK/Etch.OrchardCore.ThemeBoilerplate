@@ -20,23 +20,23 @@ fractal.set('project.title', 'ETCH Play - Boilerplate Pattern Library');
  */
 fractal.components.set(
     'path',
-    path.join(__dirname, 'PatternLibrary/components')
+    path.join(__dirname, '../PatternLibrary/components')
 );
 
 /*
  * Tell Fractal where to look for documentation pages.
  */
-fractal.docs.set('path', path.join(__dirname, 'PatternLibrary/docs'));
+fractal.docs.set('path', path.join(__dirname, '../PatternLibrary/docs'));
 
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
  */
-fractal.web.set('static.path', path.join(__dirname, 'wwwroot'));
+fractal.web.set('static.path', path.join(__dirname, '../wwwroot'));
 
 /*
  * Tell Fractal where to export HTML pattern library.
  */
-fractal.web.set('builder.dest', path.join(__dirname, 'PatternLibrary/dist'));
+fractal.web.set('builder.dest', path.join(__dirname, '../PatternLibrary/dist'));
 
 /**
  * Configure theme.

@@ -7,11 +7,11 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        scripts: './Assets/Scripts/index.ts',
-        styles: './Assets/Styles/index.scss',
+        scripts: path.join(process.cwd(), 'Assets/Scripts/index.ts'),
+        styles: path.join(process.cwd(), 'Assets/Styles/index.scss'),
     },
     output: {
-        path: path.resolve(__dirname, 'wwwroot/js'),
+        path: path.join(process.cwd(), 'wwwroot/js'),
         filename: '[name].js',
     },
     module: {
@@ -21,7 +21,13 @@ module.exports = {
                 test: /(\.ts(x?)$)/,
                 exclude: /node_modules/,
                 loader: 'tslint-loader',
-                options: { emitErrors: true },
+                options: {
+                    configFile: path.join(
+                        process.cwd(),
+                        'BuildConfigs/tslint.json'
+                    ),
+                    emitErrors: true,
+                },
             },
             {
                 test: /(\.ts(x?)$)/,
@@ -44,6 +50,12 @@ module.exports = {
                     },
                     {
                         loader: 'ts-loader',
+                        options: {
+                            configFile: path.join(
+                                process.cwd(),
+                                'BuildConfigs/tsconfig.json'
+                            ),
+                        },
                     },
                 ],
             },
