@@ -126,65 +126,77 @@
                     "Name": "Page",
                     "DisplayName": "Page",
                     "Settings": {
-                        "Creatable": "True",
-                        "Draftable": "True",
-                        "Versionable": "True",
-                        "Listable": "True",
-                        "Securable": "True",
-                        "Stereotype": null
+                        "ContentTypeSettings": {
+                            "Creatable": true,
+                            "Listable": true,
+                            "Draftable": true,
+                            "Versionable": true,
+                            "Securable": true
+                        },
+                        "FullTextAspectSettings": {}
                     },
                     "ContentTypePartDefinitionRecords": [
                         {
                             "PartName": "Page",
                             "Name": "Page",
                             "Settings": {
-                                "Position": "2"
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
                             }
                         },
                         {
                             "PartName": "AutoroutePart",
                             "Name": "AutoroutePart",
                             "Settings": {
-                                "DisplayName": null,
-                                "Description": null,
-                                "Editor": null,
-                                "Pattern": "{{ ContentItem | display_text | slugify }}",
-                                "AllowCustomPath": "True",
-                                "AllowUpdatePath": "False",
-                                "ShowHomepageOption": "False",
-                                "ContentIndexSettings": {},
-                                "Position": "1"
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                },
+                                "AutoroutePartSettings": {
+                                    "AllowCustomPath": true,
+                                    "Pattern": "{{ ContentItem | display_text | slugify }}",
+                                    "AllowUpdatePath": false,
+                                    "ShowHomepageOption": false
+                                },
+                                "ContentIndexSettings": {}
                             }
                         },
                         {
                             "PartName": "TitlePart",
                             "Name": "TitlePart",
                             "Settings": {
-                                "Position": "0"
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
                             }
                         },
                         {
                             "PartName": "BagPart",
                             "Name": "Content",
                             "Settings": {
-                                "DisplayName": "Content",
-                                "Description": "Collection of elements making up content of the page.",
-                                "Editor": null,
-                                "ContainedContentTypes": [
-                                    "Hero",
-                                    "Html",
-                                    "Section"
-                                ],
-                                "DisplayType": "Detail",
                                 "ContentIndexSettings": {},
-                                "Position": "3"
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Content",
+                                    "Description": "Collection of elements making up content of the page.",
+                                    "Position": "3"
+                                },
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Hero",
+                                        "Html",
+                                        "Section"
+                                    ],
+                                    "DisplayType": "Detail"
+                                }
                             }
                         },
                         {
                             "PartName": "MetaTagsPart",
                             "Name": "MetaTagsPart",
                             "Settings": {
-                                "Position": "4"
+                                "ContentTypePartSettings": {
+                                    "Position": "4"
+                                }
                             }
                         }
                     ]
@@ -193,72 +205,86 @@
                     "Name": "Homepage",
                     "DisplayName": "Homepage",
                     "Settings": {
-                        "Creatable": "True",
-                        "Draftable": "True",
-                        "Versionable": "True",
-                        "Listable": "True",
-                        "Securable": "True",
-                        "Stereotype": null
+                        "ContentTypeSettings": {
+                            "Creatable": true,
+                            "Listable": true,
+                            "Draftable": true,
+                            "Versionable": true,
+                            "Securable": true
+                        },
+                        "FullTextAspectSettings": {}
                     },
                     "ContentTypePartDefinitionRecords": [
                         {
                             "PartName": "Homepage",
                             "Name": "Homepage",
                             "Settings": {
-                                "Position": "2"
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
                             }
                         },
                         {
                             "PartName": "AutoroutePart",
                             "Name": "AutoroutePart",
                             "Settings": {
-                                "DisplayName": null,
-                                "Description": null,
-                                "Editor": null,
-                                "Pattern": "{{ ContentItem | display_text | slugify }}",
-                                "AllowCustomPath": "True",
-                                "AllowUpdatePath": "False",
-                                "ShowHomepageOption": "True",
-                                "ContentIndexSettings": {},
-                                "Position": "1"
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                },
+                                "AutoroutePartSettings": {
+                                    "AllowCustomPath": true,
+                                    "Pattern": "{{ ContentItem | display_text | slugify }}",
+                                    "AllowUpdatePath": false,
+                                    "ShowHomepageOption": true
+                                },
+                                "ContentIndexSettings": {}
                             }
                         },
                         {
                             "PartName": "CommonPart",
                             "Name": "CommonPart",
                             "Settings": {
-                                "Position": "4"
+                                "ContentTypePartSettings": {
+                                    "Position": "4"
+                                }
                             }
                         },
                         {
                             "PartName": "TitlePart",
                             "Name": "TitlePart",
                             "Settings": {
-                                "Position": "0"
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
                             }
                         },
                         {
                             "PartName": "BagPart",
                             "Name": "Content",
                             "Settings": {
-                                "DisplayName": "Content",
-                                "Description": "Collection of elements making up content of the homepage.",
-                                "Editor": null,
-                                "ContainedContentTypes": [
-                                    "Hero",
-                                    "Html",
-                                    "Section"
-                                ],
-                                "DisplayType": "Detail",
-                                "ContentIndexSettings": {},
-                                "Position": "3"
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Content",
+                                    "Description": "Collection of elements making up content of the homepage.",
+                                    "Position": "3"
+                                },
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Hero",
+                                        "Html",
+                                        "Section"
+                                    ],
+                                    "DisplayType": "Detail"
+                                },
+                                "ContentIndexSettings": {}
                             }
                         },
                         {
                             "PartName": "MetaTagsPart",
                             "Name": "MetaTagsPart",
                             "Settings": {
-                                "Position": "5"
+                                "ContentTypePartSettings": {
+                                    "Position": "5"
+                                }
                             }
                         }
                     ]
@@ -267,19 +293,23 @@
                     "Name": "ContentMenuItem",
                     "DisplayName": "Content Menu Item",
                     "Settings": {
-                        "Creatable": "False",
-                        "Draftable": "False",
-                        "Versionable": "True",
-                        "Listable": "False",
-                        "Securable": "False",
-                        "Stereotype": "MenuItem"
+                        "ContentTypeSettings": {
+                            "Creatable": false,
+                            "Draftable": false,
+                            "Versionable": true,
+                            "Listable": false,
+                            "Securable": false,
+                            "Stereotype": "MenuItem"
+                        }
                     },
                     "ContentTypePartDefinitionRecords": [
                         {
                             "PartName": "ContentMenuItem",
                             "Name": "ContentMenuItem",
                             "Settings": {
-                                "Position": "0"
+                                "ContentTypeSettings": {
+                                    "Position": "0"
+                                }
                             }
                         }
                     ]
@@ -294,21 +324,18 @@
                             "FieldName": "ContentPickerField",
                             "Name": "LinkTo",
                             "Settings": {
-                                "DisplayName": "Link To",
-                                "Editor": null,
-                                "DisplayMode": null,
-                                "Hint": "Choose content item that is displayed when user selects link.",
-                                "Required": true,
-                                "Multiple": false,
-                                "DisplayedContentTypes": ["Homepage", "Page"],
-                                "ContentIndexSettings": {
-                                    "Included": false,
-                                    "Stored": false,
-                                    "Analyzed": false,
-                                    "Sanitized": false,
-                                    "Tokenized": false,
-                                    "Template": null
-                                }
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Link To"
+                                },
+                                "ContentPickerFieldSettings": {
+                                    "Hint": "Choose content item that is displayed when user selects link.",
+                                    "Required": true,
+                                    "DisplayedContentTypes": [
+                                        "Homepage",
+                                        "Page"
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
                             }
                         }
                     ]
