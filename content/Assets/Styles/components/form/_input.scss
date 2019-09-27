@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #FORM/INPUT
+   ========================================================================== */
+
+.input {
+    display: block;
+    @include rem(padding, $spacing-small 0);
+    width: 100%;
+    
+    background-color: transparent;
+    outline: none;
+    text-indent: 0;
+
+    @include themify($themes) {
+        border: $form-border-size solid themed('color.text');
+    }
+
+    &--underlined {
+        @include themify($themes) {
+            border-bottom: $form-border-size solid themed('color.text');
+        }
+    }
+}
