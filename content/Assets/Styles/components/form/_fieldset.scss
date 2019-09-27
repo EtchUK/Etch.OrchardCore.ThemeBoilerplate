@@ -1,0 +1,18 @@
+/* ==========================================================================
+   #FORM/FIELDSET
+   ========================================================================== */
+
+.fieldset {
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+
+    &__legend {
+        @include rem(margin-bottom, $spacing-default);
+    }
+
+        &__heading {
+            margin-bottom: 0;
+        }
+}
