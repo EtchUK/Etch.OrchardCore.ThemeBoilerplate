@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #HINT
+   ========================================================================== */
+
+/* Used primarily for forms and providing further context to a fieldset */
+
+.hint {
+    display: block;
+    @include rem(margin-bottom, $spacing-default);
+
+    @include themify($themes) {
+        color: themed('color.hint');
+    }
+}
