@@ -4,4 +4,5 @@
 
 label {
     display: block;
+    @include rem(margin-bottom, $spacing-small);
 }

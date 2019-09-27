@@ -10,15 +10,7 @@
     }
 }
 
-.field__label {
-    @include themify($themes) {
-        @include rem(font-size, themed('fontSize.small'));
-    }
 
-    width: 100%;
-
-    display: block;
-}
 
 /**
  * 1. Overriding InputPart is tricky, this way we don't have to
