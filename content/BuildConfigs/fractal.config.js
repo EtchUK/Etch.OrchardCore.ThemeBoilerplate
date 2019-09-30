@@ -20,8 +20,16 @@ fractal.set('project.title', 'ETCH Play - Boilerplate Pattern Library');
  */
 fractal.components.set(
     'path',
-    path.join(__dirname, '../PatternLibrary/components')
+    path.join(__dirname, '../PatternLibrary/patterns')
 );
+
+fractal.components.set(
+    'label', 'patterns'
+)
+
+fractal.components.set(
+    'title', 'Patterns'
+)
 
 /*
  * Tell Fractal where to look for documentation pages.
