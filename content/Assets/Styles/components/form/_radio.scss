@@ -1,0 +1,90 @@
+/* ==========================================================================
+   #FORM/RADIO
+   ========================================================================== */
+
+.radios {
+    display: block;
+
+    &__item {
+        display: inline-block;
+        @include rem(margin-right, $spacing-default);
+        position: relative;
+    }
+
+        &__input {
+            height: $form-radio-height;
+            left: 0;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            width: $form-radio-width;
+            z-index: $z-index-default;
+            
+            cursor: pointer;
+            opacity: 0;
+
+            /* Make check icon visible */
+            &:checked + .radios__label:after {
+                opacity: 1;
+            }
+
+            /* Change radio border colour when checked */
+            &:checked + .radios__label:before {
+                @include themify($themes) {
+                    border-color: themed('color.text');
+                }
+            }
+            
+            /* Show focus colour */
+            &:focus + .radios__label::before {           
+                @include focus-form-element;
+            }
+        }
+
+        &__label {
+            display: inline-block;
+            margin-bottom: 0;
+            padding-left: $form-radio-label-padding-left;
+
+            cursor: pointer;
+            touch-action: manipulation;
+            
+            @include themify($themes) {
+                font-family: themed('fontFamily.default');
+                font-size: themed('fontSize.default');
+                font-weight: themed('fontWeight.default');
+            }
+
+            &:before {
+                box-sizing: border-box;
+                content: "";
+                height: $form-radio-height;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: $form-radio-width;
+
+                background: transparent;
+                @include themify($themes) {
+                    border: $form-border-size solid themed('color.hint');
+                }
+                border-radius: 50%;
+            }
+
+            &:after {
+                content: "";
+                height: 0;
+                left: $form-radio-label-after-x-pos;
+                position: absolute;
+                top: $form-radio-label-after-y-pos;
+                width: 0;
+
+                background: transparent;
+                @include themify($themes) {
+                    border: $form-radio-label-after-border-width solid themed('color.text');
+                }
+                border-radius: 50%;
+                opacity: 0;
+            }
+        }
+}
