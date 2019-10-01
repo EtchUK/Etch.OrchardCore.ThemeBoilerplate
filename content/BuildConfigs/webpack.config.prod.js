@@ -35,8 +35,8 @@ function replaceInFile(chunks, file) {
 
 // Plugin to replace non-cache busted versions of
 // JS and CSS outputs with their cache busted versions
-config.plugins.push(function() {
-    this.plugin('done', function(statsData) {
+config.plugins.push(function () {
+    this.plugin('done', function (statsData) {
         var stats = statsData.toJson();
 
         if (!stats.errors.length) {
@@ -44,7 +44,7 @@ config.plugins.push(function() {
 
             replaceInFile(
                 stats.chunks,
-                '../PatternLibrary/components/_preview.hbs'
+                '../PatternLibrary/patterns/_preview.hbs'
             );
         }
     });
