@@ -1,46 +1,25 @@
-<form class="form form--centered form--overlap-bottom" action="#" method="POST">
+<form class="form" action="#" method="POST" style="max-width: 60%;">
     <div class="form-group">
         <ul class="list list--horizontal-spaced">
             <li>
-                <div class="form-group">
-                    <label for="Email">Email</label>
-                    <input id="Email" name="Email" type="email" class="input">
-                </div>
+                {{render '@text'}}
             </li>
             <li>
-                <div class="form-group">
-                    <label for="Firstname">First name</label>
-                    <input id="Firstname" name="Firstname" type="text" class="input">
-                </div>
-            </li>
-            <li>
-                <div class="form-group">
-                    <label for="Lastname">Last name</label>
-                    <input id="Lastname" name="Lastname" type="text" class="input">
-                </div>
+                {{render '@text'}}
             </li>
         </ul>
 
-        <div class="form-group">
-            <label class="field__label" for="Lastname">Bio</label>
-            <textarea id="Bio" name="Bio" class="form-control"></textarea>
-        </div>
+        {{render '@text'}}
 
-        <div class="form-group">
-            <label class="field__label" for="Lastname">Category</label>
-            <select id="Category" name="Category" class="form-control">
-                <option value="">- Please select category -</option>
-                <option value="A">Category A</option>
-                <option value="B">Category B</option>
-                <option value="C">Category C</option>
-            </select>
-        </div>
+        {{render '@textarea'}}
 
-        <div class="validation-summary-valid" data-valmsg-summary="true">
-            <ul>
-                <li style="display:none"></li>
-            </ul>
-        </div>
+        {{render '@select'}}
+
+        {{render '@radio'}}
+
+        {{render '@checkbox'}}
+
+        {{render '@file-upload'}}
 
         <button id="SignUp" name="SignUp" type="submit" class="btn btn--primary">Sign me up</button>
     </div>
