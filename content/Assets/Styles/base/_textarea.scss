@@ -5,13 +5,18 @@
 textarea {
     display: block;
     @include rem(min-height, 12rem);
+    @include rem(padding, $form-element-padding-vertical $form-element-padding-horizontal);
     width: 100%;
 
     @include themify($themes) {
-        border: 1px solid themed('color.text');
+        border: $form-border-size solid themed('color.hint');
 
         .has-error & {
-            border: 1px solid themed('color.validationError');
+            border: $form-border-size solid themed('color.validationError');
         }
+    }
+
+    &:focus {
+        @include focus-form-element;
     }
 }
