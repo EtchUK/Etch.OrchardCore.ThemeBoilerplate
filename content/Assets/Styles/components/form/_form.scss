@@ -12,15 +12,3 @@
         margin: 0 auto;
     }
 }
-
-/**
- * 1. This is calculated as half of the button line height, vertical
- *    padding and border. Extra size is needed on the translate for 
- *    the button of the form to nicely intersect the middle of the button.
- */
-.form--overlap-bottom {
-    button[type="submit"], input[type="submit"] {
-        margin-top: -$form-overlap-size; /* 1 */
-        transform: translateY($form-overlap-size + $form-overlap-size-extra-translate);
-    }
-}
