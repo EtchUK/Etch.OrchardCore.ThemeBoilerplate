@@ -5,4 +5,6 @@
 label {
     display: block;
     @include rem(margin-bottom, $spacing-small);
+
+    @include text-h3;
 }
