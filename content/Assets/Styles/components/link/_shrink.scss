@@ -1,0 +1,50 @@
+/* ==========================================================================
+   #LINK/SHRINK
+   ========================================================================== */
+
+.link--shrink {
+    &-center, &-ltr, &-rtl {
+        position: relative;
+
+        text-decoration: none;
+
+        &:before {
+            bottom: 0;
+            content: "";
+            height: $link-line-height;
+            position: absolute;
+            width: 100%;
+
+            @include themify($themes) {
+                background-color: themed('color.brandPrimary');
+            }
+            
+            transition: width $link-transition-duration ease-in-out;
+        }
+
+        &:hover {
+            &:before {
+                width: 0;
+            }
+        }
+    }
+
+    &-center {
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &-ltr {
+        &:before {
+            right: 0;
+        }
+    }
+
+    &-rtl {
+        &:before {
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+/* ==========================================================================
+   #LINK/SLIDE
+   ========================================================================== */
+
+.link--slide {
+    &-bottom, &-center, &-top {
+        position: relative;
+
+        text-decoration: none;
+
+        &:before {
+            content: "";
+            height: $link-line-height;
+            left: 0;
+            position: absolute;
+            width: 100%;
+
+            @include themify($themes) {
+                background-color: themed('color.brandPrimary');
+            }
+            
+            opacity: 0;
+            transition: opacity $link-transition-duration, transform $link-transition-duration;
+            
+        }
+
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-bottom {
+        &:before {
+            top: 100%;
+            transform: translateY(10px);
+        }
+
+        &:hover {
+            &:before {
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    &-center {
+        &:before {
+            top: 100%;
+            transform: translateY(0px);
+        }
+
+        &:hover {
+            &:before {
+                transform: translateY(-10px);
+            }
+        }
+    }
+
+    &-top {
+
+        &:before {
+            bottom: 100%;
+            transform: translateY(10px);
+        }
+
+        &:hover {
+            &:before {
+                transform: translateY(0);
+            }
+        }
+    }
+}
