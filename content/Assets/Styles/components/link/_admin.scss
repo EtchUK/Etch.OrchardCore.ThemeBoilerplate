@@ -1,0 +1,28 @@
+/* ==========================================================================
+   #LINK/ADMIN
+   ========================================================================== */
+
+.link--admin {
+    bottom: 0;
+    @include rem(padding-bottom, $spacing-small);
+    @include rem(padding-left, $spacing-default);
+    @include rem(padding-right, $spacing-default);
+    @include rem(padding-top, $spacing-small);
+    position: fixed;
+    right: 0;
+    z-index: $z-index-front;
+
+    @include themify($themes) {
+        background-color: themed('color.brandPrimary');
+        color: themed('color.white');
+    }
+
+    border-bottom: 0;
+    text-decoration: none;
+
+    &:hover {
+        @include themify($themes) {
+            background-color: lighten(themed('color.brandPrimary'), 30%);
+        }
+    }
+}
