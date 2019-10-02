@@ -1,10 +1,9 @@
 /* ==========================================================================
-   #TRUMPS
+   #DISPLAY
    ========================================================================== */
 
-@import "alignment";
-@import "background";
-@import "display";
-@import "hidden";
-@import "spacing";
-@import "text";
+.display { 
+    &--none { display: none; }
+    &--block { display: block; }
+    &--inline-block { display: inline-block; }
+}
