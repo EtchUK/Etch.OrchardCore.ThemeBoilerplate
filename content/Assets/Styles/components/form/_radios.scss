@@ -44,7 +44,7 @@
         &__label {
             display: inline-block;
             margin-bottom: 0;
-            padding-left: $form-radio-label-padding-left;
+            @include rem(padding-left, $form-radio-label-padding-left);
 
             cursor: pointer;
             touch-action: manipulation;
