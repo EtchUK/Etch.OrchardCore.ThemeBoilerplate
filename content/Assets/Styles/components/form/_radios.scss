@@ -1,42 +1,42 @@
 /* ==========================================================================
-   #FORM/CHECKBOX
+   #FORM/RADIOS
    ========================================================================== */
 
-.checkboxes {
+.radios {
     display: block;
 
     &__item {
-        display: block;
-        @include rem(margin-bottom, $spacing-default);
+        display: inline-block;
+        @include rem(margin-right, $spacing-default);
         position: relative;
     }
 
         &__input {
-            height: $form-checkbox-height;
+            height: $form-radio-height;
             left: 0;
             margin: 0;
             position: absolute;
             top: 0;
-            width: $form-checkbox-width;
+            width: $form-radio-width;
             z-index: $z-index-default;
             
             cursor: pointer;
             opacity: 0;
 
             /* Make check icon visible */
-            &:checked + .checkboxes__label:after {
+            &:checked + .radios__label:after {
                 opacity: 1;
             }
 
-            /* Change checkbox border colour when checked */
-            &:checked + .checkboxes__label:before {
+            /* Change radio border colour when checked */
+            &:checked + .radios__label:before {
                 @include themify($themes) {
                     border-color: themed('color.text');
                 }
             }
             
             /* Show focus colour */
-            &:focus + .checkboxes__label::before {           
+            &:focus + .radios__label::before {           
                 @include focus-form-element;
             }
         }
@@ -44,11 +44,11 @@
         &__label {
             display: inline-block;
             margin-bottom: 0;
-            padding-left: $form-checkbox-label-padding-left;
+            padding-left: $form-radio-label-padding-left;
 
             cursor: pointer;
             touch-action: manipulation;
-
+            
             @include themify($themes) {
                 font-family: themed('fontFamily.default');
                 font-size: themed('fontSize.default');
@@ -58,31 +58,32 @@
             &:before {
                 box-sizing: border-box;
                 content: "";
-                height: $form-checkbox-height;
+                height: $form-radio-height;
                 left: 0;
                 position: absolute;
                 top: 0;
-                width: $form-checkbox-width;
+                width: $form-radio-width;
 
                 background: transparent;
                 @include themify($themes) {
                     border: $form-border-size solid themed('color.hint');
                 }
+                border-radius: 50%;
             }
 
             &:after {
                 content: "";
-                height: $form-checkbox-label-after-height;
-                left: $form-checkbox-label-after-x-pos;
+                height: 0;
+                left: $form-radio-label-after-x-pos;
                 position: absolute;
-                top: $form-checkbox-label-after-y-pos;
-                width: $form-checkbox-label-after-width;
+                top: $form-radio-label-after-y-pos;
+                width: 0;
 
                 background: transparent;
-                border: solid;
-                border-width: $form-checkbox-label-after-border-width;
-                border-top-color: transparent;
-                transform: rotate(-45deg);
+                @include themify($themes) {
+                    border: $form-radio-label-after-border-width solid themed('color.text');
+                }
+                border-radius: 50%;
                 opacity: 0;
             }
         }
