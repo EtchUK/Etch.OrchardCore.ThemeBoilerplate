@@ -15,6 +15,14 @@
     outline: none;
 }
 
+.btn:disabled {
+    @include themify($themes) {
+        background-color: themed('color.buttonDisabled');
+        border: $button-border-size solid themed('color.buttonDisabled');
+        color: themed('color.text');
+    }
+}
+
 .btn--primary,
 .btn--primary:link,
 .btn--primary:visited {
