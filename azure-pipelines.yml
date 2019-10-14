@@ -5,17 +5,15 @@ variables:
   BuildConfiguration: 'Release'
 
 steps:
-- task: DotNetCoreCLI@2
+- task: CmdLine@2
   displayName: 'Install template'
   inputs:
-    command: 'custom'
-    custom: 'new -i ./'
+    script: 'dotnet new -i ./'
 
-- task: DotNetCoreCLI@2
+- task: CmdLine@2
   displayName: 'Create new theme via template'
   inputs:
-    command: 'custom'
-    custom: 'new orchardcore-themeboilerplate -n Etch.OrchardCore.DefaultTheme -o "$(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme" -au "Etch UK Ltd." -d "Default boilerplate theme." -t "Default Theme" -w "https://etchuk.com"'
+    script: 'dotnet new orchardcore-themeboilerplate -n Etch.OrchardCore.DefaultTheme -o "$(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme" -au "Etch UK Ltd." -d "Default boilerplate theme." -t "Default Theme" -w "https://etchuk.com"'
     
 - task: DotNetCoreCLI@2
   displayName: 'Build Theme'
