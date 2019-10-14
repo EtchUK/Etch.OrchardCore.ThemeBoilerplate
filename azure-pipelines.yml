@@ -5,11 +5,6 @@ variables:
   BuildConfiguration: 'Release'
 
 steps:
-- task: tmarkovski.projectversionasvariable.versionintovariable.projectversionasvariable@1
-  displayName: 'Get Project Version as variables from theme boilerplate'
-  inputs:
-    path: Etch.OrchardCore.ThemeBoilerplate.nuspec
-
 - task: DotNetCoreCLI@2
   displayName: 'Install template'
   inputs:
