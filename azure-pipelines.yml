@@ -1,0 +1,43 @@
+pool:
+  vmImage: 'windows-2019'
+
+variables:
+  BuildConfiguration: 'Release'
+
+steps:
+- task: tmarkovski.projectversionasvariable.versionintovariable.projectversionasvariable@1
+  displayName: 'Get Project Version as variables from theme boilerplate'
+  inputs:
+    path: Etch.OrchardCore.ThemeBoilerplate.nuspec
+
+- task: DotNetCoreCLI@2
+  displayName: 'Install template'
+  inputs:
+    command: 'custom'
+    custom: 'new -i ./'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Create new theme via template'
+  inputs:
+    command: 'custom'
+    custom: 'new orchardcore-themeboilerplate -n Etch.OrchardCore.DefaultTheme -o "$(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme" -au "Etch UK Ltd." -d "Default boilerplate theme." -t "Default Theme" -w "https://etchuk.com"'
+    
+- task: DotNetCoreCLI@2
+  displayName: 'Build Theme'
+  inputs:
+    workingDirectory: $(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme
+    arguments: '-c $(BuildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet pack'
+  inputs:
+    command: pack
+    workingDirectory: $(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme
+    outputDir: $(Build.ArtifactStagingDirectory)/drop
+    versioningScheme: byEnvVar
+    versionEnvVar: 'VERSION_MAJORMINORPATCH'
+
+- task: PublishPipelineArtifact@0
+  displayName: 'Publish Pipeline Artifact'
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)/drop'
