@@ -15,7 +15,6 @@
         {
             "name": "Feature",
             "enable": [
-                "Your.OrchardCore.Site",
                 "OrchardCore.Liquid",
                 "OrchardCore.Settings",
                 "OrchardCore.Contents",
