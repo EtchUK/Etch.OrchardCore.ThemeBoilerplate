@@ -21,14 +21,11 @@ steps:
     workingDirectory: $(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme
     arguments: '-c $(BuildConfiguration)'
 
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet pack'
+- task: CmdLine@2
+  displayName: 'Package Theme'
   inputs:
-    command: pack
+    script: 'dotnet pack -c $(BuildConfiguration) -o $(Build.ArtifactStagingDirectory)/drop'
     workingDirectory: $(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme
-    outputDir: $(Build.ArtifactStagingDirectory)/drop
-    versioningScheme: byEnvVar
-    versionEnvVar: 'VERSION_MAJORMINORPATCH'
 
 - task: PublishPipelineArtifact@0
   displayName: 'Publish Pipeline Artifact'
