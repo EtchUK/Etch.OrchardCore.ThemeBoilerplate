@@ -24,7 +24,7 @@ steps:
 - task: CmdLine@2
   displayName: 'Package Theme'
   inputs:
-    script: 'dotnet pack -c $(BuildConfiguration) -o $(Build.ArtifactStagingDirectory)/drop'
+    script: 'dotnet pack -c $(BuildConfiguration) -o $(Build.ArtifactStagingDirectory)/drop --no-build'
     workingDirectory: $(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme
 
 - task: PublishPipelineArtifact@0
