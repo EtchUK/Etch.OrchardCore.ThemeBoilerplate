@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #TABLE/HEAD-LIGHT
+   ========================================================================== */
+
+.table--head-light {
+    thead {
+        tr {
+            @include themify($themes) {
+                background-color: themed('color.tableRowLight');
+            }
+        }
+    }
+}

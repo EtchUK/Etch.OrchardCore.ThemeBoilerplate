@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #TABLE/HOVER
+   ========================================================================== */
+
+.table--hover {
+    tbody {
+        tr {
+            &:hover {
+                @include themify($themes) {
+                    background-color: themed('color.tableRowLight');
+                }
+            }
+        }
+    }
+}
