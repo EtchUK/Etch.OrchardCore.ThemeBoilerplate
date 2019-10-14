@@ -1,0 +1,44 @@
+{
+    "title": "Table",
+    "context": {
+        "tableModifier": ""
+	},
+  "variants": [
+    {
+      "name": "bordered",
+      "context": {
+        "tableModifier": "table--bordered"
+      }
+    },
+    {
+      "name": "borderless",
+      "context": {
+        "tableModifier": "table--borderless"
+      }
+    },
+    {
+      "name": "head-dark",
+      "context": {
+        "tableModifier": "table--head-dark"
+      }
+    },
+    {
+      "name": "head-light",
+      "context": {
+        "tableModifier": "table--head-light"
+      }
+    },
+    {
+      "name": "hover",
+      "context": {
+        "tableModifier": "table--hover"
+      }
+    },
+    {
+      "name": "striped",
+      "context": {
+        "tableModifier": "table--striped"
+      }
+    }
+  ]
+}

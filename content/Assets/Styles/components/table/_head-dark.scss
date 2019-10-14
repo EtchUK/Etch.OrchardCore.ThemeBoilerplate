@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #TABLE/HEAD-DARK
+   ========================================================================== */
+
+.table--head-dark {
+    thead {
+        tr {
+            @include themify($themes) {
+                background-color: themed('color.tableRowDark');
+                color: themed('color.white');
+            }
+        }
+    }
+}

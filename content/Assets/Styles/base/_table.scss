@@ -34,14 +34,6 @@ table {
             display: table-row;
             margin-bottom: 0;
         }
-
-        &:nth-child(even) {
-            @include bp-min-width($bp-tablet) {
-                @include themify($themes) {
-                    background-color: themed('color.tableRowHighlight');
-                }
-            }
-        }
     }
 
     th,
@@ -78,18 +70,6 @@ table {
 
             @include bp-min-width($bp-tablet) {
                 display: none;
-            }
-        }
-
-        &:nth-child(even) {
-            @include themify($themes) {
-                background-color: themed('color.tableRowHighlight');
-            }
-
-            @include bp-min-width($bp-tablet) {
-                @include themify($themes) {
-                    background-color: transparent;
-                }
             }
         }
     }
