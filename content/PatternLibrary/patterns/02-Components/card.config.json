@@ -1,0 +1,19 @@
+{
+    "title": "Card",
+    "context": {
+        "cardModifier": "",
+        "cardMedia": "<img src=\"/content/PatternLibrary/choir-group-placeholder.jpg\" alt=\"A description of the image\" />",
+        "cardBody": "<h2>Card heading</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed orci eget dui hendrerit rhoncus ut ut purus. Aenean sodales libero vitae enim vestibulum maximus.</p><p><a class=\"btn btn--secondary link--breakout\" href=\"#\">Learn more</a></p>"
+	},
+  "variants": [
+    {
+      "name": "news",
+      "context": {
+        "cardModifier": "card--news",
+        "cardTitle": "<h2 class=\"margin--bottom-small\">Card heading</h2>",
+        "cardMeta": "<p class=\"margin--bottom display--block\">15/10/2019</p>",
+        "cardBody": "<p><a class=\"btn btn--secondary link--breakout\" href=\"#\">Read more</a></p>"
+      }
+    }
+  ]
+}
