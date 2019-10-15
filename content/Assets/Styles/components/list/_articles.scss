@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #LIST/ARTICLES
+   ========================================================================== */
+
+.list--articles {
+    @include list-horizontal();
+
+    display: flex;
+    flex-wrap: wrap;
+    @include rem(margin-left, -$spacing-large);
+    @include rem(margin-right, -$spacing-large);
+
+    > li {
+        @include rem(margin-bottom, $list-articles-margin-bottom);
+        @include rem(padding-left, $spacing-large);
+        @include rem(padding-right, $spacing-large);
+        width: 100%;
+
+        @include bp-min-width($bp-tablet-small) {
+            max-width: 50%;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            max-width: 33.333%;
+        }
+    }
+}
