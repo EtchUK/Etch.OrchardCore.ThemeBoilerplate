@@ -1,0 +1,33 @@
+pool:
+  vmImage: 'windows-2019'
+
+variables:
+  BuildConfiguration: 'Release'
+
+steps:
+- task: CmdLine@2
+  displayName: 'Install template'
+  inputs:
+    script: 'dotnet new -i ./'
+
+- task: CmdLine@2
+  displayName: 'Create new theme via template'
+  inputs:
+    script: 'dotnet new orchardcore-themeboilerplate -n Etch.OrchardCore.DefaultTheme -o "$(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme" -au "Etch UK Ltd." -d "Default boilerplate theme." -t "Default Theme" -w "https://etchuk.com"'
+    
+- task: DotNetCoreCLI@2
+  displayName: 'Build theme'
+  inputs:
+    workingDirectory: $(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme
+    arguments: '-c $(BuildConfiguration)'
+
+- task: CmdLine@2
+  displayName: 'Package theme'
+  inputs:
+    script: 'dotnet pack -c $(BuildConfiguration) -o $(Build.ArtifactStagingDirectory)/drop --no-build'
+    workingDirectory: $(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme
+
+- task: PublishPipelineArtifact@0
+  displayName: 'Publish pipeline artifact'
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)/drop'
