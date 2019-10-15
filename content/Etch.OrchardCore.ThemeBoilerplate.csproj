@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <Version>0.0.1-rc1</Version>
+    <Version>0.5.0-rc1</Version>
     <PackageId>Etch.OrchardCore.ThemeBoilerplate</PackageId>
     <Title>Boilerplate Theme</Title>
     <Authors>Etch UK</Authors>
