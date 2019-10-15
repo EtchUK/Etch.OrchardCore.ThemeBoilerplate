@@ -6,8 +6,5 @@
     @include list-reset();
 
     display: flex;
-
-    > .first {
-        @include rem(margin-right, $spacing-default);
-    }
+    justify-content: space-between;
 }
