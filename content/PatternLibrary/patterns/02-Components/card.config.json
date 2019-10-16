@@ -12,7 +12,7 @@
         "cardModifier": "card--news",
         "cardTitle": "<h2 class=\"margin--bottom-small\">Card heading</h2>",
         "cardMeta": "<p class=\"margin--bottom display--block\">15/10/2019</p>",
-        "cardBody": "<p><a class=\"btn btn--secondary link--breakout\" href=\"#\">Read more</a></p>"
+        "cardBody": "<p><a class=\"btn btn--secondary link--breakout\" href=\"/components/preview/article\">Read more</a></p>"
       }
     }
   ]
