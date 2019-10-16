@@ -7,10 +7,14 @@
  */
 
 .grid {
+    @include list-reset();
+    
     display: flex;
     flex-wrap: wrap;
     @include rem(margin-left, -$content-gutter-small);
     @include rem(margin-right, -$content-gutter-small);
+
+    list-style: none;
 
     > .grid__item {
         @include rem(margin-bottom, $grid-default-item-margin-bottom);
