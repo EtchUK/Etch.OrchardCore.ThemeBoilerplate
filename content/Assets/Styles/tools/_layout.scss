@@ -1,12 +1,12 @@
 /* ==========================================================================
-   #GRID
+   #LAYOUT
    ========================================================================== */
 
 /**
- * Mixins & functions for working with grid.
+ * Mixins & functions for working with layout.
  */
 
-@mixin grid-master() {
+@mixin layout-master() {
     display: grid;
     grid-gap: $grid-gap-master-small;
     grid-template-columns: repeat(6, 1fr);
