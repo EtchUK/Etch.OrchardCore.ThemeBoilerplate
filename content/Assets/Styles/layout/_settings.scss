@@ -1,6 +1,6 @@
 /* ==========================================================================
-   #LAYOUT
+   #LAYOUT/SETTINGS
    ========================================================================== */
 
-@import "settings";
-@import "default";
+$layout-gap-master: $content-gutter;
+$layout-gap-master-small: $content-gutter-small;

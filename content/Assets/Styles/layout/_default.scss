@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #LAYOUT/DEFAULT
+   ========================================================================== */
+
+.layout,
+.layout--inline {
+    width: 100%;
+
+    @supports (display: grid) {
+        display: grid;
+    }
+}
+
+.layout--inline {
+    @supports (display: grid) {
+        display: inline-grid;
+    }
+}
+
+.layout--master {
+    @include layout-master();
+
+    .layout__item {
+        width: 100%;
+
+        @supports (display: grid) {
+            grid-column: span 6;
+            width: auto;
+
+            @include bp-min-width($bp-tablet) {
+                grid-column: span 12;
+            }
+        }
+    }   
+}
