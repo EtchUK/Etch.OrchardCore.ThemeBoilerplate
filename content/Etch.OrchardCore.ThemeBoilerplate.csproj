@@ -19,7 +19,26 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove=".gitignore" />
+    <Compile Remove="BuildConfigs\**" />
+    <EmbeddedResource Remove="BuildConfigs\**" />
+    <None Remove="BuildConfigs\**" />
+    <PackageAssetFiles Remove="BuildConfigs\**" />
+    <Folder Include="BuildConfigs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="PatternLibrary\**" />
+    <EmbeddedResource Remove="PatternLibrary\**" />
+    <None Remove="PatternLibrary\**" />
+    <PackageAssetFiles Remove="PatternLibrary\**" />
+    <Folder Include="PatternLibrary\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove=".gitignore"  />
+    <EmbeddedResource Remove="package.json" />
+    <EmbeddedResource Remove="package-lock.json" />
+    <EmbeddedResource Remove="prettierrc" />
     <EmbeddedResource Remove="README.md" />
   </ItemGroup>
 
