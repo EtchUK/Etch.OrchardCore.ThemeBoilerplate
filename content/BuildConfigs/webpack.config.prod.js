@@ -5,11 +5,9 @@ const config = require('./webpack.config');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-config.output.filename = '[name].[chunkhash].js';
-
 config.plugins.push(
     new MiniCssExtractPlugin({
-        filename: '../css/[name].[chunkhash].css',
+        filename: '../css/[name].css',
     })
 );
 
@@ -22,11 +20,11 @@ function replaceInFile(chunks, file) {
     for (var i = 0; i < chunks.length; i++) {
         contentsOutput = contentsOutput.replace(
             new RegExp('/' + chunks[i].names[0] + '.js', 'gi'),
-            '/' + chunks[i].names[0] + '.' + chunks[i].hash + '.js'
+            '/' + chunks[i].names[0] + '.js?v=' + chunks[i].hash
         );
         contentsOutput = contentsOutput.replace(
             new RegExp('/' + chunks[i].names[0] + '.css', 'gi'),
-            '/' + chunks[i].names[0] + '.' + chunks[i].hash + '.css'
+            '/' + chunks[i].names[0] + '.css?v=' + chunks[i].hash
         );
     }
 
