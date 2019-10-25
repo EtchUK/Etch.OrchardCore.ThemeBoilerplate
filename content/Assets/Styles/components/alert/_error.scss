@@ -1,0 +1,10 @@
+/* ==========================================================================
+   #ALERT/ERROR
+   ========================================================================== */
+
+.alert--error {
+    @include themify($themes) {
+        background-color: themed('color.alert.errorBackground');
+        color: themed('color.alert.errorText');
+    }
+}

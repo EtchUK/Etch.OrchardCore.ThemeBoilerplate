@@ -10,6 +10,13 @@ $themes: map-merge(
     (
         'default': (
             'color': (
+                'alert': (
+                    'defaultBackground': #dadada,
+                    'errorBackground': #e49393,
+                    'errorText': #310606,
+                    'successBackground': #93e493,
+                    'successText': #093109,
+                ),
                 'backgroundDark': #070f26,
                 'black': #070f26,
                 'border': #ccc,
