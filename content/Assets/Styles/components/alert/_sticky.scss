@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #ALERT/STICKY
+   ========================================================================== */
+
+/**
+ * 1. This determines the distance from the top of the parent element that the
+ *    alert becomes sticky.
+ */
+.alert--sticky {
+    position: sticky;
+    top: $alert-pos-y; /* 1. */
+    z-index: $z-index-front;
+}
