@@ -11,6 +11,12 @@
     @include rem(max-width, $content-width-wide);
     width: 100%;
 
+    /* Maintain horizontal padding */
+    @include bp-min-width($content-width-wide + ($content-gutter * 2)) {
+        @include rem(padding-left, $content-gutter-small);
+        @include rem(padding-right, $content-gutter-small);
+    }
+
     @include themify($themes) {
         background-color: themed('color.alert.defaultBackground');
     }
