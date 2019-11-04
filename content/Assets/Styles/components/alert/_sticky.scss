@@ -9,5 +9,5 @@
 .alert--sticky {
     position: sticky;
     top: $alert-pos-y; /* 1. */
-    z-index: $z-index-front;
+    z-index: $z-index-default;
 }
