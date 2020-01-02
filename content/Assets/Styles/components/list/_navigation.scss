@@ -20,7 +20,9 @@
         padding-bottom: $list-navigation-anchor-padding-bottom;
         padding-top: $list-navigation-anchor-padding-top;
 
-        color: $color-black;
+        @include themify($themes) {
+            color: themed('color.black');
+        }
         text-decoration: none;
 
         @include bp-min-width($bp-tablet) {
@@ -35,10 +37,14 @@
     }
 
     > li {
-        border-bottom: 1px solid darken($color-grey-1, 5%);
+        @include themify($themes) {
+            border-bottom: $list-navigation-border-width solid darken(themed('color.greyLight'), 5%);
+        }
 
         @include bp-min-width($bp-tablet) {
-            border-bottom: 0;
+            @include themify($themes) {
+                border-bottom: 0;
+            }
         }
 
         &:last-child {
@@ -76,12 +82,16 @@
         .sub-list {
             display: none;
 
-            background-color: darken($color-grey-1, 5%);
+            @include themify($themes) {
+                background-color: darken(themed('color.greyLight'), 5%);
+            }
 
             @include bp-min-width($bp-tablet) {
                 position: absolute;
 
-                background-color: $color-white;
+                @include themify($themes) {
+                    background-color: themed('color.white');
+                }
             }
 
             a {

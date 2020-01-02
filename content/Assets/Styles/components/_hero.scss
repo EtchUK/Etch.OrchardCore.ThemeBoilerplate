@@ -16,15 +16,18 @@
     }
 
         &__title {
-        
-            color: $color-white;
+            @include themify($themes) {
+                color: themed('color.white');
+            }
 
             @include text-hero();
 
             span {
                 padding: 0 $hero-title-padding-horizontal $hero-title-padding-bottom;
 
-                background-color: rgba($color-black, $hero-title-span-opacity);
+                @include themify($themes) {
+                    background-color: rgba(themed('color.greyLight'), $hero-title-span-opacity);
+                }
                 box-decoration-break: clone;
             }
         }

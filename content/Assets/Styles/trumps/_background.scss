@@ -5,9 +5,29 @@
  */
 
 .bg--color {
-    &-primary { background-color: $color-brand-primary; }
-    &-secondary { background-color: $color-brand-secondary; }
-    &-black { background-color: $color-black; }
-    &-grey { background-color: $color-grey-1; }
-    &-white { background-color: $color-white; }
+    &-primary {
+        @include themify($themes) {
+            background-color: themed('color.brandPrimary');
+        }
+    }
+    &-secondary {
+        @include themify($themes) {
+            background-color: themed('color.brandSecondary');
+        }
+    }
+    &-black {
+        @include themify($themes) {
+            background-color: themed('color.black');
+        }
+    }
+    &-grey {
+        @include themify($themes) {
+            background-color: themed('color.grey');
+        }
+    }
+    &-white {
+        @include themify($themes) {
+            background-color: themed('color.white');
+        }
+    }
 }
