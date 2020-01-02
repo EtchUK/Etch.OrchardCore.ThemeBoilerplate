@@ -9,7 +9,9 @@
         margin-bottom: 0;
         @include rem(padding, $spacing-default);
         
-        background-color: $color-grey-1;
+        @include themify($themes) {
+            background-color: themed('color.greyLight');
+        }
         text-align: center;
 
         span {

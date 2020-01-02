@@ -7,9 +7,9 @@
     @include themify($themes) {
         background-color: themed('color.brandPrimary');
         border: $button-border-size solid themed('color.brandPrimary');
+        color: themed('color.white');
     }
-
-    color: $color-white;
+    
     cursor: pointer;
     text-decoration: none;
     outline: none;
@@ -29,9 +29,8 @@
     @include themify($themes) {
         background-color: themed('color.brandPrimary');
         border: $button-border-size solid themed('color.brandPrimary');
+        color: themed('color.white');
     }
-
-    color: $color-white;
 }
 
 .btn--secondary,
@@ -40,7 +39,6 @@
     @include themify($themes) {
         background-color: themed('color.brandSecondary');
         border: $button-border-size solid themed('color.brandSecondary');
+        color: themed('color.white');
     }
-
-    color: $color-white;
 }

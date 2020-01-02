@@ -68,10 +68,13 @@
             height: 100vh;
             z-index: $z-index-default;
 
-            background-color: $color-grey-1;
             border-top-width: $mobile-nav-padding-top;
-            border-top-color: $color-white;
             border-top-style: solid;
+
+            @include themify($themes) {
+                background-color: themed('color.greyLight');
+                border-top-color: themed('color.white');
+            }
 
             @include bp-min-width($bp-tablet) {
                 display: block;
@@ -80,7 +83,9 @@
                 height: auto;
                 width: auto;
 
-                background-color: transparent;
+                @include themify($themes) {
+                    background-color: transparent;
+                }
                 border-top: 0;
             }
         }
