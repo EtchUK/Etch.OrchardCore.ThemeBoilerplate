@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #SELECTION
+   ========================================================================== */
+
+/**
+ * Styling for highlighted text.
+ */
+
+::selection {
+    @include themify($themes) {
+        background-color: themed('color.selection');
+    }
+}
