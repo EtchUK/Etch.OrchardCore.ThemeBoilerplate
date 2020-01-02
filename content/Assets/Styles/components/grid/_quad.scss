@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #GRID/QUAD
+   ========================================================================== */
+
+/**
+ * Creates a 4 column grid.
+ */
+
+.grid--quad {
+    > .grid__item {
+        @include bp-min-width($bp-tablet-small) {
+            max-width: 50%;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            max-width: 25%;
+        }
+    }
+}
