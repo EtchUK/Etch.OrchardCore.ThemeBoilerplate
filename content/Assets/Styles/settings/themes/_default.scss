@@ -11,10 +11,13 @@ $themes: map-merge(
         'default': (
             'color': (
                 'backgroundDark': #070f26,
+                'black': #070f26,
                 'border': #ccc,
                 'brandPrimary': #3ce854,
                 'brandSecondary': #070f26,
                 'buttonDisabled': #ccc,
+                'grey': #b5b5b5, 
+                'greyLight': #efefef,
                 'hint': #6d6d6d,
                 'selection': #3ce854,
                 'tableRowLight': #efefef,
