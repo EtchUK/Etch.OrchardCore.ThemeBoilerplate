@@ -1,0 +1,32 @@
+{
+    "title": "Grid",
+    "context": {
+        "gridModifier": ""
+	},
+  "variants": [
+    {
+      "name": "double",
+      "context": {
+        "gridModifier": "grid--double"
+      }
+    },
+    {
+      "name": "quad",
+      "context": {
+        "gridModifier": "grid--quad"
+      }
+    },
+    {
+      "name": "no gutter",
+      "context": {
+        "gridModifier": "grid--no-gutter"
+      }
+    },
+    {
+      "name": "no wrap",
+      "context": {
+        "gridModifier": "grid--no-wrap"
+      }
+    }
+  ]
+}
