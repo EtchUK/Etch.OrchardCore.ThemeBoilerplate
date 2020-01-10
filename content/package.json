@@ -20,6 +20,7 @@
         "@babel/preset-env": "^7.4.2",
         "@frctl/fractal": "^1.1.7",
         "@frctl/mandelbrot": "^1.2.1",
+        "@types/rellax": "^1.7.2",
         "autoprefixer": "^9.6.4",
         "babel-loader": "^8.0.5",
         "clean-webpack-plugin": "^2.0.1",
@@ -47,7 +48,8 @@
         "lg-video.js": "^1.0.0",
         "lightgallery.js": "^1.1.3",
         "normalize.css": "^8.0.1",
-        "picturefill": "^3.0.3"
+        "picturefill": "^3.0.3",
+        "rellax": "^1.10.0"
     },
     "fractal": {
         "main": "./BuildConfigs/fractal.config.js"
