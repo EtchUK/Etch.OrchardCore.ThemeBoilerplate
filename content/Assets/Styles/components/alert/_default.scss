@@ -6,9 +6,9 @@
     @include content-gutter;
     margin-left: auto;
     margin-right: auto;
+    @include rem(max-width, $content-width-wide);
     @include rem(padding-bottom, $alert-message-padding-bottom);
     @include rem(padding-top, $alert-message-padding-top);
-    @include rem(max-width, $content-width-wide);
     width: 100%;
 
     /* Maintain horizontal padding */
