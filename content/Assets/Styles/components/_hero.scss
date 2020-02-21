@@ -36,7 +36,12 @@
             @include rem(margin-left, $hero-title-padding-horizontal);
         }
 
+    /**
+     * 1. Vertically center the embed if it is taller than .hero__media
+     */
     &__media {
+        align-items: center; /* 1. */
+        display: flex;
         max-height: $hero-media-max-height;
         min-width: $hero-media-min-width;
         position: relative;
@@ -51,6 +56,11 @@
 
         .embed {
             margin-bottom: 0;
+            width: 100%;
+
+            &__source {
+                margin-bottom: 0;
+            }
         }
     }
 }
