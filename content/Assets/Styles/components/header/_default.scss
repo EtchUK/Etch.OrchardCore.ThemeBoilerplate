@@ -75,7 +75,7 @@
             height: 100vh;
             z-index: $z-index-default;
 
-            border-top-width: $mobile-nav-padding-top;
+            border-top-width: $header-nav-padding-top;
             border-top-style: solid;
 
             @include themify($themes) {
