@@ -25,6 +25,11 @@
             background-color: themed('color.grey');
         }
     }
+    &-grey-light {
+        @include themify($themes) {
+            background-color: themed('color.greyLight');
+        }
+    }
     &-white {
         @include themify($themes) {
             background-color: themed('color.white');
