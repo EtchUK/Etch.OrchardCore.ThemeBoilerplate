@@ -1,0 +1,70 @@
+/* ==========================================================================
+   #FOOTER
+   ========================================================================== */
+
+.footer {
+    &__content {
+        @include content-gutter();
+        display: flex;
+        flex-flow: column-reverse wrap;
+        margin: 0 auto;
+        @include rem(max-width, $content-width-wide);
+        @include rem(padding-bottom, $footer-content-padding-bottom);
+        @include rem(padding-top, $footer-content-padding-top);
+        position: relative;
+
+        @include bp-min-width($bp-tablet) {
+            align-items: flex-start;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+    }
+
+        &__meta {
+            @include bp-min-width($bp-tablet) {
+                @include rem(margin-top, $content-gutter-small);
+            }
+        }
+
+            &__logo {
+                display: block;
+                @include rem(margin-bottom, $content-gutter-small);
+                margin-right: auto;
+                @include rem(max-width, $footer-logo-width-mobile);
+                position: relative;
+                width: 100%;
+                z-index: $z-index-front;
+
+                @include bp-min-width($bp-tablet) {
+                    @include rem(max-width, $footer-logo-width);
+                }
+
+                img {
+                    display: block;
+                }
+            }
+
+        nav,
+        &__nav {
+            @include rem(margin-bottom, $content-gutter);
+            width: 100%;
+            z-index: $z-index-default;
+
+                @include themify($themes) {
+                    background-color: transparent;
+                }
+                border-top: 0;
+
+            @include bp-min-width($bp-tablet) {
+                margin-bottom: 0;
+                width: auto;
+            }
+        }
+}
+
+.is-nav-visible {
+    nav,
+    .header__nav {
+        display: block;
+    }
+}
