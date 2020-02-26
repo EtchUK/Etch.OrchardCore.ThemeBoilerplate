@@ -110,7 +110,7 @@
             }
 
             @include bp-min-width($bp-desktop-small) {
-                @include rem(margin-right, $content-gutter);
+                @include rem(margin-right, $list-navigation-li-margin-right-desktop-small);
             }
 
             &:last-child {
