@@ -10,9 +10,9 @@
       "name": "news",
       "context": {
         "cardModifier": "card--news",
-        "cardTitle": "<h3 class=\"margin--bottom-small\">Card heading</h3>",
+        "cardTitle": "<a class=\"link--breakout\" href=\"/components/preview/article\"><h3 class=\"margin--bottom-small\">Card heading</h3></a>",
         "cardMeta": "<p class=\"margin--bottom display--block\">15/10/2019</p>",
-        "cardBody": "<p><a class=\"btn btn--secondary link--breakout\" href=\"/components/preview/article\">Read more</a></p>"
+        "cardBody": ""
       }
     }
   ]
