@@ -2,12 +2,7 @@
    #CARD
    ========================================================================== */
 
-.card {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+@import "settings";
+@import "default";
 
-    &__body {
-        @include rem(padding-top, $content-gutter-small);
-    }
-}
+@import "news";
