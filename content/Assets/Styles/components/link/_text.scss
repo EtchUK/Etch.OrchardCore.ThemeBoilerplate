@@ -1,13 +1,9 @@
 /* ==========================================================================
-   #LINK
+   #LINK/TEXT
    ========================================================================== */
 
-@import "settings";
-
-@import "breakout";
-@import "cta";
-@import "grow";
-@import "plain";
-@import "shrink";
-@import "slide";
-@import "text";
+.link--text {
+    @include themify($themes) {
+        color: themed('color.text');
+    }
+}
