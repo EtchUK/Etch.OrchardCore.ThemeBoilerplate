@@ -97,6 +97,15 @@
 }
 
 @mixin text-blockquote() {
-    @include text-default();
-    font-style: italic;
+    @include text-heading();
+    font-style: normal;
+    @include themify($themes) {
+        @include rem(font-size, themed('fontSize.mobile.blockquote'));
+    }
+
+    @include bp-min-width($bp-tablet) {
+        @include themify($themes) {
+            @include rem(font-size, themed('fontSize.blockquote'));
+        }
+    }
 }
