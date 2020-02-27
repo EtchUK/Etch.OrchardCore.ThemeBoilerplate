@@ -40,4 +40,15 @@
             @include rem(margin-left, $content-gutter);
         }
     }
+    &-self {
+        &--center {
+            align-self: center;
+        }
+        &--end {
+            align-self: flex-end;
+        }
+        &--start {
+            align-self: flex-start;
+        }
+    }
 }
