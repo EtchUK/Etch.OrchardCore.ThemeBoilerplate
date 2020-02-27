@@ -2,7 +2,7 @@
     "title": "Card",
     "context": {
         "cardModifier": "",
-        "cardMedia": "<img src=\"/content/PatternLibrary/choir-group-placeholder.jpg\" alt=\"A description of the image\" />",
+        "cardMedia": "<img src=\"/content/PatternLibrary/unsplash-1444090542259-1024w.jpg\" alt=\"A description of the image\" />",
         "cardBody": "<h3>Card heading</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed orci eget dui hendrerit rhoncus ut ut purus. Aenean sodales libero vitae enim vestibulum maximus.</p><p><a class=\"btn btn--secondary link--breakout\" href=\"#\">Learn more</a></p>"
 	},
   "variants": [
