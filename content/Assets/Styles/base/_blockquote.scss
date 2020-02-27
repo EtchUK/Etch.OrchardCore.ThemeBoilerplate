@@ -5,20 +5,40 @@
  */
 
 blockquote {
+    @include rem(margin, 0 0 $spacing-default 0); 
     position: relative;
 
-    margin: 0 0 $spacing-default 0;
+    p {
+        @include text-blockquote();  
 
-    @include text-blockquote();   
-
-    @include bp-min-width($bp-tablet) {
         @include themify($themes) {
-            @include rem(font-size, themed('fontSize.blockquote'));
+            line-height: themed('lineHeight.heading');
+        }
+        hanging-punctuation: first;
+        text-indent: $blockquote-paragraph-text-indent;
+
+        &:last-of-type {
+            margin-bottom: 0;
         }
     }
 
-    p {
-        hanging-punctuation: first;
-        text-indent: -0.4em;
+    cite {
+        display: block;
+        @include rem(padding-top, $content-gutter);
+
+        @include themify($themes) {
+            color: themed('color.hint');
+        }
+        font-style: normal;
+
+        strong {
+            display: block;
+            @include rem(margin-bottom, $blockquote-cite-strong-margin-bottom);
+
+            @include themify($themes) {
+                color: themed('color.text');
+                @include rem(font-size, themed('fontSize.large'));
+            }
+        }
     }
 }

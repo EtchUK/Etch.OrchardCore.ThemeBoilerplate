@@ -41,18 +41,22 @@ $themes: map-merge(
                 'default': 1.6rem,
                 'defaultEM': 1.6em,
                 'small': 1.4rem,
+                'large': 1.8rem,
                 'hero': 7rem,
                 'h1': 6rem,
                 'h2': 4.8rem,
                 'h3': 3.2rem,
                 'h4': 2.4rem,
-                'blockquote': 2rem,
+                'blockquote': 2.4rem,
                 'mobile': (
+                    'small': 1.4rem,
+                    'large': 1.8rem,
                     'hero': 3.6rem,
                     'h1': 3.6rem,
                     'h2': 3.2rem,
                     'h3': 2.4rem,
-                    'h4': 1.8rem
+                    'h4': 1.8rem,
+                    'blockquote': 1.8rem
                 )
             ),
             'fontWeight': (
