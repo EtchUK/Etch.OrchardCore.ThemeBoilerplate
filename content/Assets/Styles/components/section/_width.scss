@@ -6,6 +6,8 @@
     &--full {
         .section__content {
             max-width: none;
+            padding-left: 0;
+            padding-right: 0;
         }
     }
     &--wide {
