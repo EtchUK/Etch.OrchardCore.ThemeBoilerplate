@@ -6,7 +6,7 @@
     "scripts": {
         "replace:patterns": "replace-in-file --configFile=./BuildConfigs/replace-config.js",
         "copy:patterns": "copyfiles -u 2 \"PatternLibrary/dist/**/*\" \"wwwroot/patterns\"",
-        "build": "npm install --no-audit && npm run bundle:prod && npm run build:patterns && npm run copy:patterns",
+        "build": "npm install --no-audit && npm run bundle:prod && npm run build:patterns && npm run replace:patterns && npm run copy:patterns",
         "build:patterns": "fractal build",
         "bundle:dev": "npm install && webpack --config ./BuildConfigs/webpack.config.dev.js -d",
         "bundle:prod": "webpack --config ./BuildConfigs/webpack.config.prod.js -p",
