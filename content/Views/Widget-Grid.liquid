@@ -1,0 +1,23 @@
+﻿{% assign cssClasses = "grid" %}
+{% assign width = Model.ContentItem.Content.Grid.Width.Text %}
+
+{% if width != null and width != 'default' %}
+    {% assign widthClass = ' align--' | append: width %}
+    {% assign cssClasses = widthClass | prepend: cssClasses %}
+{% endif %}
+
+{% if width == 'full' %}
+    {% assign cssClasses = ' padding--top-large' | prepend: cssClasses %}
+{% endif %}
+
+{% if Model.ContentItem.Content.Grid.Gutter.Value == false %}
+	{% assign cssClasses = ' grid--no-gutter' | prepend: cssClasses %}
+{% endif %}
+
+{% if Model.ContentItem.Content.Grid.Wrap.Value == false %}
+	{% assign cssClasses = ' grid--no-wrap' | prepend: cssClasses %}
+{% endif %}
+
+<div class="{{ cssClasses }}">
+	{{ Model.Content.Items | shape_render }}
+</div>
