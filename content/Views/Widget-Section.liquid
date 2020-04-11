@@ -1,6 +1,7 @@
 ﻿{% assign cssClasses = "section" %}
 {% assign alignment = Model.ContentItem.Content.Section.Alignment.Text %}
 {% assign backgroundColour = Model.ContentItem.Content.Section.BackgroundColour.Text %}
+{% assign contentWidth = Model.ContentItem.Content.Section.ContentWidth.Text %}
 
 {% if alignment != null and alignment != 'default' %}
     {% assign alignmentClass = ' section--' | append: alignment %}
@@ -10,6 +11,11 @@
 {% if backgroundColour != null and backgroundColour != 'default' %}
     {% assign backgroundColorClass = ' bg--color-' | append: backgroundColour %}
     {% assign cssClasses = backgroundColorClass | prepend: cssClasses %}
+{% endif %}
+
+{% if contentWidth != null and contentWidth != 'default' %}
+    {% assign contentWidthClass = ' section--' | append: contentWidth %}
+    {% assign cssClasses = contentWidthClass | prepend: cssClasses %}
 {% endif %}
 
 <section class="{{ cssClasses }}">

@@ -9,7 +9,7 @@
   "categories": [],
   "tags": [],
   "variables": {
-      "now": "[js: new Date().toISOString()]"
+    "now": "[js: new Date().toISOString()]"
   },
   "steps": [
     {
@@ -26,6 +26,8 @@
         "Etch.OrchardCore.Fields.ResponsiveMedia",
         "OrchardCore.ContentFields",
         "Etch.OrchardCore.SEO.MetaTags",
+        "Etch.OrchardCore.Blocks",
+        "Etch.OrchardCore.Blocks.EditorJS",
         "OrchardCore.Title",
         "OrchardCore.Widgets",
         "OrchardCore.Flows",
@@ -68,8 +70,6 @@
         "Etch.OrchardCore.ThemeBoilerplate"
       ],
       "disable": [
-        "Etch.OrchardCore.Blocks",
-        "Etch.OrchardCore.Blocks.EditorJS",
         "Etch.OrchardCore.ContextualEdit",
         "Etch.OrchardCore.Fields.Dictionary",
         "Etch.OrchardCore.Fields.Eventbrite",
@@ -206,6 +206,11 @@
           "DisplayName": "Link",
           "Settings": {
             "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
               "Stereotype": "Widget"
             },
             "FullTextAspectSettings": {}
@@ -268,13 +273,15 @@
                     "Card",
                     "Embed",
                     "Figure",
+                    "Grid",
                     "Heading",
                     "Html",
                     "Image",
                     "Link",
                     "OrderedList",
                     "Paragraph",
-                    "Text"
+                    "Text",
+                    "WYSIWYG"
                   ],
                   "DisplayType": "Detail"
                 },
@@ -371,6 +378,7 @@
                     "Card",
                     "Embed",
                     "Figure",
+                    "Grid",
                     "Heading",
                     "Html",
                     "Image",
@@ -378,7 +386,7 @@
                     "OrderedList",
                     "Paragraph",
                     "Text",
-                    "UnorderedList"
+                    "WYSIWYG"
                   ],
                   "DisplayType": "Detail"
                 },
@@ -450,6 +458,7 @@
                     "Card",
                     "Embed",
                     "Figure",
+                    "Grid",
                     "Heading",
                     "Html",
                     "Image",
@@ -457,7 +466,7 @@
                     "OrderedList",
                     "Paragraph",
                     "Text",
-                    "UnorderedList"
+                    "WYSIWYG"
                   ],
                   "DisplayType": "Detail"
                 },
@@ -984,6 +993,7 @@
                     "Card",
                     "Embed",
                     "Figure",
+                    "Grid",
                     "Heading",
                     "Html",
                     "Image",
@@ -991,7 +1001,7 @@
                     "OrderedList",
                     "Paragraph",
                     "Text",
-                    "UnorderedList"
+                    "WYSIWYG"
                   ],
                   "DisplayType": "Detail"
                 },
@@ -1043,6 +1053,7 @@
                     "Card",
                     "Embed",
                     "Figure",
+                    "Grid",
                     "Heading",
                     "Html",
                     "Image",
@@ -1050,7 +1061,7 @@
                     "OrderedList",
                     "Paragraph",
                     "Text",
-                    "UnorderedList"
+                    "WYSIWYG"
                   ],
                   "DisplayType": "Detail"
                 },
@@ -1097,6 +1108,115 @@
                     "Paragraph",
                     "Text",
                     "UnorderedList"
+                  ],
+                  "DisplayType": "Detail"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "WYSIWYG",
+          "DisplayName": "WYSIWYG",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "WYSIWYG",
+              "Name": "WYSIWYG",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Grid",
+          "DisplayName": "Grid",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Grid",
+              "Name": "Grid",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Items",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Items",
+                  "Description": "Items within the grid.",
+                  "Position": "1"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "GridItem"
+                  ],
+                  "DisplayType": "Detail"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "GridItem",
+          "DisplayName": "Grid Item",
+          "Settings": {
+            "ContentTypeSettings": {},
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "GridItem",
+              "Name": "GridItem",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Content",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Content",
+                  "Description": "Content displayed within grid item.",
+                  "Position": "1"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Blockquote",
+                    "Card",
+                    "Embed",
+                    "Figure",
+                    "Grid",
+                    "Heading",
+                    "Html",
+                    "Image",
+                    "Link",
+                    "OrderedList",
+                    "Paragraph",
+                    "Text",
+                    "WYSIWYG"
                   ],
                   "DisplayType": "Detail"
                 },
@@ -1278,6 +1398,35 @@
                   "DefaultValue": null
                 },
                 "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "ContentWidth",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Content Width",
+                  "Editor": "PredefinedList",
+                  "Position": "2"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Width of container for section content."
+                },
+                "ContentIndexSettings": {},
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "name": "Wide",
+                      "value": "wide"
+                    }
+                  ],
+                  "Editor": 1,
+                  "DefaultValue": "default"
+                }
               }
             }
           ]
@@ -1957,7 +2106,7 @@
                   "Breakpoints": "2560, 1920, 1440, 1280, 1024, 768, 375",
                   "Hint": "Background image for section.",
                   "Multiple": true,
-                  "FallbackData": "[]",
+                  "FallbackData": "",
                   "IsConfigured": true
                 },
                 "ContentIndexSettings": {}
@@ -1975,7 +2124,7 @@
               "Settings": {
                 "ContentPartFieldSettings": {
                   "DisplayName": "Media",
-                  "Position": "0"
+                  "Position": "1"
                 }
               }
             },
@@ -1985,12 +2134,45 @@
               "Settings": {
                 "ContentPartFieldSettings": {
                   "DisplayName": "Media Alternate Text",
-                  "Position": "1"
+                  "Position": "2"
                 },
                 "TextFieldSettings": {
                   "Hint": "Description of image for website visitors who are unable to see the image and tell the search engine crawlers about the image."
                 },
                 "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "BackgroundColour",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Background Colour",
+                  "Editor": "PredefinedList",
+                  "Position": "0"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Colour of section background."
+                },
+                "ContentIndexSettings": {},
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "name": "Black",
+                      "value": "black"
+                    },
+                    {
+                      "name": "Light Grey",
+                      "value": "grey-light"
+                    }
+                  ],
+                  "Editor": 1,
+                  "DefaultValue": "default"
+                }
               }
             }
           ]
@@ -2050,6 +2232,118 @@
               }
             }
           ]
+        },
+        {
+          "Name": "Page",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "BooleanField",
+              "Name": "DisplayTitle",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Display Title"
+                },
+                "BooleanFieldSettings": {
+                  "Hint": "If checked, the title will be rendered at top of the page.",
+                  "Label": "Display Title"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "WYSIWYG",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "BlockField",
+              "Name": "Content",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Content",
+                  "Editor": "EditorJS",
+                  "Position": "0"
+                },
+                "BlockFieldSettings": {
+                  "LinkableContentTypes": [
+                    "Homepage",
+                    "Page"
+                  ]
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Grid",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Width",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Width",
+                  "Editor": "PredefinedList"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Width of grid."
+                },
+                "ContentIndexSettings": {},
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "name": "Wide",
+                      "value": "wide"
+                    },
+                    {
+                      "name": "Full",
+                      "value": "full"
+                    }
+                  ],
+                  "Editor": 1,
+                  "DefaultValue": "default"
+                }
+              }
+            },
+            {
+              "FieldName": "BooleanField",
+              "Name": "Wrap",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Wrap"
+                },
+                "BooleanFieldSettings": {
+                  "Hint": "Whether items in the grid should wrap to next row.",
+                  "Label": "Wrap",
+                  "DefaultValue": true
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "BooleanField",
+              "Name": "Gutter",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Gutter"
+                },
+                "BooleanFieldSettings": {
+                  "Hint": "When checked there will be a gap between grid items.",
+                  "Label": "Gutter",
+                  "DefaultValue": true
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
         }
       ]
     },
@@ -2100,17 +2394,21 @@
         },
         {
           "ContentItemId": "4rdbsjtjx0492vwnrcne4z5gws",
-          "ContentItemVersionId": "4rth18kwmdehdxrz2ran0zfecz",
+          "ContentItemVersionId": "4gzv808zrv7pqxmxmpe4e9wfdn",
           "ContentType": "Page",
           "DisplayText": "About",
           "Latest": true,
           "Published": true,
-          "ModifiedUtc": "2020-04-11T18:50:07.4019852Z",
-          "PublishedUtc": "2020-04-11T18:50:07.4042271Z",
+          "ModifiedUtc": "2020-04-11T23:29:21.1724781Z",
+          "PublishedUtc": "2020-04-11T23:29:21.493462Z",
           "CreatedUtc": "2020-04-11T18:50:07.228Z",
           "Owner": "[js: parameters('AdminUsername')]",
           "Author": "[js: parameters('AdminUsername')]",
-          "Page": {},
+          "Page": {
+            "DisplayTitle": {
+              "Value": false
+            }
+          },
           "AutoroutePart": {
             "Path": "about",
             "SetHomepage": false
@@ -2121,166 +2419,1257 @@
           "Content": {
             "ContentItems": [
               {
-                "ContentItemId": "443c76sm5fxwdxg5v3qn5v4e5q",
+                "ContentItemId": "4197fecf2x26461m98hvenx3xh",
                 "ContentItemVersionId": null,
-                "ContentType": "Section",
-                "DisplayText": "Intro",
+                "ContentType": "SectionFeatured",
+                "DisplayText": "About Etch Play",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                "ModifiedUtc": "2020-04-11T23:29:21.1892807Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
                 "Author": "[js: parameters('AdminUsername')]",
-                "Section": {
-                  "BackgroundColour": {
-                    "Text": "default"
-                  },
-                  "Alignment": {
-                    "Text": "default"
+                "SectionFeatured": {
+                  "Background": {
+                    "Data": "[{\"sources\":[{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"}]}]",
+                    "HasData": true
                   }
                 },
-                "Children": {
+                "TitlePart": {
+                  "Title": "About Etch Play"
+                },
+                "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "4cpxsvkfhay8848jzdv562krmr",
+                      "ContentItemId": "40xh1jmpk84yw3n1ycznw87y4f",
                       "ContentItemVersionId": null,
-                      "ContentType": "Card",
-                      "DisplayText": "This is a heading (h2)",
+                      "ContentType": "Paragraph",
+                      "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                      "ModifiedUtc": "2020-04-11T23:29:21.1919092Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
                       "Author": "[js: parameters('AdminUsername')]",
-                      "Card": {
-                        "Image": {
-                          "Paths": []
+                      "Paragraph": {
+                        "Text": {
+                          "Text": "Explore and survive in an infinite procedurally generated universe"
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "4k4qxqv4hzs46wnqn75wyajrwy",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Link",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T23:29:21.1948456Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Link": {
+                        "Text": {
+                          "Text": "Discover more"
                         },
-                        "CTALabel": {
-                          "Text": "Learn more"
-                        },
-                        "CTAUrl": {
+                        "Url": {
                           "Text": "#"
                         },
-                        "ImageAlternateText": {
-                          "Text": null
+                        "OpenInNewWindow": {
+                          "Value": false
+                        },
+                        "Style": {
+                          "Text": "primary"
                         }
-                      },
-                      "TitlePart": {
-                        "Title": "This is a heading (h2)"
-                      },
-                      "Body": {
-                        "ContentItems": [
-                          {
-                            "ContentItemId": "4pk2n5z3btqb9yj6w2htjhvg5a",
-                            "ContentItemVersionId": null,
-                            "ContentType": "Paragraph",
-                            "DisplayText": null,
-                            "Latest": false,
-                            "Published": false,
-                            "ModifiedUtc": "2020-04-11T18:50:07.228Z",
-                            "PublishedUtc": null,
-                            "CreatedUtc": null,
-                            "Owner": null,
-                            "Author": "[js: parameters('AdminUsername')]",
-                            "Paragraph": {
-                              "Text": {
-                                "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed orci eget dui hendrerit rhoncus ut ut purus. Aenean sodales libero vitae enim vestibulum maximus."
-                              }
-                            }
-                          }
-                        ]
                       }
                     }
                   ]
-                },
-                "TitlePart": {
-                  "Title": "Intro"
                 }
               },
               {
-                "ContentItemId": "4h5nd51437cacx9y6nk367kanz",
+                "ContentItemId": "4qr5wef77ekee4nn7ag68jzjdy",
                 "ContentItemVersionId": null,
                 "ContentType": "Section",
-                "DisplayText": "Second",
+                "DisplayText": "Blurb",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                "ModifiedUtc": "2020-04-11T23:29:21.2037361Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
                 "Author": "[js: parameters('AdminUsername')]",
                 "Section": {
                   "BackgroundColour": {
-                    "Text": "grey"
+                    "Text": "default"
                   },
                   "Alignment": {
                     "Text": "default"
+                  },
+                  "ContentWidth": {
+                    "Text": "default"
                   }
                 },
-                "Children": {
+                "TitlePart": {
+                  "Title": "Blurb"
+                },
+                "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "4srv3p9xczxxswx92jhz5q4mwc",
+                      "ContentItemId": "4ca5dmaz2w8nb56vxz1gg9ejx8",
                       "ContentItemVersionId": null,
-                      "ContentType": "Card",
-                      "DisplayText": "This is a heading (h2)",
+                      "ContentType": "WYSIWYG",
+                      "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                      "ModifiedUtc": "2020-04-11T23:29:21.2069268Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
                       "Author": "[js: parameters('AdminUsername')]",
-                      "Card": {
-                        "Image": {
-                          "Paths": []
+                      "WYSIWYG": {
+                        "Content": {
+                          "Data": "{\"time\":1586647761097,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"We are a BAFTA-winning, independent game developer with a reputation for innovation in both storytelling and VR. We have released a number of successful titles and are best known for the critically acclaimed PS4 hit Until Dawn and the recently launched The Dark Pictures Anthology. The latter is a series of stand-alone, horror games for PS4, Xbox and PC. The first game is Man of Medan.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Founded in 2008, the studio is now home to over 150 talented individuals working across a range of storytelling titles. We've built a track record of high-end production backed up with delivery and reliability. We teamed up with ITN Productions and games trade body TIGA to create this video that explains more about us and how we work.\"}}],\"version\":\"2.15.0\"}",
+                          "Html": null
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "ContentItemId": "41jm8pr89608yvmjaksa4fs642",
+                "ContentItemVersionId": null,
+                "ContentType": "Section",
+                "DisplayText": "Features",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T23:29:21.2107054Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "Section": {
+                  "BackgroundColour": {
+                    "Text": "default"
+                  },
+                  "Alignment": {
+                    "Text": "default"
+                  },
+                  "ContentWidth": {
+                    "Text": "wide"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Features"
+                },
+                "Content": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "4ed234eezpp3hvpjsq2csvvvxe",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Grid",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T23:29:21.2166839Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Grid": {
+                        "Width": {
+                          "Text": "default"
                         },
-                        "CTALabel": {
-                          "Text": "Learn more"
+                        "Wrap": {
+                          "Value": true
                         },
-                        "CTAUrl": {
-                          "Text": "#"
-                        },
-                        "ImageAlternateText": {
-                          "Text": null
+                        "Gutter": {
+                          "Value": true
                         }
                       },
-                      "TitlePart": {
-                        "Title": "This is a heading (h2)"
-                      },
-                      "Body": {
+                      "Items": {
                         "ContentItems": [
                           {
-                            "ContentItemId": "4wnc4pjvta0jwzpe22gzvpd5cp",
+                            "ContentItemId": "4b4sx2qn4h48yvp0v6zet3cs44",
                             "ContentItemVersionId": null,
-                            "ContentType": "Paragraph",
+                            "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                            "ModifiedUtc": "2020-04-11T23:29:21.2218813Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
                             "Author": "[js: parameters('AdminUsername')]",
-                            "Paragraph": {
-                              "Text": {
-                                "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed orci eget dui hendrerit rhoncus ut ut purus. Aenean sodales libero vitae enim vestibulum maximus."
-                              }
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "49vkzxfgkhx5s6z6hwke0zafdh",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Heading",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2237474Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Heading": {
+                                    "Text": {
+                                      "Text": "Innovation"
+                                    },
+                                    "Level": {
+                                      "Text": "3"
+                                    }
+                                  }
+                                },
+                                {
+                                  "ContentItemId": "4w9gvcv0msbaavz0tzze5v1jcd",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Paragraph",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2272883Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Paragraph": {
+                                    "Text": {
+                                      "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien."
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "4qb5472e0wj0r1hy4vt2d3hwwh",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.2337506Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "44gvktvrebww02rks3h93267cz",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Heading",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2354617Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Heading": {
+                                    "Text": {
+                                      "Text": "Quality"
+                                    },
+                                    "Level": {
+                                      "Text": "3"
+                                    }
+                                  }
+                                },
+                                {
+                                  "ContentItemId": "478rf1damyw5hrwdvw5n1w42n5",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Paragraph",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2388547Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Paragraph": {
+                                    "Text": {
+                                      "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien."
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "4667sz79saxyqxtxgaq6x14pc1",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.2432543Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4s69q3fkrwxjfrxb5vc9h38n4z",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Heading",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2447919Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Heading": {
+                                    "Text": {
+                                      "Text": "Honesty"
+                                    },
+                                    "Level": {
+                                      "Text": "3"
+                                    }
+                                  }
+                                },
+                                {
+                                  "ContentItemId": "4jgdzaat4xpct5yq77e41pkkm8",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Paragraph",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2509243Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Paragraph": {
+                                    "Text": {
+                                      "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien."
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "ContentItemId": "4sq0m3tdyjgbe5bmb32180hg44",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Grid",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T23:29:21.2562125Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Grid": {
+                        "Width": {
+                          "Text": "default"
+                        },
+                        "Wrap": {
+                          "Value": true
+                        },
+                        "Gutter": {
+                          "Value": true
+                        }
+                      },
+                      "Items": {
+                        "ContentItems": [
+                          {
+                            "ContentItemId": "4212q7xmq4p27743h02wrax74v",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.2595765Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4v4z8gakryzdfxnaafcvhjbpxb",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Heading",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2613117Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Heading": {
+                                    "Text": {
+                                      "Text": "Innovation"
+                                    },
+                                    "Level": {
+                                      "Text": "3"
+                                    }
+                                  }
+                                },
+                                {
+                                  "ContentItemId": "4ffxrd5hpk376sgay2vv141cc5",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Paragraph",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2675071Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Paragraph": {
+                                    "Text": {
+                                      "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien."
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "49aadhwdmhmertejy77hetn5m7",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.2720496Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4a486v7are71s1bahqtqfxz3n5",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Heading",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2748434Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Heading": {
+                                    "Text": {
+                                      "Text": "Quality"
+                                    },
+                                    "Level": {
+                                      "Text": "3"
+                                    }
+                                  }
+                                },
+                                {
+                                  "ContentItemId": "4myjwc82yxhjk7s9h5g5hghg41",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Paragraph",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2787183Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Paragraph": {
+                                    "Text": {
+                                      "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien."
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "4zgmd8rnq3r5ayn0ev143kbkwp",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.2845119Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "47z39d27seazxrtje0sa0vftcf",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Heading",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2862386Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Heading": {
+                                    "Text": {
+                                      "Text": "Honesty"
+                                    },
+                                    "Level": {
+                                      "Text": "3"
+                                    }
+                                  }
+                                },
+                                {
+                                  "ContentItemId": "4wgpbkmbvk42v777c0jcwk6bcx",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Paragraph",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.2901161Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Paragraph": {
+                                    "Text": {
+                                      "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien."
+                                    }
+                                  }
+                                }
+                              ]
                             }
                           }
                         ]
                       }
                     }
                   ]
+                }
+              },
+              {
+                "ContentItemId": "4xtn4545dtb1j4pzs92kyt1fng",
+                "ContentItemVersionId": null,
+                "ContentType": "SectionMedia",
+                "DisplayText": "Section Title",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T23:29:21.2985488Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "SectionMedia": {
+                  "Media": {
+                    "Paths": [
+                      "Backgrounds/Default/unsplash-1444090542259-400w.jpg"
+                    ]
+                  },
+                  "MediaAlternateText": {
+                    "Text": "Description of image."
+                  },
+                  "BackgroundColour": {
+                    "Text": "black"
+                  }
                 },
                 "TitlePart": {
-                  "Title": "Second"
+                  "Title": "Section Title"
+                },
+                "Content": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "42qscws0gdnwjsat7ygkztnk5h",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Paragraph",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T23:29:21.3032554Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Paragraph": {
+                        "Text": {
+                          "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien, in fermentum mi lacus eu lorem. Nam libero risus, euismod eu gravida vel, ullamcorper vitae neque. In sollicitudin aliquet mattis. Donec at varius erat. Nunc nec egestas tortor. Praesent quis dapibus risus. Aliquam erat lorem, accumsan sed efficitur ut, venenatis et diam."
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "4p5mmwfq7a7ff1zaya7405evmb",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Link",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T23:29:21.3067153Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Link": {
+                        "Text": {
+                          "Text": "Learn more"
+                        },
+                        "Url": {
+                          "Text": "#"
+                        },
+                        "OpenInNewWindow": {
+                          "Value": false
+                        },
+                        "Style": {
+                          "Text": "default"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "ContentItemId": "4xt8yzg302xfp1q9zx9cdzn4ms",
+                "ContentItemVersionId": null,
+                "ContentType": "Section",
+                "DisplayText": "Meet the team",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T23:29:21.3125756Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "Section": {
+                  "BackgroundColour": {
+                    "Text": "default"
+                  },
+                  "Alignment": {
+                    "Text": "default"
+                  },
+                  "ContentWidth": {
+                    "Text": "default"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Meet the team"
+                },
+                "Content": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "4qh5dxa7n7hkmw25s4gbb1p844",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Heading",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T23:29:21.3184793Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Heading": {
+                        "Text": {
+                          "Text": "Meet the team"
+                        },
+                        "Level": {
+                          "Text": "2"
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "4sq8w6dt3vsha65vgrr0r12948",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Paragraph",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T23:29:21.3223362Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Paragraph": {
+                        "Text": {
+                          "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien, in fermentum mi lacus eu lorem."
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "4hvtysc9g9jzx38bdc3ap542mc",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Grid",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T23:29:21.3254276Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Grid": {
+                        "Width": {
+                          "Text": "full"
+                        },
+                        "Wrap": {
+                          "Value": false
+                        },
+                        "Gutter": {
+                          "Value": false
+                        }
+                      },
+                      "Items": {
+                        "ContentItems": [
+                          {
+                            "ContentItemId": "4n5x1z0xjw4a167ycqvzw1qmdz",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.3291043Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4qyh22h7j6dtc246kknxp3y544",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.3329793Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-1-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "49rc59fn6jgscx92zgg9742bmx",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.3730596Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "47hyay31yejsxy2c43fxfkvfxp",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.3751241Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-2-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "4pp7vyn1rejdp37jgvtf37634p",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.3819954Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4587vcf8hsn2561vs17k9427d3",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.3872178Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-3-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "4aq2bpbj52wrk6r1gca9fmb8w0",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.3932598Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4wqpd8dccjshas0vx09d2cx44t",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.3955844Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-4-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "4pdexqv6hmjgwx7sa10ef0sgm2",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.4030983Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4931hq0djfwem1jxzfmn2zpqmh",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.4055921Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-5-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "4cjhkkwx6fyte30n270fm5r9wf",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.4115272Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4ym8aja8gs8adywe4b8famzn4t",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.4156185Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-6-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "ContentItemId": "48km6sk7thxkbw513wxcqx1k4x",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Grid",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T23:29:21.4245019Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Grid": {
+                        "Width": {
+                          "Text": "full"
+                        },
+                        "Wrap": {
+                          "Value": false
+                        },
+                        "Gutter": {
+                          "Value": false
+                        }
+                      },
+                      "Items": {
+                        "ContentItems": [
+                          {
+                            "ContentItemId": "4ks4q5e6haz0c04z4eehr1214d",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.4287105Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4sr4hqtxhce1m7rgydycem5tcp",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.433062Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-7-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "4ef4rd1zmzg08ztncazn6h5pwy",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.4390401Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "45rn7ts2gex6c5bybv75w73sny",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.441109Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-8-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "43efbc77we0f8rs5dkjyrjc3c3",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.449261Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4ajpebdncp75q4eypz71dpmswb",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.4513612Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-9-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "42wswrrmq7qgt2mxcyv76919xn",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.4568091Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4hmjvabfvhzjz0tpzxjcdtnsdm",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.4589878Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-10-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "4qtkdnxcw87g03bnm430fk1fmf",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.4658785Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4egsjzbh6ywf1v0kzjt18bf8m4",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.4680583Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-11-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ContentItemId": "4pvjr4jrz9appz42mbq2m9xzxh",
+                            "ContentItemVersionId": null,
+                            "ContentType": "GridItem",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T23:29:21.4741542Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "GridItem": {},
+                            "Content": {
+                              "ContentItems": [
+                                {
+                                  "ContentItemId": "4hn66c39266y8vjg26nqe57acm",
+                                  "ContentItemVersionId": null,
+                                  "ContentType": "Image",
+                                  "DisplayText": null,
+                                  "Latest": false,
+                                  "Published": false,
+                                  "ModifiedUtc": "2020-04-11T23:29:21.4763556Z",
+                                  "PublishedUtc": null,
+                                  "CreatedUtc": null,
+                                  "Owner": null,
+                                  "Author": "[js: parameters('AdminUsername')]",
+                                  "Image": {
+                                    "Image": {
+                                      "Paths": [
+                                        "Team/team-placeholder-12-768w.jpg"
+                                      ]
+                                    },
+                                    "AlternateText": {
+                                      "Text": "A description of the image"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
                 }
               }
             ]
+          },
+          "MetaTagsPart": {
+            "Description": null,
+            "Images": [],
+            "Title": null
           }
         },
         {
@@ -2801,6 +4190,54 @@
           "TargetPath": "Logos/logo-play@1x.svg"
         },
         {
+          "SourcePath": "Team/team-placeholder-1-768w.jpg",
+          "TargetPath": "Team/team-placeholder-1-768w.jpg"
+        },
+        {
+          "SourcePath": "Team/team-placeholder-10-768w.jpg",
+          "TargetPath": "Team/team-placeholder-10-768w.jpg"
+        },
+        {
+          "SourcePath": "Team/team-placeholder-11-768w.jpg",
+          "TargetPath": "Team/team-placeholder-11-768w.jpg"
+        },
+        {
+          "SourcePath": "Team/team-placeholder-12-768w.jpg",
+          "TargetPath": "Team/team-placeholder-12-768w.jpg"
+        },
+        {
+          "SourcePath": "Team/team-placeholder-2-768w.jpg",
+          "TargetPath": "Team/team-placeholder-2-768w.jpg"
+        },
+        {
+          "SourcePath": "Team/team-placeholder-3-768w.jpg",
+          "TargetPath": "Team/team-placeholder-3-768w.jpg"
+        },
+        {
+          "SourcePath": "Team/team-placeholder-4-768w.jpg",
+          "TargetPath": "Team/team-placeholder-4-768w.jpg"
+        },
+        {
+          "SourcePath": "Team/team-placeholder-5-768w.jpg",
+          "TargetPath": "Team/team-placeholder-5-768w.jpg"
+        },
+        {
+          "SourcePath": "Team/team-placeholder-6-768w.jpg",
+          "TargetPath": "Team/team-placeholder-6-768w.jpg"
+        },
+        {
+          "SourcePath": "Team/team-placeholder-7-768w.jpg",
+          "TargetPath": "Team/team-placeholder-7-768w.jpg"
+        },
+        {
+          "SourcePath": "Team/team-placeholder-8-768w.jpg",
+          "TargetPath": "Team/team-placeholder-8-768w.jpg"
+        },
+        {
+          "SourcePath": "Team/team-placeholder-9-768w.jpg",
+          "TargetPath": "Team/team-placeholder-9-768w.jpg"
+        },
+        {
           "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1024w.jpg",
           "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1024w.jpg"
         },
@@ -2835,6 +4272,99 @@
         {
           "SourcePath": "Backgrounds/Default/unsplash-1444090542259-768w.jpg",
           "TargetPath": "Backgrounds/Default/unsplash-1444090542259-768w.jpg"
+        }
+      ]
+    },
+    {
+      "name": "deployment",
+      "Plans": [
+        {
+          "Name": "Site Export",
+          "Steps": [
+            {
+              "Type": "AllFeaturesDeploymentStep",
+              "Step": {
+                "Id": "a5ef1f436e5f47658faf85d2fa8f6080",
+                "Name": "AllFeatures"
+              }
+            },
+            {
+              "Type": "ThemesDeploymentStep",
+              "Step": {
+                "Id": "25a1bbb07c7b4188ba8487ccb63a0b2b",
+                "Name": "Themes"
+              }
+            },
+            {
+              "Type": "ContentDefinitionDeploymentStep",
+              "Step": {
+                "IncludeAll": true,
+                "ContentTypes": [],
+                "ContentParts": [],
+                "Id": "091a2443940e4a128ffde26410c59e54",
+                "Name": "ContentDefinition"
+              }
+            },
+            {
+              "Type": "AllContentDeploymentStep",
+              "Step": {
+                "Id": "e5e1c4fc44b14f3c85022bb6e11951f7",
+                "Name": "AllContent"
+              }
+            },
+            {
+              "Type": "AllLayersDeploymentStep",
+              "Step": {
+                "Id": "7571147b48624cbc9b89df93f30ff3bf",
+                "Name": "AllLayers"
+              }
+            },
+            {
+              "Type": "LuceneSettingsDeploymentStep",
+              "Step": {
+                "Id": "a0086bb7a55b4830820fd5b41a7c2ac0",
+                "Name": "LuceneSettings"
+              }
+            },
+            {
+              "Type": "AllQueriesDeploymentStep",
+              "Step": {
+                "Id": "cf314958154f42cba56630f5243b2805",
+                "Name": "AllQueries"
+              }
+            },
+            {
+              "Type": "AllWorkflowTypeDeploymentStep",
+              "Step": {
+                "Id": "f308f590bf454b629a263879feb77902",
+                "Name": "AllWorkflowType"
+              }
+            },
+            {
+              "Type": "AllTemplatesDeploymentStep",
+              "Step": {
+                "Id": "fbd650e5d2074872bf9f1d1e803d1a2d",
+                "Name": "AllTemplates"
+              }
+            },
+            {
+              "Type": "AdminMenuDeploymentStep",
+              "Step": {
+                "Id": "da66a6597d354bdb8da08af3a5cd0021",
+                "Name": "AdminMenu"
+              }
+            },
+            {
+              "Type": "MediaDeploymentStep",
+              "Step": {
+                "IncludeAll": true,
+                "FilePaths": [],
+                "DirectoryPaths": [],
+                "Id": "b7ab411fdc32495688e36b2275b7f49a",
+                "Name": "Media"
+              }
+            }
+          ]
         }
       ]
     }

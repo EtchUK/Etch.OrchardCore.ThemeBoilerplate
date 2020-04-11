@@ -1,0 +1,5 @@
+﻿{% if Model.ContentItem.Content.Page.DisplayTitle.Value %}
+    {{ Model.Header | shape_render }}
+{% endif %}
+
+{{ Model.Content | shape_render }}
