@@ -1,4 +1,14 @@
 {% assign cssClasses = "section section--wide" %}
+{% assign backgroundColour = Model.ContentItem.Content.SectionMedia.BackgroundColour.Text %}
+
+{% if backgroundColour != null and backgroundColour != 'default' %}
+    {% assign backgroundColorClass = ' bg--color-' | append: backgroundColour %}
+    {% assign cssClasses = backgroundColorClass | prepend: cssClasses %}
+{% endif %}
+
+{% if backgroundColour == 'black' %}
+    {% assign cssClasses = ' color--white' | prepend: cssClasses %}
+{% endif %}
 
 <section class="{{ cssClasses }}">
     <div class="section__content">

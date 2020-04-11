@@ -1,14 +1,27 @@
 {
-    "TitlePart": [
-        {
-            "contentType": ["Homepage"],
-            "place": "-"
-        }
-    ],
-    "ResponsiveMediaField": [
-        {
-            "contentType": ["SectionFeatured"],
-            "place": "Background"
-        }
-    ]
+  "BooleanField": [
+    {
+      "contentType": [
+        "Homepage",
+        "Page"
+      ],
+      "place": "-"
+    }
+  ],
+  "TitlePart": [
+    {
+      "contentType": [
+        "Homepage"
+      ],
+      "place": "-"
+    }
+  ],
+  "ResponsiveMediaField": [
+    {
+      "contentType": [
+        "SectionFeatured"
+      ],
+      "place": "Background"
+    }
+  ]
 }
