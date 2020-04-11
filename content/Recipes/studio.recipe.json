@@ -1,0 +1,2674 @@
+{
+  "name": "Studio Site",
+  "displayName": "Studio Site",
+  "description": "Sets up studio site with Boilerplate Theme",
+  "author": "Etch UK",
+  "website": "https://etchuk.com",
+  "version": "0.0.1",
+  "issetuprecipe": true,
+  "categories": [],
+  "tags": [],
+  "variables": {
+      "now": "[js: new Date().toISOString()]"
+  },
+  "steps": [
+    {
+      "name": "Feature",
+      "enable": [
+        "Application.Default",
+        "Etch.OrchardCore.SiteBoilerplate",
+        "OrchardCore.Liquid",
+        "OrchardCore.Settings",
+        "OrchardCore.Contents",
+        "OrchardCore.ContentTypes",
+        "OrchardCore.Media",
+        "OrchardCore.Alias",
+        "Etch.OrchardCore.Fields.ResponsiveMedia",
+        "OrchardCore.ContentFields",
+        "Etch.OrchardCore.SEO.MetaTags",
+        "OrchardCore.Title",
+        "OrchardCore.Widgets",
+        "OrchardCore.Flows",
+        "OrchardCore.Html",
+        "Etch.OrchardCore.Widgets",
+        "OrchardCore.Scripting",
+        "OrchardCore.Workflows",
+        "OrchardCore.Resources",
+        "OrchardCore.Templates",
+        "OrchardCore.Admin",
+        "OrchardCore.AdminMenu",
+        "OrchardCore.Autoroute",
+        "OrchardCore.ContentPreview",
+        "OrchardCore.Contents.FileContentDefinition",
+        "OrchardCore.CustomSettings",
+        "OrchardCore.Deployment",
+        "OrchardCore.Deployment.Remote",
+        "OrchardCore.Diagnostics",
+        "OrchardCore.DynamicCache",
+        "OrchardCore.Features",
+        "OrchardCore.Feeds",
+        "OrchardCore.HomeRoute",
+        "OrchardCore.Indexing",
+        "OrchardCore.Layers",
+        "OrchardCore.Lists",
+        "OrchardCore.Lucene",
+        "OrchardCore.Markdown",
+        "OrchardCore.Menu",
+        "OrchardCore.Navigation",
+        "OrchardCore.Queries",
+        "OrchardCore.Users",
+        "OrchardCore.Recipes",
+        "OrchardCore.Roles",
+        "OrchardCore.Themes",
+        "OrchardCore.Workflows.Http",
+        "OrchardCore.Workflows.Timers",
+        "TheAdmin",
+        "Etch.OrchardCore.AdminTheme",
+        "Etch.OrchardCore.DefaultTheme",
+        "Etch.OrchardCore.ThemeBoilerplate"
+      ],
+      "disable": [
+        "Etch.OrchardCore.Blocks",
+        "Etch.OrchardCore.Blocks.EditorJS",
+        "Etch.OrchardCore.ContextualEdit",
+        "Etch.OrchardCore.Fields.Dictionary",
+        "Etch.OrchardCore.Fields.Eventbrite",
+        "Etch.OrchardCore.Fields.MultiSelect",
+        "Etch.OrchardCore.Fields.RenderAlias",
+        "Etch.OrchardCore.Fields.Values",
+        "Etch.OrchardCore.Gallery",
+        "Etch.OrchardCore.InjectScripts",
+        "OrchardCore.Taxonomies",
+        "Etch.OrchardCore.News",
+        "Etch.OrchardCore.SEO.HostnameRedirects",
+        "Etch.OrchardCore.SEO.Redirects",
+        "Etch.OrchardCore.SEO.Redirects.Import",
+        "Etch.OrchardCore.SEO.RobotsTxt",
+        "Etch.OrchardCore.Workflows.Export",
+        "Etch.OrchardCore.Workflows.FormOutput",
+        "OrchardCore.Email",
+        "Etch.OrchardCore.Workflows.TemplateEmail",
+        "OrchardCore.Forms",
+        "Etch.OrchardCore.Workflows.Validation",
+        "OrchardCore.Apis.GraphQL",
+        "OrchardCore.BackgroundTasks",
+        "OrchardCore.ContentFields.Indexing.SQL",
+        "OrchardCore.Localization",
+        "OrchardCore.ContentLocalization",
+        "OrchardCore.ContentLocalization.ContentCulturePicker",
+        "OrchardCore.DataProtection.Azure",
+        "OrchardCore.Facebook",
+        "OrchardCore.Facebook.Login",
+        "OrchardCore.Facebook.Widgets",
+        "OrchardCore.GitHub.Authentication",
+        "OrchardCore.Google.Analytics",
+        "OrchardCore.Google.GoogleAuthentication",
+        "OrchardCore.HealthChecks",
+        "OrchardCore.Https",
+        "OrchardCore.Lucene.ContentPicker",
+        "OrchardCore.Lucene.Worker",
+        "OrchardCore.Media.Cache",
+        "OrchardCore.Media.Azure.Storage",
+        "OrchardCore.Microsoft.Authentication.AzureAD",
+        "OrchardCore.Microsoft.Authentication.MicrosoftAccount",
+        "OrchardCore.MiniProfiler",
+        "OrchardCore.OpenId",
+        "OrchardCore.OpenId.Client",
+        "OrchardCore.OpenId.Management",
+        "OrchardCore.OpenId.Server",
+        "OrchardCore.OpenId.Validation",
+        "OrchardCore.Queries.Sql",
+        "OrchardCore.ReCaptcha",
+        "OrchardCore.ReCaptcha.Users",
+        "OrchardCore.XmlRpc",
+        "OrchardCore.RemotePublishing",
+        "OrchardCore.ResponseCompression",
+        "OrchardCore.ReverseProxy",
+        "OrchardCore.Setup",
+        "OrchardCore.Tenants",
+        "OrchardCore.Tenants.FileProvider",
+        "OrchardCore.Twitter",
+        "OrchardCore.Twitter.Signin",
+        "OrchardCore.Users.Registration",
+        "OrchardCore.Users.ResetPassword",
+        "OrchardCore.Users.TimeZone"
+      ]
+    },
+    {
+      "name": "Themes",
+      "Site": "Etch.OrchardCore.ThemeBoilerplate",
+      "Admin": "Etch.OrchardCore.AdminTheme"
+    },
+    {
+      "name": "ContentDefinition",
+      "ContentTypes": [
+        {
+          "Name": "Paragraph",
+          "DisplayName": "Paragraph",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Paragraph",
+              "Name": "Paragraph",
+              "Settings": {
+                "ContentTypeSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Html",
+          "DisplayName": "Html",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Html",
+              "Name": "Html",
+              "Settings": {
+                "ContentTypeSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypeSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Link",
+          "DisplayName": "Link",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Link",
+              "Name": "Link",
+              "Settings": {
+                "ContentTypeSettings": {
+                  "Position": "0"
+                },
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Section",
+          "DisplayName": "Section",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Section",
+              "Name": "Section",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Content",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Content",
+                  "Description": "Content displayed within section.",
+                  "Position": "2"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Blockquote",
+                    "Card",
+                    "Embed",
+                    "Figure",
+                    "Heading",
+                    "Html",
+                    "Image",
+                    "Link",
+                    "OrderedList",
+                    "Paragraph",
+                    "Text"
+                  ],
+                  "DisplayType": "Detail"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Heading",
+          "DisplayName": "Heading",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Heading",
+              "Name": "Heading",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Image",
+          "DisplayName": "Image",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Image",
+              "Name": "Image",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "UnorderedList",
+          "DisplayName": "Unordered List",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "UnorderedList",
+              "Name": "UnorderedList",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Items",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Items",
+                  "Description": "Items within the unordered list.",
+                  "Position": "1"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Blockquote",
+                    "Card",
+                    "Embed",
+                    "Figure",
+                    "Heading",
+                    "Html",
+                    "Image",
+                    "Link",
+                    "OrderedList",
+                    "Paragraph",
+                    "Text",
+                    "UnorderedList"
+                  ],
+                  "DisplayType": "Detail"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Text",
+          "DisplayName": "Text",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Text",
+              "Name": "Text",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "OrderedList",
+          "DisplayName": "Ordered List",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "OrderedList",
+              "Name": "OrderedList",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Items",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Items",
+                  "Description": "Items within the ordered list.",
+                  "Position": "1"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Blockquote",
+                    "Card",
+                    "Embed",
+                    "Figure",
+                    "Heading",
+                    "Html",
+                    "Image",
+                    "Link",
+                    "OrderedList",
+                    "Paragraph",
+                    "Text",
+                    "UnorderedList"
+                  ],
+                  "DisplayType": "Detail"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Figure",
+          "DisplayName": "Figure",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Figure",
+              "Name": "Figure",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Blockquote",
+          "DisplayName": "Blockquote",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Blockquote",
+              "Name": "Blockquote",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "QuoteContent",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Quote Content",
+                  "Description": "Content that represents the quote.",
+                  "Position": "1"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Heading",
+                    "Html",
+                    "Link",
+                    "OrderedList",
+                    "Paragraph",
+                    "Text",
+                    "UnorderedList"
+                  ],
+                  "DisplayType": "Detail"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Hero",
+          "DisplayName": "Hero",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Hero",
+              "Name": "Hero",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Card",
+          "DisplayName": "Card",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Card",
+              "Name": "Card",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Body",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Body",
+                  "Description": "Content displayed after title.",
+                  "Position": "1"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Html",
+                    "Paragraph"
+                  ],
+                  "DisplayType": "Detail"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Banner",
+          "DisplayName": "Banner",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Banner",
+              "Name": "Banner",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Embed",
+          "DisplayName": "Embed",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": false,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Embed",
+              "Name": "Embed",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Menu",
+          "DisplayName": "Menu",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "AliasPart",
+              "Name": "AliasPart",
+              "Settings": {
+                "AliasPartSettings": {
+                  "Pattern": "{{ ContentItem | display_text | slugify }}"
+                },
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "MenuPart",
+              "Name": "MenuPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "PartName": "MenuItemsListPart",
+              "Name": "MenuItemsListPart",
+              "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "LinkMenuItem",
+          "DisplayName": "Link Menu Item",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "MenuItem"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "LinkMenuItemPart",
+              "Name": "LinkMenuItemPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "LinkMenuItem",
+              "Name": "LinkMenuItem",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Page",
+          "DisplayName": "Page",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Page",
+              "Name": "Page",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
+                "AutoroutePartSettings": {
+                  "AllowCustomPath": true,
+                  "Pattern": "{{ ContentItem | display_text | slugify }}",
+                  "AllowUpdatePath": false,
+                  "ShowHomepageOption": false
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Content",
+              "Settings": {
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "DisplayName": "Content",
+                  "Description": "Collection of elements making up content of the page.",
+                  "Position": "3"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Hero",
+                    "Html",
+                    "Section",
+                    "SectionFeatured",
+                    "SectionMedia"
+                  ],
+                  "DisplayType": "Detail"
+                }
+              }
+            },
+            {
+              "PartName": "MetaTagsPart",
+              "Name": "MetaTagsPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "4"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Homepage",
+          "DisplayName": "Homepage",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Homepage",
+              "Name": "Homepage",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
+                "AutoroutePartSettings": {
+                  "AllowCustomPath": true,
+                  "Pattern": "{{ ContentItem | display_text | slugify }}",
+                  "AllowUpdatePath": false,
+                  "ShowHomepageOption": true
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "PartName": "CommonPart",
+              "Name": "CommonPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "4"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Content",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Content",
+                  "Description": "Collection of elements making up content of the homepage.",
+                  "Position": "3"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Hero",
+                    "Html",
+                    "Section",
+                    "SectionFeatured",
+                    "SectionMedia"
+                  ],
+                  "DisplayType": "Detail"
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "PartName": "MetaTagsPart",
+              "Name": "MetaTagsPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "5"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "ContentMenuItem",
+          "DisplayName": "Content Menu Item",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": false,
+              "Draftable": false,
+              "Versionable": true,
+              "Listable": false,
+              "Securable": false,
+              "Stereotype": "MenuItem"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "ContentMenuItem",
+              "Name": "ContentMenuItem",
+              "Settings": {
+                "ContentTypeSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "SectionFeatured",
+          "DisplayName": "Section Featured",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "SectionFeatured",
+              "Name": "SectionFeatured",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Content",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Content",
+                  "Description": "Content displayed within section.",
+                  "Position": "2"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Blockquote",
+                    "Card",
+                    "Embed",
+                    "Figure",
+                    "Heading",
+                    "Html",
+                    "Image",
+                    "Link",
+                    "OrderedList",
+                    "Paragraph",
+                    "Text",
+                    "UnorderedList"
+                  ],
+                  "DisplayType": "Detail"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "SectionMedia",
+          "DisplayName": "Section Media",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "SectionMedia",
+              "Name": "SectionMedia",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Content",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Content",
+                  "Description": "Content displayed within section.",
+                  "Position": "2"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Blockquote",
+                    "Card",
+                    "Embed",
+                    "Figure",
+                    "Heading",
+                    "Html",
+                    "Image",
+                    "Link",
+                    "OrderedList",
+                    "Paragraph",
+                    "Text",
+                    "UnorderedList"
+                  ],
+                  "DisplayType": "Detail"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        }
+      ],
+      "ContentParts": [
+        {
+          "Name": "CommonPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides an editor for the common properties of a content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "LiquidPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a Liquid formatted body for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "AliasPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a way to define custom aliases for content items."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "MetaTagsPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides meta tags for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a Title for your content item.",
+              "DefaultPosition": "0"
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "WidgetsListPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a way to add widgets per content items."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "FlowPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a customizable body for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "BagPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Reusable": true,
+              "Description": "Provides a collection behavior for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "HtmlBodyPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides an HTML Body for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "HtmlAttributesPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "DisplayName": "HTML Attributes",
+              "Description": "Customise common attributes on HTML element."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "Section",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "BackgroundColour",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Background Colour",
+                  "Editor": "PredefinedList",
+                  "Position": "0"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Colour displayed as the background for the section."
+                },
+                "ContentIndexSettings": {},
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "name": "Grey",
+                      "value": "grey"
+                    }
+                  ],
+                  "Editor": 1,
+                  "DefaultValue": "default"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Alignment",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Alignment",
+                  "Editor": "PredefinedList",
+                  "Position": "1"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Control how content is aligned within section."
+                },
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "name": "Left",
+                      "value": "left"
+                    },
+                    {
+                      "name": "Center",
+                      "value": "center"
+                    },
+                    {
+                      "name": "Right",
+                      "value": "right"
+                    }
+                  ],
+                  "Editor": 1,
+                  "DefaultValue": null
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Paragraph",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Text",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Text",
+                  "Editor": "TextArea"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Html",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "HtmlField",
+              "Name": "Body",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Body",
+                  "Editor": "Wysiwyg"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Link",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Text",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Text",
+                  "Position": "0"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Text to be displayed in link.",
+                  "Required": true
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Url",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Url",
+                  "Position": "1"
+                },
+                "TextFieldSettings": {
+                  "Hint": "URL user is taken to when interacting with link.",
+                  "Required": true
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "BooleanField",
+              "Name": "OpenInNewWindow",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Open in new Window",
+                  "Position": "3"
+                },
+                "BooleanFieldSettings": {
+                  "Hint": "Whether a new window is opened when user interacts with link.",
+                  "Label": "Open in new Window"
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Style",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Style",
+                  "Editor": "PredefinedList",
+                  "Position": "2"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Appearance of link."
+                },
+                "ContentIndexSettings": {},
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "name": "Primary",
+                      "value": "primary"
+                    },
+                    {
+                      "name": "Secondary",
+                      "value": "secondary"
+                    }
+                  ],
+                  "DefaultValue": "default"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Heading",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Text",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Text"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Text to be displayed in heading.",
+                  "Required": true
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Level",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Level",
+                  "Editor": "PredefinedList"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Importance of the heading, where the lower the value the more important the heading.",
+                  "Required": true
+                },
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "1",
+                      "value": "1"
+                    },
+                    {
+                      "name": "2",
+                      "value": "2"
+                    },
+                    {
+                      "name": "3",
+                      "value": "3"
+                    },
+                    {
+                      "name": "4",
+                      "value": "4"
+                    },
+                    {
+                      "name": "5",
+                      "value": "5"
+                    },
+                    {
+                      "name": "6",
+                      "value": "6"
+                    }
+                  ],
+                  "Editor": 1,
+                  "DefaultValue": null
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Image",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "MediaField",
+              "Name": "Image",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Image"
+                },
+                "MediaFieldSettings": {
+                  "Hint": "Image to be displayed.",
+                  "Required": true,
+                  "Multiple": false
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "AlternateText",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Alternate Text"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Description of the appearance and function of the image.",
+                  "Required": true
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Text",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Text",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Text",
+                  "Editor": "TextArea"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Figure",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "MediaField",
+              "Name": "Image",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Image"
+                },
+                "MediaFieldSettings": {
+                  "Required": true,
+                  "Multiple": false
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "AlternateText",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Alternate Text"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Description of the appearance and function of the image.",
+                  "Required": true
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Caption",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Caption",
+                  "Editor": "TextArea"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Caption displayed alongside image.",
+                  "Required": true
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Alignment",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Alignment",
+                  "Editor": "PredefinedList"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Control how images can be manipulated around text content."
+                },
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "name": "Wide",
+                      "value": "wide"
+                    },
+                    {
+                      "name": "Full",
+                      "value": "full"
+                    },
+                    {
+                      "name": "Left",
+                      "value": "left"
+                    },
+                    {
+                      "name": "Right",
+                      "value": "right"
+                    }
+                  ],
+                  "Editor": 1,
+                  "DefaultValue": "default"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Blockquote",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Source",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Source"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Hero",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "BackgroundType",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Background Type",
+                  "Editor": "PredefinedList"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Whether the background should be an image or a video embed."
+                },
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "Image",
+                      "value": "image"
+                    },
+                    {
+                      "name": "Video Embed",
+                      "value": "embed"
+                    }
+                  ],
+                  "Editor": 0,
+                  "DefaultValue": "image"
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "ResponsiveMediaField",
+              "Name": "BackgroundImage",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Background Image"
+                },
+                "ResponsiveMediaFieldSettings": {
+                  "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
+                  "Hint": "Image displayed as background of hero.",
+                  "Required": false
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "BackgroundEmbed",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Background Embed Url"
+                },
+                "TextFieldSettings": {
+                  "Hint": "URL to third-party site that is hosting video (e.g. YouTube)."
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "DisplayText",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Display Text"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "CTALabel",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "CTA Label"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Text displayed on call to action link."
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "CTAUrl",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "CTA Url"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Page user is navigated to when selecting call to action link."
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Card",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "MediaField",
+              "Name": "Image",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Image"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "ImageAlternateText",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Image Alternate Text"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Description of the appearance and function of the image."
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "CTALabel",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "CTA Label"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "CTAUrl",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "CTA Url"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Banner",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "MediaField",
+              "Name": "Logo",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Logo"
+                }
+              }
+            },
+            {
+              "FieldName": "MediaField",
+              "Name": "LogoSmall",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Logo Small"
+                },
+                "MediaFieldSettings": {
+                  "Hint": "Logo displayed on smaller devices."
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "LogoAlternateText",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Logo Alternate Text"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Description of the appearance and function of the image."
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "ContentPickerField",
+              "Name": "Menu",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Menu"
+                },
+                "ContentPickerFieldSettings": {
+                  "Hint": "Main menu used by users to navigate the main sections of the site.",
+                  "DisplayedContentTypes": [
+                    "Menu"
+                  ]
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "MenuToggleButtonLabel",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Menu Toggle Button Label"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Label for button that's displayed on smaller devices to toggle the visibility of the main menu."
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Embed",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Source",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Source"
+                },
+                "TextFieldSettings": {
+                  "Hint": "URL to content that should be embedded (e.g. https://www.youtube.com/embed/TorVk3Hxm7Q).",
+                  "Required": true
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Caption",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Caption",
+                  "Editor": "TextArea"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Caption displayed to give description of embedded content."
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a custom url for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "ListPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Add a list behavior."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "MarkdownBodyPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a Markdown formatted body for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "MenuPart",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "MenuItemPart",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "LinkMenuItemPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a menu link behavior for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "ContentMenuItem",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "ContentPickerField",
+              "Name": "LinkTo",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Link To"
+                },
+                "ContentPickerFieldSettings": {
+                  "Hint": "Choose content item that is displayed when user selects link.",
+                  "Required": true,
+                  "DisplayedContentTypes": [
+                    "Homepage",
+                    "Page"
+                  ]
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "SectionFeatured",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "ResponsiveMediaField",
+              "Name": "Background",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Background",
+                  "Position": "0"
+                },
+                "ResponsiveMediaFieldSettings": {
+                  "Breakpoints": "2560, 1920, 1440, 1280, 1024, 768, 375",
+                  "Hint": "Background image for section.",
+                  "Multiple": true,
+                  "FallbackData": "[]",
+                  "IsConfigured": true
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "SectionMedia",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "MediaField",
+              "Name": "Media",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Media",
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "MediaAlternateText",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Media Alternate Text",
+                  "Position": "1"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Description of image for website visitors who are unable to see the image and tell the search engine crawlers about the image."
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Content",
+      "data": [
+        {
+          "ContentItemId": "4bwdsrm421084tyjzs3kv53h5h",
+          "ContentItemVersionId": "4k5cqmhb4gt6b5r52eh3aq7ywx",
+          "ContentType": "Banner",
+          "DisplayText": "Site Header",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-11T18:50:07.2714909Z",
+          "PublishedUtc": "2020-04-11T18:50:07.3087726Z",
+          "CreatedUtc": "2020-04-11T18:50:07.228Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "Banner": {
+            "Menu": {
+              "ContentItemIds": [
+                "4pza6hdwvf1t2t0yqsmmgjzzdq"
+              ]
+            },
+            "Logo": {
+              "Paths": [
+                "Logos/logo-play@1x.svg"
+              ]
+            },
+            "LogoSmall": {
+              "Paths": [
+                "Logos/logo-play-short@1x.svg"
+              ]
+            },
+            "LogoAlternateText": {
+              "Text": "Logo for Etch Play"
+            },
+            "MenuToggleButtonLabel": {
+              "Text": "Menu"
+            }
+          },
+          "LayerMetadata": {
+            "Position": 1.0,
+            "Zone": "Header",
+            "Layer": "Default",
+            "RenderTitle": false
+          }
+        },
+        {
+          "ContentItemId": "4rdbsjtjx0492vwnrcne4z5gws",
+          "ContentItemVersionId": "4rth18kwmdehdxrz2ran0zfecz",
+          "ContentType": "Page",
+          "DisplayText": "About",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-11T18:50:07.4019852Z",
+          "PublishedUtc": "2020-04-11T18:50:07.4042271Z",
+          "CreatedUtc": "2020-04-11T18:50:07.228Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "Page": {},
+          "AutoroutePart": {
+            "Path": "about",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "About"
+          },
+          "Content": {
+            "ContentItems": [
+              {
+                "ContentItemId": "443c76sm5fxwdxg5v3qn5v4e5q",
+                "ContentItemVersionId": null,
+                "ContentType": "Section",
+                "DisplayText": "Intro",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "Section": {
+                  "BackgroundColour": {
+                    "Text": "default"
+                  },
+                  "Alignment": {
+                    "Text": "default"
+                  }
+                },
+                "Children": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "4cpxsvkfhay8848jzdv562krmr",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Card",
+                      "DisplayText": "This is a heading (h2)",
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Card": {
+                        "Image": {
+                          "Paths": []
+                        },
+                        "CTALabel": {
+                          "Text": "Learn more"
+                        },
+                        "CTAUrl": {
+                          "Text": "#"
+                        },
+                        "ImageAlternateText": {
+                          "Text": null
+                        }
+                      },
+                      "TitlePart": {
+                        "Title": "This is a heading (h2)"
+                      },
+                      "Body": {
+                        "ContentItems": [
+                          {
+                            "ContentItemId": "4pk2n5z3btqb9yj6w2htjhvg5a",
+                            "ContentItemVersionId": null,
+                            "ContentType": "Paragraph",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "Paragraph": {
+                              "Text": {
+                                "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed orci eget dui hendrerit rhoncus ut ut purus. Aenean sodales libero vitae enim vestibulum maximus."
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "TitlePart": {
+                  "Title": "Intro"
+                }
+              },
+              {
+                "ContentItemId": "4h5nd51437cacx9y6nk367kanz",
+                "ContentItemVersionId": null,
+                "ContentType": "Section",
+                "DisplayText": "Second",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "Section": {
+                  "BackgroundColour": {
+                    "Text": "grey"
+                  },
+                  "Alignment": {
+                    "Text": "default"
+                  }
+                },
+                "Children": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "4srv3p9xczxxswx92jhz5q4mwc",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Card",
+                      "DisplayText": "This is a heading (h2)",
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Card": {
+                        "Image": {
+                          "Paths": []
+                        },
+                        "CTALabel": {
+                          "Text": "Learn more"
+                        },
+                        "CTAUrl": {
+                          "Text": "#"
+                        },
+                        "ImageAlternateText": {
+                          "Text": null
+                        }
+                      },
+                      "TitlePart": {
+                        "Title": "This is a heading (h2)"
+                      },
+                      "Body": {
+                        "ContentItems": [
+                          {
+                            "ContentItemId": "4wnc4pjvta0jwzpe22gzvpd5cp",
+                            "ContentItemVersionId": null,
+                            "ContentType": "Paragraph",
+                            "DisplayText": null,
+                            "Latest": false,
+                            "Published": false,
+                            "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                            "PublishedUtc": null,
+                            "CreatedUtc": null,
+                            "Owner": null,
+                            "Author": "[js: parameters('AdminUsername')]",
+                            "Paragraph": {
+                              "Text": {
+                                "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed orci eget dui hendrerit rhoncus ut ut purus. Aenean sodales libero vitae enim vestibulum maximus."
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "TitlePart": {
+                  "Title": "Second"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "ContentItemId": "4pza6hdwvf1t2t0yqsmmgjzzdq",
+          "ContentItemVersionId": "4v8p29e5ty61m3zm528hj83fww",
+          "ContentType": "Menu",
+          "DisplayText": "Main Menu",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-11T18:50:07.4220368Z",
+          "PublishedUtc": "2020-04-11T18:50:07.4255114Z",
+          "CreatedUtc": "2020-04-11T18:50:07.228Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "TitlePart": {
+            "Title": "Main Menu"
+          },
+          "AliasPart": {
+            "Alias": "main-menu"
+          },
+          "MenuPart": {},
+          "MenuItemsListPart": {
+            "MenuItems": [
+              {
+                "ContentItemId": "48k68nwjj514yr8kp7ebr02g4a",
+                "ContentItemVersionId": null,
+                "ContentType": "ContentMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "ContentMenuItem": {
+                  "LinkTo": {
+                    "ContentItemIds": [
+                      "4j2bj7ydh9n4xrhpen3xx7wxx5"
+                    ]
+                  }
+                }
+              },
+              {
+                "ContentItemId": "4qrg20mwe352kx9875f6sfpmm7",
+                "ContentItemVersionId": null,
+                "ContentType": "ContentMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "ContentMenuItem": {
+                  "LinkTo": {
+                    "ContentItemIds": [
+                      "4rdbsjtjx0492vwnrcne4z5gws"
+                    ]
+                  }
+                }
+              },
+              {
+                "ContentItemId": "47yxhyf3x9362yf68qhm2y63cc",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "LinkMenuItemPart": {
+                  "Name": "Games",
+                  "Url": "#"
+                },
+                "LinkMenuItem": {},
+                "MenuItemsListPart": {
+                  "MenuItems": [
+                    {
+                      "ContentItemId": "4zsgbay1392e9xm8z4xf28b5mc",
+                      "ContentItemVersionId": null,
+                      "ContentType": "LinkMenuItem",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "LinkMenuItemPart": {
+                        "Name": "Sub Item One",
+                        "Url": "#"
+                      },
+                      "LinkMenuItem": {}
+                    },
+                    {
+                      "ContentItemId": "4b6n182qxwvpt0arjzvsbyrsnh",
+                      "ContentItemVersionId": null,
+                      "ContentType": "LinkMenuItem",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "LinkMenuItemPart": {
+                        "Name": "Sub Item Two",
+                        "Url": "#"
+                      },
+                      "LinkMenuItem": {}
+                    }
+                  ]
+                }
+              },
+              {
+                "ContentItemId": "4ykdsfhawqfer6zark4k2t0pmp",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "LinkMenuItemPart": {
+                  "Name": "Press",
+                  "Url": "#"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "48pdrdgh681df7y31936jpndc9",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "LinkMenuItemPart": {
+                  "Name": "Contact",
+                  "Url": "#"
+                },
+                "LinkMenuItem": {}
+              }
+            ]
+          },
+          "@WeldedPartSettings": {
+            "MenuPart": {
+              "Position": "3"
+            },
+            "MenuItemsListPart": {
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "ContentItemId": "4j2bj7ydh9n4xrhpen3xx7wxx5",
+          "ContentItemVersionId": "4y9615bxgg3pgwmrbkj0praacb",
+          "ContentType": "Homepage",
+          "DisplayText": "Home",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-11T20:47:03.1438459Z",
+          "PublishedUtc": "2020-04-11T20:47:03.3627186Z",
+          "CreatedUtc": "2020-04-11T18:50:07.228Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "Homepage": {},
+          "AutoroutePart": {
+            "Path": "home",
+            "SetHomepage": true
+          },
+          "CommonPart": {},
+          "TitlePart": {
+            "Title": "Home"
+          },
+          "Content": {
+            "ContentItems": [
+              {
+                "ContentItemId": "445ayrbea4c5s71tgfr7ab3gm1",
+                "ContentItemVersionId": null,
+                "ContentType": "Hero",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T20:47:03.2805007Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "Hero": {
+                  "BackgroundType": {
+                    "Text": "embed"
+                  },
+                  "BackgroundImage": {
+                    "Data": "[]",
+                    "HasData": false
+                  },
+                  "BackgroundEmbed": {
+                    "Text": "https://player.vimeo.com/video/165642889?background=1"
+                  },
+                  "DisplayText": {
+                    "Text": "Etch Play Boilerplate"
+                  },
+                  "CTALabel": {
+                    "Text": "Learn more"
+                  },
+                  "CTAUrl": {
+                    "Text": "#"
+                  }
+                }
+              },
+              {
+                "ContentItemId": "40s22z9545d8z10x55d7520z49",
+                "ContentItemVersionId": null,
+                "ContentType": "SectionFeatured",
+                "DisplayText": "Feature Section Title",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T20:47:03.3203351Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "SectionFeatured": {
+                  "Background": {
+                    "Data": "[{\"sources\":[{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"}]}]",
+                    "HasData": true
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Feature Section Title"
+                },
+                "Content": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "4ya46avrxwbq2196bwnp0tj7xd",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Paragraph",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T20:47:03.323568Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Paragraph": {
+                        "Text": {
+                          "Text": "Explore and survive in an infinite procedurally generated universe."
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "4nwcvhka7d1t1rdx0wb1ddzr49",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Link",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T20:47:03.3257498Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Link": {
+                        "Text": {
+                          "Text": "Discover more"
+                        },
+                        "Url": {
+                          "Text": "#"
+                        },
+                        "OpenInNewWindow": {
+                          "Value": false
+                        },
+                        "Style": {
+                          "Text": "primary"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "ContentItemId": "4jfry1r89tdrey839dg1qvr1mz",
+                "ContentItemVersionId": null,
+                "ContentType": "SectionMedia",
+                "DisplayText": "Section Title",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T20:47:03.33505Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "SectionMedia": {
+                  "Media": {
+                    "Paths": [
+                      "Backgrounds/Default/unsplash-1444090542259-400w.jpg"
+                    ]
+                  },
+                  "MediaAlternateText": {
+                    "Text": "Description of image."
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Section Title"
+                },
+                "Content": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "4mspdvazdhhrpy4ykcwd5y2ywe",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Paragraph",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T20:47:03.3449804Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Paragraph": {
+                        "Text": {
+                          "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien, in fermentum mi lacus eu lorem. Nam libero risus, euismod eu gravida vel, ullamcorper vitae neque. In sollicitudin aliquet mattis. Donec at varius erat. Nunc nec egestas tortor. Praesent quis dapibus risus. Aliquam erat lorem, accumsan sed efficitur ut, venenatis et diam."
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "46dk6q3jn161s445mzzs798rnn",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Link",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-11T20:47:03.3471798Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Link": {
+                        "Text": {
+                          "Text": "Learn more"
+                        },
+                        "Url": {
+                          "Text": "#"
+                        },
+                        "OpenInNewWindow": {
+                          "Value": false
+                        },
+                        "Style": {
+                          "Text": "default"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "MetaTagsPart": {
+            "Description": null,
+            "Images": [],
+            "Title": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Layers",
+      "Layers": [
+        {
+          "Name": "Default",
+          "Rule": "true",
+          "Description": "Displays widget on every page."
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "LayerSettings": {
+        "Zones": [
+          "Header",
+          "Footer"
+        ]
+      }
+    },
+    {
+      "name": "WorkflowType",
+      "data": []
+    },
+    {
+      "name": "Templates",
+      "Templates": {}
+    },
+    {
+      "name": "AdminMenu",
+      "data": [
+        {
+          "Id": "0a9ecf3ed1fe4b84906d48b5399cad9c",
+          "Name": "Pattern Library",
+          "Enabled": true,
+          "MenuItems": [
+            {
+              "$type": "OrchardCore.AdminMenu.AdminNodes.LinkAdminNode, OrchardCore.AdminMenu",
+              "LinkText": "Pattern Library",
+              "LinkUrl": "Etch.OrchardCore.DefaultTheme/patterns/index.html",
+              "IconClass": "fas fa-puzzle-piece",
+              "UniqueId": "ab7ed3cbef7644cc97745f54c44d5855",
+              "Enabled": true,
+              "Text": null,
+              "Id": null,
+              "Href": null,
+              "Url": null,
+              "Position": "5",
+              "Priority": 0,
+              "LinkToFirstChild": true,
+              "LocalNav": false,
+              "Culture": null,
+              "Resource": null,
+              "Items": [],
+              "RouteValues": null,
+              "Permissions": [],
+              "Classes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "media",
+      "Files": [
+        {
+          "SourcePath": "Logos/logo-play-short@1x.svg",
+          "TargetPath": "Logos/logo-play-short@1x.svg"
+        },
+        {
+          "SourcePath": "Logos/logo-play@1x.svg",
+          "TargetPath": "Logos/logo-play@1x.svg"
+        },
+        {
+          "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1024w.jpg",
+          "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1024w.jpg"
+        },
+        {
+          "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1280w.jpg",
+          "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1280w.jpg"
+        },
+        {
+          "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1440w.jpg",
+          "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1440w.jpg"
+        },
+        {
+          "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1920w.jpg",
+          "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1920w.jpg"
+        },
+        {
+          "SourcePath": "Backgrounds/Default/unsplash-1444090542259-2560w.jpg",
+          "TargetPath": "Backgrounds/Default/unsplash-1444090542259-2560w.jpg"
+        },
+        {
+          "SourcePath": "Backgrounds/Default/unsplash-1444090542259-375w.jpg",
+          "TargetPath": "Backgrounds/Default/unsplash-1444090542259-375w.jpg"
+        },
+        {
+          "SourcePath": "Backgrounds/Default/unsplash-1444090542259-400w.jpg",
+          "TargetPath": "Backgrounds/Default/unsplash-1444090542259-400w.jpg"
+        },
+        {
+          "SourcePath": "Backgrounds/Default/unsplash-1444090542259-425w.jpg",
+          "TargetPath": "Backgrounds/Default/unsplash-1444090542259-425w.jpg"
+        },
+        {
+          "SourcePath": "Backgrounds/Default/unsplash-1444090542259-768w.jpg",
+          "TargetPath": "Backgrounds/Default/unsplash-1444090542259-768w.jpg"
+        }
+      ]
+    }
+  ]
+}
