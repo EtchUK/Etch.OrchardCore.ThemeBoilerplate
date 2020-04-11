@@ -1,0 +1,17 @@
+{% assign cssClasses = "section section--wide" %}
+
+<section class="{{ cssClasses }}">
+    <div class="section__content">
+        <div class="grid grid--double">
+            <div class="grid__item parallax" data-rellax-percentage="0.5" data-rellax-speed="2">
+                <h2 class="section__title">{{ Model.ContentItem.DisplayText }}</h2>
+                {{ Model.Content.Content | shape_render }}
+            </div>
+            <div class="grid__item">
+            {% if Model.ContentItem.Content.SectionMedia.Media.Paths[0] != null %}
+                <img src="{{ Model.ContentItem.Content.SectionMedia.Media.Paths[0] | asset_url }}" alt="{{ Model.ContentItem.Content.SectionMedia.MediaAlternateText.Text }}"/>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

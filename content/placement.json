@@ -4,5 +4,11 @@
             "contentType": ["Homepage"],
             "place": "-"
         }
+    ],
+    "ResponsiveMediaField": [
+        {
+            "contentType": ["SectionFeatured"],
+            "place": "Background"
+        }
     ]
 }
