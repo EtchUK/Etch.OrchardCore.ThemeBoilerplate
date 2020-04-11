@@ -1,0 +1,14 @@
+﻿{% assign cssClasses = "section section--feature section--wide" %}
+
+<section class="{{ cssClasses }}">
+    <div class="section__content">
+        <h2 class="section__title">{{ Model.ContentItem.DisplayText }}</h2>
+        {{ Model.Content.Content | shape_render }}
+    </div>
+
+    {% if Model.ContentItem.Content.SectionFeatured.Background.HasData %}
+    <div class="section__media">
+        {{ Model.Background | shape_render }}
+    </div>
+    {% endif %}
+</section>
