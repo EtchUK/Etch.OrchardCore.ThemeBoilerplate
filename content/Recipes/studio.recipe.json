@@ -1058,6 +1058,52 @@
               }
             }
           ]
+        },
+        {
+          "Name": "Footer",
+          "DisplayName": "Footer",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Footer",
+              "Name": "Footer",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Content",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Content",
+                  "Description": "Content display beneath logo & navigation.",
+                  "Position": "1"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Heading",
+                    "Html",
+                    "Link",
+                    "OrderedList",
+                    "Page",
+                    "Paragraph",
+                    "Text",
+                    "UnorderedList"
+                  ],
+                  "DisplayType": "Detail"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
         }
       ],
       "ContentParts": [
@@ -1948,6 +1994,62 @@
               }
             }
           ]
+        },
+        {
+          "Name": "Footer",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "MediaField",
+              "Name": "Logo",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Logo",
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "FieldName": "MediaField",
+              "Name": "LogoSmall",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Logo Small",
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "FieldName": "ContentPickerField",
+              "Name": "Menu",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Menu",
+                  "Position": "3"
+                },
+                "ContentPickerFieldSettings": {
+                  "DisplayedContentTypes": [
+                    "Menu"
+                  ]
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "LogoAlternateText",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Logo Alternate Text",
+                  "Position": "2"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Description of image for website visitors who are unable to see the image and tell the search engine crawlers about the image."
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
         }
       ]
     },
@@ -2556,6 +2658,72 @@
             "Description": null,
             "Images": [],
             "Title": null
+          }
+        },
+        {
+          "ContentItemId": "40w52a9k467k0tamy56e4btzxb",
+          "ContentItemVersionId": "43akx1sbv42bcscaxssq2zs94s",
+          "ContentType": "Footer",
+          "DisplayText": "Footer",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-11T21:26:37.3241093Z",
+          "PublishedUtc": "2020-04-11T21:26:37.3435947Z",
+          "CreatedUtc": "2020-04-11T21:23:01.8699378Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "Footer": {
+            "Logo": {
+              "Paths": [
+                "Logos/logo-play@1x.svg"
+              ]
+            },
+            "LogoSmall": {
+              "Paths": [
+                "Logos/logo-play-short@1x.svg"
+              ]
+            },
+            "Menu": {
+              "ContentItemIds": [
+                "4pza6hdwvf1t2t0yqsmmgjzzdq"
+              ]
+            },
+            "LogoAlternateText": {
+              "Text": "Company logo."
+            }
+          },
+          "Content": {
+            "ContentItems": [
+              {
+                "ContentItemId": "4qxcce3nt25jp4zhvkn505hxm7",
+                "ContentItemVersionId": null,
+                "ContentType": "Paragraph",
+                "DisplayText": "Footer",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-11T21:26:37.3363307Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "Paragraph": {
+                  "Text": {
+                    "Text": "&copy; 2020 Etch Play. <a href=\"#\">Privacy policy</a>"
+                  }
+                },
+                "LayerMetadata": {
+                  "Position": 1.0,
+                  "Zone": "Footer",
+                  "Layer": "Default"
+                }
+              }
+            ]
+          },
+          "LayerMetadata": {
+            "Position": 1.0,
+            "Zone": "Footer",
+            "Layer": "Default",
+            "RenderTitle": false
           }
         }
       ]
