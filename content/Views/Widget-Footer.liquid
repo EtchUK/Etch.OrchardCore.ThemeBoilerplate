@@ -1,0 +1,21 @@
+﻿{% assign menu = Content.ContentItemId[Model.ContentItem.Content.Footer.Menu.ContentItemIds] %}
+{% assign menuAlias = "alias:" | append: menu.Content.AliasPart.Alias %}
+
+<footer class="footer">
+    <div class="footer__content">
+        <div class="footer__meta">
+            <a class="footer__logo" href="{{ Request.PathBase }}">
+                <picture>
+                    <source srcset="{{ Model.ContentItem.Content.Footer.Logo.Paths[0] | asset_url }}" media="(min-width: 768px)">
+                    <img src="{{ Model.ContentItem.Content.Footer.LogoSmall.Paths[0] | asset_url }}" alt="{{ Model.ContentItem.Content.Footer.LogoAlternateText }}" />
+                </picture>
+            </a>
+
+            {{ Model.Content.Content | shape_render }}
+        </div>
+
+        <nav class="footer__nav" role="navigation">
+            {% shape "menu", alias: menuAlias %}
+        </nav>
+    </div>
+</footer>
