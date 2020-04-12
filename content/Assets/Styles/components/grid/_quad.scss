@@ -7,7 +7,7 @@
  */
 
 .grid--quad {
-    > .grid__item {
+    .grid__item {
         @include bp-min-width($bp-tablet-small) {
             max-width: 50%;
         }

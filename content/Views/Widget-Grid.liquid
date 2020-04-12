@@ -1,12 +1,18 @@
 ﻿{% assign cssClasses = "grid" %}
+{% assign layout = Model.ContentItem.Content.Grid.Layout.Text %}
 {% assign width = Model.ContentItem.Content.Grid.Width.Text %}
+
+{% if layout != null and layout != 'default' %}
+    {% assign layoutClass = ' grid--' | append: layout %}
+    {% assign cssClasses = layoutClass | prepend: cssClasses %}
+{% endif %}
 
 {% if width != null and width != 'default' %}
     {% assign widthClass = ' align--' | append: width %}
     {% assign cssClasses = widthClass | prepend: cssClasses %}
 {% endif %}
 
-{% if width == 'full' %}
+{% if width == 'full' and layout == 'default' %}
     {% assign cssClasses = ' padding--top-large' | prepend: cssClasses %}
 {% endif %}
 

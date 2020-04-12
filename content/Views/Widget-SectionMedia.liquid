@@ -1,5 +1,6 @@
 {% assign cssClasses = "section section--wide" %}
 {% assign backgroundColour = Model.ContentItem.Content.SectionMedia.BackgroundColour.Text %}
+{% assign reverse = Model.ContentItem.Content.SectionMedia.Reverse.Value %}
 
 {% if backgroundColour != null and backgroundColour != 'default' %}
     {% assign backgroundColorClass = ' bg--color-' | append: backgroundColour %}
@@ -13,15 +14,39 @@
 <section class="{{ cssClasses }}">
     <div class="section__content">
         <div class="grid grid--double">
-            <div class="grid__item parallax" data-rellax-percentage="0.5" data-rellax-speed="2">
-                <h2 class="section__title">{{ Model.ContentItem.DisplayText }}</h2>
+        {% if reverse == false %}
+
+            <div class="grid__item parallax align-self--center margin--bottom-none" data-rellax-percentage="0.5" data-rellax-speed="2">
+                {% if Model.ContentItem.Content.SectionMedia.DisplayTitle.Value %}
+                    <h2 class="section__title">{{ Model.ContentItem.DisplayText }}</h2>
+                {% endif %}
+
                 {{ Model.Content.Content | shape_render }}
             </div>
-            <div class="grid__item">
+
+            <div class="grid__item margin--bottom-none">
             {% if Model.ContentItem.Content.SectionMedia.Media.Paths[0] != null %}
                 <img src="{{ Model.ContentItem.Content.SectionMedia.Media.Paths[0] | asset_url }}" alt="{{ Model.ContentItem.Content.SectionMedia.MediaAlternateText.Text }}"/>
             {% endif %}
             </div>
+
+        {% else %}
+
+            <div class="grid__item margin--bottom-none">
+            {% if Model.ContentItem.Content.SectionMedia.Media.Paths[0] != null %}
+                <img src="{{ Model.ContentItem.Content.SectionMedia.Media.Paths[0] | asset_url }}" alt="{{ Model.ContentItem.Content.SectionMedia.MediaAlternateText.Text }}"/>
+            {% endif %}
+            </div>
+
+            <div class="grid__item parallax align-self--center margin--bottom-none" data-rellax-percentage="0.5" data-rellax-speed="2">
+                {% if Model.ContentItem.Content.SectionMedia.DisplayTitle.Value %}
+                    <h2 class="section__title">{{ Model.ContentItem.DisplayText }}</h2>
+                {% endif %}
+
+                {{ Model.Content.Content | shape_render }}
+            </div>
+
+        {% endif %}
         </div>
     </div>
 </section>
