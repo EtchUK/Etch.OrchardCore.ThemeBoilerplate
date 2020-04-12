@@ -13,6 +13,10 @@
     {% assign cssClasses = backgroundColorClass | prepend: cssClasses %}
 {% endif %}
 
+{% if backgroundColour == 'black' %}
+    {% assign cssClasses = ' color--white' | prepend: cssClasses %}
+{% endif %}
+
 {% if contentWidth == 'full' %}
     {% assign cssClasses = ' padding--bottom-none padding--top-none' | prepend: cssClasses %}
 {% endif %}
