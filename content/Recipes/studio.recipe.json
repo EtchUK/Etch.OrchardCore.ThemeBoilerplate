@@ -1242,6 +1242,61 @@
               }
             }
           ]
+        },
+        {
+          "Name": "Job",
+          "DisplayName": "Job",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Job",
+              "Name": "Job",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Jobs",
+          "DisplayName": "Jobs",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Jobs",
+              "Name": "Jobs",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
         }
       ],
       "ContentParts": [
@@ -1372,8 +1427,16 @@
                       "value": "default"
                     },
                     {
+                      "name": "Black",
+                      "value": "black"
+                    },
+                    {
                       "name": "Grey",
                       "value": "grey"
+                    },
+                    {
+                      "name": "Light Grey",
+                      "value": "grey-light"
                     }
                   ],
                   "Editor": 1,
@@ -2188,6 +2251,10 @@
                       "value": "black"
                     },
                     {
+                      "name": "Grey",
+                      "value": "grey"
+                    },
+                    {
                       "name": "Light Grey",
                       "value": "grey-light"
                     }
@@ -2460,6 +2527,47 @@
           "Name": "GridItem",
           "Settings": {},
           "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "Job",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Length",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Length",
+                  "Position": "0"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Length of position (e.g. Permanent)."
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Jobs",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "NumericField",
+              "Name": "Quantity",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Quantity",
+                  "Position": "0"
+                },
+                "NumericFieldSettings": {
+                  "Hint": "Number of jobs to show.",
+                  "DefaultValue": "6"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
         }
       ]
     },
@@ -2510,13 +2618,13 @@
         },
         {
           "ContentItemId": "4rdbsjtjx0492vwnrcne4z5gws",
-          "ContentItemVersionId": "4wgz2ygjwagjwr9p4e38catsc2",
+          "ContentItemVersionId": "4edqahbz84e01tnmsgs9yzzvcr",
           "ContentType": "Page",
           "DisplayText": "About",
           "Latest": true,
           "Published": true,
-          "ModifiedUtc": "2020-04-12T11:33:23.4393163Z",
-          "PublishedUtc": "2020-04-12T11:33:23.7375813Z",
+          "ModifiedUtc": "2020-04-12T20:20:24.581977Z",
+          "PublishedUtc": "2020-04-12T20:20:24.9177476Z",
           "CreatedUtc": "2020-04-11T18:50:07.228Z",
           "Owner": "[js: parameters('AdminUsername')]",
           "Author": "[js: parameters('AdminUsername')]",
@@ -2535,13 +2643,13 @@
           "Content": {
             "ContentItems": [
               {
-                "ContentItemId": "41850qsjq0azpxkv22xjcjm7xe",
+                "ContentItemId": "4q49cage8hdrk42stp9r9ktsdg",
                 "ContentItemVersionId": null,
                 "ContentType": "SectionFeatured",
                 "DisplayText": "About Etch Play",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:33:23.4554648Z",
+                "ModifiedUtc": "2020-04-12T20:20:24.6009539Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -2558,13 +2666,13 @@
                 "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "4b08j5q4zkpgfwhwja0gzny54k",
+                      "ContentItemId": "432a46q68y9nbx908a8aby2ewp",
                       "ContentItemVersionId": null,
                       "ContentType": "Paragraph",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:23.4584989Z",
+                      "ModifiedUtc": "2020-04-12T20:20:24.6057201Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -2576,13 +2684,13 @@
                       }
                     },
                     {
-                      "ContentItemId": "4ssfnxmfe4d9g41bh9g6gra64c",
+                      "ContentItemId": "4p0qt21k9r2xevsary2gcy6ext",
                       "ContentItemVersionId": null,
                       "ContentType": "Link",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:23.4649658Z",
+                      "ModifiedUtc": "2020-04-12T20:20:24.6098872Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -2606,13 +2714,13 @@
                 }
               },
               {
-                "ContentItemId": "45babsddxbyeevv02qqs47wb4r",
+                "ContentItemId": "4yxtttqrww6z0wrczt39deqv4r",
                 "ContentItemVersionId": null,
                 "ContentType": "Section",
                 "DisplayText": "Blurb",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:33:23.472533Z",
+                "ModifiedUtc": "2020-04-12T20:20:24.6158356Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -2628,29 +2736,26 @@
                     "Text": "default"
                   }
                 },
-                "Children": {
-                  "ContentItems": []
-                },
                 "TitlePart": {
                   "Title": "Blurb"
                 },
                 "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "4x172jm6p8rdt5pydp8e4c9d4k",
+                      "ContentItemId": "47j3qvt2bgbwc5sv9m13xmxem8",
                       "ContentItemVersionId": null,
                       "ContentType": "WYSIWYG",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:23.4768694Z",
+                      "ModifiedUtc": "2020-04-12T20:20:24.619888Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
                       "Author": "[js: parameters('AdminUsername')]",
                       "WYSIWYG": {
                         "Content": {
-                          "Data": "{\"time\":1586691203379,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"We are a BAFTA-winning, independent game developer with a reputation for innovation in both storytelling and VR. We have released a number of successful titles and are best known for the critically acclaimed PS4 hit Until Dawn and the recently launched The Dark Pictures Anthology. The latter is a series of stand-alone, horror games for PS4, Xbox and PC. The first game is Man of Medan.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Founded in 2008, the studio is now home to over 150 talented individuals working across a range of storytelling titles. We've built a track record of high-end production backed up with delivery and reliability. We teamed up with ITN Productions and games trade body TIGA to create this video that explains more about us and how we work.\"}}],\"version\":\"2.15.0\"}",
+                          "Data": "{\"time\":1586722824508,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"We are a BAFTA-winning, independent game developer with a reputation for innovation in both storytelling and VR. We have released a number of successful titles and are best known for the critically acclaimed PS4 hit Until Dawn and the recently launched The Dark Pictures Anthology. The latter is a series of stand-alone, horror games for PS4, Xbox and PC. The first game is Man of Medan.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Founded in 2008, the studio is now home to over 150 talented individuals working across a range of storytelling titles. We've built a track record of high-end production backed up with delivery and reliability. We teamed up with ITN Productions and games trade body TIGA to create this video that explains more about us and how we work.\"}}],\"version\":\"2.15.0\"}",
                           "Html": null
                         }
                       }
@@ -2659,13 +2764,13 @@
                 }
               },
               {
-                "ContentItemId": "48h65aw7xr8p86erf4fmtcqynr",
+                "ContentItemId": "4ke5d97z7yekh2r7bs7sp0kvmr",
                 "ContentItemVersionId": null,
                 "ContentType": "Section",
                 "DisplayText": "Features",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:33:23.4861489Z",
+                "ModifiedUtc": "2020-04-12T20:20:24.6256641Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -2681,22 +2786,19 @@
                     "Text": "wide"
                   }
                 },
-                "Children": {
-                  "ContentItems": []
-                },
                 "TitlePart": {
                   "Title": "Features"
                 },
                 "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "4ax2h906d4vp9xynpyrypg9vd2",
+                      "ContentItemId": "414twa1mvn8nnwjjm07y34vawf",
                       "ContentItemVersionId": null,
                       "ContentType": "Grid",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:23.4914392Z",
+                      "ModifiedUtc": "2020-04-12T20:20:24.6295756Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -2718,13 +2820,13 @@
                       "Items": {
                         "ContentItems": [
                           {
-                            "ContentItemId": "43ztytf028p5fwha9pdzzn4n52",
+                            "ContentItemId": "43p0tdjjtjmxd2p47zkgmeh5cs",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.4971095Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.6349134Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -2733,13 +2835,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4jgxdjwn1ha1z0xardx56e514n",
+                                  "ContentItemId": "4bpgq5vpb081p2v381bve6715p",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Heading",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.4990174Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.6393511Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -2754,13 +2856,13 @@
                                   }
                                 },
                                 {
-                                  "ContentItemId": "4nnhcv5crserxwtp19c31a9enx",
+                                  "ContentItemId": "4d009pfrp7zqe5hafcs0w1a6m6",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Paragraph",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.5056157Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.6445961Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -2775,13 +2877,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "4k7nkqqz7js5bw3xqf9srzn8ns",
+                            "ContentItemId": "469p33wkpd6pf4n5mx74gxf7mf",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.5096664Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.6489792Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -2790,13 +2892,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4nq269jgj1bqq46ngpfp5ab0wz",
+                                  "ContentItemId": "49yfz5gatz2zzzbx7ydvnw5bx6",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Heading",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.5111773Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.6509052Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -2811,13 +2913,13 @@
                                   }
                                 },
                                 {
-                                  "ContentItemId": "41j8mmnsc0sfn1jhc606m206mp",
+                                  "ContentItemId": "4y5ed3gm4azt02eys28b5pkfw0",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Paragraph",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.5144939Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.6549512Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -2832,13 +2934,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "40rnhpv8fh29v511ar53tyb8dy",
+                            "ContentItemId": "4jx8n6yvg7y3wsrdqc4268vs4k",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.5198308Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.6603529Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -2847,13 +2949,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "48ep2t5vhv23m28h8602xh9y5s",
+                                  "ContentItemId": "43cf1dsy2h9rswzf3hrgwwf3wp",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Heading",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.5213679Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.6622844Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -2868,13 +2970,13 @@
                                   }
                                 },
                                 {
-                                  "ContentItemId": "4ekjbzjykgc6py4b8whph1ph49",
+                                  "ContentItemId": "4qcsz7qsjs7ev4y6449537y1xm",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Paragraph",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.524775Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.6669813Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -2892,13 +2994,13 @@
                       }
                     },
                     {
-                      "ContentItemId": "4q5ne0vzqkb7r3t3adg2mv6tnv",
+                      "ContentItemId": "4qfwhr9cxzwpxv7kr2k5dz0emb",
                       "ContentItemVersionId": null,
                       "ContentType": "Grid",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:23.5296115Z",
+                      "ModifiedUtc": "2020-04-12T20:20:24.676962Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -2920,13 +3022,13 @@
                       "Items": {
                         "ContentItems": [
                           {
-                            "ContentItemId": "4ygj9w7az2hbr2e9ehc6h72659",
+                            "ContentItemId": "4ksh1sg9hnw6e1t63cjkrpxk49",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.5378619Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.6822334Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -2935,13 +3037,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4zyaes2954q3a3pagzp968k24f",
+                                  "ContentItemId": "4f05r6y9cg23gycb1j53b46gcp",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Heading",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.5396404Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.6842434Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -2956,13 +3058,13 @@
                                   }
                                 },
                                 {
-                                  "ContentItemId": "41gebfv9kr0hxyvjyn9j42a24q",
+                                  "ContentItemId": "4kenrc3r2znh8036jrxqsgtw4b",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Paragraph",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.5433431Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.6898076Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -2977,13 +3079,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "42vsssc71dq5v6f27857f2cbn8",
+                            "ContentItemId": "4h6qpxyp7xmvv3dabb76rfr1cg",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.5470365Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.6945928Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -2992,13 +3094,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4frq2vf9x4mj8rthjr65vcfdc4",
+                                  "ContentItemId": "4029nrxg9jhazxg6h51rhsk8mx",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Heading",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.5487106Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.69668Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3013,13 +3115,13 @@
                                   }
                                 },
                                 {
-                                  "ContentItemId": "40kk34jn0ny2xwxt0dn038fpxs",
+                                  "ContentItemId": "4ns5wfxq81p3g2f9evkw5gsq5e",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Paragraph",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.5540855Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.7009405Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3034,13 +3136,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "4wxqpy2qs01sy72mefbq46yymd",
+                            "ContentItemId": "4dqdsk2e348a3x9e0t683d0fxr",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.5578433Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.7070228Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3049,13 +3151,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "495kjsr925m5pyrj1ghgryf9c4",
+                                  "ContentItemId": "4c33b69wsd3mk0zjvtn03xgnw3",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Heading",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.5594738Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.7115209Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3070,13 +3172,13 @@
                                   }
                                 },
                                 {
-                                  "ContentItemId": "4y61penkne7v4sj6etv0qna7x9",
+                                  "ContentItemId": "42jnfsdz7z8mxshmyn0ccc20mc",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Paragraph",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.5630658Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.7175235Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3097,13 +3199,13 @@
                 }
               },
               {
-                "ContentItemId": "4ve87bjhfzezfr6psf10wkj74z",
+                "ContentItemId": "41twy5hkgehs7wtaa0mtz02q49",
                 "ContentItemVersionId": null,
                 "ContentType": "SectionMedia",
                 "DisplayText": "Section Title",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:33:23.5704086Z",
+                "ModifiedUtc": "2020-04-12T20:20:24.7271942Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -3133,13 +3235,13 @@
                 "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "4xrqhvfrfncndxctf2g66qpz40",
+                      "ContentItemId": "471c8s6sqhjdyw0ae4ng823gmw",
                       "ContentItemVersionId": null,
                       "ContentType": "Paragraph",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:23.5754958Z",
+                      "ModifiedUtc": "2020-04-12T20:20:24.7329191Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -3151,13 +3253,13 @@
                       }
                     },
                     {
-                      "ContentItemId": "4b4sp1b396s5rv6hp40n0c285p",
+                      "ContentItemId": "45j6qe4dsddrh3579xrvg3znxf",
                       "ContentItemVersionId": null,
                       "ContentType": "Link",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:23.5784033Z",
+                      "ModifiedUtc": "2020-04-12T20:20:24.7362518Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -3181,13 +3283,13 @@
                 }
               },
               {
-                "ContentItemId": "46wksjtbqymgjvfpprbjpef3xb",
+                "ContentItemId": "4kc22fg2qpwph6wfk2tjzck1df",
                 "ContentItemVersionId": null,
                 "ContentType": "Section",
                 "DisplayText": "Meet the team",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:33:23.585474Z",
+                "ModifiedUtc": "2020-04-12T20:20:24.7445131Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -3203,22 +3305,19 @@
                     "Text": "default"
                   }
                 },
-                "Children": {
-                  "ContentItems": []
-                },
                 "TitlePart": {
                   "Title": "Meet the team"
                 },
                 "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "4zpwkw6ts5xwqy3fxps1jsgcwf",
+                      "ContentItemId": "45bcvd61far662bs3186rc0c53",
                       "ContentItemVersionId": null,
                       "ContentType": "Heading",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:23.5899041Z",
+                      "ModifiedUtc": "2020-04-12T20:20:24.7492258Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -3233,13 +3332,13 @@
                       }
                     },
                     {
-                      "ContentItemId": "40ketv9w1c9yy0d9wwge89m3nk",
+                      "ContentItemId": "4r0faja2ga6m13zqybn3w59k4r",
                       "ContentItemVersionId": null,
                       "ContentType": "Paragraph",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:23.5934056Z",
+                      "ModifiedUtc": "2020-04-12T20:20:24.7536952Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -3251,13 +3350,13 @@
                       }
                     },
                     {
-                      "ContentItemId": "411rrpnyk08cbsbxp96mf7pa5t",
+                      "ContentItemId": "4ym7273c5g79x2wvh9gx4wkbw1",
                       "ContentItemVersionId": null,
                       "ContentType": "Grid",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:23.5964936Z",
+                      "ModifiedUtc": "2020-04-12T20:20:24.7607486Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -3279,13 +3378,13 @@
                       "Items": {
                         "ContentItems": [
                           {
-                            "ContentItemId": "4b8w1y0rg0kmr7eerdmardvbxh",
+                            "ContentItemId": "4fdtaxpq0q2xc4sx6y06xkavdq",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.6018616Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.7661802Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3294,13 +3393,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "460q98vv5y5qf420y94vb7z84j",
+                                  "ContentItemId": "4dv7bq10bk4h6w233z1wrsg8c6",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.6038747Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.7682558Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3320,13 +3419,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "48xz3ph7xdsz70b4rs913mwcw3",
+                            "ContentItemId": "4mvjdxg6jpwk35fk1v28y4fhm9",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.609077Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.7766275Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3335,13 +3434,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4nhyk4p0vd6v1skvx7yd7e9mm7",
+                                  "ContentItemId": "47cr7e8538p6ctpdazsyv4855c",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.6110096Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.779486Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3361,13 +3460,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "4790hgqt4f3n53ybbvvpqhb3x0",
+                            "ContentItemId": "4vhm1j9m6ngkw47qj54en0w1nr",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.6171466Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.7847069Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3376,13 +3475,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "45pwzdaxcwyvyry2f26qyek052",
+                                  "ContentItemId": "4jw0qf56gyz9hvjde506fb98ms",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.6197528Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.7869757Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3402,13 +3501,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "40ca3bh15a8qx7v3cv0rhh75db",
+                            "ContentItemId": "4xbdw60cgm9qkrzb24zq3052wq",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.6255314Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.7945726Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3417,13 +3516,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "44v4dp4aqc227527jksbfha24h",
+                                  "ContentItemId": "4skwbzvpbt503yy37vsnkh64c5",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.6278174Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.7968918Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3443,13 +3542,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "46emxfm14p1cq6jemc3bygcxcr",
+                            "ContentItemId": "4583dkmrayjt356483838h5gwp",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.6345466Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.8035602Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3458,13 +3557,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4xx84rjrd5e05513papybg39md",
+                                  "ContentItemId": "4ej8n5e7t1qxf0m3tbjy23mhw0",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.636978Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.8064853Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3484,13 +3583,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "4x5n0n372e9xbrat3cd8mtq5cz",
+                            "ContentItemId": "4weyapwv17a84s82639x0vckxj",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.6425455Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.8124524Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3499,13 +3598,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4gcdcegs6rrqm05ncpcbfrfdcz",
+                                  "ContentItemId": "4vm3p6zsvhx35zmmkwar6zpz5f",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.6447632Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.8143742Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3528,13 +3627,13 @@
                       }
                     },
                     {
-                      "ContentItemId": "4bk8x0c2cee1mxsw9jnejdg3c2",
+                      "ContentItemId": "4xdpnh3bbjgbpw9w9fb0k5bedt",
                       "ContentItemVersionId": null,
                       "ContentType": "Grid",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:23.6534289Z",
+                      "ModifiedUtc": "2020-04-12T20:20:24.8206462Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -3556,13 +3655,13 @@
                       "Items": {
                         "ContentItems": [
                           {
-                            "ContentItemId": "49zgbg031zvj757p479j90wzcq",
+                            "ContentItemId": "432xh6mkpasch13eayr2jj3345",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.6579263Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.8270133Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3571,13 +3670,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4pqtze2p783016b1jkr1yt35xr",
+                                  "ContentItemId": "4vg517f0rk7sythra75xakghxq",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.6600713Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.8291444Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3597,13 +3696,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "4k5fxt588j3r4wmx82xtz8mrmh",
+                            "ContentItemId": "4184npgwf477tr91svsdw8qr4q",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.6655102Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.8344261Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3612,13 +3711,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4jtxe8a0hntpjzr7670scxc9dw",
+                                  "ContentItemId": "48ara33x8axyvvs79d0gkzfg40",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.6698073Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.8365302Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3638,13 +3737,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "4sjfsgqaa3ggayrbr210zhs4m8",
+                            "ContentItemId": "4pr97e7g1j81e5xr1jjew4q9dv",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.6755858Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.8450093Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3653,13 +3752,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4a8572wz9ge1c53f1jpqshtvws",
+                                  "ContentItemId": "4yxyqzdfenhqj6axxs03b48ycm",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.6779636Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.8471971Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3679,13 +3778,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "49ywbasgbknz72gp83etcjznnb",
+                            "ContentItemId": "4qreqjaqa8sb62bgw5f79e82nt",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.6845952Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.8532919Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3694,13 +3793,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4g33zrcnwcz33y6wv7kt9c40mm",
+                                  "ContentItemId": "4edv9yab9sdq6vzz8tz99ms8cm",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.6876484Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.8574858Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3720,13 +3819,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "47aa8y159ys6ez6jhfpefvhc46",
+                            "ContentItemId": "43znhr91wsmc12m1zg883w3tx2",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.6947377Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.863253Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3735,13 +3834,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "43zcmr6cxrs1g0srr8kx6g52w9",
+                                  "ContentItemId": "4wqhkdv5ybq3y1031fx10yxbxw",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.6977641Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.8658154Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3761,13 +3860,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "4ydpw9getd13wve774e8q78wwr",
+                            "ContentItemId": "40cfv85xtjxxzxcfd2bb7c2xwz",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:33:23.7102594Z",
+                            "ModifiedUtc": "2020-04-12T20:20:24.8746508Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3776,13 +3875,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4w0n9k0q65rkdynfdnxx0720cy",
+                                  "ContentItemId": "4w8a5hwcw0d2a6sxq2kn8zd65g",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Image",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:33:23.7126528Z",
+                                  "ModifiedUtc": "2020-04-12T20:20:24.8769343Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -3806,6 +3905,76 @@
                     }
                   ]
                 }
+              },
+              {
+                "ContentItemId": "40wb4hzfmdqx9663h6x7gt52d5",
+                "ContentItemVersionId": null,
+                "ContentType": "Section",
+                "DisplayText": "We're currently looking for...",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-12T20:20:24.8962434Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "Section": {
+                  "BackgroundColour": {
+                    "Text": "grey-light"
+                  },
+                  "Alignment": {
+                    "Text": "center"
+                  },
+                  "ContentWidth": {
+                    "Text": "default"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "We're currently looking for..."
+                },
+                "Content": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "45g46dsx593tb4g66nph9bjf52",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Heading",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T20:20:24.9014828Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Heading": {
+                        "Text": {
+                          "Text": "We're currently looking for..."
+                        },
+                        "Level": {
+                          "Text": "2"
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "423xbmyharpj7wzc0msec37px5",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Jobs",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T20:20:24.9072231Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Jobs": {
+                        "Quantity": {
+                          "Value": 6.0
+                        }
+                      }
+                    }
+                  ]
+                }
               }
             ]
           },
@@ -3817,13 +3986,13 @@
         },
         {
           "ContentItemId": "4qr19h1qvqhd3xzhr54gz656cx",
-          "ContentItemVersionId": "4edbkaqnbgf7w6jx55c2my9ynv",
+          "ContentItemVersionId": "46q386yrg6gbzskma7t2mtm6mm",
           "ContentType": "Page",
           "DisplayText": "Jobs",
           "Latest": true,
           "Published": true,
-          "ModifiedUtc": "2020-04-12T11:15:39.8251068Z",
-          "PublishedUtc": "2020-04-12T11:15:39.894567Z",
+          "ModifiedUtc": "2020-04-12T20:11:53.8073235Z",
+          "PublishedUtc": "2020-04-12T20:11:54.0389367Z",
           "CreatedUtc": "2020-04-12T10:14:25.9864245Z",
           "Owner": "[js: parameters('AdminUsername')]",
           "Author": "[js: parameters('AdminUsername')]",
@@ -3842,13 +4011,13 @@
           "Content": {
             "ContentItems": [
               {
-                "ContentItemId": "43edbezgc7mxtx8kp1zwa1h6dn",
+                "ContentItemId": "4r893ky865cz11mqvwsp5d9rmp",
                 "ContentItemVersionId": null,
                 "ContentType": "Hero",
                 "DisplayText": null,
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:15:39.8373135Z",
+                "ModifiedUtc": "2020-04-12T20:11:53.927801Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -3876,13 +4045,83 @@
                 }
               },
               {
-                "ContentItemId": "4zsw67k824xz95ccqmed8bwt54",
+                "ContentItemId": "4wtssd0jqhyv5y8h6bsbd2hnnh",
+                "ContentItemVersionId": null,
+                "ContentType": "Section",
+                "DisplayText": "We're currently looking for...",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-12T20:11:53.9487096Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "Section": {
+                  "BackgroundColour": {
+                    "Text": "black"
+                  },
+                  "Alignment": {
+                    "Text": "center"
+                  },
+                  "ContentWidth": {
+                    "Text": "default"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "We're currently looking for..."
+                },
+                "Content": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "40k0trt9cjdms16ce8f7wkffnn",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Heading",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T20:11:53.9521969Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Heading": {
+                        "Text": {
+                          "Text": "We're currently looking for..."
+                        },
+                        "Level": {
+                          "Text": "2"
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "4rvfmdh0x4gasttq59qx8mjqnt",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Jobs",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T20:11:53.9552798Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Jobs": {
+                        "Quantity": {
+                          "Value": 6.0
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "ContentItemId": "41t4bdwjj7zt2vetes9mdy335f",
                 "ContentItemVersionId": null,
                 "ContentType": "Section",
                 "DisplayText": "Studio Life",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:15:39.8438924Z",
+                "ModifiedUtc": "2020-04-12T20:11:53.9698802Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -3904,20 +4143,20 @@
                 "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "4sdwwjr10nxn03cvmq3k1nny4x",
+                      "ContentItemId": "4ry5wrefyd96n1x3jzrxjedgc3",
                       "ContentItemVersionId": null,
                       "ContentType": "WYSIWYG",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:15:39.8469952Z",
+                      "ModifiedUtc": "2020-04-12T20:11:53.9728681Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
                       "Author": "[js: parameters('AdminUsername')]",
                       "WYSIWYG": {
                         "Content": {
-                          "Data": "{\"time\":1586690139779,\"blocks\":[{\"type\":\"header\",\"data\":{\"text\":\"Studio Life\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"We are a BAFTA-winning, independent game developer with a reputation for innovation in both storytelling and VR. We have released a number of successful titles and are best known for the critically acclaimed PS4 hit Until Dawn and the recently launched The Dark Pictures Anthology. The latter is a series of stand-alone, horror games for PS4, Xbox and PC. The first game is Man of Medan.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Founded in 2008, the studio is now home to over 150 talented individuals working across a range of storytelling titles. We've built a track record of high-end production backed up with delivery and reliability. We teamed up with ITN Productions and games trade body TIGA to create this video that explains more about us and how we work.\"}}],\"version\":\"2.15.0\"}",
+                          "Data": "{\"time\":1586722313720,\"blocks\":[{\"type\":\"header\",\"data\":{\"text\":\"Studio Life\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"We are a BAFTA-winning, independent game developer with a reputation for innovation in both storytelling and VR. We have released a number of successful titles and are best known for the critically acclaimed PS4 hit Until Dawn and the recently launched The Dark Pictures Anthology. The latter is a series of stand-alone, horror games for PS4, Xbox and PC. The first game is Man of Medan.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Founded in 2008, the studio is now home to over 150 talented individuals working across a range of storytelling titles. We've built a track record of high-end production backed up with delivery and reliability. We teamed up with ITN Productions and games trade body TIGA to create this video that explains more about us and how we work.\"}}],\"version\":\"2.15.0\"}",
                           "Html": null
                         }
                       }
@@ -3926,13 +4165,13 @@
                 }
               },
               {
-                "ContentItemId": "4anxy3rex0tn2wsjmw7tc36dm4",
+                "ContentItemId": "4j19qe4dfg95x1zc60zd4x7pcc",
                 "ContentItemVersionId": null,
                 "ContentType": "Section",
                 "DisplayText": "Imagery",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:15:39.8505811Z",
+                "ModifiedUtc": "2020-04-12T20:11:53.980714Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -3954,13 +4193,13 @@
                 "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "4p5hxe6x19yc352r0k9e7ra350",
+                      "ContentItemId": "49c7eazyaxn0evsa4zx7w8hfn6",
                       "ContentItemVersionId": null,
                       "ContentType": "Grid",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:15:39.8536226Z",
+                      "ModifiedUtc": "2020-04-12T20:11:53.9840478Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -3982,13 +4221,13 @@
                       "Items": {
                         "ContentItems": [
                           {
-                            "ContentItemId": "4e0y5vc12bbv60c0p9vhwe8gw7",
+                            "ContentItemId": "40ea6pffj4sb3201dhngrf13xh",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:15:39.8563885Z",
+                            "ModifiedUtc": "2020-04-12T20:11:53.987506Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -3997,13 +4236,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4ce1dj27dyqa3xpqpzqa907bc6",
+                                  "ContentItemId": "43pm0r271gyjxwdw7cr1rytn5w",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Picture",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:15:39.8587882Z",
+                                  "ModifiedUtc": "2020-04-12T20:11:53.9889298Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -4012,9 +4251,6 @@
                                     "Image": {
                                       "Data": "[{\"sources\":[{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"}]}]",
                                       "HasData": true
-                                    },
-                                    "AlternateText": {
-                                      "Text": null
                                     }
                                   }
                                 }
@@ -4022,13 +4258,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "4x6c5mp3vvqs05rpxg24fh33dq",
+                            "ContentItemId": "4fy95d9pp890dvww5tyacvsc55",
                             "ContentItemVersionId": null,
                             "ContentType": "GridItem",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:15:39.8641414Z",
+                            "ModifiedUtc": "2020-04-12T20:11:53.992374Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -4037,13 +4273,13 @@
                             "Content": {
                               "ContentItems": [
                                 {
-                                  "ContentItemId": "4pgjwjddxsmwc3vxcn4yyhvex2",
+                                  "ContentItemId": "47p3ewa3kp5ee29tnqysc6485h",
                                   "ContentItemVersionId": null,
                                   "ContentType": "Picture",
                                   "DisplayText": null,
                                   "Latest": false,
                                   "Published": false,
-                                  "ModifiedUtc": "2020-04-12T11:15:39.8654733Z",
+                                  "ModifiedUtc": "2020-04-12T20:11:53.9953861Z",
                                   "PublishedUtc": null,
                                   "CreatedUtc": null,
                                   "Owner": null,
@@ -4052,9 +4288,6 @@
                                     "Image": {
                                       "Data": "[{\"sources\":[{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"}]}]",
                                       "HasData": true
-                                    },
-                                    "AlternateText": {
-                                      "Text": null
                                     }
                                   }
                                 }
@@ -4068,13 +4301,13 @@
                 }
               },
               {
-                "ContentItemId": "42nkehd3x1mat0jb8w7wcbvvwf",
+                "ContentItemId": "43j2hz3stf56z0ksnetm5ayg44",
                 "ContentItemVersionId": null,
                 "ContentType": "SectionMedia",
                 "DisplayText": "Team Member Quote",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:15:39.8720592Z",
+                "ModifiedUtc": "2020-04-12T20:11:54.0015742Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -4104,13 +4337,13 @@
                 "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "48ncw72bwqvrg5eg0ss60djm49",
+                      "ContentItemId": "43k9zrpqxfg0bz2849ms76p1wm",
                       "ContentItemVersionId": null,
                       "ContentType": "Blockquote",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:15:39.8778179Z",
+                      "ModifiedUtc": "2020-04-12T20:11:54.0122199Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -4123,13 +4356,13 @@
                       "QuoteContent": {
                         "ContentItems": [
                           {
-                            "ContentItemId": "4pba3k6htg1zm3szfbbgrfhzxj",
+                            "ContentItemId": "4xyc86k19vsngs6h6s199mggn2",
                             "ContentItemVersionId": null,
                             "ContentType": "Paragraph",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:15:39.8796546Z",
+                            "ModifiedUtc": "2020-04-12T20:11:54.0144157Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -4141,13 +4374,13 @@
                             }
                           },
                           {
-                            "ContentItemId": "47hr0b5yjn8630qqz1njsapydh",
+                            "ContentItemId": "4espv0q8mvdc5xpp2f9y3rmm4e",
                             "ContentItemVersionId": null,
                             "ContentType": "Html",
                             "DisplayText": null,
                             "Latest": false,
                             "Published": false,
-                            "ModifiedUtc": "2020-04-12T11:15:39.8821017Z",
+                            "ModifiedUtc": "2020-04-12T20:11:54.0174889Z",
                             "PublishedUtc": null,
                             "CreatedUtc": null,
                             "Owner": null,
@@ -4165,13 +4398,13 @@
                 }
               },
               {
-                "ContentItemId": "4et0w3j9k465avddegyxb4bamb",
+                "ContentItemId": "4gch59sck2epe5da304agm4fn7",
                 "ContentItemVersionId": null,
                 "ContentType": "Picture",
                 "DisplayText": null,
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:15:39.8864864Z",
+                "ModifiedUtc": "2020-04-12T20:11:54.0241902Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -4180,9 +4413,6 @@
                   "Image": {
                     "Data": "[{\"sources\":[{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"}]}]",
                     "HasData": true
-                  },
-                  "AlternateText": {
-                    "Text": "Description of image."
                   }
                 }
               }
@@ -4370,8 +4600,8 @@
           "ModifiedUtc": "2020-04-12T11:33:13.5658146Z",
           "PublishedUtc": "2020-04-12T11:33:13.6990782Z",
           "CreatedUtc": "2020-04-11T18:50:07.228Z",
-          "Owner": "pkeating",
-          "Author": "pkeating",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
           "Homepage": {},
           "AutoroutePart": {
             "Path": "home",
@@ -4394,7 +4624,7 @@
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
-                "Author": "pkeating",
+                "Author": "[js: parameters('AdminUsername')]",
                 "Hero": {
                   "BackgroundType": {
                     "Text": "embed"
@@ -4428,7 +4658,7 @@
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
-                "Author": "pkeating",
+                "Author": "[js: parameters('AdminUsername')]",
                 "SectionFeatured": {
                   "Background": {
                     "Data": "[{\"sources\":[{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"}]}]",
@@ -4451,7 +4681,7 @@
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
-                      "Author": "pkeating",
+                      "Author": "[js: parameters('AdminUsername')]",
                       "Paragraph": {
                         "Text": {
                           "Text": "Explore and survive in an infinite procedurally generated universe."
@@ -4469,7 +4699,7 @@
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
-                      "Author": "pkeating",
+                      "Author": "[js: parameters('AdminUsername')]",
                       "Link": {
                         "Text": {
                           "Text": "Discover more"
@@ -4499,7 +4729,7 @@
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
-                "Author": "pkeating",
+                "Author": "[js: parameters('AdminUsername')]",
                 "SectionMedia": {
                   "Media": {
                     "Paths": [
@@ -4535,7 +4765,7 @@
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
-                      "Author": "pkeating",
+                      "Author": "[js: parameters('AdminUsername')]",
                       "Paragraph": {
                         "Text": {
                           "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien, in fermentum mi lacus eu lorem. Nam libero risus, euismod eu gravida vel, ullamcorper vitae neque. In sollicitudin aliquet mattis. Donec at varius erat. Nunc nec egestas tortor. Praesent quis dapibus risus. Aliquam erat lorem, accumsan sed efficitur ut, venenatis et diam."
@@ -4553,7 +4783,7 @@
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
-                      "Author": "pkeating",
+                      "Author": "[js: parameters('AdminUsername')]",
                       "Link": {
                         "Text": {
                           "Text": "Learn more"
@@ -4901,6 +5131,132 @@
             "Images": [],
             "Title": null
           }
+        },
+        {
+          "ContentItemId": "4pd2ymqtarc8mtahsezrheebcv",
+          "ContentItemVersionId": "42excbvpvm2ah0fcgjepd4vcd5",
+          "ContentType": "Job",
+          "DisplayText": "Camera Artist",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-12T11:51:54.9511589Z",
+          "PublishedUtc": "2020-04-12T11:51:54.9573509Z",
+          "CreatedUtc": "2020-04-12T11:51:54.9573509Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "Job": {
+            "Length": {
+              "Text": "Permanent / 6 Months Fixed-Term"
+            }
+          },
+          "TitlePart": {
+            "Title": "Camera Artist"
+          }
+        },
+        {
+          "ContentItemId": "4j09zmqk1x6rp6yyd9m9d0fycj",
+          "ContentItemVersionId": "4z2wkajp7qd4b594cmms8azenm",
+          "ContentType": "Job",
+          "DisplayText": "Front End / UI Artist",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-12T11:52:14.0922441Z",
+          "PublishedUtc": "2020-04-12T11:52:14.0949284Z",
+          "CreatedUtc": "2020-04-12T11:52:14.0949284Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "Job": {
+            "Length": {
+              "Text": "Permanent"
+            }
+          },
+          "TitlePart": {
+            "Title": "Front End / UI Artist"
+          }
+        },
+        {
+          "ContentItemId": "40yy7mxnn30f17evv8nb1fwwc7",
+          "ContentItemVersionId": "41f7gj7q8ze76ygfcxnx03qrde",
+          "ContentType": "Job",
+          "DisplayText": "Senior Character Artist",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-12T11:52:30.1328261Z",
+          "PublishedUtc": "2020-04-12T11:52:30.1365223Z",
+          "CreatedUtc": "2020-04-12T11:52:30.1365223Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "Job": {
+            "Length": {
+              "Text": "Permanent"
+            }
+          },
+          "TitlePart": {
+            "Title": "Senior Character Artist"
+          }
+        },
+        {
+          "ContentItemId": "455pv912gmjas3d5f274ajmxce",
+          "ContentItemVersionId": "4gp8cth4vb18s0h05nnaf03nc5",
+          "ContentType": "Job",
+          "DisplayText": "Audio Designer",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-12T11:52:38.5413833Z",
+          "PublishedUtc": "2020-04-12T11:52:38.5438732Z",
+          "CreatedUtc": "2020-04-12T11:52:38.5438732Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "Job": {
+            "Length": {
+              "Text": "Permanent"
+            }
+          },
+          "TitlePart": {
+            "Title": "Audio Designer"
+          }
+        },
+        {
+          "ContentItemId": "49yzm3hzkyr06xxa9sb65gvp4a",
+          "ContentItemVersionId": "4gmvxvcs30yc0werkk64ajj3n5",
+          "ContentType": "Job",
+          "DisplayText": "Presentation Manager",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-12T11:52:52.2483487Z",
+          "PublishedUtc": "2020-04-12T11:52:52.2510863Z",
+          "CreatedUtc": "2020-04-12T11:52:52.2510863Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "Job": {
+            "Length": {
+              "Text": "Permanent"
+            }
+          },
+          "TitlePart": {
+            "Title": "Presentation Manager"
+          }
+        },
+        {
+          "ContentItemId": "43wb3zh5s8aynx2k2p3yzd4h4f",
+          "ContentItemVersionId": "4hg5q8gmhybwe0qmgcvc5qknce",
+          "ContentType": "Job",
+          "DisplayText": "Game Systems Programmer",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-12T11:53:07.0530566Z",
+          "PublishedUtc": "2020-04-12T11:53:07.0567552Z",
+          "CreatedUtc": "2020-04-12T11:53:07.0567552Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "Job": {
+            "Length": {
+              "Text": "Permanent / 6 Months Fixed-Term"
+            }
+          },
+          "TitlePart": {
+            "Title": "Game Systems Programmer"
+          }
         }
       ]
     },
@@ -4911,6 +5267,25 @@
           "Name": "Default",
           "Rule": "true",
           "Description": "Displays widget on every page."
+        }
+      ]
+    },
+    {
+      "name": "lucene-index",
+      "Indices": [
+        "ContentItems"
+      ]
+    },
+    {
+      "name": "Queries",
+      "Queries": [
+        {
+          "Index": "ContentItems",
+          "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [\"{{ contentType }}\"] } }    \r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.PublishedUtc\": {\r\n      \"order\": \"asc\"\r\n    }\r\n  },\r\n  \"size\": {{ size }}\r\n}",
+          "ReturnContentItems": true,
+          "Name": "ContentItems",
+          "Source": "Lucene",
+          "Schema": null
         }
       ]
     },

@@ -5,6 +5,12 @@
  */
 
 .color {
+    &--default {
+        @include themify($themes) {
+            color: themed('color.text');
+        }
+    }
+    
     &--white {
         @include themify($themes) {
             color: themed('color.white');
