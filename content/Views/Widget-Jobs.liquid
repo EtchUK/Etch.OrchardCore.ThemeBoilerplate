@@ -1,0 +1,14 @@
+﻿{% assign jobs = Queries.ContentItems | query: contentType: "Job", size: Model.ContentItem.Content.Jobs.Quantity.Value %}
+
+<div class="grid grid--gutter-small align--wide color--default">
+	{% for item in jobs %}
+    <div class="grid__item">
+		<div class="card card--job">
+            <div class="card__body text--align-left">
+                <h3>{{ item | display_text }}</h3>
+                <p>{{ item.Content.Job.Length.Text }}</p>
+            </div>
+        </div>
+    </div>
+	{% endfor %}
+</div>
