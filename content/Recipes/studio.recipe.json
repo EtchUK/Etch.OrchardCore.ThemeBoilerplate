@@ -2111,6 +2111,38 @@
                 },
                 "ContentIndexSettings": {}
               }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Alignment",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Alignment",
+                  "Editor": "PredefinedList"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Control how content is aligned within section."
+                },
+                "ContentIndexSettings": {},
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "name": "Center",
+                      "value": "center"
+                    },
+                    {
+                      "name": "Right",
+                      "value": "right"
+                    }
+                  ],
+                  "Editor": 1,
+                  "DefaultValue": "default"
+                }
+              }
             }
           ]
         },
@@ -4113,6 +4145,262 @@
             "Zone": "Footer",
             "Layer": "Default",
             "RenderTitle": false
+          }
+        },
+        {
+          "ContentItemId": "4yh7ak6e0vnmnsmsvdvqbc3gmr",
+          "ContentItemVersionId": "4d08cs1zynysjx6gs3b34z5ect",
+          "ContentType": "Page",
+          "DisplayText": "Games",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-12T00:07:33.3915053Z",
+          "PublishedUtc": "2020-04-12T00:07:33.4465665Z",
+          "CreatedUtc": "2020-04-12T00:02:19.8953442Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "Page": {
+            "DisplayTitle": {
+              "Value": false
+            }
+          },
+          "AutoroutePart": {
+            "Path": "games",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "Games"
+          },
+          "Content": {
+            "ContentItems": [
+              {
+                "ContentItemId": "4qx3v16139pxn5wp6pt9311wnj",
+                "ContentItemVersionId": null,
+                "ContentType": "SectionFeatured",
+                "DisplayText": "Game One",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-12T00:07:33.4043417Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "SectionFeatured": {
+                  "Background": {
+                    "Data": "[{\"sources\":[{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"}]}]",
+                    "HasData": true
+                  },
+                  "Alignment": {
+                    "Text": "default"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Game One"
+                },
+                "Content": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "471n6wkns5xk500k7vqje8x54n",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Paragraph",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T00:07:33.407837Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Paragraph": {
+                        "Text": {
+                          "Text": "Explore and survive in an infinite procedurally generated universe"
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "46j2h38pwq92f0cnq3bw0c7jxb",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Link",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T00:07:33.4138586Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Link": {
+                        "Text": {
+                          "Text": "Discover more"
+                        },
+                        "Url": {
+                          "Text": "#"
+                        },
+                        "OpenInNewWindow": {
+                          "Value": false
+                        },
+                        "Style": {
+                          "Text": "primary"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "ContentItemId": "4jgq66469egh4zwg7j3xat2v4s",
+                "ContentItemVersionId": null,
+                "ContentType": "SectionFeatured",
+                "DisplayText": "Game Two",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-12T00:07:33.4187835Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "SectionFeatured": {
+                  "Background": {
+                    "Data": "[{\"sources\":[{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"}]}]",
+                    "HasData": true
+                  },
+                  "Alignment": {
+                    "Text": "center"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Game Two"
+                },
+                "Content": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "4tsn40c6mtm7b084qhhs1trvd8",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Paragraph",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T00:07:33.4217069Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Paragraph": {
+                        "Text": {
+                          "Text": "Explore and survive in an infinite procedurally generated universe"
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "494a54hg773g953vmtbd22p2wn",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Link",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T00:07:33.4242669Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Link": {
+                        "Text": {
+                          "Text": "Discover more"
+                        },
+                        "Url": {
+                          "Text": "#"
+                        },
+                        "OpenInNewWindow": {
+                          "Value": false
+                        },
+                        "Style": {
+                          "Text": "primary"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "ContentItemId": "4jnnsxm8z5zdq4cynjp9z6jwnv",
+                "ContentItemVersionId": null,
+                "ContentType": "SectionFeatured",
+                "DisplayText": "Game Three",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-12T00:07:33.4312633Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "SectionFeatured": {
+                  "Background": {
+                    "Data": "[{\"sources\":[{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"}]}]",
+                    "HasData": true
+                  },
+                  "Alignment": {
+                    "Text": "right"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Game Three"
+                },
+                "Content": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "4g13zzqjkwbfkzm7hvyz7f5r5w",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Paragraph",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T00:07:33.4342895Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Paragraph": {
+                        "Text": {
+                          "Text": "Explore and survive in an infinite procedurally generated universe."
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "4ptg7m0bdmtv557g3fsdsbv0x6",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Link",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T00:07:33.4368646Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Link": {
+                        "Text": {
+                          "Text": "Discover more"
+                        },
+                        "Url": {
+                          "Text": "#"
+                        },
+                        "OpenInNewWindow": {
+                          "Value": false
+                        },
+                        "Style": {
+                          "Text": "primary"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "MetaTagsPart": {
+            "Description": null,
+            "Images": [],
+            "Title": null
           }
         }
       ]
