@@ -1,5 +1,5 @@
 /* ==========================================================================
-   #EMBED
+   #EMBED/DEFAULT
    ========================================================================== */
 
 /**
@@ -15,10 +15,10 @@
     .embed__source {
         height: 0;
         @include rem(margin-bottom, $spacing-default);
+        max-width: 100%;
         overflow: hidden;
         padding-bottom: 56.25%;
         position: relative;
-        max-width: 100%;
         
         > iframe,
         > object,
