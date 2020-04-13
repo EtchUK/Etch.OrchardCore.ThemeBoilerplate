@@ -1,18 +1,16 @@
 <form class="form" action="#" method="POST">
-    <div class="form-group">
-        <ul class="list list--horizontal-spaced">
-            <li>
-                {{render '@text'}}
-            </li>
-            <li>
-                {{render '@text'}}
-            </li>
-        </ul>
+    <ul class="list list--horizontal-spaced">
+        <li>
+            {{render '@text'}}
+        </li>
+        <li>
+            {{render '@text'}}
+        </li>
+    </ul>
 
-        {{render '@textarea'}}
+    {{render '@textarea'}}
 
-        {{render '@select'}}
+    {{render '@select'}}
 
-        <button id="SignUp" name="SignUp" type="submit" class="btn btn--primary">Sign me up</button>
-    </div>
+    <button id="SignUp" name="SignUp" type="submit" class="btn btn--primary">Sign me up</button>
 </form>
