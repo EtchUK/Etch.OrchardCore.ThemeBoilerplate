@@ -3,9 +3,11 @@
    ========================================================================== */
 
 /**
- * Various styles related to buttons.
+ * Various styles related to links or buttons.
  */
 
-@import 'settings';
+@import "settings";
 
-@import 'button';
+@import "default";
+@import "primary";
+@import "secondary";
