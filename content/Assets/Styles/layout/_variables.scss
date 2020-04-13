@@ -1,7 +1,6 @@
 /* ==========================================================================
-   #LINK/SETTINGS
+   #LAYOUT/VARIABLES
    ========================================================================== */
 
-$link-line-height: 1px;
-
-$link-transition-duration: 0.3s;
+$layout-gap-master: $content-gutter;
+$layout-gap-master-small: $content-gutter-small;
