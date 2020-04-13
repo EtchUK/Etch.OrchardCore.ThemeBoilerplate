@@ -1,12 +1,9 @@
 /* ==========================================================================
-   #SECTION
+   #WIDTH
    ========================================================================== */
 
-@import "variables";
-@import "default";
+/**
+ * Classes to control width of element.
+ */
 
-@import "alignment";
-@import "feature";
-@import "form-solo";
-@import "hero";
-@import "width";
+.width--full { width: 100%; }
