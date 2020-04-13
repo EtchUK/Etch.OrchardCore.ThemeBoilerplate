@@ -36,7 +36,7 @@
 
   <ItemGroup>
     <EmbeddedResource Remove="azure-pipeline-stable.yml" />
-    <EmbeddedResource Remove=".gitignore"  />
+    <EmbeddedResource Remove=".gitignore" />
     <EmbeddedResource Remove="package.json" />
     <EmbeddedResource Remove="package-lock.json" />
     <EmbeddedResource Remove="prettierrc" />
@@ -50,6 +50,8 @@
     <PackageReference Include="OrchardCore.Menu" Version="1.0.0-rc1-10004" />
     <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc1-10004" />
     <PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0-rc1-10004" />
+    <PackageReference Include="OrchardCore.Themes" Version="1.0.0-rc1-10004" />
+    <PackageReference Include="OrchardCore.Users" Version="1.0.0-rc1-10004" />
   </ItemGroup>
 
   <ItemGroup>

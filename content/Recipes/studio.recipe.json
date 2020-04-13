@@ -5511,7 +5511,7 @@
       "Layers": [
         {
           "Name": "Default",
-          "Rule": "true",
+          "Rule": "!url(\"/login\") && !url(\"/forgotpassword\") && !url(\"/forgotpasswordconfirmation\") && !url(\"/resetpassword\") && !url(\"/resetpasswordconfirmation\")",
           "Description": "Displays widget on every page."
         }
       ]
@@ -5542,6 +5542,12 @@
           "Header",
           "Footer"
         ]
+      },
+      "LoginSettings": {
+        "UseSiteTheme": true
+      },
+      "ResetPasswordSettings": {
+        "UseSiteTheme": true
       }
     },
     {
