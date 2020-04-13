@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #BUTTON/SECONDARY
+   ========================================================================== */
+
+.btn--secondary,
+.btn--secondary:link,
+.btn--secondary:visited {
+    @include themify($themes) {
+        background-color: themed('color.brandSecondary');
+        border: $button-border-size solid themed('color.brandSecondary');
+        color: themed('color.white');
+    }
+}
