@@ -1,0 +1,40 @@
+
+/* ==========================================================================
+   #SECTION/FORM-SOLO
+   ========================================================================== */
+
+.section--form-solo {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    padding: 0;
+    width: 100%;
+
+    text-align: center;
+
+    @include themify($themes) {
+        background-color: themed('color.greyLight');
+    }
+
+    .section__content {
+        @include rem(max-width, $section-form-solo-max-width);
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .form {
+        @include rem(padding, $spacing-large);
+
+        @include themify($themes) {
+            background-color: themed('color.white');
+        }
+    }
+
+    label {
+        @include themify($themes) {
+            @include rem(font-size, themed('fontSize.default'));
+            @include rem(line-height, themed('lineHeight.default'));
+        }
+    }
+}
