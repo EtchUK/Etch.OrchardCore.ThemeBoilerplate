@@ -1,5 +1,7 @@
 /* ==========================================================================
-   #SWATCH/SETTINGS
+   #GALLERY/VARIABLES
    ========================================================================== */
 
-$swatch-height: 100px;
+$gallery-gutter: 2rem;
+$gallery-gutter-small: 1.5rem;
+$gallery-item-gap: $gallery-gutter / 2;
