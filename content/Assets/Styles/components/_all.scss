@@ -2,23 +2,21 @@
    #COMPONENTS
    ========================================================================== */
 
-@import "settings";
-
 @import "alert/all";
 @import "card/all";
 @import "editor-toolbar/all";
-@import "embed";
-@import "footer";
+@import "embed/all";
+@import "footer/all";
 @import "form/all";
 @import "gallery/all";
 @import "grid/all";
 @import "header/all";
-@import "hero";
-@import "hint";
+@import "hero/all";
+@import "hint/all";
 @import "link/all";
 @import "list/all";
-@import "media";
-@import "pager";
+@import "media/all";
+@import "pager/all";
 @import "section/all";
 @import "swatch/all";
 @import "table/all";
