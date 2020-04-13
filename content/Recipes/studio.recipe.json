@@ -17,17 +17,17 @@
       "enable": [
         "Application.Default",
         "Etch.OrchardCore.SiteBoilerplate",
+        "Etch.OrchardCore.Blocks",
         "OrchardCore.Liquid",
         "OrchardCore.Settings",
         "OrchardCore.Contents",
         "OrchardCore.ContentTypes",
         "OrchardCore.Media",
+        "Etch.OrchardCore.Blocks.EditorJS",
         "OrchardCore.Alias",
         "Etch.OrchardCore.Fields.ResponsiveMedia",
         "OrchardCore.ContentFields",
         "Etch.OrchardCore.SEO.MetaTags",
-        "Etch.OrchardCore.Blocks",
-        "Etch.OrchardCore.Blocks.EditorJS",
         "OrchardCore.Title",
         "OrchardCore.Widgets",
         "OrchardCore.Flows",
@@ -64,6 +64,7 @@
         "OrchardCore.Themes",
         "OrchardCore.Workflows.Http",
         "OrchardCore.Workflows.Timers",
+        "OrchardCore.Taxonomies",
         "TheAdmin",
         "Etch.OrchardCore.AdminTheme",
         "Etch.OrchardCore.DefaultTheme",
@@ -71,6 +72,7 @@
       ],
       "disable": [
         "Etch.OrchardCore.ContextualEdit",
+        "Etch.OrchardCore.Fields.Code",
         "Etch.OrchardCore.Fields.Dictionary",
         "Etch.OrchardCore.Fields.Eventbrite",
         "Etch.OrchardCore.Fields.MultiSelect",
@@ -78,8 +80,6 @@
         "Etch.OrchardCore.Fields.Values",
         "Etch.OrchardCore.Gallery",
         "Etch.OrchardCore.InjectScripts",
-        "OrchardCore.Taxonomies",
-        "Etch.OrchardCore.News",
         "Etch.OrchardCore.SEO.HostnameRedirects",
         "Etch.OrchardCore.SEO.Redirects",
         "Etch.OrchardCore.SEO.Redirects.Import",
@@ -132,6 +132,15 @@
         "OrchardCore.Users.Registration",
         "OrchardCore.Users.ResetPassword",
         "OrchardCore.Users.TimeZone"
+      ]
+    },
+    {
+      "name": "Feature",
+      "enable": [
+        "Etch.OrchardCore.News"
+      ],
+      "disable": [
+        
       ]
     },
     {
@@ -267,6 +276,8 @@
                     "Heading",
                     "Html",
                     "Image",
+                    "Jobs",
+                    "LatestNews",
                     "Link",
                     "OrderedList",
                     "Paragraph",
@@ -373,6 +384,8 @@
                     "Heading",
                     "Html",
                     "Image",
+                    "Jobs",
+                    "LatestNews",
                     "Link",
                     "OrderedList",
                     "Paragraph",
@@ -991,6 +1004,8 @@
                     "Heading",
                     "Html",
                     "Image",
+                    "Jobs",
+                    "LatestNews",
                     "Link",
                     "OrderedList",
                     "Paragraph",
@@ -1290,6 +1305,27 @@
             {
               "PartName": "Jobs",
               "Name": "Jobs",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "LatestNews",
+          "DisplayName": "Latest News",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "LatestNews",
+              "Name": "LatestNews",
               "Settings": {
                 "ContentTypePartSettings": {
                   "Position": "0"
@@ -4592,13 +4628,13 @@
         },
         {
           "ContentItemId": "4j2bj7ydh9n4xrhpen3xx7wxx5",
-          "ContentItemVersionId": "4dnm47q07xkhj6304dew5dp4m1",
+          "ContentItemVersionId": "4hfz9nywnba41xtkpfjkh11cmg",
           "ContentType": "Homepage",
           "DisplayText": "Home",
           "Latest": true,
           "Published": true,
-          "ModifiedUtc": "2020-04-12T11:33:13.5658146Z",
-          "PublishedUtc": "2020-04-12T11:33:13.6990782Z",
+          "ModifiedUtc": "2020-04-12T23:37:23.480693Z",
+          "PublishedUtc": "2020-04-12T23:37:23.5462629Z",
           "CreatedUtc": "2020-04-11T18:50:07.228Z",
           "Owner": "[js: parameters('AdminUsername')]",
           "Author": "[js: parameters('AdminUsername')]",
@@ -4614,13 +4650,13 @@
           "Content": {
             "ContentItems": [
               {
-                "ContentItemId": "46q0bqb5qdgzn4qwfv22wsyrcg",
+                "ContentItemId": "4n0k0a0z227d54ffdhsvf8t3x7",
                 "ContentItemVersionId": null,
                 "ContentType": "Hero",
                 "DisplayText": null,
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:33:13.6288139Z",
+                "ModifiedUtc": "2020-04-12T23:37:23.4967396Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -4648,13 +4684,13 @@
                 }
               },
               {
-                "ContentItemId": "4mm32xr26zm2n4yvhf565rbt5q",
+                "ContentItemId": "4smzae2sge2gcx1jng8g53m7nd",
                 "ContentItemVersionId": null,
                 "ContentType": "SectionFeatured",
                 "DisplayText": "Feature Section Title",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:33:13.6492473Z",
+                "ModifiedUtc": "2020-04-12T23:37:23.5024772Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -4671,13 +4707,13 @@
                 "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "4e28x6swz0g635083j0sq4ewwr",
+                      "ContentItemId": "47kcp8a0zxt00zsrmz1sv6gm4w",
                       "ContentItemVersionId": null,
                       "ContentType": "Paragraph",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:13.6518526Z",
+                      "ModifiedUtc": "2020-04-12T23:37:23.5048946Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -4689,13 +4725,13 @@
                       }
                     },
                     {
-                      "ContentItemId": "4vqptttzs3z2e1skr1gyyndhxp",
+                      "ContentItemId": "4b0d2gq4jtf2p58z5ee85rb04n",
                       "ContentItemVersionId": null,
                       "ContentType": "Link",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:13.6567835Z",
+                      "ModifiedUtc": "2020-04-12T23:37:23.5097156Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -4719,13 +4755,13 @@
                 }
               },
               {
-                "ContentItemId": "4waegkbxbcg2gr4k3e2vdj75xn",
+                "ContentItemId": "4g699mm2yfpm8v1dgd4ky37056",
                 "ContentItemVersionId": null,
                 "ContentType": "SectionMedia",
                 "DisplayText": "Section Title",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-04-12T11:33:13.6656716Z",
+                "ModifiedUtc": "2020-04-12T23:37:23.5155428Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -4755,13 +4791,13 @@
                 "Content": {
                   "ContentItems": [
                     {
-                      "ContentItemId": "4a859gxy4vf190297b22tqqm4r",
+                      "ContentItemId": "4qt8zpa1j7r2zs6xy6dy1cdtxa",
                       "ContentItemVersionId": null,
                       "ContentType": "Paragraph",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:13.6797504Z",
+                      "ModifiedUtc": "2020-04-12T23:37:23.5200401Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -4773,13 +4809,13 @@
                       }
                     },
                     {
-                      "ContentItemId": "4f8jsmrapbmmf0kqx4rtexb6nz",
+                      "ContentItemId": "43cwqxgeckha5x8ja1zg8hfrnc",
                       "ContentItemVersionId": null,
                       "ContentType": "Link",
                       "DisplayText": null,
                       "Latest": false,
                       "Published": false,
-                      "ModifiedUtc": "2020-04-12T11:33:13.6825782Z",
+                      "ModifiedUtc": "2020-04-12T23:37:23.5240777Z",
                       "PublishedUtc": null,
                       "CreatedUtc": null,
                       "Owner": null,
@@ -4798,6 +4834,72 @@
                           "Text": "default"
                         }
                       }
+                    }
+                  ]
+                }
+              },
+              {
+                "ContentItemId": "4nf8h2c8ha365vn9x44jkhynmr",
+                "ContentItemVersionId": null,
+                "ContentType": "Section",
+                "DisplayText": "Latest News",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-04-12T23:37:23.5305159Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "Section": {
+                  "BackgroundColour": {
+                    "Text": "grey-light"
+                  },
+                  "Alignment": {
+                    "Text": "default"
+                  },
+                  "ContentWidth": {
+                    "Text": "wide"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Latest News"
+                },
+                "Content": {
+                  "ContentItems": [
+                    {
+                      "ContentItemId": "4zggpgatwtqcyw3x5zcshew8nd",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Heading",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T23:37:23.5340771Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "Heading": {
+                        "Text": {
+                          "Text": "Latest news"
+                        },
+                        "Level": {
+                          "Text": "2"
+                        }
+                      }
+                    },
+                    {
+                      "ContentItemId": "4nn5t0c94ptzr67nk9cwx67qwc",
+                      "ContentItemVersionId": null,
+                      "ContentType": "LatestNews",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-12T23:37:23.5370436Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "[js: parameters('AdminUsername')]",
+                      "LatestNews": {}
                     }
                   ]
                 }
@@ -5256,6 +5358,150 @@
           },
           "TitlePart": {
             "Title": "Game Systems Programmer"
+          }
+        },
+        {
+          "ContentItemId": "4834nvn3nfhe45tcdgtpcxcnck",
+          "ContentItemVersionId": "43mja8535cwk5ws3340n2pvvxw",
+          "ContentType": "NewsPost",
+          "DisplayText": "Example Blog Post #1",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-12T21:43:17.5336095Z",
+          "PublishedUtc": "2020-04-12T21:43:17.7143012Z",
+          "CreatedUtc": "2020-04-12T21:10:43.9518805Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "NewsPost": {
+            "Content": {
+              "Data": "{\"time\":1586727797423,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"caption\":\"The image fills the width of its parent.\",\"mediaPath\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\",\"url\":\"/example/media/Backgrounds/Default/unsplash-1444090542259-1920w.jpg\",\"stretched\":true}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.15.0\"}",
+              "Html": null
+            },
+            "Thumbnail": {
+              "Paths": [
+                "Backgrounds/Default/unsplash-1444090542259-400w.jpg"
+              ]
+            },
+            "Author": {
+              "Text": "Admin"
+            },
+            "ThumbnailAlt": {
+              "Text": "Description of image"
+            },
+            "FurtherReading": {
+              "ContentItemIds": []
+            },
+            "Tags": {
+              "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
+              "TermContentItemIds": []
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/example-blog-post-1",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "Example Blog Post #1"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4dzdnpafscnp33y8xdz4ch45xt",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "4gg8rgyyv8by5rxy5vpgca774n",
+          "ContentItemVersionId": "4kzb1ntzdaqk4rtrfsc9kya95n",
+          "ContentType": "NewsPost",
+          "DisplayText": "Example Blog Post #3",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-12T21:50:31.3531677Z",
+          "PublishedUtc": "2020-04-12T21:50:31.3729043Z",
+          "CreatedUtc": "2020-04-12T21:50:31.3729043Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "NewsPost": {
+            "Content": {
+              "Data": "{\"time\":1586728231298,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"url\":\"/example/media/Backgrounds/Default/unsplash-1444090542259-1920w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":true}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.15.0\"}",
+              "Html": null
+            },
+            "Thumbnail": {
+              "Paths": [
+                "Backgrounds/Default/unsplash-1444090542259-400w.jpg"
+              ]
+            },
+            "Author": {
+              "Text": "Admin"
+            },
+            "ThumbnailAlt": {
+              "Text": "Description of image"
+            },
+            "FurtherReading": {
+              "ContentItemIds": []
+            },
+            "Tags": {
+              "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
+              "TermContentItemIds": []
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/example-blog-post-3",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "Example Blog Post #3"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4dzdnpafscnp33y8xdz4ch45xt",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "498z2g8j1rw5p2066gw0rbbbx7",
+          "ContentItemVersionId": "4s0wsdm5awvwesp514zak122m5",
+          "ContentType": "NewsPost",
+          "DisplayText": "Example Blog Post #2",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-12T23:22:23.6045483Z",
+          "PublishedUtc": "2020-04-12T23:22:23.8193481Z",
+          "CreatedUtc": "2020-04-12T21:50:20.7713817Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "NewsPost": {
+            "Content": {
+              "Data": "{\"time\":1586733743506,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"url\":\"/example/media/Backgrounds/Default/unsplash-1444090542259-1920w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":true}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.15.0\"}",
+              "Html": null
+            },
+            "Thumbnail": {
+              "Paths": [
+                "Backgrounds/Default/unsplash-1444090542259-400w.jpg"
+              ]
+            },
+            "Author": {
+              "Text": "Admin"
+            },
+            "ThumbnailAlt": {
+              "Text": "Description of image"
+            },
+            "FurtherReading": {
+              "ContentItemIds": []
+            },
+            "Tags": {
+              "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
+              "TermContentItemIds": []
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/example-blog-post-2",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "Example Blog Post #2"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4dzdnpafscnp33y8xdz4ch45xt",
+            "Order": 0
           }
         }
       ]
