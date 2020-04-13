@@ -1,8 +1,8 @@
 import 'picturefill';
-import Rellax from 'rellax';
 
 import gallery from './components/gallery';
 import nav from './components/nav';
+import parallax from './components/parallax';
 import toggleNav from './components/toggleNav';
 
 /**
@@ -12,8 +12,8 @@ import toggleNav from './components/toggleNav';
 const init = () => {
     gallery();
     nav();
+    parallax();
     toggleNav();
-    Rellax('.parallax');
 };
 
 const canInit = () => {
