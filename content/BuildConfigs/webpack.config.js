@@ -41,8 +41,7 @@ module.exports = {
                                     '@babel/preset-env',
                                     {
                                         corejs: { version: 3, proposals: true },
-                                        targets: '> 0.25%, not dead',
-                                        useBuiltIns: 'usage',
+                                        useBuiltIns: 'entry',
                                     },
                                 ],
                             ],
@@ -74,7 +73,7 @@ module.exports = {
                         options: {
                             plugins: function () {
                                 return [
-                                    autoprefixer('last 1 version', 'ie 10'),
+                                    autoprefixer(),
                                 ];
                             },
                         },

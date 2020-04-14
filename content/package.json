@@ -71,7 +71,11 @@
         "picturefill": "^3.0.3",
         "rellax": "^1.10.0"
     },
+<<<<<<< HEAD
 >>>>>>> Upgrade all npm dependencies
+=======
+    "browserslist": "> 0.25%, last 2 versions, not dead",
+>>>>>>> Move agreed browserlist configuration to packaage.json
     "fractal": {
         "main": "./BuildConfigs/fractal.config.js"
     }
