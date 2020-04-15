@@ -9,9 +9,6 @@
     padding-bottom: 0;
     padding-top: 0;
 
-    @include bp-min-width($bp-desktop) {
-    }
-
     .section {
         &__content {
             position: absolute;

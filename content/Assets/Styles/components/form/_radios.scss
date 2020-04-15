@@ -11,36 +11,6 @@
         position: relative;
     }
 
-        &__input {
-            height: $form-radio-height;
-            left: 0;
-            margin: 0;
-            position: absolute;
-            top: 0;
-            width: $form-radio-width;
-            z-index: $z-index-default;
-            
-            cursor: pointer;
-            opacity: 0;
-
-            /* Make check icon visible */
-            &:checked + .radios__label:after {
-                opacity: 1;
-            }
-
-            /* Change radio border colour when checked */
-            &:checked + .radios__label:before {
-                @include themify($themes) {
-                    border-color: themed('color.text');
-                }
-            }
-            
-            /* Show focus colour */
-            &:focus + .radios__label::before {           
-                @include focus-form-element;
-            }
-        }
-
         &__label {
             display: inline-block;
             margin-bottom: 0;
@@ -85,6 +55,36 @@
                 }
                 border-radius: 50%;
                 opacity: 0;
+            }
+        }
+
+        &__input {
+            height: $form-radio-height;
+            left: 0;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            width: $form-radio-width;
+            z-index: $z-index-default;
+            
+            cursor: pointer;
+            opacity: 0;
+
+            /* Make check icon visible */
+            &:checked + .radios__label:after {
+                opacity: 1;
+            }
+
+            /* Change radio border colour when checked */
+            &:checked + .radios__label:before {
+                @include themify($themes) {
+                    border-color: themed('color.text');
+                }
+            }
+            
+            /* Show focus colour */
+            &:focus + .radios__label::before {           
+                @include focus-form-element;
             }
         }
 }

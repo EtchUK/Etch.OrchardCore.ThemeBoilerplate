@@ -3,6 +3,22 @@
    ========================================================================== */
 
 .link--slide {
+
+    &-bottom:before {
+        top: 100%;
+        transform: translateY(10px);
+    }
+
+    &-center:before {
+        top: 100%;
+        transform: translateY(0px);
+    }
+
+    &-top:before {
+        bottom: 100%;
+        transform: translateY(10px);
+    }
+
     &-bottom, &-center, &-top {
         position: relative;
 
@@ -21,7 +37,6 @@
             
             opacity: 0;
             transition: opacity $link-transition-duration, transform $link-transition-duration;
-            
         }
 
         &:hover {
@@ -31,43 +46,15 @@
         }
     }
 
-    &-bottom {
-        &:before {
-            top: 100%;
-            transform: translateY(10px);
-        }
-
-        &:hover {
-            &:before {
-                transform: translateY(0px);
-            }
-        }
+    &-bottom:hover:before {
+        transform: translateY(0px);
     }
 
-    &-center {
-        &:before {
-            top: 100%;
-            transform: translateY(0px);
-        }
-
-        &:hover {
-            &:before {
-                transform: translateY(-10px);
-            }
-        }
+    &-center:hover:before {
+        transform: translateY(-10px);
     }
 
-    &-top {
-
-        &:before {
-            bottom: 100%;
-            transform: translateY(10px);
-        }
-
-        &:hover {
-            &:before {
-                transform: translateY(0);
-            }
-        }
+    &-top:hover:before {
+        transform: translateY(0);
     }
 }
