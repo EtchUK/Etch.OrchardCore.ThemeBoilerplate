@@ -3,6 +3,25 @@
    ========================================================================== */
 
 .link--grow {
+    &-center {
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &-ltr {
+        &:before {
+            left: 0;
+        }
+    }
+
+    &-rtl {
+        &:before {
+            right: 0;
+        }
+    }
+    
     &-center, &-ltr, &-rtl {
         position: relative;
 
@@ -26,25 +45,6 @@
             &:before {
                 width: 100%;
             }
-        }
-    }
-
-    &-center {
-        &:before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-
-    &-ltr {
-        &:before {
-            left: 0;
-        }
-    }
-
-    &-rtl {
-        &:before {
-            right: 0;
         }
     }
 }
