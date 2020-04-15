@@ -36,6 +36,19 @@ table {
         }
     }
 
+    td {
+        &:before {
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+            @include rem(margin-right, $table-cell-padding-horizontal);
+
+            @include bp-min-width($bp-tablet) {
+                display: none;
+            }
+        }
+    }
+    
     th,
     td {
         display: block;
@@ -58,19 +71,6 @@ table {
 
         &:last-child {
             @include rem(padding-right, $table-cell-padding-horizontal);
-        }
-    }
-
-    td {
-        &:before {
-            content: attr(data-label);
-            float: left;
-            font-weight: bold;
-            @include rem(margin-right, $table-cell-padding-horizontal);
-
-            @include bp-min-width($bp-tablet) {
-                display: none;
-            }
         }
     }
 }
