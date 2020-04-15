@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -127,6 +128,13 @@ module.exports = {
                 to: path.join(process.cwd(), 'wwwroot/img'),
             },
         ]),
+        new StylelintPlugin({
+            configFile: path.join(
+                process.cwd(),
+                'BuildConfigs/.stylelintrc'
+            ),
+            syntax: 'scss'
+        })
     ],
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
