@@ -1,5 +1,4 @@
 const autoprefixer = require('autoprefixer');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -86,17 +85,6 @@ module.exports = {
     },
     plugins: [
         new FixStyleOnlyEntriesPlugin(),
-        new CleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: [
-                path.join(process.cwd(), 'wwwroot/content'),
-                path.join(process.cwd(), 'wwwroot/css'),
-                path.join(process.cwd(), 'wwwroot/fonts'),
-                path.join(process.cwd(), 'wwwroot/img'),
-                path.join(process.cwd(), 'wwwroot/js'),
-                path.join(process.cwd(), 'wwwroot/patterns'),
-                path.join(process.cwd(), 'wwwroot/Theme.png'),
-            ],
-        }),
         new MiniCssExtractPlugin({
             filename: '../css/styles.css',
         }),

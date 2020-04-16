@@ -3,6 +3,7 @@ var fs = require('fs');
 
 const config = require('./webpack.config');
 
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 config.plugins.push(
@@ -10,6 +11,20 @@ config.plugins.push(
         filename: '../css/[name].css',
     })
 );
+
+config.plugins.push(
+    new CleanWebpackPlugin({
+        cleanOnceBeforeBuildPatterns: [
+            path.join(process.cwd(), 'wwwroot/content'),
+            path.join(process.cwd(), 'wwwroot/css'),
+            path.join(process.cwd(), 'wwwroot/fonts'),
+            path.join(process.cwd(), 'wwwroot/img'),
+            path.join(process.cwd(), 'wwwroot/js'),
+            path.join(process.cwd(), 'wwwroot/patterns'),
+            path.join(process.cwd(), 'wwwroot/Theme.png'),
+        ],
+    }),
+)
 
 function replaceInFile(chunks, file) {
     var filePath = path.join(__dirname, file);
@@ -33,8 +48,8 @@ function replaceInFile(chunks, file) {
 
 // Plugin to replace non-cache busted versions of
 // JS and CSS outputs with their cache busted versions
-config.plugins.push(function() {
-    this.plugin('done', function(statsData) {
+config.plugins.push(function () {
+    this.plugin('done', function (statsData) {
         var stats = statsData.toJson();
 
         if (!stats.errors.length) {
