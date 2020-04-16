@@ -1,0 +1,29 @@
+<nav class="nav" role="navigation">
+    <ul class="nav__items js-nav">
+        <li class="nav__item nav__item--parent">
+            <a href="#" aria-haspopup="true" aria-expanded="false">
+                <img class="icon icon--flag" src="/Etch.OrchardCore.ThemeBoilerplate/content/Flags/@(Model.CurrentCulture.Name.ToLower()).svg" alt="Flag for @Model.CurrentCulture.DisplayName">
+                <span>@Model.CurrentCulture.DisplayName</span>
+            </a>
+
+            <div class="nav__sub">
+                <ul class="nav__sub-items">
+                    @foreach (var culture in Model.SupportedCultures)
+                    {
+                        if (culture.Name != Model.CurrentCulture.Name)
+                        {
+                            <li class="nav__item">
+                                <a asp-route="RedirectToLocalizedContent"
+                                   asp-route-area="OrchardCore.ContentLocalization"
+                                   asp-route-targetculture="@culture.Name"
+                                   asp-route-contentItemUrl="@Context.Request.Path">
+                                    <img class="icon icon--flag" src="/Etch.OrchardCore.ThemeBoilerplate/content/Flags/@(culture.Name.ToLower()).svg" alt="Flag for @culture.DisplayName"> @culture.DisplayName
+                                </a>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>

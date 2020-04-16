@@ -1,0 +1,10 @@
+/* ==========================================================================
+   #ICON/FLAG
+   ========================================================================== */
+
+.icon--flag {
+    @include rem(margin-right, $icon-flag-margin-right);
+    @include rem(width, $icon-flag-width);
+    
+    @include rem(border-radius, $icon-flag-border-radius);
+}
