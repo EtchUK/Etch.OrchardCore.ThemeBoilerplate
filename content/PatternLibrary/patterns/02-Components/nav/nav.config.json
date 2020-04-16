@@ -1,0 +1,14 @@
+{
+    "title": "Nav",
+    "context": {
+        "navModifier": ""
+    },
+    "variants": [
+        {
+            "name": "footer",
+            "context": {
+                "navModifier": "nav--footer"
+            }
+        }
+    ]
+}

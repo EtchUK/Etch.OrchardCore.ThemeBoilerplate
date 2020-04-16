@@ -1,7 +1,7 @@
-{% assign cssClasses = "" %}
+{% assign cssClasses = "nav__item" %}
 
 {% if Model.HasItems %}
-    {% assign cssClasses = "has-sub-list" %}
+    {% assign cssClasses = "nav__item nav__item--parent" %}
 {% endif %}
 
 <li class="{{ cssClasses }}">
@@ -10,8 +10,8 @@
     {{ Model | shape_render }}
 
     {% if Model.HasItems %}
-        <div class="sub-list">
-            <ul class="list">
+        <div class="nav__sub">
+            <ul class="nav__sub-items">
                 {% for item in Model.Items %}
                     {{ item | shape_render }}
                 {% endfor %}
