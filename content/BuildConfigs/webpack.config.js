@@ -1,6 +1,8 @@
 const autoprefixer = require('autoprefixer');
 const CopyPlugin = require('copy-webpack-plugin');
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
+const { default: ImageminPlugin } = require('imagemin-webpack-plugin');
+const imageminMozjpeg = require('imagemin-mozjpeg');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 const path = require('path');
@@ -116,6 +118,18 @@ module.exports = {
                 to: path.join(process.cwd(), 'wwwroot/img'),
             },
         ]),
+        new ImageminPlugin({
+            optipng: { optimizationLevel: 2 },
+            pngquant: { quality: '65-90', speed: 4 },
+            svgo: {
+                plugins: [
+                    { removeUnknownsAndDefaults: false },
+                    { cleanupIDs: false },
+                    { removeViewBox: false },
+                ],
+            },
+            plugins: [imageminMozjpeg({ quality: 75 })],
+        }),
         new StylelintPlugin({
             configFile: path.join(
                 process.cwd(),
