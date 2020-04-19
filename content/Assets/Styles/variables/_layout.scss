@@ -2,6 +2,11 @@
    #LAYOUT
    ========================================================================== */
 
+$content-gutter-small: 1.5rem;
+$content-gutter: 2rem;
+$content-gutter-large: 5rem;
+$content-gutter-x-large: 10rem;
+
 /**
  * Control dimensions & spacing, favouring `rem` unit.
  */
@@ -9,3 +14,4 @@
 $spacing-small: .75rem;
 $spacing-default: 1.5rem;
 $spacing-large: 3rem;
+$spacing-x-large: 5rem;

@@ -1,0 +1,26 @@
+/*  ==========================================================================
+    #GRID
+    ========================================================================== */
+
+/**
+ * Mixins & functions for working with grid.
+ */
+
+@mixin grid-master() {
+    display: grid;
+    grid-gap: $content-gutter-small;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+    @include rem(padding-left, $content-gutter-small);
+    @include rem(padding-right, $content-gutter-small);
+    
+    @include bp-min-width($bp-tablet) {
+        grid-gap: $content-gutter;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(auto, auto);
+        @include rem(padding-left, $content-gutter);
+        @include rem(padding-right, $content-gutter);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
