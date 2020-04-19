@@ -1,5 +1,6 @@
 import 'picturefill';
 
+import carousel from './components/carousel';
 import gallery from './components/gallery';
 import nav from './components/nav';
 import parallax from './components/parallax';
@@ -10,6 +11,7 @@ import toggleNav from './components/toggleNav';
  * the different components.
  */
 const init = () => {
+    carousel();
     gallery();
     nav();
     parallax();

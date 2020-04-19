@@ -1,0 +1,117 @@
+/* ==========================================================================
+   #CARD/CAROUSEL
+   ========================================================================== */
+
+.card--carousel {
+    display: block;
+    position: relative;
+
+    overflow: hidden;
+
+    @include themify($themes) {
+        color: themed('color.white');
+    }
+
+    @include bp-min-width($bp-tablet) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .card__background {
+        grid-column: span 6;
+        height: auto;
+        @include rem(margin-left, -$content-gutter-small);
+        @include rem(margin-right, -$content-gutter-small);
+        width: auto;
+
+        @include bp-min-width($bp-tablet) {
+            @include rem(margin-left, -$content-gutter);
+            @include rem(margin-right, -$content-gutter);
+        }
+
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+
+            object-fit: cover;
+            transform: $card-picture-scale;
+            transition: $card-picture-transition;
+        }
+
+        .carousel__items & {
+            animation-name: cardPictureCarouselIntro;
+            animation-duration: $card-picture-carousel-intro-duration;
+            animation-iteration-count: 1;
+        }
+    }
+
+    &:hover {
+        .card__background img {
+            transform: $card-picture-scale-hover;
+        }
+    }
+
+    .card__background--embed {
+        max-height: calc(100vh - 90px);
+    }
+
+    .card__body {
+        @include rem(left, $spacing-large);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: $z-index-default;
+
+        @include bp-min-width($bp-tablet) {
+            left: $card-body-carousel-translateX-tablet;
+        }
+
+        @include bp-min-width($bp-desktop-small) {
+            left: $card-body-carousel-translateX-desktop-small;
+        }
+
+        @include bp-min-width($bp-desktop) {
+            left: $card-body-carousel-translateX-desktop;
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            left: $card-body-carousel-translateX-desktop-medium;
+        }
+
+        > * {
+            animation-name: cardBodyCarouselItemFade;
+            animation-duration: $card-body-carousel-item-fade-duration;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+
+            opacity: 0;
+
+            &:nth-child(1) { animation-delay: $card-body-carousel-item-fade-child-1-delay; }
+            &:nth-child(2) { animation-delay: $card-body-carousel-item-fade-child-2-delay; }
+            &:nth-child(3) { animation-delay: $card-body-carousel-item-fade-child-3-delay; }
+        }
+    }
+}
+
+@keyframes cardPictureCarouselIntro {
+    0% {
+        opacity: 0;
+        filter: blur($card-picture-carousel-intro-blur);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes cardBodyCarouselItemFade {
+    0% {
+        opacity: 0;
+        transform: translateY($card-body-carousel-item-fade-translateY);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

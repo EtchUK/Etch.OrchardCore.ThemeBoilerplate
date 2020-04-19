@@ -684,6 +684,72 @@
           ]
         },
         {
+          "Name": "Carousel",
+          "DisplayName": "Carousel",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Carousel",
+              "Name": "Carousel",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Items",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "DisplayName": "Items",
+                  "Description": "Items included as slides within carousel.",
+                  "Position": "2"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "CarouselItem"
+                  ]
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "CarouselItem",
+          "DisplayName": "Carousel Item",
+          "Settings": {
+            "ContentTypeSettings": {},
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "CarouselItem",
+              "Name": "CarouselItem",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
           "Name": "Menu",
           "DisplayName": "Menu",
           "Settings": {
@@ -820,6 +886,7 @@
                 },
                 "BagPartSettings": {
                   "ContainedContentTypes": [
+                    "Carousel",
                     "Hero",
                     "Html",
                     "Picture",
@@ -910,6 +977,7 @@
                 },
                 "BagPartSettings": {
                   "ContainedContentTypes": [
+                    "Carousel",
                     "Hero",
                     "Html",
                     "Section",
@@ -2132,6 +2200,89 @@
                 },
                 "TextFieldSettings": {
                   "Hint": "Caption displayed to give description of embedded content."
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Carousel",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "NumericField",
+              "Name": "SlideDuration",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Slide Duration",
+                  "Position": "0"
+                },
+                "NumericFieldSettings": {
+                  "Hint": "Number of seconds each slide should display for. If set to \"0\", the slides won't automatically change.",
+                  "Minimum": 0.0,
+                  "DefaultValue": "10"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "CarouselItem",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "ResponsiveMediaField",
+              "Name": "BackgroundImage",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Background Image",
+                  "Position": "0"
+                },
+                "ResponsiveMediaFieldSettings": {
+                  "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
+                  "Hint": "Ensure all background images for each carousel item has the same dimensions to ensure the height of the carousel remains the same when changing the active item.",
+                  "FallbackData": "[]",
+                  "IsConfigured": true
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Heading",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Heading",
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "CTALabel",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "CTA Label",
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "FieldName": "ContentPickerField",
+              "Name": "CTALinkTo",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "CTA Link To",
+                  "Position": "3"
+                },
+                "ContentPickerFieldSettings": {
+                  "Hint": "Select a content item within the site that the user will be navigated to.",
+                  "DisplayedContentTypes": [
+                    "Homepage",
+                    "Page"
+                  ]
                 },
                 "ContentIndexSettings": {}
               }

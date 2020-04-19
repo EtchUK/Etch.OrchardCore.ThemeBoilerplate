@@ -2,7 +2,34 @@
    #CARD/VARIABLES
    ========================================================================== */
 
-$card-job-heading-margin-bottom: .5rem;
+$card-body-carousel-translateX-desktop-medium: 17rem;
+$card-body-carousel-translateX-desktop: 14rem;
+$card-body-carousel-translateX-desktop-small: 11rem;
+$card-body-carousel-translateX-tablet: 7rem;
 
+$card-body-carousel-item-fade-duration: .6s;
+$card-body-carousel-item-fade-child-1-delay: 1s;
+$card-body-carousel-item-fade-child-2-delay: 1.1s;
+$card-body-carousel-item-fade-child-3-delay: 1.2s;
+$card-body-carousel-item-fade-translateY: -2rem;
+
+$card-job-heading-margin-bottom: .5rem;
 $card-job-padding-horizontal: 2rem;
 $card-job-padding-bottom: 2rem;
+
+$card-overlay-media-height: 24rem;
+$card-overlay-media-height-mobile: 22rem;
+$card-overlay-media-height-tablet: 34rem;
+
+$card-picture-scale: scale3d(1, 1, 1);
+$card-picture-scale-hover: scale3d(1.08, 1.08, 1);
+$card-picture-transition: all .5s ease-in-out;
+
+$card-picture-carousel-intro-blur: 5px;
+$card-picture-carousel-intro-duration: 2s;
+
+$card-title-top-mobile: 40px;
+
+$card-title-featured-line-height: 1.4;
+$card-title-featured-font-size: 2.4rem;
+$card-title-featured-font-size-desktop-small: 3rem;
