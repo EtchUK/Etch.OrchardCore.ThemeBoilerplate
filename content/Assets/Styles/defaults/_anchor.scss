@@ -11,8 +11,8 @@ a {
 
     @include themify($themes) {
         color: themed('color.brandPrimary');
-    
     }
+    
     text-decoration: underline;
 
     &:hover {
