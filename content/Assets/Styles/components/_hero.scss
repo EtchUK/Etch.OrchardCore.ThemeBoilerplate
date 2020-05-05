@@ -38,16 +38,11 @@
 
     &__media {
         max-height: $hero-media-max-height;
-        min-width: $hero-media-min-width;
+        min-width: auto;
+        overflow: hidden;
         position: relative;
         width: 100%;
         z-index: $z-index-back;
-
-        overflow: hidden;
-
-        @include bp-min-width($bp-tablet) {
-            min-width: auto;
-        }
 
         .embed {
             margin-bottom: 0;
