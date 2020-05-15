@@ -18,7 +18,7 @@
     "devDependencies": {
         "@babel/core": "^7.9.0",
         "@babel/preset-env": "^7.9.5",
-        "@frctl/fractal": "^1.2.1",
+        "@frctl/fractal": "^1.1.7",
         "@frctl/mandelbrot": "^1.3.0",
         "@types/rellax": "^1.7.2",
         "autoprefixer": "^9.7.6",
@@ -27,51 +27,24 @@
         "concurrently": "^5.1.0",
         "copy-webpack-plugin": "^5.0.3",
         "copyfiles": "^2.1.0",
-<<<<<<< HEAD
-        "core-js": "^3.2.1",
-        "css-loader": "^2.1.1",
-        "lg-video.js": "^1.0.0",
-        "lightgallery.js": "^1.1.3",
-        "mini-css-extract-plugin": "^0.5.0",
-        "modern-css-reset": "^1.1.0",
-=======
         "core-js": "^3.6.5",
         "css-loader": "^3.5.2",
-        "imagemin-mozjpeg": "^8.0.0",
-        "imagemin-optipng": "^7.1.0",
-        "imagemin-pngquant": "^8.0.0",
-        "imagemin-svgo": "^7.1.0",
-        "imagemin-webpack-plugin": "^2.4.2",
         "mini-css-extract-plugin": "^0.9.0",
->>>>>>> Upgrade all npm dependencies
         "node-sass": "^4.11.0",
         "npm-run-all": "^4.1.5",
         "optimize-css-assets-webpack-plugin": "^5.0.3",
         "picturefill": "^3.0.3",
         "postcss-loader": "^3.0.0",
-<<<<<<< HEAD
-        "rellax": "^1.10.0",
-        "replace-in-file": "^4.1.0",
-        "sass-loader": "^7.1.0",
-        "ts-loader": "^6.2.0",
-        "tslint": "^5.20.0",
-=======
         "replace-in-file": "^5.0.2",
         "sass-loader": "^8.0.2",
-        "stylelint": "^13.3.2",
-        "stylelint-config-recommended": "^3.0.0",
-        "stylelint-webpack-plugin": "^1.2.3",
-        "ts-loader": "^7.0.0",
+        "ts-loader": "^6.2.2",
         "tslint": "^6.1.1",
->>>>>>> Upgrade all npm dependencies
         "tslint-loader": "^3.5.4",
         "typescript": "^3.8.3",
         "webpack": "^4.42.1",
         "webpack-cli": "^3.3.0",
         "webpack-fix-style-only-entries": "^0.4.0"
     },
-<<<<<<< HEAD
-=======
     "dependencies": {
         "lg-video.js": "^1.0.0",
         "lightgallery.js": "^1.1.3",
@@ -79,11 +52,6 @@
         "picturefill": "^3.0.3",
         "rellax": "^1.10.0"
     },
-<<<<<<< HEAD
->>>>>>> Upgrade all npm dependencies
-=======
-    "browserslist": "> 0.25%, last 2 versions, not dead",
->>>>>>> Move agreed browserlist configuration to packaage.json
     "fractal": {
         "main": "./BuildConfigs/fractal.config.js"
     }
