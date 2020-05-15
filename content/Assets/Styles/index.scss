@@ -2,23 +2,24 @@
    #Etch.OrchardCore.ThemeBoilerplate THEME
    ========================================================================== */
 
-@import "variables/all";
+@import 'variables/all';
 
-@import "variables/themes/default";
+@import 'variables/themes/default';
 
-@import "tools/all";
+@import 'tools/all';
 
 /**
 * CSS reset provided by normalize.css 
 * https://necolas.github.io/normalize.css/
 */
 
-@import "../../node_modules/normalize.css/normalize";
-@import "../../node_modules/lightgallery.js/src/sass/lightgallery";
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/lightgallery.js/src/sass/lightgallery';
 
-@import "defaults/all";
+@import 'defaults/all';
 
-@import "components/all";
+@import 'components/all';
 
-@import "helpers/all";
-   
+@import 'helpers/all';
+
+@import 'print/all';
