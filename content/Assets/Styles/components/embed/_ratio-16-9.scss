@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #EMBED/RATIO 16:9
+   ========================================================================== */
+
+/**
+ * Embedding third party content responsively.
+ * Source: https://embedresponsively.com/
+ */
+
+.embed--ratio-16-9 {
+    .embed__source {
+        max-width: 100%;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+
+        > embed,
+        > iframe,
+        > object,
+        > video {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+    }
+}
