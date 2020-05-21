@@ -2,37 +2,22 @@
    #EMBED/DEFAULT
    ========================================================================== */
 
-/**
- * Embedding third party content responsibly.
- * Source: https://embedresponsively.com/
- */
-
 .embed {
     display: block;
     @include rem(margin-bottom, $spacing-default);
 }
 
-    .embed__source {
-        height: 0;
-        @include rem(margin-bottom, $spacing-default);
-        max-width: 100%;
-        overflow: hidden;
-        padding-bottom: 56.25%;
-        position: relative;
-        
-        > embed,
-        > iframe,
-        > object,
-        > video
-         {
-            height: 100%;
-            left: 0;
-            position: absolute; 
-            top: 0;
-            width: 100%;
-        }
-    }
+.embed__source {
+    @include rem(margin-bottom, $spacing-small);
 
-    .embed__caption {
-        font-style: italic;
+    > embed,
+    > iframe,
+    > object,
+    > video {
+        width: 100%;
     }
+}
+
+.embed__caption {
+    font-style: italic;
+}
