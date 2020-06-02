@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="theme-default" lang="{{ Culture.Name }}">
     <head>
         <meta charset="utf-8" />
@@ -24,7 +24,11 @@
     </head>
     <body>
         {% render_section "Header", required: false %}
-        {% render_section "Content" %}
+
+        <main>
+            {% render_section "Content" %}
+        </main>
+
         {% render_section "Footer", required: false %}
 
         {% resources type: "FootScript" %}
