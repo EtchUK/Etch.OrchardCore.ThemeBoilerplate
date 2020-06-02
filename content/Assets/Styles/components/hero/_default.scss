@@ -32,10 +32,6 @@
             }
         }
 
-        &__btn {
-            @include rem(margin-left, $hero-title-padding-horizontal);
-        }
-
     /**
      * 1. Vertically center the embed if it is taller than .hero__media
      */
