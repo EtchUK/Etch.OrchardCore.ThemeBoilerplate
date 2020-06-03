@@ -4,14 +4,10 @@
 
 .footer {
     &__content {
-        @include content-gutter();
         display: flex;
         flex-flow: column-reverse wrap;
-        margin: 0 auto;
-        @include rem(max-width, $content-width-wide);
         @include rem(padding-bottom, $footer-content-padding-bottom);
         @include rem(padding-top, $footer-content-padding-top);
-        position: relative;
 
         @include bp-min-width($bp-tablet) {
             align-items: flex-start;

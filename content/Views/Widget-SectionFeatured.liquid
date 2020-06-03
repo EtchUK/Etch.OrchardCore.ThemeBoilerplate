@@ -1,4 +1,4 @@
-﻿{% assign cssClasses = "section section--feature section--wide" %}
+﻿{% assign cssClasses = "section section--feature" %}
 {% assign alignment = Model.ContentItem.Content.SectionFeatured.Alignment.Text %}
 
 {% if alignment != null and alignment != 'default' %}
@@ -7,7 +7,7 @@
 {% endif %}
 
 <section class="{{ cssClasses }}">
-    <div class="section__content">
+    <div class="section__content constrain constrain--wide">
         <h2 class="section__title">{{ Model.ContentItem.DisplayText }}</h2>
         {{ Model.Content.Content | shape_render }}
     </div>
