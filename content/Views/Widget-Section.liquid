@@ -1,4 +1,6 @@
 ﻿{% assign cssClasses = "section" %}
+{% assign constrainClasses = "constrain" %}
+
 {% assign alignment = Model.ContentItem.Content.Section.Alignment.Text %}
 {% assign backgroundColour = Model.ContentItem.Content.Section.BackgroundColour.Text %}
 {% assign contentWidth = Model.ContentItem.Content.Section.ContentWidth.Text %}
@@ -21,13 +23,16 @@
     {% assign cssClasses = ' padding--bottom-none padding--top-none' | prepend: cssClasses %}
 {% endif %}
 
-{% if contentWidth != null and contentWidth != 'default' %}
-    {% assign contentWidthClass = ' section--' | append: contentWidth %}
-    {% assign cssClasses = contentWidthClass | prepend: cssClasses %}
+{% if contentWidth == 'wide' %}
+    {% assign constrainClasses = ' constrain--wide' | prepend: constrainClasses %}
 {% endif %}
 
 <section class="{{ cssClasses }}">
-    <div class="section__content">
+    {% if contentWidth != 'full' %}
+    <div class="section__content {{ constrainClasses }}">
         {{ Model.Content.Content | shape_render }}
     </div>
+    {% else %}
+    {{ Model.Content.Content | shape_render }}
+    {% endif %}
 </section>

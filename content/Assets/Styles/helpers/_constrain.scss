@@ -1,0 +1,23 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $CONSTRAIN
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * Helper classes for restricted width of a container.
+ */
+
+.constrain {
+    @include content-gutter();
+    
+    margin-left: auto;
+    margin-right: auto;
+    @include rem(max-width, $content-width);
+    position: relative;
+    width: 100%;
+}
+
+.constrain--wide {
+    @include rem(max-width, $content-width-wide);
+}
