@@ -11,15 +11,11 @@
     z-index: $z-index-front; /* 1. */
     
     &__content {
-        @include content-gutter();
         align-items: center;
         display: flex;
         flex-flow: row wrap;
-        margin: 0 auto;
-        @include rem(max-width, $content-width-wide);
         @include rem(padding-bottom, $header-content-padding-top);
         @include rem(padding-top, $header-content-padding-top);
-        position: relative;
 
         @include bp-min-width($bp-desktop) {
             align-items: flex-end;
