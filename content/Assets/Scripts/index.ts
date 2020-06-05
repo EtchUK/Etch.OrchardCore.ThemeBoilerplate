@@ -38,4 +38,8 @@ const checkCanInit = () => {
     timer = setTimeout(checkCanInit, 100);
 };
 
+// update DOM to indicate JavaScript is available
+// https://www.paulirish.com/2009/avoiding-the-fouc-v3/
+document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');
+
 checkCanInit();
