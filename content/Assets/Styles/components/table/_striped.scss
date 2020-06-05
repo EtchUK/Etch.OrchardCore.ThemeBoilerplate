@@ -6,7 +6,7 @@
     tbody {
         tr {
             &:nth-child(odd) {
-                @include bp-min-width($bp-tablet) {
+                @include mq($from: tablet) {
                     @include themify($themes) {
                         background-color: themed('color.tableRowLight');
                     }
@@ -20,7 +20,7 @@
                     background-color: themed('color.tableRowLight');
                 }
     
-                @include bp-min-width($bp-tablet) {
+                @include mq($from: tablet) {
                     @include themify($themes) {
                         background-color: transparent;
                     }

@@ -33,7 +33,7 @@
         line-height: themed('lineHeight.hero');
     }
 
-    @include bp-min-width($bp-desktop) {
+    @include mq($from: desktop) {
         @include themify($themes) {
             @include rem(font-size, themed('fontSize.hero'));
         }
@@ -47,7 +47,7 @@
         @include rem(font-size, themed('fontSize.mobile.h1'));
     }
 
-    @include bp-min-width($bp-desktop) {
+    @include mq($from: desktop) {
         @include themify($themes) {
             @include rem(font-size, themed('fontSize.h1'));
         }
@@ -61,7 +61,7 @@
         @include rem(font-size, themed('fontSize.mobile.h2'));
     }
 
-    @include bp-min-width($bp-desktop) {
+    @include mq($from: desktop) {
         @include themify($themes) {
             @include rem(font-size, themed('fontSize.h2'));
         }
@@ -75,7 +75,7 @@
         @include rem(font-size, themed('fontSize.mobile.h3'));
     }
 
-    @include bp-min-width($bp-desktop) {
+    @include mq($from: desktop) {
         @include themify($themes) {
             @include rem(font-size, themed('fontSize.h3'));
         }
@@ -89,7 +89,7 @@
         @include rem(font-size, themed('fontSize.mobile.h4'));
     }
 
-    @include bp-min-width($bp-desktop) {
+    @include mq($from: desktop) {
         @include themify($themes) {
             @include rem(font-size, themed('fontSize.h4'));
         }
@@ -98,12 +98,14 @@
 
 @mixin text-blockquote() {
     @include text-heading();
+
     font-style: normal;
+
     @include themify($themes) {
         @include rem(font-size, themed('fontSize.mobile.blockquote'));
     }
 
-    @include bp-min-width($bp-tablet) {
+    @include mq($from: tablet) {
         @include themify($themes) {
             @include rem(font-size, themed('fontSize.blockquote'));
         }

@@ -23,11 +23,11 @@
         @include rem(padding-right, $content-gutter);
         width: 100%;
 
-        @include bp-min-width($bp-tablet-small) {
+        @include mq($from: tabletSmall) {
             max-width: 50%;
         }
 
-        @include bp-min-width($bp-desktop-small) {
+        @include mq($from: desktopSmall) {
             max-width: 33.333%;
         }
     }

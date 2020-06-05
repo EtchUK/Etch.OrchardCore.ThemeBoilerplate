@@ -3,16 +3,20 @@
    ========================================================================== */
 
 /**
- * Media query breakpoints.
+ * Media query breakpoints used by sass-mq.
  */
 
-$bp-mobile-small: 320px;
-$bp-mobile: 375px;
-$bp-mobile-large: 425px;
-$bp-tablet-small: 600px;
-$bp-tablet: 768px;
-$bp-desktop-small: 1024px;
-$bp-desktop: 1280px;
-$bp-desktop-medium: 1440px;
-$bp-desktop-large: 1920px;
-$bp-desktop-huge: 2200px;
+$mq-breakpoints: (
+   modileSmall: 320px,
+   mobile:  375px,
+   mobileLarge: 425px,
+   tabletSmall: 600px,
+   tablet:  768px,
+   desktopSmall: 1024px,
+   desktop: 1280px,
+   desktopMedium: 1440px,
+   desktopLarge: 1920px,
+   desktopHuge: 2200px,
+
+   contentWideWithGutter: 1140px
+);
