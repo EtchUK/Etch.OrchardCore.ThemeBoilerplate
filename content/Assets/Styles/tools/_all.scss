@@ -15,8 +15,9 @@
 @import "content";
 @import "focus";
 @import "grid";
+@import "ie";
 @import "lists";
-@import "media-queries";
 @import "rem";
+@import '~sass-mq';
 @import "text";
 @import "theming";

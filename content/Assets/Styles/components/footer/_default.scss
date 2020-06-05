@@ -9,7 +9,7 @@
         @include rem(padding-bottom, $footer-content-padding-bottom);
         @include rem(padding-top, $footer-content-padding-top);
 
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             align-items: flex-start;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -17,7 +17,7 @@
     }
 
         &__meta {
-            @include bp-min-width($bp-tablet) {
+            @include mq($from: tablet) {
                 @include rem(margin-top, $content-gutter-small);
             }
         }
@@ -31,7 +31,7 @@
                 width: 100%;
                 z-index: $z-index-front;
 
-                @include bp-min-width($bp-tablet) {
+                @include mq($from: tablet) {
                     @include rem(max-width, $footer-logo-width);
                 }
 
@@ -51,7 +51,7 @@
                 }
                 border-top: 0;
 
-            @include bp-min-width($bp-tablet) {
+            @include mq($from: tablet) {
                 margin-bottom: 0;
                 width: auto;
             }

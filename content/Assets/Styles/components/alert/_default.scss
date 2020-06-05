@@ -7,7 +7,7 @@
     @include rem(padding-top, $alert-message-padding-top);
 
     /* Maintain horizontal padding */
-    @include bp-min-width($content-width-wide + ($content-gutter * 2)) {
+    @include mq($from: contentWideWithGutter) {
         @include rem(padding-left, $content-gutter-small);
         @include rem(padding-right, $content-gutter-small);
     }

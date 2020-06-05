@@ -12,7 +12,7 @@
     @include rem(margin-left, -$gallery-item-gap);
     @include rem(margin-right, -$gallery-item-gap);
 
-    @include bp-min-width($bp-mobile) {
+    @include mq($from: mobile) {
         @include rem(margin-bottom, $gallery-gutter);
     }
 }
@@ -23,11 +23,11 @@
         @include rem(padding-right, $gallery-item-gap);
         width: 50%;
 
-        @include bp-min-width($bp-tablet-small) {
+        @include mq($from: tabletSmall) {
             width: 33.3%;
         }
 
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             width: 25%;
         }
     }

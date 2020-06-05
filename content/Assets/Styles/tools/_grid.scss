@@ -14,7 +14,7 @@
     @include rem(padding-left, $content-gutter-small);
     @include rem(padding-right, $content-gutter-small);
     
-    @include bp-min-width($bp-tablet) {
+    @include mq($from: tablet) {
         grid-gap: $content-gutter;
         grid-template-columns: repeat(12, 1fr);
         grid-auto-rows: minmax(auto, auto);

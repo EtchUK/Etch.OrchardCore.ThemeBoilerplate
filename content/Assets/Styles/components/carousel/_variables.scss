@@ -12,4 +12,4 @@ $carousel-nav-btn-x-mobile: 15px;
 
 $carousel-button-hover-translate-x: -1rem;
 
-$carousel-bp-reposition-next-previous: 480px;
+@include mq-add-breakpoint(carouselNextPreviousReposition, 480px);

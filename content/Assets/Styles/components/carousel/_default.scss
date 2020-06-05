@@ -66,7 +66,7 @@
         right: $carousel-nav-btn-x-mobile;
         transform: translateX(0) translateY(-50%) rotate(180deg);
 
-        @include bp-min-width($carousel-bp-reposition-next-previous) {
+        @include mq($from: carouselNextPreviousReposition) {
             right: $carousel-nav-btn-x;
         }
     }
@@ -75,7 +75,7 @@
         left: $carousel-nav-btn-x-mobile;
         transform: translateX(0) translateY(-50%);
 
-        @include bp-min-width($carousel-bp-reposition-next-previous) {
+        @include mq($from: carouselNextPreviousReposition) {
             left: $carousel-nav-btn-x;
         }
     }

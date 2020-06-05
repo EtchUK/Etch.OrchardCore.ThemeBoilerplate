@@ -16,7 +16,7 @@
         color: themed('color.white');
     }
 
-    @include bp-min-width($bp-tablet) {
+    @include mq($from: tablet) {
         @include rem(bottom, $content-gutter-small);
         @include rem(left, $content-gutter-small);
         @include rem(max-width, $editor-toolbar-max-width);

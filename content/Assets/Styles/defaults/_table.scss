@@ -16,7 +16,7 @@ table {
     thead {
         display: none;
 
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             display: table-header-group;
         }
     }
@@ -30,7 +30,7 @@ table {
             border-bottom: $table-border-width solid themed('color.border');
         }
 
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             display: table-row;
             margin-bottom: 0;
         }
@@ -43,7 +43,7 @@ table {
             font-weight: bold;
             @include rem(margin-right, $table-cell-padding-horizontal);
 
-            @include bp-min-width($bp-tablet) {
+            @include mq($from: tablet) {
                 display: none;
             }
         }
@@ -59,7 +59,7 @@ table {
 
         text-align: right;
 
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             display: table-cell;
             @include rem(padding-bottom, $table-cell-padding-vertical);
             padding-right: 0;
