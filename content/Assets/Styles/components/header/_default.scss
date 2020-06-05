@@ -61,18 +61,17 @@
             }
         }
 
-        nav,
         &__nav {
             display: none;
-            position: absolute;
+            height: 100vh;
             left: 0;
+            position: absolute;
             top: 0;
             width: 100vw;
-            height: 100vh;
             z-index: $z-index-default;
 
-            border-top-width: $header-nav-padding-top;
             border-top-style: solid;
+            border-top-width: $header-nav-padding-top;
 
             @include themify($themes) {
                 background-color: themed('color.greyLight');
@@ -81,21 +80,21 @@
 
             @include bp-min-width($bp-tablet) {
                 display: block;
+                height: auto;
                 padding-top: 0;
                 position: static;
-                height: auto;
                 width: auto;
 
                 @include themify($themes) {
                     background-color: transparent;
                 }
+
                 border-top: 0;
             }
         }
 }
 
 .is-nav-visible {
-    nav,
     .header__nav {
         display: block;
     }
