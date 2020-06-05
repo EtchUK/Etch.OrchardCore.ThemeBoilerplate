@@ -2,4 +2,22 @@
    #MEDIA
    ========================================================================== */
 
+/**
+ * Common component used to display text alongside an image. Below is an
+ * example of the markup used for this component.
+ *
+ * <div class="media">
+ *     <img src="/path/to/image.jpg" alt="Description of image" />
+ *     <div class="media__body">
+ *         <p>Text to be displayed alongside image.</p>
+ *     </div>
+ * </div>
+ * 
+ * Read more about the `media` component.
+ *
+ * - https://getbootstrap.com/docs/4.0/layout/media-object/
+ * - https://css-tricks.com/media-object-bunch-ways/
+ * - http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+ */ 
+
 @import "default";
