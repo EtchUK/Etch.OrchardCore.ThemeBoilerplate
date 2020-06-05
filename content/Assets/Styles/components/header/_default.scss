@@ -17,7 +17,7 @@
         @include rem(padding-bottom, $header-content-padding-top);
         @include rem(padding-top, $header-content-padding-top);
 
-        @include bp-min-width($bp-desktop) {
+        @include mq($from: desktop) {
             align-items: flex-end;
         }
     }
@@ -29,7 +29,7 @@
             width: 100%;
             z-index: $z-index-front;
 
-            @include bp-min-width($bp-tablet) {
+            @include mq($from: tablet) {
                 @include rem(max-width, $header-logo-width);
             }
 
@@ -45,7 +45,7 @@
             position: relative;
             z-index: $z-index-front;
         
-            @include bp-min-width($bp-tablet) {
+            @include mq($from: tablet) {
                 display: none;
             }
 
@@ -78,7 +78,7 @@
                 border-top-color: themed('color.white');
             }
 
-            @include bp-min-width($bp-tablet) {
+            @include mq($from: tablet) {
                 display: block;
                 height: auto;
                 padding-top: 0;

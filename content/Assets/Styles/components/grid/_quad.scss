@@ -8,11 +8,11 @@
 
 .grid--quad {
     .grid__item {
-        @include bp-min-width($bp-tablet-small) {
+        @include mq($from: tabletSmall) {
             max-width: 50%;
         }
 
-        @include bp-min-width($bp-desktop-small) {
+        @include mq($from: desktopSmall) {
             max-width: 25%;
         }
     }

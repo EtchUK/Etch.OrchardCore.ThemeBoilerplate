@@ -38,7 +38,7 @@
                 line-height: themed('lineHeight.heading');
             }
 
-            @include bp-min-width($bp-desktop) {
+            @include mq($from: desktop) {
                 @include themify($themes) {
                     @include rem(font-size, themed('fontSize.mobile.h1'));
                 }
@@ -51,7 +51,7 @@
                 line-height: themed('lineHeight.heading');
             }
 
-            @include bp-min-width($bp-desktop) {
+            @include mq($from: desktop) {
                 @include themify($themes) {
                     @include rem(font-size, themed('fontSize.mobile.h2'));
                 }
@@ -64,7 +64,7 @@
                 line-height: themed('lineHeight.heading');
             }
 
-            @include bp-min-width($bp-desktop) {
+            @include mq($from: desktop) {
                 @include themify($themes) {
                     @include rem(font-size, themed('fontSize.mobile.h3'));
                 }
@@ -77,7 +77,7 @@
                 line-height: themed('lineHeight.heading');
             }
 
-            @include bp-min-width($bp-desktop) {
+            @include mq($from: desktop) {
                 @include themify($themes) {
                     @include rem(font-size, themed('fontSize.h4'));
                 }

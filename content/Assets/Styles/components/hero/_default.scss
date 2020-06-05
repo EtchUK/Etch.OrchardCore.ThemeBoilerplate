@@ -39,14 +39,14 @@
         align-items: center; /* 1. */
         display: flex;
         max-height: $hero-media-max-height;
-        min-width: $hero-media-min-width;
+        min-width: auto;
         position: relative;
         width: 100%;
         z-index: $z-index-back;
 
         overflow: hidden;
 
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             min-width: auto;
         }
 

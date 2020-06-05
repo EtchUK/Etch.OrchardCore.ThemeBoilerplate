@@ -17,7 +17,7 @@
     }
 
     &--wide {
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             left: 0%;
             margin-left: calc(25% - 25vw);
             margin-right: calc(25% - 25vw);
@@ -28,14 +28,14 @@
     }
 
     &--left {
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             float: left;
             @include rem(margin-right, $content-gutter);
         }
     }
     
     &--right {
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             float: right;
             @include rem(margin-left, $content-gutter);
         }

@@ -12,7 +12,7 @@
         color: themed('color.white');
     }
 
-    @include bp-min-width($bp-tablet) {
+    @include mq($from: tablet) {
         grid-template-columns: repeat(6, 1fr);
     }
 
@@ -23,7 +23,7 @@
         @include rem(margin-right, -$content-gutter-small);
         width: auto;
 
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             @include rem(margin-left, -$content-gutter);
             @include rem(margin-right, -$content-gutter);
         }
@@ -62,19 +62,19 @@
         transform: translateY(-50%);
         z-index: $z-index-default;
 
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             left: $card-body-carousel-translateX-tablet;
         }
 
-        @include bp-min-width($bp-desktop-small) {
+        @include mq($from: desktopSmall) {
             left: $card-body-carousel-translateX-desktop-small;
         }
 
-        @include bp-min-width($bp-desktop) {
+        @include mq($from: desktop) {
             left: $card-body-carousel-translateX-desktop;
         }
 
-        @include bp-min-width($bp-desktop-medium) {
+        @include mq($from: desktopMedium) {
             left: $card-body-carousel-translateX-desktop-medium;
         }
 

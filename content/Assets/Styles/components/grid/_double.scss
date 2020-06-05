@@ -8,7 +8,7 @@
 
 .grid--double {
     .grid__item {
-        @include bp-min-width($bp-tablet-small) {
+        @include mq($from: tabletSmall) {
             max-width: 50%;
         }
     }

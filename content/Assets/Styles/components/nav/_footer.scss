@@ -4,16 +4,16 @@
 
 .nav--footer {
     .nav__item {
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             @include rem(margin-right, $content-gutter-small);
         }
 
-        @include bp-min-width($bp-desktop-small) {
+        @include mq($from: desktopSmall) {
             @include rem(margin-right, $list-navigation-li-margin-right-desktop-small);
         }
 
         &:last-child {
-            @include bp-min-width($bp-desktop-small) {
+            @include mq($from: desktopSmall) {
                 margin-right: 0;
             }
         }
@@ -31,7 +31,7 @@
 
         background-color: transparent;
 
-        @include bp-min-width($bp-tablet) {
+        @include mq($from: tablet) {
             position: absolute;
         }
 
@@ -40,7 +40,7 @@
             @include rem(padding-left, $content-gutter-small);
             @include rem(padding-right, $content-gutter-small);
 
-            @include bp-min-width($bp-tablet) {
+            @include mq($from: tablet) {
                 padding-left: 0;
             }
         }
