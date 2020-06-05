@@ -19,13 +19,13 @@
             }
 
             p {
-                @include rem(margin-bottom, $content-gutter);
+                margin-bottom: $content-gutter;
             }
         }
 
             &__title {
                 @include text-h1;
-                @include rem(margin-bottom, $content-gutter-small);
+                margin-bottom: $content-gutter-small;
             }
 
         &__media {

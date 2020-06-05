@@ -29,13 +29,13 @@
     @include text-heading();
 
     @include themify($themes) {
-        @include rem(font-size, themed('fontSize.mobile.hero'));
+        font-size: themed('fontSize.mobile.hero');
         line-height: themed('lineHeight.hero');
     }
 
     @include mq($from: desktop) {
         @include themify($themes) {
-            @include rem(font-size, themed('fontSize.hero'));
+            font-size: themed('fontSize.hero');
         }
     }
 }
@@ -44,12 +44,12 @@
     @include text-heading();
 
     @include themify($themes) {
-        @include rem(font-size, themed('fontSize.mobile.h1'));
+        font-size: themed('fontSize.mobile.h1');
     }
 
     @include mq($from: desktop) {
         @include themify($themes) {
-            @include rem(font-size, themed('fontSize.h1'));
+            font-size: themed('fontSize.h1');
         }
     }
 }
@@ -58,12 +58,12 @@
     @include text-heading();
 
     @include themify($themes) {
-        @include rem(font-size, themed('fontSize.mobile.h2'));
+        font-size: themed('fontSize.mobile.h2');
     }
 
     @include mq($from: desktop) {
         @include themify($themes) {
-            @include rem(font-size, themed('fontSize.h2'));
+            font-size: themed('fontSize.h2');
         }
     }
 }
@@ -72,12 +72,12 @@
     @include text-heading();
 
     @include themify($themes) {
-        @include rem(font-size, themed('fontSize.mobile.h3'));
+        font-size: themed('fontSize.mobile.h3');
     }
 
     @include mq($from: desktop) {
         @include themify($themes) {
-            @include rem(font-size, themed('fontSize.h3'));
+            font-size: themed('fontSize.h3');
         }
     }
 }
@@ -86,12 +86,12 @@
     @include text-heading();
 
     @include themify($themes) {
-        @include rem(font-size, themed('fontSize.mobile.h4'));
+        font-size: themed('fontSize.mobile.h4');
     }
 
     @include mq($from: desktop) {
         @include themify($themes) {
-            @include rem(font-size, themed('fontSize.h4'));
+            font-size: themed('fontSize.h4');
         }
     }
 }
@@ -102,12 +102,12 @@
     font-style: normal;
 
     @include themify($themes) {
-        @include rem(font-size, themed('fontSize.mobile.blockquote'));
+        font-size: themed('fontSize.mobile.blockquote');
     }
 
     @include mq($from: tablet) {
         @include themify($themes) {
-            @include rem(font-size, themed('fontSize.blockquote'));
+            font-size: themed('fontSize.blockquote');
         }
     }
 }

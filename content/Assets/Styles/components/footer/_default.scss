@@ -6,8 +6,8 @@
     &__content {
         display: flex;
         flex-flow: column-reverse wrap;
-        @include rem(padding-bottom, $footer-content-padding-bottom);
-        @include rem(padding-top, $footer-content-padding-top);
+        padding-bottom: $footer-content-padding-bottom;
+        padding-top: $footer-content-padding-top;
 
         @include mq($from: tablet) {
             align-items: flex-start;
@@ -18,21 +18,21 @@
 
         &__meta {
             @include mq($from: tablet) {
-                @include rem(margin-top, $content-gutter-small);
+                margin-top: $content-gutter-small;
             }
         }
 
             &__logo {
                 display: block;
-                @include rem(margin-bottom, $content-gutter-small);
+                margin-bottom: $content-gutter-small;
                 margin-right: auto;
-                @include rem(max-width, $footer-logo-width-mobile);
+                max-width: $footer-logo-width-mobile;
                 position: relative;
                 width: 100%;
                 z-index: $z-index-front;
 
                 @include mq($from: tablet) {
-                    @include rem(max-width, $footer-logo-width);
+                    max-width: $footer-logo-width;
                 }
 
                 img {
@@ -42,14 +42,15 @@
 
         nav,
         &__nav {
-            @include rem(margin-bottom, $content-gutter);
+            margin-bottom: $content-gutter;
             width: 100%;
             z-index: $z-index-default;
 
-                @include themify($themes) {
-                    background-color: transparent;
-                }
-                border-top: 0;
+            @include themify($themes) {
+                background-color: transparent;
+            }
+
+            border-top: 0;
 
             @include mq($from: tablet) {
                 margin-bottom: 0;

@@ -19,13 +19,13 @@
     .card__background {
         grid-column: span 6;
         height: auto;
-        @include rem(margin-left, -$content-gutter-small);
-        @include rem(margin-right, -$content-gutter-small);
+        margin-left: -$content-gutter-small;
+        margin-right: -$content-gutter-small;
         width: auto;
 
         @include mq($from: tablet) {
-            @include rem(margin-left, -$content-gutter);
-            @include rem(margin-right, -$content-gutter);
+            margin-left: -$content-gutter;
+            margin-right: -$content-gutter;
         }
 
         img {
@@ -56,7 +56,7 @@
     }
 
     .card__body {
-        @include rem(left, $spacing-large);
+        left: $spacing-large;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);

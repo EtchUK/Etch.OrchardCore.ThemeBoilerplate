@@ -6,7 +6,7 @@
 
 .hint {
     display: block;
-    @include rem(margin-bottom, $spacing-default);
+    margin-bottom: $spacing-default;
 
     @include themify($themes) {
         color: themed('color.hint');

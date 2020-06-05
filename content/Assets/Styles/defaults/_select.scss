@@ -4,7 +4,7 @@
 
 select {
     display: block;
-    @include rem(padding, $form-element-padding-vertical $form-element-padding-horizontal);
+    padding: $form-element-padding-vertical $form-element-padding-horizontal;
     width: auto;
 
     @include themify($themes) {

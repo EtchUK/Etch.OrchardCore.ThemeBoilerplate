@@ -3,13 +3,13 @@
    ========================================================================== */
 
 .alert {
-    @include rem(padding-bottom, $alert-message-padding-bottom);
-    @include rem(padding-top, $alert-message-padding-top);
+    padding-bottom: $alert-message-padding-bottom;
+    padding-top: $alert-message-padding-top;
 
     /* Maintain horizontal padding */
     @include mq($from: contentWideWithGutter) {
-        @include rem(padding-left, $content-gutter-small);
-        @include rem(padding-right, $content-gutter-small);
+        padding-left: $content-gutter-small;
+        padding-right: $content-gutter-small;
     }
 
     @include themify($themes) {

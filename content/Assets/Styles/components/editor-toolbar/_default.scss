@@ -5,7 +5,7 @@
 .editor-toolbar {
     bottom: 0;
     left: 0;
-    @include rem(padding, $spacing-default);
+    padding: $spacing-default;
     position: fixed;
     width: 100%;
     z-index: $editor-toolbar-z-index;
@@ -17,17 +17,17 @@
     }
 
     @include mq($from: tablet) {
-        @include rem(bottom, $content-gutter-small);
-        @include rem(left, $content-gutter-small);
-        @include rem(max-width, $editor-toolbar-max-width);
+        bottom: $content-gutter-small;
+        left: $content-gutter-small;
+        max-width: $editor-toolbar-max-width;
         width: auto;
 
-        @include rem(border-radius, $editor-toolbar-border-radius);
+        border-radius: $editor-toolbar-border-radius;
     }
 }
 
     .editor-toolbar__content {
         margin-left: auto;
         margin-right: auto;
-        @include rem(max-width, $content-width);
+        max-width: $content-width;
     }

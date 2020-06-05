@@ -4,11 +4,11 @@
 
 .embed {
     display: block;
-    @include rem(margin-bottom, $spacing-default);
+    margin-bottom: $spacing-default;
 }
 
 .embed__source {
-    @include rem(margin-bottom, $spacing-small);
+    margin-bottom: $spacing-small;
 
     > embed,
     > iframe,

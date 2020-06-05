@@ -7,14 +7,14 @@
 
     &__item {
         display: inline-block;
-        @include rem(margin-right, $spacing-default);
+        margin-right: $spacing-default;
         position: relative;
     }
 
         &__label {
             display: inline-block;
             margin-bottom: 0;
-            @include rem(padding-left, $form-radio-label-padding-left);
+            padding-left: $form-radio-label-padding-left;
 
             cursor: pointer;
             touch-action: manipulation;
