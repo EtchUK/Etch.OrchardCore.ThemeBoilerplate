@@ -17,14 +17,14 @@
     }
 
     .section__content {
-        @include rem(max-width, $section-form-solo-max-width);
+        max-width: $section-form-solo-max-width;
         padding-left: 0;
         padding-right: 0;
         width: 100%;
     }
 
     .form {
-        @include rem(padding, $spacing-large);
+        padding: $spacing-large;
 
         @include themify($themes) {
             background-color: themed('color.white');
@@ -33,8 +33,8 @@
 
     label {
         @include themify($themes) {
-            @include rem(font-size, themed('fontSize.default'));
-            @include rem(line-height, themed('lineHeight.default'));
+            font-size: themed('fontSize.default');
+            line-height: themed('lineHeight.default');
         }
     }
 }

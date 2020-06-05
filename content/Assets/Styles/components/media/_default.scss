@@ -14,10 +14,10 @@
     }
 
     &__body {
-        @include rem(padding-top, $content-gutter-small);
+        padding-top: $content-gutter-small;
 
         @include mq($from: tablet) {
-            @include rem(margin-left, $content-gutter);
+            margin-left: $content-gutter;
             padding-top: 0;
         }
     }

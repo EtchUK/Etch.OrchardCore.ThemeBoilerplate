@@ -7,7 +7,7 @@
  */
 
 p {
-    @include rem(margin-bottom, $spacing-default);
+    margin-bottom: $spacing-default;
     margin-top: 0;
 
     &:last-child {

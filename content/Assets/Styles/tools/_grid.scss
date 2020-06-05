@@ -11,15 +11,15 @@
     grid-gap: $content-gutter-small;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: minmax(auto, auto);
-    @include rem(padding-left, $content-gutter-small);
-    @include rem(padding-right, $content-gutter-small);
+    padding-left: $content-gutter-small;
+    padding-right: $content-gutter-small;
     
     @include mq($from: tablet) {
         grid-gap: $content-gutter;
         grid-template-columns: repeat(12, 1fr);
         grid-auto-rows: minmax(auto, auto);
-        @include rem(padding-left, $content-gutter);
-        @include rem(padding-right, $content-gutter);
+        padding-left: $content-gutter;
+        padding-right: $content-gutter;
         margin-left: auto;
         margin-right: auto;
     }

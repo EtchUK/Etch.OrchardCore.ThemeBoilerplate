@@ -4,8 +4,8 @@
 
 textarea {
     display: block;
-    @include rem(min-height, 12rem);
-    @include rem(padding, $form-element-padding-vertical $form-element-padding-horizontal);
+    min-height: 12rem;
+    padding: $form-element-padding-vertical $form-element-padding-horizontal;
     width: 100%;
 
     @include themify($themes) {

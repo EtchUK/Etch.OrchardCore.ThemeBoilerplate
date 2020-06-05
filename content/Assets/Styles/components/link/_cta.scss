@@ -4,13 +4,13 @@
 
 .link--cta {
     &-large {
-        @include rem(padding-bottom, $spacing-small);
-        @include rem(padding-left, $spacing-default);
-        @include rem(padding-right, $spacing-default);
-        @include rem(padding-top, $spacing-small);
+        padding-bottom: $spacing-small;
+        padding-left: $spacing-default;
+        padding-right: $spacing-default;
+        padding-top: $spacing-small;
 
         @include themify($themes) {
-            @include rem(font-size, themed('fontSize.h3'));
+            font-size: themed('fontSize.h3');
         }
     }
 }

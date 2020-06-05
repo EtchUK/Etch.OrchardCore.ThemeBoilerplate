@@ -27,7 +27,7 @@
     @include list-horizontal();
 
     > li {
-        @include rem(margin-right, $content-gutter);
+        margin-right: $content-gutter;
 
         &:last-child {
             margin-right: 0;

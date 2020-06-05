@@ -11,13 +11,13 @@
         @include list-reset();
         display: flex;
         flex-direction: column;
-        @include rem(min-width, $list-navigation-min-width);
+        min-width: $list-navigation-min-width;
         width: 100%;
 
         @include mq($from: tablet) {
             display: flex;
             flex-direction: row;
-            @include rem(padding-top, $list-navigation-top-padding);
+            padding-top: $list-navigation-top-padding;
         }
     }
 
@@ -49,7 +49,7 @@
                 text-decoration: none;
 
                 @include mq($from: tablet) {
-                    @include rem(padding, $list-navigation-anchor-padding-tablet);
+                    padding: $list-navigation-anchor-padding-tablet;
                 }
 
                 &.is-current-page {
@@ -69,8 +69,8 @@
                 &:after {
                     content: "";
                     height: $list-navigation-chevron-height;
-                    @include rem(margin-bottom, $list-navigation-chevron-margin-bottom);
-                    @include rem(margin-left, $list-navigation-chevron-margin-left);
+                    margin-bottom: $list-navigation-chevron-margin-bottom;
+                    margin-left: $list-navigation-chevron-margin-left;
                     width: $list-navigation-chevron-width;
 
                     background-image: url('../content/icon-chevron.svg');
@@ -100,7 +100,7 @@
                     padding-left: $spacing-large;
 
                     @include mq($from: tablet) {
-                        @include rem(padding, $list-navigation-anchor-padding-tablet);
+                        padding: $list-navigation-anchor-padding-tablet;
                     }
                 }
 

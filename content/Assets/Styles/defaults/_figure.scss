@@ -16,7 +16,7 @@ figure {
     }
 
     figcaption {
-        @include rem(padding-top, $spacing-small);
+        padding-top: $spacing-small;
         
         font-style: italic;
         text-align: center;
