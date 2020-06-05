@@ -5,14 +5,14 @@
 
 .margin {
     &--bottom {
-        @include rem(margin-bottom, $spacing-default);
+        margin-bottom: $spacing-default;
     
         &-large {
-            @include rem(margin-bottom, $spacing-large);
+            margin-bottom: $spacing-large;
         }
 
         &-small {
-            @include rem(margin-bottom, $spacing-small);
+            margin-bottom: $spacing-small;
         }
 
         &-none {
@@ -21,14 +21,14 @@
     }
 
     &--left {
-        @include rem(margin-left, $spacing-default);
+        margin-left: $spacing-default;
     
         &-large {
-            @include rem(margin-left, $spacing-large);
+            margin-left: $spacing-large;
         }
 
         &-small {
-            @include rem(margin-left, $spacing-small);
+            margin-left: $spacing-small;
         }
 
         &-none {
@@ -41,14 +41,14 @@
     }
 
     &--right {
-        @include rem(margin-right, $spacing-default);
+        margin-right: $spacing-default;
     
         &-large {
-            @include rem(margin-right, $spacing-large);
+            margin-right: $spacing-large;
         }
 
         &-small {
-            @include rem(margin-right, $spacing-small);
+            margin-right: $spacing-small;
         }
 
         &-none {
@@ -61,14 +61,14 @@
     }
 
     &--top {
-        @include rem(margin-top, $spacing-default);
+        margin-top: $spacing-default;
     
         &-large {
-            @include rem(margin-top, $spacing-large);
+            margin-top: $spacing-large;
         }
 
         &-small {
-            @include rem(margin-top, $spacing-small);
+            margin-top: $spacing-small;
         }
 
         &-none {
@@ -79,14 +79,14 @@
 
 .padding {
     &--bottom {
-        @include rem(padding-bottom, $spacing-default);
+        padding-bottom: $spacing-default;
     
         &-large {
-            @include rem(padding-bottom, $spacing-large);
+            padding-bottom: $spacing-large;
         }
 
         &-small {
-            @include rem(padding-bottom, $spacing-small);
+            padding-bottom: $spacing-small;
         }
 
         &-none {
@@ -95,14 +95,14 @@
     }
 
     &--left {
-        @include rem(padding-left, $spacing-default);
+        padding-left: $spacing-default;
     
         &-large {
-            @include rem(padding-left, $spacing-large);
+            padding-left: $spacing-large;
         }
 
         &-small {
-            @include rem(padding-left, $spacing-small);
+            padding-left: $spacing-small;
         }
 
         &-none {
@@ -115,14 +115,14 @@
     }
 
     &--right {
-        @include rem(padding-right, $spacing-default);
+        padding-right: $spacing-default;
     
         &-large {
-            @include rem(padding-right, $spacing-large);
+            padding-right: $spacing-large;
         }
 
         &-small {
-            @include rem(padding-right, $spacing-small);
+            padding-right: $spacing-small;
         }
 
         &-none {
@@ -135,14 +135,14 @@
     }
 
     &--top {
-        @include rem(padding-top, $spacing-default);
+        padding-top: $spacing-default;
     
         &-large {
-            @include rem(padding-top, $spacing-large);
+            padding-top: $spacing-large;
         }
 
         &-small {
-            @include rem(padding-top, $spacing-small);
+            padding-top: $spacing-small;
         }
 
         &-none {

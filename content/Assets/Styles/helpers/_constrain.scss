@@ -13,11 +13,11 @@
     
     margin-left: auto;
     margin-right: auto;
-    @include rem(max-width, $content-width);
+    max-width: $content-width;
     position: relative;
     width: 100%;
 }
 
 .constrain--wide {
-    @include rem(max-width, $content-width-wide);
+    max-width: $content-width-wide;
 }

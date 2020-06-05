@@ -7,12 +7,12 @@
  */
 
 .grid--gutter-small {
-    @include rem(margin-left, -$content-gutter-small);
-    @include rem(margin-right, -$content-gutter-small);
+    margin-left: -$content-gutter-small;
+    margin-right: -$content-gutter-small;
 
     .grid__item {
-        @include rem(margin-bottom, $grid-gutter-small-margin-bottom);
-        @include rem(padding-left, $content-gutter-small);
-        @include rem(padding-right, $content-gutter-small);
+        margin-bottom: $grid-gutter-small-margin-bottom;
+        padding-left: $content-gutter-small;
+        padding-right: $content-gutter-small;
     }
 }

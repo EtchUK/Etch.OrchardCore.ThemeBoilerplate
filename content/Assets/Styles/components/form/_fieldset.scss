@@ -9,7 +9,7 @@
     border: 0;
 
     &__legend {
-        @include rem(margin-bottom, $spacing-default);
+        margin-bottom: $spacing-default;
     }
 
         &__heading {

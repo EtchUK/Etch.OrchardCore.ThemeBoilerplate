@@ -4,6 +4,6 @@
 
 .table {
     &__caption {
-        @include rem(margin-bottom, $spacing-default);
+        margin-bottom: $spacing-default;
     }
 }

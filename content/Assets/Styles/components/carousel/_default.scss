@@ -13,7 +13,7 @@
         * 1. Position indicators above the line effect containers.
         */ 
     .carousel__indicators {
-        @include rem(bottom, $spacing-large);
+        bottom: $spacing-large;
         display: flex;
         left: 0;
         justify-content: center;
@@ -27,16 +27,16 @@
     }
 
         .carousel__indicator {
-            @include rem(height, $carousel-indicator-size);
-            @include rem(margin-right, $spacing-default);
-            @include rem(width, $carousel-indicator-size);
+            height: $carousel-indicator-size;
+            margin-right: $spacing-default;
+            width: $carousel-indicator-size;
 
             .btn {
                 height: 100%;
                 padding: 0;
                 width: 100%;
 
-                @include rem(border-radius, $carousel-indicator-size / 2);
+                border-radius: $carousel-indicator-size / 2;
 
                 @include themify($themes) {
                     background-color: themed('color.carouselIndicator');

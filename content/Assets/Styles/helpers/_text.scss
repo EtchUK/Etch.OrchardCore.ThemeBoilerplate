@@ -34,52 +34,52 @@
     &--size {
         &-h1 { 
             @include themify($themes) {
-                @include rem(font-size, themed('fontSize.mobile.h1'));
+                font-size: themed('fontSize.mobile.h1');
                 line-height: themed('lineHeight.heading');
             }
 
             @include mq($from: desktop) {
                 @include themify($themes) {
-                    @include rem(font-size, themed('fontSize.mobile.h1'));
+                    font-size: themed('fontSize.mobile.h1');
                 }
             }
         }
 
         &-h2 { 
             @include themify($themes) {
-                @include rem(font-size, themed('fontSize.mobile.h2'));
+                font-size: themed('fontSize.mobile.h2');
                 line-height: themed('lineHeight.heading');
             }
 
             @include mq($from: desktop) {
                 @include themify($themes) {
-                    @include rem(font-size, themed('fontSize.mobile.h2'));
+                    font-size: themed('fontSize.mobile.h2');
                 }
             }
         }
 
         &-h3 { 
             @include themify($themes) {
-                @include rem(font-size, themed('fontSize.mobile.h3'));
+                font-size: themed('fontSize.mobile.h3');
                 line-height: themed('lineHeight.heading');
             }
 
             @include mq($from: desktop) {
                 @include themify($themes) {
-                    @include rem(font-size, themed('fontSize.mobile.h3'));
+                    font-size: themed('fontSize.mobile.h3');
                 }
             }
         }
 
         &-h4 {
             @include themify($themes) {
-                @include rem(font-size, themed('fontSize.mobile.h4'));
+                font-size: themed('fontSize.mobile.h4');
                 line-height: themed('lineHeight.heading');
             }
 
             @include mq($from: desktop) {
                 @include themify($themes) {
-                    @include rem(font-size, themed('fontSize.h4'));
+                    font-size: themed('fontSize.h4');
                 }
             }
         }

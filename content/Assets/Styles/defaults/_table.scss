@@ -23,8 +23,8 @@ table {
 
     tr {
         display: block;
-        @include rem(margin-bottom, $spacing-default);
-        @include rem(padding-bottom, $spacing-default);
+        margin-bottom: $spacing-default;
+        padding-bottom: $spacing-default;
 
         @include themify($themes) {
             border-bottom: $table-border-width solid themed('color.border');
@@ -41,7 +41,7 @@ table {
             content: attr(data-label);
             float: left;
             font-weight: bold;
-            @include rem(margin-right, $table-cell-padding-horizontal);
+            margin-right: $table-cell-padding-horizontal;
 
             @include mq($from: tablet) {
                 display: none;
@@ -52,25 +52,25 @@ table {
     th,
     td {
         display: block;
-        @include rem(padding-bottom, $table-cell-padding-vertical-mobile);
-        @include rem(padding-left, $table-cell-padding-horizontal);
-        @include rem(padding-right, $table-cell-padding-horizontal);
-        @include rem(padding-top, $table-cell-padding-vertical-mobile);
+        padding-bottom: $table-cell-padding-vertical-mobile;
+        padding-left: $table-cell-padding-horizontal;
+        padding-right: $table-cell-padding-horizontal;
+        padding-top: $table-cell-padding-vertical-mobile;
 
         text-align: right;
 
         @include mq($from: tablet) {
             display: table-cell;
-            @include rem(padding-bottom, $table-cell-padding-vertical);
+            padding-bottom: $table-cell-padding-vertical;
             padding-right: 0;
-            @include rem(padding-top, $table-cell-padding-vertical);
+            padding-top: $table-cell-padding-vertical;
             vertical-align: top;
 
             text-align: left;
         }
 
         &:last-child {
-            @include rem(padding-right, $table-cell-padding-horizontal);
+            padding-right: $table-cell-padding-horizontal;
         }
     }
 }

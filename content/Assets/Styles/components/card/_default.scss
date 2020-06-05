@@ -8,6 +8,6 @@
     position: relative;
 
     &__body {
-        @include rem(padding-top, $content-gutter-small);
+        padding-top: $content-gutter-small;
     }
 }

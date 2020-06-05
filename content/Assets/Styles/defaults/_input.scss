@@ -4,7 +4,7 @@
 
 input {
     display: block;
-    @include rem(padding, $form-element-padding-vertical $form-element-padding-horizontal);
+    padding: $form-element-padding-vertical $form-element-padding-horizontal;
 
     @include themify($themes) {
         border: $form-border-size solid themed('color.hint');

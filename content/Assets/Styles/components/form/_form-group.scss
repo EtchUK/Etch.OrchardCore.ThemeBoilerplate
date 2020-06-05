@@ -3,6 +3,6 @@
    ========================================================================== */
 
 .form-group {
-    @include rem(margin-bottom, $spacing-large);
+    margin-bottom: $spacing-large;
     width: 100%;
 }
