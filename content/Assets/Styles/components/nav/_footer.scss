@@ -2,47 +2,4 @@
    #NAV/FOOTER
    ========================================================================== */
 
-.nav--footer {
-    .nav__item {
-        @include mq($from: tablet) {
-            margin-right: $content-gutter-small;
-        }
-
-        @include mq($from: desktopSmall) {
-            margin-right: $list-navigation-li-margin-right-desktop-small;
-        }
-
-        &:last-child {
-            @include mq($from: desktopSmall) {
-                margin-right: 0;
-            }
-        }
-
-        > a {
-            padding-bottom: $content-gutter-small;
-            padding-left: 0;
-            padding-right: 0;
-        }
-    }
-
-    .nav__sub {
-        margin-bottom: $content-gutter-small;
-        position: static;
-
-        background-color: transparent;
-
-        @include mq($from: tablet) {
-            position: absolute;
-        }
-
-        a {
-            padding-bottom: $content-gutter-small;
-            padding-left: $content-gutter-small;
-            padding-right: $content-gutter-small;
-
-            @include mq($from: tablet) {
-                padding-left: 0;
-            }
-        }
-    }
-}
+//.nav--footer { }

@@ -1,9 +1,12 @@
 /* ==========================================================================
-   #NAV
+   #NAV/PRIMARY
    ========================================================================== */
 
-@import "variables";
-
-@import "default";
-@import "footer";
-@import "primary";
+/**
+ * 1. Aligns nav items with content gutter.
+ */
+.nav--primary {
+    .nav__item a {
+        @include content-gutter(); /* 1. */
+    }
+ }

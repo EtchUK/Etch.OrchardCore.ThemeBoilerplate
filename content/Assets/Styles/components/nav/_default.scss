@@ -11,19 +11,18 @@
         @include list-reset();
         display: flex;
         flex-direction: column;
-        min-width: $list-navigation-min-width;
         width: 100%;
 
         @include mq($from: tablet) {
             display: flex;
             flex-direction: row;
-            padding-top: $list-navigation-top-padding;
+            padding-top: $nav-top-padding;
         }
     }
 
         .nav__item {
             @include themify($themes) {
-                border-bottom: $list-navigation-border-width solid darken(themed('color.greyLight'), 5%);
+                border-bottom: $nav-border-width solid darken(themed('color.greyLight'), 5%);
             }
 
             @include mq($from: tablet) {
@@ -37,10 +36,9 @@
             }
 
             a {
-                @include content-gutter();
                 display: block;
-                padding-bottom: $list-navigation-anchor-padding-bottom;
-                padding-top: $list-navigation-anchor-padding-top;
+                padding-bottom: $nav-anchor-padding-bottom;
+                padding-top: $nav-anchor-padding-top;
 
                 @include themify($themes) {
                     color: themed('color.black');
@@ -49,7 +47,7 @@
                 text-decoration: none;
 
                 @include mq($from: tablet) {
-                    padding: $list-navigation-anchor-padding-tablet;
+                    padding: $nav-anchor-padding-tablet;
                 }
 
                 &.is-current-page {
@@ -68,10 +66,10 @@
 
                 &:after {
                     content: "";
-                    height: $list-navigation-chevron-height;
-                    margin-bottom: $list-navigation-chevron-margin-bottom;
-                    margin-left: $list-navigation-chevron-margin-left;
-                    width: $list-navigation-chevron-width;
+                    height: $nav-chevron-height;
+                    margin-bottom: $nav-chevron-margin-bottom;
+                    margin-left: $nav-chevron-margin-left;
+                    width: $nav-chevron-width;
 
                     background-image: url('../content/icon-chevron.svg');
                     background-repeat: no-repeat;
@@ -100,7 +98,7 @@
                     padding-left: $spacing-large;
 
                     @include mq($from: tablet) {
-                        padding: $list-navigation-anchor-padding-tablet;
+                        padding: $nav-anchor-padding-tablet;
                     }
                 }
 
