@@ -3,16 +3,7 @@
    ========================================================================== */
 
 .fieldset {
-    margin: 0;
-    padding: 0;
-
-    border: 0;
-
-    &__legend {
-        margin-bottom: $spacing-default;
+    &__heading {
+        margin-bottom: 0;
     }
-
-        &__heading {
-            margin-bottom: 0;
-        }
 }
