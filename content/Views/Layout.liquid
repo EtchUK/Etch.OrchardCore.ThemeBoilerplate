@@ -26,7 +26,9 @@
         {% render_section "Header", required: false %}
 
         <main>
+            {% render_section "BeforeContent" %}
             {% render_section "Content" %}
+            {% render_section "AfterContent" %}
         </main>
 
         {% render_section "Footer", required: false %}
