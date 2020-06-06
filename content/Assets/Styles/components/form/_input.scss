@@ -3,13 +3,6 @@
    ========================================================================== */
 
 .input {
-    display: block;
-    width: 100%;
-    
-    background-color: transparent;
-    outline: none;
-    text-indent: 0;
-
     &--underlined {
         @include themify($themes) {
             border-bottom: $form-border-size solid themed('color.text');

@@ -5,6 +5,11 @@
 input {
     display: block;
     padding: $form-element-padding-vertical $form-element-padding-horizontal;
+    width: 100%;
+    
+    background-color: transparent;
+    outline: none;
+    text-indent: 0;
 
     @include themify($themes) {
         border: $form-border-size solid themed('color.hint');
