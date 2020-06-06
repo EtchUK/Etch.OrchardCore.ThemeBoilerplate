@@ -15,7 +15,7 @@
     }
 }
 
-@mixin text-heading() {
+@mixin text-heading($size) {
     margin-bottom: $spacing-text-default;
 
     font-style: normal;
@@ -23,97 +23,17 @@
     @include themify($themes) {
         font-family: themed('fontFamily.heading');
         font-weight: themed('fontWeight.bold');
-        line-height: themed('lineHeight.heading');
+        font-size: themed('fontSize.mobile.#{$size}');
+        line-height: themed('lineHeight.#{$size}');
     }
 
     @include mq($from: mobileLarge) {
         margin-bottom: $spacing-text-desktop;
     }
-}
-
-@mixin text-hero() {
-    @include text-heading();
-
-    @include themify($themes) {
-        font-size: themed('fontSize.mobile.hero');
-        line-height: themed('lineHeight.hero');
-    }
 
     @include mq($from: desktop) {
         @include themify($themes) {
-            font-size: themed('fontSize.hero');
-        }
-    }
-}
-
-@mixin text-h1() {
-    @include text-heading();
-
-    @include themify($themes) {
-        font-size: themed('fontSize.mobile.h1');
-    }
-
-    @include mq($from: desktop) {
-        @include themify($themes) {
-            font-size: themed('fontSize.h1');
-        }
-    }
-}
-
-@mixin text-h2() {
-    @include text-heading();
-
-    @include themify($themes) {
-        font-size: themed('fontSize.mobile.h2');
-    }
-
-    @include mq($from: desktop) {
-        @include themify($themes) {
-            font-size: themed('fontSize.h2');
-        }
-    }
-}
-
-@mixin text-h3() {
-    @include text-heading();
-
-    @include themify($themes) {
-        font-size: themed('fontSize.mobile.h3');
-    }
-
-    @include mq($from: desktop) {
-        @include themify($themes) {
-            font-size: themed('fontSize.h3');
-        }
-    }
-}
-
-@mixin text-h4() {
-    @include text-heading();
-
-    @include themify($themes) {
-        font-size: themed('fontSize.mobile.h4');
-    }
-
-    @include mq($from: desktop) {
-        @include themify($themes) {
-            font-size: themed('fontSize.h4');
-        }
-    }
-}
-
-@mixin text-blockquote() {
-    @include text-heading();
-
-    font-style: normal;
-
-    @include themify($themes) {
-        font-size: themed('fontSize.mobile.blockquote');
-    }
-
-    @include mq($from: tablet) {
-        @include themify($themes) {
-            font-size: themed('fontSize.blockquote');
+            font-size: themed('fontSize.#{$size}');
         }
     }
 }

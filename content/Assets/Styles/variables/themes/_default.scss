@@ -67,9 +67,14 @@ $themes: map-merge(
                 'bold': 700
             ),
             'lineHeight': (
+                'blockquote': 1.2,
                 'default': 2.2rem,
                 'heading': 1.2,
-                'hero': 1.4
+                'hero': 1.4,
+                'h1': 1.2,
+                'h2': 1.2,
+                'h3': 1.2,
+                'h4': 1.2
             )
         )
     ),
