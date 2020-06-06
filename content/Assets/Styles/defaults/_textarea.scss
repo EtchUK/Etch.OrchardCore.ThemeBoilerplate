@@ -4,7 +4,7 @@
 
 textarea {
     display: block;
-    min-height: 12rem;
+    min-height: $textarea-min-height;
     padding: $form-element-padding-vertical $form-element-padding-horizontal;
     width: 100%;
 
