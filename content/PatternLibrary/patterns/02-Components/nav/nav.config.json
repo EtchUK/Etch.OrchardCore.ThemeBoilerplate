@@ -5,6 +5,12 @@
     },
     "variants": [
         {
+            "name": "primary",
+            "context": {
+                "navModifier": "nav--primary"
+            }
+        },
+        {
             "name": "footer",
             "context": {
                 "navModifier": "nav--footer"
