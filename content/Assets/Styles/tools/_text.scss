@@ -16,12 +16,18 @@
 }
 
 @mixin text-heading() {
+    margin-bottom: $spacing-text-default;
+
     font-style: normal;
 
     @include themify($themes) {
         font-family: themed('fontFamily.heading');
         font-weight: themed('fontWeight.bold');
         line-height: themed('lineHeight.heading');
+    }
+
+    @include mq($from: mobileLarge) {
+        margin-bottom: $spacing-text-desktop;
     }
 }
 
