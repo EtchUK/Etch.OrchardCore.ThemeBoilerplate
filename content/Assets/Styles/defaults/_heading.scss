@@ -4,26 +4,24 @@
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-
-    @include text-heading();
-
+    
     > a {
         text-decoration: none;
     }
 }
 
 h1 {
-    @include text-h1();
+    @include text-heading('h1');
 }
 
 h2 {
-    @include text-h2();
+    @include text-heading('h2');
 }
 
 h3 {
-    @include text-h3();
+    @include text-heading('h3');
 }
 
 h4 {
-    @include text-h4();
+    @include text-heading('h4');
 }

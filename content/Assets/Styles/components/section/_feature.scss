@@ -24,7 +24,7 @@
         }
 
             &__title {
-                @include text-h1;
+                @include text-heading('h1');
                 margin-bottom: $content-gutter-small;
             }
 
