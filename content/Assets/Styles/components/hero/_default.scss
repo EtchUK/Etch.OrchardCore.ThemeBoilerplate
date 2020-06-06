@@ -20,7 +20,7 @@
                 color: themed('color.white');
             }
 
-            @include text-hero();
+            @include text-heading('hero');
 
             span {
                 padding: 0 $hero-title-padding-horizontal $hero-title-padding-bottom;
