@@ -8,5 +8,9 @@
 .nav--primary {
     .nav__item a {
         @include content-gutter(); /* 1. */
+
+        @include mq($from: tablet) {
+            padding: $nav-anchor-padding-tablet;
+        }
     }
  }
