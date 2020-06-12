@@ -1,7 +1,20 @@
-<section class="section section--narrow">
-    <div class="section__content">
-        <h2>{{ "Oops.. we couldn&rsquo;t find that page" | t | raw }}</h2>
-        <p>{{ "The page you are looking for may no longer exist. Please use the menu to find the page you are looking for, or:" | t }}</p>
-        <p><a href="{{ Request.PathBase }}" class="btn btn--secondary">{{ "Go back to the homepage" | t }}</a></p>
-    </div>
-</section>
+{% assign contentItem = Content["alias:404"] %}
+
+{% if contentItem != nil %}
+  {{ contentItem | shape_build_display: "Detail" | shape_render }}
+{% else %}
+    <article>
+        <section class="section">
+            <div class="section__content">
+                <h1>{{ "Page not found" | t }}</h1>
+            </div>
+        </section>
+        <section class="section section--narrow">
+            <div class="section__content">
+                <h2>{{ "Sorry, we couldn&rsquo;t find that" | t | raw }}</h2>
+                <p>{{ "The page you are looking for may no longer exist. Please use the menu to find the page you are looking for, or:" | t }}</p>
+                <p><a href="{{ Request.PathBase }}/" class="btn btn--secondary">{{ "Go back to the homepage" | t }}</a></p>
+            </div>
+        </section>
+    </article>
+{% endif %}
