@@ -5740,7 +5740,20 @@
     {
       "name": "lucene-index",
       "Indices": [
-        "ContentItems"
+        {
+          "ContentItems": {
+            "AnalyzerName": "standardanalyzer",
+            "IndexLatest": false,
+            "IndexedContentTypes": [
+              "Homepage",
+              "Job",
+              "News",
+              "NewsPost",
+              "Page"
+            ],
+            "Culture": "any"
+          }
+        }
       ]
     },
     {
