@@ -2,6 +2,10 @@
 
 Theme boilerplate is our starting point for building Orchard Core themes.
 
+## Orchard Core Reference
+
+This theme is referencing the RC2 build of Orchard Core ([`1.0.0-rc2-13450`](https://www.nuget.org/packages/OrchardCore.Theme.Targets/1.0.0-rc2-13450)).
+
 ## Prerequisities
 
 ### [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/)
@@ -48,3 +52,7 @@ To spin up a web server (seperate from an Orchard Core site) that'll provide acc
 ### Packaging
 
 When the theme is compiled (using `dotnet build`) it's configured to generate a `.nupkg` file (this can be found in `\bin\Debug\` or `\bin\Release`).
+
+## Notes
+
+This theme was created using `v0.5.1` of [Etch.OrchardCore.ThemeBoilerplate](https://github.com/EtchUK/Etch.OrchardCore.ThemeBoilerplate) template.
