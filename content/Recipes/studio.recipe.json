@@ -843,7 +843,16 @@
                             "Name": "Page",
                             "Settings": {
                                 "ContentTypePartSettings": {
-                                    "Position": "2"
+                                    "Position": "3"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AliasPart",
+                            "Name": "AliasPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
                                 }
                             }
                         },
@@ -852,7 +861,7 @@
                             "Name": "AutoroutePart",
                             "Settings": {
                                 "ContentTypePartSettings": {
-                                    "Position": "1"
+                                    "Position": "2"
                                 },
                                 "AutoroutePartSettings": {
                                     "AllowCustomPath": true,
@@ -880,7 +889,7 @@
                                 "ContentTypePartSettings": {
                                     "DisplayName": "Content",
                                     "Description": "Collection of elements making up content of the page.",
-                                    "Position": "3"
+                                    "Position": "4"
                                 },
                                 "BagPartSettings": {
                                     "ContainedContentTypes": [
@@ -901,7 +910,7 @@
                             "Name": "MetaTagsPart",
                             "Settings": {
                                 "ContentTypePartSettings": {
-                                    "Position": "4"
+                                    "Position": "5"
                                 }
                             }
                         }
