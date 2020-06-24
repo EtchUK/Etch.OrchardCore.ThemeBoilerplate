@@ -6,8 +6,9 @@ const defaults = {
 };
 
 const parallax = () => {
+    let hasInstance = false;
 
-    document.querySelectorAll('.parallax').forEach(($el: Element) => {
+    document.querySelectorAll('.js-parallax').forEach(($el: Element) => {
         if (!$el.hasAttribute('data-rellax-percentage')) {
             $el.setAttribute('data-rellax-percentage', defaults.percentage.toString());
         }
@@ -15,9 +16,15 @@ const parallax = () => {
         if (!$el.hasAttribute('data-rellax-speed')) {
             $el.setAttribute('data-rellax-speed', defaults.speed.toString());
         }
+
+        hasInstance = true;
     });
 
-    const rellax = new Rellax('.parallax');
+    if (!hasInstance) {
+        return;
+    }
+
+    const rellax = new Rellax('.js-parallax');
 
     window.onload = () => {
         rellax.refresh();
