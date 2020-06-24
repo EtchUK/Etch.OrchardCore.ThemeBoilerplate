@@ -1,9 +1,0 @@
-﻿{% assign news = Queries.ContentItems | query: contentType: "NewsPost", size: 3 %}
-
-<div class="grid grid--gutter-small color--default">
-	{% for item in news %}
-    <div class="grid__item">
-		{{ item | shape_build_display: "Summary" | shape_render }}
-    </div>
-	{% endfor %}
-</div>
