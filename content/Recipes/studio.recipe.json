@@ -275,7 +275,7 @@
                                         "Html",
                                         "Image",
                                         "Jobs",
-                                        "LatestNews",
+                                        "News",
                                         "Link",
                                         "OrderedList",
                                         "Paragraph",
@@ -383,7 +383,7 @@
                                         "Html",
                                         "Image",
                                         "Jobs",
-                                        "LatestNews",
+                                        "News",
                                         "Link",
                                         "OrderedList",
                                         "Paragraph",
@@ -796,35 +796,6 @@
                     ]
                 },
                 {
-                    "Name": "LinkMenuItem",
-                    "DisplayName": "Link Menu Item",
-                    "Settings": {
-                        "ContentTypeSettings": {
-                            "Stereotype": "MenuItem"
-                        }
-                    },
-                    "ContentTypePartDefinitionRecords": [
-                        {
-                            "PartName": "LinkMenuItemPart",
-                            "Name": "LinkMenuItemPart",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "0"
-                                }
-                            }
-                        },
-                        {
-                            "PartName": "LinkMenuItem",
-                            "Name": "LinkMenuItem",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "1"
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
                     "Name": "Page",
                     "DisplayName": "Page",
                     "Settings": {
@@ -896,6 +867,7 @@
                                         "Carousel",
                                         "Hero",
                                         "Html",
+                                        "News",
                                         "Picture",
                                         "Section",
                                         "SectionFeatured",
@@ -987,6 +959,7 @@
                                         "Carousel",
                                         "Hero",
                                         "Html",
+                                        "News",
                                         "Section",
                                         "SectionFeatured",
                                         "SectionMedia"
@@ -1002,31 +975,6 @@
                             "Settings": {
                                 "ContentTypePartSettings": {
                                     "Position": "5"
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Name": "ContentMenuItem",
-                    "DisplayName": "Content Menu Item",
-                    "Settings": {
-                        "ContentTypeSettings": {
-                            "Creatable": false,
-                            "Draftable": false,
-                            "Versionable": true,
-                            "Listable": false,
-                            "Securable": false,
-                            "Stereotype": "MenuItem"
-                        }
-                    },
-                    "ContentTypePartDefinitionRecords": [
-                        {
-                            "PartName": "ContentMenuItem",
-                            "Name": "ContentMenuItem",
-                            "Settings": {
-                                "ContentTypeSettings": {
-                                    "Position": "0"
                                 }
                             }
                         }
@@ -1080,7 +1028,7 @@
                                         "Html",
                                         "Image",
                                         "Jobs",
-                                        "LatestNews",
+                                        "News",
                                         "Link",
                                         "OrderedList",
                                         "Paragraph",
@@ -1380,27 +1328,6 @@
                         {
                             "PartName": "Jobs",
                             "Name": "Jobs",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "0"
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Name": "LatestNews",
-                    "DisplayName": "Latest News",
-                    "Settings": {
-                        "ContentTypeSettings": {
-                            "Stereotype": "Widget"
-                        },
-                        "FullTextAspectSettings": {}
-                    },
-                    "ContentTypePartDefinitionRecords": [
-                        {
-                            "PartName": "LatestNews",
-                            "Name": "LatestNews",
                             "Settings": {
                                 "ContentTypePartSettings": {
                                     "Position": "0"
@@ -2345,30 +2272,6 @@
                         }
                     },
                     "ContentPartFieldDefinitionRecords": []
-                },
-                {
-                    "Name": "ContentMenuItem",
-                    "Settings": {},
-                    "ContentPartFieldDefinitionRecords": [
-                        {
-                            "FieldName": "ContentPickerField",
-                            "Name": "LinkTo",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Link To"
-                                },
-                                "ContentPickerFieldSettings": {
-                                    "Hint": "Choose content item that is displayed when user selects link.",
-                                    "Required": true,
-                                    "DisplayedContentTypes": [
-                                        "Homepage",
-                                        "Page"
-                                    ]
-                                },
-                                "ContentIndexSettings": {}
-                            }
-                        }
-                    ]
                 },
                 {
                     "Name": "SectionFeatured",
@@ -4809,16 +4712,16 @@
                 },
                 {
                     "ContentItemId": "4pza6hdwvf1t2t0yqsmmgjzzdq",
-                    "ContentItemVersionId": "4dcmee2hxamvbwtc9fef34bfmp",
+                    "ContentItemVersionId": "4ckm4ecfc25h23nkpeb1yrvdmv",
                     "ContentType": "Menu",
                     "DisplayText": "Main Menu",
                     "Latest": true,
                     "Published": true,
-                    "ModifiedUtc": "2020-04-19T21:13:04.8950007Z",
-                    "PublishedUtc": "2020-04-19T21:13:15.6280574Z",
+                    "ModifiedUtc": "2020-06-24T00:25:49.0830499Z",
+                    "PublishedUtc": "2020-06-24T00:25:49.110682Z",
                     "CreatedUtc": "2020-04-11T18:50:07.228Z",
                     "Owner": "[js: parameters('AdminUsername')]",
-                    "Author": null,
+                    "Author": "[js: parameters('AdminUsername')]",
                     "TitlePart": {
                         "Title": "Main Menu"
                     },
@@ -4829,124 +4732,136 @@
                     "MenuItemsListPart": {
                         "MenuItems": [
                             {
-                                "ContentItemId": "48k68nwjj514yr8kp7ebr02g4a",
+                                "ContentItemId": "4fqggd2g269amr6xw3swt55gxe",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
                                 "DisplayText": null,
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                                "ModifiedUtc": "2020-06-24T00:24:44.7421295Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
                                 "Author": "[js: parameters('AdminUsername')]",
-                                "ContentMenuItem": {
-                                    "LinkTo": {
+                                "ContentMenuItemPart": {
+                                    "Name": "Home",
+                                    "SelectedContentItem": {
                                         "ContentItemIds": [
                                             "4j2bj7ydh9n4xrhpen3xx7wxx5"
                                         ]
                                     }
-                                }
+                                },
+                                "ContentMenuItem": {}
                             },
                             {
-                                "ContentItemId": "4qrg20mwe352kx9875f6sfpmm7",
+                                "ContentItemId": "4gz40erkf6t55xhh9v5t1nsh4h",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
                                 "DisplayText": null,
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-04-11T18:50:07.228Z",
+                                "ModifiedUtc": "2020-06-24T00:24:56.2424674Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
                                 "Author": "[js: parameters('AdminUsername')]",
-                                "ContentMenuItem": {
-                                    "LinkTo": {
+                                "ContentMenuItemPart": {
+                                    "Name": "About",
+                                    "SelectedContentItem": {
                                         "ContentItemIds": [
                                             "4rdbsjtjx0492vwnrcne4z5gws"
                                         ]
                                     }
-                                }
+                                },
+                                "ContentMenuItem": {}
                             },
                             {
-                                "ContentItemId": "4dmqrfs9rckzn6ezs0phwzm8x5",
+                                "ContentItemId": "4kh97bf49t73n2whr0r7kk9hx6",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
                                 "DisplayText": null,
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-04-19T20:54:10.6169296Z",
+                                "ModifiedUtc": "2020-06-24T00:25:11.8016103Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
                                 "Author": "[js: parameters('AdminUsername')]",
-                                "ContentMenuItem": {
-                                    "LinkTo": {
+                                "ContentMenuItemPart": {
+                                    "Name": "Games",
+                                    "SelectedContentItem": {
                                         "ContentItemIds": [
                                             "4yh7ak6e0vnmnsmsvdvqbc3gmr"
                                         ]
                                     }
-                                }
+                                },
+                                "ContentMenuItem": {}
                             },
                             {
-                                "ContentItemId": "4k83tpgdretcf3c0zad4pv45xb",
+                                "ContentItemId": "438ej55n03rgfxqhnnrgws9znh",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
                                 "DisplayText": null,
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-04-19T20:54:17.5358656Z",
+                                "ModifiedUtc": "2020-06-24T00:25:27.5341665Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
                                 "Author": "[js: parameters('AdminUsername')]",
-                                "ContentMenuItem": {
-                                    "LinkTo": {
+                                "ContentMenuItemPart": {
+                                    "Name": "Jobs",
+                                    "SelectedContentItem": {
                                         "ContentItemIds": [
                                             "4qr19h1qvqhd3xzhr54gz656cx"
                                         ]
                                     }
-                                }
+                                },
+                                "ContentMenuItem": {}
                             },
                             {
-                                "ContentItemId": "4qt1znp2n0vs6snpf5v79stcw5",
+                                "ContentItemId": "4rpdttftb815bycdqmwcm2vrmr",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
                                 "DisplayText": null,
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-04-19T20:55:08.2390513Z",
+                                "ModifiedUtc": "2020-06-24T00:25:38.1473753Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
                                 "Author": "[js: parameters('AdminUsername')]",
-                                "ContentMenuItem": {
-                                    "LinkTo": {
+                                "ContentMenuItemPart": {
+                                    "Name": "Blog",
+                                    "SelectedContentItem": {
                                         "ContentItemIds": [
-                                            "4dzdnpafscnp33y8xdz4ch45xt"
+                                            "4ptmn941cawhq54bpnc5c4j3mh"
                                         ]
                                     }
-                                }
+                                },
+                                "ContentMenuItem": {}
                             },
                             {
-                                "ContentItemId": "440awp5b6z3s1xqjrywd5pbsxs",
+                                "ContentItemId": "4hx9tne4ex2v7wr1vepe0mgyd2",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
                                 "DisplayText": null,
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-04-19T21:13:04.895446Z",
+                                "ModifiedUtc": "2020-06-24T00:25:47.2780746Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
                                 "Author": "[js: parameters('AdminUsername')]",
-                                "ContentMenuItem": {
-                                    "LinkTo": {
+                                "ContentMenuItemPart": {
+                                    "Name": "Contact",
+                                    "SelectedContentItem": {
                                         "ContentItemIds": [
                                             "4pv18gkjy6dwftqwv8j66qdedy"
                                         ]
                                     }
-                                }
+                                },
+                                "ContentMenuItem": {}
                             }
                         ]
                     },
@@ -4961,20 +4876,23 @@
                 },
                 {
                     "ContentItemId": "4j2bj7ydh9n4xrhpen3xx7wxx5",
-                    "ContentItemVersionId": "4hfz9nywnba41xtkpfjkh11cmg",
+                    "ContentItemVersionId": "4mfca3yc2texm2tvjsw056vgnm",
                     "ContentType": "Homepage",
                     "DisplayText": "Home",
                     "Latest": true,
                     "Published": true,
-                    "ModifiedUtc": "2020-04-12T23:37:23.480693Z",
-                    "PublishedUtc": "2020-04-12T23:37:23.5462629Z",
+                    "ModifiedUtc": "2020-06-24T00:01:36.2911099Z",
+                    "PublishedUtc": "2020-06-24T00:01:36.3794559Z",
                     "CreatedUtc": "2020-04-11T18:50:07.228Z",
                     "Owner": "[js: parameters('AdminUsername')]",
                     "Author": "[js: parameters('AdminUsername')]",
                     "Homepage": {},
                     "AutoroutePart": {
                         "Path": "home",
-                        "SetHomepage": true
+                        "SetHomepage": true,
+                        "Disabled": false,
+                        "RouteContainedItems": false,
+                        "Absolute": false
                     },
                     "CommonPart": {},
                     "TitlePart": {
@@ -4989,7 +4907,7 @@
                                 "DisplayText": null,
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-04-12T23:37:23.4967396Z",
+                                "ModifiedUtc": "2020-06-24T00:01:36.307666Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
@@ -5023,7 +4941,7 @@
                                 "DisplayText": "Feature Section Title",
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-04-12T23:37:23.5024772Z",
+                                "ModifiedUtc": "2020-06-24T00:01:36.3443386Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
@@ -5040,13 +4958,13 @@
                                 "Content": {
                                     "ContentItems": [
                                         {
-                                            "ContentItemId": "47kcp8a0zxt00zsrmz1sv6gm4w",
+                                            "ContentItemId": "4e77zkc3wtvee1yr614771qe4b",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Paragraph",
                                             "DisplayText": null,
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-04-12T23:37:23.5048946Z",
+                                            "ModifiedUtc": "2020-06-24T00:01:36.3470638Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
                                             "Owner": null,
@@ -5058,13 +4976,13 @@
                                             }
                                         },
                                         {
-                                            "ContentItemId": "4b0d2gq4jtf2p58z5ee85rb04n",
+                                            "ContentItemId": "45vjp5f7qk28b4j6pjh0093tcn",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Link",
                                             "DisplayText": null,
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-04-12T23:37:23.5097156Z",
+                                            "ModifiedUtc": "2020-06-24T00:01:36.3505329Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
                                             "Owner": null,
@@ -5094,7 +5012,7 @@
                                 "DisplayText": "Section Title",
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-04-12T23:37:23.5155428Z",
+                                "ModifiedUtc": "2020-06-24T00:01:36.355226Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
@@ -5124,13 +5042,13 @@
                                 "Content": {
                                     "ContentItems": [
                                         {
-                                            "ContentItemId": "4qt8zpa1j7r2zs6xy6dy1cdtxa",
+                                            "ContentItemId": "4c1ry17qm6p0htrymsj8mdp0cq",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Paragraph",
                                             "DisplayText": null,
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-04-12T23:37:23.5200401Z",
+                                            "ModifiedUtc": "2020-06-24T00:01:36.3625948Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
                                             "Owner": null,
@@ -5142,13 +5060,13 @@
                                             }
                                         },
                                         {
-                                            "ContentItemId": "43cwqxgeckha5x8ja1zg8hfrnc",
+                                            "ContentItemId": "4jyp3z1deqa8dx7vfsqc4hmcmw",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Link",
                                             "DisplayText": null,
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-04-12T23:37:23.5240777Z",
+                                            "ModifiedUtc": "2020-06-24T00:01:36.3661031Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
                                             "Owner": null,
@@ -5172,69 +5090,27 @@
                                 }
                             },
                             {
-                                "ContentItemId": "4nf8h2c8ha365vn9x44jkhynmr",
+                                "ContentItemId": "473xppxptnrfg1cx46zj9a3wnt",
                                 "ContentItemVersionId": null,
-                                "ContentType": "Section",
-                                "DisplayText": "Latest News",
+                                "ContentType": "News",
+                                "DisplayText": "Latest Posts",
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-04-12T23:37:23.5305159Z",
+                                "ModifiedUtc": "2020-06-24T00:01:36.3717005Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
                                 "Author": "[js: parameters('AdminUsername')]",
-                                "Section": {
-                                    "BackgroundColour": {
-                                        "Text": "grey-light"
+                                "News": {
+                                    "PageSize": {
+                                        "Value": 3.0
                                     },
-                                    "Alignment": {
-                                        "Text": "default"
-                                    },
-                                    "ContentWidth": {
-                                        "Text": "wide"
+                                    "Paging": {
+                                        "Value": false
                                     }
                                 },
                                 "TitlePart": {
-                                    "Title": "Latest News"
-                                },
-                                "Content": {
-                                    "ContentItems": [
-                                        {
-                                            "ContentItemId": "4zggpgatwtqcyw3x5zcshew8nd",
-                                            "ContentItemVersionId": null,
-                                            "ContentType": "Heading",
-                                            "DisplayText": null,
-                                            "Latest": false,
-                                            "Published": false,
-                                            "ModifiedUtc": "2020-04-12T23:37:23.5340771Z",
-                                            "PublishedUtc": null,
-                                            "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
-                                            "Heading": {
-                                                "Text": {
-                                                    "Text": "Latest news"
-                                                },
-                                                "Level": {
-                                                    "Text": "2"
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "ContentItemId": "4nn5t0c94ptzr67nk9cwx67qwc",
-                                            "ContentItemVersionId": null,
-                                            "ContentType": "LatestNews",
-                                            "DisplayText": null,
-                                            "Latest": false,
-                                            "Published": false,
-                                            "ModifiedUtc": "2020-04-12T23:37:23.5370436Z",
-                                            "PublishedUtc": null,
-                                            "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
-                                            "LatestNews": {}
-                                        }
-                                    ]
+                                    "Title": "Latest Posts"
                                 }
                             }
                         ]
@@ -5568,6 +5444,70 @@
                     }
                 },
                 {
+                    "ContentItemId": "4ptmn941cawhq54bpnc5c4j3mh",
+                    "ContentItemVersionId": "4wvswmxa9hwbyz57z64pzq2rm9",
+                    "ContentType": "Page",
+                    "DisplayText": "Blog",
+                    "Latest": true,
+                    "Published": true,
+                    "ModifiedUtc": "2020-06-24T00:00:51.9663209Z",
+                    "PublishedUtc": "2020-06-24T00:00:51.9845218Z",
+                    "CreatedUtc": "2020-06-23T23:57:23.0709148Z",
+                    "Owner": "[js: parameters('AdminUsername')]",
+                    "Author": "[js: parameters('AdminUsername')]",
+                    "Page": {
+                        "DisplayTitle": {
+                            "Value": false
+                        }
+                    },
+                    "AliasPart": {
+                        "Alias": "blog"
+                    },
+                    "AutoroutePart": {
+                        "Path": "blog",
+                        "SetHomepage": false,
+                        "Disabled": false,
+                        "RouteContainedItems": false,
+                        "Absolute": false
+                    },
+                    "TitlePart": {
+                        "Title": "Blog"
+                    },
+                    "Content": {
+                        "ContentItems": [
+                            {
+                                "ContentItemId": "4kf4rdw05cx8y3w9tvjq9zvzm9",
+                                "ContentItemVersionId": null,
+                                "ContentType": "News",
+                                "DisplayText": "Blog",
+                                "Latest": false,
+                                "Published": false,
+                                "ModifiedUtc": "2020-06-24T00:00:51.9753767Z",
+                                "PublishedUtc": null,
+                                "CreatedUtc": null,
+                                "Owner": null,
+                                "Author": "[js: parameters('AdminUsername')]",
+                                "News": {
+                                    "PageSize": {
+                                        "Value": 12.0
+                                    },
+                                    "Paging": {
+                                        "Value": true
+                                    }
+                                },
+                                "TitlePart": {
+                                    "Title": "Blog"
+                                }
+                            }
+                        ]
+                    },
+                    "MetaTagsPart": {
+                        "Description": null,
+                        "Images": [],
+                        "Title": null
+                    }
+                },
+                {
                     "ContentItemId": "4pd2ymqtarc8mtahsezrheebcv",
                     "ContentItemVersionId": "42excbvpvm2ah0fcgjepd4vcd5",
                     "ContentType": "Job",
@@ -5735,10 +5675,6 @@
                     },
                     "TitlePart": {
                         "Title": "Example Blog Post #1"
-                    },
-                    "ContainedPart": {
-                        "ListContentItemId": "4dzdnpafscnp33y8xdz4ch45xt",
-                        "Order": 0
                     }
                 },
                 {
@@ -5783,10 +5719,6 @@
                     },
                     "TitlePart": {
                         "Title": "Example Blog Post #3"
-                    },
-                    "ContainedPart": {
-                        "ListContentItemId": "4dzdnpafscnp33y8xdz4ch45xt",
-                        "Order": 0
                     }
                 },
                 {
@@ -5831,10 +5763,6 @@
                     },
                     "TitlePart": {
                         "Title": "Example Blog Post #2"
-                    },
-                    "ContainedPart": {
-                        "ListContentItemId": "4dzdnpafscnp33y8xdz4ch45xt",
-                        "Order": 0
                     }
                 }
             ]
@@ -5859,7 +5787,6 @@
                         "IndexedContentTypes": [
                             "Homepage",
                             "Job",
-                            "News",
                             "NewsPost",
                             "Page"
                         ],
