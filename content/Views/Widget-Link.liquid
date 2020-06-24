@@ -1,7 +1,8 @@
-﻿{% assign linkUrl = Model.ContentItem.Content.Link.Url.Text %}
+{% assign linkUrl = Model.ContentItem.Content.Link.Url.Text %}
 {% assign text = Model.ContentItem.Content.Link.Text.Text %}
 {% assign openInNewWindow = Model.ContentItem.Content.Link.OpenInNewWindow.Value %}
 {% assign style = Model.ContentItem.Content.Link.Style.Text %}
+{% assign cssClasses = '' %}
 
 {% if style != null and style != 'default' %}
     {% assign cssClasses = 'btn btn--' | append: style %}
