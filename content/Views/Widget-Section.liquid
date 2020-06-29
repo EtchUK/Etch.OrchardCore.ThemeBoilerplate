@@ -1,4 +1,4 @@
-﻿{% assign cssClasses = "section" %}
+{% assign cssClasses = "section" %}
 {% assign constrainClasses = "constrain" %}
 
 {% assign alignment = Model.ContentItem.Content.Section.Alignment.Text %}
@@ -30,9 +30,13 @@
 <section class="{{ cssClasses }}">
     {% if contentWidth != 'full' %}
     <div class="section__content {{ constrainClasses }}">
-        {{ Model.Content.Content | shape_render }}
+        <div class="flow">
+            {{ Model.Content.Content | shape_render }}
+        </div>
     </div>
     {% else %}
-    {{ Model.Content.Content | shape_render }}
+    <div class="flow">
+        {{ Model.Content.Content | shape_render }}
+    </div>
     {% endif %}
 </section>

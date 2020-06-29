@@ -26,20 +26,6 @@
             width: auto;
         }
     }
-
-    &--left {
-        @include mq($from: tablet) {
-            float: left;
-            margin-right: $content-gutter;
-        }
-    }
-    
-    &--right {
-        @include mq($from: tablet) {
-            float: right;
-            margin-left: $content-gutter;
-        }
-    }
     
     &-self {
         &--center {
@@ -51,5 +37,21 @@
         &--start {
             align-self: flex-start;
         }
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--justify {
+        text-align: justify;
+    }
+
+    &--left {
+        text-align: left;
+    }
+
+    &--right {
+        text-align: right;
     }
 }
