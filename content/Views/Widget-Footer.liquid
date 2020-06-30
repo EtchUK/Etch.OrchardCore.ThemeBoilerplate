@@ -1,4 +1,4 @@
-﻿{% assign menu = Content.ContentItemId[Model.ContentItem.Content.Footer.Menu.ContentItemIds] %}
+{% assign menu = Content.ContentItemId[Model.ContentItem.Content.Footer.Menu.ContentItemIds] %}
 {% assign menuAlias = "alias:" | append: menu.Content.AliasPart.Alias %}
 
 <footer class="footer">
@@ -7,7 +7,7 @@
             <a class="footer__logo" href="{{ Request.PathBase }}">
                 <picture>
                     <source srcset="{{ Model.ContentItem.Content.Footer.Logo.Paths[0] | asset_url }}" media="(min-width: 768px)">
-                    <img src="{{ Model.ContentItem.Content.Footer.LogoSmall.Paths[0] | asset_url }}" alt="{{ Model.ContentItem.Content.Footer.LogoAlternateText }}" />
+                    <img src="{{ Model.ContentItem.Content.Footer.LogoSmall.Paths[0] | asset_url }}" alt="{{ Model.ContentItem.Content.Footer.LogoAlternateText.Text }}" />
                 </picture>
             </a>
 

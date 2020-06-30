@@ -17,6 +17,8 @@
     }
 
         &__meta {
+            width: 100%;
+            
             @include mq($from: tablet) {
                 margin-top: $content-gutter-small;
             }
