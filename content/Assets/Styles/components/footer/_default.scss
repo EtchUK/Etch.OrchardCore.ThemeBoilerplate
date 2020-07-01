@@ -16,49 +16,49 @@
         }
     }
 
-        &__meta {
-            width: 100%;
-            
-            @include mq($from: tablet) {
-                margin-top: $content-gutter-small;
-            }
+    &__meta {
+        width: 100%;
+
+        @include mq($from: tablet) {
+            margin-top: $content-gutter-small;
+        }
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: $content-gutter-small;
+        margin-right: auto;
+        max-width: $footer-logo-width-mobile;
+        position: relative;
+        width: 100%;
+        z-index: $z-index-front;
+
+        @include mq($from: tablet) {
+            max-width: $footer-logo-width;
         }
 
-            &__logo {
-                display: block;
-                margin-bottom: $content-gutter-small;
-                margin-right: auto;
-                max-width: $footer-logo-width-mobile;
-                position: relative;
-                width: 100%;
-                z-index: $z-index-front;
-
-                @include mq($from: tablet) {
-                    max-width: $footer-logo-width;
-                }
-
-                img {
-                    display: block;
-                }
-            }
-
-        nav,
-        &__nav {
-            margin-bottom: $content-gutter;
-            width: 100%;
-            z-index: $z-index-default;
-
-            @include themify($themes) {
-                background-color: transparent;
-            }
-
-            border-top: 0;
-
-            @include mq($from: tablet) {
-                margin-bottom: 0;
-                width: auto;
-            }
+        img {
+            display: block;
         }
+    }
+
+    nav,
+    &__nav {
+        margin-bottom: $content-gutter;
+        width: 100%;
+        z-index: $z-index-default;
+
+        @include themify($themes) {
+            background-color: transparent;
+        }
+
+        border-top: 0;
+
+        @include mq($from: tablet) {
+            margin-bottom: 0;
+            width: auto;
+        }
+    }
 }
 
 .is-nav-visible {

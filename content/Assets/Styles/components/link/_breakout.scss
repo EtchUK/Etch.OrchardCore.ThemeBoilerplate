@@ -1,15 +1,15 @@
 /* ==========================================================================
    #LINK/BREAKOUT
    ========================================================================== */
-   
+
 /**
  * Used to make the entire parent element clickable.
  */
- .link--breakout {
+.link--breakout {
     position: static;
-    
+
     &:before {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         top: 0;

@@ -7,14 +7,14 @@
  * good coding practices.
  */
 
-@import "maps/get-deep";
-@import "strings/explode";
+@import 'maps/get-deep';
+@import 'strings/explode';
 
-@import "content";
-@import "focus";
-@import "grid";
-@import "ie";
-@import "lists";
+@import 'content';
+@import 'focus';
+@import 'grid';
+@import 'ie';
+@import 'lists';
 @import '~sass-mq';
-@import "text";
-@import "theming";
+@import 'text';
+@import 'theming';

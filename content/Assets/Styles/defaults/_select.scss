@@ -11,7 +11,7 @@ select {
         border: $form-border-size solid themed('color.hint');
     }
 
-    &:focus {           
+    &:focus {
         @include focus-form-element;
     }
 }

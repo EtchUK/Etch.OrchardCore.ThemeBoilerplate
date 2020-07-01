@@ -4,7 +4,7 @@
 
 .gallery {
     @include list-reset();
-    
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,17 +17,17 @@
     }
 }
 
-    .gallery__item {
-        margin-bottom: $gallery-gutter-small;
-        padding-left: $gallery-item-gap;
-        padding-right: $gallery-item-gap;
-        width: 50%;
+.gallery__item {
+    margin-bottom: $gallery-gutter-small;
+    padding-left: $gallery-item-gap;
+    padding-right: $gallery-item-gap;
+    width: 50%;
 
-        @include mq($from: tabletSmall) {
-            width: 33.3%;
-        }
-
-        @include mq($from: tablet) {
-            width: 25%;
-        }
+    @include mq($from: tabletSmall) {
+        width: 33.3%;
     }
+
+    @include mq($from: tablet) {
+        width: 25%;
+    }
+}

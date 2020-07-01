@@ -11,7 +11,8 @@
     $box-shadow-spread: 1px;
 
     @include themify($themes) {
-        box-shadow: 0 0 $box-shadow-blur $box-shadow-spread themed('color.brandPrimary');
+        box-shadow: 0 0 $box-shadow-blur $box-shadow-spread
+            themed('color.brandPrimary');
     }
 
     @include themify($themes) {

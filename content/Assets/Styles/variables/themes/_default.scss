@@ -26,7 +26,7 @@ $themes: map-merge(
                 'buttonDisabled': #ccc,
                 'carouselIndicatorActive': #fbfbfb,
                 'carouselIndicator': #96928f,
-                'grey': #b5b5b5, 
+                'grey': #b5b5b5,
                 'greyLight': #efefef,
                 'hint': #6d6d6d,
                 'selection': #3ce854,
@@ -34,11 +34,17 @@ $themes: map-merge(
                 'tableRowDark': #070f26,
                 'text': #070f26,
                 'validationError': #e20000,
-                'white': #fff
+                'white': #fff,
             ),
             'fontFamily': (
-                'default': ('Work Sans', sans-serif),
-                'heading': ('Manuale', sans-serif)
+                'default': (
+                    'Work Sans',
+                    sans-serif,
+                ),
+                'heading': (
+                    'Manuale',
+                    sans-serif,
+                ),
             ),
             'fontSize': (
                 'default': 1.6rem,
@@ -59,12 +65,12 @@ $themes: map-merge(
                     'h2': 3.2rem,
                     'h3': 2.4rem,
                     'h4': 1.8rem,
-                    'blockquote': 1.8rem
-                )
+                    'blockquote': 1.8rem,
+                ),
             ),
             'fontWeight': (
                 'default': 400,
-                'bold': 700
+                'bold': 700,
             ),
             'lineHeight': (
                 'blockquote': 1.2,
@@ -74,9 +80,9 @@ $themes: map-merge(
                 'h1': 1.2,
                 'h2': 1.2,
                 'h3': 1.2,
-                'h4': 1.2
-            )
-        )
+                'h4': 1.2,
+            ),
+        ),
     ),
     $themes
 );

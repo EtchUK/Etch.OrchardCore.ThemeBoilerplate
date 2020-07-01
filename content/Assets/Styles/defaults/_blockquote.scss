@@ -5,11 +5,11 @@
  */
 
 blockquote {
-    margin: 0 0 $spacing-default 0; 
+    margin: 0 0 $spacing-default 0;
     position: relative;
 
     p {
-        @include text-heading('blockquote');  
+        @include text-heading('blockquote');
 
         @include themify($themes) {
             line-height: themed('lineHeight.heading');
@@ -30,7 +30,7 @@ blockquote {
         @include themify($themes) {
             color: themed('color.hint');
         }
-        
+
         font-style: normal;
 
         strong {

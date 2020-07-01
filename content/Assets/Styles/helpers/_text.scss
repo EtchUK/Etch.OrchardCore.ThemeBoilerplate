@@ -5,7 +5,7 @@
 /**
  * Classes to style text in various different ways.
  */
-   
+
 .font {
     &--default {
         @include themify($themes) {
@@ -22,17 +22,29 @@
 
 .text {
     &--align {
-        &-left{ text-align: left; }
-        &-center{ text-align: center; }
-        &-right{ text-align: right; }
+        &-left {
+            text-align: left;
+        }
+        &-center {
+            text-align: center;
+        }
+        &-right {
+            text-align: right;
+        }
     }
 
-    &--line-through { text-decoration: line-through; }
-    &--underline { text-decoration: underline; }
-    &--uppercase { text-transform: uppercase; }
+    &--line-through {
+        text-decoration: line-through;
+    }
+    &--underline {
+        text-decoration: underline;
+    }
+    &--uppercase {
+        text-transform: uppercase;
+    }
 
     &--size {
-        &-h1 { 
+        &-h1 {
             @include themify($themes) {
                 font-size: themed('fontSize.mobile.h1');
                 line-height: themed('lineHeight.heading');
@@ -45,7 +57,7 @@
             }
         }
 
-        &-h2 { 
+        &-h2 {
             @include themify($themes) {
                 font-size: themed('fontSize.mobile.h2');
                 line-height: themed('lineHeight.heading');
@@ -58,7 +70,7 @@
             }
         }
 
-        &-h3 { 
+        &-h3 {
             @include themify($themes) {
                 font-size: themed('fontSize.mobile.h3');
                 line-height: themed('lineHeight.heading');
@@ -98,4 +110,4 @@
             }
         }
     }
-}  
+}

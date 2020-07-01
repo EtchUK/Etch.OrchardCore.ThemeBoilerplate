@@ -13,7 +13,7 @@
     grid-auto-rows: minmax(auto, auto);
     padding-left: $content-gutter-small;
     padding-right: $content-gutter-small;
-    
+
     @include mq($from: tablet) {
         grid-gap: $content-gutter;
         grid-template-columns: repeat(12, 1fr);

@@ -8,7 +8,7 @@
 
 .grid {
     @include list-reset();
-    
+
     display: flex;
     flex-wrap: wrap;
     margin-left: -$content-gutter;
@@ -17,17 +17,17 @@
     list-style: none;
 }
 
-    .grid__item {
-        margin-bottom: $grid-default-item-margin-bottom;
-        padding-left: $content-gutter;
-        padding-right: $content-gutter;
-        width: 100%;
+.grid__item {
+    margin-bottom: $grid-default-item-margin-bottom;
+    padding-left: $content-gutter;
+    padding-right: $content-gutter;
+    width: 100%;
 
-        @include mq($from: tabletSmall) {
-            max-width: 50%;
-        }
-
-        @include mq($from: desktopSmall) {
-            max-width: 33.333%;
-        }
+    @include mq($from: tabletSmall) {
+        max-width: 50%;
     }
+
+    @include mq($from: desktopSmall) {
+        max-width: 33.333%;
+    }
+}
