@@ -15,22 +15,25 @@
         width: 100%;
     }
 
-        &__title {
-            @include themify($themes) {
-                color: themed('color.white');
-            }
-
-            @include text-heading('hero');
-
-            span {
-                padding: 0 $hero-title-padding-horizontal $hero-title-padding-bottom;
-
-                @include themify($themes) {
-                    background-color: rgba(themed('color.greyLight'), $hero-title-span-opacity);
-                }
-                box-decoration-break: clone;
-            }
+    &__title {
+        @include themify($themes) {
+            color: themed('color.white');
         }
+
+        @include text-heading('hero');
+
+        span {
+            padding: 0 $hero-title-padding-horizontal $hero-title-padding-bottom;
+
+            @include themify($themes) {
+                background-color: rgba(
+                    themed('color.greyLight'),
+                    $hero-title-span-opacity
+                );
+            }
+            box-decoration-break: clone;
+        }
+    }
 
     /**
      * 1. Vertically center the embed if it is taller than .hero__media

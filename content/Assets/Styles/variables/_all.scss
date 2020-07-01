@@ -7,12 +7,12 @@
  * https://stackoverflow.com/questions/47882/what-is-a-magic-number-and-why-is-it-bad
  */
 
-@import "content";
-@import "form";
-@import "spacing";
-@import "table";
-@import "themes";
-@import "z-index";
+@import 'content';
+@import 'form';
+@import 'spacing';
+@import 'table';
+@import 'themes';
+@import 'z-index';
 
 // breakpoints should be last as may rely on variables from other partials
-@import "breakpoints";
+@import 'breakpoints';

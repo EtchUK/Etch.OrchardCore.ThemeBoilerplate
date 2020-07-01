@@ -9,7 +9,7 @@
 .header {
     position: relative; /* 1. */
     z-index: $z-index-front; /* 1. */
-    
+
     &__content {
         align-items: center;
         display: flex;
@@ -22,76 +22,76 @@
         }
     }
 
-        &__logo {
-            max-width: $header-logo-width-mobile;
-            margin-right: auto;
-            position: relative;
-            width: 100%;
-            z-index: $z-index-front;
+    &__logo {
+        max-width: $header-logo-width-mobile;
+        margin-right: auto;
+        position: relative;
+        width: 100%;
+        z-index: $z-index-front;
 
-            @include mq($from: tablet) {
-                max-width: $header-logo-width;
-            }
-
-            img {
-                display: block;
-            }
+        @include mq($from: tablet) {
+            max-width: $header-logo-width;
         }
 
-        &__nav-button {
-            align-items: center;
-            display: flex;
-            cursor: pointer;
-            position: relative;
-            z-index: $z-index-front;
-        
-            @include mq($from: tablet) {
-                display: none;
-            }
-
-            &:before {
-                content: "";
-                height: $header-nav-button-height;
-                margin-right: $header-nav-button-margin-right;
-                width: $header-nav-button-width;
-
-                background-image: url('../content/icon-menu.svg');
-                background-repeat: no-repeat;
-                background-size: 100%;
-            }
+        img {
+            display: block;
         }
+    }
 
-        &__nav {
+    &__nav-button {
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        position: relative;
+        z-index: $z-index-front;
+
+        @include mq($from: tablet) {
             display: none;
-            height: 100vh;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index: $z-index-default;
+        }
 
-            border-top-style: solid;
-            border-top-width: $header-nav-padding-top;
+        &:before {
+            content: '';
+            height: $header-nav-button-height;
+            margin-right: $header-nav-button-margin-right;
+            width: $header-nav-button-width;
+
+            background-image: url('../content/icon-menu.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    }
+
+    &__nav {
+        display: none;
+        height: 100vh;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: $z-index-default;
+
+        border-top-style: solid;
+        border-top-width: $header-nav-padding-top;
+
+        @include themify($themes) {
+            background-color: themed('color.greyLight');
+            border-top-color: themed('color.white');
+        }
+
+        @include mq($from: tablet) {
+            display: block;
+            height: auto;
+            padding-top: 0;
+            position: static;
+            width: auto;
 
             @include themify($themes) {
-                background-color: themed('color.greyLight');
-                border-top-color: themed('color.white');
+                background-color: transparent;
             }
 
-            @include mq($from: tablet) {
-                display: block;
-                height: auto;
-                padding-top: 0;
-                position: static;
-                width: auto;
-
-                @include themify($themes) {
-                    background-color: transparent;
-                }
-
-                border-top: 0;
-            }
+            border-top: 0;
         }
+    }
 }
 
 .is-nav-visible {

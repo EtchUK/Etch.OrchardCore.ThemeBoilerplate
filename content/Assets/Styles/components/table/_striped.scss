@@ -14,12 +14,12 @@
             }
         }
 
-        td {    
+        td {
             &:nth-child(even) {
                 @include themify($themes) {
                     background-color: themed('color.tableRowLight');
                 }
-    
+
                 @include mq($from: tablet) {
                     @include themify($themes) {
                         background-color: transparent;

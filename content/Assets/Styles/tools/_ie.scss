@@ -24,7 +24,7 @@
     @include target-edge() {
         @content;
     }
-    
+
     @include target-ie() {
         @content;
     }

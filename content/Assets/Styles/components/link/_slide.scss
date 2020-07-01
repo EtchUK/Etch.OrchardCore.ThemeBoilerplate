@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .link--slide {
-
     &-bottom:before {
         top: 100%;
         transform: translateY(10px);
@@ -19,13 +18,15 @@
         transform: translateY(10px);
     }
 
-    &-bottom, &-center, &-top {
+    &-bottom,
+    &-center,
+    &-top {
         position: relative;
 
         text-decoration: none;
 
         &:before {
-            content: "";
+            content: '';
             height: $link-line-height;
             left: 0;
             position: absolute;
@@ -34,9 +35,10 @@
             @include themify($themes) {
                 background-color: themed('color.brandPrimary');
             }
-            
+
             opacity: 0;
-            transition: opacity $link-transition-duration, transform $link-transition-duration;
+            transition: opacity $link-transition-duration,
+                transform $link-transition-duration;
         }
 
         &:hover {
