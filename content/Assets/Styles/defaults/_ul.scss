@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #UL
+   ========================================================================== */
+
+/**
+ * Base styling for bulleted list.
+ */
+
+ul {
+    list-style: disc;
+    margin: 0;
+    margin-bottom: $spacing-default;
+    padding-left: $spacing-large;
+
+    ul {
+        margin-bottom: 0;
+    }
+}
+ 
