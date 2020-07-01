@@ -2,8 +2,14 @@
    #DISPLAY
    ========================================================================== */
 
-.display { 
-    &--none { display: none; }
-    &--block { display: block; }
-    &--inline-block { display: inline-block; }
+.display {
+    &--none {
+        display: none;
+    }
+    &--block {
+        display: block;
+    }
+    &--inline-block {
+        display: inline-block;
+    }
 }

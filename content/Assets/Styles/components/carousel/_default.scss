@@ -9,137 +9,140 @@
     width: 100%;
 }
 
-    /**
+/**
         * 1. Position indicators above the line effect containers.
-        */ 
-    .carousel__indicators {
-        bottom: $spacing-large;
-        display: flex;
-        left: 0;
-        justify-content: center;
-        margin: 0;
+        */
+.carousel__indicators {
+    bottom: $spacing-large;
+    display: flex;
+    left: 0;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 100; /* 1. */
+
+    list-style: none;
+}
+
+.carousel__indicator {
+    height: $carousel-indicator-size;
+    margin-right: $spacing-default;
+    width: $carousel-indicator-size;
+
+    .btn {
+        height: 100%;
         padding: 0;
-        position: absolute;
         width: 100%;
-        z-index: 100; /* 1. */
 
-        list-style: none;
-    }
+        border-radius: $carousel-indicator-size / 2;
 
-        .carousel__indicator {
-            height: $carousel-indicator-size;
-            margin-right: $spacing-default;
-            width: $carousel-indicator-size;
-
-            .btn {
-                height: 100%;
-                padding: 0;
-                width: 100%;
-
-                border-radius: $carousel-indicator-size / 2;
-
-                @include themify($themes) {
-                    background-color: themed('color.carouselIndicator');
-                    border: 0;
-                }
-
-                &:focus,
-                &:hover {
-                    @include themify($themes) {
-                        background-color: lighten(themed('color.carouselIndicator'), 15%);
-                    }
-                }
-            }
-
-            &:last-child {
-                margin-right: 0;
-            }
-
-            &.is-active .btn {
-                @include themify($themes) {
-                    background-color: themed('color.carouselIndicatorActive');
-                }
-            }
+        @include themify($themes) {
+            background-color: themed('color.carouselIndicator');
+            border: 0;
         }
 
-    .carousel__next-btn {
-        right: $carousel-nav-btn-x-mobile;
-        transform: translateX(0) translateY(-50%) rotate(180deg);
-
-        @include mq($from: carouselNextPreviousReposition) {
-            right: $carousel-nav-btn-x;
+        &:focus,
+        &:hover {
+            @include themify($themes) {
+                background-color: lighten(
+                    themed('color.carouselIndicator'),
+                    15%
+                );
+            }
         }
     }
 
-    .carousel__previous-btn {
-        left: $carousel-nav-btn-x-mobile;
-        transform: translateX(0) translateY(-50%);
+    &:last-child {
+        margin-right: 0;
+    }
 
-        @include mq($from: carouselNextPreviousReposition) {
-            left: $carousel-nav-btn-x;
+    &.is-active .btn {
+        @include themify($themes) {
+            background-color: themed('color.carouselIndicatorActive');
         }
     }
-    
-    /**
+}
+
+.carousel__next-btn {
+    right: $carousel-nav-btn-x-mobile;
+    transform: translateX(0) translateY(-50%) rotate(180deg);
+
+    @include mq($from: carouselNextPreviousReposition) {
+        right: $carousel-nav-btn-x;
+    }
+}
+
+.carousel__previous-btn {
+    left: $carousel-nav-btn-x-mobile;
+    transform: translateX(0) translateY(-50%);
+
+    @include mq($from: carouselNextPreviousReposition) {
+        left: $carousel-nav-btn-x;
+    }
+}
+
+/**
      * 1. Position indicators above the line effect containers.
      * 2. Animation is added to the SVG so the button hit area does not also move.
      * 3. Negative margin used on the psuedo element to increase hit area.
-     */ 
-    .carousel__next-btn,
-    .carousel__previous-btn {
+     */
+.carousel__next-btn,
+.carousel__previous-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 100; /* 1. */
+
+    /* 2. */
+    &:focus,
+    &:hover {
+        svg {
+            animation-duration: $carousel-button-animation-duration;
+            animation-iteration-count: infinite;
+            animation-name: carouselButtonHover;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: backwards;
+        }
+    }
+
+    /* 3. */
+    &:after {
+        bottom: $carousel-button-hit-area;
+        content: '';
+        left: $carousel-button-hit-area;
         position: absolute;
-        top: 50%;
-        z-index: 100; /* 1. */
-
-        /* 2. */
-        &:focus,
-        &:hover {
-            svg {
-                animation-duration: $carousel-button-animation-duration;
-                animation-iteration-count: infinite;
-                animation-name: carouselButtonHover;
-                animation-timing-function: ease-in-out;
-                animation-fill-mode: backwards;
-            }
-        }
-
-        /* 3. */
-        &:after {
-            bottom: $carousel-button-hit-area;
-            content: "";
-            left: $carousel-button-hit-area;
-            position: absolute;
-            right: $carousel-button-hit-area;
-            top: $carousel-button-hit-area;
-        }
+        right: $carousel-button-hit-area;
+        top: $carousel-button-hit-area;
     }
-    
-        .carousel__items {
-            display: flex;
-            flex-wrap: nowrap;
-            list-style: none;
-            margin: 0;
-            min-width: 100%;
-            padding: 0;
-        }
+}
 
-            .carousel__item {
-                display: none;
-                min-width: 100%;
-    
-                &.is-active {
-                    display: block;
-                }
-            }
-    
-    @keyframes carouselButtonHover {
-        0% {
-            transform: translateX(0);
-        }
-        50% {
-            transform: translateX($carousel-button-hover-translate-x);
-        }
-        100% {
-            transform: translateX(0);
-        }
+.carousel__items {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+}
+
+.carousel__item {
+    display: none;
+    min-width: 100%;
+
+    &.is-active {
+        display: block;
     }
+}
+
+@keyframes carouselButtonHover {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX($carousel-button-hover-translate-x);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

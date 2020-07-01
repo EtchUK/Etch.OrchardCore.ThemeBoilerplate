@@ -2,7 +2,6 @@
    #BUTTON/DEFAULT
    ========================================================================== */
 
-
 .btn,
 .btn:link,
 .btn:visited {
@@ -14,7 +13,7 @@
         border: $button-border-size solid themed('color.brandPrimary');
         color: themed('color.white');
     }
-    
+
     cursor: pointer;
     text-decoration: none;
     outline: none;

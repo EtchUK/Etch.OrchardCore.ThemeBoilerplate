@@ -11,80 +11,80 @@
         position: relative;
     }
 
-        &__label {
-            display: inline-block;
-            margin-bottom: 0;
-            padding-left: $form-checkbox-label-padding-left;
+    &__label {
+        display: inline-block;
+        margin-bottom: 0;
+        padding-left: $form-checkbox-label-padding-left;
 
-            cursor: pointer;
-            touch-action: manipulation;
+        cursor: pointer;
+        touch-action: manipulation;
 
-            @include themify($themes) {
-                font-family: themed('fontFamily.default');
-                font-size: themed('fontSize.default');
-                font-weight: themed('fontWeight.default');
-            }
-
-            &:before {
-                box-sizing: border-box;
-                content: "";
-                height: $form-checkbox-height;
-                left: 0;
-                position: absolute;
-                top: 0;
-                width: $form-checkbox-width;
-
-                background: transparent;
-                
-                @include themify($themes) {
-                    border: $form-border-size solid themed('color.hint');
-                }
-            }
-
-            &:after {
-                content: "";
-                height: $form-checkbox-label-after-height;
-                left: $form-checkbox-label-after-x-pos;
-                position: absolute;
-                top: $form-checkbox-label-after-y-pos;
-                width: $form-checkbox-label-after-width;
-
-                background: transparent;
-                border: solid;
-                border-width: $form-checkbox-label-after-border-width;
-                border-top-color: transparent;
-                transform: rotate(-45deg);
-                opacity: 0;
-            }
+        @include themify($themes) {
+            font-family: themed('fontFamily.default');
+            font-size: themed('fontSize.default');
+            font-weight: themed('fontWeight.default');
         }
 
-        &__input {
+        &:before {
+            box-sizing: border-box;
+            content: '';
             height: $form-checkbox-height;
             left: 0;
-            margin: 0;
             position: absolute;
             top: 0;
             width: $form-checkbox-width;
-            z-index: $z-index-default;
-            
-            cursor: pointer;
-            opacity: 0;
 
-            /* Make check icon visible */
-            &:checked + .checkboxes__label:after {
-                opacity: 1;
-            }
+            background: transparent;
 
-            /* Change checkbox border colour when checked */
-            &:checked + .checkboxes__label:before {
-                @include themify($themes) {
-                    border-color: themed('color.text');
-                }
-            }
-            
-            /* Show focus colour */
-            &:focus + .checkboxes__label::before {           
-                @include focus-form-element;
+            @include themify($themes) {
+                border: $form-border-size solid themed('color.hint');
             }
         }
+
+        &:after {
+            content: '';
+            height: $form-checkbox-label-after-height;
+            left: $form-checkbox-label-after-x-pos;
+            position: absolute;
+            top: $form-checkbox-label-after-y-pos;
+            width: $form-checkbox-label-after-width;
+
+            background: transparent;
+            border: solid;
+            border-width: $form-checkbox-label-after-border-width;
+            border-top-color: transparent;
+            transform: rotate(-45deg);
+            opacity: 0;
+        }
+    }
+
+    &__input {
+        height: $form-checkbox-height;
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: $form-checkbox-width;
+        z-index: $z-index-default;
+
+        cursor: pointer;
+        opacity: 0;
+
+        /* Make check icon visible */
+        &:checked + .checkboxes__label:after {
+            opacity: 1;
+        }
+
+        /* Change checkbox border colour when checked */
+        &:checked + .checkboxes__label:before {
+            @include themify($themes) {
+                border-color: themed('color.text');
+            }
+        }
+
+        /* Show focus colour */
+        &:focus + .checkboxes__label::before {
+            @include focus-form-element;
+        }
+    }
 }

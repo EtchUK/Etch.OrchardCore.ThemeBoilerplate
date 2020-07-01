@@ -18,13 +18,13 @@
     }
 }
 
-    .flow__content  {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: -$flow-gutter 0 $flow-gutter -$flow-gutter;
+.flow__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -$flow-gutter 0 $flow-gutter -$flow-gutter;
 
-        > * {
-            padding: $flow-gutter 0 0 $flow-gutter;
-        }
+    > * {
+        padding: $flow-gutter 0 0 $flow-gutter;
     }
+}

@@ -8,7 +8,7 @@
  *    https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse
  */
 
-table {  
+table {
     width: 100%;
 
     border-collapse: collapse; /* 1. */
@@ -48,7 +48,7 @@ table {
             }
         }
     }
-    
+
     th,
     td {
         display: block;

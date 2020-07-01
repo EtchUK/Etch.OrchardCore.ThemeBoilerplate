@@ -8,7 +8,6 @@
             a {
                 @include themify($themes) {
                     color: themed('color.text');
-                
                 }
                 text-decoration: none;
             }

@@ -28,7 +28,7 @@
         margin-left: -$content-gutter;
         margin-right: -$content-gutter;
     }
-    
+
     @include mq($from: contentWideWithGutter) {
         margin-left: 0;
         margin-right: 0;

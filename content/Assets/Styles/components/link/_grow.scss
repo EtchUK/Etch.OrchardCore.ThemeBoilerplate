@@ -21,15 +21,17 @@
             right: 0;
         }
     }
-    
-    &-center, &-ltr, &-rtl {
+
+    &-center,
+    &-ltr,
+    &-rtl {
         position: relative;
 
         text-decoration: none;
 
         &:before {
             bottom: 0;
-            content: "";
+            content: '';
             height: $link-line-height;
             position: absolute;
             width: 0;
@@ -37,7 +39,7 @@
             @include themify($themes) {
                 background-color: themed('color.brandPrimary');
             }
-            
+
             transition: width $link-transition-duration ease-in-out;
         }
 
