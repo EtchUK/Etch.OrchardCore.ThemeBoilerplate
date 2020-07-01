@@ -7,8 +7,6 @@
  */
  
 a {
-    @include active-states();
-
     @include themify($themes) {
         color: themed('color.brandPrimary');
     }
