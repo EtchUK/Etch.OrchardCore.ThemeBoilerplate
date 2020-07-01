@@ -1,0 +1,18 @@
+/* ==========================================================================
+   #OL
+   ========================================================================== */
+
+/**
+ * Base styling for numbered list.
+ */
+
+ol {
+    margin: 0;
+    margin-bottom: $spacing-default;
+    padding-left: $spacing-large;
+
+    ol {
+        margin-bottom: 0;
+    }
+}
+ 
