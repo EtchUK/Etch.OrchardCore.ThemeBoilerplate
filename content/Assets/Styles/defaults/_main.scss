@@ -1,0 +1,13 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $MAIN
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * 1. Fixes issue with full bleed components within a flow causing a 
+ *    scroll bars to appear on the page
+ */ 
+main {
+    overflow: hidden; /* 1. */
+}
