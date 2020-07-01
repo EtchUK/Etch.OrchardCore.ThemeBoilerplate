@@ -13,24 +13,3 @@
 
     list-style: none;
 }
-
-@mixin list-horizontal() {
-    @include clearfix();
-    
-    > li {
-        display: inline-block;
-        float: left;
-    }
-}
-
-@mixin list-horizontal-spaced() {
-    @include list-horizontal();
-
-    > li {
-        margin-right: $content-gutter;
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-}
