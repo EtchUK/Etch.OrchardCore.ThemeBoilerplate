@@ -12,6 +12,8 @@ env:
 install:
   - cd $WORKING_DIR
   - dotnet restore
+  - nvm install 10.0.0
+  - nvm use 10.0.0
 
 script:
   - npm install
