@@ -29,6 +29,8 @@ $themes: map-merge(
                 'grey': #b5b5b5,
                 'greyLight': #efefef,
                 'hint': #6d6d6d,
+                'linkColor': #3ce854,
+                'linkHoverColor': darken(#3ce854, 10%),
                 'selection': #3ce854,
                 'tableRowLight': #efefef,
                 'tableRowDark': #070f26,
