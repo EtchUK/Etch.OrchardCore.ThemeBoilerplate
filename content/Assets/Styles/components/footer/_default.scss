@@ -11,7 +11,7 @@
 
         @include mq($from: tablet) {
             align-items: flex-start;
-            flex-flow: row wrap;
+            flex-flow: row;
             justify-content: space-between;
         }
     }

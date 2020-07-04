@@ -3,8 +3,6 @@
    ========================================================================== */
 
 .media {
-    @include content-gutter();
-
     margin-left: auto;
     margin-right: auto;
     position: relative;
