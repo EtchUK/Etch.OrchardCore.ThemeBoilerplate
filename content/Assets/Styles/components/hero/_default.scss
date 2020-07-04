@@ -9,10 +9,7 @@
     position: relative;
 
     &__body {
-        @include content-gutter();
-        max-width: $content-width-wide + ($hero-title-padding-horizontal * 2);
         position: absolute;
-        width: 100%;
     }
 
     &__title {
