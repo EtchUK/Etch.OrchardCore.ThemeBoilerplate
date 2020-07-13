@@ -74,9 +74,7 @@ module.exports = {
                         loader: 'postcss-loader',
                         options: {
                             plugins: function () {
-                                return [
-                                    autoprefixer(),
-                                ];
+                                return [autoprefixer()];
                             },
                         },
                     },
@@ -131,12 +129,10 @@ module.exports = {
             plugins: [imageminMozjpeg({ quality: 75 })],
         }),
         new StylelintPlugin({
-            configFile: path.join(
-                process.cwd(),
-                'BuildConfigs/.stylelintrc'
-            ),
-            syntax: 'scss'
-        })
+            configFile: path.join(process.cwd(), 'BuildConfigs/.stylelintrc'),
+            fix: true,
+            syntax: 'scss',
+        }),
     ],
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
