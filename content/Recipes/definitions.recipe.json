@@ -91,7 +91,8 @@
                         },
                         "Category": "Common,Container",
                         "Description": "Represents a generic section of a page, i.e., a thematic grouping of content.",
-                        "Icon": "puzzle-piece"
+                        "Icon": "puzzle-piece",
+                        "FullTextAspectSettings": {}
                     },
                     "ContentTypePartDefinitionRecords": [
                         {
@@ -116,19 +117,19 @@
                                 "FlowPartSettings": {
                                     "ContainedContentTypes": [
                                         "Blockquote",
-                                        "VisualEditor",
                                         "Card",
                                         "Embed",
                                         "Figure",
                                         "Heading",
                                         "Html",
-                                        "Link",
-                                        "Paragraph",
                                         "Image",
-                                        "UnorderedList",
+                                        "LegacyVisualEditor",
+                                        "Link",
                                         "OrderedList",
+                                        "Paragraph",
                                         "Text",
-                                        "LegacyVisualEditor"
+                                        "UnorderedList",
+                                        "VisualEditor"
                                     ]
                                 },
                                 "ContentIndexSettings": {}
@@ -557,9 +558,7 @@
                                     "Position": "2"
                                 },
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": [
-                                        "CarouselItem"
-                                    ]
+                                    "ContainedContentTypes": ["CarouselItem"]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -906,7 +905,8 @@
                             "Settings": {
                                 "ContentPartFieldSettings": {
                                     "DisplayName": "Background Colour",
-                                    "Editor": "PredefinedList"
+                                    "Editor": "PredefinedList",
+                                    "Position": "0"
                                 },
                                 "TextFieldSettings": {
                                     "Hint": "Colour displayed as the background for the section."
@@ -917,6 +917,10 @@
                                         {
                                             "name": "Default",
                                             "value": "default"
+                                        },
+                                        {
+                                            "name": "Black",
+                                            "value": "black"
                                         },
                                         {
                                             "name": "Grey",
@@ -934,7 +938,8 @@
                             "Settings": {
                                 "ContentPartFieldSettings": {
                                     "DisplayName": "Alignment",
-                                    "Editor": "PredefinedList"
+                                    "Editor": "PredefinedList",
+                                    "Position": "2"
                                 },
                                 "TextFieldSettings": {
                                     "Hint": "Control how content is aligned within section."
@@ -960,6 +965,83 @@
                                     ],
                                     "Editor": 1,
                                     "DefaultValue": null
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "ContentWidth",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Content Width",
+                                    "Editor": "PredefinedList",
+                                    "Position": "3"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Determines the width of content within section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Wide",
+                                            "value": "wide"
+                                        },
+                                        {
+                                            "name": "Full",
+                                            "value": "full"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "ResponsiveMediaField",
+                            "Name": "BackgroundImage",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Background Image",
+                                    "Position": "1"
+                                },
+                                "ResponsiveMediaFieldSettings": {
+                                    "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
+                                    "Hint": "Image displayed as background of section.",
+                                    "FallbackData": "[]",
+                                    "IsConfigured": true
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "SpacingAfter",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Spacing After",
+                                    "Editor": "PredefinedList",
+                                    "Position": "4"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Controls spacing after section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Spaced",
+                                            "value": "spaced-after"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "none"
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1463,9 +1545,7 @@
                                 },
                                 "ContentPickerFieldSettings": {
                                     "Hint": "Main menu used by users to navigate the main sections of the site.",
-                                    "DisplayedContentTypes": [
-                                        "Menu"
-                                    ]
+                                    "DisplayedContentTypes": ["Menu"]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1634,10 +1714,7 @@
                                     "Editor": "EditorJS"
                                 },
                                 "BlockFieldSettings": {
-                                    "LinkableContentTypes": [
-                                        "Homepage",
-                                        "Page"
-                                    ]
+                                    "LinkableContentTypes": ["Homepage", "Page"]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1677,9 +1754,7 @@
                                     "Position": "3"
                                 },
                                 "ContentPickerFieldSettings": {
-                                    "DisplayedContentTypes": [
-                                        "Menu"
-                                    ]
+                                    "DisplayedContentTypes": ["Menu"]
                                 },
                                 "ContentIndexSettings": {}
                             }

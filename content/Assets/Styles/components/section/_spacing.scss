@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #SECTION/SPACING
+   ========================================================================== */
+
+.section--spaced-after {
+    margin-bottom: $section-vertical-padding-mobile;
+
+    @include mq($from: desktop) {
+        margin-bottom: $section-vertical-padding;
+    }
+}
