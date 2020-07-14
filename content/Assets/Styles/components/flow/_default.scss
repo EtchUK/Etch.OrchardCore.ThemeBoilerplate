@@ -16,15 +16,19 @@
         right: 50%;
         width: 100vw;
     }
+
+    .constrain--wide & {
+        max-width: $content-width-wide;
+    }
 }
 
 .flow__content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: -$flow-gutter 0 $flow-gutter -$flow-gutter;
+    margin-left: -$flow-gutter;
 
     > * {
-        padding: $flow-gutter 0 0 $flow-gutter;
+        padding: 0 0 0 $flow-gutter;
     }
 }

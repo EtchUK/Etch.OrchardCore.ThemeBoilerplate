@@ -9,42 +9,41 @@
     padding-bottom: 0;
     padding-top: 0;
 
-    .section {
-        &__content {
+    .section__content {
+        position: absolute;
+        z-index: $z-index-default;
+
+        @include themify($themes) {
+            color: themed('color.white');
+        }
+
+        p {
+            margin-bottom: $content-gutter;
+        }
+    }
+
+    .section__title,
+    h2 {
+        @include text-heading('h1');
+        margin-bottom: $content-gutter-small;
+    }
+
+    .section__media {
+        position: relative;
+
+        &:after {
+            content: '';
+            height: 100%;
+            left: 0;
             position: absolute;
-            z-index: $z-index-default;
+            top: 0;
+            width: 100%;
 
-            @include themify($themes) {
-                color: themed('color.white');
-            }
-
-            p {
-                margin-bottom: $content-gutter;
-            }
-        }
-
-        &__title {
-            @include text-heading('h1');
-            margin-bottom: $content-gutter-small;
-        }
-
-        &__media {
-            position: relative;
-
-            &:after {
-                content: '';
-                height: 100%;
-                left: 0;
-                position: absolute;
-                top: 0;
-                width: 100%;
-
-                background: radial-gradient(
-                    circle,
-                    rgba(0, 0, 0, 0.4) 0%,
-                    rgba(0, 0, 0, 0) 50%
-                );
-            }
+            background: radial-gradient(
+                circle,
+                rgba(0, 0, 0, 0.4) 0%,
+                rgba(0, 0, 0, 0) 50%
+            );
         }
     }
 }
