@@ -19,7 +19,7 @@
                         "ContentTypeSettings": {
                             "Stereotype": "Widget"
                         },
-                        "Category": "Content",
+                        "Category": "Common,Content",
                         "Description": "Display a paragraph of text.",
                         "Icon": "paragraph"
                     },
@@ -43,7 +43,7 @@
                             "Stereotype": "Widget"
                         },
                         "FullTextAspectSettings": {},
-                        "Category": "Content",
+                        "Category": "Common,Content",
                         "Description": "Displays content defined with raw HTML.",
                         "Icon": "code"
                     },
@@ -89,7 +89,7 @@
                         "ContentTypeSettings": {
                             "Stereotype": "Widget"
                         },
-                        "Category": "Container",
+                        "Category": "Common,Container",
                         "Description": "Represents a generic section of a page, i.e., a thematic grouping of content.",
                         "Icon": "puzzle-piece"
                     },
@@ -152,7 +152,7 @@
                         "ContentTypeSettings": {
                             "Stereotype": "Widget"
                         },
-                        "Category": "Content",
+                        "Category": "Common,Content",
                         "Description": "Display text as a heading.",
                         "Icon": "heading"
                     },
@@ -175,7 +175,7 @@
                         "ContentTypeSettings": {
                             "Stereotype": "Widget"
                         },
-                        "Category": "Content",
+                        "Category": "Common,Content",
                         "Description": "Display an image.",
                         "Icon": "image"
                     },
@@ -617,7 +617,7 @@
                             "Stereotype": "Widget"
                         },
                         "FullTextAspectSettings": {},
-                        "Category": "Content",
+                        "Category": "Common,Content",
                         "Description": "Visual editor ideal for sections of large copy.",
                         "Icon": "cubes"
                     },
