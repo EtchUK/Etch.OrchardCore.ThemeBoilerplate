@@ -120,6 +120,7 @@
                                         "Card",
                                         "Embed",
                                         "Figure",
+                                        "Group",
                                         "Heading",
                                         "Html",
                                         "Image",
@@ -679,6 +680,64 @@
                     ]
                 },
                 {
+                    "Name": "Group",
+                    "DisplayName": "Group",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Container",
+                        "Description": "Group a collection of widgets.",
+                        "Icon": "object-group"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Group",
+                            "Name": "Group",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Content",
+                                    "Description": "Content for group",
+                                    "Position": "1"
+                                },
+                                "LinkableContentTypes": [],
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Blockquote",
+                                        "Card",
+                                        "Carousel",
+                                        "Embed",
+                                        "Figure",
+                                        "Heading",
+                                        "Hero",
+                                        "Html",
+                                        "Image",
+                                        "LegacyVisualEditor",
+                                        "Link",
+                                        "OrderedList",
+                                        "Paragraph",
+                                        "Section",
+                                        "Text",
+                                        "UnorderedList",
+                                        "VisualEditor"
+                                    ],
+                                    "DisplayType": "Detail"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
                     "Name": "Page",
                     "DisplayName": "Page",
                     "Settings": {
@@ -753,6 +812,7 @@
                                         "Carousel",
                                         "Embed",
                                         "Figure",
+                                        "Group",
                                         "Heading",
                                         "Hero",
                                         "Html",
@@ -855,6 +915,7 @@
                                         "Carousel",
                                         "Embed",
                                         "Figure",
+                                        "Group",
                                         "Heading",
                                         "Hero",
                                         "Html",
@@ -1129,6 +1190,37 @@
                                     "Label": "Open in new Window"
                                 },
                                 "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Style",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Style",
+                                    "Editor": "PredefinedList"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Define appearance of link."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Primary Button",
+                                            "value": "btn--primary"
+                                        },
+                                        {
+                                            "name": "Secondary Button",
+                                            "value": "btn--secondary"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                }
                             }
                         }
                     ]
