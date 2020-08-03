@@ -1,4 +1,4 @@
-﻿{% assign jobs = Queries.ContentItems | query: contentType: "Job", size: Model.ContentItem.Content.Jobs.Quantity.Value %}
+{% assign jobs = Queries.ContentItems | query: contentType: "Job", from: 0, size: Model.ContentItem.Content.Jobs.Quantity.Value %}
 
 <div class="grid grid--gutter-small align--wide color--default">
 	{% for item in jobs %}
