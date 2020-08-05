@@ -66,7 +66,7 @@ const instance = ($el: Element) => {
         }
     };
 
-    $el.querySelectorAll('li > a').forEach(($anchor: Element) => {
+    $el.querySelectorAll('.js-nav-parent-link').forEach(($anchor: Element) => {
         if (!hasSubItems($anchor)) {
             return;
         }
