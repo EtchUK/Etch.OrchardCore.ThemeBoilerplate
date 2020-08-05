@@ -1,0 +1,365 @@
+{
+    "name": "Basic-ContentAndMedia",
+    "displayName": "Basic Content & Media",
+    "description": "Configures content & media for basic site.",
+    "author": "Etch UK",
+    "website": "https://etchuk.com",
+    "version": "0.6.0",
+    "issetuprecipe": false,
+    "categories": ["basic"],
+    "tags": ["basic"],
+    "steps": [
+        {
+            "name": "Content",
+            "data": [
+                {
+                    "ContentItemId": "4q200ssff5g74zsf073rjsfgw7",
+                    "ContentItemVersionId": "47exyvq7pwzdvx0q0bw134hfcn",
+                    "ContentType": "Homepage",
+                    "DisplayText": "Homepage",
+                    "Latest": true,
+                    "Published": true,
+                    "ModifiedUtc": "2020-07-14T23:56:35.9615166Z",
+                    "PublishedUtc": "2020-07-14T23:56:36.0029022Z",
+                    "CreatedUtc": "2020-07-14T23:56:35.8683626Z",
+                    "Owner": "pkeating",
+                    "Author": "pkeating",
+                    "Homepage": {},
+                    "AutoroutePart": {
+                        "Path": "homepage",
+                        "SetHomepage": true,
+                        "Disabled": false,
+                        "RouteContainedItems": false,
+                        "Absolute": false
+                    },
+                    "CommonPart": {},
+                    "TitlePart": {
+                        "Title": "Homepage"
+                    },
+                    "Content": {
+                        "Widgets": [
+                            {
+                                "ContentItemId": "4vjh60x1ws8r8svbvtcxcf5xcq",
+                                "ContentItemVersionId": null,
+                                "ContentType": "Hero",
+                                "DisplayText": null,
+                                "Latest": false,
+                                "Published": false,
+                                "Owner": null,
+                                "Author": "pkeating",
+                                "Hero": {
+                                    "BackgroundType": {
+                                        "Text": "image"
+                                    },
+                                    "BackgroundImage": {
+                                        "Data": "{\"sources\":[{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"},{\"breakpoint\":425,\"path\":\"Backgrounds/Default/unsplash-1444090542259-425w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"}]}",
+                                        "HasData": true
+                                    },
+                                    "BackgroundEmbed": {
+                                        "Text": null
+                                    },
+                                    "DisplayText": {
+                                        "Text": "Welcome"
+                                    },
+                                    "CTALabel": {
+                                        "Text": null
+                                    },
+                                    "CTAUrl": {
+                                        "Text": null
+                                    }
+                                },
+                                "FlowMetadata": {
+                                    "Alignment": 3,
+                                    "Size": 100
+                                }
+                            }
+                        ]
+                    },
+                    "MetaTagsPart": {
+                        "Description": null,
+                        "Images": [],
+                        "Title": null
+                    }
+                },
+                {
+                    "ContentItemId": "45re9jnzasab30k923k4vg2dmd",
+                    "ContentItemVersionId": "44naeyyfhq3mqr9b3j0x48kq45",
+                    "ContentType": "Banner",
+                    "DisplayText": "Header",
+                    "Latest": true,
+                    "Published": true,
+                    "ModifiedUtc": "2020-07-14T23:56:36.0327124Z",
+                    "PublishedUtc": "2020-07-14T23:56:36.0352759Z",
+                    "CreatedUtc": "2020-07-14T23:56:36.0270688Z",
+                    "Owner": "pkeating",
+                    "Author": "pkeating",
+                    "Banner": {
+                        "Logo": {
+                            "Paths": ["Logos/logo-play@1x.svg"]
+                        },
+                        "LogoSmall": {
+                            "Paths": ["Logos/logo-play-short@1x.svg"]
+                        },
+                        "LogoAlternateText": {
+                            "Text": "Logo for Etch Play"
+                        },
+                        "Menu": {
+                            "ContentItemIds": []
+                        },
+                        "MenuToggleButtonLabel": {
+                            "Text": "Menu"
+                        }
+                    },
+                    "LayerMetadata": {
+                        "Position": 1.0,
+                        "Zone": "Header",
+                        "Layer": "Default"
+                    }
+                },
+                {
+                    "ContentItemId": "40948mkxsw3nprscztg95hq4w6",
+                    "ContentItemVersionId": "4pveapvv13kt6twvrpn3291qxc",
+                    "ContentType": "Page",
+                    "DisplayText": "Page not found",
+                    "Latest": true,
+                    "Published": true,
+                    "ModifiedUtc": "2020-07-14T23:56:36.0437856Z",
+                    "PublishedUtc": "2020-07-14T23:56:36.0612086Z",
+                    "CreatedUtc": "2020-07-14T23:56:36.0391821Z",
+                    "Owner": "pkeating",
+                    "Author": "pkeating",
+                    "Page": {
+                        "DisplayTitle": {
+                            "Value": false
+                        }
+                    },
+                    "AliasPart": {
+                        "Alias": "404"
+                    },
+                    "AutoroutePart": {
+                        "Path": "page-not-found",
+                        "SetHomepage": false,
+                        "Disabled": false,
+                        "RouteContainedItems": false,
+                        "Absolute": false
+                    },
+                    "TitlePart": {
+                        "Title": "Page not found"
+                    },
+                    "Content": {
+                        "Widgets": [
+                            {
+                                "ContentItemId": "4qtd9awt4bj4tz8q1k1nmhdhxa",
+                                "ContentItemVersionId": null,
+                                "ContentType": "Section",
+                                "DisplayText": "Sorry, we couldn't find that",
+                                "Latest": false,
+                                "Published": false,
+                                "Owner": null,
+                                "Author": "pkeating",
+                                "Section": {
+                                    "BackgroundColour": {
+                                        "Text": "default"
+                                    },
+                                    "Alignment": {
+                                        "Text": "default"
+                                    }
+                                },
+                                "Content": {
+                                    "Widgets": [
+                                        {
+                                            "ContentItemId": "4zr9kq2tnm89frj0t1k688nn4j",
+                                            "ContentItemVersionId": null,
+                                            "ContentType": "Heading",
+                                            "DisplayText": null,
+                                            "Latest": false,
+                                            "Published": false,
+                                            "Owner": null,
+                                            "Author": "pkeating",
+                                            "Heading": {
+                                                "Text": {
+                                                    "Text": "Sorry, we couldn't find that"
+                                                },
+                                                "Level": {
+                                                    "Text": "1"
+                                                }
+                                            },
+                                            "FlowMetadata": {
+                                                "Alignment": 3,
+                                                "Size": 100
+                                            }
+                                        },
+                                        {
+                                            "ContentItemId": "4fzfv7jra4gkavhaedsyb1x7d8",
+                                            "ContentItemVersionId": null,
+                                            "ContentType": "Paragraph",
+                                            "DisplayText": null,
+                                            "Latest": false,
+                                            "Published": false,
+                                            "Owner": null,
+                                            "Author": "pkeating",
+                                            "Paragraph": {
+                                                "Text": {
+                                                    "Text": "The page you are looking for may no longer exist. Please use the menu to find the page you are looking for."
+                                                }
+                                            },
+                                            "FlowMetadata": {
+                                                "Alignment": 3,
+                                                "Size": 100
+                                            }
+                                        }
+                                    ]
+                                },
+                                "TitlePart": {
+                                    "Title": "Sorry, we couldn't find that"
+                                },
+                                "FlowMetadata": {
+                                    "Alignment": 3,
+                                    "Size": 100
+                                }
+                            }
+                        ]
+                    },
+                    "MetaTagsPart": {
+                        "Description": null,
+                        "Images": [],
+                        "Title": null
+                    }
+                },
+                {
+                    "ContentItemId": "4x98nyjd22b4pta22vv9t85gm3",
+                    "ContentItemVersionId": "49s97bg6km9bj6689jsrf1tjn8",
+                    "ContentType": "Footer",
+                    "DisplayText": "Footer",
+                    "Latest": true,
+                    "Published": true,
+                    "ModifiedUtc": "2020-07-14T23:56:36.0666717Z",
+                    "PublishedUtc": "2020-07-14T23:56:36.068604Z",
+                    "CreatedUtc": "2020-07-14T23:56:36.0632002Z",
+                    "Owner": "pkeating",
+                    "Author": "pkeating",
+                    "Footer": {
+                        "Logo": {
+                            "Paths": ["Logos/logo-play@1x.svg"]
+                        },
+                        "LogoSmall": {
+                            "Paths": ["Logos/logo-play-short@1x.svg"]
+                        },
+                        "Menu": {
+                            "ContentItemIds": []
+                        },
+                        "LogoAlternateText": {
+                            "Text": "Company logo."
+                        }
+                    },
+                    "Content": {
+                        "ContentItems": []
+                    },
+                    "LayerMetadata": {
+                        "Position": 1.0,
+                        "Zone": "Footer",
+                        "Layer": "Default",
+                        "RenderTitle": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "media",
+            "Files": [
+                {
+                    "SourcePath": "Logos/logo-play-short@1x.svg",
+                    "TargetPath": "Logos/logo-play-short@1x.svg"
+                },
+                {
+                    "SourcePath": "Logos/logo-play@1x.svg",
+                    "TargetPath": "Logos/logo-play@1x.svg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-1-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-1-768w.jpg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-10-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-10-768w.jpg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-11-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-11-768w.jpg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-12-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-12-768w.jpg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-2-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-2-768w.jpg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-3-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-3-768w.jpg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-4-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-4-768w.jpg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-5-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-5-768w.jpg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-6-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-6-768w.jpg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-7-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-7-768w.jpg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-8-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-8-768w.jpg"
+                },
+                {
+                    "SourcePath": "Team/team-placeholder-9-768w.jpg",
+                    "TargetPath": "Team/team-placeholder-9-768w.jpg"
+                },
+                {
+                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1024w.jpg",
+                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1024w.jpg"
+                },
+                {
+                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1280w.jpg",
+                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1280w.jpg"
+                },
+                {
+                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1440w.jpg",
+                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1440w.jpg"
+                },
+                {
+                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1920w.jpg",
+                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1920w.jpg"
+                },
+                {
+                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-2560w.jpg",
+                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-2560w.jpg"
+                },
+                {
+                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-375w.jpg",
+                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-375w.jpg"
+                },
+                {
+                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-400w.jpg",
+                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-400w.jpg"
+                },
+                {
+                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-425w.jpg",
+                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-425w.jpg"
+                },
+                {
+                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-768w.jpg",
+                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-768w.jpg"
+                }
+            ]
+        }
+    ]
+}
