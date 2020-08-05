@@ -1,17 +1,181 @@
 {
-    "name": "Content Definitions",
-    "displayName": "Content Definitions",
-    "description": "Sets up content definitions",
+    "name": "Basic-ContentDefinitions",
+    "displayName": "Basic Content Definitions",
+    "description": "Configures content definitions for basic site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "0.0.1",
+    "version": "0.6.0",
     "issetuprecipe": false,
-    "categories": [],
-    "tags": [],
+    "categories": ["basic"],
+    "tags": ["basic"],
     "steps": [
         {
             "name": "ContentDefinition",
             "ContentTypes": [
+                {
+                    "Name": "Taxonomy",
+                    "DisplayName": "Taxonomy",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Creatable": true,
+                            "Listable": true,
+                            "Draftable": true,
+                            "Versionable": true
+                        }
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AliasPart",
+                            "Name": "AliasPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                },
+                                "AliasPartSettings": {
+                                    "Pattern": "{{ Model.ContentItem | display_text | slugify }}"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AutoroutePart",
+                            "Name": "AutoroutePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "3"
+                                },
+                                "AutoroutePartSettings": {
+                                    "Pattern": "{{ Model.ContentItem | display_text | slugify }}",
+                                    "AllowRouteContainedItems": true
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TaxonomyPart",
+                            "Name": "TaxonomyPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "4"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Menu",
+                    "DisplayName": "Menu",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Listable": true,
+                            "Draftable": true,
+                            "Versionable": true
+                        }
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AliasPart",
+                            "Name": "AliasPart",
+                            "Settings": {
+                                "AliasPartSettings": {
+                                    "Pattern": "{{ ContentItem | display_text | slugify }}"
+                                },
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "MenuPart",
+                            "Name": "MenuPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "MenuItemsListPart",
+                            "Name": "MenuItemsListPart",
+                            "Settings": {}
+                        }
+                    ]
+                },
+                {
+                    "Name": "LinkMenuItem",
+                    "DisplayName": "Link Menu Item",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "MenuItem"
+                        }
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "LinkMenuItemPart",
+                            "Name": "LinkMenuItemPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "LinkMenuItem",
+                            "Name": "LinkMenuItem",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "ContentMenuItem",
+                    "DisplayName": "Content Menu Item",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "MenuItem"
+                        },
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "ContentMenuItemPart",
+                            "Name": "ContentMenuItemPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "ContentMenuItem",
+                            "Name": "ContentMenuItem",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        }
+                    ]
+                },
                 {
                     "Name": "Paragraph",
                     "DisplayName": "Paragraph",
@@ -942,19 +1106,240 @@
                             }
                         }
                     ]
+                },
+                {
+                    "Name": "Gallery",
+                    "DisplayName": "Gallery",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Creatable": "False",
+                            "Draftable": "False",
+                            "Versionable": "False",
+                            "Listable": "False",
+                            "Securable": "False",
+                            "Stereotype": "Widget"
+                        }
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Gallery",
+                            "Name": "Gallery",
+                            "Settings": {
+                                "Position": "1"
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "Position": "0"
+                            }
+                        },
+                        {
+                            "PartName": "GalleryPart",
+                            "Name": "Media",
+                            "Settings": {
+                                "DisplayName": "Media",
+                                "Description": "Collection of media items displayed in gallery.",
+                                "Position": "2"
+                            }
+                        }
+                    ]
                 }
             ],
             "ContentParts": [
+                {
+                    "Name": "CommonPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides an editor for the common properties of a content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "LiquidPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a Liquid formatted body for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "BlockBodyPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Reusable": true,
+                            "Description": "Provides rich text editor for curating content for body of content item.",
+                            "DefaultPosition": "5"
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "WidgetsListPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a way to add widgets per content items."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
                 {
                     "Name": "FlowPart",
                     "Settings": {
                         "ContentPartSettings": {
                             "Attachable": true,
-                            "Reusable": true,
-                            "Description": "Provides a customizable body for your content item."
+                            "Description": "Provides a customizable body for your content item.",
+                            "Reusable": true
                         }
                     },
                     "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "BagPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Reusable": true,
+                            "Description": "Provides a collection behavior for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "AliasPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a way to define custom aliases for content items."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "AutoroutePart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a custom url for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "TitlePart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a Title for your content item.",
+                            "DefaultPosition": "0"
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "MetaTagsPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides meta tags for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "HtmlBodyPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides an HTML Body for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "PreviewPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a way to define the url that is used to render your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "ListPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Add a list behavior."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "MarkdownBodyPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a Markdown formatted body for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "MenuPart",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "MenuItemPart",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "LinkMenuItemPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a menu link behavior for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "ContentMenuItemPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "DisplayName": "Content Menu Item",
+                            "Description": "Provides a menu link behavior with the Content Picker for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "ContentPickerField",
+                            "Name": "SelectedContentItem",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Selected Content Item",
+                                    "Position": "0"
+                                },
+                                "ContentPickerFieldSettings": {
+                                    "Required": true,
+                                    "DisplayAllContentTypes": true,
+                                    "DisplayedContentTypes": []
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
                 },
                 {
                     "Name": "Section",
@@ -1073,7 +1458,7 @@
                                 "ResponsiveMediaFieldSettings": {
                                     "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
                                     "Hint": "Image displayed as background of section.",
-                                    "FallbackData": "[]",
+                                    "FallbackData": "",
                                     "IsConfigured": true
                                 }
                             }
@@ -1728,7 +2113,7 @@
                                 "ResponsiveMediaFieldSettings": {
                                     "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
                                     "Hint": "Ensure all background images for each carousel item has the same dimensions to ensure the height of the carousel remains the same when changing the active item.",
-                                    "FallbackData": "[]",
+                                    "FallbackData": "",
                                     "IsConfigured": true
                                 },
                                 "ContentIndexSettings": {}
@@ -1886,6 +2271,17 @@
                             }
                         }
                     ]
+                },
+                {
+                    "Name": "GalleryPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Reusable": true,
+                            "Description": "Create a collection of media items."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
                 }
             ]
         }
