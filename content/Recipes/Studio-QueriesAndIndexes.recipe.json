@@ -1,0 +1,55 @@
+{
+    "name": "Studio-QueriesAndIndexes",
+    "displayName": "Studio Queries & Indexes",
+    "description": "Configures queries & indexes for studio site.",
+    "author": "Etch UK",
+    "website": "https://etchuk.com",
+    "version": "0.6.0",
+    "issetuprecipe": false,
+    "categories": ["studio"],
+    "tags": ["studio"],
+    "steps": [
+        {
+            "name": "Queries",
+            "Queries": [
+                {
+                    "Index": "News",
+                    "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"NewsPost\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.PublishedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n  \"from\": {{from}},\r\n  \"size\": {{size}}\r\n}",
+                    "ReturnContentItems": true,
+                    "Name": "News",
+                    "Source": "Lucene",
+                    "Schema": null
+                },
+                {
+                    "Index": "ContentItems",
+                    "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"{{contentType}}\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.PublishedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n  \"from\": {{from}},\r\n  \"size\": {{size}}\r\n}",
+                    "ReturnContentItems": true,
+                    "Name": "ContentItems",
+                    "Source": "Lucene",
+                    "Schema": null
+                }
+            ]
+        },
+        {
+            "name": "lucene-index",
+            "Indices": [
+                {
+                    "News": {
+                        "AnalyzerName": "standardanalyzer",
+                        "IndexLatest": false,
+                        "IndexedContentTypes": ["NewsPost"],
+                        "Culture": "any"
+                    }
+                },
+                {
+                    "ContentItems": {
+                        "AnalyzerName": "standardanalyzer",
+                        "IndexLatest": false,
+                        "IndexedContentTypes": ["Job", "NewsPost", "Page"],
+                        "Culture": "any"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,260 @@
+{
+    "name": "Studio-FeaturesAndSettings",
+    "displayName": "Studio Features & Settings",
+    "description": "Configures features & settings for studio site.",
+    "author": "Etch UK",
+    "website": "https://etchuk.com",
+    "version": "0.6.0",
+    "issetuprecipe": false,
+    "categories": ["studio"],
+    "tags": ["studio"],
+    "steps": [
+        {
+            "name": "Feature",
+            "enable": [
+                "Application.Default",
+                "Etch.OrchardCore.SiteBoilerplate",
+                "OrchardCore.ShortCodes",
+                "OrchardCore.Liquid",
+                "OrchardCore.Settings",
+                "OrchardCore.Contents",
+                "OrchardCore.ContentTypes",
+                "OrchardCore.Media",
+                "Etch.OrchardCore.Blocks.EditorJS",
+                "Etch.OrchardCore.Blocks",
+                "Etch.OrchardCore.Fields.Code",
+                "OrchardCore.ContentFields",
+                "OrchardCore.Widgets",
+                "OrchardCore.Flows",
+                "OrchardCore.Alias",
+                "Etch.OrchardCore.Fields.ResponsiveMedia",
+                "Etch.OrchardCore.Gallery",
+                "OrchardCore.Indexing",
+                "OrchardCore.Lucene",
+                "OrchardCore.Queries",
+                "OrchardCore.Taxonomies",
+                "OrchardCore.Autoroute",
+                "OrchardCore.Title",
+                "Etch.OrchardCore.SEO.MetaTags",
+                "OrchardCore.Html",
+                "Etch.OrchardCore.Widgets",
+                "OrchardCore.Scripting",
+                "OrchardCore.Workflows",
+                "OrchardCore.Resources",
+                "OrchardCore.Templates",
+                "OrchardCore.Admin",
+                "OrchardCore.AdminMenu",
+                "OrchardCore.ContentPreview",
+                "OrchardCore.Contents.FileContentDefinition",
+                "OrchardCore.CustomSettings",
+                "OrchardCore.Deployment",
+                "OrchardCore.Deployment.Remote",
+                "OrchardCore.Diagnostics",
+                "OrchardCore.DynamicCache",
+                "OrchardCore.Features",
+                "OrchardCore.Feeds",
+                "OrchardCore.HomeRoute",
+                "OrchardCore.Layers",
+                "OrchardCore.Lists",
+                "OrchardCore.Markdown",
+                "OrchardCore.Menu",
+                "OrchardCore.Navigation",
+                "OrchardCore.Users",
+                "OrchardCore.Recipes",
+                "OrchardCore.Roles",
+                "OrchardCore.Themes",
+                "OrchardCore.Workflows.Http",
+                "OrchardCore.Workflows.Timers",
+                "TheAdmin",
+                "Etch.OrchardCore.AdminTheme",
+                "Etch.OrchardCore.ThemeBoilerplate"
+            ],
+            "disable": []
+        },
+        {
+            "name": "Themes",
+            "Site": "Etch.OrchardCore.ThemeBoilerplate",
+            "Admin": "Etch.OrchardCore.AdminTheme"
+        },
+        {
+            "name": "AdminMenu",
+            "data": [
+                {
+                    "Id": "f6328e0fa8ea40b284bc94af48ab6d52",
+                    "Name": "Pattern Library",
+                    "Enabled": true,
+                    "MenuItems": [
+                        {
+                            "$type": "OrchardCore.AdminMenu.AdminNodes.LinkAdminNode, OrchardCore.AdminMenu",
+                            "LinkText": "Pattern Library",
+                            "LinkUrl": "Etch.OrchardCore.DefaultTheme/patterns/index.html",
+                            "IconClass": "fas fa-puzzle-piece",
+                            "UniqueId": "ab7ed3cbef7644cc97745f54c44d5855",
+                            "Enabled": true,
+                            "Text": null,
+                            "Id": null,
+                            "Href": null,
+                            "Url": null,
+                            "Position": "5",
+                            "Priority": 0,
+                            "LinkToFirstChild": true,
+                            "LocalNav": false,
+                            "Culture": null,
+                            "Resource": null,
+                            "Items": [],
+                            "RouteValues": null,
+                            "Permissions": [],
+                            "Classes": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Layers",
+            "Layers": [
+                {
+                    "Name": "Default",
+                    "Rule": "!url(\"/login\") && !url(\"/forgotpassword\") && !url(\"/forgotpasswordconfirmation\") && !url(\"/resetpassword\") && !url(\"/resetpasswordconfirmation\")",
+                    "Description": "Displays widget on every page."
+                }
+            ]
+        },
+        {
+            "name": "Settings",
+            "HomeRoute": {},
+            "LayerSettings": {
+                "Zones": ["Header", "Footer"]
+            },
+            "LoginSettings": {
+                "UseSiteTheme": true
+            },
+            "ResetPasswordSettings": {
+                "UseSiteTheme": true
+            }
+        },
+        {
+            "name": "Roles",
+            "Roles": [
+                {
+                    "Name": "Authenticated",
+                    "Description": "Authenticated role",
+                    "Permissions": ["ViewContent"]
+                },
+                {
+                    "Name": "Anonymous",
+                    "Description": "Anonymous role",
+                    "Permissions": ["ViewContent"]
+                },
+                {
+                    "Name": "Moderator",
+                    "Description": "Moderator role",
+                    "Permissions": ["AccessAdminPanel"]
+                },
+                {
+                    "Name": "Author",
+                    "Description": "Author role",
+                    "Permissions": [
+                        "PublishOwnContent",
+                        "EditOwnContent",
+                        "DeleteOwnContent",
+                        "PreviewOwnContent",
+                        "CloneOwnContent",
+                        "ManageOwnMedia",
+                        "AccessAdminPanel"
+                    ]
+                },
+                {
+                    "Name": "Contributor",
+                    "Description": "Contributor role",
+                    "Permissions": [
+                        "EditOwnContent",
+                        "PreviewOwnContent",
+                        "CloneOwnContent",
+                        "ManageOwnMedia",
+                        "AccessAdminPanel"
+                    ]
+                },
+                {
+                    "Name": "Administrator",
+                    "Description": "Administrator role",
+                    "Permissions": [
+                        "ManageSettings",
+                        "PublishContent",
+                        "EditContent",
+                        "DeleteContent",
+                        "PreviewContent",
+                        "CloneContent",
+                        "AccessContentApi",
+                        "ViewContentTypes",
+                        "EditContentTypes",
+                        "ManageMediaContent",
+                        "ManageAttachedMediaFieldsFolder",
+                        "ManageTaxonomy",
+                        "SetHomepage",
+                        "ManageWorkflows",
+                        "ExecuteWorkflows",
+                        "ManageTemplates",
+                        "ManageAdminTemplates",
+                        "AccessAdminPanel",
+                        "ManageAdminSettings",
+                        "ManageAdminMenu",
+                        "ContentPreview",
+                        "Import",
+                        "Export",
+                        "ManageLayers",
+                        "ManageMenu",
+                        "ManageUsers",
+                        "ManageRoles",
+                        "AssignRoles",
+                        "SiteOwner",
+                        "ApplyTheme",
+                        "ManageIndexes",
+                        "ManageQueries"
+                    ]
+                },
+                {
+                    "Name": "Editor",
+                    "Description": "Editor role",
+                    "Permissions": [
+                        "PublishContent",
+                        "EditContent",
+                        "DeleteContent",
+                        "PreviewContent",
+                        "CloneContent",
+                        "ManageMediaContent",
+                        "ManageWorkflows",
+                        "ExecuteWorkflows",
+                        "ManageTemplates",
+                        "AccessAdminPanel",
+                        "ManageAdminMenu",
+                        "QueryLuceneApi",
+                        "ManageQueries"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Templates",
+            "Templates": {
+                "TemplateUserConfirmEmail": {
+                    "Content": "<!doctype html>\r\n<html>\r\n\r\n<head>\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://fonts.googleapis.com/css?family=Roboto:400,400italic,700\">\r\n\r\n    <meta charset=\"utf-8\">\r\n    <title>Confirm Email</title>\r\n    <link rel=\"stylesheet\" href=\"style.css\">\r\n\r\n  <style type=\"text/css\">\r\n  html, body, div, span, applet, object, iframe,\r\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\n  a, abbr, acronym, address, big, cite, code,\r\n  del, dfn, em, img, ins, kbd, q, s, samp,\r\n  small, strike, strong, sub, sup, tt, var,\r\n  b, u, i, center,\r\n  dl, dt, dd, ol, ul, li,\r\n  fieldset, form, label, legend,\r\n  table, caption, tbody, tfoot, thead, tr, th, td,\r\n  article, aside, canvas, details, embed, \r\n  figure, figcaption, footer, header, hgroup, \r\n  menu, nav, output, ruby, section, summary,\r\n  time, mark, audio, video {\r\n      margin: 0;\r\n      padding: 0;\r\n      border: 0;\r\n      font-size: 100%;\r\n      font: inherit;\r\n      vertical-align: baseline;\r\n  }\r\n\r\n  body {\r\n      line-height: 1;\r\n  }\r\n\r\n\r\n  body {\r\n      background: #F7F7F7;\r\n      font-family: Roboto;\r\n  }\r\n\r\n  p {\r\n      margin-bottom: 1em;\r\n  }\r\n\r\n  .content {\r\n      background: #FFFFFF;\r\n      font-size: 16px;\r\n      line-height: 22px;\r\n      padding: 30px;\r\n  }\r\n\r\n  .content-button {\r\n      background: #3ce854;\r\n      border-radius: 3px;\r\n      color: #FFFFFF;\r\n      display: block;\r\n      padding: 15px;\r\n      text-align: center;\r\n      text-decoration: none;\r\n      width: 154px;\r\n  }\r\n\r\n  .header {\r\n      background: #3ce854;\r\n      color: #FFFFFF;\r\n      padding: 30px;\r\n  }\r\n\r\n  .footer {\r\n      color: #505050;\r\n      margin-left: 70px;\r\n      margin-top: 30px;\r\n      font-style: italic;\r\n  }\r\n\r\n  a:hover, a:focus, a:active {\r\n      text-decoration: none;\r\n      color: inherit;\r\n  }\r\n  </style>\r\n  </head>\r\n\r\n<body>\r\n    <table width=\"100%\" height=\"100%\">\r\n        <tr>\r\n            <td width=\"100%\" height=\"100%\" bgcolor=\"#F7F7F7\" style=\"padding-top: 70px;\">\r\n                <table width=\"680\" align=\"center\" style=\"margin: 0 auto;\">\r\n                    <tr>\r\n                        <td>\r\n                            <div class=\"header\">Confirm Email</div>\r\n\r\n                            <div class=\"content\">\r\n                                <div class=\"content-text\">\r\n                                    <p>Hi {{ Model.User }},</p>\r\n                                    <p>Use button below to confirm your email address and complete sign up process.</p>\r\n                                </div>\r\n                                <a class=\"content-button\" href=\"{{ Model.ConfirmEmailUrl }}\">\r\n                                    Confirm Email\r\n                                </a>\r\n                            </div>\r\n                        </td>\r\n                    </tr>\r\n                </table>\r\n            </td>\r\n        </tr>\r\n    </table>\r\n</body>\r\n\r\n</html>",
+                    "Description": "HTML for the email that gets sent to a user to confirm their email"
+                },
+                "TemplateUserLostPassword": {
+                    "Content": "<!doctype html>\r\n<html>\r\n\r\n<head>\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://fonts.googleapis.com/css?family=Roboto:400,400italic,700\">\r\n\r\n    <meta charset=\"utf-8\">\r\n    <title>Confirm Email</title>\r\n    <link rel=\"stylesheet\" href=\"style.css\">\r\n\r\n  <style type=\"text/css\">\r\n  html, body, div, span, applet, object, iframe,\r\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\n  a, abbr, acronym, address, big, cite, code,\r\n  del, dfn, em, img, ins, kbd, q, s, samp,\r\n  small, strike, strong, sub, sup, tt, var,\r\n  b, u, i, center,\r\n  dl, dt, dd, ol, ul, li,\r\n  fieldset, form, label, legend,\r\n  table, caption, tbody, tfoot, thead, tr, th, td,\r\n  article, aside, canvas, details, embed, \r\n  figure, figcaption, footer, header, hgroup, \r\n  menu, nav, output, ruby, section, summary,\r\n  time, mark, audio, video {\r\n      margin: 0;\r\n      padding: 0;\r\n      border: 0;\r\n      font-size: 100%;\r\n      font: inherit;\r\n      vertical-align: baseline;\r\n  }\r\n\r\n  body {\r\n      line-height: 1;\r\n  }\r\n\r\n\r\n  body {\r\n      background: #F7F7F7;\r\n      font-family: Roboto;\r\n  }\r\n\r\n  p {\r\n      margin-bottom: 1em;\r\n  }\r\n\r\n  .content {\r\n      background: #FFFFFF;\r\n      font-size: 16px;\r\n      line-height: 22px;\r\n      padding: 30px;\r\n  }\r\n\r\n  .content-button {\r\n      background: #3ce854;\r\n      border-radius: 3px;\r\n      color: #FFFFFF;\r\n      display: block;\r\n      padding: 15px;\r\n      text-align: center;\r\n      text-decoration: none;\r\n      width: 154px;\r\n  }\r\n\r\n  .header {\r\n      background: #3ce854;\r\n      color: #FFFFFF;\r\n      padding: 30px;\r\n  }\r\n\r\n  .footer {\r\n      color: #505050;\r\n      margin-left: 70px;\r\n      margin-top: 30px;\r\n      font-style: italic;\r\n  }\r\n\r\n  a:hover, a:focus, a:active {\r\n      text-decoration: none;\r\n      color: inherit;\r\n  }\r\n  </style>\r\n  </head>\r\n\r\n<body>\r\n    <table width=\"100%\" height=\"100%\">\r\n        <tr>\r\n            <td width=\"100%\" height=\"100%\" bgcolor=\"#F7F7F7\" style=\"padding-top: 70px;\">\r\n                <table width=\"680\" align=\"center\" style=\"margin: 0 auto;\">\r\n                    <tr>\r\n                        <td>\r\n                            <div class=\"header\">Reset Password</div>\r\n\r\n                            <div class=\"content\">\r\n                                <div class=\"content-text\">\r\n                                    <p>Hi {{ Model.User }},</p>\r\n                                    <p>Use button below to reset your password.</p>\r\n                                </div>\r\n                                <a class=\"content-button\" href=\"{{ Model.LostPasswordUrl }}\">\r\n                                    Reset Password\r\n                                </a>\r\n                            </div>\r\n                        </td>\r\n                    </tr>\r\n                </table>\r\n            </td>\r\n        </tr>\r\n    </table>\r\n</body>\r\n\r\n</html>",
+                    "Description": "HTML for the email which is sent to the user when they use the 'forgot password' feature"
+                }
+            }
+        },
+        {
+            "name": "WorkflowType",
+            "data": []
+        },
+        {
+            "name": "Feature",
+            "enable": ["Etch.OrchardCore.News"],
+            "disable": []
+        }
+    ]
+}

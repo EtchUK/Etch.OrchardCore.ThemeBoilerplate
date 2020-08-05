@@ -1,0 +1,2656 @@
+{
+    "name": "Studio-ContentDefinitions",
+    "displayName": "Studio Content Definitions",
+    "description": "Configures content definitions for studio site.",
+    "author": "Etch UK",
+    "website": "https://etchuk.com",
+    "version": "0.6.0",
+    "issetuprecipe": false,
+    "categories": ["studio"],
+    "tags": ["studio"],
+    "steps": [
+        {
+            "name": "ContentDefinition",
+            "ContentTypes": [
+                {
+                    "Name": "Taxonomy",
+                    "DisplayName": "Taxonomy",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Creatable": true,
+                            "Listable": true,
+                            "Draftable": true,
+                            "Versionable": true
+                        }
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AliasPart",
+                            "Name": "AliasPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                },
+                                "AliasPartSettings": {
+                                    "Pattern": "{{ Model.ContentItem | display_text | slugify }}"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AutoroutePart",
+                            "Name": "AutoroutePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "3"
+                                },
+                                "AutoroutePartSettings": {
+                                    "Pattern": "{{ Model.ContentItem | display_text | slugify }}",
+                                    "AllowRouteContainedItems": true
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TaxonomyPart",
+                            "Name": "TaxonomyPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "4"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Menu",
+                    "DisplayName": "Menu",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Listable": true,
+                            "Draftable": true,
+                            "Versionable": true
+                        }
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AliasPart",
+                            "Name": "AliasPart",
+                            "Settings": {
+                                "AliasPartSettings": {
+                                    "Pattern": "{{ ContentItem | display_text | slugify }}"
+                                },
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "MenuPart",
+                            "Name": "MenuPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "MenuItemsListPart",
+                            "Name": "MenuItemsListPart",
+                            "Settings": {}
+                        }
+                    ]
+                },
+                {
+                    "Name": "LinkMenuItem",
+                    "DisplayName": "Link Menu Item",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "MenuItem"
+                        }
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "LinkMenuItemPart",
+                            "Name": "LinkMenuItemPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "LinkMenuItem",
+                            "Name": "LinkMenuItem",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "ContentMenuItem",
+                    "DisplayName": "Content Menu Item",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "MenuItem"
+                        },
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "ContentMenuItemPart",
+                            "Name": "ContentMenuItemPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "ContentMenuItem",
+                            "Name": "ContentMenuItem",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Paragraph",
+                    "DisplayName": "Paragraph",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Common,Content",
+                        "Description": "Display a paragraph of text.",
+                        "Icon": "paragraph"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Paragraph",
+                            "Name": "Paragraph",
+                            "Settings": {
+                                "ContentTypeSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Html",
+                    "DisplayName": "Html",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Common,Content",
+                        "Description": "Displays content defined with raw HTML.",
+                        "Icon": "code"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Html",
+                            "Name": "Html",
+                            "Settings": {
+                                "ContentTypeSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Link",
+                    "DisplayName": "Link",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Content",
+                        "Description": "Link to another page using a URL.",
+                        "Icon": "link"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Link",
+                            "Name": "Link",
+                            "Settings": {
+                                "ContentTypeSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Section",
+                    "DisplayName": "Section",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Common,Container",
+                        "Description": "Represents a generic section of a page, i.e., a thematic grouping of content.",
+                        "Icon": "puzzle-piece",
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Section",
+                            "Name": "Section",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "FlowPart",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Content",
+                                    "Description": "Content for section.",
+                                    "Position": "2"
+                                },
+                                "LinkableContentTypes": [],
+                                "FlowPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Blockquote",
+                                        "Card",
+                                        "Embed",
+                                        "Figure",
+                                        "Group",
+                                        "Heading",
+                                        "Html",
+                                        "Image",
+                                        "Jobs",
+                                        "LegacyVisualEditor",
+                                        "Link",
+                                        "OrderedList",
+                                        "Paragraph",
+                                        "Text",
+                                        "UnorderedList",
+                                        "VisualEditor"
+                                    ]
+                                },
+                                "ContentIndexSettings": {},
+                                "GalleryPartSettings": {
+                                    "ThumbnailWidth": 480,
+                                    "ThumbnailHeight": 270
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Heading",
+                    "DisplayName": "Heading",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Common,Content",
+                        "Description": "Display text as a heading.",
+                        "Icon": "heading"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Heading",
+                            "Name": "Heading",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Image",
+                    "DisplayName": "Image",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Common,Content",
+                        "Description": "Display an image.",
+                        "Icon": "image"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Image",
+                            "Name": "Image",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "UnorderedList",
+                    "DisplayName": "Unordered List",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Content",
+                        "Description": "Displays a bulleted list.",
+                        "Icon": "list-ul"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "UnorderedList",
+                            "Name": "UnorderedList",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "Items",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Items",
+                                    "Description": "Items within the unordered list.",
+                                    "Position": "1"
+                                },
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Blockquote",
+                                        "VisualEditor",
+                                        "Card",
+                                        "Embed",
+                                        "Figure",
+                                        "Heading",
+                                        "Html",
+                                        "Image",
+                                        "Link",
+                                        "OrderedList",
+                                        "Paragraph",
+                                        "Text",
+                                        "UnorderedList",
+                                        "LegacyVisualEditor"
+                                    ],
+                                    "DisplayType": "Detail"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Text",
+                    "DisplayName": "Text",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Content",
+                        "Description": "Display raw text.",
+                        "Icon": "pen"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Text",
+                            "Name": "Text",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "OrderedList",
+                    "DisplayName": "Ordered List",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Content",
+                        "Description": "Displays a numbered list.",
+                        "Icon": "list-ul"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "OrderedList",
+                            "Name": "OrderedList",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "Items",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Items",
+                                    "Description": "Items within the ordered list.",
+                                    "Position": "1"
+                                },
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Blockquote",
+                                        "VisualEditor",
+                                        "Card",
+                                        "Embed",
+                                        "Figure",
+                                        "Heading",
+                                        "Html",
+                                        "Image",
+                                        "Link",
+                                        "OrderedList",
+                                        "Paragraph",
+                                        "Text",
+                                        "UnorderedList",
+                                        "LegacyVisualEditor"
+                                    ],
+                                    "DisplayType": "Detail"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Figure",
+                    "DisplayName": "Figure",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Content",
+                        "Description": "Displays an image with a caption.",
+                        "Icon": "portrait"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Figure",
+                            "Name": "Figure",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Blockquote",
+                    "DisplayName": "Blockquote",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Content",
+                        "Description": "Display a quote from an individual or organisation.",
+                        "Icon": "quote-right"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Blockquote",
+                            "Name": "Blockquote",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "QuoteContent",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Quote Content",
+                                    "Description": "Content that represents the quote.",
+                                    "Position": "1"
+                                },
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "VisualEditor",
+                                        "Heading",
+                                        "Html",
+                                        "Link",
+                                        "OrderedList",
+                                        "Paragraph",
+                                        "Text",
+                                        "UnorderedList",
+                                        "LegacyVisualEditor"
+                                    ],
+                                    "DisplayType": "Detail"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Hero",
+                    "DisplayName": "Hero",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Content",
+                        "Description": "Prominent section of page for sign posting to featured content.",
+                        "Icon": "mask"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Hero",
+                            "Name": "Hero",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Card",
+                    "DisplayName": "Card",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Content",
+                        "Description": "Flexible content container.",
+                        "Icon": "address-card"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Card",
+                            "Name": "Card",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "Body",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Body",
+                                    "Description": "Content displayed after title.",
+                                    "Position": "1"
+                                },
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "VisualEditor",
+                                        "Html",
+                                        "Paragraph",
+                                        "LegacyVisualEditor"
+                                    ],
+                                    "DisplayType": "Detail"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Banner",
+                    "DisplayName": "Banner",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Miscellaneous",
+                        "Description": "Header section of site.",
+                        "Icon": "toolbox"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Banner",
+                            "Name": "Banner",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Embed",
+                    "DisplayName": "Embed",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Content",
+                        "Description": "Embed content from another site (e.g. YouTube video, Google Maps, etc...).",
+                        "Icon": "youtube"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Embed",
+                            "Name": "Embed",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Carousel",
+                    "DisplayName": "Carousel",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Slideshow for cycling through a series of content.",
+                        "Icon": "layer-group"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Carousel",
+                            "Name": "Carousel",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "Items",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Items",
+                                    "Description": "Items included as slides within carousel.",
+                                    "Position": "2"
+                                },
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": ["CarouselItem"]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "CarouselItem",
+                    "DisplayName": "Carousel Item",
+                    "Settings": {
+                        "ContentTypeSettings": {},
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "CarouselItem",
+                            "Name": "CarouselItem",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "LegacyVisualEditor",
+                    "DisplayName": "Legacy Visual Editor",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Use legacy visual editor for defining content.",
+                        "Icon": "eye"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "LegacyVisualEditor",
+                            "Name": "LegacyVisualEditor",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "VisualEditor",
+                    "DisplayName": "Visual Editor",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Common,Content",
+                        "Description": "Visual editor ideal for sections of large copy.",
+                        "Icon": "cubes"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "VisualEditor",
+                            "Name": "VisualEditor",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Footer",
+                    "DisplayName": "Footer",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Miscellaneous",
+                        "Description": "Footer section for the site.",
+                        "Icon": "flag-checkered"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Footer",
+                            "Name": "Footer",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Content",
+                                    "Description": "Content display beneath logo & navigation.",
+                                    "Position": "1"
+                                },
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Heading",
+                                        "Html",
+                                        "Link",
+                                        "OrderedList",
+                                        "Page",
+                                        "Paragraph",
+                                        "Text",
+                                        "UnorderedList"
+                                    ],
+                                    "DisplayType": "Detail"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Page",
+                    "DisplayName": "Page",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Creatable": true,
+                            "Listable": true,
+                            "Draftable": true,
+                            "Versionable": true,
+                            "Securable": true
+                        },
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Page",
+                            "Name": "Page",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "3"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AliasPart",
+                            "Name": "AliasPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AutoroutePart",
+                            "Name": "AutoroutePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                },
+                                "AutoroutePartSettings": {
+                                    "AllowCustomPath": true,
+                                    "Pattern": "{{ ContentItem | display_text | slugify }}",
+                                    "AllowUpdatePath": false,
+                                    "ShowHomepageOption": false
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "FlowPart",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Content",
+                                    "Description": "Content for page.",
+                                    "Position": "4"
+                                },
+                                "LinkableContentTypes": [],
+                                "FlowPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Blockquote",
+                                        "Card",
+                                        "Carousel",
+                                        "Embed",
+                                        "Figure",
+                                        "Gallery",
+                                        "Group",
+                                        "Heading",
+                                        "Hero",
+                                        "Html",
+                                        "Image",
+                                        "LegacyVisualEditor",
+                                        "Link",
+                                        "News",
+                                        "OrderedList",
+                                        "Paragraph",
+                                        "Section",
+                                        "Text",
+                                        "UnorderedList",
+                                        "VisualEditor"
+                                    ]
+                                },
+                                "ContentIndexSettings": {},
+                                "GalleryPartSettings": {
+                                    "ThumbnailWidth": 480,
+                                    "ThumbnailHeight": 270
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "MetaTagsPart",
+                            "Name": "MetaTagsPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "5"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Homepage",
+                    "DisplayName": "Homepage",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Creatable": true,
+                            "Listable": true,
+                            "Draftable": true,
+                            "Versionable": true,
+                            "Securable": true
+                        },
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Homepage",
+                            "Name": "Homepage",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AutoroutePart",
+                            "Name": "AutoroutePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                },
+                                "AutoroutePartSettings": {
+                                    "AllowCustomPath": true,
+                                    "Pattern": "{{ ContentItem | display_text | slugify }}",
+                                    "AllowUpdatePath": false,
+                                    "ShowHomepageOption": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "PartName": "CommonPart",
+                            "Name": "CommonPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "4"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "FlowPart",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Content",
+                                    "Description": "Content for homepage.",
+                                    "Position": "2"
+                                },
+                                "LinkableContentTypes": [],
+                                "FlowPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Blockquote",
+                                        "Card",
+                                        "Carousel",
+                                        "Embed",
+                                        "Figure",
+                                        "Group",
+                                        "Heading",
+                                        "Hero",
+                                        "Html",
+                                        "Image",
+                                        "LegacyVisualEditor",
+                                        "Link",
+                                        "News",
+                                        "OrderedList",
+                                        "Paragraph",
+                                        "Section",
+                                        "Text",
+                                        "UnorderedList",
+                                        "VisualEditor"
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "PartName": "MetaTagsPart",
+                            "Name": "MetaTagsPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "5"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Group",
+                    "DisplayName": "Group",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Container",
+                        "Description": "Group collection of widgets.",
+                        "Icon": "object-group"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Group",
+                            "Name": "Group",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Content",
+                                    "Description": "Content for group",
+                                    "Position": "1"
+                                },
+                                "LinkableContentTypes": [],
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Blockquote",
+                                        "Card",
+                                        "Carousel",
+                                        "Embed",
+                                        "Figure",
+                                        "Heading",
+                                        "Hero",
+                                        "Html",
+                                        "Image",
+                                        "LegacyVisualEditor",
+                                        "Link",
+                                        "OrderedList",
+                                        "Paragraph",
+                                        "Section",
+                                        "Text",
+                                        "UnorderedList",
+                                        "VisualEditor"
+                                    ],
+                                    "DisplayType": "Detail"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "NewsPost",
+                    "DisplayName": "News Post",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Creatable": true,
+                            "Listable": true,
+                            "Draftable": true,
+                            "Versionable": true,
+                            "Securable": true
+                        },
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "NewsPost",
+                            "Name": "NewsPost",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AutoroutePart",
+                            "Name": "AutoroutePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                },
+                                "AutoroutePartSettings": {
+                                    "AllowCustomPath": true,
+                                    "Pattern": "news/{{ ContentItem | display_text | slugify }}",
+                                    "AllowUpdatePath": true
+                                },
+                                "ContentIndexSettings": {},
+                                "LinkableContentTypes": []
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Tag",
+                    "DisplayName": "Tag",
+                    "Settings": {
+                        "ContentTypeSettings": {},
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Tag",
+                            "Name": "Tag",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AutoroutePart",
+                            "Name": "AutoroutePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                },
+                                "LinkableContentTypes": [],
+                                "AutoroutePartSettings": {
+                                    "AllowCustomPath": true,
+                                    "Pattern": "{{ ContentItem | display_text | slugify }}",
+                                    "ManageContainedItemRoutes": true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "News",
+                    "DisplayName": "News",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Display news posts.",
+                        "Icon": "newspaper"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "News",
+                            "Name": "News",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gallery",
+                    "DisplayName": "Gallery",
+                    "Settings": {
+                        "FullTextAspectSettings": {},
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        }
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Gallery",
+                            "Name": "Gallery",
+                            "Settings": {
+                                "Position": "1",
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "Position": "0",
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "GalleryPart",
+                            "Name": "Media",
+                            "Settings": {
+                                "DisplayName": "Media",
+                                "Description": "Collection of media items displayed in gallery.",
+                                "Position": "2",
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Job",
+                    "DisplayName": "Job",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Creatable": true,
+                            "Listable": true,
+                            "Draftable": true,
+                            "Versionable": true,
+                            "Securable": true
+                        },
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Job",
+                            "Name": "Job",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Jobs",
+                    "DisplayName": "Jobs",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Display jobs.",
+                        "Icon": "briefcase"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Jobs",
+                            "Name": "Jobs",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "ContentParts": [
+                {
+                    "Name": "CommonPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides an editor for the common properties of a content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "LiquidPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a Liquid formatted body for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "BlockBodyPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Reusable": true,
+                            "Description": "Provides rich text editor for curating content for body of content item.",
+                            "DefaultPosition": "5"
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "WidgetsListPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a way to add widgets per content items."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "FlowPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a customizable body for your content item.",
+                            "Reusable": true
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "BagPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Reusable": true,
+                            "Description": "Provides a collection behavior for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "AliasPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a way to define custom aliases for content items."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "AutoroutePart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a custom url for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "TitlePart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a Title for your content item.",
+                            "DefaultPosition": "0"
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "MetaTagsPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides meta tags for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "HtmlBodyPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides an HTML Body for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "PreviewPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a way to define the url that is used to render your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "ListPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Add a list behavior."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "MarkdownBodyPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a Markdown formatted body for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "MenuPart",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "MenuItemPart",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "LinkMenuItemPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Provides a menu link behavior for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "ContentMenuItemPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "DisplayName": "Content Menu Item",
+                            "Description": "Provides a menu link behavior with the Content Picker for your content item."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "ContentPickerField",
+                            "Name": "SelectedContentItem",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Selected Content Item",
+                                    "Position": "0"
+                                },
+                                "ContentPickerFieldSettings": {
+                                    "Required": true,
+                                    "DisplayAllContentTypes": true,
+                                    "DisplayedContentTypes": []
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Section",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "BackgroundColour",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Background Colour",
+                                    "Editor": "PredefinedList",
+                                    "Position": "0"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Colour displayed as the background for the section."
+                                },
+                                "ContentIndexSettings": {},
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Black",
+                                            "value": "black"
+                                        },
+                                        {
+                                            "name": "Grey",
+                                            "value": "grey"
+                                        },
+                                        {
+                                            "name": "Grey Light",
+                                            "value": "grey-light"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Alignment",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Alignment",
+                                    "Editor": "PredefinedList",
+                                    "Position": "2"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Control how content is aligned within section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Left",
+                                            "value": "left"
+                                        },
+                                        {
+                                            "name": "Center",
+                                            "value": "center"
+                                        },
+                                        {
+                                            "name": "Right",
+                                            "value": "right"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": null
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "ContentWidth",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Content Width",
+                                    "Editor": "PredefinedList",
+                                    "Position": "3"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Determines the width of content within section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Wide",
+                                            "value": "wide"
+                                        },
+                                        {
+                                            "name": "Full",
+                                            "value": "full"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "ResponsiveMediaField",
+                            "Name": "BackgroundImage",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Background Image",
+                                    "Position": "1"
+                                },
+                                "ResponsiveMediaFieldSettings": {
+                                    "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
+                                    "Hint": "Image displayed as background of section.",
+                                    "FallbackData": "[]",
+                                    "IsConfigured": true
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "SpacingAfter",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Spacing After",
+                                    "Editor": "PredefinedList",
+                                    "Position": "4"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Controls spacing after section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Spaced",
+                                            "value": "spaced-after"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "none"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Paragraph",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Text",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Text",
+                                    "Editor": "TextArea"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Html",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "CodeField",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Content",
+                                    "Position": "0"
+                                },
+                                "CodeFieldSettings": {
+                                    "Language": "html"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Link",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Text",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Text"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Text to be displayed in link.",
+                                    "Required": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Url",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Url"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "URL user is taken to when interacting with link.",
+                                    "Required": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "OpenInNewWindow",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Open in new Window"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Hint": "Whether a new window is opened when user interacts with link.",
+                                    "Label": "Open in new Window"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Style",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Style",
+                                    "Editor": "PredefinedList"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Define appearance of link."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Primary Button",
+                                            "value": "btn--primary"
+                                        },
+                                        {
+                                            "name": "Secondary Button",
+                                            "value": "btn--secondary"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Heading",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Text",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Text"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Text to be displayed in heading.",
+                                    "Required": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Level",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Level",
+                                    "Editor": "PredefinedList"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Importance of the heading, where the lower the value the more important the heading.",
+                                    "Required": true
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "1",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "name": "2",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "name": "3",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "name": "4",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "name": "5",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "name": "6",
+                                            "value": "6"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": null
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Image",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "MediaField",
+                            "Name": "Image",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Image"
+                                },
+                                "MediaFieldSettings": {
+                                    "Hint": "Image to be displayed.",
+                                    "Required": true,
+                                    "Multiple": false
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "AlternateText",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Alternate Text"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Description of the appearance and function of the image.",
+                                    "Required": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Text",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Text",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Text",
+                                    "Editor": "TextArea"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Figure",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "MediaField",
+                            "Name": "Image",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Image"
+                                },
+                                "MediaFieldSettings": {
+                                    "Required": true,
+                                    "Multiple": false
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "AlternateText",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Alternate Text"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Description of the appearance and function of the image.",
+                                    "Required": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Caption",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Caption",
+                                    "Editor": "TextArea"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Caption displayed alongside image.",
+                                    "Required": false
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Alignment",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Alignment",
+                                    "Editor": "PredefinedList"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Control how images can be manipulated around text content."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Wide",
+                                            "value": "wide"
+                                        },
+                                        {
+                                            "name": "Full",
+                                            "value": "full"
+                                        },
+                                        {
+                                            "name": "Left",
+                                            "value": "left"
+                                        },
+                                        {
+                                            "name": "Right",
+                                            "value": "right"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Blockquote",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Source",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Source"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Hero",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "BackgroundType",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Background Type",
+                                    "Editor": "PredefinedList"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Whether the background should be an image or a video embed."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Image",
+                                            "value": "image"
+                                        },
+                                        {
+                                            "name": "Video Embed",
+                                            "value": "embed"
+                                        }
+                                    ],
+                                    "Editor": 0,
+                                    "DefaultValue": "image"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "ResponsiveMediaField",
+                            "Name": "BackgroundImage",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Background Image"
+                                },
+                                "ResponsiveMediaFieldSettings": {
+                                    "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
+                                    "Hint": "Image displayed as background of hero.",
+                                    "Required": false
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "BackgroundEmbed",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Background Embed Url"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "URL to third-party site that is hosting video (e.g. YouTube)."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "DisplayText",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Display Text"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "CTALabel",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "CTA Label"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Text displayed on call to action link."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "CTAUrl",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "CTA Url"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Page user is navigated to when selecting call to action link."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Card",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "MediaField",
+                            "Name": "Image",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Image"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "ImageAlternateText",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Image Alternate Text"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Description of the appearance and function of the image."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "CTALabel",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "CTA Label"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "CTAUrl",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "CTA Url"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Banner",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "MediaField",
+                            "Name": "Logo",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Logo"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "MediaField",
+                            "Name": "LogoSmall",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Logo Small"
+                                },
+                                "MediaFieldSettings": {
+                                    "Hint": "Logo displayed on smaller devices."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "LogoAlternateText",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Logo Alternate Text"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Description of the appearance and function of the image."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "ContentPickerField",
+                            "Name": "Menu",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Menu"
+                                },
+                                "ContentPickerFieldSettings": {
+                                    "Hint": "Main menu used by users to navigate the main sections of the site.",
+                                    "DisplayedContentTypes": ["Menu"]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "MenuToggleButtonLabel",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Menu Toggle Button Label"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Label for button that's displayed on smaller devices to toggle the visibility of the main menu."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Embed",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Source",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Source"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "URL to content that should be embedded (e.g. https://www.youtube.com/embed/TorVk3Hxm7Q).",
+                                    "Required": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Caption",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Caption",
+                                    "Editor": "TextArea"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Caption displayed to give description of embedded content."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Carousel",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "NumericField",
+                            "Name": "SlideDuration",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Slide Duration",
+                                    "Position": "0"
+                                },
+                                "NumericFieldSettings": {
+                                    "Hint": "Number of seconds each slide should display for. If set to \"0\", the slides won't automatically change.",
+                                    "Minimum": 0.0,
+                                    "DefaultValue": "10"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "CarouselItem",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "ResponsiveMediaField",
+                            "Name": "BackgroundImage",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Background Image",
+                                    "Position": "0"
+                                },
+                                "ResponsiveMediaFieldSettings": {
+                                    "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
+                                    "Hint": "Ensure all background images for each carousel item has the same dimensions to ensure the height of the carousel remains the same when changing the active item.",
+                                    "FallbackData": "",
+                                    "IsConfigured": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Heading",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Heading",
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "CTALabel",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "CTA Label",
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "ContentPickerField",
+                            "Name": "CTALinkTo",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "CTA Link To",
+                                    "Position": "3"
+                                },
+                                "ContentPickerFieldSettings": {
+                                    "Hint": "Select a content item within the site that the user will be navigated to.",
+                                    "DisplayedContentTypes": [
+                                        "Homepage",
+                                        "Page"
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "LegacyVisualEditor",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "HtmlField",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Content",
+                                    "Editor": "Wysiwyg",
+                                    "Position": "0"
+                                },
+                                "HtmlFieldSettings": {},
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "VisualEditor",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "BlockField",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Content",
+                                    "Editor": "EditorJS"
+                                },
+                                "BlockFieldSettings": {
+                                    "LinkableContentTypes": ["Homepage", "Page"]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Footer",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "MediaField",
+                            "Name": "Logo",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Logo",
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "MediaField",
+                            "Name": "LogoSmall",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Logo Small",
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "ContentPickerField",
+                            "Name": "Menu",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Menu",
+                                    "Position": "3"
+                                },
+                                "ContentPickerFieldSettings": {
+                                    "DisplayedContentTypes": ["Menu"]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "LogoAlternateText",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Logo Alternate Text",
+                                    "Position": "2"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Description of image for website visitors who are unable to see the image and tell the search engine crawlers about the image."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Page",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "DisplayTitle",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Display Title",
+                                    "Position": "0"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Hint": "If checked, the title will be rendered at top of the page.",
+                                    "Label": "Display Title"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "NewsPost",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "BlockField",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Content",
+                                    "Editor": "EditorJS",
+                                    "Position": "2"
+                                },
+                                "BlockFieldSettings": {
+                                    "LinkableContentTypes": [
+                                        "Homepage",
+                                        "News",
+                                        "NewsPost",
+                                        "Page"
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "MediaField",
+                            "Name": "Thumbnail",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Thumbnail",
+                                    "Position": "0"
+                                },
+                                "MediaFieldSettings": {
+                                    "Hint": "Ideally image should be 350x200.",
+                                    "Multiple": false
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "ThumbnailAlt",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Thumbnail Alternate Text",
+                                    "Position": "1"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Short description of thumbnail image for accessibility."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "ContentPickerField",
+                            "Name": "FurtherReading",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Further Reading",
+                                    "Position": "4"
+                                },
+                                "ContentPickerFieldSettings": {
+                                    "Hint": "Select other news items that will be displayed after content.",
+                                    "Multiple": true,
+                                    "DisplayedContentTypes": ["NewsPost"]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TaxonomyField",
+                            "Name": "Tags",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Tags",
+                                    "Editor": "Tags",
+                                    "Position": "3"
+                                },
+                                "ContentIndexSettings": {},
+                                "TaxonomyFieldSettings": {
+                                    "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
+                                },
+                                "TaxonomyFieldTagsEditorSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "News",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "NumericField",
+                            "Name": "PageSize",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Number of Posts",
+                                    "Position": "0"
+                                },
+                                "NumericFieldSettings": {
+                                    "Hint": "Number of news posts to display.",
+                                    "Scale": 1,
+                                    "Minimum": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "Paging",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Paging",
+                                    "Position": "1"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Hint": "Display pagination controls for navigating through news posts.",
+                                    "Label": "Paging"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "GalleryPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Reusable": true,
+                            "Description": "Create a collection of media items."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "Job",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Length",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Length",
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Jobs",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "NumericField",
+                            "Name": "Quantity",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Quantity"
+                                },
+                                "NumericFieldSettings": {
+                                    "Hint": "Number of jobs to display.",
+                                    "DefaultValue": "3"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
