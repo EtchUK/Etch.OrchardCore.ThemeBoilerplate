@@ -1,5 +1,3 @@
-import { makeSelector } from '../../utils/dom';
-
 const CSS_SELECTED = 'is-selected';
 
 /**
@@ -53,7 +51,7 @@ const instance = ($el: Element) => {
         e.stopImmediatePropagation();
         e.preventDefault();
 
-        const $selectedItem = $el.querySelector(makeSelector(CSS_SELECTED));
+        const $selectedItem = $el.querySelector(`.${CSS_SELECTED}`);
         const $target = e.currentTarget as Element;
 
         // de-select the currently selected item if there is one.
