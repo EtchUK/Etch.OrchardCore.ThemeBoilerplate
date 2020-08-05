@@ -19,10 +19,6 @@
                             "Type": "SiteSettingsDeploymentStep",
                             "Step": {
                                 "Settings": [
-                                    "SiteName",
-                                    "TimeZoneId",
-                                    "ResourceDebugMode",
-                                    "UseCdn",
                                     "PageSize",
                                     "MaxPageSize",
                                     "MaxPagedCount",
@@ -30,6 +26,20 @@
                                 ],
                                 "Id": "8a03b2e69034456490179dab1568574d",
                                 "Name": "SiteSettings"
+                            }
+                        },
+                        {
+                            "Type": "AllFeaturesDeploymentStep",
+                            "Step": {
+                                "Id": "088c6cdb331d45879a6705efa2533f43",
+                                "Name": "AllFeatures"
+                            }
+                        },
+                        {
+                            "Type": "ThemesDeploymentStep",
+                            "Step": {
+                                "Id": "fe98e7b475ee41f28fff9f37a391dbab",
+                                "Name": "Themes"
                             }
                         },
                         {
@@ -46,13 +56,6 @@
                                 "SettingsTypeNames": [],
                                 "Id": "8937f48461654f839e02a182b5f71b0c",
                                 "Name": "CustomSettings"
-                            }
-                        },
-                        {
-                            "Type": "AllFeaturesDeploymentStep",
-                            "Step": {
-                                "Id": "088c6cdb331d45879a6705efa2533f43",
-                                "Name": "AllFeatures"
                             }
                         },
                         {
