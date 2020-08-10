@@ -298,11 +298,7 @@
                                         "VisualEditor"
                                     ]
                                 },
-                                "ContentIndexSettings": {},
-                                "GalleryPartSettings": {
-                                    "ThumbnailWidth": 480,
-                                    "ThumbnailHeight": 270
-                                }
+                                "ContentIndexSettings": {}
                             }
                         },
                         {
@@ -942,11 +938,7 @@
                                         "VisualEditor"
                                     ]
                                 },
-                                "ContentIndexSettings": {},
-                                "GalleryPartSettings": {
-                                    "ThumbnailWidth": 480,
-                                    "ThumbnailHeight": 270
-                                }
+                                "ContentIndexSettings": {}
                             }
                         },
                         {
