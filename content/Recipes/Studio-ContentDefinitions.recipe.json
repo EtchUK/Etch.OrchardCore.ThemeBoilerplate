@@ -13,6 +13,58 @@
             "name": "ContentDefinition",
             "ContentTypes": [
                 {
+                    "Name": "Gallery",
+                    "DisplayName": "Gallery",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Creatable": "False",
+                            "Draftable": "False",
+                            "Versionable": "False",
+                            "Listable": "False",
+                            "Securable": "False",
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Display collection of images or videos.",
+                        "Icon": "images"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Gallery",
+                            "Name": "Gallery",
+                            "Settings": {
+                                "Position": "1",
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "Position": "0",
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "GalleryPart",
+                            "Name": "Media",
+                            "Settings": {
+                                "DisplayName": "Media",
+                                "Description": "Collection of media items displayed in gallery.",
+                                "Position": "2",
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
                     "Name": "Taxonomy",
                     "DisplayName": "Taxonomy",
                     "Settings": {
@@ -177,6 +229,132 @@
                     ]
                 },
                 {
+                    "Name": "NewsPost",
+                    "DisplayName": "News Post",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Creatable": true,
+                            "Listable": true,
+                            "Draftable": true,
+                            "Versionable": true,
+                            "Securable": true
+                        },
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "NewsPost",
+                            "Name": "NewsPost",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AutoroutePart",
+                            "Name": "AutoroutePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                },
+                                "AutoroutePartSettings": {
+                                    "AllowCustomPath": true,
+                                    "Pattern": "news/{{ ContentItem | display_text | slugify }}",
+                                    "AllowUpdatePath": true
+                                },
+                                "ContentIndexSettings": {},
+                                "LinkableContentTypes": []
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Tag",
+                    "DisplayName": "Tag",
+                    "Settings": {
+                        "ContentTypeSettings": {},
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Tag",
+                            "Name": "Tag",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AutoroutePart",
+                            "Name": "AutoroutePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                },
+                                "LinkableContentTypes": [],
+                                "AutoroutePartSettings": {
+                                    "AllowCustomPath": true,
+                                    "Pattern": "{{ ContentItem | display_text | slugify }}",
+                                    "ManageContainedItemRoutes": true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "News",
+                    "DisplayName": "News",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Display news posts.",
+                        "Icon": "newspaper"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "News",
+                            "Name": "News",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
                     "Name": "Paragraph",
                     "DisplayName": "Paragraph",
                     "Settings": {
@@ -281,24 +459,36 @@
                                 "FlowPartSettings": {
                                     "ContainedContentTypes": [
                                         "Blockquote",
+                                        "Button",
                                         "Card",
                                         "Embed",
                                         "Figure",
+                                        "Form",
                                         "Group",
                                         "Heading",
                                         "Html",
                                         "Image",
+                                        "Input",
                                         "Jobs",
+                                        "Label",
                                         "LegacyVisualEditor",
                                         "Link",
                                         "OrderedList",
                                         "Paragraph",
+                                        "Select",
                                         "Text",
+                                        "TextArea",
                                         "UnorderedList",
+                                        "Validation",
+                                        "ValidationSummary",
                                         "VisualEditor"
                                     ]
                                 },
-                                "ContentIndexSettings": {}
+                                "ContentIndexSettings": {},
+                                "GalleryPartSettings": {
+                                    "ThumbnailWidth": 480,
+                                    "ThumbnailHeight": 270
+                                }
                             }
                         },
                         {
@@ -921,6 +1111,7 @@
                                         "Carousel",
                                         "Embed",
                                         "Figure",
+                                        "Form",
                                         "Gallery",
                                         "Group",
                                         "Heading",
@@ -938,7 +1129,11 @@
                                         "VisualEditor"
                                     ]
                                 },
-                                "ContentIndexSettings": {}
+                                "ContentIndexSettings": {},
+                                "GalleryPartSettings": {
+                                    "ThumbnailWidth": 480,
+                                    "ThumbnailHeight": 270
+                                }
                             }
                         },
                         {
@@ -1091,195 +1286,39 @@
                                 "BagPartSettings": {
                                     "ContainedContentTypes": [
                                         "Blockquote",
+                                        "Button",
                                         "Card",
                                         "Carousel",
                                         "Embed",
                                         "Figure",
+                                        "Form",
+                                        "Gallery",
                                         "Heading",
                                         "Hero",
                                         "Html",
                                         "Image",
+                                        "Input",
+                                        "Label",
                                         "LegacyVisualEditor",
                                         "Link",
                                         "OrderedList",
                                         "Paragraph",
                                         "Section",
+                                        "Select",
                                         "Text",
+                                        "TextArea",
                                         "UnorderedList",
+                                        "Validation",
+                                        "ValidationSummary",
                                         "VisualEditor"
                                     ],
                                     "DisplayType": "Detail"
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Name": "NewsPost",
-                    "DisplayName": "News Post",
-                    "Settings": {
-                        "ContentTypeSettings": {
-                            "Creatable": true,
-                            "Listable": true,
-                            "Draftable": true,
-                            "Versionable": true,
-                            "Securable": true
-                        },
-                        "FullTextAspectSettings": {}
-                    },
-                    "ContentTypePartDefinitionRecords": [
-                        {
-                            "PartName": "NewsPost",
-                            "Name": "NewsPost",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "2"
-                                }
-                            }
-                        },
-                        {
-                            "PartName": "AutoroutePart",
-                            "Name": "AutoroutePart",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "1"
                                 },
-                                "AutoroutePartSettings": {
-                                    "AllowCustomPath": true,
-                                    "Pattern": "news/{{ ContentItem | display_text | slugify }}",
-                                    "AllowUpdatePath": true
+                                "GalleryPartSettings": {
+                                    "ThumbnailWidth": 480,
+                                    "ThumbnailHeight": 270
                                 },
-                                "ContentIndexSettings": {},
-                                "LinkableContentTypes": []
-                            }
-                        },
-                        {
-                            "PartName": "TitlePart",
-                            "Name": "TitlePart",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "0"
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Name": "Tag",
-                    "DisplayName": "Tag",
-                    "Settings": {
-                        "ContentTypeSettings": {},
-                        "FullTextAspectSettings": {}
-                    },
-                    "ContentTypePartDefinitionRecords": [
-                        {
-                            "PartName": "Tag",
-                            "Name": "Tag",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "2"
-                                }
-                            }
-                        },
-                        {
-                            "PartName": "TitlePart",
-                            "Name": "TitlePart",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "0"
-                                }
-                            }
-                        },
-                        {
-                            "PartName": "AutoroutePart",
-                            "Name": "AutoroutePart",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "1"
-                                },
-                                "LinkableContentTypes": [],
-                                "AutoroutePartSettings": {
-                                    "AllowCustomPath": true,
-                                    "Pattern": "{{ ContentItem | display_text | slugify }}",
-                                    "ManageContainedItemRoutes": true
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Name": "News",
-                    "DisplayName": "News",
-                    "Settings": {
-                        "ContentTypeSettings": {
-                            "Stereotype": "Widget"
-                        },
-                        "FullTextAspectSettings": {},
-                        "Category": "Content",
-                        "Description": "Display news posts.",
-                        "Icon": "newspaper"
-                    },
-                    "ContentTypePartDefinitionRecords": [
-                        {
-                            "PartName": "News",
-                            "Name": "News",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "1"
-                                }
-                            }
-                        },
-                        {
-                            "PartName": "TitlePart",
-                            "Name": "TitlePart",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "0"
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Name": "Gallery",
-                    "DisplayName": "Gallery",
-                    "Settings": {
-                        "FullTextAspectSettings": {},
-                        "ContentTypeSettings": {
-                            "Stereotype": "Widget"
-                        }
-                    },
-                    "ContentTypePartDefinitionRecords": [
-                        {
-                            "PartName": "Gallery",
-                            "Name": "Gallery",
-                            "Settings": {
-                                "Position": "1",
-                                "ContentTypePartSettings": {
-                                    "Position": "1"
-                                }
-                            }
-                        },
-                        {
-                            "PartName": "TitlePart",
-                            "Name": "TitlePart",
-                            "Settings": {
-                                "Position": "0",
-                                "ContentTypePartSettings": {
-                                    "Position": "0"
-                                }
-                            }
-                        },
-                        {
-                            "PartName": "GalleryPart",
-                            "Name": "Media",
-                            "Settings": {
-                                "DisplayName": "Media",
-                                "Description": "Collection of media items displayed in gallery.",
-                                "Position": "2",
-                                "ContentTypePartSettings": {
-                                    "Position": "2"
-                                }
+                                "ContentIndexSettings": {}
                             }
                         }
                     ]
@@ -1337,6 +1376,260 @@
                             "Settings": {
                                 "ContentTypePartSettings": {
                                     "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Form",
+                    "DisplayName": "Form",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Form",
+                        "Description": "Collection of fields for collecting information.",
+                        "Icon": "wpforms"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "FormPart",
+                            "Name": "FormPart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "FlowPart",
+                            "Name": "FlowPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Flow",
+                                    "Description": "Provides a customizable body for your content item."
+                                },
+                                "LinkableContentTypes": [],
+                                "FlowPartSettings": {
+                                    "ContainedContentTypes": []
+                                },
+                                "GalleryPartSettings": {
+                                    "ThumbnailWidth": 480,
+                                    "ThumbnailHeight": 270
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Label",
+                    "DisplayName": "Label",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Form",
+                        "Description": "Display text to describe meaning of form field.",
+                        "Icon": "tag"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "FormElementPart",
+                            "Name": "FormElementPart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "LabelPart",
+                            "Name": "LabelPart",
+                            "Settings": {}
+                        }
+                    ]
+                },
+                {
+                    "Name": "Input",
+                    "DisplayName": "Input",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Form",
+                        "Description": "Interactive control used to enter information (text, checkbox, radio, etc...).",
+                        "Icon": "edit"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "FormInputElementPart",
+                            "Name": "FormInputElementPart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "FormElementPart",
+                            "Name": "FormElementPart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "InputPart",
+                            "Name": "InputPart",
+                            "Settings": {}
+                        }
+                    ]
+                },
+                {
+                    "Name": "TextArea",
+                    "DisplayName": "Text Area",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Form",
+                        "Description": "Multi-line plain-text editing control.",
+                        "Icon": "edit"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "FormInputElementPart",
+                            "Name": "FormInputElementPart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "FormElementPart",
+                            "Name": "FormElementPart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "TextAreaPart",
+                            "Name": "TextAreaPart",
+                            "Settings": {}
+                        }
+                    ]
+                },
+                {
+                    "Name": "Select",
+                    "DisplayName": "Select",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Form",
+                        "Description": "Drop down list for selecting from collection of options.",
+                        "Icon": "clipboard-list"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "FormInputElementPart",
+                            "Name": "FormInputElementPart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "FormElementPart",
+                            "Name": "FormElementPart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "SelectPart",
+                            "Name": "SelectPart",
+                            "Settings": {}
+                        }
+                    ]
+                },
+                {
+                    "Name": "Button",
+                    "DisplayName": "Button",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Form",
+                        "Description": "Control used to submit form.",
+                        "Icon": "paper-plane"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "FormInputElementPart",
+                            "Name": "FormInputElementPart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "FormElementPart",
+                            "Name": "FormElementPart",
+                            "Settings": {}
+                        },
+                        {
+                            "PartName": "ButtonPart",
+                            "Name": "ButtonPart",
+                            "Settings": {}
+                        }
+                    ]
+                },
+                {
+                    "Name": "ValidationSummary",
+                    "DisplayName": "Validation Summary",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Form",
+                        "Description": "Display a summary of form validation issues",
+                        "Icon": "exclamation-triangle"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "ValidationSummaryPart",
+                            "Name": "ValidationSummaryPart",
+                            "Settings": {}
+                        }
+                    ]
+                },
+                {
+                    "Name": "Validation",
+                    "DisplayName": "Validation",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Form",
+                        "Description": "Display a validation issue for specific field.",
+                        "Icon": "exclamation-triangle"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "ValidationPart",
+                            "Name": "ValidationPart",
+                            "Settings": {}
+                        }
+                    ]
+                },
+                {
+                    "Name": "ContextualEditControl",
+                    "DisplayName": "Contextual Edit Control",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Creatable": "False",
+                            "Draftable": "False",
+                            "Versionable": "False",
+                            "Listable": "False",
+                            "Securable": "False",
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Miscellaneous",
+                        "Description": "Displays summary of content item being viewed with easy link to edit.",
+                        "Icon": "edit"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "ContextualEditPart",
+                            "Name": "ContextualEditPart",
+                            "Settings": {
+                                "ContentTypeSettings": {
+                                    "Position": "1"
                                 }
                             }
                         }
@@ -1414,6 +1707,17 @@
                         "ContentPartSettings": {
                             "Attachable": true,
                             "Description": "Provides a way to define custom aliases for content items."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "GalleryPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Reusable": true,
+                            "Description": "Create a collection of media items."
                         }
                     },
                     "ContentPartFieldDefinitionRecords": []
@@ -1533,6 +1837,128 @@
                                     "DisplayedContentTypes": []
                                 },
                                 "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "NewsPost",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "BlockField",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Content",
+                                    "Editor": "EditorJS",
+                                    "Position": "2"
+                                },
+                                "BlockFieldSettings": {
+                                    "LinkableContentTypes": [
+                                        "Homepage",
+                                        "News",
+                                        "NewsPost",
+                                        "Page"
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "MediaField",
+                            "Name": "Thumbnail",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Thumbnail",
+                                    "Position": "0"
+                                },
+                                "MediaFieldSettings": {
+                                    "Hint": "Ideally image should be 350x200.",
+                                    "Multiple": false
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "ThumbnailAlt",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Thumbnail Alternate Text",
+                                    "Position": "1"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Short description of thumbnail image for accessibility."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "ContentPickerField",
+                            "Name": "FurtherReading",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Further Reading",
+                                    "Position": "4"
+                                },
+                                "ContentPickerFieldSettings": {
+                                    "Hint": "Select other news items that will be displayed after content.",
+                                    "Multiple": true,
+                                    "DisplayedContentTypes": ["NewsPost"]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TaxonomyField",
+                            "Name": "Tags",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Tags",
+                                    "Editor": "Tags",
+                                    "Position": "3"
+                                },
+                                "ContentIndexSettings": {},
+                                "TaxonomyFieldSettings": {
+                                    "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
+                                },
+                                "TaxonomyFieldTagsEditorSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "News",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "NumericField",
+                            "Name": "PageSize",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Number of Posts",
+                                    "Position": "0"
+                                },
+                                "NumericFieldSettings": {
+                                    "Hint": "Number of news posts to display.",
+                                    "Scale": 1,
+                                    "Minimum": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "Paging",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Paging",
+                                    "Position": "1"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Hint": "Display pagination controls for navigating through news posts.",
+                                    "Label": "Paging"
+                                }
                             }
                         }
                     ]
@@ -1658,7 +2084,7 @@
                                 "ResponsiveMediaFieldSettings": {
                                     "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
                                     "Hint": "Image displayed as background of section.",
-                                    "FallbackData": "[]",
+                                    "FallbackData": "",
                                     "IsConfigured": true
                                 }
                             }
@@ -2474,139 +2900,6 @@
                     ]
                 },
                 {
-                    "Name": "NewsPost",
-                    "Settings": {},
-                    "ContentPartFieldDefinitionRecords": [
-                        {
-                            "FieldName": "BlockField",
-                            "Name": "Content",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Content",
-                                    "Editor": "EditorJS",
-                                    "Position": "2"
-                                },
-                                "BlockFieldSettings": {
-                                    "LinkableContentTypes": [
-                                        "Homepage",
-                                        "News",
-                                        "NewsPost",
-                                        "Page"
-                                    ]
-                                },
-                                "ContentIndexSettings": {}
-                            }
-                        },
-                        {
-                            "FieldName": "MediaField",
-                            "Name": "Thumbnail",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Thumbnail",
-                                    "Position": "0"
-                                },
-                                "MediaFieldSettings": {
-                                    "Hint": "Ideally image should be 350x200.",
-                                    "Multiple": false
-                                },
-                                "ContentIndexSettings": {}
-                            }
-                        },
-                        {
-                            "FieldName": "TextField",
-                            "Name": "ThumbnailAlt",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Thumbnail Alternate Text",
-                                    "Position": "1"
-                                },
-                                "TextFieldSettings": {
-                                    "Hint": "Short description of thumbnail image for accessibility."
-                                },
-                                "ContentIndexSettings": {}
-                            }
-                        },
-                        {
-                            "FieldName": "ContentPickerField",
-                            "Name": "FurtherReading",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Further Reading",
-                                    "Position": "4"
-                                },
-                                "ContentPickerFieldSettings": {
-                                    "Hint": "Select other news items that will be displayed after content.",
-                                    "Multiple": true,
-                                    "DisplayedContentTypes": ["NewsPost"]
-                                },
-                                "ContentIndexSettings": {}
-                            }
-                        },
-                        {
-                            "FieldName": "TaxonomyField",
-                            "Name": "Tags",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Tags",
-                                    "Editor": "Tags",
-                                    "Position": "3"
-                                },
-                                "ContentIndexSettings": {},
-                                "TaxonomyFieldSettings": {
-                                    "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
-                                },
-                                "TaxonomyFieldTagsEditorSettings": {}
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Name": "News",
-                    "Settings": {},
-                    "ContentPartFieldDefinitionRecords": [
-                        {
-                            "FieldName": "NumericField",
-                            "Name": "PageSize",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Number of Posts",
-                                    "Position": "0"
-                                },
-                                "NumericFieldSettings": {
-                                    "Hint": "Number of news posts to display.",
-                                    "Scale": 1,
-                                    "Minimum": 0.0
-                                }
-                            }
-                        },
-                        {
-                            "FieldName": "BooleanField",
-                            "Name": "Paging",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Paging",
-                                    "Position": "1"
-                                },
-                                "BooleanFieldSettings": {
-                                    "Hint": "Display pagination controls for navigating through news posts.",
-                                    "Label": "Paging"
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Name": "GalleryPart",
-                    "Settings": {
-                        "ContentPartSettings": {
-                            "Attachable": true,
-                            "Reusable": true,
-                            "Description": "Create a collection of media items."
-                        }
-                    },
-                    "ContentPartFieldDefinitionRecords": []
-                },
-                {
                     "Name": "Job",
                     "Settings": {},
                     "ContentPartFieldDefinitionRecords": [
@@ -2641,6 +2934,139 @@
                             }
                         }
                     ]
+                },
+                {
+                    "Name": "FormPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Turns your content item into a form."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "FormElementPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Description": "Provides attributes common to all form elements."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "FormInputElementPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Description": "Provides attributes common to all input form elements."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "LabelPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Description": "Provides label properties."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "InputPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Description": "Provides input field properties."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "TextAreaPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Description": "Provides text area properties."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "SelectPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Description": "Provides select field properties."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "ButtonPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Description": "Provides button properties."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "ValidationSummaryPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Description": "Displays a validation summary."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "ValidationPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Description": "Displays a field validation error."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "Group",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Style",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Style",
+                                    "Editor": "PredefinedList",
+                                    "Position": "0"
+                                },
+                                "TextFieldSettings": {},
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Form Group",
+                                            "value": "form-group"
+                                        }
+                                    ],
+                                    "Editor": 1
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "ContextualEditPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "DisplayName": "Contextual Edit",
+                            "Description": "When authorised, displays edit control for current page."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
                 }
             ]
         }

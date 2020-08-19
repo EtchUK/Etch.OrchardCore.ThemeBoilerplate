@@ -10,77 +10,26 @@
     "tags": ["studio"],
     "steps": [
         {
-            "name": "Feature",
-            "enable": [
-                "Application.Default",
-                "Etch.OrchardCore.SiteBoilerplate",
-                "OrchardCore.ShortCodes",
-                "OrchardCore.Liquid",
-                "OrchardCore.Settings",
-                "OrchardCore.Contents",
-                "OrchardCore.ContentTypes",
-                "OrchardCore.Media",
-                "Etch.OrchardCore.Blocks.EditorJS",
-                "Etch.OrchardCore.Blocks",
-                "Etch.OrchardCore.Fields.Code",
-                "OrchardCore.ContentFields",
-                "OrchardCore.Widgets",
-                "OrchardCore.Flows",
-                "OrchardCore.Alias",
-                "Etch.OrchardCore.Fields.ResponsiveMedia",
-                "Etch.OrchardCore.Gallery",
-                "OrchardCore.Indexing",
-                "OrchardCore.Lucene",
-                "OrchardCore.Queries",
-                "OrchardCore.Taxonomies",
-                "OrchardCore.Autoroute",
-                "OrchardCore.Title",
-                "Etch.OrchardCore.SEO.MetaTags",
-                "OrchardCore.Html",
-                "Etch.OrchardCore.Widgets",
-                "OrchardCore.Scripting",
-                "OrchardCore.Workflows",
-                "OrchardCore.Resources",
-                "OrchardCore.Templates",
-                "OrchardCore.Admin",
-                "OrchardCore.AdminMenu",
-                "OrchardCore.ContentPreview",
-                "OrchardCore.Contents.FileContentDefinition",
-                "OrchardCore.CustomSettings",
-                "OrchardCore.Deployment",
-                "OrchardCore.Deployment.Remote",
-                "OrchardCore.Diagnostics",
-                "OrchardCore.DynamicCache",
-                "OrchardCore.Features",
-                "OrchardCore.Feeds",
-                "OrchardCore.HomeRoute",
-                "OrchardCore.Layers",
-                "OrchardCore.Lists",
-                "OrchardCore.Markdown",
-                "OrchardCore.Menu",
-                "OrchardCore.Navigation",
-                "OrchardCore.Users",
-                "OrchardCore.Recipes",
-                "OrchardCore.Roles",
-                "OrchardCore.Themes",
-                "OrchardCore.Workflows.Http",
-                "OrchardCore.Workflows.Timers",
-                "TheAdmin",
-                "Etch.OrchardCore.AdminTheme",
-                "Etch.OrchardCore.ThemeBoilerplate"
-            ],
-            "disable": []
-        },
-        {
-            "name": "Themes",
-            "Site": "Etch.OrchardCore.ThemeBoilerplate",
-            "Admin": "Etch.OrchardCore.AdminTheme"
+            "name": "Settings",
+            "SiteName": "Studio",
+            "TimeZoneId": "Europe/London",
+            "ResourceDebugMode": 0,
+            "UseCdn": true,
+            "PageSize": 10,
+            "MaxPageSize": 100,
+            "MaxPagedCount": 0,
+            "HomeRoute": {
+                "Area": "OrchardCore.Contents",
+                "Controller": "Item",
+                "Action": "Display",
+                "contentItemId": "4q200ssff5g74zsf073rjsfgw7"
+            }
         },
         {
             "name": "AdminMenu",
             "data": [
                 {
-                    "Id": "f6328e0fa8ea40b284bc94af48ab6d52",
+                    "Id": "0c77ef8b77074980843e6e82bd924978",
                     "Name": "Pattern Library",
                     "Enabled": true,
                     "MenuItems": [
@@ -111,6 +60,80 @@
             ]
         },
         {
+            "name": "custom-settings"
+        },
+        {
+            "name": "Feature",
+            "enable": [
+                "Application.Default",
+                "Etch.OrchardCore.SiteBoilerplate",
+                "OrchardCore.ShortCodes",
+                "OrchardCore.Liquid",
+                "OrchardCore.Settings",
+                "OrchardCore.Contents",
+                "OrchardCore.ContentTypes",
+                "OrchardCore.Media",
+                "Etch.OrchardCore.Blocks.EditorJS",
+                "Etch.OrchardCore.Blocks",
+                "Etch.OrchardCore.Fields.Code",
+                "OrchardCore.ContentFields",
+                "OrchardCore.Widgets",
+                "OrchardCore.Flows",
+                "Etch.OrchardCore.ContextualEdit",
+                "OrchardCore.Alias",
+                "Etch.OrchardCore.Fields.ResponsiveMedia",
+                "Etch.OrchardCore.Gallery",
+                "OrchardCore.Indexing",
+                "OrchardCore.Lucene",
+                "OrchardCore.Queries",
+                "OrchardCore.Taxonomies",
+                "OrchardCore.Autoroute",
+                "OrchardCore.Title",
+                "Etch.OrchardCore.SEO.MetaTags",
+                "OrchardCore.Html",
+                "Etch.OrchardCore.Widgets",
+                "OrchardCore.Scripting",
+                "OrchardCore.Workflows",
+                "Etch.OrchardCore.Workflows.Export",
+                "Etch.OrchardCore.Workflows.FormOutput",
+                "OrchardCore.Resources",
+                "OrchardCore.Templates",
+                "OrchardCore.Forms",
+                "Etch.OrchardCore.Workflows.Validation",
+                "OrchardCore.Admin",
+                "OrchardCore.AdminMenu",
+                "OrchardCore.ContentPreview",
+                "OrchardCore.Contents.FileContentDefinition",
+                "OrchardCore.CustomSettings",
+                "OrchardCore.Deployment",
+                "OrchardCore.Deployment.Remote",
+                "OrchardCore.Diagnostics",
+                "OrchardCore.DynamicCache",
+                "OrchardCore.Features",
+                "OrchardCore.Feeds",
+                "OrchardCore.HomeRoute",
+                "OrchardCore.Layers",
+                "OrchardCore.Lists",
+                "OrchardCore.Markdown",
+                "OrchardCore.Menu",
+                "OrchardCore.Navigation",
+                "OrchardCore.Users",
+                "OrchardCore.Recipes",
+                "OrchardCore.Roles",
+                "OrchardCore.Themes",
+                "OrchardCore.Workflows.Http",
+                "TheAdmin",
+                "Etch.OrchardCore.AdminTheme",
+                "Etch.OrchardCore.ThemeBoilerplate"
+            ],
+            "disable": []
+        },
+        {
+            "name": "Themes",
+            "Site": "Etch.OrchardCore.ThemeBoilerplate",
+            "Admin": "Etch.OrchardCore.AdminTheme"
+        },
+        {
             "name": "Layers",
             "Layers": [
                 {
@@ -122,7 +145,6 @@
         },
         {
             "name": "Settings",
-            "HomeRoute": {},
             "LayerSettings": {
                 "Zones": ["Header", "Footer"]
             },
@@ -176,6 +198,25 @@
                     ]
                 },
                 {
+                    "Name": "Editor",
+                    "Description": "Editor role",
+                    "Permissions": [
+                        "PublishContent",
+                        "EditContent",
+                        "DeleteContent",
+                        "PreviewContent",
+                        "CloneContent",
+                        "ManageMediaContent",
+                        "ManageWorkflows",
+                        "ExecuteWorkflows",
+                        "ManageTemplates",
+                        "AccessAdminPanel",
+                        "ManageAdminMenu",
+                        "QueryLuceneApi",
+                        "ManageQueries"
+                    ]
+                },
+                {
                     "Name": "Administrator",
                     "Description": "Administrator role",
                     "Permissions": [
@@ -210,26 +251,8 @@
                         "SiteOwner",
                         "ApplyTheme",
                         "ManageIndexes",
-                        "ManageQueries"
-                    ]
-                },
-                {
-                    "Name": "Editor",
-                    "Description": "Editor role",
-                    "Permissions": [
-                        "PublishContent",
-                        "EditContent",
-                        "DeleteContent",
-                        "PreviewContent",
-                        "CloneContent",
-                        "ManageMediaContent",
-                        "ManageWorkflows",
-                        "ExecuteWorkflows",
-                        "ManageTemplates",
-                        "AccessAdminPanel",
-                        "ManageAdminMenu",
-                        "QueryLuceneApi",
-                        "ManageQueries"
+                        "ManageQueries",
+                        "ExportWorkflows"
                     ]
                 }
             ]
@@ -248,13 +271,167 @@
             }
         },
         {
-            "name": "WorkflowType",
-            "data": []
-        },
-        {
             "name": "Feature",
             "enable": ["Etch.OrchardCore.News"],
             "disable": []
+        },
+        {
+            "name": "WorkflowType",
+            "data": [
+                {
+                    "WorkflowTypeId": "4fjffc64qtm5aw82k2m0x9ynwf",
+                    "Name": "Contact Form Workflow",
+                    "IsEnabled": true,
+                    "IsSingleton": false,
+                    "DeleteFinishedWorkflows": false,
+                    "Activities": [
+                        {
+                            "ActivityId": "4bmxjb9kg3r27zy7fkstc8wf5x",
+                            "Name": "HttpRequestEvent",
+                            "X": 0,
+                            "Y": 0,
+                            "IsStart": true,
+                            "Properties": {
+                                "ActivityMetadata": {
+                                    "Title": null
+                                },
+                                "HttpMethod": "POST",
+                                "Url": "[js: getUrlPrefix('/workflows/Invoke?token=CfDJ8A3TCsZGa1hPlNNzExbOaeAk8c1-vpyqHkdRa0yE9SA3Cbt0vDho_PddFk_5uwikb78kCYvxhipYHYTAR_LSvWcRxbARv1M-4BSP94_HJ5xzqJ-yISsdBvRvL-51JrYxc76rMgXSiCrbU87e3Z1MxQfkfhWF6n-xxGwYBMxqGvi74fNsp3ELxWntLqlTfZ9-nNPGa37yOK9-NVcseVEYEWBzpep5H8khWTOEUDduao82')]",
+                                "ValidateAntiforgeryToken": true,
+                                "TokenLifeSpan": 0
+                            }
+                        },
+                        {
+                            "ActivityId": "4f2vn6k1mtfxh4mjbbs33h465g",
+                            "Name": "ValidateMultipleTask",
+                            "X": 420,
+                            "Y": 180,
+                            "IsStart": false,
+                            "Properties": {
+                                "ActivityMetadata": {
+                                    "Title": "Validate"
+                                },
+                                "ErrorMessage": "Field is required.",
+                                "ToValidate": "Firstname, Surname, Message"
+                            }
+                        },
+                        {
+                            "ActivityId": "4vkr0brt5v9bwr8tz65594e15s",
+                            "Name": "HttpRedirectTask",
+                            "X": 110,
+                            "Y": 340,
+                            "IsStart": false,
+                            "Properties": {
+                                "ActivityMetadata": {
+                                    "Title": "Redirect back to contact"
+                                },
+                                "Location": {
+                                    "Expression": "[js: getUrlPrefix('/contact')]"
+                                },
+                                "Permanent": false
+                            }
+                        },
+                        {
+                            "ActivityId": "46hqzk1ak2hg82042fnjze235t",
+                            "Name": "FormOutputTask",
+                            "X": 780,
+                            "Y": 180,
+                            "IsStart": false,
+                            "Properties": {
+                                "ActivityMetadata": {
+                                    "Title": null
+                                },
+                                "Ignored": "__RequestVerificationToken, SendMessage",
+                                "Prefix": ""
+                            }
+                        },
+                        {
+                            "ActivityId": "4pmregabfat8grk5ncbaxmqq48",
+                            "Name": "HttpRedirectTask",
+                            "X": 1080,
+                            "Y": 180,
+                            "IsStart": false,
+                            "Properties": {
+                                "ActivityMetadata": {
+                                    "Title": "Redirect to success"
+                                },
+                                "Location": {
+                                    "Expression": "[js: getUrlPrefix('/contact/thank-you')]"
+                                },
+                                "Permanent": false
+                            }
+                        },
+                        {
+                            "ActivityId": "4bg81rn3516b54atb6fkt8wrn4",
+                            "Name": "ValidateAntiforgeryTokenTask",
+                            "X": 390,
+                            "Y": 0,
+                            "IsStart": false,
+                            "Properties": {
+                                "ActivityMetadata": {
+                                    "Title": null
+                                }
+                            }
+                        },
+                        {
+                            "ActivityId": "4x0fnc4b618s8zkm1wsypezv5k",
+                            "Name": "BindModelStateTask",
+                            "X": 80,
+                            "Y": 170,
+                            "IsStart": false,
+                            "Properties": {
+                                "ActivityMetadata": {
+                                    "Title": null
+                                }
+                            }
+                        }
+                    ],
+                    "Transitions": [
+                        {
+                            "Id": 0,
+                            "SourceActivityId": "4f2vn6k1mtfxh4mjbbs33h465g",
+                            "SourceOutcomeName": "Valid",
+                            "DestinationActivityId": "46hqzk1ak2hg82042fnjze235t"
+                        },
+                        {
+                            "Id": 0,
+                            "SourceActivityId": "46hqzk1ak2hg82042fnjze235t",
+                            "SourceOutcomeName": "Done",
+                            "DestinationActivityId": "4pmregabfat8grk5ncbaxmqq48"
+                        },
+                        {
+                            "Id": 0,
+                            "SourceActivityId": "4bmxjb9kg3r27zy7fkstc8wf5x",
+                            "SourceOutcomeName": "Done",
+                            "DestinationActivityId": "4bg81rn3516b54atb6fkt8wrn4"
+                        },
+                        {
+                            "Id": 0,
+                            "SourceActivityId": "4bg81rn3516b54atb6fkt8wrn4",
+                            "SourceOutcomeName": "Valid",
+                            "DestinationActivityId": "4f2vn6k1mtfxh4mjbbs33h465g"
+                        },
+                        {
+                            "Id": 0,
+                            "SourceActivityId": "4bg81rn3516b54atb6fkt8wrn4",
+                            "SourceOutcomeName": "Invalid",
+                            "DestinationActivityId": "4x0fnc4b618s8zkm1wsypezv5k"
+                        },
+                        {
+                            "Id": 0,
+                            "SourceActivityId": "4f2vn6k1mtfxh4mjbbs33h465g",
+                            "SourceOutcomeName": "Invalid",
+                            "DestinationActivityId": "4x0fnc4b618s8zkm1wsypezv5k"
+                        },
+                        {
+                            "Id": 0,
+                            "SourceActivityId": "4x0fnc4b618s8zkm1wsypezv5k",
+                            "SourceOutcomeName": "Done",
+                            "DestinationActivityId": "4vkr0brt5v9bwr8tz65594e15s"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
