@@ -3,7 +3,5 @@
    ========================================================================== */
 
 .required {
-    @include themify($themes) {
-        color: themed('color.brandPrimary');
-    }
+    color: var(--colorPrimary);
 }

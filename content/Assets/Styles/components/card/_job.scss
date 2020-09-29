@@ -9,9 +9,7 @@
     padding-right: $card-job-padding-horizontal;
     padding-top: $content-gutter-small;
 
-    @include themify($themes) {
-        background-color: themed('color.white');
-    }
+    background-color: var(--colorWhite);
 
     .card {
         &__body {
@@ -21,19 +19,14 @@
             padding-top: 0;
 
             a {
-                @include themify($themes) {
-                    color: themed('color.text');
-                }
-
+                color: var(--colorTextDefault);
                 text-decoration: none;
             }
 
             h3 {
                 margin-bottom: $card-job-heading-margin-bottom;
 
-                @include themify($themes) {
-                    font-size: themed('fontSize.h4');
-                }
+                font-size: var(--fontSizeH3);
             }
 
             p {

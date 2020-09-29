@@ -5,9 +5,7 @@
 .table--head-light {
     thead {
         tr {
-            @include themify($themes) {
-                background-color: themed('color.tableRowLight');
-            }
+            background-color: var(--colorGreyLight);
         }
     }
 }

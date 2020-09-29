@@ -7,17 +7,11 @@
  */
 
 a {
-    @include themify($themes) {
-        color: themed('color.linkColor');
-
-        &:hover {
-            color: themed('color.linkHoverColor');
-        }
-    }
-
+    color: var(--colorPrimary);
     text-decoration: underline;
 
     &:hover {
+        color: var(--colorPrimaryActive);
         text-decoration: none;
     }
 }

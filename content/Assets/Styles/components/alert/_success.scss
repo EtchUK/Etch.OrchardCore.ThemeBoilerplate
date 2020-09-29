@@ -3,8 +3,7 @@
    ========================================================================== */
 
 .alert--success {
-    @include themify($themes) {
-        background-color: themed('color.alert.successBackground');
-        color: themed('color.alert.successText');
-    }
+    background-color: var(--colorAlertSuccessBackground);
+
+    color: var(--colorAlertSuccessText);
 }

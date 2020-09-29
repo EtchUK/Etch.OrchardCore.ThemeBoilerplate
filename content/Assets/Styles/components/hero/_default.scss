@@ -13,22 +13,17 @@
     }
 
     &__title {
-        @include themify($themes) {
-            color: themed('color.white');
-        }
+        color: var(--colorWhite);
 
-        @include text-heading('hero');
+        @include text-heading('Hero');
 
         span {
             padding: 0 $hero-title-padding-horizontal $hero-title-padding-bottom;
 
-            @include themify($themes) {
-                background-color: rgba(
-                    themed('color.greyLight'),
-                    $hero-title-span-opacity
-                );
-            }
+            background-color: rgba($color-grey-light, $hero-title-span-opacity);
             box-decoration-break: clone;
+
+            line-height: var(--lineHeightHero);
         }
     }
 

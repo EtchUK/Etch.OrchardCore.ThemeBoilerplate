@@ -3,13 +3,10 @@
    ========================================================================== */
 
 select {
+    border: $form-border-size solid var(--colorTextLight);
     display: block;
     padding: $form-element-padding-vertical $form-element-padding-horizontal;
     width: auto;
-
-    @include themify($themes) {
-        border: $form-border-size solid themed('color.hint');
-    }
 
     &:focus {
         @include focus-form-element;

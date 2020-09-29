@@ -22,13 +22,10 @@ table {
     }
 
     tr {
+        border-bottom: $table-border-width solid var(--colorGrey);
         display: block;
         margin-bottom: $spacing-default;
         padding-bottom: $spacing-default;
-
-        @include themify($themes) {
-            border-bottom: $table-border-width solid themed('color.border');
-        }
 
         @include mq($from: tablet) {
             display: table-row;

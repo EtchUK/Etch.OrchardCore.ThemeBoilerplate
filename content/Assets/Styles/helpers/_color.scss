@@ -6,14 +6,10 @@
 
 .color {
     &--default {
-        @include themify($themes) {
-            color: themed('color.text');
-        }
+        color: var(--colorTextDefault);
     }
 
     &--white {
-        @include themify($themes) {
-            color: themed('color.white');
-        }
+        color: var(--colorWhite);
     }
 }

@@ -9,8 +9,6 @@
         padding-right: $spacing-default;
         padding-top: $spacing-small;
 
-        @include themify($themes) {
-            font-size: themed('fontSize.h3');
-        }
+        font-size: var(--fontSizeH3);
     }
 }

@@ -32,25 +32,17 @@
     width: $carousel-indicator-size;
 
     .btn {
+        border: 0;
         height: 100%;
         padding: 0;
         width: 100%;
 
+        background-color: var(--colorCarouselIndicator);
         border-radius: $carousel-indicator-size / 2;
-
-        @include themify($themes) {
-            background-color: themed('color.carouselIndicator');
-            border: 0;
-        }
 
         &:focus,
         &:hover {
-            @include themify($themes) {
-                background-color: lighten(
-                    themed('color.carouselIndicator'),
-                    15%
-                );
-            }
+            background-color: var(--colorCarouselIndicatorFocus);
         }
     }
 
@@ -59,9 +51,7 @@
     }
 
     &.is-active .btn {
-        @include themify($themes) {
-            background-color: themed('color.carouselIndicatorActive');
-        }
+        background-color: var(--colorCarouselIndicatorActive);
     }
 }
 

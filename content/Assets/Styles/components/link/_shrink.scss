@@ -36,9 +36,7 @@
             position: absolute;
             width: 100%;
 
-            @include themify($themes) {
-                background-color: themed('color.brandPrimary');
-            }
+            background-color: var(--colorPrimary);
 
             transition: width $link-transition-duration ease-in-out;
         }

@@ -70,26 +70,20 @@
         width: 100%;
         z-index: $z-index-default;
 
+        background-color: var(--colorGreyLight);
+        border-top-color: var(--colorWhite);
         border-top-style: solid;
         border-top-width: $header-nav-padding-top;
 
-        @include themify($themes) {
-            background-color: themed('color.greyLight');
-            border-top-color: themed('color.white');
-        }
-
         @include mq($from: tablet) {
+            border-top: 0;
             display: block;
             height: auto;
             padding-top: 0;
             position: static;
             width: auto;
 
-            @include themify($themes) {
-                background-color: transparent;
-            }
-
-            border-top: 0;
+            background-color: transparent;
         }
     }
 }

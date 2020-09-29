@@ -9,9 +9,7 @@
         margin-bottom: 0;
         padding: $spacing-default;
 
-        @include themify($themes) {
-            background-color: themed('color.greyLight');
-        }
+        background-color: var(--colorGreyLight);
 
         text-align: center;
 

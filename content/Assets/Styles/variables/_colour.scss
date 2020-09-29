@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #COLOURS
+   ========================================================================== */
+
+$color-grey-light: #efefef;
+
+:root {
+    --colorAlertBackground: #dadada;
+    --colorAlertErrorBackground: #e49393;
+    --colorAlertErrorText: #310606;
+    --colorAlertSuccessBackground: #93e493;
+    --colorAlertSuccessText: #093109;
+    --colorBlack: #070f26;
+    --colorCarouselIndicator: #96928f;
+    --colorCarouselIndicatorActive: #fbfbfb;
+    --colorCarouselIndicatorFocus: lighten(#96928f, 15%);
+    --colorError: #e20000;
+    --colorGrey: #ccc;
+    --colorGreyLight: #efefef;
+    --colorPrimary: #3ce854;
+    --colorPrimaryActive: darken(#3ce854, 10%);
+    --colorSecondary: #070f26;
+    --colorSiteBackground: #fff;
+    --colorTextDefault: #070f26;
+    --colorTextLight: #6d6d6d;
+    --colorWhite: #fff;
+}

@@ -8,15 +8,11 @@
 
 .font {
     &--default {
-        @include themify($themes) {
-            font-family: themed('fontFamily.default');
-        }
+        font-family: var(--fontFamilyDefault);
     }
 
     &--heading {
-        @include themify($themes) {
-            font-family: themed('fontFamily.heading');
-        }
+        font-family: var(--fontFamilyHeading);
     }
 }
 
@@ -45,69 +41,49 @@
 
     &--size {
         &-h1 {
-            @include themify($themes) {
-                font-size: themed('fontSize.mobile.h1');
-                line-height: themed('lineHeight.heading');
-            }
+            font-size: --var(fontSizeH1Mobile);
+            line-height: var(--lineHeightHeading);
 
             @include mq($from: desktop) {
-                @include themify($themes) {
-                    font-size: themed('fontSize.mobile.h1');
-                }
+                font-size: --var(fontSizeH1);
             }
         }
 
         &-h2 {
-            @include themify($themes) {
-                font-size: themed('fontSize.mobile.h2');
-                line-height: themed('lineHeight.heading');
-            }
+            font-size: --var(fontSizeH2Mobile);
+            line-height: var(--lineHeightHeading);
 
             @include mq($from: desktop) {
-                @include themify($themes) {
-                    font-size: themed('fontSize.mobile.h2');
-                }
+                font-size: --var(fontSizeH2);
             }
         }
 
         &-h3 {
-            @include themify($themes) {
-                font-size: themed('fontSize.mobile.h3');
-                line-height: themed('lineHeight.heading');
-            }
+            font-size: --var(fontSizeH3Mobile);
+            line-height: var(--lineHeightHeading);
 
             @include mq($from: desktop) {
-                @include themify($themes) {
-                    font-size: themed('fontSize.mobile.h3');
-                }
+                font-size: --var(fontSizeH3);
             }
         }
 
         &-h4 {
-            @include themify($themes) {
-                font-size: themed('fontSize.mobile.h4');
-                line-height: themed('lineHeight.heading');
-            }
+            font-size: --var(fontSizeH4Mobile);
+            line-height: var(--lineHeightHeading);
 
             @include mq($from: desktop) {
-                @include themify($themes) {
-                    font-size: themed('fontSize.h4');
-                }
+                font-size: --var(fontSizeH4);
             }
         }
     }
 
     &--weight {
         &-bold {
-            @include themify($themes) {
-                font-weight: themed('fontWeight.bold');
-            }
+            font-weight: var(--fontWeightBold);
         }
 
         &-normal {
-            @include themify($themes) {
-                font-weight: themed('fontWeight.default');
-            }
+            font-weight: var(--fontWeightDefault);
         }
     }
 }

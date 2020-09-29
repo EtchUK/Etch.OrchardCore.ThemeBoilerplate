@@ -6,33 +6,26 @@
 
 .bg--color {
     &-primary {
-        @include themify($themes) {
-            background-color: themed('color.brandPrimary');
-        }
+        background-color: var(--colorPrimary);
     }
+
     &-secondary {
-        @include themify($themes) {
-            background-color: themed('color.brandSecondary');
-        }
+        background-color: var(--colorSecondary);
     }
+
     &-black {
-        @include themify($themes) {
-            background-color: themed('color.black');
-        }
+        background-color: var(--colorBlack);
     }
+
     &-grey {
-        @include themify($themes) {
-            background-color: themed('color.grey');
-        }
+        background-color: var(--colorGrey);
     }
+
     &-grey-light {
-        @include themify($themes) {
-            background-color: themed('color.greyLight');
-        }
+        background-color: var(--colorGreyLight);
     }
+
     &-white {
-        @include themify($themes) {
-            background-color: themed('color.white');
-        }
+        background-color: var(--colorWhite);
     }
 }

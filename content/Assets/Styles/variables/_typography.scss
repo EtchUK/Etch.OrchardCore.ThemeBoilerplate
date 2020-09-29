@@ -1,0 +1,26 @@
+/* ==========================================================================
+   #TYPOGRAPHY
+   ========================================================================== */
+
+:root {
+    --fontFamilyDefault: 'Work Sans', sans-serif;
+    --fontFamilyHeading: 'Manuale', sans-serif;
+    --fontSizeBase: 1.6rem;
+    --fontSizeHero: calc(var(--fontSizeBase) * 4);
+    --fontSizeHeroMobile: calc(var(--fontSizeBase) * 2.25);
+    --fontSizeH1: calc(var(--fontSizeBase) * 3.75);
+    --fontSizeH1Mobile: calc(var(--fontSizeBase) * 2.25);
+    --fontSizeH2: calc(var(--fontSizeBase) * 3);
+    --fontSizeH2Mobile: calc(var(--fontSizeBase) * 2);
+    --fontSizeH3: calc(var(--fontSizeBase) * 2);
+    --fontSizeH3Mobile: calc(var(--fontSizeBase) * 1.5);
+    --fontSizeH4: calc(var(--fontSizeBase) * 1.5);
+    --fontSizeH2Mobile: calc(var(--fontSizeBase) * 1.125);
+    --fontSizeLarge: calc(var(--fontSizeBase) * 1.125);
+    --fontSizeSmall: calc(var(--fontSizeBase) * 0.875);
+    --fontWeightBold: 700;
+    --fontWeightDefault: 400;
+    --lineHeightDefault: 2.2rem;
+    --lineHeightHeading: 1.2;
+    --lineHeightHero: 1.4;
+}
