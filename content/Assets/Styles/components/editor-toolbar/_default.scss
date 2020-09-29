@@ -10,11 +10,9 @@
     width: 100%;
     z-index: $editor-toolbar-z-index;
 
-    @include themify($themes) {
-        background-color: rgba(themed('color.backgroundDark'), 0.9);
+    background-color: var(--colorBlack);
 
-        color: themed('color.white');
-    }
+    color: var(--colorWhite);
 
     @include mq($from: tablet) {
         bottom: $content-gutter-small;

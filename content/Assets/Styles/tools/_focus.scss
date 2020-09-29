@@ -10,12 +10,6 @@
     $box-shadow-blur: 6px;
     $box-shadow-spread: 1px;
 
-    @include themify($themes) {
-        box-shadow: 0 0 $box-shadow-blur $box-shadow-spread
-            themed('color.brandPrimary');
-    }
-
-    @include themify($themes) {
-        border: $form-border-size solid themed('color.text');
-    }
+    border: $form-border-size solid var(--colorTextDefault);
+    box-shadow: 0 0 $box-shadow-blur $box-shadow-spread var(--colorPrimary);
 }

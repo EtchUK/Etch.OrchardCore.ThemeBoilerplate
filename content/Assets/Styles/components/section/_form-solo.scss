@@ -9,11 +9,9 @@
     padding: 0;
     width: 100%;
 
-    text-align: center;
+    background-color: var(--colorGreyLight);
 
-    @include themify($themes) {
-        background-color: themed('color.greyLight');
-    }
+    text-align: center;
 
     .section__content {
         margin-left: auto;
@@ -27,15 +25,11 @@
     .form {
         padding: $spacing-large;
 
-        @include themify($themes) {
-            background-color: themed('color.white');
-        }
+        background-color: var(--colorWhite);
     }
 
     label {
-        @include themify($themes) {
-            font-size: themed('fontSize.default');
-            line-height: themed('lineHeight.default');
-        }
+        font-size: var(--fontSizeDefault);
+        line-height: var(--lineHeightDefault);
     }
 }

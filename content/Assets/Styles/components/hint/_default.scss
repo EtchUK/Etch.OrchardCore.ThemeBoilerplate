@@ -8,7 +8,5 @@
     display: block;
     margin-bottom: $spacing-default;
 
-    @include themify($themes) {
-        color: themed('color.hint');
-    }
+    color: var(--colorTextLight);
 }

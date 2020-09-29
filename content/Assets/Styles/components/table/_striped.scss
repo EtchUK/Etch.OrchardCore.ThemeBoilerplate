@@ -7,23 +7,17 @@
         tr {
             &:nth-child(odd) {
                 @include mq($from: tablet) {
-                    @include themify($themes) {
-                        background-color: themed('color.tableRowLight');
-                    }
+                    background-color: var(--colorGreyLight);
                 }
             }
         }
 
         td {
             &:nth-child(even) {
-                @include themify($themes) {
-                    background-color: themed('color.tableRowLight');
-                }
+                background-color: var(--colorGreyLight);
 
                 @include mq($from: tablet) {
-                    @include themify($themes) {
-                        background-color: transparent;
-                    }
+                    background-color: transparent;
                 }
             }
         }

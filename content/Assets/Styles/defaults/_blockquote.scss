@@ -9,11 +9,7 @@ blockquote {
     position: relative;
 
     p {
-        @include text-heading('blockquote');
-
-        @include themify($themes) {
-            line-height: themed('lineHeight.heading');
-        }
+        @include text-heading('H4');
 
         hanging-punctuation: first;
         text-indent: $blockquote-paragraph-text-indent;
@@ -27,20 +23,15 @@ blockquote {
         display: block;
         padding-top: $content-gutter;
 
-        @include themify($themes) {
-            color: themed('color.hint');
-        }
-
+        color: var(--colorTextLight);
         font-style: normal;
 
         strong {
             display: block;
             margin-bottom: $blockquote-cite-strong-margin-bottom;
 
-            @include themify($themes) {
-                color: themed('color.text');
-                font-size: themed('fontSize.large');
-            }
+            color: var(--colorTextDefault);
+            font-size: var(--fontSizeLarge);
         }
     }
 }

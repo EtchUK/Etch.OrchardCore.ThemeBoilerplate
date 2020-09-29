@@ -7,7 +7,5 @@
  */
 
 ::selection {
-    @include themify($themes) {
-        background-color: themed('color.selection');
-    }
+    background-color: var(--colorPrimary);
 }

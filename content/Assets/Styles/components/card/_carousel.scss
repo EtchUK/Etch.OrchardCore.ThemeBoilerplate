@@ -8,9 +8,7 @@
 
     overflow: hidden;
 
-    @include themify($themes) {
-        color: themed('color.white');
-    }
+    color: var(--colorWhite);
 
     @include mq($from: tablet) {
         grid-template-columns: repeat(6, 1fr);

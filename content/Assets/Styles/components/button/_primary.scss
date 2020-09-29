@@ -5,9 +5,9 @@
 .btn--primary,
 .btn--primary:link,
 .btn--primary:visited {
-    @include themify($themes) {
-        background-color: themed('color.brandPrimary');
-        border: $button-border-size solid themed('color.brandPrimary');
-        color: themed('color.white');
-    }
+    border: $button-border-size solid var(--colorPrimary);
+
+    background-color: var(--colorPrimary);
+
+    color: var(--colorWhite);
 }

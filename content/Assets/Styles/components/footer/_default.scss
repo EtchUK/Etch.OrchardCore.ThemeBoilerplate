@@ -44,15 +44,12 @@
 
     nav,
     &__nav {
+        border-top: 0;
         margin-bottom: $content-gutter;
         width: 100%;
         z-index: $z-index-default;
 
-        @include themify($themes) {
-            background-color: transparent;
-        }
-
-        border-top: 0;
+        background-color: transparent;
 
         @include mq($from: tablet) {
             margin-bottom: 0;

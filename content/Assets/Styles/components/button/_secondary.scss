@@ -5,9 +5,8 @@
 .btn--secondary,
 .btn--secondary:link,
 .btn--secondary:visited {
-    @include themify($themes) {
-        background-color: themed('color.brandSecondary');
-        border: $button-border-size solid themed('color.brandSecondary');
-        color: themed('color.white');
-    }
+    background-color: var(--colorSecondary);
+    border: $button-border-size solid var(--colorSecondary);
+
+    color: var(--colorWhite);
 }

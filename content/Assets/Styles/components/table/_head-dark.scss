@@ -5,10 +5,9 @@
 .table--head-dark {
     thead {
         tr {
-            @include themify($themes) {
-                background-color: themed('color.tableRowDark');
-                color: themed('color.white');
-            }
+            background-color: var(--colorBlack);
+
+            color: var(--colorWhite);
         }
     }
 }

@@ -5,24 +5,22 @@
 .btn,
 .btn:link,
 .btn:visited {
+    border: $button-border-size solid var(--colorPrimary);
     display: inline-block;
     padding: $button-padding-vertical $button-padding-horizontal;
 
-    @include themify($themes) {
-        background-color: themed('color.brandPrimary');
-        border: $button-border-size solid themed('color.brandPrimary');
-        color: themed('color.white');
-    }
+    background-color: var(--colorPrimary);
+    outline: none;
+
+    color: var(--colorWhite);
+    text-decoration: none;
 
     cursor: pointer;
-    text-decoration: none;
-    outline: none;
 }
 
 .btn:disabled {
-    @include themify($themes) {
-        background-color: themed('color.buttonDisabled');
-        border: $button-border-size solid themed('color.buttonDisabled');
-        color: themed('color.text');
-    }
+    background-color: var(--colorbuttonDisabled);
+    border: $button-border-size solid var(--colorbuttonDisabled);
+
+    color: var(--colorTextDefault);
 }

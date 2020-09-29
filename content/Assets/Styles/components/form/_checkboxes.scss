@@ -16,18 +16,16 @@
         margin-bottom: 0;
         padding-left: $form-checkbox-label-padding-left;
 
+        font-family: var(--fontFamilyDefault);
+        font-size: var(--fontSizeDefault);
+        font-weight: var(--fontWeightDefault);
+
         cursor: pointer;
         touch-action: manipulation;
 
-        @include themify($themes) {
-            font-family: themed('fontFamily.default');
-            font-size: themed('fontSize.default');
-            font-weight: themed('fontWeight.default');
-        }
-
         &:before {
+            border: $form-border-size solid var(--colorTextLight);
             box-sizing: border-box;
-            content: '';
             height: $form-checkbox-height;
             left: 0;
             position: absolute;
@@ -36,13 +34,10 @@
 
             background: transparent;
 
-            @include themify($themes) {
-                border: $form-border-size solid themed('color.hint');
-            }
+            content: '';
         }
 
         &:after {
-            content: '';
             height: $form-checkbox-label-after-height;
             left: $form-checkbox-label-after-x-pos;
             position: absolute;
@@ -55,6 +50,8 @@
             border-top-color: transparent;
             transform: rotate(-45deg);
             opacity: 0;
+
+            content: '';
         }
     }
 
@@ -77,9 +74,7 @@
 
         /* Change checkbox border colour when checked */
         &:checked + .checkboxes__label:before {
-            @include themify($themes) {
-                border-color: themed('color.text');
-            }
+            border-color: var(--colorTextDefault);
         }
 
         /* Show focus colour */

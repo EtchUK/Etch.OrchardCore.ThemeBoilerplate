@@ -4,8 +4,6 @@
 
 .input {
     &--underlined {
-        @include themify($themes) {
-            border-bottom: $form-border-size solid themed('color.text');
-        }
+        border-bottom: $form-border-size solid var(--colorTextDefault);
     }
 }

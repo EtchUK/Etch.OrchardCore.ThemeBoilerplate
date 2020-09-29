@@ -21,15 +21,10 @@
 }
 
 .nav__item {
-    @include themify($themes) {
-        border-bottom: $nav-border-width solid
-            darken(themed('color.greyLight'), 5%);
-    }
+    border-bottom: $nav-border-width solid var(--colorGrey);
 
     @include mq($from: tablet) {
-        @include themify($themes) {
-            border-bottom: 0;
-        }
+        border-bottom: 0;
     }
 
     &:last-child {
@@ -41,10 +36,7 @@
         padding-bottom: $nav-anchor-padding-bottom;
         padding-top: $nav-anchor-padding-top;
 
-        @include themify($themes) {
-            color: themed('color.black');
-        }
-
+        color: var(--colorBlack);
         text-decoration: none;
 
         @include mq($from: tablet) {
@@ -52,9 +44,7 @@
         }
 
         &.is-current-page {
-            @include themify($themes) {
-                color: themed('color.brandPrimary');
-            }
+            color: var(--colorPrimary);
         }
     }
 }
@@ -83,16 +73,12 @@
 .nav__sub {
     display: none;
 
-    @include themify($themes) {
-        background-color: darken(themed('color.greyLight'), 5%);
-    }
+    background-color: var(--colorGrey);
 
     @include mq($from: tablet) {
         position: absolute;
 
-        @include themify($themes) {
-            background-color: themed('color.white');
-        }
+        background-color: var(--colorWhite);
     }
 
     a {

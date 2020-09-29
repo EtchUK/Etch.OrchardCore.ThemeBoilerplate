@@ -6,9 +6,7 @@
     .card {
         &__body {
             a {
-                @include themify($themes) {
-                    color: themed('color.text');
-                }
+                color: var(--colorTextDefault);
                 text-decoration: none;
             }
         }

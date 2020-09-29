@@ -6,9 +6,6 @@
     border-bottom: 0;
 
     color: inherit;
+    font-weight: var(--fontWeightDefault);
     text-decoration: none;
-
-    @include themify($themes) {
-        font-weight: themed('fontWeight.default');
-    }
 }

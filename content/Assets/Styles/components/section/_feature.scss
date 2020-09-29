@@ -13,9 +13,7 @@
         position: absolute;
         z-index: $z-index-default;
 
-        @include themify($themes) {
-            color: themed('color.white');
-        }
+        color: var(--colorWhite);
 
         p {
             margin-bottom: $content-gutter;
@@ -24,7 +22,7 @@
 
     .section__title,
     h2 {
-        @include text-heading('h1');
+        @include text-heading('H1');
         margin-bottom: $content-gutter-small;
     }
 

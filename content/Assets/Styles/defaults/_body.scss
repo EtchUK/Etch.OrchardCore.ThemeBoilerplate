@@ -14,12 +14,10 @@
  *    https://code.google.com/p/chromium/issues/detail?id=320754
  */
 body {
-    @include themify($themes) {
-        background-color: themed('color.bodyBackground');
+    background-color: var(--colorSiteBackground);
 
-        color: themed('color.text');
-        font-family: themed('fontFamily.default');
-        font-size: themed('fontSize.defaultEM'); /* 1. */
-        line-height: themed('lineHeight.default');
-    }
+    color: var(--colorTextDefault);
+    font-family: var(--fontFamilyDefault);
+    font-size: 1.6em; /* 1. */
+    line-height: var(--lineHeightDefault);
 }

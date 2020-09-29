@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="theme-default no-js" lang="{{ Culture.Name }}">
+<html class="no-js" lang="{{ Culture.Name }}">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +18,9 @@
 		{% style src:"/Etch.OrchardCore.ThemeBoilerplate/css/styles.css", append_version:"true" %}
 		{% script src:"/Etch.OrchardCore.ThemeBoilerplate/js/scripts.js", append_version:"true", async: "true" %}
 
-        {% resources type: "HeadScript" %}
         {% resources type: "HeadLink" %}
         {% resources type: "Stylesheet" %}
+        {% resources type: "HeadScript" %}
     </head>
     <body>
         {% render_section "Header", required: false %}

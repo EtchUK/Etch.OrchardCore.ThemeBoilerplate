@@ -16,17 +16,17 @@ h6 {
 }
 
 h1 {
-    @include text-heading('h1');
+    @include text-heading('H1');
 }
 
 h2 {
-    @include text-heading('h2');
+    @include text-heading('H2');
 }
 
 h3 {
-    @include text-heading('h3');
+    @include text-heading('H3');
 }
 
 h4 {
-    @include text-heading('h4');
+    @include text-heading('H4');
 }

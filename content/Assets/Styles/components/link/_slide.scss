@@ -32,11 +32,9 @@
             position: absolute;
             width: 100%;
 
-            @include themify($themes) {
-                background-color: themed('color.brandPrimary');
-            }
-
+            background-color: var(--colorPrimary);
             opacity: 0;
+
             transition: opacity $link-transition-duration,
                 transform $link-transition-duration;
         }

@@ -3,17 +3,14 @@
    ========================================================================== */
 
 textarea {
+    border: $form-border-size solid var(--colorTextLight);
     display: block;
     min-height: $textarea-min-height;
     padding: $form-element-padding-vertical $form-element-padding-horizontal;
     width: 100%;
 
-    @include themify($themes) {
-        border: $form-border-size solid themed('color.hint');
-
-        .has-error & {
-            border: $form-border-size solid themed('color.validationError');
-        }
+    .has-error & {
+        border: $form-border-size solid var(--colorError);
     }
 
     &:focus {

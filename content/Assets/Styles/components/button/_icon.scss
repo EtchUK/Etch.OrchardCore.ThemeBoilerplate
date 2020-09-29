@@ -3,10 +3,8 @@
     ========================================================================== */
 
 .btn--icon {
-    @include themify($themes) {
-        background-color: transparent;
-        border: 0;
-    }
-
+    border: 0;
     padding: 0;
+
+    background-color: transparent;
 }

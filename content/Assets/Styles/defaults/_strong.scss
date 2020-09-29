@@ -9,7 +9,5 @@
 
 b,
 strong {
-    @include themify($themes) {
-        font-weight: themed('fontWeight.bold');
-    }
+    font-weight: var(--fontWeightBold);
 }
