@@ -1,6 +1,6 @@
 {
     "name": "etch.orchardcore.themeboilerplate",
-    "version": "0.5.1-rc1",
+    "version": "0.6.0-rc2",
     "description": "Theme boilerplate is our starting point for building Orchard Core themes.",
     "author": "Etch UK",
     "scripts": {

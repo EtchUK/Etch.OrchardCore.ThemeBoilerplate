@@ -28,14 +28,13 @@ When developing on the theme it's likely you're be working with HTML and static 
 
     npm run start
 
-
 ### Compiling Front-end Assets
 
 When developing, it's likely you'll be working with front-end assets (located in `/Assets`) that need to be compiled in to files that are referenced by the theme (in `Views/Layout.cshtml`). The command shown below will compile CSS & JavaScript assets via Webpack and keep watch of files that will trigger compilation.
 
     npm run bundle:watch
 
-*Hint: Running `npm start` will run the command above after running `npm install`.*
+_Hint: Running `npm start` will run the command above after running `npm install`._
 
 When the theme is deployed to a production environment we need to serve compressed assets for optimial delivery to improve page load times. The command below will compile assets ready for optimal delivery. This command ia automatically run when the project is compiled with `--configuration Release`.
 
@@ -47,7 +46,7 @@ To spin up a web server (seperate from an Orchard Core site) that'll provide acc
 
     npm run start:patterns
 
-*Hint: Running `npm start` will run the command above after running `npm install`.*
+_Hint: Running `npm start` will run the command above after running `npm install`._
 
 ### Packaging
 
@@ -55,4 +54,4 @@ When the theme is compiled (using `dotnet build`) it's configured to generate a 
 
 ## Notes
 
-This theme was created using `v0.5.1` of [Etch.OrchardCore.ThemeBoilerplate](https://github.com/EtchUK/Etch.OrchardCore.ThemeBoilerplate) template.
+This theme was created using `v0.6.0` of [Etch.OrchardCore.ThemeBoilerplate](https://github.com/EtchUK/Etch.OrchardCore.ThemeBoilerplate) template.
