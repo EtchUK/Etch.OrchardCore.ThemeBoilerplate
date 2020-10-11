@@ -4,7 +4,7 @@
     "description": "Sets up basic site with boilerplate theme",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "issetuprecipe": true,
     "categories": ["basic"],
     "tags": ["basic"],
