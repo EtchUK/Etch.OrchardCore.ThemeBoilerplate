@@ -13,17 +13,11 @@
 }
 
 @mixin text-heading($size) {
-    margin-bottom: $spacing-text-default;
-
     font-family: var(--fontFamilyHeading);
     font-style: normal;
     font-size: var(--fontSize#{$size}Mobile);
     font-weight: var(--fontWeightBold);
     line-height: var(--lineHeightHeading);
-
-    @include mq($from: mobileLarge) {
-        margin-bottom: $spacing-text-desktop;
-    }
 
     @include mq($from: desktop) {
         font-size: var(--fontSize#{$size});
