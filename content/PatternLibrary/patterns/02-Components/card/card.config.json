@@ -32,7 +32,7 @@
             }
         },
         {
-            "name": "news post",
+            "name": "news",
             "context": {
                 "cardModifier": "card--news",
                 "cardTitle": "News item",
@@ -45,7 +45,7 @@
         {
             "name": "Job",
             "context": {
-                "cardModifier": "card--equal-height",
+                "cardModifier": "card--job card--equal-height",
                 "cardTitle": "Senior character artist",
                 "cardMedia": "",
                 "cardMeta": "",
@@ -56,7 +56,7 @@
         {
             "name": "Job with salary",
             "context": {
-                "cardModifier": "card--equal-height",
+                "cardModifier": "card--job card--equal-height",
                 "cardTitle": "Senior character artist",
                 "cardMedia": "",
                 "cardMeta": "<span class=\"card__meta\">£29,000 per annum</span>",
