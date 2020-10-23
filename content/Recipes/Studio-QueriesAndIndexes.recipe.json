@@ -4,10 +4,14 @@
     "description": "Configures queries & indexes for studio site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "0.6.2",
+    "version": "0.6.3",
     "issetuprecipe": false,
-    "categories": ["studio"],
-    "tags": ["studio"],
+    "categories": [
+        "studio"
+    ],
+    "tags": [
+        "studio"
+    ],
     "steps": [
         {
             "name": "Queries",
@@ -37,7 +41,9 @@
                     "News": {
                         "AnalyzerName": "standardanalyzer",
                         "IndexLatest": false,
-                        "IndexedContentTypes": ["NewsPost"],
+                        "IndexedContentTypes": [
+                            "NewsPost"
+                        ],
                         "Culture": "any"
                     }
                 },
@@ -45,7 +51,11 @@
                     "ContentItems": {
                         "AnalyzerName": "standardanalyzer",
                         "IndexLatest": false,
-                        "IndexedContentTypes": ["Job", "NewsPost", "Page"],
+                        "IndexedContentTypes": [
+                            "Job",
+                            "NewsPost",
+                            "Page"
+                        ],
                         "Culture": "any"
                     }
                 }

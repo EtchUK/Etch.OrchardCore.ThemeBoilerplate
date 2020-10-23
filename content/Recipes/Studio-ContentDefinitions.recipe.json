@@ -4,10 +4,14 @@
     "description": "Configures content definitions for studio site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "0.6.2",
+    "version": "0.6.3",
     "issetuprecipe": false,
-    "categories": ["studio"],
-    "tags": ["studio"],
+    "categories": [
+        "studio"
+    ],
+    "tags": [
+        "studio"
+    ],
     "steps": [
         {
             "name": "ContentDefinition",
@@ -914,7 +918,9 @@
                                     "Position": "2"
                                 },
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": ["CarouselItem"]
+                                    "ContainedContentTypes": [
+                                        "CarouselItem"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1905,7 +1911,9 @@
                                 "ContentPickerFieldSettings": {
                                     "Hint": "Select other news items that will be displayed after content.",
                                     "Multiple": true,
-                                    "DisplayedContentTypes": ["NewsPost"]
+                                    "DisplayedContentTypes": [
+                                        "NewsPost"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -2648,7 +2656,9 @@
                                 },
                                 "ContentPickerFieldSettings": {
                                     "Hint": "Main menu used by users to navigate the main sections of the site.",
-                                    "DisplayedContentTypes": ["Menu"]
+                                    "DisplayedContentTypes": [
+                                        "Menu"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -2817,7 +2827,10 @@
                                     "Editor": "EditorJS"
                                 },
                                 "BlockFieldSettings": {
-                                    "LinkableContentTypes": ["Homepage", "Page"]
+                                    "LinkableContentTypes": [
+                                        "Homepage",
+                                        "Page"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -2857,7 +2870,9 @@
                                     "Position": "3"
                                 },
                                 "ContentPickerFieldSettings": {
-                                    "DisplayedContentTypes": ["Menu"]
+                                    "DisplayedContentTypes": [
+                                        "Menu"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }

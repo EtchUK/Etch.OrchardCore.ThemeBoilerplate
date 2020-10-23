@@ -4,6 +4,6 @@ using OrchardCore.DisplayManagement.Manifest;
     Name = "Boilerplate Theme",
     Author = "Etch UK",
     Website = "https://etchuk.com",
-    Version = "0.6.2-rc2",
+    Version = "0.6.3-rc2",
     Description = "Theme boilerplate is our starting point for building Orchard Core themes."
 )]

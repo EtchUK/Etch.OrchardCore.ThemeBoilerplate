@@ -2,7 +2,12 @@ resources:
   - repo: self
 
 trigger:
-  - master
+  tags:
+    include:
+      - "*"
+  branches:
+    include:
+      - master
 
 variables:
   buildConfiguration: "Release"

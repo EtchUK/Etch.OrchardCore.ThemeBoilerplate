@@ -4,16 +4,23 @@
     "description": "Configures features & settings for basic site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "0.6.2",
+    "version": "0.6.3",
     "issetuprecipe": false,
-    "categories": ["basic"],
-    "tags": ["basic"],
+    "categories": [
+        "basic"
+    ],
+    "tags": [
+        "basic"
+    ],
     "steps": [
         {
             "name": "Settings",
             "HomeRoute": {},
             "LayerSettings": {
-                "Zones": ["Header", "Footer"]
+                "Zones": [
+                    "Header",
+                    "Footer"
+                ]
             },
             "LoginSettings": {
                 "UseSiteTheme": true
@@ -139,17 +146,23 @@
                 {
                     "Name": "Authenticated",
                     "Description": "Authenticated role",
-                    "Permissions": ["ViewContent"]
+                    "Permissions": [
+                        "ViewContent"
+                    ]
                 },
                 {
                     "Name": "Anonymous",
                     "Description": "Anonymous role",
-                    "Permissions": ["ViewContent"]
+                    "Permissions": [
+                        "ViewContent"
+                    ]
                 },
                 {
                     "Name": "Moderator",
                     "Description": "Moderator role",
-                    "Permissions": ["AccessAdminPanel"]
+                    "Permissions": [
+                        "AccessAdminPanel"
+                    ]
                 },
                 {
                     "Name": "Author",
