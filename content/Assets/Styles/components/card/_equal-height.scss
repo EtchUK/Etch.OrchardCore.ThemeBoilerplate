@@ -1,14 +1,15 @@
 /* ==========================================================================
-   #CARD/NEWS
+   #CARD/EQUAL HEIGHT
    ========================================================================== */
 
-.card--news {
+.card--equal-height {
+    height: 100%;
+
     .card {
         &__body {
-            a {
-                color: var(--colorTextDefault);
-                text-decoration: none;
-            }
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
     }
 }

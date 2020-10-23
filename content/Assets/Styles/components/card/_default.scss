@@ -3,11 +3,37 @@
    ========================================================================== */
 
 .card {
+    border: 1px solid var(--colorGrey);
+    display: block;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 
+    background-color: var(--colorWhite);
+
+    color: var(--colorTextDefault);
+    text-decoration: none;
+
+    &__media {
+        &-image {
+            min-width: 100%;
+        }
+    }
+
     &__body {
-        padding-top: $content-gutter-small;
+        padding: $card-padding;
+    }
+
+    &__header {
+        margin-bottom: $spacing-text-default;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__meta {
+        display: block;
+        font-weight: 700;
     }
 }

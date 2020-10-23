@@ -1,10 +1,20 @@
-<div class="card {{ cardModifier }}">
-    <picture>
-        {{{ cardMedia }}}
-    </picture>
-    <div class="card__body">
-        {{{ cardTitle }}}
-        {{{ cardMeta }}}
-        {{{ cardBody }}}
-    </div>
+{{#if cardURL}}
+<a href="{{{ cardURL }}}" class="card {{ cardModifier }}">
+    {{else}}
+    <div class="card {{ cardModifier }}">
+        {{/if}}
+        <div class="card__media">
+            {{{ cardMedia }}}
+        </div>
+        <div class="card__body">
+            <header class="card__header">
+                <h3 class="card__title">{{{ cardTitle }}}</h3>
+                {{{ cardMeta }}}
+            </header>
+            {{{ cardBody }}}
+        </div>
+        {{#if cardURL}}
+</a>
+{{else}}
 </div>
+{{/if}}

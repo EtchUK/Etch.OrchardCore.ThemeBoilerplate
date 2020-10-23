@@ -1,19 +1,68 @@
 {
-  "title": "Card",
-  "context": {
-    "cardModifier": "",
-    "cardMedia": "<img src=\"/content/PatternLibrary/unsplash-1444090542259-1024w.jpg\" alt=\"A description of the image\" />",
-    "cardBody": "<h3>Card heading</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed orci eget dui hendrerit rhoncus ut ut purus. Aenean sodales libero vitae enim vestibulum maximus.</p><p><a class=\"btn btn--secondary link--breakout\" href=\"#\">Learn more</a></p>"
-  },
-  "variants": [
-    {
-      "name": "news",
-      "context": {
-        "cardModifier": "card--news",
-        "cardTitle": "<a class=\"link--breakout\" href=\"/components/preview/article\"><h3 class=\"margin--bottom-small\">Card heading</h3></a>",
-        "cardMeta": "<p class=\"margin--bottom display--block\">15/10/2019</p>",
-        "cardBody": ""
-      }
-    }
-  ]
+    "title": "Card",
+    "context": {
+        "cardModifier": "",
+        "cardTitle": "Card title",
+        "cardMedia": "<img class=\"card__media-image\" src=\"/content/PatternLibrary/unsplash-1444090542259-1024w.jpg\" alt=\"A description of the image\" />",
+        "cardMeta": "",
+        "cardBody": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed orci eget dui hendrerit rhoncus ut ut purus. Aenean sodales libero vitae enim vestibulum maximus.</p>",
+        "cardURL": "/components/preview/article"
+    },
+    "variants": [
+        {
+            "name": "No link",
+            "context": {
+                "cardModifier": "",
+                "cardTitle": "Card title",
+                "cardMedia": "<img class=\"card__media-image\" src=\"/content/PatternLibrary/unsplash-1444090542259-1024w.jpg\" alt=\"A description of the image\" />",
+                "cardMeta": "",
+                "cardBody": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed orci eget dui hendrerit rhoncus ut ut purus. Aenean sodales libero vitae enim vestibulum maximus.</p>",
+                "cardURL": ""
+            }
+        },
+        {
+            "name": "No image",
+            "context": {
+                "cardModifier": "",
+                "cardTitle": "Card title",
+                "cardMedia": "",
+                "cardMeta": "",
+                "cardBody": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed orci eget dui hendrerit rhoncus ut ut purus. Aenean sodales libero vitae enim vestibulum maximus.</p>",
+                "cardURL": "/components/preview/article"
+            }
+        },
+        {
+            "name": "news",
+            "context": {
+                "cardModifier": "card--news",
+                "cardTitle": "News item",
+                "cardMedia": "<img class=\"card__media-image\" src=\"/content/PatternLibrary/unsplash-1444090542259-1024w.jpg\" alt=\"A description of the image\" />",
+                "cardMeta": "<span class=\"card__meta\">29.09.2020</span>",
+                "cardBody": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed orci eget dui hendrerit rhoncus ut ut purus. Aenean sodales libero vitae enim vestibulum maximus.</p>",
+                "cardURL": "/components/preview/article"
+            }
+        },
+        {
+            "name": "Job",
+            "context": {
+                "cardModifier": "card--job card--equal-height",
+                "cardTitle": "Senior character artist",
+                "cardMedia": "",
+                "cardMeta": "",
+                "cardBody": "<p>Permanent / 6 Months Fixed-Term</p>",
+                "cardURL": ""
+            }
+        },
+        {
+            "name": "Job with salary",
+            "context": {
+                "cardModifier": "card--job card--equal-height",
+                "cardTitle": "Senior character artist",
+                "cardMedia": "",
+                "cardMeta": "<span class=\"card__meta\">£29,000 per annum</span>",
+                "cardBody": "<p>Permanent</p>",
+                "cardURL": ""
+            }
+        }
+    ]
 }

@@ -3,9 +3,11 @@
 <div class="grid grid--gutter-small align--wide color--default">
 	{% for item in jobs %}
     <div class="grid__item">
-		<div class="card card--job">
+		<div class="card card--equal-height">
             <div class="card__body text--align-left">
-                <h3>{{ item | display_text }}</h3>
+                <header class="card__header">
+                    <h3 class="card__title">{{ item | display_text }}</h3>
+                </header>
                 <p>{{ item.Content.Job.Length.Text }}</p>
             </div>
         </div>
