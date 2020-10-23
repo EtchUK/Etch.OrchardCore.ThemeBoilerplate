@@ -15,6 +15,10 @@
         position: relative;
         right: 50%;
         width: 100vw;
+
+        .flow {
+            max-width: none;
+        }
     }
 
     .constrain--wide & {
