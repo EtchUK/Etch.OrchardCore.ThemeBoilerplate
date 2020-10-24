@@ -15,11 +15,25 @@ variables:
 stages:
   - stage: build
     displayName: Build
+    variables:
+      - group: "Global"
     jobs:
       - job: Build
         pool:
           vmImage: "windows-latest"
         steps:
+          - task: SonarCloudPrepare@1
+            displayName: "Prepare SonarCloud Analysis"
+            inputs:
+              SonarCloud: "SC"
+              organization: "$(SC_ORGANIZATION)"
+              scannerMode: "MSBuild"
+              projectKey: "Etch.OrchardCore.ThemeBoilerplate"
+              projectName: "Etch.OrchardCore.ThemeBoilerplate"
+
+          - task: SonarCloudAnalyze@1
+            displayName: "Run SonarCloud Analysis"
+
           - task: NuGetCommand@2
             displayName: "NuGet pack"
             inputs:
@@ -31,6 +45,9 @@ stages:
             inputs:
               targetPath: "$(Build.ArtifactStagingDirectory)"
               artifact: drop
+
+          - task: SonarCloudPublish@1
+            displayName: "Publish SonarCloud Results"
 
   - stage: publish
     displayName: NuGet Publish
