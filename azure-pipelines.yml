@@ -29,7 +29,7 @@ stages:
           - task: PublishPipelineArtifact@1
             displayName: "Publish Pipeline Artifact"
             inputs:
-              targetPath: "$(Build.ArtifactStagingDirectory)"
+              targetPath: "$(Pipeline.Workspace)"
               artifact: drop
 
   - stage: publish
@@ -41,6 +41,10 @@ stages:
         pool:
           vmImage: "windows-latest"
         steps:
+          - task: DownloadPipelineArtifact@2
+            inputs:
+              source: "current"
+              path: "$(Pipeline.Workspace)"
           - task: NuGetCommand@2
             displayName: "NuGet push"
             inputs:
