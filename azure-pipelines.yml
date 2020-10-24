@@ -49,6 +49,6 @@ stages:
             displayName: "NuGet push"
             inputs:
               command: push
-              packagesToPush: "$(Pipeline.Workspace)/drop/Etch.OrchardCore.ThemeBoilerplate.*.nupkg"
+              packagesToPush: "$(Pipeline.Workspace)/**/drop/*.nupkg"
               nuGetFeedType: external
               publishFeedCredentials: "NuGet"
