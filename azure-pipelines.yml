@@ -44,6 +44,6 @@ stages:
             displayName: "NuGet push"
             inputs:
               command: push
-              packagesToPush: "$(System.DefaultWorkingDirectory)/_Etch.OrchardCore.ThemeBoilerplate/drop/Etch.OrchardCore.ThemeBoilerplate.*.nupkg"
+              packagesToPush: "$(Build.ArtifactStagingDirectory)/drop/Etch.OrchardCore.ThemeBoilerplate.*.nupkg"
               nuGetFeedType: external
               publishFeedCredentials: "NuGet"
