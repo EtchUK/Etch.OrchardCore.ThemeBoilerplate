@@ -34,7 +34,7 @@ stages:
           - task: DotNetCoreCLI@2
             displayName: "Build theme"
             inputs:
-              workingDirectory: $(System.DefaultWorkingDirectory)/Etch.OrchardCore.ThemeBoilerplate
+              workingDirectory: $(System.DefaultWorkingDirectory)/content
               arguments: "-c $(BuildConfiguration)"
 
           - task: SonarCloudAnalyze@1
