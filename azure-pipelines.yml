@@ -29,7 +29,7 @@ stages:
           - task: PublishPipelineArtifact@1
             displayName: "Publish Pipeline Artifact"
             inputs:
-              targetPath: "$(Pipeline.Workspace)"
+              targetPath: "$(Build.ArtifactStagingDirectory)"
               artifact: drop
 
   - stage: publish
