@@ -9,6 +9,7 @@
     <Authors>Etch UK</Authors>
     <Description>Theme boilerplate is our starting point for building Orchard Core themes.</Description>
     <PackageTags>orchardcore</PackageTags>
+    <ProjectGuid>31632857-bfa1-4fed-80d2-a60e93531f49</ProjectGuid>
   </PropertyGroup>
 
   <ItemGroup>
