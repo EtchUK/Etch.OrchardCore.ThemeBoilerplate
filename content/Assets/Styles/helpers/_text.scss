@@ -45,39 +45,23 @@
 
     &--size {
         &-h1 {
-            font-size: var(--fontSizeH1Mobile);
+            font-size: --var(fontSizeH1);
             line-height: var(--lineHeightHeading);
-
-            @include mq($from: desktop) {
-                font-size: var(--fontSizeH1);
-            }
         }
 
         &-h2 {
-            font-size: var(--fontSizeH2Mobile);
+            font-size: --var(fontSizeH2);
             line-height: var(--lineHeightHeading);
-
-            @include mq($from: desktop) {
-                font-size: var(--fontSizeH2);
-            }
         }
 
         &-h3 {
-            font-size: var(--fontSizeH3Mobile);
+            font-size: --var(fontSizeH3);
             line-height: var(--lineHeightHeading);
-
-            @include mq($from: desktop) {
-                font-size: var(--fontSizeH3);
-            }
         }
 
         &-h4 {
-            font-size: var(--fontSizeH4Mobile);
+            font-size: --var(fontSizeH4);
             line-height: var(--lineHeightHeading);
-
-            @include mq($from: desktop) {
-                font-size: var(--fontSizeH4);
-            }
         }
     }
 
