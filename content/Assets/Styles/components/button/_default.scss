@@ -8,6 +8,7 @@
     border: $button-border-size solid var(--colorPrimary);
     display: inline-block;
     padding: $button-padding-vertical $button-padding-horizontal;
+    vertical-align: middle;
 
     background-color: var(--colorPrimary);
     outline: none;
