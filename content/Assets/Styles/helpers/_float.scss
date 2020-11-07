@@ -37,6 +37,7 @@
             max-width: $content-float-aligned-width;
         }
     }
+
     &--right-content-tablet {
         @include mq($from: tablet) {
             float: right;
