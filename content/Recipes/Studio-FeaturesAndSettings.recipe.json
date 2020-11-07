@@ -175,9 +175,7 @@
                 {
                     "Name": "Anonymous",
                     "Description": "Anonymous role",
-                    "Permissions": [
-                        "ViewContent"
-                    ]
+                    "Permissions": []
                 },
                 {
                     "Name": "Moderator",
