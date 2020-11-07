@@ -95,6 +95,7 @@
                 "OrchardCore.Title",
                 "Etch.OrchardCore.SEO.MetaTags",
                 "OrchardCore.Html",
+                "Etch.OrchardCore.SEO.RobotsTxt",
                 "Etch.OrchardCore.Widgets",
                 "OrchardCore.Scripting",
                 "OrchardCore.Workflows",
@@ -160,6 +161,10 @@
             },
             "ResetPasswordSettings": {
                 "UseSiteTheme": true
+            },
+            "RobotsTxtSettings": {
+                "CustomContent": "",
+                "Mode": 2
             }
         },
         {
