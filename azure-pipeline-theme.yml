@@ -30,7 +30,7 @@ stages:
           - task: CmdLine@2
             displayName: "Create new theme via template"
             inputs:
-              script: 'dotnet new orchardcore-themeboilerplate -n Etch.OrchardCore.DefaultTheme -o "$(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme" -au "Etch UK Ltd." -d "Default boilerplate theme." -t "Default Theme" -w "https://etchuk.com" -v "0.6.3-rc2"'
+              script: 'dotnet new orchardcore-themeboilerplate -n Etch.OrchardCore.DefaultTheme -o "$(Build.ArtifactStagingDirectory)/Etch.OrchardCore.DefaultTheme" -au "Etch UK Ltd." -d "Default boilerplate theme." -t "Default Theme" -w "https://etchuk.com" -v "0.6.4-rc2"'
 
           - task: CmdLine@2
             displayName: "Compile front-end assets"
