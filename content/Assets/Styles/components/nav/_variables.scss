@@ -16,3 +16,9 @@ $nav-chevron-height: 0.6rem;
 $nav-chevron-margin-bottom: 0.4rem;
 $nav-chevron-margin-left: 0.5rem;
 $nav-chevron-width: 1rem;
+
+:root {
+    --navColor: var(--colorBlack);
+    --navColorActive: var(--colorPrimary);
+    --navTextDecorationHover: none;
+}
