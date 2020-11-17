@@ -25,3 +25,16 @@ $card-picture-transition: all 0.5s ease-in-out;
 
 $card-picture-carousel-intro-blur: 5px;
 $card-picture-carousel-intro-duration: 2s;
+
+:root {
+    --cardBackground: var(--colorWhite);
+    --cardBorder: var(--colorGrey);
+    --cardBodyPadding: $card-padding;
+    --cardMediaBorder: none;
+    --cardMediaMarginBottom: 0;
+    --cardMetaColor: var(--colorTextDefault);
+    --cardMetaWeight: 700;
+    --cardTextColor: var(--colorTextDefault);
+    --cardTitleColor: var(--colorTextDefault);
+    --cardTitleMarginBottom: 0;
+}

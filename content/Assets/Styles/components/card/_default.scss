@@ -3,25 +3,28 @@
    ========================================================================== */
 
 .card {
-    border: 1px solid var(--colorGrey);
+    border: 1px solid var(--cardBorder);
     display: block;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 
-    background-color: var(--colorWhite);
+    background-color: var(--cardBackground);
 
-    color: var(--colorTextDefault);
+    color: var(--cardTextColor);
     text-decoration: none;
 
     &__media {
+        border: var(--cardMediaBorder);
+        margin-bottom: var(--cardMediaMarginBottom);
+
         &-image {
             min-width: 100%;
         }
     }
 
     &__body {
-        padding: $card-padding;
+        padding: var(--cardBodyPadding);
     }
 
     &__header {
@@ -29,11 +32,15 @@
     }
 
     &__title {
-        margin-bottom: 0;
+        margin-bottom: var(--cardTitleMarginBottom);
+
+        color: var(--cardTitleColor);
     }
 
     &__meta {
         display: block;
-        font-weight: 700;
+
+        color: var(--cardMetaColor);
+        font-weight: var(--cardMetaWeight);
     }
 }
