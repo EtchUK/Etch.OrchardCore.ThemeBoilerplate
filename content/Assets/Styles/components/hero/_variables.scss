@@ -9,5 +9,7 @@ $hero-title-padding-bottom: 0.5rem;
 $hero-title-padding-horizontal: 1.5rem;
 
 :root {
+    --heroMediaMaxHeight: 90vh;
     --heroTitleBackround: rgba($color-grey-light, $hero-title-span-opacity);
+    --heroTitleColour: var(--colorWhite);
 }
