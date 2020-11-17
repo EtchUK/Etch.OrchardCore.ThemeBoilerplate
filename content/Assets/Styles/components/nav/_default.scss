@@ -36,7 +36,7 @@
         padding-bottom: $nav-anchor-padding-bottom;
         padding-top: $nav-anchor-padding-top;
 
-        color: var(--colorBlack);
+        color: var(--navColor);
         text-decoration: none;
 
         @include mq($from: tablet) {
@@ -44,7 +44,12 @@
         }
 
         &.is-current-page {
-            color: var(--colorPrimary);
+            color: var(--navColorActive);
+        }
+
+        &:focus,
+        &:hover {
+            text-decoration: var(--navTextDecorationHover);
         }
     }
 }
