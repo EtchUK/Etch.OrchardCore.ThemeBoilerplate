@@ -13,7 +13,7 @@
     }
 
     &__title {
-        color: var(--colorWhite);
+        color: var(--heroTitleColor);
 
         @include text-heading('Hero');
 
@@ -33,7 +33,7 @@
     &__media {
         align-items: center; /* 1. */
         display: flex;
-        max-height: $hero-media-max-height;
+        max-height: var(--heroMediaMaxHeight);
         min-width: auto;
         position: relative;
         width: 100%;
