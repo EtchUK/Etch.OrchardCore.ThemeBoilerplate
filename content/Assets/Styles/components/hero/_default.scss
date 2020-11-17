@@ -20,7 +20,7 @@
         span {
             padding: 0 $hero-title-padding-horizontal $hero-title-padding-bottom;
 
-            background-color: rgba($color-grey-light, $hero-title-span-opacity);
+            background-color: var(--heroTitleBackground);
             box-decoration-break: clone;
 
             line-height: var(--lineHeightHero);
