@@ -4,6 +4,7 @@ import carousel from './components/carousel';
 import gallery from './components/gallery';
 import nav from './components/nav';
 import parallax from './components/parallax';
+import scrollbarWidth from './components/scrollbarWidth';
 import toggleNav from './components/toggleNav';
 
 /**
@@ -15,6 +16,7 @@ const init = () => {
     gallery();
     nav();
     parallax();
+    scrollbarWidth();
     toggleNav();
 };
 
@@ -40,6 +42,9 @@ const checkCanInit = () => {
 
 // update DOM to indicate JavaScript is available
 // https://www.paulirish.com/2009/avoiding-the-fouc-v3/
-document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');
+document.documentElement.className = document.documentElement.className.replace(
+    /\bno-js\b/,
+    'js'
+);
 
 checkCanInit();

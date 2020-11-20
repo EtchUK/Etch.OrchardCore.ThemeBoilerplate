@@ -10,11 +10,11 @@
     .hero,
     .section {
         left: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
+        margin-left: calc(-50vw + (var(--scrollbarWidth) / 2));
+        margin-right: calc(-50vw + (var(--scrollbarWidth) / 2));
         position: relative;
         right: 50%;
-        width: 100vw;
+        width: calc(100vw - var(--scrollbarWidth));
 
         .flow {
             max-width: none;
