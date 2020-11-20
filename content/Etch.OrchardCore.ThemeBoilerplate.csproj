@@ -36,13 +36,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="azure-pipeline-stable.yml" />
+    <Compile Remove="wwwroot\Content\PatternLibrary\**" />
+    <EmbeddedResource Remove="wwwroot\Content\PatternLibrary\**" />
+    <None Remove="wwwroot\Content\PatternLibrary\**" />
+    <PackageAssetFiles Remove="wwwroot\Content\PatternLibrary\**" />
+    <Folder Include="wwwroot\Content\PatternLibrary\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="azure-pipelines.yml" />
+    <EmbeddedResource Remove=".editorconfig" />
     <EmbeddedResource Remove=".gitignore" />
     <EmbeddedResource Remove="package.json" />
     <EmbeddedResource Remove="package-lock.json" />
-    <EmbeddedResource Remove="prettierrc" />
+    <EmbeddedResource Remove=".prettierrc" />
     <EmbeddedResource Remove="README.md" />
-    <EmbeddedResource Remove="azure-pipeline-prelease.yml" />
   </ItemGroup>
 
   <ItemGroup>
