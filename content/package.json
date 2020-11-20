@@ -4,9 +4,7 @@
     "description": "Theme boilerplate is our starting point for building Orchard Core themes.",
     "author": "Etch UK",
     "scripts": {
-        "replace:patterns": "replace-in-file --configFile=./BuildConfigs/replace-config.js",
-        "copy:patterns": "copyfiles -u 2 \"PatternLibrary/dist/**/*\" \"wwwroot/patterns\"",
-        "build": "npm install --no-audit && npm run bundle:prod && npm run build:patterns && npm run replace:patterns && npm run copy:patterns",
+        "build": "npm install --no-audit && npm run bundle:prod",
         "build:patterns": "fractal build",
         "bundle:dev": "npm install && webpack --config ./BuildConfigs/webpack.config.dev.js -d",
         "bundle:prod": "webpack --config ./BuildConfigs/webpack.config.prod.js -p",
@@ -39,7 +37,6 @@
         "optimize-css-assets-webpack-plugin": "^5.0.3",
         "postcss-loader": "^3.0.0",
         "prettier": "^2.0.5",
-        "replace-in-file": "^5.0.2",
         "sass": "^1.29.0",
         "sass-loader": "^10.0.5",
         "sass-mq": "^5.0.1",
