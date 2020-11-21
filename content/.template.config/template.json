@@ -31,7 +31,7 @@
         "version": {
             "type": "parameter",
             "defaultValue": "0.0.1-rc1",
-            "replaces": "0.6.5-rc2"
+            "replaces": "0.6.6-rc2"
         },
         "website": {
             "type": "parameter",

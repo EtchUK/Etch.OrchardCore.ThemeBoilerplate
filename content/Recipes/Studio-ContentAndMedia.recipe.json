@@ -4,7 +4,7 @@
     "description": "Configures content & media for studio site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "0.6.5",
+    "version": "0.6.6",
     "issetuprecipe": false,
     "categories": [
         "studio"
