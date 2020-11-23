@@ -833,14 +833,23 @@
                                 },
                                 "BagPartSettings": {
                                     "ContainedContentTypes": [
+                                        "Blockquote",
+                                        "Card",
+                                        "Carousel",
+                                        "Embed",
+                                        "Figure",
                                         "Heading",
+                                        "Hero",
                                         "Html",
+                                        "Image",
+                                        "LegacyVisualEditor",
                                         "Link",
                                         "OrderedList",
-                                        "Page",
                                         "Paragraph",
+                                        "Section",
                                         "Text",
-                                        "UnorderedList"
+                                        "UnorderedList",
+                                        "VisualEditor"
                                     ],
                                     "DisplayType": "Detail"
                                 },
