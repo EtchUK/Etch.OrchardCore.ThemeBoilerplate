@@ -2,14 +2,12 @@
    #HERO/VARIABLES
    ========================================================================== */
 
-$hero-media-max-height: 90vh;
-
-$hero-title-span-opacity: 0.3;
 $hero-title-padding-bottom: 0.5rem;
 $hero-title-padding-horizontal: 1.5rem;
 
 :root {
     --heroMediaMaxHeight: 90vh;
-    --heroTitleBackround: rgba($color-grey-light, $hero-title-span-opacity);
-    --heroTitleColour: var(--colorWhite);
+    --heroTitleBackground: rgba(239, 239, 239, var(--heroTitleOpacity));
+    --heroTitleColor: var(--colorWhite);
+    --heroTitleOpacity: 0.3;
 }
