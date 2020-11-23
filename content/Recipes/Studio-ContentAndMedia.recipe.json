@@ -3136,7 +3136,7 @@
                         }
                     },
                     "Content": {
-                        "ContentItems": [
+                        "Widgets": [
                             {
                                 "ContentItemId": "4m4p7zmkdpk31xmr3akk9s8zd8",
                                 "ContentItemVersionId": null,

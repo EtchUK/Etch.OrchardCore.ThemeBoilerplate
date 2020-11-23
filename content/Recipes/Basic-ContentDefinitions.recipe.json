@@ -823,7 +823,7 @@
                             }
                         },
                         {
-                            "PartName": "BagPart",
+                            "PartName": "FlowPart",
                             "Name": "Content",
                             "Settings": {
                                 "ContentTypePartSettings": {
@@ -831,7 +831,7 @@
                                     "Description": "Content display beneath logo & navigation.",
                                     "Position": "1"
                                 },
-                                "BagPartSettings": {
+                                "FlowPartSettings": {
                                     "ContainedContentTypes": [
                                         "Blockquote",
                                         "Card",
@@ -850,8 +850,7 @@
                                         "Text",
                                         "UnorderedList",
                                         "VisualEditor"
-                                    ],
-                                    "DisplayType": "Detail"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
