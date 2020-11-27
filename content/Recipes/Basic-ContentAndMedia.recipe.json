@@ -4,7 +4,7 @@
     "description": "Configures content & media for basic site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "0.6.6",
+    "version": "0.6.7",
     "issetuprecipe": false,
     "categories": [
         "basic"
