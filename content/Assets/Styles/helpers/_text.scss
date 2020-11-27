@@ -21,9 +21,11 @@
         &-left {
             text-align: left;
         }
+
         &-center {
             text-align: center;
         }
+
         &-right {
             text-align: right;
         }
@@ -32,47 +34,49 @@
     &--line-through {
         text-decoration: line-through;
     }
+
     &--underline {
         text-decoration: underline;
     }
+
     &--uppercase {
         text-transform: uppercase;
     }
 
     &--size {
         &-h1 {
-            font-size: --var(fontSizeH1Mobile);
+            font-size: var(--fontSizeH1Mobile);
             line-height: var(--lineHeightHeading);
 
             @include mq($from: desktop) {
-                font-size: --var(fontSizeH1);
+                font-size: var(--fontSizeH1);
             }
         }
 
         &-h2 {
-            font-size: --var(fontSizeH2Mobile);
+            font-size: var(--fontSizeH2Mobile);
             line-height: var(--lineHeightHeading);
 
             @include mq($from: desktop) {
-                font-size: --var(fontSizeH2);
+                font-size: var(--fontSizeH2);
             }
         }
 
         &-h3 {
-            font-size: --var(fontSizeH3Mobile);
+            font-size: var(--fontSizeH3Mobile);
             line-height: var(--lineHeightHeading);
 
             @include mq($from: desktop) {
-                font-size: --var(fontSizeH3);
+                font-size: var(--fontSizeH3);
             }
         }
 
         &-h4 {
-            font-size: --var(fontSizeH4Mobile);
+            font-size: var(--fontSizeH4Mobile);
             line-height: var(--lineHeightHeading);
 
             @include mq($from: desktop) {
-                font-size: --var(fontSizeH4);
+                font-size: var(--fontSizeH4);
             }
         }
     }
