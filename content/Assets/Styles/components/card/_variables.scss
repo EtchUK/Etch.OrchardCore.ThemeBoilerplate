@@ -29,7 +29,7 @@ $card-picture-carousel-intro-duration: 2s;
 :root {
     --cardBackground: var(--colorWhite);
     --cardBorder: var(--colorGrey);
-    --cardBodyPadding: $card-padding;
+    --cardBodyPadding: #{$card-padding};
     --cardMediaBorder: none;
     --cardMediaMarginBottom: 0;
     --cardMetaColor: var(--colorTextDefault);
