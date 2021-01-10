@@ -43,8 +43,9 @@ stages:
           - task: NuGetCommand@2
             displayName: "NuGet pack"
             inputs:
-              command: pack
+              command: custom
               packagesToPack: Etch.OrchardCore.ThemeBoilerplate.nuspec
+              arguments: 'pack "$(Build.SourcesDirectory)\Etch.OrchardCore.ThemeBoilerplate.nuspec" -NoDefaultExcludes'
 
           - task: PublishPipelineArtifact@1
             displayName: "Publish Pipeline Artifact"
@@ -68,6 +69,7 @@ stages:
             inputs:
               source: "current"
               path: "$(Pipeline.Workspace)"
+
           - task: NuGetCommand@2
             displayName: "NuGet push"
             inputs:
