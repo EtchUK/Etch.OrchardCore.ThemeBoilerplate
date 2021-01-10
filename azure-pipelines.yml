@@ -45,7 +45,7 @@ stages:
             inputs:
               command: custom
               packagesToPack: Etch.OrchardCore.ThemeBoilerplate.nuspec
-              arguments: 'pack "$(Build.SourcesDirectory)\Etch.OrchardCore.ThemeBoilerplate.nuspec" -NoDefaultExcludes'
+              arguments: 'pack "$(Build.SourcesDirectory)\Etch.OrchardCore.ThemeBoilerplate.nuspec" -OutputDirectory "$(Build.ArtifactStagingDirectory)" -NoDefaultExcludes '
 
           - task: PublishPipelineArtifact@1
             displayName: "Publish Pipeline Artifact"
