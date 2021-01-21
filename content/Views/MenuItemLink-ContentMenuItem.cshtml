@@ -18,11 +18,11 @@
 @{
     var cssClasses = "";
 
-    if(linkUrl.Equals(currentPageUrl, StringComparison.OrdinalIgnoreCase)) {
+    if (linkUrl.Equals(currentPageUrl, StringComparison.OrdinalIgnoreCase)) {
         cssClasses = cssClasses + " is-current-page";
     }
 
-    if(Model.HasItems) {
+    if (Model.HasItems) {
         cssClasses = cssClasses + " js-nav-parent-link";
     }
 }
