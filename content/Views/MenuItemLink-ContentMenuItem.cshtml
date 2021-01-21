@@ -15,11 +15,18 @@
     var currentPageUrl = FullRequestPath;
 }
 
-@if (linkUrl.Equals(currentPageUrl, StringComparison.OrdinalIgnoreCase))
-{
-    <a href="@linkUrl" class="is-current-page">@menuItemPart.Name</a>
+@{
+    var cssClasses = "";
+
+    if(linkUrl.Equals(currentPageUrl, StringComparison.OrdinalIgnoreCase)) {
+        cssClasses = cssClasses + " is-current-page";
+    }
+
+    if(Model.HasItems) {
+        cssClasses = cssClasses + " js-nav-parent-link";
+    }
 }
-else
-{
-    <a href="@linkUrl">@menuItemPart.Name</a>
-}
+
+<a href="@linkUrl" class="@cssClasses" @Html.Raw(Model.HasItems ? "aria-haspopup=\"true\" aria-expanded=\"false\"":string.Empty)>
+    @menuItemPart.Name
+</a>
