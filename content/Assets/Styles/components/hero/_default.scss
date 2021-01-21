@@ -28,16 +28,20 @@
     }
 
     /**
-     * 1. Vertically center the embed if it is taller than .hero__media
+     * 1. Horizontally & vertically center the embed if it is taller/wider than .hero__media
      */
     &__media {
         align-items: center; /* 1. */
         display: flex;
+        justify-content: center; /* 1. */
         max-height: var(--heroMediaMaxHeight);
+        min-height: var(--heroMediaMinHeight);
         min-width: auto;
         position: relative;
         width: 100%;
         z-index: $z-index-back;
+
+        background: var(--colorBlack);
 
         overflow: hidden;
 
@@ -47,10 +51,39 @@
 
         .embed {
             margin-bottom: 0;
+            position: absolute;
             width: 100%;
+
+            @include mq($from: desktopSmall) {
+                position: relative;
+            }
 
             &__source {
                 margin-bottom: 0;
+            }
+
+            &--ratio-16-9 {
+                width: 278%;
+
+                @include mq($from: mobile) {
+                    width: 240%;
+                }
+
+                @include mq($from: mobileLarge) {
+                    width: 215%;
+                }
+
+                @include mq($from: tabletSmall) {
+                    width: 150%;
+                }
+
+                @include mq($from: tablet) {
+                    width: 117%;
+                }
+
+                @include mq($from: desktopSmall) {
+                    width: 100%;
+                }
             }
         }
     }
