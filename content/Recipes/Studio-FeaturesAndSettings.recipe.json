@@ -30,40 +30,6 @@
             }
         },
         {
-            "name": "AdminMenu",
-            "data": [
-                {
-                    "Id": "0c77ef8b77074980843e6e82bd924978",
-                    "Name": "Pattern Library",
-                    "Enabled": true,
-                    "MenuItems": [
-                        {
-                            "$type": "OrchardCore.AdminMenu.AdminNodes.LinkAdminNode, OrchardCore.AdminMenu",
-                            "LinkText": "Pattern Library",
-                            "LinkUrl": "Etch.OrchardCore.DefaultTheme/patterns/index.html",
-                            "IconClass": "fas fa-puzzle-piece",
-                            "UniqueId": "ab7ed3cbef7644cc97745f54c44d5855",
-                            "Enabled": true,
-                            "Text": null,
-                            "Id": null,
-                            "Href": null,
-                            "Url": null,
-                            "Position": "5",
-                            "Priority": 0,
-                            "LinkToFirstChild": true,
-                            "LocalNav": false,
-                            "Culture": null,
-                            "Resource": null,
-                            "Items": [],
-                            "RouteValues": null,
-                            "Permissions": [],
-                            "Classes": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "custom-settings"
         },
         {
