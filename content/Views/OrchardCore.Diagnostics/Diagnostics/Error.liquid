@@ -1,0 +1,14 @@
+<article>
+        <section class="section">
+            <div class="section__content">
+                <h1>{{ "Page not found" | t }}</h1>
+            </div>
+        </section>
+        <section class="section section--narrow">
+            <div class="section__content">
+                <h2>{{ "Oops! Something went wrong" | t | raw }}</h2>
+                <p>{{ "Unfortunately there was an issue loading this page." | t }}</p>
+                <p><a href="{{ Request.PathBase }}/" class="btn btn--secondary">{{ "Go to the homepage" | t }}</a></p>
+            </div>
+        </section>
+    </article>
