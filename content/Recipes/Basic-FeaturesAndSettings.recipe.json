@@ -63,6 +63,7 @@
                 "OrchardCore.Html",
                 "Etch.OrchardCore.SEO.RobotsTxt",
                 "Etch.OrchardCore.Widgets",
+                "Etch.OrchardCore.Favicon",
                 "OrchardCore.Scripting",
                 "OrchardCore.Workflows",
                 "OrchardCore.Resources",

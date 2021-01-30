@@ -84,6 +84,7 @@
                 "OrchardCore.Widgets",
                 "OrchardCore.Flows",
                 "Etch.OrchardCore.ContextualEdit",
+                "Etch.OrchardCore.Favicon",
                 "OrchardCore.Alias",
                 "Etch.OrchardCore.Fields.ResponsiveMedia",
                 "Etch.OrchardCore.Gallery",
