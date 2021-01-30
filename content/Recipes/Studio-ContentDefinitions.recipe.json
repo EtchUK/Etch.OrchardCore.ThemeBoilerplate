@@ -279,6 +279,15 @@
                                     "Position": "0"
                                 }
                             }
+                        },
+                        {
+                            "PartName": "MetaTagsPart",
+                            "Name": "MetaTagsPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "3"
+                                }
+                            }
                         }
                     ]
                 },
