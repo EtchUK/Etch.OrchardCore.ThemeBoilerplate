@@ -9,3 +9,11 @@
 .section--right {
     text-align: right;
 }
+
+.section--vertical-bottom .flow__content {
+    align-items: flex-end;
+}
+
+.section--vertical-center .flow__content {
+    align-items: center;
+}

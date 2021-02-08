@@ -2,7 +2,14 @@
    #SECTION/VARIABLES
    ========================================================================== */
 
-$section-vertical-padding-mobile: 6rem;
-$section-vertical-padding: 9rem;
-
 $section-form-solo-max-width: 40rem;
+
+:root {
+    --sectionBackgroundColor: transparent;
+    --sectionBackgroundPattern: none;
+
+    --sectionVerticalPaddingMobile: 6rem;
+    --sectionVerticalPaddingMobileLarge: #{6rem * 1.5};
+    --sectionVerticalPadding: 9rem;
+    --sectionVerticalPaddingLarge: #{9rem * 1.5};
+}
