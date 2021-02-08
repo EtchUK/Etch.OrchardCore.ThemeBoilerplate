@@ -468,40 +468,10 @@
                                     "Description": "Content for section.",
                                     "Position": "2"
                                 },
-                                "LinkableContentTypes": [],
                                 "FlowPartSettings": {
-                                    "ContainedContentTypes": [
-                                        "Blockquote",
-                                        "Button",
-                                        "Card",
-                                        "Embed",
-                                        "Figure",
-                                        "Form",
-                                        "Group",
-                                        "Heading",
-                                        "Html",
-                                        "Image",
-                                        "Input",
-                                        "Jobs",
-                                        "Label",
-                                        "LegacyVisualEditor",
-                                        "Link",
-                                        "OrderedList",
-                                        "Paragraph",
-                                        "Select",
-                                        "Text",
-                                        "TextArea",
-                                        "UnorderedList",
-                                        "Validation",
-                                        "ValidationSummary",
-                                        "VisualEditor"
-                                    ]
+                                    "ContainedContentTypes": []
                                 },
-                                "ContentIndexSettings": {},
-                                "GalleryPartSettings": {
-                                    "ThumbnailWidth": 480,
-                                    "ThumbnailHeight": 270
-                                }
+                                "ContentIndexSettings": {}
                             }
                         },
                         {
@@ -510,6 +480,15 @@
                             "Settings": {
                                 "ContentTypePartSettings": {
                                     "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BackgroundPart",
+                            "Name": "BackgroundPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "3"
                                 }
                             }
                         }
@@ -1994,43 +1973,6 @@
                     "ContentPartFieldDefinitionRecords": [
                         {
                             "FieldName": "TextField",
-                            "Name": "BackgroundColour",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Background Colour",
-                                    "Editor": "PredefinedList",
-                                    "Position": "0"
-                                },
-                                "TextFieldSettings": {
-                                    "Hint": "Colour displayed as the background for the section."
-                                },
-                                "ContentIndexSettings": {},
-                                "TextFieldPredefinedListEditorSettings": {
-                                    "Options": [
-                                        {
-                                            "name": "Default",
-                                            "value": "default"
-                                        },
-                                        {
-                                            "name": "Black",
-                                            "value": "black"
-                                        },
-                                        {
-                                            "name": "Grey",
-                                            "value": "grey"
-                                        },
-                                        {
-                                            "name": "Grey Light",
-                                            "value": "grey-light"
-                                        }
-                                    ],
-                                    "Editor": 1,
-                                    "DefaultValue": "default"
-                                }
-                            }
-                        },
-                        {
-                            "FieldName": "TextField",
                             "Name": "Alignment",
                             "Settings": {
                                 "ContentPartFieldSettings": {
@@ -2091,26 +2033,18 @@
                                         {
                                             "name": "Full",
                                             "value": "full"
+                                        },
+                                        {
+                                            "name": "Thin",
+                                            "value": "thin"
+                                        },
+                                        {
+                                            "name": "Extra Thin",
+                                            "value": "extra-thin"
                                         }
                                     ],
                                     "Editor": 1,
                                     "DefaultValue": "default"
-                                }
-                            }
-                        },
-                        {
-                            "FieldName": "ResponsiveMediaField",
-                            "Name": "BackgroundImage",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Background Image",
-                                    "Position": "1"
-                                },
-                                "ResponsiveMediaFieldSettings": {
-                                    "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
-                                    "Hint": "Image displayed as background of section.",
-                                    "FallbackData": "",
-                                    "IsConfigured": true
                                 }
                             }
                         },
@@ -2133,12 +2067,148 @@
                                             "value": "none"
                                         },
                                         {
-                                            "name": "Spaced",
-                                            "value": "spaced-after"
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "large"
                                         }
                                     ],
                                     "Editor": 1,
                                     "DefaultValue": "none"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "TopPadding",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Top Padding",
+                                    "Editor": "PredefinedList",
+                                    "Position": "4"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify the amount of padding (internal space) on this component"
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "large"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "BottomPadding",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Bottom Padding",
+                                    "Editor": "PredefinedList",
+                                    "Position": "5"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify the amount of padding (internal space) on this section"
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "large"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Gutter",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Gutter",
+                                    "Editor": "PredefinedList",
+                                    "Position": "1"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify how much space to show between content when putting several items on the same line."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "large"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "VerticalAlignment",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Vertical Alignment",
+                                    "Editor": "PredefinedList",
+                                    "Position": "3"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Control how content is vertically aligned within section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Center",
+                                            "value": "center"
+                                        },
+                                        {
+                                            "name": "Bottom",
+                                            "value": "bottom"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
                                 },
                                 "ContentIndexSettings": {}
                             }

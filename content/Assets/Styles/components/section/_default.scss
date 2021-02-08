@@ -5,13 +5,17 @@
 .section {
     display: block;
     position: relative;
-    padding-bottom: $section-vertical-padding-mobile;
-    padding-top: $section-vertical-padding-mobile;
+    margin-bottom: var(--sectionVerticalPaddingMobile);
+    padding-bottom: var(--sectionVerticalPaddingMobile);
+    padding-top: var(--sectionVerticalPaddingMobile);
 
+    background-color: var(--sectionBackgroundColor);
+    background-image: var(--sectionBackgroundPattern);
     overflow-x: hidden;
 
     @include mq($from: desktop) {
-        padding-bottom: $section-vertical-padding;
-        padding-top: $section-vertical-padding;
+        margin-bottom: var(--sectionVerticalPadding);
+        padding-bottom: var(--sectionVerticalPadding);
+        padding-top: var(--sectionVerticalPadding);
     }
 }
