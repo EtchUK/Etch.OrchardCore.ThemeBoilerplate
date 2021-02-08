@@ -27,6 +27,14 @@
     }
 }
 
+.constrain--extra-thin {
+    max-width: $content-width-extra-thin;
+}
+
+.constrain--thin {
+    max-width: $content-width-thin;
+}
+
 .constrain--wide {
     max-width: $content-width-wide;
 }
