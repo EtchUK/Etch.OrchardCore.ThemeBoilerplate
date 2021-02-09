@@ -10,15 +10,7 @@ p {
     margin-bottom: $spacing-text-default;
     margin-top: 0;
 
-    &:last-child {
-        margin-bottom: 0;
-    }
-
     @include mq($from: mobileLarge) {
         margin-bottom: $spacing-text-desktop;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
     }
 }
