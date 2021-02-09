@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #HERO/SPACING
+   ========================================================================== */
+
+.hero--spaced-after-large {
+    margin-bottom: var(--heroSpacingAfterLargeMobile);
+
+    @include mq($from: desktop) {
+        margin-bottom: var(--heroSpacingAfterLarge);
+    }
+}

@@ -2,13 +2,20 @@
    #HERO/VARIABLES
    ========================================================================== */
 
-$hero-title-padding-bottom: 0.5rem;
-$hero-title-padding-horizontal: 1.5rem;
-
 :root {
+    --heroBodyPadding: 4.7rem;
+    --heroColor: var(--colorBlack);
+    --heroColorInverted: var(--colorTextInverted);
+    --heroGradientHeight: 13rem;
+    --heroHeadingMarginBottom: #{$spacing-large};
+    --heroHeadingTextTransform: uppercase;
     --heroMediaMaxHeight: 90vh;
     --heroMediaMinHeight: 50rem;
-    --heroTitleBackground: rgba(239, 239, 239, var(--heroTitleOpacity));
-    --heroTitleColor: var(--colorWhite);
-    --heroTitleOpacity: 0.3;
+    --heroPullDistance: 8rem;
+    --heroSpacingAfterLarge: 9rem;
+    --heroSpacingAfterLargeMobile: 6rem;
+
+    @include mq($from: tablet) {
+        --heroPullDistance: 10rem;
+    }
 }
