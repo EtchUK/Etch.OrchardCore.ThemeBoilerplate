@@ -2,51 +2,74 @@
    #HERO/DEFAULT
    ========================================================================== */
 
+/**
+  * 1. The rough space of a spacebar push, ensures that despite liquid output,
+  *    anything with a span wrapped is appropriately spaced to the next item
+  * 2. Vertically center the embed if it is taller than .hero__media
+  */
+
 .hero {
     align-items: center;
     display: flex;
     justify-content: center;
     position: relative;
 
+    color: var(--heroColor);
+
     &__body {
         position: absolute;
-    }
+        padding: var(--heroBodyPadding) 0;
 
-    &__title {
-        color: var(--heroTitleColor);
-
-        @include text-heading('Hero');
-
-        span {
-            padding: 0 $hero-title-padding-horizontal $hero-title-padding-bottom;
-
-            background-color: var(--heroTitleBackground);
-            box-decoration-break: clone;
-
-            line-height: var(--lineHeightHero);
+        @each $width in $widths {
+            .width--#{$width} & {
+                padding-left: var(--heroBodyPadding);
+                padding-right: var(--heroBodyPadding);
+            }
         }
     }
 
-    /**
-     * 1. Horizontally & vertically center the embed if it is taller/wider than .hero__media
-     */
+    &__meta {
+        display: block;
+        margin-bottom: $spacing-large;
+        color: var(--colorTextLight);
+        font-family: var(----fontFamilyHeading);
+        font-weight: var(--cardMetaWeight);
+        text-transform: var(--cardMetaTextTransform);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            margin-left: 0.2em; /* 1 */
+        }
+
+        a {
+            color: var(--colorTextLight);
+        }
+    }
+
     &__media {
-        align-items: center; /* 1. */
+        align-items: center; /* 2. */
         display: flex;
-        justify-content: center; /* 1. */
+        justify-content: center;
         max-height: var(--heroMediaMaxHeight);
-        min-height: var(--heroMediaMinHeight);
+
         min-width: auto;
         position: relative;
         width: 100%;
         z-index: $z-index-back;
 
-        background: var(--colorBlack);
-
         overflow: hidden;
 
         @include mq($from: tablet) {
             min-width: auto;
+        }
+
+        @each $width in $widths {
+            .width--#{$width} & {
+                min-height: 0;
+            }
         }
 
         .embed {
@@ -86,5 +109,23 @@
                 }
             }
         }
+
+        picture,
+        img {
+            width: 100%;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin-bottom: var(--heroHeadingMarginBottom);
+    }
+
+    h1,
+    h2 {
+        text-transform: var(--heroHeadingTextTransform);
     }
 }

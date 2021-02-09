@@ -1,0 +1,16 @@
+/* ==========================================================================
+   #HERO/PULL-UP
+   ========================================================================== */
+
+/**
+ * "Pull up" drags the hero up so that it sits behind a header.
+ *  Add to the body padding accordingly so content 'feels' centered
+ */
+
+.hero--pull-up {
+    margin-top: calc(var(--heroPullDistance) * -1);
+
+    .hero__body {
+        padding-top: calc(var(--heroPullDistance) + var(--heroBodyPadding));
+    }
+}

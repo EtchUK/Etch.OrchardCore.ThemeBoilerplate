@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #HERO/INVERTED
+   ========================================================================== */
+
+.hero--inverted {
+    color: var(--heroColorInverted);
+
+    &__meta {
+        color: var(--colorTextLighter);
+
+        a {
+            color: var(--colorTextLighter);
+        }
+    }
+}
