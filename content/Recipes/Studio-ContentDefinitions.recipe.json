@@ -1640,6 +1640,39 @@
                             }
                         }
                     ]
+                },
+                {
+                    "Name": "Navigation",
+                    "DisplayName": "Navigation",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Displays a menu.",
+                        "Icon": "directions"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Navigation",
+                            "Name": "Navigation",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
                 }
             ],
             "ContentParts": [
@@ -3279,6 +3312,30 @@
                         }
                     },
                     "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "Navigation",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "ContentPickerField",
+                            "Name": "Menu",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Menu",
+                                    "Position": "0"
+                                },
+                                "ContentPickerFieldSettings": {
+                                    "Hint": "Menu to display.",
+                                    "Required": true,
+                                    "DisplayedContentTypes": [
+                                        "Menu"
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
                 }
             ]
         }
