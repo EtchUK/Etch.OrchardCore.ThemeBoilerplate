@@ -1,17 +1,21 @@
-<footer class="footer">
+<footer class="footer {{ footerModifier }}" {{#if footerInverted }} style="--footerBackgroundColor: #000;" {{/if}}>
     <div class="footer__content constrain constrain--wide">
+        <div class="flow">
+            <div class="flow__content">
+                <div class="width--20">
+                    <a href="#">
+                        <img src="/content/PatternLibrary/{{ footerLogo }}" alt=" Etch Play Logo" />
+                    </a>
+                </div>
 
-        <div class="footer__meta">
-            <a class="footer__logo" href="#">
-                {{render '@responsive-image'}}
-            </a>
+                <div class="width--80">
+                    {{render '@nav'}}
+                </div>
 
-            <p>&copy; 2020 Etch Play. <a href="#">Privacy policy</a></p>
+                <div class="width--100">
+                    <p>&copy; 2021 Etch Play. <a href="#">Privacy policy</a></p>
+                </div>
+            </div>
         </div>
-
-        <nav class="footer__nav">
-            {{render '@nav'}}
-        </nav>
-
     </div>
 </footer>

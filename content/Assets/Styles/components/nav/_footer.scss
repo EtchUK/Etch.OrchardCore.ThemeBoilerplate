@@ -2,4 +2,33 @@
    #NAV/FOOTER
    ========================================================================== */
 
-//.nav--footer { }
+.footer {
+    .nav__item a {
+        font-size: var(--footerFontSize);
+        font-weight: var(--navFooterFontWeight);
+        text-transform: var(--navFooterTextTransform);
+    }
+
+    .nav__sub {
+        background: transparent;
+    }
+}
+
+.footer--inverted {
+    .nav__item a {
+        color: var(--footerColorInverted);
+
+        &:focus,
+        &:hover {
+            color: var(--footerColorInvertedActive);
+        }
+    }
+
+    .nav__item--parent {
+        > a {
+            &:after {
+                background-image: url('../content/icon-chevron-inverted.svg');
+            }
+        }
+    }
+}

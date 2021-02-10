@@ -813,7 +813,10 @@
                         "ContentTypeSettings": {
                             "Stereotype": "Widget"
                         },
-                        "FullTextAspectSettings": {}
+                        "FullTextAspectSettings": {},
+                        "Category": "Miscellaneous",
+                        "Description": "Footer section for the site.",
+                        "Icon": "flag-checkered"
                     },
                     "ContentTypePartDefinitionRecords": [
                         {
@@ -826,34 +829,22 @@
                             }
                         },
                         {
+                            "PartName": "BackgroundPart",
+                            "Name": "BackgroundPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
                             "PartName": "FlowPart",
                             "Name": "Content",
                             "Settings": {
                                 "ContentTypePartSettings": {
                                     "DisplayName": "Content",
-                                    "Description": "Content display beneath logo & navigation.",
-                                    "Position": "1"
-                                },
-                                "FlowPartSettings": {
-                                    "ContainedContentTypes": [
-                                        "Blockquote",
-                                        "Card",
-                                        "Carousel",
-                                        "Embed",
-                                        "Figure",
-                                        "Heading",
-                                        "Hero",
-                                        "Html",
-                                        "Image",
-                                        "LegacyVisualEditor",
-                                        "Link",
-                                        "OrderedList",
-                                        "Paragraph",
-                                        "Section",
-                                        "Text",
-                                        "UnorderedList",
-                                        "VisualEditor"
-                                    ]
+                                    "Description": "Content to display within the footer.",
+                                    "Position": "2"
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -2385,62 +2376,6 @@
                                         "Homepage",
                                         "Page"
                                     ]
-                                },
-                                "ContentIndexSettings": {}
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Name": "Footer",
-                    "Settings": {},
-                    "ContentPartFieldDefinitionRecords": [
-                        {
-                            "FieldName": "MediaField",
-                            "Name": "Logo",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Logo",
-                                    "Position": "0"
-                                }
-                            }
-                        },
-                        {
-                            "FieldName": "MediaField",
-                            "Name": "LogoSmall",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Logo Small",
-                                    "Position": "1"
-                                }
-                            }
-                        },
-                        {
-                            "FieldName": "ContentPickerField",
-                            "Name": "Menu",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Menu",
-                                    "Position": "3"
-                                },
-                                "ContentPickerFieldSettings": {
-                                    "DisplayedContentTypes": [
-                                        "Menu"
-                                    ]
-                                },
-                                "ContentIndexSettings": {}
-                            }
-                        },
-                        {
-                            "FieldName": "TextField",
-                            "Name": "LogoAlternateText",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Logo Alternate Text",
-                                    "Position": "2"
-                                },
-                                "TextFieldSettings": {
-                                    "Hint": "Description of image for website visitors who are unable to see the image and tell the search engine crawlers about the image."
                                 },
                                 "ContentIndexSettings": {}
                             }
