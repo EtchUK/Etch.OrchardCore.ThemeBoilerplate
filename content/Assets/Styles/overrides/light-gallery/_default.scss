@@ -1,0 +1,10 @@
+/* ==========================================================================
+   #LIGHTGALLERY/DEFAULT
+   ========================================================================== */
+
+/**
+ * 1. Makes video container smaller so that controls don't disappear off screen
+ */
+.lg-outer .lg-video-cont {
+    max-width: var(--lightGalleryVideoMaxWidth) !important; /* 1. */
+}
