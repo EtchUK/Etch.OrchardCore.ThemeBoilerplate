@@ -16,12 +16,12 @@
     @include mq($from: tablet) {
         display: flex;
         flex-direction: row;
-        padding-top: $nav-top-padding;
     }
 }
 
 .nav__item {
-    border-bottom: $nav-border-width solid var(--colorGrey);
+    border-bottom: $nav-border-width solid var(--navBorderColor);
+    margin-bottom: 0;
 
     @include mq($from: tablet) {
         border-bottom: 0;
@@ -34,43 +34,63 @@
     a {
         display: block;
         padding-bottom: $nav-anchor-padding-bottom;
+        padding-left: $content-gutter-small;
+        padding-right: $content-gutter-small;
         padding-top: $nav-anchor-padding-top;
 
         color: var(--navColor);
+        font-size: var(--navFontSize);
+        font-weight: var(--navFontWeight);
         text-decoration: none;
+        text-transform: var(--navTextTransform);
 
         @include mq($from: tablet) {
-            padding: $nav-anchor-padding-tablet;
+            padding: var(--navAnchorPaddingDesktop);
         }
 
         &.is-current-page {
             color: var(--navColorActive);
         }
 
+        [class$='--inverted'] & {
+            color: var(--navColorInverted);
+
+            &:focus,
+            &:hover {
+                color: var(--navColorInvertedActive);
+            }
+        }
+
         &:focus,
         &:hover {
+            color: var(--navColorActive);
             text-decoration: var(--navTextDecorationHover);
         }
     }
 }
 
 .nav__item--parent {
-    > a {
-        align-items: center;
-        display: flex;
-        position: relative;
+    svg {
+        display: inline-block;
+        height: $nav-chevron-height;
+        margin-bottom: $nav-chevron-margin-bottom;
+        margin-left: $nav-chevron-margin-left;
+        width: $nav-chevron-width;
+        vertical-align: middle;
 
-        &:after {
-            content: '';
-            height: $nav-chevron-height;
-            margin-bottom: $nav-chevron-margin-bottom;
-            margin-left: $nav-chevron-margin-left;
-            width: $nav-chevron-width;
+        fill: var(--navColor);
+    }
 
-            background-image: url('../content/icon-chevron.svg');
-            background-repeat: no-repeat;
-            background-size: 100%;
-            transform: translateY(50%);
+    a:hover svg {
+        fill: var(--navColorActive);
+    }
+
+    [class$='--inverted'] & {
+        svg {
+            fill: var(--navColorInverted);
+        }
+        a:hover svg {
+            fill: var(--navColorInvertedActive);
         }
     }
 }
@@ -84,10 +104,15 @@
         position: absolute;
 
         background-color: var(--colorWhite);
+
+        [class$='--inverted'] & {
+            background-color: var(--colorBlack);
+        }
     }
 
     a {
-        padding-left: $spacing-large;
+        padding-left: $content-gutter;
+        padding-right: $content-gutter;
 
         @include mq($from: tablet) {
             padding: $nav-anchor-padding-tablet;
@@ -101,4 +126,12 @@
 
 .nav__sub-items {
     @include list-reset();
+
+    .nav__item {
+        border-bottom: $nav-border-width solid var(--navBorderColorLight);
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
 }
