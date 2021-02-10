@@ -1,0 +1,16 @@
+/* ==========================================================================
+   #FOOTER/INVERTED
+   ========================================================================== */
+
+.footer--inverted {
+    color: var(--footerColorInverted);
+
+    a {
+        color: var(--footerColorInverted);
+
+        &:focus,
+        &:hover {
+            color: var(--footerColorInvertedActive);
+        }
+    }
+}

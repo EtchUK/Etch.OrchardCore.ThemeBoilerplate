@@ -20,5 +20,7 @@ $nav-chevron-width: 1rem;
 :root {
     --navColor: var(--colorBlack);
     --navColorActive: var(--colorPrimary);
+    --navFooterFontWeight: normal;
+    --navFooterTextTransform: initial;
     --navTextDecorationHover: none;
 }
