@@ -9,3 +9,13 @@ $footer-logo-width-mobile: 10rem;
 $footer-logo-width: 15rem;
 
 $footer-nav-padding-top: 7rem;
+
+:root {
+    --footerBackgroundColor: transparent;
+    --footerBackgroundPattern: none;
+    --footerColorInverted: var(--colorTextInverted);
+    --footerColorInvertedActive: var(--colorPrimary);
+    --footerFontSize: var(--fontSizeSmall);
+    --footerHeadingFontSize: var(--fontSizeBase);
+    --footerPaddingVertical: 8rem;
+}

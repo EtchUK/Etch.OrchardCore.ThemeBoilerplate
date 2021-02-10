@@ -1,0 +1,18 @@
+{
+    "title": "Footer",
+    "context": {
+        "footerInverted": "",
+        "footerLogo": "logo-play-short@1x.svg",
+        "footerModifier": ""
+    },
+    "variants": [
+        {
+            "name": "Inverted",
+            "context": {
+                "footerInverted": "true",
+                "footerLogo": "logo-play-inverted.svg",
+                "footerModifier": "footer--inverted"
+            }
+        }
+    ]
+}
