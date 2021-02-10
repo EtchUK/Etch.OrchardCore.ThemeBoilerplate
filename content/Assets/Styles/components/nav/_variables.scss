@@ -2,15 +2,13 @@
    #NAV/VARIABLES
    ========================================================================== */
 
-$nav-anchor-padding-bottom: 1rem;
+$nav-anchor-padding-bottom: 1.5rem;
 $nav-anchor-padding-tablet: 0.5rem 1rem;
 $nav-anchor-padding-top: 1.5rem;
 
-$nav-border-width: 0.1rem;
+$nav-border-width: 0.4rem;
 
 $nav-li-margin-right-desktop-small: 5rem;
-
-$nav-top-padding: 0.5rem;
 
 $nav-chevron-height: 0.6rem;
 $nav-chevron-margin-bottom: 0.4rem;
@@ -18,9 +16,18 @@ $nav-chevron-margin-left: 0.5rem;
 $nav-chevron-width: 1rem;
 
 :root {
+    --navAnchorPaddingDesktop: 0.5rem 1rem;
+    --navBorderColor: #d7d7d7;
+    --navBorderColorLight: #eaeaea;
     --navColor: var(--colorBlack);
     --navColorActive: var(--colorPrimary);
+    --navColorInverted: var(--colorTextInverted);
+    --navColorInvertedActive: var(--colorPrimary);
+    --navFontSize: var(--fontSizeBase);
+    --navFontWeight: normal;
     --navFooterFontWeight: normal;
     --navFooterTextTransform: initial;
+    --navPrimaryAnchorPaddingDesktop: 1rem 2rem;
     --navTextDecorationHover: none;
+    --navTextTransform: none;
 }
