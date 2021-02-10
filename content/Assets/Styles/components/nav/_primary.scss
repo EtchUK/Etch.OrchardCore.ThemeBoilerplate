@@ -5,7 +5,12 @@
 .nav--primary {
     .nav__item a {
         @include mq($from: tablet) {
-            padding: $nav-anchor-padding-tablet;
+            padding: var(--navPrimaryAnchorPaddingDesktop);
         }
+    }
+
+    .nav__sub {
+        background-color: var(--headerBackgroundColor);
+        background-image: var(--headerBackgroundPattern);
     }
 }

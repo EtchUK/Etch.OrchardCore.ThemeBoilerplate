@@ -663,6 +663,11 @@
                                     "Position": "0"
                                 }
                             }
+                        },
+                        {
+                            "PartName": "BackgroundPart",
+                            "Name": "BackgroundPart",
+                            "Settings": {}
                         }
                     ]
                 },
@@ -2162,7 +2167,8 @@
                             "Name": "Logo",
                             "Settings": {
                                 "ContentPartFieldSettings": {
-                                    "DisplayName": "Logo"
+                                    "DisplayName": "Logo",
+                                    "Position": "0"
                                 }
                             }
                         },
@@ -2171,7 +2177,8 @@
                             "Name": "LogoSmall",
                             "Settings": {
                                 "ContentPartFieldSettings": {
-                                    "DisplayName": "Logo Small"
+                                    "DisplayName": "Logo Small",
+                                    "Position": "1"
                                 },
                                 "MediaFieldSettings": {
                                     "Hint": "Logo displayed on smaller devices."
@@ -2184,7 +2191,8 @@
                             "Name": "LogoAlternateText",
                             "Settings": {
                                 "ContentPartFieldSettings": {
-                                    "DisplayName": "Logo Alternate Text"
+                                    "DisplayName": "Logo Alternate Text",
+                                    "Position": "2"
                                 },
                                 "TextFieldSettings": {
                                     "Hint": "Description of the appearance and function of the image."
@@ -2197,7 +2205,8 @@
                             "Name": "Menu",
                             "Settings": {
                                 "ContentPartFieldSettings": {
-                                    "DisplayName": "Menu"
+                                    "DisplayName": "Menu",
+                                    "Position": "3"
                                 },
                                 "ContentPickerFieldSettings": {
                                     "Hint": "Main menu used by users to navigate the main sections of the site.",
@@ -2213,10 +2222,92 @@
                             "Name": "MenuToggleButtonLabel",
                             "Settings": {
                                 "ContentPartFieldSettings": {
-                                    "DisplayName": "Menu Toggle Button Label"
+                                    "DisplayName": "Menu Toggle Button Label",
+                                    "Position": "4"
                                 },
                                 "TextFieldSettings": {
                                     "Hint": "Label for button that's displayed on smaller devices to toggle the visibility of the main menu."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Position",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Position",
+                                    "Editor": "PredefinedList",
+                                    "Position": "6"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Default will display at the header at the top and disappear out of view when the user scrolls. Fixed will position header will always be visible, even when the visitor scrolls."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": ""
+                                        },
+                                        {
+                                            "name": "Fixed",
+                                            "value": "fixed"
+                                        }
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "MenuCloseButtonLabel",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Menu Close Button Label",
+                                    "Position": "5"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Label for button that's displayed on smaller devices to close the main menu."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "MobileBackgroundPattern",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Mobile Background Pattern",
+                                    "Editor": "PredefinedList",
+                                    "Position": "8"
+                                },
+                                "TextFieldSettings": {},
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": ""
+                                        }
+                                    ],
+                                    "Editor": 1
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "ColourField",
+                            "Name": "MobileBackgroundColour",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Mobile Background Colour",
+                                    "Position": "7"
+                                },
+                                "ColourFieldSettings": {
+                                    "AllowCustom": true,
+                                    "AllowTransparent": true,
+                                    "Colours": [],
+                                    "DefaultValue": "transparent",
+                                    "UseGlobalColours": true
                                 },
                                 "ContentIndexSettings": {}
                             }
