@@ -9,7 +9,8 @@
     width: 100%;
 
     .hero,
-    .section {
+    .section,
+    .image--responsive {
         left: 50%;
         margin-left: calc(-50vw + (var(--scrollbarWidth) / 2));
         margin-right: calc(-50vw + (var(--scrollbarWidth) / 2));

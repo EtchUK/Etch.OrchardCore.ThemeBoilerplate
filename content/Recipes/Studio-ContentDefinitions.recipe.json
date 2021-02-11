@@ -1673,6 +1673,30 @@
                             }
                         }
                     ]
+                },
+                {
+                    "Name": "ResponsiveImage",
+                    "DisplayName": "Responsive Image",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Display an image that can change at various screen sizes",
+                        "Icon": "compress-arrows-alt"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "ResponsiveImage",
+                            "Name": "ResponsiveImage",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
                 }
             ],
             "ContentParts": [
@@ -3331,6 +3355,43 @@
                                     "DisplayedContentTypes": [
                                         "Menu"
                                     ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "ResponsiveImage",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "ResponsiveMediaField",
+                            "Name": "Image",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Image",
+                                    "Position": "0"
+                                },
+                                "ResponsiveMediaFieldSettings": {
+                                    "AllowMediaText": true,
+                                    "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
+                                    "FallbackData": "",
+                                    "IsConfigured": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "LinkTo",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Link To",
+                                    "Position": "1"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "URL user is navigated to when clicking image. If left blank, image won't be a hyperlink."
                                 },
                                 "ContentIndexSettings": {}
                             }
