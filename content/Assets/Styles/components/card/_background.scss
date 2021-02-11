@@ -1,10 +1,7 @@
 /* ==========================================================================
-   #CARD
+   #CARD/BACKGROUND
    ========================================================================== */
 
-@import 'variables';
-
-@import 'default';
-@import 'background';
-@import 'carousel';
-@import 'equal-height';
+.card--with-background-fixed {
+    background-attachment: fixed;
+}
