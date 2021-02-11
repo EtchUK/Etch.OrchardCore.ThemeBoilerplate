@@ -1697,6 +1697,87 @@
                             }
                         }
                     ]
+                },
+                {
+                    "Name": "Tiles",
+                    "DisplayName": "Tiles",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Display collection of content in a tile grid.",
+                        "Icon": "th-large"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Tiles",
+                            "Name": "Tiles",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Content",
+                                    "Description": "Content displayed within tiled grid.",
+                                    "Position": "2"
+                                },
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Blockquote",
+                                        "Button",
+                                        "Card",
+                                        "Embed",
+                                        "Figure",
+                                        "Form",
+                                        "Group",
+                                        "Heading",
+                                        "Html",
+                                        "Image",
+                                        "Input",
+                                        "Label",
+                                        "Link",
+                                        "OrderedList",
+                                        "Paragraph",
+                                        "Select",
+                                        "Text",
+                                        "TextArea",
+                                        "UnorderedList",
+                                        "Validation",
+                                        "ValidationSummary",
+                                        "VisualEditor"
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "PartName": "BackgroundPart",
+                            "Name": "BackgroundPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "3"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
                 }
             ],
             "ContentParts": [
@@ -3392,6 +3473,49 @@
                                 },
                                 "TextFieldSettings": {
                                     "Hint": "URL user is navigated to when clicking image. If left blank, image won't be a hyperlink."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Tiles",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Columns",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Columns",
+                                    "Editor": "PredefinedList",
+                                    "Position": "0"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify how many columns to display the items in on desktop devices."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Four",
+                                            "value": "four"
+                                        },
+                                        {
+                                            "name": "Three",
+                                            "value": "three"
+                                        },
+                                        {
+                                            "name": "Two",
+                                            "value": "two"
+                                        },
+                                        {
+                                            "name": "One",
+                                            "value": "one"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "three"
                                 },
                                 "ContentIndexSettings": {}
                             }
