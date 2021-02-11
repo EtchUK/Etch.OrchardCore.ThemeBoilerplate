@@ -9,10 +9,10 @@
     width: 100%;
 
     .width--100 {
-        > .hero,
-        > .section,
         > .carousel,
-        > .image--responsive {
+        > .hero,
+        > .image--responsive,
+        > .section {
             left: 50%;
             margin-left: calc(-50vw + (var(--scrollbarWidth) / 2));
             margin-right: calc(-50vw + (var(--scrollbarWidth) / 2));
@@ -29,8 +29,8 @@
         // so a hero or carousel can be used inside a section and have it
         // respect the layout width, if desired.
         .section {
-            .hero,
             .carousel,
+            .hero,
             .image--responsive {
                 left: auto;
                 margin-left: 0;
