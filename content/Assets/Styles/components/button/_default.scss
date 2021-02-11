@@ -5,23 +5,35 @@
 .btn,
 .btn:link,
 .btn:visited {
-    border: $button-border-size solid var(--colorPrimary);
+    border: var(--buttonBorderThickness) solid var(--colorPrimary);
+    border-radius: var(--buttonBorderRadius);
     display: inline-block;
-    padding: $button-padding-vertical $button-padding-horizontal;
+    overflow: hidden;
+    padding: var(--buttonPaddingVertical) var(--buttonPaddingHorizontal);
+    position: relative;
     vertical-align: middle;
 
     background-color: var(--colorPrimary);
     outline: none;
 
-    color: var(--colorWhite);
+    color: var(--colorButtonLabel);
+    font-size: var(--buttonFontSize);
+    font-weight: var(--buttonFontWeight);
+    line-height: var(--buttonLineHeight);
     text-decoration: none;
+    text-transform: var(--buttonTextTransform);
 
     cursor: pointer;
+
+    &:hover {
+        background-color: var(--colorPrimaryActive);
+        border-color: var(--colorPrimaryActive);
+    }
 }
 
 .btn:disabled {
     background-color: var(--colorbuttonDisabled);
-    border: $button-border-size solid var(--colorbuttonDisabled);
+    border-color: var(--colorbuttonDisabled);
 
     color: var(--colorTextDefault);
 }

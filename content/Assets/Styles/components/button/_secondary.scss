@@ -6,7 +6,12 @@
 .btn--secondary:link,
 .btn--secondary:visited {
     background-color: var(--colorSecondary);
-    border: $button-border-size solid var(--colorSecondary);
+    border-color: var(--colorSecondary);
 
     color: var(--colorWhite);
+
+    &:hover {
+        background-color: var(--colorSecondaryActive);
+        border-color: var(--colorSecondaryActive);
+    }
 }
