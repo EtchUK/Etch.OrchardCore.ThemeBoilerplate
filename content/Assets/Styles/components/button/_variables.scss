@@ -2,10 +2,23 @@
    #BUTTON/VARIABLES
    ========================================================================== */
 
-$button-border-size: 1px;
-$button-padding-horizontal: 4rem;
-$button-padding-vertical: 1.4rem;
-$button-padding-vertical-small: 1rem;
+:root {
+    --buttonAfterHoverWipeAmount: 100%;
+    --buttonAfterOpacity: 0.1;
+    --buttonAfterTransformRotate: 100deg;
+    --buttonBorderRadius: 0;
+    --buttonBorderThickness: 0.1rem;
+    --buttonFontSize: var(--fontSizeSmall);
+    --buttonFontWeight: normal;
+    --buttonLineHeight: var(--lineHeightDefault);
+    --buttonPaddingHorizontal: 2rem;
+    --buttonPaddingVertical: 1rem;
+    --buttonTextTransform: none;
 
-$button-rollover-duration: 0.7s;
-$button-rollover-size: 300%;
+    @include mq($from: tablet) {
+        --buttonFontSize: var(--fontSizeBase);
+        --buttonPaddingHorizontal: 3rem;
+        --buttonPaddingVertical: 1.4rem;
+        --buttonSvgMarginLeft: 1.5rem;
+    }
+}
