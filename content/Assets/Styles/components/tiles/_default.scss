@@ -1,0 +1,63 @@
+/* ==========================================================================
+   #TILES/DEFAULT
+   ========================================================================== */
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(var(--tilesGap) * -1) $spacing-default;
+}
+
+.tiles__item {
+    border: var(--tilesGap) solid transparent;
+    position: relative;
+    flex-basis: 50%;
+
+    &--inverted {
+        color: var(--colorTextInverted);
+    }
+
+    .tiles--two-cols & {
+        @include mq($from: tablet) {
+            flex-basis: 50%;
+        }
+    }
+
+    .tiles--three-cols & {
+        @include mq($from: tablet) {
+            flex-basis: 33.33%;
+        }
+    }
+
+    .tiles--four-cols & {
+        @include mq($from: tablet) {
+            flex-basis: 50%;
+        }
+        @include mq($from: desktopSmall) {
+            flex-basis: 25%;
+        }
+    }
+}
+
+/**
+ * 1. Using `margin-top` to make the height of the tile the same
+ *    size as the width.
+ */
+.tiles__item-skeleton {
+    margin-top: 100%; /* 1. */
+}
+
+.tiles__item-children {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    padding: var(--tilesPadding);
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    background-color: var(--tilesBackgroundColor);
+    background-image: var(--tilesBackgroundPattern);
+}
