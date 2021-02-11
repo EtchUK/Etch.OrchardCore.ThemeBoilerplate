@@ -7,27 +7,64 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: $gallery-gutter-small;
-    margin-left: -$gallery-item-gap;
-    margin-right: -$gallery-item-gap;
+    margin-left: calc((var(--galleryGutterSmall) / 2) * -1);
+    margin-right: calc((var(--galleryGutterSmall) / 2) * -1);
 
     @include mq($from: mobile) {
-        margin-bottom: $gallery-gutter;
-    }
-}
-
-.gallery__item {
-    margin-bottom: $gallery-gutter-small;
-    padding-left: $gallery-item-gap;
-    padding-right: $gallery-item-gap;
-    width: 50%;
-
-    @include mq($from: tabletSmall) {
-        width: 33.3%;
+        margin-left: calc((var(--galleryGutter) / 2) * -1);
+        margin-right: calc((var(--galleryGutter) / 2) * -1);
     }
 
-    @include mq($from: tablet) {
-        width: 25%;
+    /**
+     * 1. Remove tiny gap that can occur when images aren't block.
+     */
+    img {
+        display: block; /* 1. */
+
+        border-radius: var(--galleryBorderRadius);
+    }
+
+    /**
+     * 1. Overrides list reset padding-left style
+     * 2. Works like .embed with 4:3 ratio
+     */
+    > li, /* 1. */
+    &__item {
+        margin-bottom: var(--galleryGutterSmall);
+        padding-left: calc(var(--galleryGutterSmall) / 2);
+        padding-right: calc(var(--galleryGutterSmall) / 2);
+        width: 50%;
+
+        @include mq($from: tabletSmall) {
+            width: 33.3%;
+        }
+
+        @include mq($from: tablet) {
+            width: 25%;
+        }
+
+        @include mq($from: mobile) {
+            margin-bottom: var(--galleryGutter);
+            padding-left: calc(var(--galleryGutter) / 2);
+            padding-right: calc(var(--galleryGutter) / 2);
+        }
+
+        a {
+            display: block;
+            max-width: 100%;
+            overflow: hidden;
+            padding-bottom: 75%; /* 2. */
+            position: relative;
+        }
+
+        img {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+
+            object-fit: cover;
+        }
     }
 }

@@ -2,6 +2,8 @@
    #GALLERY/VARIABLES
    ========================================================================== */
 
-$gallery-gutter: 2rem;
-$gallery-gutter-small: 1.5rem;
-$gallery-item-gap: $gallery-gutter / 2;
+:root {
+    --galleryBorderRadius: 1rem;
+    --galleryGutter: 2rem;
+    --galleryGutterSmall: 1.5rem;
+}
