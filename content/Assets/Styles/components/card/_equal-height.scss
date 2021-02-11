@@ -1,15 +1,24 @@
 /* ==========================================================================
-   #CARD/EQUAL HEIGHT
+   #CARD/EQUAL-HEIGHT
    ========================================================================== */
 
-.card--equal-height {
-    height: 100%;
+/*
+ * 1. Only apply this above desktopSmall, when width-- classes would actually 
+ *    place things side by side otherwise, it makes spacing on mobile tricky 
+ *    when they stack.
+ */
 
-    .card {
-        &__body {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
+.card--equal-height {
+    /* 1 */
+    @include mq($from: desktopSmall) {
+        height: 100%;
+
+        .card {
+            &__body {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
         }
     }
 }
