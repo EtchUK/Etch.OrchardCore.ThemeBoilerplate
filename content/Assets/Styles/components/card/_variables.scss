@@ -2,8 +2,6 @@
    #CARD/VARIABLES
    ========================================================================== */
 
-$card-padding: 2.4rem;
-
 $card-body-carousel-translateX-desktop-medium: 17rem;
 $card-body-carousel-translateX-desktop: 14rem;
 $card-body-carousel-translateX-desktop-small: 11rem;
@@ -27,14 +25,18 @@ $card-picture-carousel-intro-blur: 5px;
 $card-picture-carousel-intro-duration: 0.3s;
 
 :root {
-    --cardBackground: var(--colorWhite);
+    --cardBackground: transparent;
+    --cardBackgroundPattern: none;
+    --cardBodyZIndex: 3; /* 1 */
     --cardBorder: var(--colorGrey);
-    --cardBodyPadding: #{$card-padding};
+    --cardBorderRadius: 0;
+    --cardBodyPadding: 2.4rem;
     --cardMediaBorder: none;
     --cardMediaMarginBottom: 0;
-    --cardMetaColor: var(--colorTextDefault);
     --cardMetaWeight: 700;
-    --cardTextColor: var(--colorTextDefault);
-    --cardTitleColor: var(--colorTextDefault);
-    --cardTitleMarginBottom: 0;
+    --cardMetaTextTransform: uppercase;
+    --cardTitleMarginBottom: 0.2rem;
+    --cardMediaImageScale: 1;
+    --cardMediaImageScaleHover: 1.2;
+    --cardMediaImageTransitionDuration: 1s;
 }

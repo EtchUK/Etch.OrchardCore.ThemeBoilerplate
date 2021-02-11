@@ -3,44 +3,158 @@
    ========================================================================== */
 
 .card {
-    border: 1px solid var(--cardBorder);
+    border-radius: var(--cardBorderRadius);
     display: block;
+    margin-bottom: $spacing-default;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 
     background-color: var(--cardBackground);
+    background-image: var(--cardBackgroundPattern);
 
     color: var(--cardTextColor);
     text-decoration: none;
 
+    overflow: hidden;
+
+    &--inverted {
+        color: var(--colorTextInverted);
+    }
+
+    /*
+     * 1. Force 7:4 aspect ratio on media overlay cards
+     */
+    &--media-overlay {
+        height: 0;
+        padding-bottom: (4 / 7) * 100%; /* 1 */
+    }
+
+    @include mq($from: desktopSmall) {
+        margin-bottom: 0;
+    }
+
     &__media {
+        border-bottom-left-radius: var(--cardBorderRadius);
+        border-bottom-right-radius: var(--cardBorderRadius);
         border: var(--cardMediaBorder);
         margin-bottom: var(--cardMediaMarginBottom);
 
+        overflow: hidden;
+
         &-image {
+            display: block;
             min-width: 100%;
+
+            .card--media-overlay & {
+                width: 100%;
+            }
+        }
+
+        .card--media-overlay & {
+            position: relative;
+            z-index: 1;
         }
     }
 
     &__body {
         padding: var(--cardBodyPadding);
+        position: relative;
+
+        z-index: var(--cardBodyZIndex);
+
+        .card--has-media & {
+            padding-top: $spacing-default;
+        }
+
+        .card--media-overlay & {
+            bottom: 0;
+            left: 0;
+            padding: var(--cardBodyPadding);
+            position: absolute;
+            width: 100%;
+        }
+
+        p,
+        ul,
+        ol {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__header {
-        margin-bottom: $spacing-text-default;
+        margin-bottom: var(--cardTitleMarginBottom);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .card--has-media & {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .card--media-overlay & {
+            display: block;
+        }
     }
 
     &__title {
         margin-bottom: var(--cardTitleMarginBottom);
 
-        color: var(--cardTitleColor);
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &__meta {
         display: block;
 
-        color: var(--cardMetaColor);
+        color: var(--colorTextLight);
+        font-family: var(--fontFamilyHeading);
         font-weight: var(--cardMetaWeight);
+        text-transform: var(--cardMetaTextTransform);
+
+        .card--inverted &,
+        .content-feed--inverted & {
+            color: var(--colorTextLighter);
+        }
+
+        .card--has-media & {
+            margin-bottom: var(--cardTitleMarginBottom);
+        }
+
+        .card--media-overlay & {
+            margin-bottom: 0;
+        }
+    }
+
+    /* If card is a link apply hover effect */
+    &[href] {
+        .card__media-image {
+            transform: scale(var(--cardMediaImageScale));
+            transition: transform var(--cardMediaImageTransitionDuration)
+                ease-in-out;
+        }
+
+        &:hover {
+            .card__media-image {
+                transform: scale(var(--cardMediaImageScaleHover));
+            }
+        }
+    }
+}
+
+a.card {
+    &:hover {
+        color: var(--cardTextColor);
+    }
+
+    &--inverted {
+        &:hover {
+            color: var(--colorTextInverted);
+        }
     }
 }
