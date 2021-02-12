@@ -1288,7 +1288,6 @@
                                     "Description": "Content for group",
                                     "Position": "1"
                                 },
-                                "LinkableContentTypes": [],
                                 "BagPartSettings": {
                                     "ContainedContentTypes": [
                                         "Blockquote",
@@ -1319,10 +1318,6 @@
                                         "VisualEditor"
                                     ],
                                     "DisplayType": "Detail"
-                                },
-                                "GalleryPartSettings": {
-                                    "ThumbnailWidth": 480,
-                                    "ThumbnailHeight": 270
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1775,6 +1770,65 @@
                                     "Position": "3"
                                 },
                                 "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "ContentFeed",
+                    "DisplayName": "Content Feed",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Displays multiple content items sourced via a query.",
+                        "Icon": "sitemap"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "ContentFeed",
+                            "Name": "ContentFeed",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BackgroundPart",
+                            "Name": "BackgroundPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "3"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "Links",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Links",
+                                    "Description": "Provides a collection behavior for your content item.",
+                                    "Position": "1"
+                                },
+                                "ContentIndexSettings": {},
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Link"
+                                    ]
+                                }
                             }
                         }
                     ]
@@ -3516,6 +3570,98 @@
                                     ],
                                     "Editor": 1,
                                     "DefaultValue": "three"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "ContentFeed",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "NumericField",
+                            "Name": "PageSize",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Number of Items",
+                                    "Position": "3"
+                                },
+                                "NumericFieldSettings": {
+                                    "Hint": "Number of items to display (per page, if paging is enabled)",
+                                    "Minimum": 0.0
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "Paging",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Paging",
+                                    "Position": "4"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "HideWidgetHeader",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Hide Widget Header",
+                                    "Position": "0"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Hint": "By default, this widget displays the title and links in a header area. Tick this box to hide the header."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "QueryField",
+                            "Name": "Items",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Items",
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Columns",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Columns",
+                                    "Editor": "PredefinedList",
+                                    "Position": "2"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify how many columns to display the items in on desktop devices"
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Four",
+                                            "value": "four"
+                                        },
+                                        {
+                                            "name": "Three",
+                                            "value": "three"
+                                        },
+                                        {
+                                            "name": "Two",
+                                            "value": "two"
+                                        },
+                                        {
+                                            "name": "One",
+                                            "value": "one"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "four"
                                 },
                                 "ContentIndexSettings": {}
                             }

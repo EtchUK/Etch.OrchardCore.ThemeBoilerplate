@@ -46,6 +46,8 @@
                 "Etch.OrchardCore.Blocks.EditorJS",
                 "Etch.OrchardCore.Blocks",
                 "Etch.OrchardCore.Fields.Code",
+                "Etch.OrchardCore.Fields.Colour",
+                "Etch.OrchardCore.Fields.Query",
                 "OrchardCore.ContentFields",
                 "OrchardCore.Widgets",
                 "OrchardCore.Flows",
