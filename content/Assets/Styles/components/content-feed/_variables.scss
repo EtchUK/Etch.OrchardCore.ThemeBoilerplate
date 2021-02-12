@@ -1,5 +1,7 @@
 /* ==========================================================================
-   #FLOW/VARIABLES
+   #CONTENT FEED/VARIABLES
    ========================================================================== */
 
-$flow-gutter: $gutter;
+:root {
+    --contentFeedTitleTextTransform: uppercase;
+}

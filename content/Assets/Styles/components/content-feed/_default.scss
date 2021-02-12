@@ -1,0 +1,114 @@
+/* ==========================================================================
+   #CONTENT FEED/DEFAULT
+   ========================================================================== */
+
+.content-feed {
+    &__header {
+        margin-bottom: $spacing-large;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $content-width;
+
+        @include mq($from: tablet) {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include mq($from: desktop) {
+            margin-bottom: $spacing-x-large;
+        }
+    }
+
+    &__title {
+        margin-bottom: $spacing-default;
+
+        text-transform: var(--contentFeedTitleTextTransform);
+
+        @include mq($from: tablet) {
+            margin: 0;
+        }
+
+        .content-feed--inverted & {
+            color: var(--colorTextInverted);
+        }
+    }
+
+    &__filters {
+        align-items: flex-end;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 (-$spacing-default);
+    }
+
+    &__filter {
+        border-left: $spacing-default solid transparent;
+        border-right: $spacing-default solid transparent;
+        margin-bottom: $spacing-default;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+
+        margin: 0 (-($gutter/2));
+    }
+
+    &__item {
+        flex-basis: 100%;
+        border-left: $gutter/2 solid transparent;
+        border-right: $gutter/2 solid transparent;
+        margin-bottom: $gutter;
+
+        .content-feed--inverted & {
+            color: var(--colorTextInverted);
+        }
+
+        .content-feed__list--two-cols & {
+            @include mq($from: desktop) {
+                flex-basis: 50%;
+            }
+            .constrain--extra-thin & {
+                @include mq($from: desktop) {
+                    flex-basis: 100%;
+                }
+            }
+        }
+
+        .content-feed__list--three-cols & {
+            @include mq($from: desktopSmall) {
+                flex-basis: 33.33%;
+            }
+
+            .constrain--extra-thin & {
+                @include mq($from: desktopSmall) {
+                    flex-basis: 100%;
+                }
+            }
+        }
+
+        .content-feed__list--four-cols & {
+            @include mq($from: tablet) {
+                flex-basis: 50%;
+            }
+            @include mq($from: desktop) {
+                flex-basis: 25%;
+            }
+
+            .constrain--thin & {
+                @include mq($from: desktop) {
+                    flex-basis: 50%;
+                }
+            }
+
+            .constrain--extra-thin & {
+                @include mq($from: tablet) {
+                    flex-basis: 100%;
+                }
+                @include mq($from: desktop) {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}
