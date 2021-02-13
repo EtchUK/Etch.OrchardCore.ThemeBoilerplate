@@ -1109,7 +1109,6 @@
                                     "Description": "Content for page.",
                                     "Position": "4"
                                 },
-                                "LinkableContentTypes": [],
                                 "FlowPartSettings": {
                                     "ContainedContentTypes": [
                                         "Blockquote",
@@ -1135,11 +1134,7 @@
                                         "VisualEditor"
                                     ]
                                 },
-                                "ContentIndexSettings": {},
-                                "GalleryPartSettings": {
-                                    "ThumbnailWidth": 480,
-                                    "ThumbnailHeight": 270
-                                }
+                                "ContentIndexSettings": {}
                             }
                         },
                         {
@@ -1320,6 +1315,15 @@
                                     "DisplayType": "Detail"
                                 },
                                 "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "PartName": "BackgroundPart",
+                            "Name": "BackgroundPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
                             }
                         }
                     ]
