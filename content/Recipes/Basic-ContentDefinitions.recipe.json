@@ -887,7 +887,6 @@
                                     "Description": "Content for group",
                                     "Position": "1"
                                 },
-                                "LinkableContentTypes": [],
                                 "BagPartSettings": {
                                     "ContainedContentTypes": [
                                         "Blockquote",
@@ -909,6 +908,15 @@
                                         "VisualEditor"
                                     ],
                                     "DisplayType": "Detail"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BackgroundPart",
+                            "Name": "BackgroundPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
                                 }
                             }
                         }
