@@ -247,6 +247,15 @@
                                     "Position": "0"
                                 }
                             }
+                        },
+                        {
+                            "PartName": "JavaScriptEventsPart",
+                            "Name": "JavaScriptEventsPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
                         }
                     ]
                 },
