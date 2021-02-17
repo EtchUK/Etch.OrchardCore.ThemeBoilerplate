@@ -6,7 +6,12 @@ Folder for placing images that ship with the theme, typically this would be icon
 
 ## Fonts
 
-Ideally fonts will be loaded via a third party site (e.g. [Google Fonts](https://fonts.google.com/) or [Adobe Fonts](https://fonts.adobe.com/)). There are some scenarios where the font won't be available via a third party site. In those cases, use this directory to include font files within the theme.
+Our default stance for fonts used to be to utilise an external provier (e.g. Google Fonts), however [recent changes to browser caching](https://developers.google.com/web/updates/2020/10/http-cache-partitioning) means the benefits to using these services is obsolete and it's better for performance to self host fonts. 
+
+### Resources
+
+- [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/) is a tool for customising and downloading fonts from Google Fonts.
+- [How to self-host Google Fonts](https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775) is a useful guide for how to self-host fonts from Google Fonts.
 
 ## Scripts
 
