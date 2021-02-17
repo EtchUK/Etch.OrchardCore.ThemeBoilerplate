@@ -79,6 +79,7 @@
                 "OrchardCore.Deployment.Remote",
                 "OrchardCore.Diagnostics",
                 "OrchardCore.DynamicCache",
+                "OrchardCore.ResponseCompression",
                 "OrchardCore.Features",
                 "OrchardCore.Feeds",
                 "OrchardCore.HomeRoute",
