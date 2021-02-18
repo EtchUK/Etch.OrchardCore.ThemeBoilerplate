@@ -1,9 +1,9 @@
 const autoprefixer = require('autoprefixer');
 const CopyPlugin = require('copy-webpack-plugin');
-const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const { default: ImageminPlugin } = require('imagemin-webpack-plugin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 const path = require('path');
 
@@ -84,7 +84,7 @@ module.exports = {
         ],
     },
     plugins: [
-        new FixStyleOnlyEntriesPlugin(),
+        new RemoveEmptyScriptsPlugin(),
         new MiniCssExtractPlugin({
             filename: '../css/styles.css',
         }),
