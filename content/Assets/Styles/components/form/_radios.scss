@@ -6,9 +6,15 @@
     display: block;
 
     &__item {
-        display: inline-block;
-        margin-right: $spacing-default;
+        display: block;
+        margin-bottom: $spacing-default;
         position: relative;
+
+        .radios--inline & {
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: $spacing-default;
+        }
     }
 
     &__label {
