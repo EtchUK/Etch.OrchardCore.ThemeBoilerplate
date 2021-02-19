@@ -1555,6 +1555,130 @@
                     ]
                 },
                 {
+                    "Name": "Checkboxes",
+                    "DisplayName": "Checkboxes",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Form",
+                        "Description": "Collection of checkboxes for collecting toggleable information.",
+                        "Icon": "check-square"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Checkboxes",
+                            "Name": "Checkboxes",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "CheckboxItems",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Checkbox Items",
+                                    "Description": "Provides a collection behavior for your content item.",
+                                    "Position": "1"
+                                },
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "CheckboxItem"
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "CheckboxItem",
+                    "DisplayName": "Checkbox Item",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "CheckboxItem",
+                            "Name": "CheckboxItem",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "RadioButtons",
+                    "DisplayName": "Radio Buttons",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Form",
+                        "Description": "Collection of radio buttons for collecting single choice information.",
+                        "Icon": "check-circle"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "RadioButtons",
+                            "Name": "RadioButtons",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "RadioButtonItems",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Radio Button Items",
+                                    "Description": "Provides a collection behavior for your content item.",
+                                    "Position": "1"
+                                },
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "RadioButtonItem"
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "RadioButtonItem",
+                    "DisplayName": "Radio Button Item",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {}
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "RadioButtonItem",
+                            "Name": "RadioButtonItem",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
                     "Name": "Button",
                     "DisplayName": "Button",
                     "Settings": {
@@ -3348,6 +3472,226 @@
                                 "NumericFieldSettings": {
                                     "Hint": "Number of jobs to display.",
                                     "DefaultValue": "3"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "Checkboxes",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "OverallLabel",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Overall Label",
+                                    "Position": "0"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "A label that applies to all checkboxes, e.g \"Which of these options do you enjoy? Select all that apply.\" (Optional)"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Style",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Style",
+                                    "Editor": "PredefinedList",
+                                    "Position": "3"
+                                },
+                                "TextFieldSettings": {},
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": ""
+                                        },
+                                        {
+                                            "name": "Inline",
+                                            "value": "inline"
+                                        }
+                                    ],
+                                    "Editor": 1
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "FieldName",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Field Name",
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Hint",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Hint",
+                                    "Position": "2"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Use hint text to provide additional context to the question (Optional)"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "CheckboxItem",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Label",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Label",
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Value",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Value",
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "ID",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "ID",
+                                    "Position": "2"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify a unique ID for this item (Optional)"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "RadioButtons",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "OverallLabel",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Overall Label",
+                                    "Position": "0"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "A label that applies to all radio buttons, e.g \"Which of these options is your favourite?\" (Optional)"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "FieldName",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Field Name",
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Hint",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Hint",
+                                    "Position": "2"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Use hint text to provide additional context to the question (Optional)"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Style",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Style",
+                                    "Editor": "PredefinedList",
+                                    "Position": "3"
+                                },
+                                "TextFieldSettings": {},
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": ""
+                                        },
+                                        {
+                                            "name": "Inline",
+                                            "value": "inline"
+                                        }
+                                    ],
+                                    "Editor": 1
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "RadioButtonItem",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Label",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Label",
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Value",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Value",
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "ID",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "ID",
+                                    "Position": "2"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify a unique ID for this item (Optional)"
                                 },
                                 "ContentIndexSettings": {}
                             }
