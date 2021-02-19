@@ -8,14 +8,16 @@
 
 @mixin text-default() {
     font-family: var(--fontFamilyDefault);
-    font-style: normal;
+    font-style: var(--fontStyleDefault);
     font-weight: var(--fontWeightDefault);
+    line-height: var(--lineHeightDefault);
 }
 
 @mixin text-heading($size) {
     font-family: var(--fontFamilyHeading);
-    font-style: normal;
+    font-style: var(--fontStyle#{$size});
     font-size: var(--fontSize#{$size});
-    font-weight: var(--fontWeightBold);
-    line-height: var(--lineHeightHeading);
+    font-weight: var(--fontWeight#{$size});
+    line-height: var(--lineHeight#{$size});
+    text-transform: var(--textTransform#{$size});
 }
