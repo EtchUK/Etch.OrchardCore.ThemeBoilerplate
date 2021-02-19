@@ -9,6 +9,12 @@
         display: block;
         margin-bottom: $spacing-default;
         position: relative;
+
+        .checkboxes--inline & {
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: $spacing-default;
+        }
     }
 
     &__label {
