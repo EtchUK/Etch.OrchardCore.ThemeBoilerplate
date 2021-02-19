@@ -17,7 +17,6 @@ body {
     background-color: var(--colorSiteBackground);
 
     color: var(--colorTextDefault);
-    font-family: var(--fontFamilyDefault);
     font-size: 1.6em; /* 1. */
-    line-height: var(--lineHeightDefault);
+    @include text-default;
 }

@@ -13,11 +13,28 @@
     --fontSizeH4: calc(var(--fontSizeBase) * 1.125);
     --fontSizeLarge: calc(var(--fontSizeBase) * 1.125);
     --fontSizeSmall: calc(var(--fontSizeBase) * 0.875);
+    --fontStyleDefault: normal;
+    --fontStyleH1: var(--fontStyleBold);
+    --fontStyleH2: var(--fontStyleBold);
+    --fontStyleH3: var(--fontStyleBold);
+    --fontStyleH4: var(--fontStyleBold);
     --fontWeightBold: 700;
     --fontWeightDefault: 400;
+    --fontWeightH1: var(--fontWeightBold);
+    --fontWeightH2: var(--fontWeightBold);
+    --fontWeightH3: var(--fontWeightBold);
+    --fontWeightH4: var(--fontWeightBold);
     --lineHeightDefault: 2.2rem;
     --lineHeightHeading: 1.2;
     --lineHeightHero: 1.4;
+    --lineHeightH1: var(--lineHeightHeading);
+    --lineHeightH2: var(--lineHeightHeading);
+    --lineHeightH3: var(--lineHeightHeading);
+    --lineHeightH4: var(--lineHeightHeading);
+    --textTransformH1: none;
+    --textTransformH2: none;
+    --textTransformH3: none;
+    --textTransformH4: none;
 
     @include mq($from: desktop) {
         --fontSizeHero: calc(var(--fontSizeBase) * 4);
