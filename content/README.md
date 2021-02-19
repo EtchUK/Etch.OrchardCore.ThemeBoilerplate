@@ -14,7 +14,7 @@ Orchard Core runs on the .NET Core. Download the latest version from [https://ww
 
 ### [NodeJS](https://nodejs.org/en/)
 
-The theme requires NodeJS to assist with gathering third party front-end dependencies and compiles front-end assets. Compilation of front-end assets is handled by [Webpack](https://webpack.js.org/).
+The theme requires NodeJS 14.15.5 or higher to assist with gathering third party front-end dependencies and compiles front-end assets. Compilation of front-end assets is handled by [Webpack](https://webpack.js.org/).
 
 ## Pattern Library
 
