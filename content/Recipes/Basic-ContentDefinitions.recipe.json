@@ -2195,6 +2195,7 @@
                                     "Position": "3"
                                 },
                                 "ResponsiveMediaFieldSettings": {
+                                    "AllowMediaText": true,
                                     "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
                                     "Hint": "Image displayed as background of hero.",
                                     "Required": false
@@ -2597,6 +2598,7 @@
                                     "Position": "0"
                                 },
                                 "ResponsiveMediaFieldSettings": {
+                                    "AllowMediaText": true,
                                     "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
                                     "Hint": "Ensure all background images for each carousel item has the same dimensions to ensure the height of the carousel remains the same when changing the active item.",
                                     "FallbackData": "",
