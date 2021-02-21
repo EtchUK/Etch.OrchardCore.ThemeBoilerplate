@@ -1427,13 +1427,8 @@
                                     "DisplayName": "Flow",
                                     "Description": "Provides a customizable body for your content item."
                                 },
-                                "LinkableContentTypes": [],
                                 "FlowPartSettings": {
                                     "ContainedContentTypes": []
-                                },
-                                "GalleryPartSettings": {
-                                    "ThumbnailWidth": 480,
-                                    "ThumbnailHeight": 270
                                 },
                                 "ContentIndexSettings": {}
                             }
