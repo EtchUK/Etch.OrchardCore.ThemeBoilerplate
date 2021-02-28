@@ -2,27 +2,9 @@
    #CARD/VARIABLES
    ========================================================================== */
 
-$card-body-carousel-translateX-desktop-medium: 17rem;
-$card-body-carousel-translateX-desktop: 14rem;
-$card-body-carousel-translateX-desktop-small: 11rem;
-$card-body-carousel-translateX-tablet: 7rem;
-
-$card-body-carousel-item-fade-duration: 0.2s;
-$card-body-carousel-item-fade-child-1-delay: 0s;
-$card-body-carousel-item-fade-child-2-delay: 0.1s;
-$card-body-carousel-item-fade-child-3-delay: 0.2s;
-$card-body-carousel-item-fade-translateY: -2rem;
-
 $card-overlay-media-height: 24rem;
 $card-overlay-media-height-mobile: 22rem;
 $card-overlay-media-height-tablet: 34rem;
-
-$card-picture-scale: scale3d(1, 1, 1);
-$card-picture-scale-hover: scale3d(1, 1, 1);
-$card-picture-transition: all 3s ease-in-out;
-
-$card-picture-carousel-intro-blur: 5px;
-$card-picture-carousel-intro-duration: 0.3s;
 
 :root {
     --cardBackground: transparent;

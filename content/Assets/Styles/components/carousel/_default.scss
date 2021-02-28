@@ -117,11 +117,122 @@
 }
 
 .carousel__item {
+    border-radius: 0;
     display: none;
     min-width: 100%;
+    position: relative;
+
+    overflow: hidden;
+
+    color: var(--colorWhite);
+
+    @include mq($from: tablet) {
+        grid-template-columns: repeat(6, 1fr);
+    }
 
     &.is-active {
         display: block;
+    }
+
+    &:hover {
+        .carousel__item-background img {
+            transform: $carousel-item-background-scale-hover;
+        }
+    }
+}
+
+.carousel__item-background {
+    grid-column: span 6;
+    height: auto;
+    margin-left: -$content-gutter-small;
+    margin-right: -$content-gutter-small;
+    width: auto;
+
+    animation-name: cardPictureCarouselIntro;
+    animation-duration: $carousel-item-background-intro-duration;
+    animation-iteration-count: 1;
+
+    @include mq($from: tablet) {
+        margin-left: -$content-gutter;
+        margin-right: -$content-gutter;
+    }
+
+    img {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        object-fit: cover;
+        transform: $carousel-item-background-scale;
+        transition: $carousel-item-background-transition;
+    }
+}
+
+.carousel__item-body {
+    left: $spacing-large;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: $z-index-default;
+
+    @include mq($from: tablet) {
+        left: $carousel-item-translateX-tablet;
+    }
+
+    @include mq($from: desktopSmall) {
+        left: $carousel-item-translateX-desktop-small;
+    }
+
+    @include mq($from: desktop) {
+        left: $carousel-item-translateX-desktop;
+    }
+
+    @include mq($from: desktopMedium) {
+        left: $carousel-item-translateX-desktop-medium;
+    }
+
+    > * {
+        animation-name: cardBodyCarouselItemFade;
+        animation-duration: $carousel-item-fade-duration;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+
+        opacity: 0;
+
+        &:nth-child(1) {
+            animation-delay: $carousel-item-fade-child-1-delay;
+        }
+
+        &:nth-child(2) {
+            animation-delay: $carousel-item-fade-child-2-delay;
+        }
+
+        &:nth-child(3) {
+            animation-delay: $carousel-item-fade-child-3-delay;
+        }
+    }
+}
+
+@keyframes cardPictureCarouselIntro {
+    0% {
+        opacity: 0;
+        filter: blur($carousel-item-background-intro-blur);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes cardBodyCarouselItemFade {
+    0% {
+        opacity: 0;
+        transform: translateY($carousel-item-fade-translateY);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
