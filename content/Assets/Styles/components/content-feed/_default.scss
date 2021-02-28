@@ -63,52 +63,5 @@
         .content-feed--inverted & {
             color: var(--colorTextInverted);
         }
-
-        .content-feed__list--two-cols & {
-            @include mq($from: desktop) {
-                flex-basis: 50%;
-            }
-            .constrain--extra-thin & {
-                @include mq($from: desktop) {
-                    flex-basis: 100%;
-                }
-            }
-        }
-
-        .content-feed__list--three-cols & {
-            @include mq($from: desktopSmall) {
-                flex-basis: 33.33%;
-            }
-
-            .constrain--extra-thin & {
-                @include mq($from: desktopSmall) {
-                    flex-basis: 100%;
-                }
-            }
-        }
-
-        .content-feed__list--four-cols & {
-            @include mq($from: tablet) {
-                flex-basis: 50%;
-            }
-            @include mq($from: desktop) {
-                flex-basis: 25%;
-            }
-
-            .constrain--thin & {
-                @include mq($from: desktop) {
-                    flex-basis: 50%;
-                }
-            }
-
-            .constrain--extra-thin & {
-                @include mq($from: tablet) {
-                    flex-basis: 100%;
-                }
-                @include mq($from: desktop) {
-                    flex-basis: 100%;
-                }
-            }
-        }
     }
 }

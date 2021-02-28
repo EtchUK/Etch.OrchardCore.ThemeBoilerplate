@@ -1,0 +1,55 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $COLUMNS
+ * -----------------------------------------------------------------------------
+ */
+
+.columns--two > div {
+    @include mq($from: desktop) {
+        flex-basis: 50%;
+    }
+
+    .constrain--extra-thin & {
+        @include mq($from: desktop) {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.columns--three > div {
+    @include mq($from: desktopSmall) {
+        flex-basis: 33.33%;
+    }
+
+    .constrain--extra-thin & {
+        @include mq($from: desktopSmall) {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.columns--four > div {
+    @include mq($from: tablet) {
+        flex-basis: 50%;
+    }
+
+    @include mq($from: desktop) {
+        flex-basis: 25%;
+    }
+
+    .constrain--thin & {
+        @include mq($from: desktop) {
+            flex-basis: 50%;
+        }
+    }
+
+    .constrain--extra-thin & {
+        @include mq($from: tablet) {
+            flex-basis: 100%;
+        }
+
+        @include mq($from: desktop) {
+            flex-basis: 100%;
+        }
+    }
+}
