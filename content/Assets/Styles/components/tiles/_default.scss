@@ -16,27 +16,6 @@
     &--inverted {
         color: var(--colorTextInverted);
     }
-
-    .tiles--two-cols & {
-        @include mq($from: tablet) {
-            flex-basis: 50%;
-        }
-    }
-
-    .tiles--three-cols & {
-        @include mq($from: tablet) {
-            flex-basis: 33.33%;
-        }
-    }
-
-    .tiles--four-cols & {
-        @include mq($from: tablet) {
-            flex-basis: 50%;
-        }
-        @include mq($from: desktopSmall) {
-            flex-basis: 25%;
-        }
-    }
 }
 
 /**
