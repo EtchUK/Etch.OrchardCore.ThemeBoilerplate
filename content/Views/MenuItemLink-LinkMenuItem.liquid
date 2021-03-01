@@ -1,5 +1,7 @@
 {% assign link = Model.ContentItem.Content.LinkMenuItemPart %}
 
+{% assign isOpenNewTab = Model.ContentItem.Content.LinkMenuItem.OpenNewTab.Value %}
+
 {% if Model.HasItems == "true" %}
     <a href="{{ link.Url | href }}" aria-haspopup="true" aria-expanded="false" class="js-nav-parent-link">
         {{ link.Name }}
@@ -8,5 +10,5 @@
         </svg>
     </a>
 {% else %}
-    <a href="{{ link.Url | href }}">{{ link.Name }}</a>
+    <a href="{{ link.Url | href }}" {% if isOpenNewTab %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.Name }}</a>
 {% endif %}
