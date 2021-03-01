@@ -183,20 +183,11 @@
                     },
                     "ContentTypePartDefinitionRecords": [
                         {
-                            "PartName": "LinkMenuItemPart",
-                            "Name": "LinkMenuItemPart",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "0"
-                                }
-                            }
-                        },
-                        {
                             "PartName": "LinkMenuItem",
                             "Name": "LinkMenuItem",
                             "Settings": {
                                 "ContentTypePartSettings": {
-                                    "Position": "1"
+                                    "Position": "0"
                                 }
                             }
                         }
@@ -2145,14 +2136,24 @@
                     "ContentPartFieldDefinitionRecords": []
                 },
                 {
-                    "Name": "LinkMenuItemPart",
-                    "Settings": {
-                        "ContentPartSettings": {
-                            "Attachable": true,
-                            "Description": "Provides a menu link behavior for your content item."
+                    "Name": "LinkMenuItem",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "OpenNewTab",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Open in New Tab",
+                                    "Position": "0"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Label": "Open link in new tab"
+                                },
+                                "ContentIndexSettings": {}
+                            }
                         }
-                    },
-                    "ContentPartFieldDefinitionRecords": []
+                    ]
                 },
                 {
                     "Name": "ContentMenuItemPart",
