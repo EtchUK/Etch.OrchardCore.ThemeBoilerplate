@@ -582,6 +582,15 @@
                             "Name": "Hero",
                             "Settings": {
                                 "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
                                     "Position": "0"
                                 }
                             }
@@ -593,7 +602,7 @@
                                 "ContentTypePartSettings": {
                                     "DisplayName": "Content",
                                     "Description": "Content displayed in hero.",
-                                    "Position": "1"
+                                    "Position": "2"
                                 }
                             }
                         }
@@ -2705,6 +2714,79 @@
                                 },
                                 "BooleanFieldSettings": {
                                     "Hint": "Tick to add a gradient to the background media, which will make the header more legible"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "ContentWidth",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Content Width",
+                                    "Editor": "PredefinedList",
+                                    "Position": "3"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Determines the width of content within section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Wide",
+                                            "value": "wide"
+                                        },
+                                        {
+                                            "name": "Full",
+                                            "value": "full"
+                                        },
+                                        {
+                                            "name": "Thin",
+                                            "value": "thin"
+                                        },
+                                        {
+                                            "name": "Extra Thin",
+                                            "value": "extra-thin"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Gutter",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Gutter",
+                                    "Editor": "PredefinedList",
+                                    "Position": "1"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify how much space to show between content when putting several items on the same line."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "large"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
                                 },
                                 "ContentIndexSettings": {}
                             }
