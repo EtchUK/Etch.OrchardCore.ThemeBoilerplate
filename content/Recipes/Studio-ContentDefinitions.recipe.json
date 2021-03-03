@@ -1596,9 +1596,6 @@
                     "Name": "CheckboxItem",
                     "DisplayName": "Checkbox Item",
                     "Settings": {
-                        "ContentTypeSettings": {
-                            "Stereotype": "Widget"
-                        },
                         "FullTextAspectSettings": {}
                     },
                     "ContentTypePartDefinitionRecords": [
@@ -1658,9 +1655,6 @@
                     "Name": "RadioButtonItem",
                     "DisplayName": "Radio Button Item",
                     "Settings": {
-                        "ContentTypeSettings": {
-                            "Stereotype": "Widget"
-                        },
                         "FullTextAspectSettings": {}
                     },
                     "ContentTypePartDefinitionRecords": [
