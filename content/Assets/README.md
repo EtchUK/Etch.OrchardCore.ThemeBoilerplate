@@ -6,7 +6,7 @@ Folder for placing images that ship with the theme, typically this would be icon
 
 ## Fonts
 
-Our default stance for fonts used to be to utilise an external provier (e.g. Google Fonts), however [recent changes to browser caching](https://developers.google.com/web/updates/2020/10/http-cache-partitioning) means the benefits to using these services is obsolete and it's better for performance to self host fonts. 
+Our default stance for fonts used to be to utilise an external provier (e.g. Google Fonts), however [recent changes to browser caching](https://developers.google.com/web/updates/2020/10/http-cache-partitioning) means the benefits to using these services is obsolete and it's better for performance to self host fonts. When changing the fonts that are loaded by the theme, ensure the font preloads defined in `Layout.liquid` is updated.
 
 ### Resources
 
