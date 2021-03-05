@@ -1,7 +1,7 @@
 /**
  * Applies special classes to relevant items when they're scrolled into view.
  * This can be used to apply animation or other CSS behaviour
- * that should when an element becomes visible
+ * that should occur when an element becomes visible
  */
 const inViewport = () => {
     const SELECTOR = '.js-in-viewport';
