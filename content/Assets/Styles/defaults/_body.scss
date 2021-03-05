@@ -19,4 +19,6 @@ body {
     color: var(--colorTextDefault);
     font-size: 1.6em; /* 1. */
     @include text-default;
+
+    overflow-x: hidden;
 }
