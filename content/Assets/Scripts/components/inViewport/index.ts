@@ -22,11 +22,11 @@ const inViewport = () => {
         const $entry = entry.target as HTMLHtmlElement;
 
         if (entry.isIntersecting) {
-            // Highlight this item in the navigation
+            // Apply in viewport classes
             $entry.classList.add(CLASS);
             $entry.classList.add(PERMANENT_CLASS);
         } else {
-            // Unhighlight this item in the navigation
+            // Remove temporary in viewport class
             $entry.classList.remove(CLASS);
         }
     };
