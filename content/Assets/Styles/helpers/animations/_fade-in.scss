@@ -14,14 +14,14 @@
     @include fadeIn(200px);
 }
 
-.fade-in--once {
-    @include fadeIn(0px, true);
+.fade-in--repeatable {
+    @include fadeIn(0px, false);
 }
 
-.fade-in--from-left-once {
-    @include fadeIn(-200px, true);
+.fade-in--from-left-repeatable {
+    @include fadeIn(-200px, false);
 }
 
-.fade-in--from-right-once {
-    @include fadeIn(200px, true);
+.fade-in--from-right-repeatable {
+    @include fadeIn(200px, false);
 }

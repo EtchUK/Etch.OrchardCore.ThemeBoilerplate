@@ -29,7 +29,7 @@
 /* 1 */
 @mixin fadeIn(
     $horizontalOffset: 0px,
-    $once: false,
+    $once: true,
     $speed: $transition-speed,
     $timing: $transition-timing
 ) {
