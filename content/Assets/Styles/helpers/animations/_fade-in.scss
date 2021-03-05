@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #HELPERS/ANIMATIONS/FADE IN
+   ========================================================================== */
+
+.fade-in {
+    @include fadeIn();
+}
+
+.fade-in--from-left {
+    @include fadeIn(-200px);
+}
+
+.fade-in--from-right {
+    @include fadeIn(200px);
+}
+
+.fade-in--once {
+    @include fadeIn(0px, true);
+}
+
+.fade-in--from-left-once {
+    @include fadeIn(-200px, true);
+}
+
+.fade-in--from-right-once {
+    @include fadeIn(200px, true);
+}

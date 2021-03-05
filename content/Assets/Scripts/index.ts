@@ -2,10 +2,12 @@ import 'picturefill';
 
 import carousel from './components/carousel';
 import gallery from './components/gallery';
+import inViewport from './components/inViewport';
 import nav from './components/nav';
 import parallax from './components/parallax';
 import scrollbarWidth from './components/scrollbarWidth';
 import toggleNav from './components/toggleNav';
+
 
 /**
  * Called once the page is loaded and handles initialising
@@ -14,6 +16,7 @@ import toggleNav from './components/toggleNav';
 const init = () => {
     carousel();
     gallery();
+    inViewport();
     nav();
     parallax();
     scrollbarWidth();
