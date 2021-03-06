@@ -4,23 +4,29 @@
 
 /**
  * Mixin for adding fade in styles to elements
- * These animations rely on the 'in-viewport' classes added by JS (See inViewport JS module)
- * These animations will also only run if an 'animate' class appears on the body (or suitable parent element)
+ * These animations rely on the 'in-viewport' classes added by JS (see 
+ * inViewport JS module)
+ * These animations will also only run if an 'animate' class appears on 
+ * the body (or suitable parent element)
  */
 
 /**
   * 1. The default horizontal offset is 0, producing a "fade in place" effect. 
   *    An offset of e.g -200px produces a "from the left" effect. 
   *    A positive number will produce a "from the right" effect.
-  *    The $once variable determines whether the animation should run every time the element is scrolled into view, or just the first time
-  * 2. Any animation that deals with element visibility also needs a no-js fallback of running a keyframe animation once to ensure it becomes visible
-  * 3. Significant delay to allow it to appear smooth for people with JS turned on, but fade if no-js remains on the DOM, implying a JS failure or lack of JS enabled
+  * 2.  Any animation that deals with element visibility also needs a no-js 
+  *     fallback of running a keyframe animation once to ensure it becomes 
+  *     visible.
+  * 3.  Significant delay to allow it to appear smooth for people with JS turned on, 
+  *     but fade if no-js remains on the DOM, implying a JS failure or lack 
+  *     of JS enabled.
   */
 
 @keyframes noJSFadeIn {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -29,7 +35,6 @@
 /* 1 */
 @mixin fadeIn(
     $horizontalOffset: 0px,
-    $once: true,
     $speed: $transition-speed,
     $timing: $transition-timing
 ) {
@@ -38,16 +43,9 @@
         transform: translateX($horizontalOffset);
         transition: opacity $speed $timing, transform $speed $timing;
 
-        @if $once {
-            &.in-viewport--has-been {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        } @else {
-            &.in-viewport--is {
-                opacity: 1;
-                transform: translateX(0);
-            }
+        &.in-viewport {
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 

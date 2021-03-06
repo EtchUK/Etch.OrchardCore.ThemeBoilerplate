@@ -4,13 +4,15 @@
  * that should occur when an element becomes visible
  */
 const inViewport = () => {
-    const CLASS = 'in-viewport--is';
+    const CLASS = 'in-viewport';
     const SELECTOR = '.js-in-viewport';
-    const PERMANENT_CLASS = 'in-viewport--has-been';
+    const attributes = {
+        REPEAT: 'data-repeat',
+    };
 
     if (typeof IntersectionObserver === 'undefined') {
         document.querySelectorAll(SELECTOR).forEach(($el: Element) => {
-            $el.classList.add(CLASS, PERMANENT_CLASS);
+            $el.classList.add(CLASS);
         });
 
         return;
@@ -20,7 +22,12 @@ const inViewport = () => {
         const $entry = entry.target as HTMLHtmlElement;
 
         if (entry.isIntersecting) {
-            $entry.classList.add(CLASS, PERMANENT_CLASS);
+            $entry.classList.add(CLASS);
+
+            if (!isRepeat($entry)) {
+                observer.unobserve($entry);
+            }
+
             return;
         }
 
@@ -29,6 +36,10 @@ const inViewport = () => {
 
     const callback = (entries: IntersectionObserverEntry[]) => {
         entries.forEach(checkEntry);
+    };
+
+    const isRepeat = ($el: HTMLHtmlElement) => {
+        return $el.getAttribute(attributes.REPEAT) === 'true';
     };
 
     const observer = new IntersectionObserver(callback, {
