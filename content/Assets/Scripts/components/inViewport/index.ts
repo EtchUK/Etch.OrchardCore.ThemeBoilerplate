@@ -4,17 +4,15 @@
  * that should occur when an element becomes visible
  */
 const inViewport = () => {
+    const CLASS = 'in-viewport--is';
     const SELECTOR = '.js-in-viewport';
-    const CLASS = 'in-viewport--is'; // Only applies when something is currently in view
-    const PERMANENT_CLASS = 'in-viewport--has-been'; // Applies the first time something appears in viewport (and stays)
+    const PERMANENT_CLASS = 'in-viewport--has-been';
 
-    // If IntersectionObserver is not supported, add these classes immediately
-    // This means older browsers get all animations immediately on load as a graceful fallback
     if (typeof IntersectionObserver === 'undefined') {
         document.querySelectorAll(SELECTOR).forEach(($el: Element) => {
-            $el.classList.add(CLASS);
-            $el.classList.add(PERMANENT_CLASS);
+            $el.classList.add(CLASS, PERMANENT_CLASS);
         });
+
         return;
     }
 
@@ -22,25 +20,22 @@ const inViewport = () => {
         const $entry = entry.target as HTMLHtmlElement;
 
         if (entry.isIntersecting) {
-            // Apply in viewport classes
-            $entry.classList.add(CLASS);
-            $entry.classList.add(PERMANENT_CLASS);
-        } else {
-            // Remove temporary in viewport class
-            $entry.classList.remove(CLASS);
+            $entry.classList.add(CLASS, PERMANENT_CLASS);
+            return;
         }
+
+        $entry.classList.remove(CLASS);
     };
 
     const callback = (entries: IntersectionObserverEntry[]) => {
         entries.forEach(checkEntry);
     };
 
-    const options = {
+    const observer = new IntersectionObserver(callback, {
         rootMargin: '0px',
         threshold: 0,
-    };
+    });
 
-    const observer = new IntersectionObserver(callback, options);
     document.querySelectorAll(SELECTOR).forEach(($el: Element) => {
         observer.observe($el as HTMLElement);
     });
