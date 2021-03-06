@@ -1,15 +1,62 @@
 /* ==========================================================================
-   #HELPERS/ANIMATIONS/FADE IN
+   #ANIMATIONS/FADE IN
    ========================================================================== */
 
-.fade-in {
-    @include fadeIn();
+/**
+ * 1. Any animation that deals with element visibility also needs a no-js 
+ *    fallback of running a keyframe animation once to ensure it becomes 
+ *    visible.
+ * 2. Significant delay to allow it to appear smooth for people with JS turned
+ *    on, but fade if no-js remains on the DOM, implying a JS failure or lack 
+ *    of JS enabled.
+ */
+
+.animate {
+    .fade-in {
+        opacity: 0;
+        transition: opacity var(--animationFadeDuration)
+            var(--animationFadeTiming);
+
+        &.in-viewport {
+            opacity: 1;
+        }
+
+        /* 1 */
+        .no-js & {
+            transition: none;
+            animation-name: noJSFadeIn;
+            animation-duration: var(--animationFadeDuration);
+            animation-fill-mode: forwards;
+            animation-delay: var(--animationFadeFallbackDuration); /* 2 */
+        }
+    }
+
+    .fade-in--from-left,
+    .fade-in--from-right {
+        transition: opacity var(--animationFadeDuration)
+                var(--animationFadeTiming),
+            transform var(--animationFadeDuration) var(--animationFadeTiming);
+
+        &.in-viewport {
+            transform: translateX(0);
+        }
+    }
+
+    .fade-in--from-left {
+        transform: translateX(calc(-1 * var(--animationFadeMoveOffset)));
+    }
+
+    .fade-in--from-right {
+        transform: translateX(var(--animationFadeMoveOffset));
+    }
 }
 
-.fade-in--from-left {
-    @include fadeIn(-200px);
-}
+@keyframes noJSFadeIn {
+    0% {
+        opacity: 0;
+    }
 
-.fade-in--from-right {
-    @include fadeIn(200px);
+    100% {
+        opacity: 1;
+    }
 }
