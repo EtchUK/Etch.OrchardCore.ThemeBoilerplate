@@ -13,15 +13,3 @@
 .fade-in--from-right {
     @include fadeIn(200px);
 }
-
-.fade-in--repeatable {
-    @include fadeIn(0px, false);
-}
-
-.fade-in--from-left-repeatable {
-    @include fadeIn(-200px, false);
-}
-
-.fade-in--from-right-repeatable {
-    @include fadeIn(200px, false);
-}
