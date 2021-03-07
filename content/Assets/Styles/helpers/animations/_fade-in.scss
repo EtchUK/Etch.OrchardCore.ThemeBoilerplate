@@ -39,6 +39,7 @@
 
         &.in-viewport {
             transform: translateX(0);
+            transition-delay: var(--animationFadeDelay);
         }
     }
 
