@@ -19,6 +19,7 @@
 
         &.in-viewport {
             opacity: 1;
+            transition-delay: var(--animationFadeDelay);
         }
 
         /* 1 */
