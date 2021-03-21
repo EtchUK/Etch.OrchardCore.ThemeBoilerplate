@@ -27,8 +27,8 @@
         },
         "version": {
             "type": "parameter",
-            "defaultValue": "0.0.1-rc1",
-            "replaces": "0.7.1-rc2"
+            "defaultValue": "0.0.1",
+            "replaces": "1.0.0"
         },
         "website": {
             "type": "parameter",
