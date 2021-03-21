@@ -1159,7 +1159,11 @@
                             "Listable": "False",
                             "Securable": "False",
                             "Stereotype": "Widget"
-                        }
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Display collection of images or videos.",
+                        "Icon": "images"
                     },
                     "ContentTypePartDefinitionRecords": [
                         {
