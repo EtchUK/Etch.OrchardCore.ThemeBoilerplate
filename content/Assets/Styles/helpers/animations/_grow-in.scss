@@ -15,9 +15,8 @@
     .grow-in {
         transform: scale(0);
         transform-origin: center;
-        transition: transform var(--animationFadeDuration)
-            var(--animationFadeTiming);
-        transition-delay: var(--animationFadeDelay);
+        transition: transform var(--animationDuration) var(--animationTiming);
+        transition-delay: var(--animationDelay);
 
         &.in-viewport {
             transform: scale(1);
@@ -27,9 +26,9 @@
         .no-js & {
             transition: none;
             animation-name: noJSGrowIn;
-            animation-duration: var(--animationFadeDuration);
+            animation-duration: var(--animationDuration);
             animation-fill-mode: forwards;
-            animation-delay: var(--animationFadeFallbackDuration); /* 2 */
+            animation-delay: var(--animationFallbackDuration); /* 2 */
         }
     }
 
