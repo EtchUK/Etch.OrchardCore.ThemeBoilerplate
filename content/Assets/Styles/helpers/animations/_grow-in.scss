@@ -1,5 +1,5 @@
 /* ==========================================================================
-   #ANIMATIONS/FADE IN
+   #ANIMATIONS/GROW IN
    ========================================================================== */
 
 /**
@@ -12,53 +12,50 @@
  */
 
 .animate {
-    .fade-in {
-        opacity: 0;
-        transition: opacity var(--animationFadeDuration)
+    .grow-in {
+        transform: scale(0);
+        transform-origin: center;
+        transition: transform var(--animationFadeDuration)
             var(--animationFadeTiming);
         transition-delay: var(--animationFadeDelay);
 
         &.in-viewport {
-            opacity: 1;
+            transform: scale(1);
         }
 
         /* 1 */
         .no-js & {
             transition: none;
-            animation-name: noJSFadeIn;
+            animation-name: noJSGrowIn;
             animation-duration: var(--animationFadeDuration);
             animation-fill-mode: forwards;
             animation-delay: var(--animationFadeFallbackDuration); /* 2 */
         }
     }
 
-    .fade-in--from-left,
-    .fade-in--from-right {
-        transition: opacity var(--animationFadeDuration)
-                var(--animationFadeTiming),
-            transform var(--animationFadeDuration) var(--animationFadeTiming);
-
-        &.in-viewport {
-            transform: translateX(0);
-            transition-delay: var(--animationFadeDelay);
-        }
+    .grow-in--from-bottom {
+        transform-origin: bottom;
     }
 
-    .fade-in--from-left {
-        transform: translateX(calc(-1 * var(--animationFadeMoveOffset)));
+    .grow-in--from-left {
+        transform-origin: left;
     }
 
-    .fade-in--from-right {
-        transform: translateX(var(--animationFadeMoveOffset));
+    .grow-in--from-right {
+        transform-origin: right;
+    }
+
+    .grow-in--from-top {
+        transform-origin: top;
     }
 }
 
-@keyframes noJSFadeIn {
+@keyframes noJSGrowIn {
     0% {
-        opacity: 0;
+        transform: scale(0);
     }
 
     100% {
-        opacity: 1;
+        transform: scale(1);
     }
 }
