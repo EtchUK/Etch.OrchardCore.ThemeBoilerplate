@@ -14,9 +14,8 @@
 .animate {
     .fade-in {
         opacity: 0;
-        transition: opacity var(--animationFadeDuration)
-            var(--animationFadeTiming);
-        transition-delay: var(--animationFadeDelay);
+        transition: opacity var(--animationDuration) var(--animationTiming);
+        transition-delay: var(--animationDelay);
 
         &.in-viewport {
             opacity: 1;
@@ -26,30 +25,29 @@
         .no-js & {
             transition: none;
             animation-name: noJSFadeIn;
-            animation-duration: var(--animationFadeDuration);
+            animation-duration: var(--animationDuration);
             animation-fill-mode: forwards;
-            animation-delay: var(--animationFadeFallbackDuration); /* 2 */
+            animation-delay: var(--animationFallbackDuration); /* 2 */
         }
     }
 
     .fade-in--from-left,
     .fade-in--from-right {
-        transition: opacity var(--animationFadeDuration)
-                var(--animationFadeTiming),
-            transform var(--animationFadeDuration) var(--animationFadeTiming);
+        transition: opacity var(--animationDuration) var(--animationTiming),
+            transform var(--animationDuration) var(--animationTiming);
 
         &.in-viewport {
             transform: translateX(0);
-            transition-delay: var(--animationFadeDelay);
+            transition-delay: var(--animationDelay);
         }
     }
 
     .fade-in--from-left {
-        transform: translateX(calc(-1 * var(--animationFadeMoveOffset)));
+        transform: translateX(calc(-1 * var(--animationMoveOffset)));
     }
 
     .fade-in--from-right {
-        transform: translateX(var(--animationFadeMoveOffset));
+        transform: translateX(var(--animationMoveOffset));
     }
 }
 
