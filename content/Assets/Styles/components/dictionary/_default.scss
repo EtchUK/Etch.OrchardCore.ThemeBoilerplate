@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #DICTIONARY/DEFAULT
+   ========================================================================== */
+
+.dictionary {
+    &__item {
+        display: block;
+        margin-bottom: $spacing-default;
+    }
+
+    &__key {
+        display: block;
+        font-weight: var(--fontWeightBold);
+    }
+
+    &__value {
+        display: block;
+    }
+}
