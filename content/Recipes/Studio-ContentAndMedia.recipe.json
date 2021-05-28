@@ -6,12 +6,8 @@
     "website": "https://etchuk.com",
     "version": "0.6.8",
     "issetuprecipe": false,
-    "categories": [
-        "studio"
-    ],
-    "tags": [
-        "studio"
-    ],
+    "categories": ["studio"],
+    "tags": ["studio"],
     "steps": [
         {
             "name": "Content",
@@ -144,9 +140,7 @@
                             "Html": null
                         },
                         "Thumbnail": {
-                            "Paths": [
-                                "News/Default/example-news-400w.jpg"
-                            ]
+                            "Paths": ["News/Default/example-news-400w.jpg"]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -155,13 +149,9 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": [
-                                "Featured"
-                            ],
+                            "TagNames": ["Featured"],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
-                            "TermContentItemIds": [
-                                "4rf9s6d6qtjpas84f52sg2qhc2"
-                            ]
+                            "TermContentItemIds": ["4rf9s6d6qtjpas84f52sg2qhc2"]
                         }
                     },
                     "AutoroutePart": {
@@ -193,9 +183,7 @@
                             "Html": null
                         },
                         "Thumbnail": {
-                            "Paths": [
-                                "News/Default/example-news-400w.jpg"
-                            ]
+                            "Paths": ["News/Default/example-news-400w.jpg"]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -204,10 +192,7 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": [
-                                "Games",
-                                "Mobile"
-                            ],
+                            "TagNames": ["Games", "Mobile"],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
                             "TermContentItemIds": [
                                 "42zsbct55dcvk0sj3xk0jas0dt",
@@ -244,9 +229,7 @@
                             "Html": null
                         },
                         "Thumbnail": {
-                            "Paths": [
-                                "News/Default/example-news-400w.jpg"
-                            ]
+                            "Paths": ["News/Default/example-news-400w.jpg"]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -255,13 +238,9 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": [
-                                "Featured"
-                            ],
+                            "TagNames": ["Featured"],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
-                            "TermContentItemIds": [
-                                "4rf9s6d6qtjpas84f52sg2qhc2"
-                            ]
+                            "TermContentItemIds": ["4rf9s6d6qtjpas84f52sg2qhc2"]
                         }
                     },
                     "AutoroutePart": {
@@ -3075,22 +3054,16 @@
                     "Author": "[js: parameters('AdminUsername')]",
                     "Banner": {
                         "Logo": {
-                            "Paths": [
-                                "Logos/logo-play@1x.svg"
-                            ]
+                            "Paths": ["Logos/logo-play@1x.svg"]
                         },
                         "LogoSmall": {
-                            "Paths": [
-                                "Logos/logo-play-short@1x.svg"
-                            ]
+                            "Paths": ["Logos/logo-play-short@1x.svg"]
                         },
                         "LogoAlternateText": {
                             "Text": "Logo for Etch Play"
                         },
                         "Menu": {
-                            "ContentItemIds": [
-                                "4enkkc6t2b7hvrw0swx4n5bdw9"
-                            ]
+                            "ContentItemIds": ["4enkkc6t2b7hvrw0swx4n5bdw9"]
                         },
                         "MenuToggleButtonLabel": {
                             "Text": "Menu"
@@ -3117,19 +3090,13 @@
                     "Author": "[js: parameters('AdminUsername')]",
                     "Footer": {
                         "Logo": {
-                            "Paths": [
-                                "Logos/logo-play@1x.svg"
-                            ]
+                            "Paths": ["Logos/logo-play@1x.svg"]
                         },
                         "LogoSmall": {
-                            "Paths": [
-                                "Logos/logo-play-short@1x.svg"
-                            ]
+                            "Paths": ["Logos/logo-play-short@1x.svg"]
                         },
                         "Menu": {
-                            "ContentItemIds": [
-                                "4enkkc6t2b7hvrw0swx4n5bdw9"
-                            ]
+                            "ContentItemIds": ["4enkkc6t2b7hvrw0swx4n5bdw9"]
                         },
                         "LogoAlternateText": {
                             "Text": "Company logo."
@@ -4569,6 +4536,198 @@
                 {
                     "SourcePath": "News/Default/example-news-400w.jpg",
                     "TargetPath": "News/Default/example-news-400w.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/ESRB/esrb-10.svg",
+                    "TargetPath": "Logos/Age Ratings/ESRB/esrb-10.svg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/ESRB/esrb-adults-only.svg",
+                    "TargetPath": "Logos/Age Ratings/ESRB/esrb-adults-only.svg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/ESRB/esrb-mature.svg",
+                    "TargetPath": "Logos/Age Ratings/ESRB/esrb-mature.svg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/ESRB/esrb-rating-pending.svg",
+                    "TargetPath": "Logos/Age Ratings/ESRB/esrb-rating-pending.svg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/ESRB/esrb-teen.svg",
+                    "TargetPath": "Logos/Age Ratings/ESRB/esrb-teen.svg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-12.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-12.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-16.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-16.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-18.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-18.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-3.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-3.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-7.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-7.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-bad-language.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-bad-language.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-discrimination.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-discrimination.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-drugs.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-drugs.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-fear.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-fear.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-gambling.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-gambling.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-sex.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-sex.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Age Ratings/PEGI/pegi-violence.jpg",
+                    "TargetPath": "Logos/Age Ratings/PEGI/pegi-violence.jpg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Mobile/android.svg",
+                    "TargetPath": "Logos/Platforms/Mobile/android.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Mobile/apple.svg",
+                    "TargetPath": "Logos/Platforms/Mobile/apple.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Mobile/applearcade.svg",
+                    "TargetPath": "Logos/Platforms/Mobile/applearcade.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Mobile/appstore.svg",
+                    "TargetPath": "Logos/Platforms/Mobile/appstore.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Mobile/googleplay.svg",
+                    "TargetPath": "Logos/Platforms/Mobile/googleplay.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Mobile/ios.svg",
+                    "TargetPath": "Logos/Platforms/Mobile/ios.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Nintendo/3DS/nintendo3ds.svg",
+                    "TargetPath": "Logos/Platforms/Nintendo/3DS/nintendo3ds.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Nintendo/Switch/nintendoswitch.svg",
+                    "TargetPath": "Logos/Platforms/Nintendo/Switch/nintendoswitch.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/PC/Epic Games Store/epicgames-logo.svg",
+                    "TargetPath": "Logos/Platforms/PC/Epic Games Store/epicgames-logo.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/PC/GOG/gog-dot-com.svg",
+                    "TargetPath": "Logos/Platforms/PC/GOG/gog-dot-com.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/PC/Steam/steam.svg",
+                    "TargetPath": "Logos/Platforms/PC/Steam/steam.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/PC/Steam/steamworks.svg",
+                    "TargetPath": "Logos/Platforms/PC/Steam/steamworks.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/PlayStation/Brand/playstation-brand.svg",
+                    "TargetPath": "Logos/Platforms/PlayStation/Brand/playstation-brand.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/PlayStation/PS2/playstation2.svg",
+                    "TargetPath": "Logos/Platforms/PlayStation/PS2/playstation2.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/PlayStation/PS3/playstation3.svg",
+                    "TargetPath": "Logos/Platforms/PlayStation/PS3/playstation3.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/PlayStation/PS4/playstation4.svg",
+                    "TargetPath": "Logos/Platforms/PlayStation/PS4/playstation4.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/PlayStation/PS5/playstation5.svg",
+                    "TargetPath": "Logos/Platforms/PlayStation/PS5/playstation5.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/PlayStation/Vita/playstationvita.svg",
+                    "TargetPath": "Logos/Platforms/PlayStation/Vita/playstationvita.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Twitch/twitch.svg",
+                    "TargetPath": "Logos/Platforms/Twitch/twitch.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/Brand/xbox.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/Brand/xbox.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/Brand/xbox-logo.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/Brand/xbox-logo.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/One/xbox-one-colour.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/One/xbox-one-colour.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/One/xbox-one-colour-no-sphere.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/One/xbox-one-colour-no-sphere.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/Series/optimized-for-x.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/Series/optimized-for-x.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/Series/xbox-series.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/Series/xbox-series.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/Series/xbox-series-x-portrait.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/Series/xbox-series-x-portrait.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/Services/gamepass-horizontal-colour.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/Services/gamepass-horizontal-colour.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/Services/gamepass-vertical-black.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/Services/gamepass-vertical-black.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/Services/gamepass-vertical-white.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/Services/gamepass-vertical-white.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/Services/smart-delivery.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/Services/smart-delivery.svg"
+                },
+                {
+                    "SourcePath": "Logos/Platforms/Xbox/Services/velocity-architecture.svg",
+                    "TargetPath": "Logos/Platforms/Xbox/Services/velocity-architecture.svg"
                 }
             ]
         }
