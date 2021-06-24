@@ -7,7 +7,7 @@ $card-overlay-media-height-mobile: 22rem;
 $card-overlay-media-height-tablet: 34rem;
 
 :root {
-    --cardBackground: transparent;
+    --cardBackground: #eaeaea;
     --cardBackgroundPattern: none;
     --cardBodyZIndex: 3; /* 1 */
     --cardBorder: var(--colorGrey);
@@ -17,6 +17,7 @@ $card-overlay-media-height-tablet: 34rem;
     --cardMediaMarginBottom: 0;
     --cardMetaWeight: 700;
     --cardMetaTextTransform: uppercase;
+    --cardTextColor: inherit;
     --cardTitleMarginBottom: 0.2rem;
     --cardMediaImageScale: 1;
     --cardMediaImageScaleHover: 1.2;
