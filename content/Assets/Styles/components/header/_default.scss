@@ -113,7 +113,7 @@
 
         @include mq($from: tablet) {
             border-top: 0;
-            display: block;
+            display: flex;
             height: auto;
             padding-top: 0;
             position: static;

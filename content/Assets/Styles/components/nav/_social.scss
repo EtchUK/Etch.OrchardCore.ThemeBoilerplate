@@ -1,10 +1,9 @@
 /* ==========================================================================
-   #NAV
+   #NAV/SOCIAL
    ========================================================================== */
 
-@import 'variables';
-
-@import 'default';
-@import 'footer';
-@import 'primary';
-@import 'social';
+.nav-social {
+    .nav__item {
+        border-bottom: 0;
+    }
+}
