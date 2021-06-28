@@ -19,6 +19,7 @@
     &__body {
         position: absolute;
         padding: var(--heroBodyPadding) 0;
+        z-index: $z-index-nudge-forward;
 
         @each $width in $widths {
             .width--#{$width} & {
@@ -49,18 +50,20 @@
         }
     }
 
-    &__media {
+    &__media,
+    .hero-responsive-media--background-image {
         align-items: center; /* 2. */
         display: flex;
         justify-content: center;
         max-height: var(--heroMediaMaxHeight);
-
         min-width: auto;
         position: relative;
         width: 100%;
-        z-index: $z-index-back;
+
+        background: var(--heroBackgroundColor);
 
         overflow: hidden;
+        z-index: $z-index-back;
 
         @include mq($from: tablet) {
             min-width: auto;
