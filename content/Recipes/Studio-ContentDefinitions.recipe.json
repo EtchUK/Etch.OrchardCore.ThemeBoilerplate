@@ -1997,6 +1997,66 @@
                             }
                         }
                     ]
+                },
+                {
+                    "Name": "FeaturedContent",
+                    "DisplayName": "Featured Content",
+                    "Settings": {
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "FullTextAspectSettings": {},
+                        "Category": "Content",
+                        "Description": "Pick specific content to display in a static feed",
+                        "Icon": "highlighter"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "FeaturedContent",
+                            "Name": "FeaturedContent",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BackgroundPart",
+                            "Name": "BackgroundPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "3"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BagPart",
+                            "Name": "Links",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Links",
+                                    "Description": "Provides a collection behavior for your content item.",
+                                    "Position": "1"
+                                },
+                                "LinkableContentTypes": [],
+                                "BagPartSettings": {
+                                    "ContainedContentTypes": [
+                                        "Link"
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
                 }
             ],
             "ContentParts": [
@@ -4276,6 +4336,77 @@
                                     "DisplayName": "Columns",
                                     "Editor": "PredefinedList",
                                     "Position": "2"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify how many columns to display the items in on desktop devices"
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Four",
+                                            "value": "four"
+                                        },
+                                        {
+                                            "name": "Three",
+                                            "value": "three"
+                                        },
+                                        {
+                                            "name": "Two",
+                                            "value": "two"
+                                        },
+                                        {
+                                            "name": "One",
+                                            "value": "one"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "four"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "FeaturedContent",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "HideWidgetHeader",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Hide Widget Header",
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "ContentPickerField",
+                            "Name": "Items",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Items"
+                                },
+                                "ContentPickerFieldSettings": {
+                                    "Multiple": true,
+                                    "DisplayedContentTypes": [
+                                        "Game",
+                                        "Page",
+                                        "Job",
+                                        "NewsPost"
+                                    ]
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Columns",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Columns",
+                                    "Editor": "PredefinedList"
                                 },
                                 "TextFieldSettings": {
                                     "Hint": "Specify how many columns to display the items in on desktop devices"
