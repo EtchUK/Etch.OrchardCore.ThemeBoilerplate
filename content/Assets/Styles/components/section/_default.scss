@@ -11,11 +11,16 @@
 
     background-color: var(--sectionBackgroundColor);
     background-image: var(--sectionBackgroundPattern);
-    overflow-x: hidden;
+    overflow: hidden;
 
     @include mq($from: desktop) {
         margin-bottom: var(--sectionVerticalPadding);
         padding-bottom: var(--sectionVerticalPadding);
         padding-top: var(--sectionVerticalPadding);
+    }
+
+    &__content {
+        position: relative;
+        z-index: $z-index-nudge-forward;
     }
 }
