@@ -131,4 +131,10 @@
     h2 {
         text-transform: var(--heroHeadingTextTransform);
     }
+
+    &--encourage-scrolling {
+        &:after {
+            content: 'Scroll down';
+        }
+    }
 }
