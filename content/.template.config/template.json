@@ -1,9 +1,6 @@
 {
     "author": "Etch UK",
-    "classifications": [
-        "OrchardCore",
-        "Web"
-    ],
+    "classifications": ["OrchardCore", "Web"],
     "name": "Orchard Core Theme Boilerplate",
     "identity": "Etch.OrchardCore.ThemeBoilerplate",
     "shortName": "orchardcore-themeboilerplate",
@@ -31,7 +28,7 @@
         "version": {
             "type": "parameter",
             "defaultValue": "0.0.1-rc1",
-            "replaces": "0.7.0-rc2"
+            "replaces": "0.7.1-rc2"
         },
         "website": {
             "type": "parameter",

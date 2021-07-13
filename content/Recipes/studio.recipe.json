@@ -4,14 +4,10 @@
     "description": "Sets up studio site with Boilerplate Theme",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "issetuprecipe": true,
-    "categories": [
-        "studio"
-    ],
-    "tags": [
-        "studio"
-    ],
+    "categories": ["studio"],
+    "tags": ["studio"],
     "variables": {
         "now": "[js: new Date().toISOString()]"
     },

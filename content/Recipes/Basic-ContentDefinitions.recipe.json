@@ -4,14 +4,10 @@
     "description": "Configures content definitions for basic site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "issetuprecipe": false,
-    "categories": [
-        "basic"
-    ],
-    "tags": [
-        "basic"
-    ],
+    "categories": ["basic"],
+    "tags": ["basic"],
     "steps": [
         {
             "name": "ContentDefinition",
@@ -254,82 +250,82 @@
                     "Name": "Section",
                     "DisplayName": "Section",
                     "Settings": {
-                      "ContentTypeSettings": {
-                        "Stereotype": "Widget"
-                      },
-                      "Category": "Common,Container",
-                      "Description": "Represents a generic section of a page, i.e., a thematic grouping of content.",
-                      "Icon": "puzzle-piece",
-                      "FullTextAspectSettings": {}
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Common,Container",
+                        "Description": "Represents a generic section of a page, i.e., a thematic grouping of content.",
+                        "Icon": "puzzle-piece",
+                        "FullTextAspectSettings": {}
                     },
                     "ContentTypePartDefinitionRecords": [
-                      {
-                        "PartName": "Section",
-                        "Name": "Section",
-                        "Settings": {
-                          "ContentTypePartSettings": {
-                            "Position": "1"
-                          }
+                        {
+                            "PartName": "Section",
+                            "Name": "Section",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "FlowPart",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Content",
+                                    "Description": "Content for section.",
+                                    "Position": "2"
+                                },
+                                "FlowPartSettings": {
+                                    "ContainedContentTypes": []
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "BackgroundPart",
+                            "Name": "BackgroundPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "3"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "Bleed",
+                            "Name": "Bleed",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "4"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "HtmlAttributesPart",
+                            "Name": "HtmlAttributesPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "5"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "AnimationPart",
+                            "Name": "AnimationPart",
+                            "Settings": {}
                         }
-                      },
-                      {
-                        "PartName": "FlowPart",
-                        "Name": "Content",
-                        "Settings": {
-                          "ContentTypePartSettings": {
-                            "DisplayName": "Content",
-                            "Description": "Content for section.",
-                            "Position": "2"
-                          },
-                          "FlowPartSettings": {
-                            "ContainedContentTypes": []
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "PartName": "TitlePart",
-                        "Name": "TitlePart",
-                        "Settings": {
-                          "ContentTypePartSettings": {
-                            "Position": "0"
-                          }
-                        }
-                      },
-                      {
-                        "PartName": "BackgroundPart",
-                        "Name": "BackgroundPart",
-                        "Settings": {
-                          "ContentTypePartSettings": {
-                            "Position": "3"
-                          }
-                        }
-                      },
-                      {
-                        "PartName": "Bleed",
-                        "Name": "Bleed",
-                        "Settings": {
-                          "ContentTypePartSettings": {
-                            "Position": "4"
-                          }
-                        }
-                      },
-                      {
-                        "PartName": "HtmlAttributesPart",
-                        "Name": "HtmlAttributesPart",
-                        "Settings": {
-                          "ContentTypePartSettings": {
-                            "Position": "5"
-                          }
-                        }
-                      },
-                      {
-                        "PartName": "AnimationPart",
-                        "Name": "AnimationPart",
-                        "Settings": {}
-                      }
                     ]
-                  },
+                },
                 {
                     "Name": "Heading",
                     "DisplayName": "Heading",
@@ -583,64 +579,64 @@
                     "Name": "Hero",
                     "DisplayName": "Hero",
                     "Settings": {
-                      "ContentTypeSettings": {
-                        "Stereotype": "Widget"
-                      },
-                      "Category": "Content",
-                      "Description": "Prominent section of page for sign posting to featured content.",
-                      "Icon": "mask",
-                      "FullTextAspectSettings": {}
+                        "ContentTypeSettings": {
+                            "Stereotype": "Widget"
+                        },
+                        "Category": "Content",
+                        "Description": "Prominent section of page for sign posting to featured content.",
+                        "Icon": "mask",
+                        "FullTextAspectSettings": {}
                     },
                     "ContentTypePartDefinitionRecords": [
-                      {
-                        "PartName": "Hero",
-                        "Name": "Hero",
-                        "Settings": {
-                          "ContentTypePartSettings": {
-                            "Position": "1"
-                          }
+                        {
+                            "PartName": "Hero",
+                            "Name": "Hero",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "TitlePart",
+                            "Name": "TitlePart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "FlowPart",
+                            "Name": "Content",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "DisplayName": "Content",
+                                    "Description": "Content displayed in hero.",
+                                    "Position": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "Bleed",
+                            "Name": "Bleed",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "3"
+                                }
+                            }
+                        },
+                        {
+                            "PartName": "HtmlAttributesPart",
+                            "Name": "HtmlAttributesPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "4"
+                                }
+                            }
                         }
-                      },
-                      {
-                        "PartName": "TitlePart",
-                        "Name": "TitlePart",
-                        "Settings": {
-                          "ContentTypePartSettings": {
-                            "Position": "0"
-                          }
-                        }
-                      },
-                      {
-                        "PartName": "FlowPart",
-                        "Name": "Content",
-                        "Settings": {
-                          "ContentTypePartSettings": {
-                            "DisplayName": "Content",
-                            "Description": "Content displayed in hero.",
-                            "Position": "2"
-                          }
-                        }
-                      },
-                      {
-                        "PartName": "Bleed",
-                        "Name": "Bleed",
-                        "Settings": {
-                          "ContentTypePartSettings": {
-                            "Position": "3"
-                          }
-                        }
-                      },
-                      {
-                        "PartName": "HtmlAttributesPart",
-                        "Name": "HtmlAttributesPart",
-                        "Settings": {
-                          "ContentTypePartSettings": {
-                            "Position": "4"
-                          }
-                        }
-                      }
                     ]
-                  },
+                },
                 {
                     "Name": "Card",
                     "DisplayName": "Card",
@@ -786,9 +782,7 @@
                                     "Position": "2"
                                 },
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": [
-                                        "CarouselItem"
-                                    ]
+                                    "ContainedContentTypes": ["CarouselItem"]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1419,9 +1413,7 @@
                                     "Position": "1"
                                 },
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": [
-                                        "CheckboxItem"
-                                    ]
+                                    "ContainedContentTypes": ["CheckboxItem"]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1478,9 +1470,7 @@
                                     "Position": "1"
                                 },
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": [
-                                        "RadioButtonItem"
-                                    ]
+                                    "ContainedContentTypes": ["RadioButtonItem"]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1789,9 +1779,7 @@
                                 },
                                 "ContentIndexSettings": {},
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": [
-                                        "Link"
-                                    ]
+                                    "ContainedContentTypes": ["Link"]
                                 }
                             }
                         }
@@ -1848,9 +1836,7 @@
                                 },
                                 "LinkableContentTypes": [],
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": [
-                                        "Link"
-                                    ]
+                                    "ContainedContentTypes": ["Link"]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1997,7 +1983,7 @@
                 {
                     "Name": "AnimationPart",
                     "Settings": {
-                            "ContentPartSettings": {
+                        "ContentPartSettings": {
                             "Attachable": true,
                             "DisplayName": "Animation",
                             "Description": "Define settings for animating widget."
@@ -2009,54 +1995,54 @@
                             "Name": "Type",
                             "Settings": {
                                 "ContentPartFieldSettings": {
-                                "DisplayName": "Type",
-                                "Editor": "PredefinedList",
-                                "Position": "1"
+                                    "DisplayName": "Type",
+                                    "Editor": "PredefinedList",
+                                    "Position": "1"
                                 },
                                 "TextFieldSettings": {
-                                "Hint": "Define type of animation."
+                                    "Hint": "Define type of animation."
                                 },
                                 "TextFieldPredefinedListEditorSettings": {
-                                "Options": [
-                                    {
-                                    "name": "None",
-                                    "value": "none"
-                                    },
-                                    {
-                                    "name": "Fade in",
-                                    "value": "fade-in"
-                                    },
-                                    {
-                                    "name": "Fade in from left",
-                                    "value": "fade-in fade-in--from-left"
-                                    },
-                                    {
-                                    "name": "Fade in from right",
-                                    "value": "fade-in fade-in--from-right"
-                                    },
-                                    {
-                                    "name": "Grow in from centre",
-                                    "value": "grow-in"
-                                    },
-                                    {
-                                    "name": "Grow in from top",
-                                    "value": "grow-in grow-in--from-top"
-                                    },
-                                    {
-                                    "name": "Grow in from right",
-                                    "value": "grow-in grow-in--from-right"
-                                    },
-                                    {
-                                    "name": "Grow in from bottom",
-                                    "value": "grow-in grow-in--from-bottom"
-                                    },
-                                    {
-                                    "name": "Grow in from left",
-                                    "value": "grow-in grow-in--from-left"
-                                    }
-                                ],
-                                "Editor": 1,
-                                "DefaultValue": "none"
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Fade in",
+                                            "value": "fade-in"
+                                        },
+                                        {
+                                            "name": "Fade in from left",
+                                            "value": "fade-in fade-in--from-left"
+                                        },
+                                        {
+                                            "name": "Fade in from right",
+                                            "value": "fade-in fade-in--from-right"
+                                        },
+                                        {
+                                            "name": "Grow in from centre",
+                                            "value": "grow-in"
+                                        },
+                                        {
+                                            "name": "Grow in from top",
+                                            "value": "grow-in grow-in--from-top"
+                                        },
+                                        {
+                                            "name": "Grow in from right",
+                                            "value": "grow-in grow-in--from-right"
+                                        },
+                                        {
+                                            "name": "Grow in from bottom",
+                                            "value": "grow-in grow-in--from-bottom"
+                                        },
+                                        {
+                                            "name": "Grow in from left",
+                                            "value": "grow-in grow-in--from-left"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "none"
                                 }
                             }
                         },
@@ -2078,81 +2064,81 @@
                             }
                         },
                         {
-                        "FieldName": "TextField",
-                        "Name": "Timing",
-                        "Settings": {
-                            "ContentPartFieldSettings": {
-                            "DisplayName": "Timing",
-                            "Editor": "PredefinedList",
-                            "Position": "3"
-                            },
-                            "TextFieldSettings": {
-                            "Hint": "Define how animation progresses through the duration of each cycle."
-                            },
-                            "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                                {
-                                "name": "Ease",
-                                "value": "ease"
+                            "FieldName": "TextField",
+                            "Name": "Timing",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Timing",
+                                    "Editor": "PredefinedList",
+                                    "Position": "3"
                                 },
-                                {
-                                "name": "Ease in",
-                                "value": "ease-in"
+                                "TextFieldSettings": {
+                                    "Hint": "Define how animation progresses through the duration of each cycle."
                                 },
-                                {
-                                "name": "Ease out",
-                                "value": "ease-out"
-                                },
-                                {
-                                "name": "Ease in out",
-                                "value": "ease-in-out"
-                                },
-                                {
-                                "name": "Linear",
-                                "value": "linear"
-                                },
-                                {
-                                "name": "Overshoot",
-                                "value": "cubic-bezier(0.175, 0.885, 0.32, 1.275)"
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Ease",
+                                            "value": "ease"
+                                        },
+                                        {
+                                            "name": "Ease in",
+                                            "value": "ease-in"
+                                        },
+                                        {
+                                            "name": "Ease out",
+                                            "value": "ease-out"
+                                        },
+                                        {
+                                            "name": "Ease in out",
+                                            "value": "ease-in-out"
+                                        },
+                                        {
+                                            "name": "Linear",
+                                            "value": "linear"
+                                        },
+                                        {
+                                            "name": "Overshoot",
+                                            "value": "cubic-bezier(0.175, 0.885, 0.32, 1.275)"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "ease-in-out"
                                 }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "ease-in-out"
+                            }
+                        },
+                        {
+                            "FieldName": "NumericField",
+                            "Name": "Delay",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Delay",
+                                    "Editor": "Number",
+                                    "Position": "4"
+                                },
+                                "NumericFieldSettings": {
+                                    "Hint": "Number of seconds to delay start of animation.",
+                                    "Scale": 2,
+                                    "Minimum": 0.0,
+                                    "DefaultValue": "0"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "Repeat",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Repeat",
+                                    "Position": "5"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Hint": "Repeat animation every time widget is scrolled in to view.",
+                                    "Label": "Repeat"
+                                }
                             }
                         }
-                    },
-                    {
-                    "FieldName": "NumericField",
-                    "Name": "Delay",
-                    "Settings": {
-                        "ContentPartFieldSettings": {
-                        "DisplayName": "Delay",
-                        "Editor": "Number",
-                        "Position": "4"
-                        },
-                        "NumericFieldSettings": {
-                        "Hint": "Number of seconds to delay start of animation.",
-                        "Scale": 2,
-                        "Minimum": 0.0,
-                        "DefaultValue": "0"
-                        }
-                    }
-                    },
-                    {
-                    "FieldName": "BooleanField",
-                    "Name": "Repeat",
-                    "Settings": {
-                        "ContentPartFieldSettings": {
-                        "DisplayName": "Repeat",
-                        "Position": "5"
-                        },
-                        "BooleanFieldSettings": {
-                        "Hint": "Repeat animation every time widget is scrolled in to view.",
-                        "Label": "Repeat"
-                        }
-                    }
-                    }
-                ]
+                    ]
                 },
                 {
                     "Name": "MarkdownBodyPart",
@@ -2226,325 +2212,325 @@
                     "Name": "Section",
                     "Settings": {},
                     "ContentPartFieldDefinitionRecords": [
-                      {
-                        "FieldName": "TextField",
-                        "Name": "Alignment",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Alignment",
-                            "Editor": "PredefinedList",
-                            "Position": "1"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Control how content is aligned within section."
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "Default",
-                                "value": "default"
-                              },
-                              {
-                                "name": "Left",
-                                "value": "left"
-                              },
-                              {
-                                "name": "Center",
-                                "value": "center"
-                              },
-                              {
-                                "name": "Right",
-                                "value": "right"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": null
-                          },
-                          "ContentIndexSettings": {}
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Alignment",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Alignment",
+                                    "Editor": "PredefinedList",
+                                    "Position": "1"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Control how content is aligned within section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Left",
+                                            "value": "left"
+                                        },
+                                        {
+                                            "name": "Center",
+                                            "value": "center"
+                                        },
+                                        {
+                                            "name": "Right",
+                                            "value": "right"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": null
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "ContentWidth",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Content Width",
+                                    "Editor": "PredefinedList",
+                                    "Position": "2"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Determines the width of content within section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Wide",
+                                            "value": "wide"
+                                        },
+                                        {
+                                            "name": "Full",
+                                            "value": "full"
+                                        },
+                                        {
+                                            "name": "Thin",
+                                            "value": "thin"
+                                        },
+                                        {
+                                            "name": "Extra Thin",
+                                            "value": "extra-thin"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "SpacingAfter",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Spacing After",
+                                    "Editor": "PredefinedList",
+                                    "Position": "4"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Controls spacing after section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "large"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "none"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "TopPadding",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Top Padding",
+                                    "Editor": "PredefinedList",
+                                    "Position": "5"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify the amount of padding (internal space) on this component"
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "large"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "BottomPadding",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Bottom Padding",
+                                    "Editor": "PredefinedList",
+                                    "Position": "6"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify the amount of padding (internal space) on this section"
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "large"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Gutter",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Gutter",
+                                    "Editor": "PredefinedList",
+                                    "Position": "0"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify how much space to show between content when putting several items on the same line."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "section--no-flow-gutter"
+                                        },
+                                        {
+                                            "name": "Default",
+                                            "value": "section--default-flow-gutter"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "section--large-flow-gutter"
+                                        }
+                                    ],
+                                    "Editor": 1
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "VerticalAlignment",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Vertical Alignment",
+                                    "Editor": "PredefinedList",
+                                    "Position": "3"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Control how content is vertically aligned within section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Center",
+                                            "value": "center"
+                                        },
+                                        {
+                                            "name": "Bottom",
+                                            "value": "bottom"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "VerticalGutter",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Vertical Gutter",
+                                    "Editor": "PredefinedList"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify how much vertical space to show between items of content when they run onto multiple lines"
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "None",
+                                            "value": "section--no-vertical-flow-gutter"
+                                        },
+                                        {
+                                            "name": "Small",
+                                            "value": "section--small-vertical-flow-gutter"
+                                        },
+                                        {
+                                            "name": "Medium",
+                                            "value": "section--medium-vertical-flow-gutter"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "section--large-vertical-flow-gutter"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "section--no-vertical-flow-gutter"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "StackedVerticalGutter",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Stacked Vertical Gutter",
+                                    "Editor": "PredefinedList"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "On smaller screens, side-by-side items are forced into a single column stack. By default, the vertical gutter is used as the space between these stacked items. If you'd like to override this and force a different size when items are stacked due to screen size, select an alternative gutter."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Use existing Vertical Gutter",
+                                            "value": "section--stacked-vertical-flow-gutter-not-specified"
+                                        },
+                                        {
+                                            "name": "None",
+                                            "value": "section--no-stacked-vertical-flow-gutter"
+                                        },
+                                        {
+                                            "name": "Small",
+                                            "value": "section--small-stacked-vertical-flow-gutter"
+                                        },
+                                        {
+                                            "name": "Medium",
+                                            "value": "section--medium-stacked-vertical-flow-gutter"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "section--large-stacked-vertical-flow-gutter"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "section--stacked-vertical-flow-gutter-not-specified"
+                                },
+                                "ContentIndexSettings": {}
+                            }
                         }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "ContentWidth",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Content Width",
-                            "Editor": "PredefinedList",
-                            "Position": "2"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Determines the width of content within section."
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "Default",
-                                "value": "default"
-                              },
-                              {
-                                "name": "Wide",
-                                "value": "wide"
-                              },
-                              {
-                                "name": "Full",
-                                "value": "full"
-                              },
-                              {
-                                "name": "Thin",
-                                "value": "thin"
-                              },
-                              {
-                                "name": "Extra Thin",
-                                "value": "extra-thin"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "default"
-                          }
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "SpacingAfter",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Spacing After",
-                            "Editor": "PredefinedList",
-                            "Position": "4"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Controls spacing after section."
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "None",
-                                "value": "none"
-                              },
-                              {
-                                "name": "Default",
-                                "value": "default"
-                              },
-                              {
-                                "name": "Large",
-                                "value": "large"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "none"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "TopPadding",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Top Padding",
-                            "Editor": "PredefinedList",
-                            "Position": "5"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Specify the amount of padding (internal space) on this component"
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "None",
-                                "value": "none"
-                              },
-                              {
-                                "name": "Default",
-                                "value": "default"
-                              },
-                              {
-                                "name": "Large",
-                                "value": "large"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "default"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "BottomPadding",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Bottom Padding",
-                            "Editor": "PredefinedList",
-                            "Position": "6"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Specify the amount of padding (internal space) on this section"
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "None",
-                                "value": "none"
-                              },
-                              {
-                                "name": "Default",
-                                "value": "default"
-                              },
-                              {
-                                "name": "Large",
-                                "value": "large"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "default"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "Gutter",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Gutter",
-                            "Editor": "PredefinedList",
-                            "Position": "0"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Specify how much space to show between content when putting several items on the same line."
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "None",
-                                "value": "section--no-flow-gutter"
-                              },
-                              {
-                                "name": "Default",
-                                "value": "section--default-flow-gutter"
-                              },
-                              {
-                                "name": "Large",
-                                "value": "section--large-flow-gutter"
-                              }
-                            ],
-                            "Editor": 1
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "VerticalAlignment",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Vertical Alignment",
-                            "Editor": "PredefinedList",
-                            "Position": "3"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Control how content is vertically aligned within section."
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "Default",
-                                "value": "default"
-                              },
-                              {
-                                "name": "Center",
-                                "value": "center"
-                              },
-                              {
-                                "name": "Bottom",
-                                "value": "bottom"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "default"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "VerticalGutter",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Vertical Gutter",
-                            "Editor": "PredefinedList"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Specify how much vertical space to show between items of content when they run onto multiple lines"
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "None",
-                                "value": "section--no-vertical-flow-gutter"
-                              },
-                              {
-                                "name": "Small",
-                                "value": "section--small-vertical-flow-gutter"
-                              },
-                              {
-                                "name": "Medium",
-                                "value": "section--medium-vertical-flow-gutter"
-                              },
-                              {
-                                "name": "Large",
-                                "value": "section--large-vertical-flow-gutter"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "section--no-vertical-flow-gutter"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "StackedVerticalGutter",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Stacked Vertical Gutter",
-                            "Editor": "PredefinedList"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "On smaller screens, side-by-side items are forced into a single column stack. By default, the vertical gutter is used as the space between these stacked items. If you'd like to override this and force a different size when items are stacked due to screen size, select an alternative gutter."
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "Use existing Vertical Gutter",
-                                "value": "section--stacked-vertical-flow-gutter-not-specified"
-                              },
-                              {
-                                "name": "None",
-                                "value": "section--no-stacked-vertical-flow-gutter"
-                              },
-                              {
-                                "name": "Small",
-                                "value": "section--small-stacked-vertical-flow-gutter"
-                              },
-                              {
-                                "name": "Medium",
-                                "value": "section--medium-stacked-vertical-flow-gutter"
-                              },
-                              {
-                                "name": "Large",
-                                "value": "section--large-stacked-vertical-flow-gutter"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "section--stacked-vertical-flow-gutter-not-specified"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      }
                     ]
-                  },
+                },
                 {
                     "Name": "Paragraph",
                     "Settings": {},
@@ -2886,296 +2872,296 @@
                     "Name": "Hero",
                     "Settings": {},
                     "ContentPartFieldDefinitionRecords": [
-                      {
-                        "FieldName": "TextField",
-                        "Name": "BackgroundType",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Background Type",
-                            "Editor": "PredefinedList",
-                            "Position": "0"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Whether the background should be an image or a video embed."
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "Image",
-                                "value": "image"
-                              },
-                              {
-                                "name": "Video Embed",
-                                "value": "embed"
-                              }
-                            ],
-                            "Editor": 0,
-                            "DefaultValue": "image"
-                          },
-                          "ContentIndexSettings": {}
+                        {
+                            "FieldName": "TextField",
+                            "Name": "BackgroundType",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Background Type",
+                                    "Editor": "PredefinedList",
+                                    "Position": "0"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Whether the background should be an image or a video embed."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Image",
+                                            "value": "image"
+                                        },
+                                        {
+                                            "name": "Video Embed",
+                                            "value": "embed"
+                                        }
+                                    ],
+                                    "Editor": 0,
+                                    "DefaultValue": "image"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "ResponsiveMediaField",
+                            "Name": "BackgroundImage",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Background Image",
+                                    "Position": "5"
+                                },
+                                "ResponsiveMediaFieldSettings": {
+                                    "AllowMediaText": true,
+                                    "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
+                                    "Hint": "Image displayed as background of hero.",
+                                    "Required": false
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "BackgroundEmbed",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Background Embed Url",
+                                    "Position": "7"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "URL to third-party site that is hosting video (e.g. YouTube)."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "HorizontalAlignment",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Horizontal Alignment",
+                                    "Editor": "PredefinedList",
+                                    "Position": "9"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify how the content of the hero should be horizontally aligned"
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Left",
+                                            "value": "left"
+                                        },
+                                        {
+                                            "name": "Center",
+                                            "value": "center"
+                                        },
+                                        {
+                                            "name": "Right",
+                                            "value": "right"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "left"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "VerticalAlignment",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Vertical Alignment",
+                                    "Editor": "PredefinedList",
+                                    "Position": "10"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify how the hero content should be vertically aligned"
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Center",
+                                            "value": "center"
+                                        },
+                                        {
+                                            "name": "Top",
+                                            "value": "top"
+                                        },
+                                        {
+                                            "name": "Bottom",
+                                            "value": "bottom"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "center"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "InvertColour",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Invert Colour",
+                                    "Position": "2"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Hint": "By default, this component uses dark text. Tick this box to invert the colour and use light text."
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "PullUp",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Pull Up",
+                                    "Position": "4"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Hint": "Tick this to pull the hero up so that it goes behind the element above (e.g a transparent header)"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "AddGradient",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Add Gradient",
+                                    "Position": "11"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Hint": "Tick to add a gradient to the background media, which will make the header more legible"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "ContentWidth",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Content Width",
+                                    "Editor": "PredefinedList",
+                                    "Position": "6"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Determines the width of content within section."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "Wide",
+                                            "value": "wide"
+                                        },
+                                        {
+                                            "name": "Full",
+                                            "value": "full"
+                                        },
+                                        {
+                                            "name": "Thin",
+                                            "value": "thin"
+                                        },
+                                        {
+                                            "name": "Extra Thin",
+                                            "value": "extra-thin"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Gutter",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Gutter",
+                                    "Editor": "PredefinedList",
+                                    "Position": "3"
+                                },
+                                "TextFieldSettings": {
+                                    "Hint": "Specify how much space to show between content when putting several items on the same line."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "name": "None",
+                                            "value": "none"
+                                        },
+                                        {
+                                            "name": "Large",
+                                            "value": "large"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "default"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "LazyLoad",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Lazy Load",
+                                    "Position": "8"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Hint": "Load iframe when it's scrolled in to view which saves data, speeds up the loading of other parts of the page, and reduces memory usage however can cause layout shifts.",
+                                    "Label": "Lazy Load"
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "ColourField",
+                            "Name": "BackgroundColour",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Background Colour",
+                                    "Position": "1"
+                                },
+                                "ColourFieldSettings": {
+                                    "AllowCustom": true,
+                                    "AllowTransparent": true,
+                                    "Colours": [],
+                                    "DefaultValue": "transparent",
+                                    "UseGlobalColours": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "ShowScrollEncouragement",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Show Scroll Encouragement",
+                                    "Position": "8"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Hint": ""
+                                },
+                                "ContentIndexSettings": {}
+                            }
                         }
-                      },
-                      {
-                        "FieldName": "ResponsiveMediaField",
-                        "Name": "BackgroundImage",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Background Image",
-                            "Position": "5"
-                          },
-                          "ResponsiveMediaFieldSettings": {
-                            "AllowMediaText": true,
-                            "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
-                            "Hint": "Image displayed as background of hero.",
-                            "Required": false
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "BackgroundEmbed",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Background Embed Url",
-                            "Position": "7"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "URL to third-party site that is hosting video (e.g. YouTube)."
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "HorizontalAlignment",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Horizontal Alignment",
-                            "Editor": "PredefinedList",
-                            "Position": "9"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Specify how the content of the hero should be horizontally aligned"
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "Left",
-                                "value": "left"
-                              },
-                              {
-                                "name": "Center",
-                                "value": "center"
-                              },
-                              {
-                                "name": "Right",
-                                "value": "right"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "left"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "VerticalAlignment",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Vertical Alignment",
-                            "Editor": "PredefinedList",
-                            "Position": "10"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Specify how the hero content should be vertically aligned"
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "Center",
-                                "value": "center"
-                              },
-                              {
-                                "name": "Top",
-                                "value": "top"
-                              },
-                              {
-                                "name": "Bottom",
-                                "value": "bottom"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "center"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "BooleanField",
-                        "Name": "InvertColour",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Invert Colour",
-                            "Position": "2"
-                          },
-                          "BooleanFieldSettings": {
-                            "Hint": "By default, this component uses dark text. Tick this box to invert the colour and use light text."
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "BooleanField",
-                        "Name": "PullUp",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Pull Up",
-                            "Position": "4"
-                          },
-                          "BooleanFieldSettings": {
-                            "Hint": "Tick this to pull the hero up so that it goes behind the element above (e.g a transparent header)"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "BooleanField",
-                        "Name": "AddGradient",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Add Gradient",
-                            "Position": "11"
-                          },
-                          "BooleanFieldSettings": {
-                            "Hint": "Tick to add a gradient to the background media, which will make the header more legible"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "ContentWidth",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Content Width",
-                            "Editor": "PredefinedList",
-                            "Position": "6"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Determines the width of content within section."
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "Default",
-                                "value": "default"
-                              },
-                              {
-                                "name": "Wide",
-                                "value": "wide"
-                              },
-                              {
-                                "name": "Full",
-                                "value": "full"
-                              },
-                              {
-                                "name": "Thin",
-                                "value": "thin"
-                              },
-                              {
-                                "name": "Extra Thin",
-                                "value": "extra-thin"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "default"
-                          }
-                        }
-                      },
-                      {
-                        "FieldName": "TextField",
-                        "Name": "Gutter",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Gutter",
-                            "Editor": "PredefinedList",
-                            "Position": "3"
-                          },
-                          "TextFieldSettings": {
-                            "Hint": "Specify how much space to show between content when putting several items on the same line."
-                          },
-                          "TextFieldPredefinedListEditorSettings": {
-                            "Options": [
-                              {
-                                "name": "Default",
-                                "value": "default"
-                              },
-                              {
-                                "name": "None",
-                                "value": "none"
-                              },
-                              {
-                                "name": "Large",
-                                "value": "large"
-                              }
-                            ],
-                            "Editor": 1,
-                            "DefaultValue": "default"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "BooleanField",
-                        "Name": "LazyLoad",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Lazy Load",
-                            "Position": "8"
-                          },
-                          "BooleanFieldSettings": {
-                            "Hint": "Load iframe when it's scrolled in to view which saves data, speeds up the loading of other parts of the page, and reduces memory usage however can cause layout shifts.",
-                            "Label": "Lazy Load"
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "ColourField",
-                        "Name": "BackgroundColour",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Background Colour",
-                            "Position": "1"
-                          },
-                          "ColourFieldSettings": {
-                            "AllowCustom": true,
-                            "AllowTransparent": true,
-                            "Colours": [],
-                            "DefaultValue": "transparent",
-                            "UseGlobalColours": true
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      },
-                      {
-                        "FieldName": "BooleanField",
-                        "Name": "ShowScrollEncouragement",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Show Scroll Encouragement",
-                            "Position": "8"
-                          },
-                          "BooleanFieldSettings": {
-                            "Hint": ""
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      }
                     ]
-                  },
+                },
                 {
                     "Name": "Card",
                     "Settings": {},
@@ -3274,9 +3260,7 @@
                                 },
                                 "ContentPickerFieldSettings": {
                                     "Hint": "Main menu used by users to navigate the main sections of the site.",
-                                    "DisplayedContentTypes": [
-                                        "Menu"
-                                    ]
+                                    "DisplayedContentTypes": ["Menu"]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -3528,10 +3512,7 @@
                                     "Editor": "EditorJS"
                                 },
                                 "BlockFieldSettings": {
-                                    "LinkableContentTypes": [
-                                        "Homepage",
-                                        "Page"
-                                    ]
+                                    "LinkableContentTypes": ["Homepage", "Page"]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -3572,48 +3553,48 @@
                 {
                     "Name": "Bleed",
                     "Settings": {
-                      "ContentPartSettings": {
-                        "Attachable": true,
-                        "Description": "Adds \"bleed\" imagery options to make this area appear to blend in to adjacent ones"
-                      }
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Adds \"bleed\" imagery options to make this area appear to blend in to adjacent ones"
+                        }
                     },
                     "ContentPartFieldDefinitionRecords": [
-                      {
-                        "FieldName": "ResponsiveMediaField",
-                        "Name": "BleedIn",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Bleed In",
-                            "Position": "0"
-                          },
-                          "ResponsiveMediaFieldSettings": {
-                            "AllowMediaText": true,
-                            "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
-                            "FallbackData": "[]",
-                            "Hint": "Image displayed at top of area, used to create a 'bleed' effect that blends this area with an adjacent one.",
-                            "IsConfigured": true
-                          },
-                          "ContentIndexSettings": {}
+                        {
+                            "FieldName": "ResponsiveMediaField",
+                            "Name": "BleedIn",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Bleed In",
+                                    "Position": "0"
+                                },
+                                "ResponsiveMediaFieldSettings": {
+                                    "AllowMediaText": true,
+                                    "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
+                                    "FallbackData": "[]",
+                                    "Hint": "Image displayed at top of area, used to create a 'bleed' effect that blends this area with an adjacent one.",
+                                    "IsConfigured": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "ResponsiveMediaField",
+                            "Name": "BleedOut",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Bleed Out",
+                                    "Position": "1"
+                                },
+                                "ResponsiveMediaFieldSettings": {
+                                    "AllowMediaText": true,
+                                    "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
+                                    "FallbackData": "[]",
+                                    "Hint": "Image displayed at bottom of area, used to create a 'bleed' effect that blends this area with an adjacent one.",
+                                    "IsConfigured": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
                         }
-                      },
-                      {
-                        "FieldName": "ResponsiveMediaField",
-                        "Name": "BleedOut",
-                        "Settings": {
-                          "ContentPartFieldSettings": {
-                            "DisplayName": "Bleed Out",
-                            "Position": "1"
-                          },
-                          "ResponsiveMediaFieldSettings": {
-                            "AllowMediaText": true,
-                            "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
-                            "FallbackData": "[]",
-                            "Hint": "Image displayed at bottom of area, used to create a 'bleed' effect that blends this area with an adjacent one.",
-                            "IsConfigured": true
-                          },
-                          "ContentIndexSettings": {}
-                        }
-                      }
                     ]
                 },
                 {
@@ -3631,9 +3612,7 @@
                                 "ContentPickerFieldSettings": {
                                     "Hint": "Menu to display.",
                                     "Required": true,
-                                    "DisplayedContentTypes": [
-                                        "Menu"
-                                    ]
+                                    "DisplayedContentTypes": ["Menu"]
                                 },
                                 "ContentIndexSettings": {}
                             }
