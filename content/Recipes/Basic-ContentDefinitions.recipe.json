@@ -322,6 +322,11 @@
                             "Position": "5"
                           }
                         }
+                      },
+                      {
+                        "PartName": "AnimationPart",
+                        "Name": "AnimationPart",
+                        "Settings": {}
                       }
                     ]
                   },
@@ -1988,6 +1993,166 @@
                         }
                     },
                     "ContentPartFieldDefinitionRecords": []
+                },
+                {
+                    "Name": "AnimationPart",
+                    "Settings": {
+                            "ContentPartSettings": {
+                            "Attachable": true,
+                            "DisplayName": "Animation",
+                            "Description": "Define settings for animating widget."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Type",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                "DisplayName": "Type",
+                                "Editor": "PredefinedList",
+                                "Position": "1"
+                                },
+                                "TextFieldSettings": {
+                                "Hint": "Define type of animation."
+                                },
+                                "TextFieldPredefinedListEditorSettings": {
+                                "Options": [
+                                    {
+                                    "name": "None",
+                                    "value": "none"
+                                    },
+                                    {
+                                    "name": "Fade in",
+                                    "value": "fade-in"
+                                    },
+                                    {
+                                    "name": "Fade in from left",
+                                    "value": "fade-in fade-in--from-left"
+                                    },
+                                    {
+                                    "name": "Fade in from right",
+                                    "value": "fade-in fade-in--from-right"
+                                    },
+                                    {
+                                    "name": "Grow in from centre",
+                                    "value": "grow-in"
+                                    },
+                                    {
+                                    "name": "Grow in from top",
+                                    "value": "grow-in grow-in--from-top"
+                                    },
+                                    {
+                                    "name": "Grow in from right",
+                                    "value": "grow-in grow-in--from-right"
+                                    },
+                                    {
+                                    "name": "Grow in from bottom",
+                                    "value": "grow-in grow-in--from-bottom"
+                                    },
+                                    {
+                                    "name": "Grow in from left",
+                                    "value": "grow-in grow-in--from-left"
+                                    }
+                                ],
+                                "Editor": 1,
+                                "DefaultValue": "none"
+                                }
+                            }
+                        },
+                        {
+                            "FieldName": "NumericField",
+                            "Name": "Duration",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Duration",
+                                    "Editor": "Number",
+                                    "Position": "2"
+                                },
+                                "NumericFieldSettings": {
+                                    "Hint": "Length of animation in seconds.",
+                                    "Scale": 2,
+                                    "Minimum": 0.0,
+                                    "DefaultValue": "600"
+                                }
+                            }
+                        },
+                        {
+                        "FieldName": "TextField",
+                        "Name": "Timing",
+                        "Settings": {
+                            "ContentPartFieldSettings": {
+                            "DisplayName": "Timing",
+                            "Editor": "PredefinedList",
+                            "Position": "3"
+                            },
+                            "TextFieldSettings": {
+                            "Hint": "Define how animation progresses through the duration of each cycle."
+                            },
+                            "TextFieldPredefinedListEditorSettings": {
+                            "Options": [
+                                {
+                                "name": "Ease",
+                                "value": "ease"
+                                },
+                                {
+                                "name": "Ease in",
+                                "value": "ease-in"
+                                },
+                                {
+                                "name": "Ease out",
+                                "value": "ease-out"
+                                },
+                                {
+                                "name": "Ease in out",
+                                "value": "ease-in-out"
+                                },
+                                {
+                                "name": "Linear",
+                                "value": "linear"
+                                },
+                                {
+                                "name": "Overshoot",
+                                "value": "cubic-bezier(0.175, 0.885, 0.32, 1.275)"
+                                }
+                            ],
+                            "Editor": 1,
+                            "DefaultValue": "ease-in-out"
+                            }
+                        }
+                    },
+                    {
+                    "FieldName": "NumericField",
+                    "Name": "Delay",
+                    "Settings": {
+                        "ContentPartFieldSettings": {
+                        "DisplayName": "Delay",
+                        "Editor": "Number",
+                        "Position": "4"
+                        },
+                        "NumericFieldSettings": {
+                        "Hint": "Number of seconds to delay start of animation.",
+                        "Scale": 2,
+                        "Minimum": 0.0,
+                        "DefaultValue": "0"
+                        }
+                    }
+                    },
+                    {
+                    "FieldName": "BooleanField",
+                    "Name": "Repeat",
+                    "Settings": {
+                        "ContentPartFieldSettings": {
+                        "DisplayName": "Repeat",
+                        "Position": "5"
+                        },
+                        "BooleanFieldSettings": {
+                        "Hint": "Repeat animation every time widget is scrolled in to view.",
+                        "Label": "Repeat"
+                        }
+                    }
+                    }
+                ]
                 },
                 {
                     "Name": "MarkdownBodyPart",
