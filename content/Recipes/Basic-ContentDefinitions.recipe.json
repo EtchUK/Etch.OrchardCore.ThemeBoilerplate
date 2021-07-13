@@ -3270,11 +3270,11 @@
                             "Name": "MenuToggleButtonLabel",
                             "Settings": {
                                 "ContentPartFieldSettings": {
-                                    "DisplayName": "Menu Toggle Button Label",
+                                    "DisplayName": "Menu Open Button Label",
                                     "Position": "4"
                                 },
                                 "TextFieldSettings": {
-                                    "Hint": "Label for button that's displayed on smaller devices to toggle the visibility of the main menu."
+                                    "Hint": "Label for button that's displayed on smaller devices to open the main menu."
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -3356,6 +3356,20 @@
                                     "Colours": [],
                                     "DefaultValue": "transparent",
                                     "UseGlobalColours": true
+                                },
+                                "ContentIndexSettings": {}
+                            }
+                        },
+                        {
+                            "FieldName": "ContentPickerField",
+                            "Name": "SocialMenu",
+                            "Settings": {
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Social Menu"
+                                },
+                                "ContentPickerFieldSettings": {
+                                    "Hint": "Select a menu of social links to be displayed in the header",
+                                    "DisplayedContentTypes": ["Menu"]
                                 },
                                 "ContentIndexSettings": {}
                             }
