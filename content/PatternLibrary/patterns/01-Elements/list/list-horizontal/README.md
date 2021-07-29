@@ -1,1 +1,0 @@
-Use this HTML to create a horizontal list.

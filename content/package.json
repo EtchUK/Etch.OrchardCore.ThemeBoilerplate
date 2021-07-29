@@ -6,24 +6,19 @@
     "author": "Etch UK",
     "scripts": {
         "build": "npm install --no-audit && npm run bundle:prod",
-        "build:patterns": "fractal build",
         "bundle:dev": "npm install && webpack --config ./BuildConfigs/webpack.config.dev.js --mode development",
         "bundle:prod": "webpack --config ./BuildConfigs/webpack.config.prod.js --mode production",
         "bundle:watch": "webpack --config ./BuildConfigs/webpack.config.dev.js --mode development --watch",
-        "develop": "concurrently \"npm run start:patterns\" \"npm run bundle:watch\"",
-        "start": "npm install && npm run develop",
-        "start:patterns": "fractal start --sync"
+        "develop": "npm run bundle:watch",
+        "start": "npm install && npm run develop"
     },
     "devDependencies": {
         "@babel/core": "^7.12.16",
         "@babel/preset-env": "^7.12.16",
-        "@frctl/fractal": "^1.5.4",
-        "@frctl/mandelbrot": "^1.8.1",
         "@types/rellax": "^1.7.2",
         "autoprefixer": "^9.7.6",
         "babel-loader": "^8.2.2",
         "clean-webpack-plugin": "^3.0.0",
-        "concurrently": "^5.1.0",
         "copy-webpack-plugin": "^5.0.3",
         "copyfiles": "^2.1.0",
         "core-js": "^3.8.3",
@@ -60,8 +55,5 @@
         "normalize.css": "^8.0.1",
         "picturefill": "^3.0.3",
         "rellax": "^1.10.0"
-    },
-    "fractal": {
-        "main": "./BuildConfigs/fractal.config.js"
     }
 }
