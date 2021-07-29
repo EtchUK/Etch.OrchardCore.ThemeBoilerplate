@@ -2,6 +2,8 @@
    #CONTENT FEED/DEFAULT
    ========================================================================== */
 
+@use "sass:math";
+
 .content-feed {
     &__header {
         margin-bottom: $spacing-large;
@@ -51,13 +53,13 @@
         display: flex;
         flex-flow: row wrap;
 
-        margin: 0 (-($gutter/2));
+        margin: 0 (-(math.div($gutter, 2)));
     }
 
     &__item {
         flex-basis: 100%;
-        border-left: $gutter/2 solid transparent;
-        border-right: $gutter/2 solid transparent;
+        border-left: math.div($gutter, 2) solid transparent;
+        border-right: math.div($gutter, 2) solid transparent;
         margin-bottom: $gutter;
 
         .content-feed--inverted & {

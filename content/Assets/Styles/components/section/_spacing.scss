@@ -2,6 +2,8 @@
    #SECTION/SPACING
    ========================================================================== */
 
+@use "sass:math";
+
 .section--spaced-after-none {
     margin-bottom: 0;
 
@@ -72,7 +74,7 @@
 
 .section--small-vertical-flow-gutter {
     .flow__content > * {
-        margin-bottom: ($flow-gutter / 2);
+        margin-bottom: math.div($flow-gutter, 2);
     }
 }
 
@@ -99,7 +101,7 @@
 .section--small-stacked-vertical-flow-gutter {
     @include mq($until: desktopSmall) {
         .flow__content > * {
-            margin-bottom: ($flow-gutter / 2);
+            margin-bottom: math.div($flow-gutter, 2);
         }
     }
 }
