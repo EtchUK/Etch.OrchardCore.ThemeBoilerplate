@@ -2,6 +2,8 @@
    #CARD/DEFAULT
    ========================================================================== */
 
+@use "sass:math";
+
 .card {
     border-radius: var(--cardBorderRadius);
     display: block;
@@ -27,7 +29,7 @@
      */
     &--media-overlay {
         height: 0;
-        padding-bottom: (4 / 7) * 100%; /* 1 */
+        padding-bottom: math.div(4, 7) * 100%; /* 1 */
     }
 
     @include mq($from: desktopSmall) {
