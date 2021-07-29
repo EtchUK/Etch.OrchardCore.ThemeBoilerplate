@@ -28,22 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="PatternLibrary\**" />
-    <EmbeddedResource Remove="PatternLibrary\**" />
-    <None Remove="PatternLibrary\**" />
-    <PackageAssetFiles Remove="PatternLibrary\**" />
-    <Folder Include="PatternLibrary\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="wwwroot\Content\PatternLibrary\**" />
-    <EmbeddedResource Remove="wwwroot\Content\PatternLibrary\**" />
-    <None Remove="wwwroot\Content\PatternLibrary\**" />
-    <PackageAssetFiles Remove="wwwroot\Content\PatternLibrary\**" />
-    <Folder Include="wwwroot\Content\PatternLibrary\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Remove="azure-pipelines.yml" />
     <EmbeddedResource Remove=".editorconfig" />
     <EmbeddedResource Remove=".gitignore" />

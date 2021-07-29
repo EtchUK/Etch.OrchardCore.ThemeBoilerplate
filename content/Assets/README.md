@@ -2,7 +2,7 @@
 
 ## Content
 
-Folder for placing images that ship with the theme, typically this would be icons. Try to avoid placing media that would be better if managed via the CMS. Create a separate folder (e.g. "PatternLibrary") for images that are used by the pattern library to demonstrate a component/page.
+Folder for placing images that ship with the theme, typically this would be icons. Try to avoid placing media that would be better if managed via the CMS.
 
 ## Fonts
 
@@ -10,8 +10,8 @@ Our default stance for fonts used to be to utilise an external provier (e.g. Goo
 
 ### Resources
 
-- [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/) is a tool for customising and downloading fonts from Google Fonts.
-- [How to self-host Google Fonts](https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775) is a useful guide for how to self-host fonts from Google Fonts.
+-   [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/) is a tool for customising and downloading fonts from Google Fonts.
+-   [How to self-host Google Fonts](https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775) is a useful guide for how to self-host fonts from Google Fonts.
 
 ## Scripts
 

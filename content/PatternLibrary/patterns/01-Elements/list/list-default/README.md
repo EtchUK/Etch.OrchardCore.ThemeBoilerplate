@@ -1,1 +1,0 @@
-The `<ul>` element represents an unordered list of items, typically rendered as a bulleted list.
