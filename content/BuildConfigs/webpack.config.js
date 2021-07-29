@@ -69,12 +69,17 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader?-url',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: false,
+                        },
+                    },
                     {
                         loader: 'postcss-loader',
                         options: {
-                            plugins: function () {
-                                return [autoprefixer()];
+                            postcssOptions: {
+                                plugins: [['autoprefixer']],
                             },
                         },
                     },
@@ -88,34 +93,36 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '../css/styles.css',
         }),
-        new CopyPlugin([
-            {
-                from: path.join(process.cwd(), 'Assets/Content/Theme.png'),
-                to: path.join(process.cwd(), 'wwwroot/Theme.png'),
-            },
-            {
-                from: path.join(process.cwd(), 'Assets/Content'),
-                to: path.join(process.cwd(), 'wwwroot/content'),
-            },
-            {
-                from: path.join(process.cwd(), 'Assets/Fonts'),
-                to: path.join(process.cwd(), 'wwwroot/fonts'),
-            },
-            {
-                from: path.join(
-                    process.cwd(),
-                    'node_modules/lightgallery.js/dist/fonts'
-                ),
-                to: path.join(process.cwd(), 'wwwroot/fonts'),
-            },
-            {
-                from: path.join(
-                    process.cwd(),
-                    'node_modules/lightgallery.js/dist/img'
-                ),
-                to: path.join(process.cwd(), 'wwwroot/img'),
-            },
-        ]),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.join(process.cwd(), 'Assets/Content/Theme.png'),
+                    to: path.join(process.cwd(), 'wwwroot/Theme.png'),
+                },
+                {
+                    from: path.join(process.cwd(), 'Assets/Content'),
+                    to: path.join(process.cwd(), 'wwwroot/content'),
+                },
+                {
+                    from: path.join(process.cwd(), 'Assets/Fonts'),
+                    to: path.join(process.cwd(), 'wwwroot/fonts'),
+                },
+                {
+                    from: path.join(
+                        process.cwd(),
+                        'node_modules/lightgallery.js/dist/fonts'
+                    ),
+                    to: path.join(process.cwd(), 'wwwroot/fonts'),
+                },
+                {
+                    from: path.join(
+                        process.cwd(),
+                        'node_modules/lightgallery.js/dist/img'
+                    ),
+                    to: path.join(process.cwd(), 'wwwroot/img'),
+                },
+            ],
+        }),
         new ImageminPlugin({
             optipng: { optimizationLevel: 2 },
             pngquant: { quality: '65-90', speed: 4 },
