@@ -1,7 +1,6 @@
-const autoprefixer = require('autoprefixer');
 const CopyPlugin = require('copy-webpack-plugin');
-const { default: ImageminPlugin } = require('imagemin-webpack-plugin');
-const imageminMozjpeg = require('imagemin-mozjpeg');
+const { extendDefaultPlugins } = require('svgo');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 const StylelintPlugin = require('stylelint-webpack-plugin');
@@ -123,17 +122,37 @@ module.exports = {
                 },
             ],
         }),
-        new ImageminPlugin({
-            optipng: { optimizationLevel: 2 },
-            pngquant: { quality: '65-90', speed: 4 },
-            svgo: {
+        new ImageMinimizerPlugin({
+            minimizerOptions: {
                 plugins: [
-                    { removeUnknownsAndDefaults: false },
-                    { cleanupIDs: false },
-                    { removeViewBox: false },
+                    ['optipng', { optimizationLevel: 2 }],
+                    ['pngquant', { quality: [0.65, 0.9], speed: 4 }],
+                    [
+                        'svgo',
+                        {
+                            plugins: extendDefaultPlugins([
+                                {
+                                    name: 'removeUnknownsAndDefaults',
+                                    active: false,
+                                },
+                                {
+                                    name: 'cleanupIDs',
+                                    active: false,
+                                },
+                                {
+                                    name: 'removeViewBox',
+                                    active: false,
+                                },
+                            ]),
+                        },
+                    ],
                 ],
+                encodeOptions: {
+                    mozjpeg: {
+                        quality: 75,
+                    },
+                },
             },
-            plugins: [imageminMozjpeg({ quality: 75 })],
         }),
         new StylelintPlugin({
             configFile: path.join(process.cwd(), 'BuildConfigs/.stylelintrc'),
