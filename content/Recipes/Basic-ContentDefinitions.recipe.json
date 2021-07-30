@@ -6,8 +6,12 @@
     "website": "https://etchuk.com",
     "version": "0.7.1",
     "issetuprecipe": false,
-    "categories": ["basic"],
-    "tags": ["basic"],
+    "categories": [
+        "basic"
+    ],
+    "tags": [
+        "basic"
+    ],
     "steps": [
         {
             "name": "ContentDefinition",
@@ -302,8 +306,8 @@
                             }
                         },
                         {
-                            "PartName": "Bleed",
-                            "Name": "Bleed",
+                            "PartName": "BleedPart",
+                            "Name": "BleedPart",
                             "Settings": {
                                 "ContentTypePartSettings": {
                                     "Position": "4"
@@ -618,8 +622,8 @@
                             }
                         },
                         {
-                            "PartName": "Bleed",
-                            "Name": "Bleed",
+                            "PartName": "BleedPart",
+                            "Name": "BleedPart",
                             "Settings": {
                                 "ContentTypePartSettings": {
                                     "Position": "3"
@@ -782,7 +786,9 @@
                                     "Position": "2"
                                 },
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": ["CarouselItem"]
+                                    "ContainedContentTypes": [
+                                        "CarouselItem"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1413,7 +1419,9 @@
                                     "Position": "1"
                                 },
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": ["CheckboxItem"]
+                                    "ContainedContentTypes": [
+                                        "CheckboxItem"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1470,7 +1478,9 @@
                                     "Position": "1"
                                 },
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": ["RadioButtonItem"]
+                                    "ContainedContentTypes": [
+                                        "RadioButtonItem"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -1779,7 +1789,9 @@
                                 },
                                 "ContentIndexSettings": {},
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": ["Link"]
+                                    "ContainedContentTypes": [
+                                        "Link"
+                                    ]
                                 }
                             }
                         }
@@ -1836,7 +1848,9 @@
                                 },
                                 "LinkableContentTypes": [],
                                 "BagPartSettings": {
-                                    "ContainedContentTypes": ["Link"]
+                                    "ContainedContentTypes": [
+                                        "Link"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -3260,7 +3274,9 @@
                                 },
                                 "ContentPickerFieldSettings": {
                                     "Hint": "Main menu used by users to navigate the main sections of the site.",
-                                    "DisplayedContentTypes": ["Menu"]
+                                    "DisplayedContentTypes": [
+                                        "Menu"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -3369,7 +3385,9 @@
                                 },
                                 "ContentPickerFieldSettings": {
                                     "Hint": "Select a menu of social links to be displayed in the header",
-                                    "DisplayedContentTypes": ["Menu"]
+                                    "DisplayedContentTypes": [
+                                        "Menu"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -3526,7 +3544,10 @@
                                     "Editor": "EditorJS"
                                 },
                                 "BlockFieldSettings": {
-                                    "LinkableContentTypes": ["Homepage", "Page"]
+                                    "LinkableContentTypes": [
+                                        "Homepage",
+                                        "Page"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -3564,53 +3585,7 @@
                     },
                     "ContentPartFieldDefinitionRecords": []
                 },
-                {
-                    "Name": "Bleed",
-                    "Settings": {
-                        "ContentPartSettings": {
-                            "Attachable": true,
-                            "Description": "Adds \"bleed\" imagery options to make this area appear to blend in to adjacent ones"
-                        }
-                    },
-                    "ContentPartFieldDefinitionRecords": [
-                        {
-                            "FieldName": "ResponsiveMediaField",
-                            "Name": "BleedIn",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Bleed In",
-                                    "Position": "0"
-                                },
-                                "ResponsiveMediaFieldSettings": {
-                                    "AllowMediaText": true,
-                                    "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
-                                    "FallbackData": "[]",
-                                    "Hint": "Image displayed at top of area, used to create a 'bleed' effect that blends this area with an adjacent one.",
-                                    "IsConfigured": true
-                                },
-                                "ContentIndexSettings": {}
-                            }
-                        },
-                        {
-                            "FieldName": "ResponsiveMediaField",
-                            "Name": "BleedOut",
-                            "Settings": {
-                                "ContentPartFieldSettings": {
-                                    "DisplayName": "Bleed Out",
-                                    "Position": "1"
-                                },
-                                "ResponsiveMediaFieldSettings": {
-                                    "AllowMediaText": true,
-                                    "Breakpoints": "375, 425, 600, 768, 1024, 1280, 1440, 1920, 2560",
-                                    "FallbackData": "[]",
-                                    "Hint": "Image displayed at bottom of area, used to create a 'bleed' effect that blends this area with an adjacent one.",
-                                    "IsConfigured": true
-                                },
-                                "ContentIndexSettings": {}
-                            }
-                        }
-                    ]
-                },
+                ,
                 {
                     "Name": "Navigation",
                     "Settings": {},
@@ -3626,7 +3601,9 @@
                                 "ContentPickerFieldSettings": {
                                     "Hint": "Menu to display.",
                                     "Required": true,
-                                    "DisplayedContentTypes": ["Menu"]
+                                    "DisplayedContentTypes": [
+                                        "Menu"
+                                    ]
                                 },
                                 "ContentIndexSettings": {}
                             }
