@@ -3,13 +3,6 @@ const path = require('path');
 const config = require('./webpack.config');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
-config.plugins.push(
-    new MiniCssExtractPlugin({
-        filename: '../css/[name].css',
-    })
-);
 
 config.plugins.push(
     new CleanWebpackPlugin({

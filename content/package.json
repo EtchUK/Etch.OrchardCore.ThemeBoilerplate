@@ -6,9 +6,9 @@
     "author": "Etch UK",
     "scripts": {
         "build": "npm install --no-audit && npm run bundle:prod",
-        "bundle:dev": "npm install && webpack --config ./BuildConfigs/webpack.config.dev.js --mode development",
+        "bundle:dev": "npm install && webpack --config ./BuildConfigs/webpack.config.js --mode development",
         "bundle:prod": "webpack --config ./BuildConfigs/webpack.config.prod.js --mode production",
-        "bundle:watch": "webpack --config ./BuildConfigs/webpack.config.dev.js --mode development --watch",
+        "bundle:watch": "webpack --config ./BuildConfigs/webpack.config.js --mode development --watch",
         "develop": "npm run bundle:watch",
         "start": "npm install && npm run develop"
     },
