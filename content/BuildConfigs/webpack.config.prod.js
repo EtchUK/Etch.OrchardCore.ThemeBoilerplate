@@ -4,7 +4,7 @@ const config = require('./webpack.config');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-config.plugins.push(
+config[0].plugins.push(
     new CleanWebpackPlugin({
         cleanOnceBeforeBuildPatterns: [
             path.join(process.cwd(), 'wwwroot/content'),
