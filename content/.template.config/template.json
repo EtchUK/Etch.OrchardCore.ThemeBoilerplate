@@ -25,11 +25,6 @@
             "defaultValue": "Orchard Core Theme",
             "replaces": "Boilerplate Theme"
         },
-        "version": {
-            "type": "parameter",
-            "defaultValue": "0.0.1",
-            "replaces": "1.0.0"
-        },
         "website": {
             "type": "parameter",
             "defaultValue": "https://orchardcore.readthedocs.io/en/latest/",

@@ -32,10 +32,6 @@ Short description of the theme.
 
 Name of your theme.
 
-#### -v/--version
-
-Version for you theme, will default to `0.0.1-rc1` if not specified.
-
 #### -w/--website
 
 URL for your website.
