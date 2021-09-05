@@ -6,42 +6,22 @@
  * Classes to control width of element.
  */
 
+@use "sass:math";
+
+/**
+ * Classes to control width of element.
+ */
+
 .width--100 {
     width: 100%;
 }
 
-.width--80 {
-    width: 80%;
-}
+@each $width in $widths {
+    .width--#{math.floor($width)} {
+        width: 100%;
 
-.width--75 {
-    width: 75%;
-}
-
-.width--66 {
-    width: 66%;
-}
-
-.width--60 {
-    width: 60%;
-}
-
-.width--50 {
-    width: 50%;
-}
-
-.width--40 {
-    width: 40%;
-}
-
-.width--33 {
-    width: 33%;
-}
-
-.width--25 {
-    width: 25%;
-}
-
-.width--20 {
-    width: 20%;
+        @include mq($from: desktopSmall) {
+            width: #{math.percentage(math.div($width, 100))};
+        }
+    }
 }

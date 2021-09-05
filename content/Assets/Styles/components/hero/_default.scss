@@ -8,6 +8,8 @@
   * 2. Vertically center the embed if it is taller than .hero__media
   */
 
+@use "sass:math";
+
 .hero {
     align-items: center;
     display: flex;
@@ -22,7 +24,7 @@
         z-index: $z-index-nudge-forward;
 
         @each $width in $widths {
-            .width--#{$width} & {
+            .width--#{math.floor($width)} & {
                 padding-left: var(--heroBodyPadding);
                 padding-right: var(--heroBodyPadding);
             }
@@ -70,7 +72,7 @@
         }
 
         @each $width in $widths {
-            .width--#{$width} & {
+            .width--#{math.floor($width)} & {
                 min-height: 0;
             }
         }
