@@ -6,8 +6,12 @@
     "website": "https://etchuk.com",
     "version": "1.0.0",
     "issetuprecipe": false,
-    "categories": ["studio"],
-    "tags": ["studio"],
+    "categories": [
+        "studio"
+    ],
+    "tags": [
+        "studio"
+    ],
     "steps": [
         {
             "name": "Queries",
@@ -27,6 +31,14 @@
                     "Name": "ContentItems",
                     "Source": "Lucene",
                     "Schema": null
+                },
+                {
+                    "Index": "ContentItems",
+                    "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"Job\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.PublishedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n  \"from\": {{from}},\r\n  \"size\": {{size}}\r\n}",
+                    "ReturnContentItems": true,
+                    "Name": "Jobs",
+                    "Source": "Lucene",
+                    "Schema": null
                 }
             ]
         },
@@ -37,7 +49,9 @@
                     "News": {
                         "AnalyzerName": "standardanalyzer",
                         "IndexLatest": false,
-                        "IndexedContentTypes": ["NewsPost"],
+                        "IndexedContentTypes": [
+                            "NewsPost"
+                        ],
                         "Culture": "any"
                     }
                 },
@@ -45,7 +59,11 @@
                     "ContentItems": {
                         "AnalyzerName": "standardanalyzer",
                         "IndexLatest": false,
-                        "IndexedContentTypes": ["Job", "NewsPost", "Page"],
+                        "IndexedContentTypes": [
+                            "Job",
+                            "NewsPost",
+                            "Page"
+                        ],
                         "Culture": "any"
                     }
                 }
