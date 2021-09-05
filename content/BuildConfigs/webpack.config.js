@@ -112,7 +112,10 @@ module.exports = [
                         [
                             'svgo',
                             {
-                                plugins: extendDefaultPlugins([
+                                plugins: [
+                                    {
+                                        name: 'preset-default',
+                                    },
                                     {
                                         name: 'removeUnknownsAndDefaults',
                                         active: false,
@@ -125,7 +128,7 @@ module.exports = [
                                         name: 'removeViewBox',
                                         active: false,
                                     },
-                                ]),
+                                ],
                             },
                         ],
                     ],
