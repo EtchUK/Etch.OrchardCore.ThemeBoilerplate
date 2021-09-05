@@ -1,4 +1,4 @@
-﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity
 @using OrchardCore.Entities
 @using OrchardCore.Settings
 @using OrchardCore.Themes.Services
@@ -25,8 +25,6 @@
 
 <section class="section section--form-solo">
     <div class="section__content">
-        <a href="@Context.Request.PathBase"><img src="/@currentThemeName/content/PlayCMS.svg" class="margin--bottom-large" alt="@T["Play CMS Logo"]" /></a>
-
         <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" class="form text--align-left" method="POST">
             @if (!ViewData.ModelState.IsValid)
             {
