@@ -24,6 +24,10 @@
                     "name": "Studio-ContentDefinitions"
                 },
                 {
+                    "executionid": "Etch.OrchardCore.Widgets",
+                    "name": "Widgets-ContentDefinitions"
+                },
+                {
                     "executionid": "Etch.OrchardCore.ThemeBoilerplate",
                     "name": "Studio-ContentAndMedia"
                 },

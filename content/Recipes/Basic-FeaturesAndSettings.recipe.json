@@ -10,23 +10,6 @@
     "tags": ["basic"],
     "steps": [
         {
-            "name": "Settings",
-            "HomeRoute": {},
-            "LayerSettings": {
-                "Zones": ["Header", "Footer"]
-            },
-            "LoginSettings": {
-                "UseSiteTheme": true
-            },
-            "ResetPasswordSettings": {
-                "UseSiteTheme": true
-            },
-            "RobotsTxtSettings": {
-                "CustomContent": "",
-                "Mode": 2
-            }
-        },
-        {
             "name": "Feature",
             "enable": [
                 "Application.Default",
@@ -87,6 +70,7 @@
                 "OrchardCore.Themes",
                 "OrchardCore.Workflows.Http",
                 "OrchardCore.Workflows.Timers",
+                "Etch.OrchardCore.ContextualEdit",
                 "TheAdmin",
                 "Etch.OrchardCore.AdminTheme",
                 "Etch.OrchardCore.ThemeBoilerplate"
@@ -97,6 +81,23 @@
             "name": "Themes",
             "Site": "Etch.OrchardCore.ThemeBoilerplate",
             "Admin": "Etch.OrchardCore.AdminTheme"
+        },
+        {
+            "name": "Settings",
+            "HomeRoute": {},
+            "LayerSettings": {
+                "Zones": ["Header", "Footer"]
+            },
+            "LoginSettings": {
+                "UseSiteTheme": true
+            },
+            "ResetPasswordSettings": {
+                "UseSiteTheme": true
+            },
+            "RobotsTxtSettings": {
+                "CustomContent": "",
+                "Mode": 2
+            }
         },
         {
             "name": "Layers",
