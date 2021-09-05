@@ -4,10 +4,14 @@
     "description": "Configures content & media for basic site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "issetuprecipe": false,
-    "categories": ["basic"],
-    "tags": ["basic"],
+    "categories": [
+        "basic"
+    ],
+    "tags": [
+        "basic"
+    ],
     "steps": [
         {
             "name": "Content",
@@ -95,10 +99,14 @@
                     "Author": "pkeating",
                     "Banner": {
                         "Logo": {
-                            "Paths": ["Logos/logo-play@1x.svg"]
+                            "Paths": [
+                                "Logos/logo-play@1x.svg"
+                            ]
                         },
                         "LogoSmall": {
-                            "Paths": ["Logos/logo-play-short@1x.svg"]
+                            "Paths": [
+                                "Logos/logo-play-short@1x.svg"
+                            ]
                         },
                         "LogoAlternateText": {
                             "Text": "Logo for Etch Play"
@@ -240,10 +248,14 @@
                     "Author": "pkeating",
                     "Footer": {
                         "Logo": {
-                            "Paths": ["Logos/logo-play@1x.svg"]
+                            "Paths": [
+                                "Logos/logo-play@1x.svg"
+                            ]
                         },
                         "LogoSmall": {
-                            "Paths": ["Logos/logo-play-short@1x.svg"]
+                            "Paths": [
+                                "Logos/logo-play-short@1x.svg"
+                            ]
                         },
                         "Menu": {
                             "ContentItemIds": []
@@ -276,12 +288,12 @@
                     "Author": "etch-play",
                     "ContextualEditPart": {},
                     "LayerMetadata": {
-                      "RenderTitle": false,
-                      "Position": 2.0,
-                      "Zone": "Footer",
-                      "Layer": "Default"
+                        "RenderTitle": false,
+                        "Position": 2.0,
+                        "Zone": "Footer",
+                        "Layer": "Default"
                     }
-                  }
+                }
             ]
         },
         {
