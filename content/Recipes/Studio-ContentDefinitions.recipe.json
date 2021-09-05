@@ -216,6 +216,78 @@
                             }
                         }
                     ]
+                },
+                {
+                    "Name": "Select",
+                    "DisplayName": "Select",
+                    "Settings": {
+                        "Category": "Form",
+                        "Description": "Drop down list for selecting from collection of options.",
+                        "Icon": "clipboard-list"
+                    }
+                },
+                {
+                    "Name": "Button",
+                    "DisplayName": "Button",
+                    "Settings": {
+                        "Category": "Form",
+                        "Description": "Control used to submit form.",
+                        "Icon": "paper-plane"
+                    }
+                },
+                {
+                    "Name": "TextArea",
+                    "DisplayName": "Text Area",
+                    "Settings": {
+                        "Category": "Form",
+                        "Description": "Multi-line plain-text editing control.",
+                        "Icon": "edit"
+                    }
+                },
+                {
+                    "Name": "Input",
+                    "DisplayName": "Input",
+                    "Settings": {
+                        "Category": "Form",
+                        "Description": "Interactive control used to enter information (text, checkbox, radio, etc...).",
+                        "Icon": "edit"
+                    }
+                },
+                {
+                    "Name": "Label",
+                    "DisplayName": "Label",
+                    "Settings": {
+                        "Category": "Form",
+                        "Description": "Display text to describe meaning of form field.",
+                        "Icon": "tag"
+                    }
+                },
+                {
+                    "Name": "Form",
+                    "DisplayName": "Form",
+                    "Settings": {
+                        "Category": "Form",
+                        "Description": "Collection of fields for collecting information.",
+                        "Icon": "wpforms"
+                    }
+                },
+                {
+                    "Name": "ValidationSummary",
+                    "DisplayName": "Validation Summary",
+                    "Settings": {
+                        "Category": "Form",
+                        "Description": "Display a summary of form validation issues",
+                        "Icon": "exclamation-triangle"
+                    }
+                },
+                {
+                    "Name": "Validation",
+                    "DisplayName": "Validation",
+                    "Settings": {
+                        "Category": "Form",
+                        "Description": "Display a validation issue for specific field.",
+                        "Icon": "exclamation-triangle"
+                    }
                 }
             ],
             "ContentParts": [
