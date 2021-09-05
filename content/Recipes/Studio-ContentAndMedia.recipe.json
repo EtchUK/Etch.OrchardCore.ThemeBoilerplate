@@ -2545,16 +2545,16 @@
                 },
                 {
                     "ContentItemId": "4xk56tg1kgyee5be9wk5rjc3mk",
-                    "ContentItemVersionId": "40390jv5wwv4y30g466j4y0jm2",
+                    "ContentItemVersionId": "48nr2wjqy0z6rsr6k6z9td4gdg",
                     "ContentType": "Page",
                     "DisplayText": "Jobs",
                     "Latest": true,
                     "Published": true,
-                    "ModifiedUtc": "2020-08-03T23:42:42.4091822Z",
-                    "PublishedUtc": "2020-08-03T23:42:42.4927764Z",
+                    "ModifiedUtc": "2021-09-05T11:20:36.0374165Z",
+                    "PublishedUtc": "2021-09-05T11:20:36.2254959Z",
                     "CreatedUtc": "2020-08-03T23:00:43.8075561Z",
-                    "Owner": "[js: parameters('AdminUsername')]",
-                    "Author": "[js: parameters('AdminUsername')]",
+                    "Owner": "etch-play",
+                    "Author": "etch-play",
                     "Page": {
                         "DisplayTitle": {
                             "Value": false
@@ -2582,21 +2582,45 @@
                                 "DisplayText": null,
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-08-03T23:42:42.4211652Z",
+                                "ModifiedUtc": "2021-09-05T11:20:36.0672589Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
-                                "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Owner": "",
+                                "Author": "etch-play",
                                 "Hero": {
                                     "BackgroundType": {
                                         "Text": "embed"
                                     },
                                     "BackgroundImage": {
-                                        "Data": "",
+                                        "Data": "[]",
                                         "HasData": false
                                     },
                                     "BackgroundEmbed": {
                                         "Text": "https://player.vimeo.com/video/68760025?background=1"
+                                    },
+                                    "HorizontalAlignment": {
+                                        "Text": "left"
+                                    },
+                                    "VerticalAlignment": {
+                                        "Text": "center"
+                                    },
+                                    "InvertColour": {
+                                        "Value": false
+                                    },
+                                    "PullUp": {
+                                        "Value": false
+                                    },
+                                    "AddGradient": {
+                                        "Value": false
+                                    },
+                                    "ContentWidth": {
+                                        "Text": "default"
+                                    },
+                                    "Gutter": {
+                                        "Text": "default"
+                                    },
+                                    "LazyLoad": {
+                                        "Value": false
                                     },
                                     "DisplayText": {
                                         "Text": "Work at Etch Play"
@@ -2607,6 +2631,12 @@
                                     "CTAUrl": {
                                         "Text": null
                                     }
+                                },
+                                "TitlePart": {
+                                    "Title": null
+                                },
+                                "Content": {
+                                    "Widgets": []
                                 },
                                 "FlowMetadata": {
                                     "Alignment": 1,
@@ -2620,27 +2650,39 @@
                                 "DisplayText": "We're currently looking for",
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-08-03T23:42:42.4268989Z",
+                                "ModifiedUtc": "2021-09-05T11:20:36.0836268Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
-                                "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Owner": "",
+                                "Author": "etch-play",
                                 "Section": {
-                                    "BackgroundColour": {
-                                        "Text": "black"
-                                    },
                                     "Alignment": {
                                         "Text": "default"
                                     },
                                     "ContentWidth": {
                                         "Text": "default"
                                     },
+                                    "SpacingAfter": {
+                                        "Text": "none"
+                                    },
+                                    "TopPadding": {
+                                        "Text": "default"
+                                    },
+                                    "BottomPadding": {
+                                        "Text": "default"
+                                    },
+                                    "Gutter": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalAlignment": {
+                                        "Text": "default"
+                                    },
+                                    "BackgroundColour": {
+                                        "Text": "black"
+                                    },
                                     "BackgroundImage": {
                                         "Data": "",
                                         "HasData": false
-                                    },
-                                    "SpacingAfter": {
-                                        "Text": "none"
                                     }
                                 },
                                 "Content": {
@@ -2649,14 +2691,14 @@
                                             "ContentItemId": "4s98gka1r2g913a9tqjg60455t",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Heading",
-                                            "DisplayText": null,
+                                            "DisplayText": "",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-08-03T23:42:42.4308528Z",
+                                            "ModifiedUtc": "2021-09-05T11:20:36.0907289Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
+                                            "Owner": "",
+                                            "Author": "etch-play",
                                             "Heading": {
                                                 "Text": {
                                                     "Text": "We're currently looking for"
@@ -2671,20 +2713,57 @@
                                             }
                                         },
                                         {
-                                            "ContentItemId": "45p5qjrxj72nx2zc9qs5mgk8ne",
+                                            "ContentItemId": "4f0a6e1xcdk1kv96e8ghdv3555",
                                             "ContentItemVersionId": null,
-                                            "ContentType": "Jobs",
-                                            "DisplayText": null,
+                                            "ContentType": "ContentFeed",
+                                            "DisplayText": "Jobs",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-08-03T23:42:42.4342341Z",
+                                            "ModifiedUtc": "2021-09-05T11:20:36.0967342Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
                                             "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
-                                            "Jobs": {
-                                                "Quantity": {
+                                            "Author": "etch-play",
+                                            "ContentFeed": {
+                                                "PageSize": {
                                                     "Value": 6.0
+                                                },
+                                                "Paging": {
+                                                    "Value": false
+                                                },
+                                                "HideWidgetHeader": {
+                                                    "Value": false
+                                                },
+                                                "Items": {
+                                                    "Value": "Jobs"
+                                                }
+                                            },
+                                            "BackgroundPart": {
+                                                "BackgroundColour": {
+                                                    "Value": "transparent"
+                                                },
+                                                "BackgroundPattern": {
+                                                    "Text": null
+                                                },
+                                                "InvertTextColour": {
+                                                    "Value": false
+                                                },
+                                                "BackgroundFixed": {
+                                                    "Value": false
+                                                },
+                                                "BackgroundFill": {
+                                                    "Value": false
+                                                }
+                                            },
+                                            "TitlePart": {
+                                                "Title": "Jobs"
+                                            },
+                                            "Links": {
+                                                "ContentItems": []
+                                            },
+                                            "ColumnablePart": {
+                                                "Columns": {
+                                                    "Text": "three"
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -2696,6 +2775,23 @@
                                 },
                                 "TitlePart": {
                                     "Title": "We're currently looking for"
+                                },
+                                "BackgroundPart": {
+                                    "BackgroundColour": {
+                                        "Value": "transparent"
+                                    },
+                                    "BackgroundPattern": {
+                                        "Text": null
+                                    },
+                                    "InvertTextColour": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFixed": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFill": {
+                                        "Value": false
+                                    }
                                 },
                                 "FlowMetadata": {
                                     "Alignment": 3,
@@ -2709,27 +2805,39 @@
                                 "DisplayText": "Studio Life",
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-08-03T23:42:42.4408265Z",
+                                "ModifiedUtc": "2021-09-05T11:20:36.12556Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
-                                "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Owner": "",
+                                "Author": "etch-play",
                                 "Section": {
-                                    "BackgroundColour": {
-                                        "Text": "default"
-                                    },
                                     "Alignment": {
                                         "Text": "default"
                                     },
                                     "ContentWidth": {
                                         "Text": "default"
                                     },
+                                    "SpacingAfter": {
+                                        "Text": "none"
+                                    },
+                                    "TopPadding": {
+                                        "Text": "default"
+                                    },
+                                    "BottomPadding": {
+                                        "Text": "default"
+                                    },
+                                    "Gutter": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalAlignment": {
+                                        "Text": "default"
+                                    },
+                                    "BackgroundColour": {
+                                        "Text": "default"
+                                    },
                                     "BackgroundImage": {
                                         "Data": "",
                                         "HasData": false
-                                    },
-                                    "SpacingAfter": {
-                                        "Text": "none"
                                     }
                                 },
                                 "Content": {
@@ -2738,14 +2846,14 @@
                                             "ContentItemId": "4w5fajqwnvqa77yzpcv13c92ws",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Heading",
-                                            "DisplayText": null,
+                                            "DisplayText": "",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-08-03T23:42:42.4453976Z",
+                                            "ModifiedUtc": "2021-09-05T11:20:36.1324873Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
+                                            "Owner": "",
+                                            "Author": "etch-play",
                                             "Heading": {
                                                 "Text": {
                                                     "Text": "Studio life"
@@ -2763,14 +2871,14 @@
                                             "ContentItemId": "4q97fmjjfssjzt8x40xzqdmcc2",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Paragraph",
-                                            "DisplayText": null,
+                                            "DisplayText": "",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-08-03T23:42:42.4489589Z",
+                                            "ModifiedUtc": "2021-09-05T11:20:36.1387187Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
+                                            "Owner": "",
+                                            "Author": "etch-play",
                                             "Paragraph": {
                                                 "Text": {
                                                     "Text": "We are a BAFTA-winning, independent game developer with a reputation for innovation in both storytelling and VR. We have released a number of successful titles and are best known for the critically acclaimed PS4 hit Until Dawn and the recently launched The Dark Pictures Anthology. The latter is a series of stand-alone, horror games for PS4, Xbox and PC. The first game is Man of Medan."
@@ -2785,14 +2893,14 @@
                                             "ContentItemId": "42dsgvv142awn3eey9w023ccc2",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Paragraph",
-                                            "DisplayText": null,
+                                            "DisplayText": "",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-08-03T23:42:42.4522498Z",
+                                            "ModifiedUtc": "2021-09-05T11:20:36.1446884Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
+                                            "Owner": "",
+                                            "Author": "etch-play",
                                             "Paragraph": {
                                                 "Text": {
                                                     "Text": "Founded in 2008, the studio is now home to over 150 talented individuals working across a range of storytelling titles. We've built a track record of high-end production backed up with delivery and reliability. We teamed up with ITN Productions and games trade body TIGA to create this video that explains more about us and how we work."
@@ -2808,6 +2916,23 @@
                                 "TitlePart": {
                                     "Title": "Studio Life"
                                 },
+                                "BackgroundPart": {
+                                    "BackgroundColour": {
+                                        "Value": "transparent"
+                                    },
+                                    "BackgroundPattern": {
+                                        "Text": null
+                                    },
+                                    "InvertTextColour": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFixed": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFill": {
+                                        "Value": false
+                                    }
+                                },
                                 "FlowMetadata": {
                                     "Alignment": 3,
                                     "Size": 100
@@ -2820,27 +2945,39 @@
                                 "DisplayText": "Testimonial",
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-08-03T23:42:42.4584466Z",
+                                "ModifiedUtc": "2021-09-05T11:20:36.1576705Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
-                                "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Owner": "",
+                                "Author": "etch-play",
                                 "Section": {
-                                    "BackgroundColour": {
-                                        "Text": "grey-light"
-                                    },
                                     "Alignment": {
                                         "Text": "default"
                                     },
                                     "ContentWidth": {
                                         "Text": "default"
                                     },
+                                    "SpacingAfter": {
+                                        "Text": "none"
+                                    },
+                                    "TopPadding": {
+                                        "Text": "default"
+                                    },
+                                    "BottomPadding": {
+                                        "Text": "default"
+                                    },
+                                    "Gutter": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalAlignment": {
+                                        "Text": "default"
+                                    },
+                                    "BackgroundColour": {
+                                        "Text": "grey-light"
+                                    },
                                     "BackgroundImage": {
                                         "Data": "",
                                         "HasData": false
-                                    },
-                                    "SpacingAfter": {
-                                        "Text": "none"
                                     }
                                 },
                                 "Content": {
@@ -2849,22 +2986,28 @@
                                             "ContentItemId": "4pecxfvk8nkne7fvdxxyjj7qmw",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Image",
-                                            "DisplayText": null,
+                                            "DisplayText": "",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-08-03T23:42:42.4623664Z",
+                                            "ModifiedUtc": "2021-09-05T11:20:36.1650118Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
+                                            "Owner": "",
+                                            "Author": "etch-play",
                                             "Image": {
                                                 "Image": {
                                                     "Paths": [
                                                         "Team/team-placeholder-1-768w.jpg"
+                                                    ],
+                                                    "MediaTexts": [
+                                                        ""
                                                     ]
                                                 },
                                                 "AlternateText": {
                                                     "Text": "Photo of Joe Bloggs"
+                                                },
+                                                "LinkTo": {
+                                                    "Text": null
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -2876,14 +3019,14 @@
                                             "ContentItemId": "4yngzwzg2n7p5xa09vr0akykmh",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Blockquote",
-                                            "DisplayText": null,
+                                            "DisplayText": "",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-08-03T23:42:42.4665185Z",
+                                            "ModifiedUtc": "2021-09-05T11:20:36.1798114Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
+                                            "Owner": "",
+                                            "Author": "etch-play",
                                             "Blockquote": {
                                                 "Source": {
                                                     "Text": "Jo Bloggs - Senior Programmer"
@@ -2895,14 +3038,14 @@
                                                         "ContentItemId": "45hccg05aw0tm2a1fnhhb2sy4m",
                                                         "ContentItemVersionId": null,
                                                         "ContentType": "Paragraph",
-                                                        "DisplayText": null,
+                                                        "DisplayText": "",
                                                         "Latest": false,
                                                         "Published": false,
-                                                        "ModifiedUtc": "2020-08-03T23:42:42.4687379Z",
+                                                        "ModifiedUtc": "2021-09-05T11:20:36.1856893Z",
                                                         "PublishedUtc": null,
                                                         "CreatedUtc": null,
-                                                        "Owner": null,
-                                                        "Author": "[js: parameters('AdminUsername')]",
+                                                        "Owner": "",
+                                                        "Author": "etch-play",
                                                         "Paragraph": {
                                                             "Text": {
                                                                 "Text": "&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien, in fermentum mi lacus eu lorem. Nam libero risus, euismod eu gravida vel, ullamcorper vitae neque. In sollicitudin aliquet mattis. Donec at varius erat. Nunc nec egestas tortor. Praesent quis dapibus risus. Aliquam erat lorem, accumsan sed efficitur ut, venenatis et diam.&rdquo;"
@@ -2913,14 +3056,14 @@
                                                         "ContentItemId": "4tw2v3vbhk5s62x3nwm8z0ptm3",
                                                         "ContentItemVersionId": null,
                                                         "ContentType": "Html",
-                                                        "DisplayText": null,
+                                                        "DisplayText": "",
                                                         "Latest": false,
                                                         "Published": false,
-                                                        "ModifiedUtc": "2020-08-03T23:42:42.4731358Z",
+                                                        "ModifiedUtc": "2021-09-05T11:20:36.1919995Z",
                                                         "PublishedUtc": null,
                                                         "CreatedUtc": null,
-                                                        "Owner": null,
-                                                        "Author": "[js: parameters('AdminUsername')]",
+                                                        "Owner": "",
+                                                        "Author": "etch-play",
                                                         "Html": {
                                                             "Content": {
                                                                 "Value": "<cite><strong>Jo Bloggs</strong>Senior Programmer</cite>"
@@ -2939,6 +3082,23 @@
                                 "TitlePart": {
                                     "Title": "Testimonial"
                                 },
+                                "BackgroundPart": {
+                                    "BackgroundColour": {
+                                        "Value": "transparent"
+                                    },
+                                    "BackgroundPattern": {
+                                        "Text": null
+                                    },
+                                    "InvertTextColour": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFixed": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFill": {
+                                        "Value": false
+                                    }
+                                },
                                 "FlowMetadata": {
                                     "Alignment": 3,
                                     "Size": 100
@@ -2951,27 +3111,39 @@
                                 "DisplayText": "Photo",
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-08-03T23:42:42.4804651Z",
+                                "ModifiedUtc": "2021-09-05T11:20:36.2053445Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
-                                "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Owner": "",
+                                "Author": "etch-play",
                                 "Section": {
-                                    "BackgroundColour": {
-                                        "Text": "default"
-                                    },
                                     "Alignment": {
                                         "Text": "default"
                                     },
                                     "ContentWidth": {
                                         "Text": "default"
                                     },
+                                    "SpacingAfter": {
+                                        "Text": "none"
+                                    },
+                                    "TopPadding": {
+                                        "Text": "default"
+                                    },
+                                    "BottomPadding": {
+                                        "Text": "default"
+                                    },
+                                    "Gutter": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalAlignment": {
+                                        "Text": "default"
+                                    },
+                                    "BackgroundColour": {
+                                        "Text": "default"
+                                    },
                                     "BackgroundImage": {
                                         "Data": "{\"sources\":[{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":425,\"path\":\"Backgrounds/Default/unsplash-1444090542259-425w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"}]}",
                                         "HasData": true
-                                    },
-                                    "SpacingAfter": {
-                                        "Text": "none"
                                     }
                                 },
                                 "Content": {
@@ -2979,6 +3151,23 @@
                                 },
                                 "TitlePart": {
                                     "Title": "Photo"
+                                },
+                                "BackgroundPart": {
+                                    "BackgroundColour": {
+                                        "Value": "transparent"
+                                    },
+                                    "BackgroundPattern": {
+                                        "Text": null
+                                    },
+                                    "InvertTextColour": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFixed": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFill": {
+                                        "Value": false
+                                    }
                                 },
                                 "FlowMetadata": {
                                     "Alignment": 3,
@@ -2990,7 +3179,24 @@
                     "MetaTagsPart": {
                         "Description": null,
                         "Images": [],
-                        "Title": null
+                        "Title": null,
+                        "MetaTitle": {
+                            "Text": null
+                        },
+                        "MetaDescription": {
+                            "Text": null
+                        },
+                        "MetaImage": {
+                            "Paths": [],
+                            "MediaTexts": []
+                        },
+                        "Custom": {
+                            "Data": []
+                        },
+                        "MetaNoIndex": {
+                            "Value": false
+                        },
+                        "IsEmpty": true
                     }
                 },
                 {
