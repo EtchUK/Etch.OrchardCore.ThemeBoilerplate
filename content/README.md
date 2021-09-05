@@ -4,7 +4,7 @@ Theme boilerplate is our starting point for building Orchard Core themes.
 
 ## Orchard Core Reference
 
-This theme is referencing the RC2 build of Orchard Core ([`1.0.0-rc2-13450`](https://www.nuget.org/packages/OrchardCore.Theme.Targets/1.0.0-rc2-13450)).
+This theme is referencing a stable build of Orchard Core ([`1.0.0`](https://www.nuget.org/packages/OrchardCore.Theme.Targets/1.0.0)).
 
 ## Prerequisities
 
