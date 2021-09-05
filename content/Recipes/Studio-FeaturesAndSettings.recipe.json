@@ -10,25 +10,6 @@
     "tags": ["studio"],
     "steps": [
         {
-            "name": "Settings",
-            "SiteName": "Studio",
-            "TimeZoneId": "Europe/London",
-            "ResourceDebugMode": 0,
-            "UseCdn": true,
-            "PageSize": 10,
-            "MaxPageSize": 100,
-            "MaxPagedCount": 0,
-            "HomeRoute": {
-                "Area": "OrchardCore.Contents",
-                "Controller": "Item",
-                "Action": "Display",
-                "contentItemId": "4q200ssff5g74zsf073rjsfgw7"
-            }
-        },
-        {
-            "name": "custom-settings"
-        },
-        {
             "name": "Feature",
             "enable": [
                 "Application.Default",
@@ -93,6 +74,7 @@
                 "OrchardCore.Roles",
                 "OrchardCore.Themes",
                 "OrchardCore.Workflows.Http",
+                "Etch.OrchardCore.ContextualEdit",
                 "TheAdmin",
                 "Etch.OrchardCore.AdminTheme",
                 "Etch.OrchardCore.ThemeBoilerplate"

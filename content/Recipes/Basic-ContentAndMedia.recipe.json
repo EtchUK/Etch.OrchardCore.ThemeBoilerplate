@@ -261,7 +261,27 @@
                         "Layer": "Default",
                         "RenderTitle": false
                     }
-                }
+                },
+                {
+                    "ContentItemId": "45bwgvj8s06qhr6b6wqpd7fvmg",
+                    "ContentItemVersionId": "4r2phxmrvsamfr7ktqt5s30tww",
+                    "ContentType": "ContextualEditControl",
+                    "DisplayText": "Contextual Edit",
+                    "Latest": true,
+                    "Published": true,
+                    "ModifiedUtc": "2021-09-04T11:57:52.1466996Z",
+                    "PublishedUtc": "2021-09-04T11:57:52.1894103Z",
+                    "CreatedUtc": "2021-09-04T11:57:52.1466996Z",
+                    "Owner": "4s7r8wvsndcey4f41bzzr8c7dj",
+                    "Author": "etch-play",
+                    "ContextualEditPart": {},
+                    "LayerMetadata": {
+                      "RenderTitle": false,
+                      "Position": 2.0,
+                      "Zone": "Footer",
+                      "Layer": "Default"
+                    }
+                  }
             ]
         },
         {
