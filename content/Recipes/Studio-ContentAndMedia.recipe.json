@@ -6,8 +6,12 @@
     "website": "https://etchuk.com",
     "version": "1.0.0",
     "issetuprecipe": false,
-    "categories": ["studio"],
-    "tags": ["studio"],
+    "categories": [
+        "studio"
+    ],
+    "tags": [
+        "studio"
+    ],
     "steps": [
         {
             "name": "Content",
@@ -140,7 +144,9 @@
                             "Html": null
                         },
                         "Thumbnail": {
-                            "Paths": ["News/Default/example-news-400w.jpg"]
+                            "Paths": [
+                                "News/Default/example-news-400w.jpg"
+                            ]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -149,9 +155,13 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": ["Featured"],
+                            "TagNames": [
+                                "Featured"
+                            ],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
-                            "TermContentItemIds": ["4rf9s6d6qtjpas84f52sg2qhc2"]
+                            "TermContentItemIds": [
+                                "4rf9s6d6qtjpas84f52sg2qhc2"
+                            ]
                         }
                     },
                     "AutoroutePart": {
@@ -183,7 +193,9 @@
                             "Html": null
                         },
                         "Thumbnail": {
-                            "Paths": ["News/Default/example-news-400w.jpg"]
+                            "Paths": [
+                                "News/Default/example-news-400w.jpg"
+                            ]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -192,7 +204,10 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": ["Games", "Mobile"],
+                            "TagNames": [
+                                "Games",
+                                "Mobile"
+                            ],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
                             "TermContentItemIds": [
                                 "42zsbct55dcvk0sj3xk0jas0dt",
@@ -229,7 +244,9 @@
                             "Html": null
                         },
                         "Thumbnail": {
-                            "Paths": ["News/Default/example-news-400w.jpg"]
+                            "Paths": [
+                                "News/Default/example-news-400w.jpg"
+                            ]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -238,9 +255,13 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": ["Featured"],
+                            "TagNames": [
+                                "Featured"
+                            ],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
-                            "TermContentItemIds": ["4rf9s6d6qtjpas84f52sg2qhc2"]
+                            "TermContentItemIds": [
+                                "4rf9s6d6qtjpas84f52sg2qhc2"
+                            ]
                         }
                     },
                     "AutoroutePart": {
@@ -3054,16 +3075,22 @@
                     "Author": "[js: parameters('AdminUsername')]",
                     "Banner": {
                         "Logo": {
-                            "Paths": ["Logos/logo-play@1x.svg"]
+                            "Paths": [
+                                "Logos/logo-play@1x.svg"
+                            ]
                         },
                         "LogoSmall": {
-                            "Paths": ["Logos/logo-play-short@1x.svg"]
+                            "Paths": [
+                                "Logos/logo-play-short@1x.svg"
+                            ]
                         },
                         "LogoAlternateText": {
                             "Text": "Logo for Etch Play"
                         },
                         "Menu": {
-                            "ContentItemIds": ["4enkkc6t2b7hvrw0swx4n5bdw9"]
+                            "ContentItemIds": [
+                                "4enkkc6t2b7hvrw0swx4n5bdw9"
+                            ]
                         },
                         "MenuToggleButtonLabel": {
                             "Text": "Menu"
@@ -3090,13 +3117,19 @@
                     "Author": "[js: parameters('AdminUsername')]",
                     "Footer": {
                         "Logo": {
-                            "Paths": ["Logos/logo-play@1x.svg"]
+                            "Paths": [
+                                "Logos/logo-play@1x.svg"
+                            ]
                         },
                         "LogoSmall": {
-                            "Paths": ["Logos/logo-play-short@1x.svg"]
+                            "Paths": [
+                                "Logos/logo-play-short@1x.svg"
+                            ]
                         },
                         "Menu": {
-                            "ContentItemIds": ["4enkkc6t2b7hvrw0swx4n5bdw9"]
+                            "ContentItemIds": [
+                                "4enkkc6t2b7hvrw0swx4n5bdw9"
+                            ]
                         },
                         "LogoAlternateText": {
                             "Text": "Company logo."
@@ -3133,16 +3166,16 @@
                 },
                 {
                     "ContentItemId": "4enkkc6t2b7hvrw0swx4n5bdw9",
-                    "ContentItemVersionId": "499c4azhm7d2nr9zbr1mts2xmy",
+                    "ContentItemVersionId": "4308afjzgsbzfsw1t2xsx2ft40",
                     "ContentType": "Menu",
                     "DisplayText": "Main Menu",
                     "Latest": true,
                     "Published": true,
-                    "ModifiedUtc": "2020-08-14T20:28:33.0559316Z",
-                    "PublishedUtc": "2020-08-14T20:28:33.089185Z",
+                    "ModifiedUtc": "2021-09-05T11:09:05.4097516Z",
+                    "PublishedUtc": "2021-09-05T11:09:05.4354422Z",
                     "CreatedUtc": "2020-08-04T21:59:01.9367395Z",
-                    "Owner": "[js: parameters('AdminUsername')]",
-                    "Author": "pkeating",
+                    "Owner": "etch-play",
+                    "Author": "etch-play",
                     "TitlePart": {
                         "Title": "Main Menu"
                     },
@@ -3156,14 +3189,14 @@
                                 "ContentItemId": "4s3j2fp5xa0cp3wwp048atm1w6",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
-                                "DisplayText": null,
+                                "DisplayText": "Home",
                                 "Latest": false,
                                 "Published": false,
                                 "ModifiedUtc": "2020-08-04T21:59:22.5247635Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Author": "etch-play",
                                 "ContentMenuItemPart": {
                                     "Name": "Home",
                                     "SelectedContentItem": {
@@ -3178,14 +3211,14 @@
                                 "ContentItemId": "4ny8e9mnz56zmth0e8vf4tre5z",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
-                                "DisplayText": null,
+                                "DisplayText": "About",
                                 "Latest": false,
                                 "Published": false,
                                 "ModifiedUtc": "2020-08-04T22:02:42.8014136Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Author": "etch-play",
                                 "ContentMenuItemPart": {
                                     "Name": "About",
                                     "SelectedContentItem": {
@@ -3200,14 +3233,14 @@
                                 "ContentItemId": "4yfy5vvewgbng272467376d94p",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
-                                "DisplayText": null,
+                                "DisplayText": "Games",
                                 "Latest": false,
                                 "Published": false,
                                 "ModifiedUtc": "2020-08-04T22:02:56.6386929Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Author": "etch-play",
                                 "ContentMenuItemPart": {
                                     "Name": "Games",
                                     "SelectedContentItem": {
@@ -3222,14 +3255,14 @@
                                 "ContentItemId": "4rk8e4st94nvr2xd7hzp92rb5d",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
-                                "DisplayText": null,
+                                "DisplayText": "Jobs",
                                 "Latest": false,
                                 "Published": false,
                                 "ModifiedUtc": "2020-08-04T22:03:07.7231987Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Author": "etch-play",
                                 "ContentMenuItemPart": {
                                     "Name": "Jobs",
                                     "SelectedContentItem": {
@@ -3244,14 +3277,14 @@
                                 "ContentItemId": "4dxb8hxxcm24e1a625yjq0r4mh",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
-                                "DisplayText": null,
+                                "DisplayText": "Blog",
                                 "Latest": false,
                                 "Published": false,
                                 "ModifiedUtc": "2020-08-04T22:03:17.5154659Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Author": "etch-play",
                                 "ContentMenuItemPart": {
                                     "Name": "Blog",
                                     "SelectedContentItem": {
@@ -3266,7 +3299,7 @@
                                 "ContentItemId": "41xbk5jfw9wp06kg20na59c5mt",
                                 "ContentItemVersionId": null,
                                 "ContentType": "ContentMenuItem",
-                                "DisplayText": null,
+                                "DisplayText": "Contact",
                                 "Latest": false,
                                 "Published": false,
                                 "ModifiedUtc": "2020-08-14T20:08:27.9986061Z",
@@ -4446,12 +4479,12 @@
                     "Author": "etch-play",
                     "ContextualEditPart": {},
                     "LayerMetadata": {
-                      "RenderTitle": false,
-                      "Position": 2.0,
-                      "Zone": "Footer",
-                      "Layer": "Default"
+                        "RenderTitle": false,
+                        "Position": 2.0,
+                        "Zone": "Footer",
+                        "Layer": "Default"
                     }
-                  }
+                }
             ]
         },
         {
