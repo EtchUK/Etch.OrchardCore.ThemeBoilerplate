@@ -14,7 +14,6 @@ $header-nav-button-width: 2.4rem;
     --headerBackgroundPattern: none;
     --headerLogoMaxHeight: 5rem;
     --headerLogoMaxWidth: 10rem;
-    --headerLogoMaxWidthTablet: 15rem;
     --headerMobileBackgroundColor: var(--colorGreyLight);
     --headerMobileBackgroundPattern: none;
     --headerContentHeight: 8rem;
@@ -23,5 +22,6 @@ $header-nav-button-width: 2.4rem;
     @include mq($from: tablet) {
         --headerContentHeight: 10rem;
         --headerLogoMaxHeight: 6rem;
+        --headerLogoMaxWidth: 15rem;
     }
 }

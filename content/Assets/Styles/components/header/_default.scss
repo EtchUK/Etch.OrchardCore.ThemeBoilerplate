@@ -28,10 +28,6 @@
         width: 100%;
         z-index: $z-index-front;
 
-        @include mq($from: tablet) {
-            max-width: var(--headerLogoMaxWidthTablet);
-        }
-
         img {
             display: block;
             max-height: var(--headerLogoMaxHeight);
