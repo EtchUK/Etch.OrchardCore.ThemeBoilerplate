@@ -45,22 +45,22 @@
 
     &--size {
         &-h1 {
-            font-size: --var(fontSizeH1);
+            font-size: var(--fontSizeH1);
             line-height: var(--lineHeightHeading);
         }
 
         &-h2 {
-            font-size: --var(fontSizeH2);
+            font-size: var(--fontSizeH2);
             line-height: var(--lineHeightHeading);
         }
 
         &-h3 {
-            font-size: --var(fontSizeH3);
+            font-size: var(--fontSizeH3);
             line-height: var(--lineHeightHeading);
         }
 
         &-h4 {
-            font-size: --var(fontSizeH4);
+            font-size: var(--fontSizeH4);
             line-height: var(--lineHeightHeading);
         }
     }
