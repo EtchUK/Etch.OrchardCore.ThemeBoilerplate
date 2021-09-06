@@ -6,5 +6,8 @@
     @include list-reset();
 
     display: flex;
-    justify-content: space-between;
+
+    li:last-child{
+        margin-left: auto;
+    }
 }
