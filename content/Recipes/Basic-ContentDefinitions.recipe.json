@@ -4,7 +4,7 @@
     "description": "Configures content definitions for basic site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "issetuprecipe": false,
     "categories": [
         "basic"
