@@ -14,7 +14,7 @@ blockquote {
         hanging-punctuation: first;
         text-indent: $blockquote-paragraph-text-indent;
 
-        &:last-of-type {
+        &:last-child {
             margin-bottom: 0;
         }
     }
