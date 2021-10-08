@@ -71,10 +71,6 @@
         overflow: hidden;
         z-index: $z-index-back;
 
-        @include mq($from: tablet) {
-            min-width: auto;
-        }
-
         @each $width in $widths {
             .width--#{math.floor($width)} & {
                 min-height: 0;
