@@ -4,6 +4,9 @@
 
 :root {
     --galleryBorderRadius: 1rem;
-    --galleryGutter: 2rem;
-    --galleryGutterSmall: 1.5rem;
+    --galleryGutter: 1.5rem;
+    
+    @include mq($from: mobile) {
+        --galleryGutter: 2rem;
+    }
 }
