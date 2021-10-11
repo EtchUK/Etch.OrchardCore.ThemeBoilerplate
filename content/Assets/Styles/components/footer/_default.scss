@@ -13,15 +13,18 @@
     font-size: var(--footerFontSize);
 
     &__content {
-        display: flex;
-        flex-flow: column-reverse wrap;
         padding-bottom: $footer-content-padding-bottom;
         padding-top: $footer-content-padding-top;
 
-        @include mq($from: tablet) {
-            align-items: flex-start;
-            flex-flow: row;
-            justify-content: space-between;
+        .flow__content {
+            display: flex;
+            flex-flow: column wrap;
+
+            @include mq($from: tablet) {
+                align-items: center;
+                flex-flow: row;
+                justify-content: space-between;
+            }
         }
     }
 
