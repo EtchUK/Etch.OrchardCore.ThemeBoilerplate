@@ -7,64 +7,70 @@
 
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc((var(--galleryGutterSmall) / 2) * -1);
-    margin-right: calc((var(--galleryGutterSmall) / 2) * -1);
+    margin-left: calc((var(--galleryGutter) / 2) * -1);
+    margin-right: calc((var(--galleryGutter) / 2) * -1);
 
-    @include mq($from: mobile) {
-        margin-left: calc((var(--galleryGutter) / 2) * -1);
-        margin-right: calc((var(--galleryGutter) / 2) * -1);
-    }
-
-    /**
-     * 1. Remove tiny gap that can occur when images aren't block.
-     */
-    img {
-        display: block; /* 1. */
-
-        border-radius: var(--galleryBorderRadius);
-    }
-
-    /**
-     * 1. Overrides list reset padding-left style
-     * 2. Works like .embed with 4:3 ratio
-     */
-    > li, /* 1. */
     &__item {
-        margin-bottom: var(--galleryGutterSmall);
-        padding-left: calc(var(--galleryGutterSmall) / 2);
-        padding-right: calc(var(--galleryGutterSmall) / 2);
-        width: 50%;
+        border-left: calc(var(--galleryGutter) / 2) solid transparent;
+        border-right: calc(var(--galleryGutter) / 2) solid transparent;
+        flex-basis: 100%;
+        margin-bottom: var(--galleryGutter);
+        position: relative;
 
-        @include mq($from: tabletSmall) {
-            width: 33.3%;
+        .gallery--two-cols & {
+            @include mq($from: desktop) {
+                flex-basis: 50%;
+            }
+            .constrain--extra-thin & {
+                @include mq($from: desktop) {
+                    flex-basis: 100%;
+                }
+            }
         }
 
-        @include mq($from: tablet) {
-            width: 25%;
+        .gallery--three-cols & {
+            @include mq($from: desktopSmall) {
+                flex-basis: 33.33%;
+            }
+
+            .constrain--extra-thin & {
+                @include mq($from: desktopSmall) {
+                    flex-basis: 100%;
+                }
+            }
         }
 
-        @include mq($from: mobile) {
-            margin-bottom: var(--galleryGutter);
-            padding-left: calc(var(--galleryGutter) / 2);
-            padding-right: calc(var(--galleryGutter) / 2);
+        .gallery--four-cols & {
+            @include mq($from: tablet) {
+                flex-basis: 50%;
+            }
+            @include mq($from: desktop) {
+                flex-basis: 25%;
+            }
+
+            .constrain--thin & {
+                @include mq($from: desktop) {
+                    flex-basis: 50%;
+                }
+            }
+
+            .constrain--extra-thin & {
+                @include mq($from: tablet) {
+                    flex-basis: 100%;
+                }
+                @include mq($from: desktop) {
+                    flex-basis: 100%;
+                }
+            }
         }
 
-        a {
+        &-link {
+            border-radius: var(--galleryBorderRadius);
             display: block;
             max-width: 100%;
             overflow: hidden;
-            padding-bottom: 75%; /* 2. */
-            position: relative;
-        }
 
-        img {
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-
-            object-fit: cover;
+            cursor: zoom-in;
         }
     }
 }
