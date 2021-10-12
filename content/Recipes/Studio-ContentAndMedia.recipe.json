@@ -139,10 +139,6 @@
                     "Owner": "[js: parameters('AdminUsername')]",
                     "Author": "[js: parameters('AdminUsername')]",
                     "NewsPost": {
-                        "Content": {
-                            "Data": "{\"time\":1592259735319,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"caption\":\"The image fills the width of its parent.\",\"mediaPath\":\"News/Default/example-news-1280w.jpg\",\"url\":\"/demo/media/News/Default/example-news-1280w.jpg\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.18.0\"}",
-                            "Html": null
-                        },
                         "Thumbnail": {
                             "Paths": [
                                 "News/Default/example-news-400w.jpg"
@@ -173,6 +169,33 @@
                     },
                     "TitlePart": {
                         "Title": "Example Blog Post #1"
+                    },
+                    "Content": {
+                        "Widgets": [
+                            {
+                                "ContentItemId": "4tz2549w6h74wsybq9jxqaqq5a",
+                                "ContentItemVersionId": null,
+                                "ContentType": "VisualEditor",
+                                "DisplayText": "",
+                                "Latest": false,
+                                "Published": false,
+                                "ModifiedUtc": "2021-10-11T09:02:08.1169595Z",
+                                "PublishedUtc": null,
+                                "CreatedUtc": null,
+                                "Owner": "",
+                                "Author": "etch-play",
+                                "VisualEditor": {
+                                    "Content": {
+                                        "Data": "{\"time\":1633942927891,\"blocks\":[{\"id\":\"Ep0zoYH7I7\",\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"id\":\"xggv1ng9K_\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"id\":\"Unw2lkTRDl\",\"type\":\"image\",\"data\":{\"url\":\"/example/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"id\":\"9G1LPrg5dy\",\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"id\":\"ll2l7_1W0E\",\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"id\":\"5Hm_aeJtcI\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"id\":\"WHScR0iSQP\",\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"id\":\"ibVPwhnIE5\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.22.2\"}",
+                                        "Html": null
+                                    }
+                                },
+                                "FlowMetadata": {
+                                    "Alignment": 3,
+                                    "Size": 100
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -188,10 +211,6 @@
                     "Owner": "[js: parameters('AdminUsername')]",
                     "Author": "[js: parameters('AdminUsername')]",
                     "NewsPost": {
-                        "Content": {
-                            "Data": "{\"time\":1592259802241,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"url\":\"/demo/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.18.0\"}",
-                            "Html": null
-                        },
                         "Thumbnail": {
                             "Paths": [
                                 "News/Default/example-news-400w.jpg"
@@ -224,6 +243,33 @@
                     },
                     "TitlePart": {
                         "Title": "Example Blog Post #2"
+                    },
+                    "Content": {
+                        "Widgets": [
+                            {
+                                "ContentItemId": "4tz2549w6h74wsybq9jxqaqq5a",
+                                "ContentItemVersionId": null,
+                                "ContentType": "VisualEditor",
+                                "DisplayText": "",
+                                "Latest": false,
+                                "Published": false,
+                                "ModifiedUtc": "2021-10-11T09:02:08.1169595Z",
+                                "PublishedUtc": null,
+                                "CreatedUtc": null,
+                                "Owner": "",
+                                "Author": "etch-play",
+                                "VisualEditor": {
+                                    "Content": {
+                                        "Data": "{\"time\":1633942927891,\"blocks\":[{\"id\":\"Ep0zoYH7I7\",\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"id\":\"xggv1ng9K_\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"id\":\"Unw2lkTRDl\",\"type\":\"image\",\"data\":{\"url\":\"/example/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"id\":\"9G1LPrg5dy\",\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"id\":\"ll2l7_1W0E\",\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"id\":\"5Hm_aeJtcI\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"id\":\"WHScR0iSQP\",\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"id\":\"ibVPwhnIE5\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.22.2\"}",
+                                        "Html": null
+                                    }
+                                },
+                                "FlowMetadata": {
+                                    "Alignment": 3,
+                                    "Size": 100
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -239,10 +285,6 @@
                     "Owner": "[js: parameters('AdminUsername')]",
                     "Author": "[js: parameters('AdminUsername')]",
                     "NewsPost": {
-                        "Content": {
-                            "Data": "{\"time\":1592260856690,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"url\":\"/demo/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.18.0\"}",
-                            "Html": null
-                        },
                         "Thumbnail": {
                             "Paths": [
                                 "News/Default/example-news-400w.jpg"
@@ -273,6 +315,33 @@
                     },
                     "TitlePart": {
                         "Title": "Example Blog Post #3"
+                    },
+                    "Content": {
+                        "Widgets": [
+                            {
+                                "ContentItemId": "4tz2549w6h74wsybq9jxqaqq5a",
+                                "ContentItemVersionId": null,
+                                "ContentType": "VisualEditor",
+                                "DisplayText": "",
+                                "Latest": false,
+                                "Published": false,
+                                "ModifiedUtc": "2021-10-11T09:02:08.1169595Z",
+                                "PublishedUtc": null,
+                                "CreatedUtc": null,
+                                "Owner": "",
+                                "Author": "etch-play",
+                                "VisualEditor": {
+                                    "Content": {
+                                        "Data": "{\"time\":1633942927891,\"blocks\":[{\"id\":\"Ep0zoYH7I7\",\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"id\":\"xggv1ng9K_\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"id\":\"Unw2lkTRDl\",\"type\":\"image\",\"data\":{\"url\":\"/example/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"id\":\"9G1LPrg5dy\",\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"id\":\"ll2l7_1W0E\",\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"id\":\"5Hm_aeJtcI\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"id\":\"WHScR0iSQP\",\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"id\":\"ibVPwhnIE5\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.22.2\"}",
+                                        "Html": null
+                                    }
+                                },
+                                "FlowMetadata": {
+                                    "Alignment": 3,
+                                    "Size": 100
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -428,16 +497,16 @@
                 },
                 {
                     "ContentItemId": "4q200ssff5g74zsf073rjsfgw7",
-                    "ContentItemVersionId": "4htjaj83md5qp13yt5r8d0d042",
+                    "ContentItemVersionId": "4ckpw7zeydyw15pgg66p4dzy4v",
                     "ContentType": "Homepage",
                     "DisplayText": "Homepage",
                     "Latest": true,
                     "Published": true,
-                    "ModifiedUtc": "2020-07-13T22:41:36.0874593Z",
-                    "PublishedUtc": "2020-07-13T22:41:36.2075266Z",
+                    "ModifiedUtc": "2021-10-12T09:52:27.0310781Z",
+                    "PublishedUtc": "2021-10-12T09:52:27.1822762Z",
                     "CreatedUtc": "2020-07-08T23:19:42.481572Z",
-                    "Owner": "[js: parameters('AdminUsername')]",
-                    "Author": "[js: parameters('AdminUsername')]",
+                    "Owner": "etch-play",
+                    "Author": "etch-play",
                     "Homepage": {},
                     "AutoroutePart": {
                         "Path": "homepage",
@@ -459,21 +528,60 @@
                                 "DisplayText": null,
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-07-13T22:41:36.1141371Z",
+                                "ModifiedUtc": "2021-10-12T09:52:27.0590744Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
-                                "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Owner": "",
+                                "Author": "etch-play",
                                 "Hero": {
                                     "BackgroundType": {
                                         "Text": "embed"
                                     },
+                                    "BackgroundColour": {
+                                        "Value": "transparent"
+                                    },
                                     "BackgroundImage": {
-                                        "Data": "",
+                                        "Data": "[]",
                                         "HasData": false
                                     },
                                     "BackgroundEmbed": {
                                         "Text": "https://player.vimeo.com/video/165642889?background=1"
+                                    },
+                                    "HorizontalAlignment": {
+                                        "Text": "left"
+                                    },
+                                    "VerticalAlignment": {
+                                        "Text": "center"
+                                    },
+                                    "InvertColour": {
+                                        "Value": false
+                                    },
+                                    "PullUp": {
+                                        "Value": false
+                                    },
+                                    "AddGradient": {
+                                        "Value": false
+                                    },
+                                    "ContentWidth": {
+                                        "Text": "default"
+                                    },
+                                    "Gutter": {
+                                        "Text": "default"
+                                    },
+                                    "LazyLoad": {
+                                        "Value": false
+                                    },
+                                    "ShowScrollEncouragement": {
+                                        "Value": false
+                                    },
+                                    "AspectRatio": {
+                                        "Text": "16-9"
+                                    },
+                                    "AspectRatioTablet": {
+                                        "Text": "3-2"
+                                    },
+                                    "AspectRatioMobile": {
+                                        "Text": "9-16"
                                     },
                                     "DisplayText": {
                                         "Text": "ETCH Play Boilerplate <br />Pattern Library"
@@ -484,6 +592,12 @@
                                     "CTAUrl": {
                                         "Text": "#"
                                     }
+                                },
+                                "TitlePart": {
+                                    "Title": null
+                                },
+                                "Content": {
+                                    "Widgets": []
                                 },
                                 "FlowMetadata": {
                                     "Alignment": 3,
@@ -497,20 +611,41 @@
                                 "DisplayText": "Feature",
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-07-13T22:41:36.1259713Z",
+                                "ModifiedUtc": "2021-10-12T09:52:27.0720201Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
-                                "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Owner": "",
+                                "Author": "etch-play",
                                 "Section": {
-                                    "BackgroundColour": {
-                                        "Text": "default"
-                                    },
                                     "Alignment": {
                                         "Text": "default"
                                     },
                                     "ContentWidth": {
                                         "Text": "wide"
+                                    },
+                                    "SpacingAfter": {
+                                        "Text": "none"
+                                    },
+                                    "TopPadding": {
+                                        "Text": "default"
+                                    },
+                                    "BottomPadding": {
+                                        "Text": "default"
+                                    },
+                                    "Gutter": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalAlignment": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalGutter": {
+                                        "Text": "section--no-vertical-flow-gutter"
+                                    },
+                                    "StackedVerticalGutter": {
+                                        "Text": "section--stacked-vertical-flow-gutter-not-specified"
+                                    },
+                                    "BackgroundColour": {
+                                        "Text": "default"
                                     },
                                     "BackgroundImage": {
                                         "Data": "{\"sources\":[{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"},{\"breakpoint\":425,\"path\":\"Backgrounds/Default/unsplash-1444090542259-425w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"}]}",
@@ -523,14 +658,14 @@
                                             "ContentItemId": "4dh7sxjprsbxr0cf514534hedn",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Heading",
-                                            "DisplayText": null,
+                                            "DisplayText": "",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-07-13T22:41:36.1314636Z",
+                                            "ModifiedUtc": "2021-10-12T09:52:27.0791577Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
+                                            "Owner": "",
+                                            "Author": "etch-play",
                                             "Heading": {
                                                 "Text": {
                                                     "Text": "Feature Section Title"
@@ -548,14 +683,14 @@
                                             "ContentItemId": "4k243g29992ts3psszw3jt3wc0",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Paragraph",
-                                            "DisplayText": null,
+                                            "DisplayText": "",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-07-13T22:41:36.138365Z",
+                                            "ModifiedUtc": "2021-10-12T09:52:27.0862969Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
+                                            "Owner": "",
+                                            "Author": "etch-play",
                                             "Paragraph": {
                                                 "Text": {
                                                     "Text": "Explore and survive in an infinite procedurally generated universe"
@@ -570,14 +705,14 @@
                                             "ContentItemId": "4dfhp2zrw72bc6gfpyrdjs5hdp",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Link",
-                                            "DisplayText": null,
+                                            "DisplayText": "",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-07-13T22:41:36.1445938Z",
+                                            "ModifiedUtc": "2021-10-12T09:52:27.0914963Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
+                                            "Owner": "",
+                                            "Author": "etch-play",
                                             "Link": {
                                                 "Text": {
                                                     "Text": "Link as Brand Primary"
@@ -602,6 +737,23 @@
                                 "TitlePart": {
                                     "Title": "Feature"
                                 },
+                                "BackgroundPart": {
+                                    "BackgroundColour": {
+                                        "Value": "transparent"
+                                    },
+                                    "BackgroundPattern": {
+                                        "Text": null
+                                    },
+                                    "InvertTextColour": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFixed": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFill": {
+                                        "Value": false
+                                    }
+                                },
                                 "FlowMetadata": {
                                     "Alignment": 3,
                                     "Size": 100
@@ -614,20 +766,41 @@
                                 "DisplayText": "Example",
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-07-13T22:41:36.1556781Z",
+                                "ModifiedUtc": "2021-10-12T09:52:27.1018194Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
-                                "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Owner": "",
+                                "Author": "etch-play",
                                 "Section": {
-                                    "BackgroundColour": {
-                                        "Text": "default"
-                                    },
                                     "Alignment": {
                                         "Text": "default"
                                     },
                                     "ContentWidth": {
                                         "Text": "wide"
+                                    },
+                                    "SpacingAfter": {
+                                        "Text": "none"
+                                    },
+                                    "TopPadding": {
+                                        "Text": "default"
+                                    },
+                                    "BottomPadding": {
+                                        "Text": "default"
+                                    },
+                                    "Gutter": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalAlignment": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalGutter": {
+                                        "Text": "section--no-vertical-flow-gutter"
+                                    },
+                                    "StackedVerticalGutter": {
+                                        "Text": "section--stacked-vertical-flow-gutter-not-specified"
+                                    },
+                                    "BackgroundColour": {
+                                        "Text": "default"
                                     },
                                     "BackgroundImage": {
                                         "Data": "",
@@ -640,29 +813,33 @@
                                             "ContentItemId": "4at3mdja20t23r4y3ppwpv9bdd",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Group",
-                                            "DisplayText": null,
+                                            "DisplayText": "",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-07-13T22:41:36.1608256Z",
+                                            "ModifiedUtc": "2021-10-12T09:52:27.1088369Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
-                                            "Group": {},
+                                            "Owner": "",
+                                            "Author": "etch-play",
+                                            "Group": {
+                                                "Style": {
+                                                    "Text": "none"
+                                                }
+                                            },
                                             "Content": {
                                                 "ContentItems": [
                                                     {
                                                         "ContentItemId": "4yn2tta4e53sj422b938e8hcw6",
                                                         "ContentItemVersionId": null,
                                                         "ContentType": "Heading",
-                                                        "DisplayText": null,
+                                                        "DisplayText": "",
                                                         "Latest": false,
                                                         "Published": false,
-                                                        "ModifiedUtc": "2020-07-13T22:41:36.1629356Z",
+                                                        "ModifiedUtc": "2021-10-12T09:52:27.1141251Z",
                                                         "PublishedUtc": null,
                                                         "CreatedUtc": null,
-                                                        "Owner": null,
-                                                        "Author": "[js: parameters('AdminUsername')]",
+                                                        "Owner": "",
+                                                        "Author": "etch-play",
                                                         "Heading": {
                                                             "Text": {
                                                                 "Text": "Section Title"
@@ -676,14 +853,14 @@
                                                         "ContentItemId": "406sg1kc6g49g1k35hrgtht14z",
                                                         "ContentItemVersionId": null,
                                                         "ContentType": "Paragraph",
-                                                        "DisplayText": null,
+                                                        "DisplayText": "",
                                                         "Latest": false,
                                                         "Published": false,
-                                                        "ModifiedUtc": "2020-07-13T22:41:36.1709249Z",
+                                                        "ModifiedUtc": "2021-10-12T09:52:27.1198079Z",
                                                         "PublishedUtc": null,
                                                         "CreatedUtc": null,
-                                                        "Owner": null,
-                                                        "Author": "[js: parameters('AdminUsername')]",
+                                                        "Owner": "",
+                                                        "Author": "etch-play",
                                                         "Paragraph": {
                                                             "Text": {
                                                                 "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper, metus at venenatis luctus, enim nulla suscipit sapien, in fermentum mi lacus eu lorem. Nam libero risus, euismod eu gravida vel, ullamcorper vitae neque. In sollicitudin aliquet mattis. Donec at varius erat. Nunc nec egestas tortor. Praesent quis dapibus risus. Aliquam erat lorem, accumsan sed efficitur ut, venenatis et diam."
@@ -694,14 +871,14 @@
                                                         "ContentItemId": "4s8hse4gz683gxnc255fm8msww",
                                                         "ContentItemVersionId": null,
                                                         "ContentType": "Link",
-                                                        "DisplayText": null,
+                                                        "DisplayText": "",
                                                         "Latest": false,
                                                         "Published": false,
-                                                        "ModifiedUtc": "2020-07-13T22:41:36.1754505Z",
+                                                        "ModifiedUtc": "2021-10-12T09:52:27.1250873Z",
                                                         "PublishedUtc": null,
                                                         "CreatedUtc": null,
-                                                        "Owner": null,
-                                                        "Author": "[js: parameters('AdminUsername')]",
+                                                        "Owner": "",
+                                                        "Author": "etch-play",
                                                         "Link": {
                                                             "Text": {
                                                                 "Text": "Learn more"
@@ -719,6 +896,23 @@
                                                     }
                                                 ]
                                             },
+                                            "BackgroundPart": {
+                                                "BackgroundColour": {
+                                                    "Value": "transparent"
+                                                },
+                                                "BackgroundPattern": {
+                                                    "Text": null
+                                                },
+                                                "InvertTextColour": {
+                                                    "Value": false
+                                                },
+                                                "BackgroundFixed": {
+                                                    "Value": false
+                                                },
+                                                "BackgroundFill": {
+                                                    "Value": false
+                                                }
+                                            },
                                             "FlowMetadata": {
                                                 "Alignment": 3,
                                                 "Size": 50
@@ -728,22 +922,28 @@
                                             "ContentItemId": "4fytnfmra2nry213kbz7ybandq",
                                             "ContentItemVersionId": null,
                                             "ContentType": "Image",
-                                            "DisplayText": null,
+                                            "DisplayText": "",
                                             "Latest": false,
                                             "Published": false,
-                                            "ModifiedUtc": "2020-07-13T22:41:36.1828782Z",
+                                            "ModifiedUtc": "2021-10-12T09:52:27.1353644Z",
                                             "PublishedUtc": null,
                                             "CreatedUtc": null,
-                                            "Owner": null,
-                                            "Author": "[js: parameters('AdminUsername')]",
+                                            "Owner": "",
+                                            "Author": "etch-play",
                                             "Image": {
                                                 "Image": {
                                                     "Paths": [
                                                         "Backgrounds/Default/unsplash-1444090542259-1024w.jpg"
+                                                    ],
+                                                    "MediaTexts": [
+                                                        ""
                                                     ]
                                                 },
                                                 "AlternateText": {
                                                     "Text": "Example image."
+                                                },
+                                                "LinkTo": {
+                                                    "Text": null
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -756,33 +956,179 @@
                                 "TitlePart": {
                                     "Title": "Example"
                                 },
+                                "BackgroundPart": {
+                                    "BackgroundColour": {
+                                        "Value": "transparent"
+                                    },
+                                    "BackgroundPattern": {
+                                        "Text": null
+                                    },
+                                    "InvertTextColour": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFixed": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFill": {
+                                        "Value": false
+                                    }
+                                },
                                 "FlowMetadata": {
                                     "Alignment": 3,
                                     "Size": 100
                                 }
                             },
                             {
-                                "ContentItemId": "4kcj39f1pbyzqx583erarxnfwc",
+                                "ContentItemId": "4db3kqfb32ff57c8w3k9geb945",
                                 "ContentItemVersionId": null,
-                                "ContentType": "News",
+                                "ContentType": "Section",
                                 "DisplayText": "Latest News",
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-07-13T22:41:36.1958966Z",
+                                "ModifiedUtc": "2021-10-12T09:52:27.1465399Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
-                                "News": {
-                                    "PageSize": {
-                                        "Value": 3.0
+                                "Author": "etch-play",
+                                "Section": {
+                                    "Alignment": {
+                                        "Text": "default"
                                     },
-                                    "Paging": {
-                                        "Value": false
+                                    "ContentWidth": {
+                                        "Text": "wide"
+                                    },
+                                    "SpacingAfter": {
+                                        "Text": "none"
+                                    },
+                                    "TopPadding": {
+                                        "Text": "default"
+                                    },
+                                    "BottomPadding": {
+                                        "Text": "default"
+                                    },
+                                    "Gutter": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalAlignment": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalGutter": {
+                                        "Text": "section--no-vertical-flow-gutter"
+                                    },
+                                    "StackedVerticalGutter": {
+                                        "Text": "section--stacked-vertical-flow-gutter-not-specified"
                                     }
+                                },
+                                "Content": {
+                                    "Widgets": [
+                                        {
+                                            "ContentItemId": "4t0cb34r5vpja24v53aay8g9wh",
+                                            "ContentItemVersionId": null,
+                                            "ContentType": "ContentFeed",
+                                            "DisplayText": "Latest News",
+                                            "Latest": false,
+                                            "Published": false,
+                                            "ModifiedUtc": "2021-10-12T09:52:27.154358Z",
+                                            "PublishedUtc": null,
+                                            "CreatedUtc": null,
+                                            "Owner": null,
+                                            "Author": "etch-play",
+                                            "ContentFeed": {
+                                                "PageSize": {
+                                                    "Value": 3.0
+                                                },
+                                                "Paging": {
+                                                    "Value": false
+                                                },
+                                                "HideWidgetHeader": {
+                                                    "Value": false
+                                                },
+                                                "Items": {
+                                                    "Value": "News"
+                                                }
+                                            },
+                                            "BackgroundPart": {
+                                                "BackgroundColour": {
+                                                    "Value": "transparent"
+                                                },
+                                                "BackgroundPattern": {
+                                                    "Text": null
+                                                },
+                                                "InvertTextColour": {
+                                                    "Value": false
+                                                },
+                                                "BackgroundFixed": {
+                                                    "Value": false
+                                                },
+                                                "BackgroundFill": {
+                                                    "Value": false
+                                                }
+                                            },
+                                            "TitlePart": {
+                                                "Title": "Latest News"
+                                            },
+                                            "Links": {
+                                                "ContentItems": [
+                                                    {
+                                                        "ContentItemId": "4qq4pykzjp2nc73sa9khv8m3wa",
+                                                        "ContentItemVersionId": null,
+                                                        "ContentType": "Link",
+                                                        "DisplayText": null,
+                                                        "Latest": false,
+                                                        "Published": false,
+                                                        "ModifiedUtc": "2021-10-12T09:52:27.1630481Z",
+                                                        "PublishedUtc": null,
+                                                        "CreatedUtc": null,
+                                                        "Owner": null,
+                                                        "Author": "etch-play",
+                                                        "Link": {
+                                                            "Text": {
+                                                                "Text": "View all news"
+                                                            },
+                                                            "Url": {
+                                                                "Text": "/news"
+                                                            },
+                                                            "OpenInNewWindow": {
+                                                                "Value": false
+                                                            },
+                                                            "Style": {
+                                                                "Text": "default"
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "ColumnablePart": {
+                                                "Columns": {
+                                                    "Text": "three"
+                                                }
+                                            },
+                                            "FlowMetadata": {
+                                                "Alignment": 3,
+                                                "Size": 100
+                                            }
+                                        }
+                                    ]
                                 },
                                 "TitlePart": {
                                     "Title": "Latest News"
+                                },
+                                "BackgroundPart": {
+                                    "BackgroundColour": {
+                                        "Value": "transparent"
+                                    },
+                                    "BackgroundPattern": {
+                                        "Text": null
+                                    },
+                                    "InvertTextColour": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFixed": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFill": {
+                                        "Value": false
+                                    }
                                 },
                                 "FlowMetadata": {
                                     "Alignment": 3,
@@ -794,7 +1140,24 @@
                     "MetaTagsPart": {
                         "Description": null,
                         "Images": [],
-                        "Title": null
+                        "Title": null,
+                        "MetaTitle": {
+                            "Text": null
+                        },
+                        "MetaDescription": {
+                            "Text": null
+                        },
+                        "MetaImage": {
+                            "Paths": [],
+                            "MediaTexts": []
+                        },
+                        "Custom": {
+                            "Data": []
+                        },
+                        "MetaNoIndex": {
+                            "Value": false
+                        },
+                        "IsEmpty": true
                     }
                 },
                 {
@@ -3201,16 +3564,16 @@
                 },
                 {
                     "ContentItemId": "41aqebfvszexkssnm623f20smn",
-                    "ContentItemVersionId": "4mncptskcryb525k2d3pfvqfxk",
+                    "ContentItemVersionId": "4cyvp9fm6k4845n21dej1b2h42",
                     "ContentType": "Page",
                     "DisplayText": "Blog",
                     "Latest": true,
                     "Published": true,
-                    "ModifiedUtc": "2020-08-03T23:43:50.2043529Z",
-                    "PublishedUtc": "2020-08-03T23:43:50.2071838Z",
+                    "ModifiedUtc": "2021-10-12T09:51:23.7245012Z",
+                    "PublishedUtc": "2021-10-12T09:51:23.8759367Z",
                     "CreatedUtc": "2020-08-03T23:43:50.2043529Z",
-                    "Owner": "[js: parameters('AdminUsername')]",
-                    "Author": "[js: parameters('AdminUsername')]",
+                    "Owner": "etch-play",
+                    "Author": "etch-play",
                     "Page": {
                         "DisplayTitle": {
                             "Value": false
@@ -3232,27 +3595,128 @@
                     "Content": {
                         "Widgets": [
                             {
-                                "ContentItemId": "4p9467qq3ygady89syv4a5dw59",
+                                "ContentItemId": "4ftcprgz204jhwgmck8f1c3x4s",
                                 "ContentItemVersionId": null,
-                                "ContentType": "News",
-                                "DisplayText": "Blog",
+                                "ContentType": "Section",
+                                "DisplayText": "News",
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-08-03T23:43:50.1982816Z",
+                                "ModifiedUtc": "2021-10-12T09:51:23.781278Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
-                                "News": {
-                                    "PageSize": {
-                                        "Value": 6.0
+                                "Author": "etch-play",
+                                "Section": {
+                                    "Alignment": {
+                                        "Text": "default"
                                     },
-                                    "Paging": {
-                                        "Value": true
+                                    "ContentWidth": {
+                                        "Text": "wide"
+                                    },
+                                    "SpacingAfter": {
+                                        "Text": "none"
+                                    },
+                                    "TopPadding": {
+                                        "Text": "default"
+                                    },
+                                    "BottomPadding": {
+                                        "Text": "default"
+                                    },
+                                    "Gutter": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalAlignment": {
+                                        "Text": "default"
+                                    },
+                                    "VerticalGutter": {
+                                        "Text": "section--no-vertical-flow-gutter"
+                                    },
+                                    "StackedVerticalGutter": {
+                                        "Text": "section--stacked-vertical-flow-gutter-not-specified"
                                     }
                                 },
+                                "Content": {
+                                    "Widgets": [
+                                        {
+                                            "ContentItemId": "4dy6tx60j8t2j3jf9xfs3cqq4x",
+                                            "ContentItemVersionId": null,
+                                            "ContentType": "ContentFeed",
+                                            "DisplayText": "News",
+                                            "Latest": false,
+                                            "Published": false,
+                                            "ModifiedUtc": "2021-10-12T09:51:23.7944007Z",
+                                            "PublishedUtc": null,
+                                            "CreatedUtc": null,
+                                            "Owner": null,
+                                            "Author": "etch-play",
+                                            "ContentFeed": {
+                                                "PageSize": {
+                                                    "Value": 12.0
+                                                },
+                                                "Paging": {
+                                                    "Value": true
+                                                },
+                                                "HideWidgetHeader": {
+                                                    "Value": false
+                                                },
+                                                "Items": {
+                                                    "Value": "News"
+                                                }
+                                            },
+                                            "BackgroundPart": {
+                                                "BackgroundColour": {
+                                                    "Value": "transparent"
+                                                },
+                                                "BackgroundPattern": {
+                                                    "Text": null
+                                                },
+                                                "InvertTextColour": {
+                                                    "Value": false
+                                                },
+                                                "BackgroundFixed": {
+                                                    "Value": false
+                                                },
+                                                "BackgroundFill": {
+                                                    "Value": false
+                                                }
+                                            },
+                                            "TitlePart": {
+                                                "Title": "News"
+                                            },
+                                            "Links": {
+                                                "ContentItems": []
+                                            },
+                                            "ColumnablePart": {
+                                                "Columns": {
+                                                    "Text": "three"
+                                                }
+                                            },
+                                            "FlowMetadata": {
+                                                "Alignment": 3,
+                                                "Size": 100
+                                            }
+                                        }
+                                    ]
+                                },
                                 "TitlePart": {
-                                    "Title": "Blog"
+                                    "Title": "News"
+                                },
+                                "BackgroundPart": {
+                                    "BackgroundColour": {
+                                        "Value": "transparent"
+                                    },
+                                    "BackgroundPattern": {
+                                        "Text": null
+                                    },
+                                    "InvertTextColour": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFixed": {
+                                        "Value": false
+                                    },
+                                    "BackgroundFill": {
+                                        "Value": false
+                                    }
                                 },
                                 "FlowMetadata": {
                                     "Alignment": 3,
@@ -3264,7 +3728,24 @@
                     "MetaTagsPart": {
                         "Description": null,
                         "Images": [],
-                        "Title": null
+                        "Title": null,
+                        "MetaTitle": {
+                            "Text": null
+                        },
+                        "MetaDescription": {
+                            "Text": null
+                        },
+                        "MetaImage": {
+                            "Paths": [],
+                            "MediaTexts": []
+                        },
+                        "Custom": {
+                            "Data": []
+                        },
+                        "MetaNoIndex": {
+                            "Value": false
+                        },
+                        "IsEmpty": true
                     }
                 },
                 {
