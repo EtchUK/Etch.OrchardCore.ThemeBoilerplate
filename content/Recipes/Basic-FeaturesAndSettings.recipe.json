@@ -4,7 +4,7 @@
     "description": "Configures features & settings for basic site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "issetuprecipe": false,
     "categories": [
         "basic"
