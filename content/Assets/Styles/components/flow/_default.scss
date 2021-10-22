@@ -48,6 +48,10 @@
     .constrain--wide & {
         max-width: $content-width-wide;
     }
+
+    .constrain--full & {
+        max-width: 100%;
+    }
 }
 
 .flow__content {
