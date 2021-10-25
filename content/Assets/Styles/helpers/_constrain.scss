@@ -31,14 +31,16 @@
     max-width: $content-width-extra-thin;
 }
 
-.constrain--full {
-    max-width: none;
-}
-
 .constrain--thin {
     max-width: $content-width-thin;
 }
 
 .constrain--wide {
     max-width: $content-width-wide;
+}
+
+.constrain--full {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
