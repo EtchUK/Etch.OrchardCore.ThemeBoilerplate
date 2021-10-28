@@ -31,6 +31,30 @@
         }
     }
 
+    &--h1 {
+        @include text-heading(H1);
+    }
+
+    &--h2 {
+        @include text-heading(H2);
+    }
+
+    &--h3 {
+        @include text-heading(H3);
+    }
+
+    &--h4 {
+        @include text-heading(H4);
+    }
+
+    &--h5 {
+        @include text-heading(H5);
+    }
+
+    &--h6 {
+        @include text-heading(H6);
+    }
+
     &--line-through {
         text-decoration: line-through;
     }
