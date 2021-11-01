@@ -97,6 +97,15 @@
                                     "Position": "5"
                                 }
                             }
+                        },
+                        {
+                            "PartName": "PublishLaterPart",
+                            "Name": "PublishLaterPart",
+                            "Settings": {
+                                "ContentTypePartSettings": {
+                                    "Position": "7"
+                                }
+                            }
                         }
                     ]
                 },
@@ -277,6 +286,16 @@
                             }
                         }
                     ]
+                },
+                {
+                    "Name": "PublishLaterPart",
+                    "Settings": {
+                        "ContentPartSettings": {
+                            "Attachable": true,
+                            "Description": "Adds the ability to schedule content items to be published at a given future date and time."
+                        }
+                    },
+                    "ContentPartFieldDefinitionRecords": []
                 }
             ]
         }
