@@ -73,6 +73,7 @@
                 "OrchardCore.Markdown",
                 "OrchardCore.Menu",
                 "OrchardCore.Navigation",
+                "OrchardCore.PublishLater",
                 "OrchardCore.Users",
                 "OrchardCore.Recipes",
                 "OrchardCore.Roles",
