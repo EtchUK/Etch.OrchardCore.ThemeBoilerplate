@@ -59,7 +59,7 @@
                                     "AllowCustomPath": true,
                                     "Pattern": "{{ ContentItem | display_text | slugify }}",
                                     "AllowUpdatePath": false,
-                                    "ShowHomepageOption": false
+                                    "ShowHomepageOption": true
                                 },
                                 "ContentIndexSettings": {}
                             }
@@ -104,90 +104,6 @@
                             "Settings": {
                                 "ContentTypePartSettings": {
                                     "Position": "7"
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Name": "Homepage",
-                    "DisplayName": "Homepage",
-                    "Settings": {
-                        "ContentTypeSettings": {
-                            "Creatable": true,
-                            "Listable": true,
-                            "Draftable": true,
-                            "Versionable": true,
-                            "Securable": true
-                        },
-                        "FullTextAspectSettings": {}
-                    },
-                    "ContentTypePartDefinitionRecords": [
-                        {
-                            "PartName": "Homepage",
-                            "Name": "Homepage",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "2"
-                                }
-                            }
-                        },
-                        {
-                            "PartName": "AutoroutePart",
-                            "Name": "AutoroutePart",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "1"
-                                },
-                                "AutoroutePartSettings": {
-                                    "AllowCustomPath": true,
-                                    "Pattern": "{{ ContentItem | display_text | slugify }}",
-                                    "AllowUpdatePath": false,
-                                    "ShowHomepageOption": true
-                                },
-                                "ContentIndexSettings": {}
-                            }
-                        },
-                        {
-                            "PartName": "CommonPart",
-                            "Name": "CommonPart",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "4"
-                                }
-                            }
-                        },
-                        {
-                            "PartName": "TitlePart",
-                            "Name": "TitlePart",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "0"
-                                }
-                            }
-                        },
-                        {
-                            "PartName": "FlowPart",
-                            "Name": "Content",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "DisplayName": "Content",
-                                    "Description": "Content for homepage.",
-                                    "Position": "2"
-                                },
-                                "LinkableContentTypes": [],
-                                "FlowPartSettings": {
-                                    "ContainedContentTypes": []
-                                },
-                                "ContentIndexSettings": {}
-                            }
-                        },
-                        {
-                            "PartName": "MetaTagsPart",
-                            "Name": "MetaTagsPart",
-                            "Settings": {
-                                "ContentTypePartSettings": {
-                                    "Position": "5"
                                 }
                             }
                         }
