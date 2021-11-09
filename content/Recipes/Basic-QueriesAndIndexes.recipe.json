@@ -4,7 +4,7 @@
     "description": "Configures queries & indexes for basic site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "issetuprecipe": false,
     "categories": [
         "basic"
