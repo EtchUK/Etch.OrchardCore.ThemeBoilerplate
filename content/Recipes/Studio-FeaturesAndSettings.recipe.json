@@ -79,6 +79,7 @@
                 "OrchardCore.Themes",
                 "OrchardCore.Workflows.Http",
                 "Etch.OrchardCore.ContextualEdit",
+                "Etch.OrchardCore.Menu",
                 "TheAdmin",
                 "Etch.OrchardCore.AdminTheme",
                 "Etch.OrchardCore.ThemeBoilerplate"
