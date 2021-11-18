@@ -75,6 +75,7 @@
                 "OrchardCore.Workflows.Http",
                 "OrchardCore.Workflows.Timers",
                 "Etch.OrchardCore.ContextualEdit",
+                "Etch.OrchardCore.Menu",
                 "TheAdmin",
                 "Etch.OrchardCore.AdminTheme",
                 "Etch.OrchardCore.ThemeBoilerplate"
