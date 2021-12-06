@@ -18,9 +18,17 @@
     .nav__item a {
         color: var(--footerColorInverted);
 
+        svg {
+            fill: var(--footerColorInverted);
+        }
+
         &:focus,
         &:hover {
             color: var(--footerColorInvertedActive);
+
+            svg {
+                fill: var(--footerColorInvertedActive);
+            }
         }
     }
 
