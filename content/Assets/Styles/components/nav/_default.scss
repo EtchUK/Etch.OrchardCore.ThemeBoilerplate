@@ -44,20 +44,36 @@
         text-decoration: none;
         text-transform: var(--navTextTransform);
 
+        svg {
+            fill: var(--navColor);
+        }
+
         @include mq($from: tablet) {
             padding: var(--navAnchorPaddingDesktop);
         }
 
         &.is-current-page {
             color: var(--navColorActive);
+
+            svg {
+                fill: var(--navColorActive);
+            }
         }
 
         [class$='--inverted'] & {
             color: var(--navColorInverted);
 
+            svg {
+                fill: var(--navColorInverted);
+            }
+
             &:focus,
             &:hover {
                 color: var(--navColorInvertedActive);
+
+                svg {
+                    fill: var(--navColorInvertedActive);
+                }
             }
         }
 
@@ -65,6 +81,10 @@
         &:hover {
             color: var(--navColorActive);
             text-decoration: var(--navTextDecorationHover);
+
+            svg {
+                fill: var(--navColorActive);
+            }
         }
     }
 }
