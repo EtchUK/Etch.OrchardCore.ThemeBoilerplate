@@ -13,3 +13,15 @@
 .hero--vertical-top {
     align-items: flex-start;
 }
+
+@include mq($until: tablet) {
+    .hero--vertical-mobile-bottom {
+        align-items: flex-end;
+    }
+    .hero--vertical-mobile-center {
+        align-items: center;
+    }
+    .hero--vertical-mobile-top {
+        align-items: flex-start;
+    }
+}
