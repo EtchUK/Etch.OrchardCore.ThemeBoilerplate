@@ -36,7 +36,7 @@
         "prettier": "^2.0.5",
         "sass": "^1.39.0",
         "sass-loader": "^12.1.0",
-        "sass-mq": "^5.0.1",
+        "sass-mq": "^6.0.0",
         "stylelint": "^13.3.2",
         "stylelint-config-prettier": "^8.0.2",
         "stylelint-config-recommended": "^5.0.0",
