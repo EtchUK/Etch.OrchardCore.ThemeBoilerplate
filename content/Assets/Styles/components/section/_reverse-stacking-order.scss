@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #SECTION/REVERSE STACKING ORDER
+   ========================================================================== */
+
+.section--reverse-stacking-order {
+    .flow__content {
+        @include mq($until: desktopSmall) {
+            flex-direction: column-reverse;
+        }
+    }
+}
