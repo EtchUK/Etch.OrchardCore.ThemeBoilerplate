@@ -4,10 +4,26 @@
 
 .section--center {
     text-align: center;
+
+    .flow__content {         
+        justify-content: center;     
+    }
+}
+
+.section--left {
+    text-align: left;
+
+    .flow__content {         
+        justify-content: flex-start;     
+    }
 }
 
 .section--right {
     text-align: right;
+
+    .flow__content {         
+        justify-content: flex-end;     
+    }
 }
 
 .section--vertical-bottom .flow__content {
