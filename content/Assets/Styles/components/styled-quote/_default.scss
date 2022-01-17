@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #STYLED QUOTE/DEFAULT
+   ========================================================================== */
+
+.styled-quote {
+    margin: var(--styledQuoteMargin);
+    padding: var(--styledQuotePadding);
+    position: relative;
+
+    p {
+        font-size: var(--styledQuoteFontSize);
+        line-height: var(--styledQuoteLineHeight);
+    }
+}

@@ -5,33 +5,8 @@
  */
 
 blockquote {
-    margin: 0 0 $spacing-default 0;
+    margin: 0;
     position: relative;
 
-    p {
-        @include text-heading('H4');
-
-        hanging-punctuation: first;
-        text-indent: $blockquote-paragraph-text-indent;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    cite {
-        display: block;
-        padding-top: $content-gutter;
-
-        color: var(--colorTextLight);
-        font-style: normal;
-
-        strong {
-            display: block;
-            margin-bottom: $blockquote-cite-strong-margin-bottom;
-
-            color: var(--colorTextDefault);
-            font-size: var(--fontSizeLarge);
-        }
-    }
+    font-style: italic;
 }
