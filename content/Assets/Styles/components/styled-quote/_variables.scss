@@ -1,0 +1,10 @@
+/* ==========================================================================
+   #STYLED QUOTE/VARIABLES
+   ========================================================================== */
+
+:root {
+    --styledQuoteFontSize: var(--fontSizeLarge);
+    --styledQuoteLineHeight: var(--lineHeightHeading);
+    --styledQuoteMargin: 0 0 #{$spacing-default} 0;
+    --styledQuotePadding: 0 0 0 0;
+}
