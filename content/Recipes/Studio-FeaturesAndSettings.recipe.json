@@ -45,6 +45,7 @@
                 "Etch.OrchardCore.SEO.MetaTags",
                 "OrchardCore.Html",
                 "Etch.OrchardCore.SEO.RobotsTxt",
+                "Etch.OrchardCore.SEO.Redirects",
                 "Etch.OrchardCore.Widgets",
                 "OrchardCore.Scripting",
                 "OrchardCore.Workflows",
