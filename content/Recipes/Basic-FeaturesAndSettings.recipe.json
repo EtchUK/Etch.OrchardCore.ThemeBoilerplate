@@ -43,6 +43,7 @@
                 "Etch.OrchardCore.SEO.MetaTags",
                 "OrchardCore.Html",
                 "Etch.OrchardCore.SEO.RobotsTxt",
+                "Etch.OrchardCore.SEO.Redirects",
                 "Etch.OrchardCore.Widgets",
                 "Etch.OrchardCore.Favicon",
                 "OrchardCore.Scripting",
