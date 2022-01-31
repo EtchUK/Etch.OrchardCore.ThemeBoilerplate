@@ -8,13 +8,15 @@
   * 2. Vertically center the embed if it is taller than .hero__media
   */
 
-@use "sass:math";
+@use 'sass:math';
 
 .hero {
     align-items: center;
     display: flex;
     justify-content: center;
     position: relative;
+
+    background: var(--heroBackgroundColor);
 
     color: var(--heroColor);
 
@@ -67,10 +69,7 @@
         transform: translate(-50%, -50%);
         width: auto;
 
-        background: var(--heroBackgroundColor);
-
         overflow: hidden;
-        z-index: $z-index-back;
 
         @each $width in $widths {
             .width--#{math.floor($width)} & {
