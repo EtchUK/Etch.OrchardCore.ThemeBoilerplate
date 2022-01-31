@@ -2,7 +2,13 @@
    #HERO/RATIO
    ========================================================================== */
 
-@use "sass:math";
+@use 'sass:math';
+
+/*
+ * 1. With a 100vh hero, and a 16:9 asset, the media width should scale 
+ *    based on the viewport height, to ensure it covers. 
+ *    16/9 = 1.7777 recurring, which we round to 178%
+ */
 
 .hero {
     &--mobile-ratio {
@@ -97,6 +103,21 @@
             }
             .hero__space {
                 padding-bottom: math.div(1, 4) * 100%;
+            }
+        }
+
+        &-100vh {
+            .hero__media,
+            .hero-responsive-media--background-image {
+                .embed,
+                img {
+                    width: 178vh; /* 1 */
+                    max-width: none;
+                    min-width: 100%;
+                }
+            }
+            .hero__space {
+                padding-bottom: 100vh;
             }
         }
     }
@@ -196,6 +217,21 @@
                     padding-bottom: math.div(1, 4) * 100%;
                 }
             }
+
+            &-100vh {
+                .hero__media,
+                .hero-responsive-media--background-image {
+                    .embed,
+                    img {
+                        width: 178vh; /* 1 */
+                        max-width: none;
+                        min-width: 100%;
+                    }
+                }
+                .hero__space {
+                    padding-bottom: 100vh;
+                }
+            }
         }
     }
 
@@ -292,6 +328,21 @@
                 }
                 .hero__space {
                     padding-bottom: math.div(1, 4) * 100%;
+                }
+            }
+
+            &-100vh {
+                .hero__media,
+                .hero-responsive-media--background-image {
+                    .embed,
+                    img {
+                        width: 178vh; /* 1 */
+                        max-width: none;
+                        min-width: 100%;
+                    }
+                }
+                .hero__space {
+                    padding-bottom: 100vh;
                 }
             }
         }
