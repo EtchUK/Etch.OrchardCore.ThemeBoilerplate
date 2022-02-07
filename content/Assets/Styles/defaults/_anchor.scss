@@ -14,4 +14,13 @@ a {
         color: var(--colorPrimaryActive);
         text-decoration: none;
     }
+
+    .inverted & {
+        color: var(--colorTextInverted);
+
+        &:hover {
+            color: var(--colorPrimaryActive);
+            text-decoration: none;
+        }
+    }
 }
