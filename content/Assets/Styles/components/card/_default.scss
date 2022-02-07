@@ -2,7 +2,7 @@
    #CARD/DEFAULT
    ========================================================================== */
 
-@use "sass:math";
+@use 'sass:math';
 
 .card {
     border-radius: var(--cardBorderRadius);
@@ -119,8 +119,7 @@
         font-weight: var(--cardMetaWeight);
         text-transform: var(--cardMetaTextTransform);
 
-        .card--inverted &,
-        .content-feed--inverted & {
+        .inverted & {
             color: var(--colorTextLighter);
         }
 

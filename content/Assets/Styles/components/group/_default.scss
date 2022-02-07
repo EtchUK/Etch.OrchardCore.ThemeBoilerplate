@@ -5,8 +5,4 @@
 .group {
     background-color: var(--groupBackgroundColor);
     background-image: var(--groupBackgroundPattern);
-
-    &--inverted {
-        color: var(--colorTextInverted);
-    }
 }

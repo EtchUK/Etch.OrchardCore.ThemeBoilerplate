@@ -2,7 +2,7 @@
    #CONTENT FEED/DEFAULT
    ========================================================================== */
 
-@use "sass:math";
+@use 'sass:math';
 
 .content-feed {
     &__header {
@@ -29,10 +29,6 @@
 
         @include mq($from: tablet) {
             margin: 0;
-        }
-
-        .content-feed--inverted & {
-            color: var(--colorTextInverted);
         }
     }
 
@@ -61,10 +57,6 @@
         border-left: math.div($gutter, 2) solid transparent;
         border-right: math.div($gutter, 2) solid transparent;
         margin-bottom: $gutter;
-
-        .content-feed--inverted & {
-            color: var(--colorTextInverted);
-        }
 
         .content-feed__list--two-cols & {
             @include mq($from: desktop) {
