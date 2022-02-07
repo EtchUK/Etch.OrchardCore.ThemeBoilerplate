@@ -12,10 +12,6 @@
     border: var(--tilesGap) solid transparent;
     position: relative;
     flex-basis: 50%;
-
-    &--inverted {
-        color: var(--colorTextInverted);
-    }
 }
 
 /**
