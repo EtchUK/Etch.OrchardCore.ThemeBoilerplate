@@ -21,4 +21,8 @@ body {
     @include text-default;
 
     overflow-x: hidden;
+
+    .is-nav-visible & {
+        overflow: hidden;
+    }
 }
