@@ -11,19 +11,25 @@
     --fontSizeH2: calc(var(--fontSizeBase) * 2);
     --fontSizeH3: calc(var(--fontSizeBase) * 1.5);
     --fontSizeH4: calc(var(--fontSizeBase) * 1.125);
+    --fontSizeH5: calc(var(--fontSizeBase) * 1.1);
+    --fontSizeH6: calc(var(--fontSizeBase) * 1);
     --fontSizeLarge: calc(var(--fontSizeBase) * 1.125);
     --fontSizeSmall: calc(var(--fontSizeBase) * 0.875);
     --fontStyleDefault: normal;
-    --fontStyleH1: var(--fontStyleBold);
-    --fontStyleH2: var(--fontStyleBold);
-    --fontStyleH3: var(--fontStyleBold);
-    --fontStyleH4: var(--fontStyleBold);
+    --fontStyleH1: var(--fontStyleDefault);
+    --fontStyleH2: var(--fontStyleDefault);
+    --fontStyleH3: var(--fontStyleDefault);
+    --fontStyleH4: var(--fontStyleDefault);
+    --fontStyleH5: var(--fontStyleDefault);
+    --fontStyleH6: var(--fontStyleDefault);
     --fontWeightBold: 700;
     --fontWeightDefault: 400;
     --fontWeightH1: var(--fontWeightBold);
     --fontWeightH2: var(--fontWeightBold);
     --fontWeightH3: var(--fontWeightBold);
     --fontWeightH4: var(--fontWeightBold);
+    --fontWeightH5: var(--fontWeightBold);
+    --fontWeightH6: var(--fontWeightBold);
     --lineHeightDefault: 2.2rem;
     --lineHeightHeading: 1.2;
     --lineHeightHero: 1.4;
@@ -31,10 +37,14 @@
     --lineHeightH2: var(--lineHeightHeading);
     --lineHeightH3: var(--lineHeightHeading);
     --lineHeightH4: var(--lineHeightHeading);
+    --lineHeightH5: var(--lineHeightHeading);
+    --lineHeightH6: var(--lineHeightHeading);
     --textTransformH1: none;
     --textTransformH2: none;
     --textTransformH3: none;
     --textTransformH4: none;
+    --textTransformH5: none;
+    --textTransformH6: none;
 
     @include mq($from: desktop) {
         --fontSizeHero: calc(var(--fontSizeBase) * 4);
@@ -42,5 +52,7 @@
         --fontSizeH2: calc(var(--fontSizeBase) * 3);
         --fontSizeH3: calc(var(--fontSizeBase) * 2);
         --fontSizeH4: calc(var(--fontSizeBase) * 1.5);
+        --fontSizeH5: calc(var(--fontSizeBase) * 1.25);
+        --fontSizeH6: calc(var(--fontSizeBase) * 1.125);
     }
 }
