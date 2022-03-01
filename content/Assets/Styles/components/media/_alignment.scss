@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #MEDIA/ALIGNMENT
+   ========================================================================== */
+
+.media--align-bottom {
+    @include mq($from: tablet) {
+        align-items: flex-end;
+    }
+}
+
+.media--align-top {
+    @include mq($from: tablet) {
+        align-items: flex-start;
+    }
+}
