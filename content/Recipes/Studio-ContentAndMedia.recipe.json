@@ -3750,6 +3750,9 @@
                         },
                         "MenuToggleButtonLabel": {
                             "Text": "Menu"
+                        },
+                        "MenuCloseButtonLabel": {
+                            "Text": "Close"
                         }
                     },
                     "LayerMetadata": {
