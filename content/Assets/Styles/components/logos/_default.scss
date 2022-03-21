@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #LOGOS/DEFAULT
+   ========================================================================== */
+
+.logos {
+    margin-bottom: $spacing-default;
+
+    &__title {
+        display: block;
+        margin: $spacing-default 0;
+
+        @include text-heading('H5');
+    }
+
+    &__items {
+        align-items: center;
+        display: flex;
+        gap: var(--logoSpacing);
+
+        .align--center &,
+        .section--center & {
+            justify-content: center;
+        }
+
+        .align--left &,
+        .section--left & {
+            justify-content: flex-start;
+        }
+
+        .align--right &,
+        .section--right & {
+            justify-content: flex-end;
+        }
+    }
+}
