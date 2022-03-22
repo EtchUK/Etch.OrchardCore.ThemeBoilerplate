@@ -7,7 +7,8 @@
     --heroBodyPadding: 4.7rem;
     --heroColor: var(--colorTextDefault);
     --heroColorInverted: var(--colorTextInverted);
-    --heroGradientHeight: 13rem;
+    --heroGradientHeight: 20rem;
+    --heroGradientMaxOpacity: 0.5;
     --heroHeadingMarginBottom: #{$spacing-large};
     --heroHeadingTextTransform: uppercase;
     --heroMediaMinHeight: 50rem;
