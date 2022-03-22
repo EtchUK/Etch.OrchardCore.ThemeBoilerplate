@@ -2,34 +2,37 @@
    #HERO/GRADIENT
    ========================================================================== */
 
-.hero--with-media-gradient .hero__media {
-    &:before,
-    &:after {
-        content: ' ';
-        height: var(--heroGradientHeight);
-        position: absolute;
-        width: 100%;
+.hero--with-media-gradient {
+    .hero__media,
+    .hero-responsive-media--background-image {
+        &:before,
+        &:after {
+            content: ' ';
+            height: var(--heroGradientHeight);
+            position: absolute;
+            width: 100%;
 
-        z-index: 2;
-    }
-    &:before {
-        left: 0;
-        top: 0;
+            z-index: $z-index-mid;
+        }
+        &:before {
+            left: 0;
+            top: 0;
 
-        background: linear-gradient(
-            180deg,
-            #0b0b0b 0%,
-            rgba(11, 11, 11, 0) 100%
-        );
-    }
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, var(--heroGradientMaxOpacity)) 0%,
+                rgba(0, 0, 0, 0) 100%
+            );
+        }
 
-    &:after {
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(
-            180deg,
-            rgba(11, 11, 11, 0) 0%,
-            rgba(11, 11, 11, 0.5) 100%
-        );
+        &:after {
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, var(--heroGradientMaxOpacity)) 100%
+            );
+        }
     }
 }
