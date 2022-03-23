@@ -75,6 +75,15 @@
     }
 }
 
+.carousel__next-btn,
+.carousel__previous-btn {
+    svg {
+        display: block;
+        height: $carousel-nav-svg-height;
+        width: $carousel-nav-svg-width;
+    }
+}
+
 /**
  * 1. Position indicators above the line effect containers.
  * 2. Animation is added to the SVG so the button hit area does not also move.
