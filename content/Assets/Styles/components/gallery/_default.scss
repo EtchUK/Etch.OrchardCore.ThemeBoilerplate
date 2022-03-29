@@ -17,53 +17,6 @@
         margin-bottom: var(--galleryGutter);
         position: relative;
 
-        .gallery--two-cols & {
-            @include mq($from: desktop) {
-                flex-basis: 50%;
-            }
-            .constrain--extra-thin & {
-                @include mq($from: desktop) {
-                    flex-basis: 100%;
-                }
-            }
-        }
-
-        .gallery--three-cols & {
-            @include mq($from: desktopSmall) {
-                flex-basis: 33.33%;
-            }
-
-            .constrain--extra-thin & {
-                @include mq($from: desktopSmall) {
-                    flex-basis: 100%;
-                }
-            }
-        }
-
-        .gallery--four-cols & {
-            @include mq($from: tablet) {
-                flex-basis: 50%;
-            }
-            @include mq($from: desktop) {
-                flex-basis: 25%;
-            }
-
-            .constrain--thin & {
-                @include mq($from: desktop) {
-                    flex-basis: 50%;
-                }
-            }
-
-            .constrain--extra-thin & {
-                @include mq($from: tablet) {
-                    flex-basis: 100%;
-                }
-                @include mq($from: desktop) {
-                    flex-basis: 100%;
-                }
-            }
-        }
-
         &-link {
             border-radius: var(--galleryBorderRadius);
             display: block;
