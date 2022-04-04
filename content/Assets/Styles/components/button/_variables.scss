@@ -3,22 +3,14 @@
    ========================================================================== */
 
 :root {
-    --buttonAfterHoverWipeAmount: 100%;
-    --buttonAfterOpacity: 0.1;
-    --buttonAfterTransformRotate: 100deg;
-    --buttonBorderRadius: 0;
-    --buttonBorderThickness: 0.1rem;
-    --buttonFontSize: var(--fontSizeSmall);
+    --buttonBorderRadius: var(--borderRadius);
+    --buttonBorderThickness: var(--borderWidth);
+    --buttonDisabledColor: var(--colorGrey);
+    --buttonDisabledTextColor: var(--colorGreyLight);
+    --buttonFontSize: var(--fontSizeBase);
     --buttonFontWeight: normal;
     --buttonLineHeight: var(--lineHeightDefault);
-    --buttonPaddingHorizontal: 2rem;
-    --buttonPaddingVertical: 1rem;
+    --buttonPaddingHorizontal: #{$spacing-large};
+    --buttonPaddingVertical: #{$spacing-default};
     --buttonTextTransform: none;
-
-    @include mq($from: tablet) {
-        --buttonFontSize: var(--fontSizeBase);
-        --buttonPaddingHorizontal: 3rem;
-        --buttonPaddingVertical: 1.4rem;
-        --buttonSvgMarginLeft: 1.5rem;
-    }
 }

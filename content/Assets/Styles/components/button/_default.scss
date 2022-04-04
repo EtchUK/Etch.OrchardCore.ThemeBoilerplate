@@ -5,7 +5,7 @@
 .btn,
 .btn:link,
 .btn:visited {
-    border: var(--buttonBorderThickness) solid var(--colorPrimary);
+    border: var(--buttonBorderThickness) solid var(--colorBlack);
     border-radius: var(--buttonBorderRadius);
     display: inline-block;
     overflow: hidden;
@@ -13,10 +13,10 @@
     position: relative;
     vertical-align: middle;
 
-    background-color: var(--colorPrimary);
+    background-color: var(--colorBlack);
     outline: none;
 
-    color: var(--colorButtonLabel);
+    color: var(--colorWhite);
     font-size: var(--buttonFontSize);
     font-weight: var(--buttonFontWeight);
     line-height: var(--buttonLineHeight);
@@ -26,14 +26,26 @@
     cursor: pointer;
 
     &:hover {
-        background-color: var(--colorPrimaryActive);
-        border-color: var(--colorPrimaryActive);
+        background-color: var(--colorWhite);
+        border-color: var(--colorWhite);
+
+        color: var(--colorBlack);
     }
-}
 
-.btn:disabled {
-    background-color: var(--colorbuttonDisabled);
-    border-color: var(--colorbuttonDisabled);
+    &:disabled,
+    &[disabled] {
+        background-color: var(--buttonDisabledColor);
+        border-color: var(--buttonDisabledColor);
 
-    color: var(--colorTextDefault);
+        color: var(--buttonDisabledTextColor);
+
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: var(--buttonDisabledColor);
+            border-color: var(--buttonDisabledColor);
+
+            color: var(--buttonDisabledTextColor);
+        }
+    }
 }
