@@ -11,7 +11,7 @@ $card-overlay-media-height-tablet: 34rem;
     --cardBackgroundPattern: none;
     --cardBodyZIndex: 3; /* 1 */
     --cardBorder: var(--colorGrey);
-    --cardBorderRadius: 0;
+    --cardBorderRadius: var(--borderRadius);
     --cardBodyPadding: 2.4rem;
     --cardMediaBorder: none;
     --cardMediaMarginBottom: 0;
