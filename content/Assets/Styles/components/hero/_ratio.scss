@@ -235,7 +235,7 @@
         }
     }
 
-    @include mq($from: desktop) {
+    @include mq($from: desktopSmall) {
         &--desktop-ratio {
             &-16-9 {
                 .hero__space {
