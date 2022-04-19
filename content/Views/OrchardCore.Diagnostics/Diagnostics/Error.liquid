@@ -1,14 +1,15 @@
-<article>
+{% assign contentItem = Content["alias:500"] %}
+
+{% if contentItem != nil %}
+    {{ contentItem | shape_build_display: "Detail" | shape_render }}
+{% else %}
+    <article>
         <section class="section">
-            <div class="section__content">
-                <h1>{{ "Page not found" | t }}</h1>
-            </div>
-        </section>
-        <section class="section section--narrow">
-            <div class="section__content">
-                <h2>{{ "Oops! Something went wrong" | t | raw }}</h2>
+            <div class="section__content constrain">
+                <h1>{{ "Oops! Something went wrong" | t }}</h1>
                 <p>{{ "Unfortunately there was an issue loading this page." | t }}</p>
                 <p><a href="{{ Request.PathBase }}/" class="btn btn--secondary">{{ "Go to the homepage" | t }}</a></p>
             </div>
         </section>
     </article>
+{% endif %}
