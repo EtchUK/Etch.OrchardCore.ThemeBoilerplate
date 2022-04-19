@@ -5,12 +5,12 @@
 {% else %}
     <article>
         <section class="section">
-            <div class="section__content">
+            <div class="section__content constrain">
                 <h1>{{ "Page not found" | t }}</h1>
             </div>
         </section>
-        <section class="section section--narrow">
-            <div class="section__content">
+        <section class="section">
+            <div class="section__content constrain">
                 <h2>{{ "Sorry, we couldn&rsquo;t find that" | t | raw }}</h2>
                 <p>{{ "The page you are looking for may no longer exist. Please use the menu to find the page you are looking for, or:" | t }}</p>
                 <p><a href="{{ Request.PathBase }}/" class="btn btn--secondary">{{ "Go back to the homepage" | t }}</a></p>
