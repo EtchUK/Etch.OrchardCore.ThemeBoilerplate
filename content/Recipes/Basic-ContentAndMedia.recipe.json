@@ -227,7 +227,13 @@
                         "Description": null,
                         "Images": [],
                         "Title": null
-                    }
+                    },
+                    "SitemapPart": {
+                        "OverrideSitemapConfig": true,
+                        "ChangeFrequency": 0,
+                        "Priority": 5,
+                        "Exclude": true
+                    }                    
                 },
                 {
                     "ContentItemId": "4x98nyjd22b4pta22vv9t85gm3",
@@ -8169,7 +8175,13 @@
                     },
                     "PublishLaterPart": {
                         "ScheduledPublishUtc": null
-                    }
+                    },
+                    "SitemapPart": {
+                        "OverrideSitemapConfig": true,
+                        "ChangeFrequency": 0,
+                        "Priority": 5,
+                        "Exclude": true
+                    }                    
                 }
             ]
         },

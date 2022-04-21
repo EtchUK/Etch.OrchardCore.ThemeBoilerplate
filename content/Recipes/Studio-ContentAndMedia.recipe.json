@@ -120,7 +120,13 @@
                         "Description": null,
                         "Images": [],
                         "Title": null
-                    }
+                    },
+                    "SitemapPart": {
+                        "OverrideSitemapConfig": true,
+                        "ChangeFrequency": 0,
+                        "Priority": 5,
+                        "Exclude": true
+                      }                    
                 },
                 {
                     "ContentItemId": "4b7v26s0hffgjry6d8785nk8ma",
@@ -13022,7 +13028,13 @@
                     },
                     "PublishLaterPart": {
                         "ScheduledPublishUtc": null
-                    }
+                    },
+                    "SitemapPart": {
+                        "OverrideSitemapConfig": true,
+                        "ChangeFrequency": 0,
+                        "Priority": 5,
+                        "Exclude": true
+                      }                    
                 }
             ]
         },

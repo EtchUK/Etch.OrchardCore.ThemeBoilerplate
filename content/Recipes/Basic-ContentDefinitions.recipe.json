@@ -76,7 +76,7 @@
                                 "ContentTypePartSettings": {
                                     "DisplayName": "Content",
                                     "Description": "Content for page.",
-                                    "Position": "2"
+                                    "Position": "4"
                                 },
                                 "LinkableContentTypes": [],
                                 "FlowPartSettings": {
@@ -102,6 +102,11 @@
                                     "Position": "7"
                                 }
                             }
+                        },
+                        {
+                            "PartName": "SitemapPart",
+                            "Name": "SitemapPart",
+                            "Settings": {}
                         }
                     ]
                 },

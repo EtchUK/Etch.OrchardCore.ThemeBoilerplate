@@ -65,6 +65,7 @@
                 "OrchardCore.Navigation",
                 "OrchardCore.PublishLater",
                 "OrchardCore.Users",
+                "OrchardCore.Sitemaps",
                 "OrchardCore.Recipes",
                 "OrchardCore.Roles",
                 "OrchardCore.Themes",
