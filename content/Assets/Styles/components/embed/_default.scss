@@ -14,6 +14,7 @@
     > iframe,
     > object,
     > video {
+        height: var(--embedDefaultHeight);
         width: 100%;
     }
 }
