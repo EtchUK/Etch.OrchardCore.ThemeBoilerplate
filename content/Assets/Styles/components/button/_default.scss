@@ -34,18 +34,19 @@
 
     &:disabled,
     &[disabled] {
-        background-color: var(--buttonDisabledColor);
-        border-color: var(--buttonDisabledColor);
+        background-color: var(--colorBlack);
+        border-color: var(--colorBlack);
 
-        color: var(--buttonDisabledTextColor);
+        color: var(--colorWhite);
 
         cursor: not-allowed;
+        opacity: var(--buttonDisabledOpacity);
 
         &:hover {
-            background-color: var(--buttonDisabledColor);
-            border-color: var(--buttonDisabledColor);
+            background-color: var(--colorBlack);
+            border-color: var(--colorBlack);
 
-            color: var(--buttonDisabledTextColor);
+            color: var(--colorWhite);
         }
     }
 }
