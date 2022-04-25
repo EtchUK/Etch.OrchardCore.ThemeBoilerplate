@@ -5,8 +5,7 @@
 :root {
     --buttonBorderRadius: var(--borderRadius);
     --buttonBorderThickness: var(--borderWidth);
-    --buttonDisabledColor: var(--colorGrey);
-    --buttonDisabledTextColor: var(--colorGreyLight);
+    --buttonDisabledOpacity: 0.3;
     --buttonFontSize: var(--fontSizeBase);
     --buttonFontWeight: normal;
     --buttonLineHeight: var(--lineHeightDefault);

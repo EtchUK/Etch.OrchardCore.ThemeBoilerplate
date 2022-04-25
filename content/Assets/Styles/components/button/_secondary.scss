@@ -14,4 +14,19 @@
         background-color: var(--colorSecondaryActive);
         border-color: var(--colorSecondaryActive);
     }
+
+    &:disabled,
+    &[disabled] {
+        background-color: var(--colorSecondary);
+        border-color: var(--colorSecondary);
+
+        color: var(--colorWhite);
+
+        &:hover {
+            background-color: var(--colorSecondary);
+            border-color: var(--colorSecondary);
+
+            color: var(--colorWhite);
+        }
+    }
 }
