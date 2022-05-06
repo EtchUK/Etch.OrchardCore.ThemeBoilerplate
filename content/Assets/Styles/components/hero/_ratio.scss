@@ -238,6 +238,12 @@
     @include mq($from: desktopSmall) {
         &--desktop-ratio {
             &-16-9 {
+                .hero__media {
+                    .embed {
+                        width: 100%;
+                    }
+                }
+
                 .hero__space {
                     padding-bottom: math.div(9, 16) * 100%;
                 }
