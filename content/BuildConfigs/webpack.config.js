@@ -105,36 +105,39 @@ module.exports = [
                 ],
             }),
             new ImageMinimizerPlugin({
-                minimizerOptions: {
-                    plugins: [
-                        ['optipng', { optimizationLevel: 2 }],
-                        ['pngquant', { quality: [0.65, 0.9], speed: 4 }],
-                        [
-                            'svgo',
-                            {
-                                plugins: [
-                                    {
-                                        name: 'preset-default',
-                                    },
-                                    {
-                                        name: 'removeUnknownsAndDefaults',
-                                        active: false,
-                                    },
-                                    {
-                                        name: 'cleanupIDs',
-                                        active: false,
-                                    },
-                                    {
-                                        name: 'removeViewBox',
-                                        active: false,
-                                    },
-                                ],
-                            },
+                minimizer: {
+                    implementation: ImageMinimizerPlugin.imageminMinify,
+                    options: {
+                        plugins: [
+                            ['optipng', { optimizationLevel: 2 }],
+                            ['pngquant', { quality: [0.65, 0.9], speed: 4 }],
+                            [
+                                'svgo',
+                                {
+                                    plugins: [
+                                        {
+                                            name: 'preset-default',
+                                        },
+                                        {
+                                            name: 'removeUnknownsAndDefaults',
+                                            active: false,
+                                        },
+                                        {
+                                            name: 'cleanupIDs',
+                                            active: false,
+                                        },
+                                        {
+                                            name: 'removeViewBox',
+                                            active: false,
+                                        },
+                                    ],
+                                },
+                            ],
                         ],
-                    ],
-                    encodeOptions: {
-                        mozjpeg: {
-                            quality: 75,
+                        encodeOptions: {
+                            mozjpeg: {
+                                quality: 75,
+                            },
                         },
                     },
                 },
@@ -186,7 +189,7 @@ module.exports = [
                     'BuildConfigs/.stylelintrc'
                 ),
                 fix: true,
-                syntax: 'scss',
+                customSyntax: 'postcss-scss',
             }),
         ],
     },
