@@ -89,30 +89,6 @@
             &__source {
                 margin-bottom: 0;
             }
-
-            &--ratio-16-9 {
-                width: 278%;
-
-                @include mq($from: mobile) {
-                    width: 240%;
-                }
-
-                @include mq($from: mobileLarge) {
-                    width: 215%;
-                }
-
-                @include mq($from: tabletSmall) {
-                    width: 150%;
-                }
-
-                @include mq($from: tablet) {
-                    width: 117%;
-                }
-
-                @include mq($from: desktopSmall) {
-                    width: 100%;
-                }
-            }
         }
 
         picture,
