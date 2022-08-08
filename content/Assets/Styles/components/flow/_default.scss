@@ -2,12 +2,39 @@
    #FLOW/DEFAULT
    ========================================================================== */
 
+/* 
+ * 1. For when content is directly added without a section. Ensures
+ *    non-full-width content (e.g paragraph) does not touch sides of viewport.
+ * 2. Breakout behaviour for full width elements, to ensure they do touch sides
+ * 3. Resets the above 'breakout behaviour' if inside a section. So you can put
+ *    a hero or carousel inside a section and have it respect layout width, if
+ *    desired.
+ */
+
 .flow {
     margin-left: auto;
     margin-right: auto;
     max-width: $content-width;
     width: 100%;
 
+    /* 1 */
+    article > &,
+    main > & {
+        padding-left: $content-gutter-small;
+        padding-right: $content-gutter-small;
+
+        @include mq($from: mobile) {
+            padding-left: $content-gutter;
+            padding-right: $content-gutter;
+        }
+
+        @include mq($from: desktop) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    /* 2 */
     .width--100 {
         > .carousel,
         > .hero,
@@ -25,9 +52,7 @@
             }
         }
 
-        // Reset the above 'breakout behaviour' if inside a section
-        // so a hero or carousel can be used inside a section and have it
-        // respect the layout width, if desired.
+        /* 3 */
         .section {
             .carousel,
             .hero,
