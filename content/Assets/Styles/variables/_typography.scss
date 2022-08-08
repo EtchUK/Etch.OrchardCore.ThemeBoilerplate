@@ -47,7 +47,7 @@
     --textTransformH5: none;
     --textTransformH6: none;
 
-    @include mq($from: desktop) {
+    @include mq($from: desktopSmall) {
         --fontSizeBase: 1.8rem;
         --fontSizeBaseEm: 1.8em;
         --fontSizeH1: calc(var(--fontSizeBase) * 2.666); // 48
