@@ -5,25 +5,30 @@
 $color-grey-light: #efefef;
 
 :root {
-    --colorAlertBackground: #dadada;
+    --colorBlack: #070f26;
+    --colorGrey: #cccccc;
+    --colorGreyLight: $color-grey-light;
+    --colorWhite: #ffffff;
+
+    --colorAlertBackground: var(--colorGreyLight);
     --colorAlertErrorBackground: #e49393;
     --colorAlertErrorText: #310606;
     --colorAlertSuccessBackground: #93e493;
     --colorAlertSuccessText: #093109;
-    --colorBlack: #070f26;
+
     --colorCarouselIndicator: #747474;
     --colorCarouselIndicatorActive: #ffffff;
     --colorCarouselIndicatorFocus: #c4c4c4;
+
     --colorError: #e20000;
-    --colorGrey: #ccc;
-    --colorGreyLight: #efefef;
+
     --colorPrimary: #3ce854;
     --colorPrimaryActive: #{darken(#3ce854, 10%)};
     --colorSecondary: #070f26;
     --colorSecondaryActive: #{darken(#070f26, 10%)};
-    --colorSiteBackground: #ffffff;
-    --colorTextDefault: #070f26;
-    --colorTextInverted: #ffffff;
-    --colorTextLight: #6d6d6d;
-    --colorWhite: #ffffff;
+
+    --colorSiteBackground: var(--colorWhite);
+    --colorTextDefault: var(--colorBlack);
+    --colorTextInverted: var(--colorWhite);
+    --colorTextLight: var(--colorGrey);
 }

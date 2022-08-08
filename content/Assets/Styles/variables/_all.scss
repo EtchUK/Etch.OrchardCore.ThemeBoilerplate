@@ -7,6 +7,10 @@
  * https://stackoverflow.com/questions/47882/what-is-a-magic-number-and-why-is-it-bad
  */
 
+// breakpoints should be first as variables may change based on breakpoint
+@import 'breakpoints';
+
+@import 'animation';
 @import 'border';
 @import 'colour';
 @import 'content';
@@ -17,6 +21,3 @@
 @import 'typography';
 @import 'widths';
 @import 'z-index';
-
-// breakpoints should be last as may rely on variables from other partials
-@import 'breakpoints';
