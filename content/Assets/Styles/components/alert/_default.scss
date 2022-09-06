@@ -8,12 +8,6 @@
 
     background-color: var(--colorAlertBackground);
 
-    /* Maintain horizontal padding */
-    @include mq($from: contentWideWithGutter) {
-        padding-left: $content-gutter-small;
-        padding-right: $content-gutter-small;
-    }
-
     a {
         color: inherit;
     }
