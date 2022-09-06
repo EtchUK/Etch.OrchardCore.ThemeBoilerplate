@@ -1,9 +1,7 @@
 /* ==========================================================================
-   #FORM/INPUT
+   #INPUT/VARIABLES
    ========================================================================== */
 
-.input {
-    &--underlined {
-        border-bottom: $form-border-size solid var(--colorTextDefault);
-    }
+:root {
+    --inputUnderlineColor: var(--colorTextDefault);
 }

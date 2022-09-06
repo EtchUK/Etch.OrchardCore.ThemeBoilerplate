@@ -1,0 +1,12 @@
+/* ==========================================================================
+   #REQUIRED/DEFAULT
+   ========================================================================== */
+/*
+ * Primarily used by forms.
+ * e.g, as a class applied to required elements or their labels 
+ */
+
+.required {
+    color: var(--requiredColor);
+    font-weight: var(--requiredFontWeight);
+}

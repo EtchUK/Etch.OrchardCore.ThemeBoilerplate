@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #FORM GROUP/DEFAULT
+   ========================================================================== */
+
+/*
+ * A wrapper for a form element's blocks.
+ * Goes around input, label, hint, error, etc as one container. 
+ * Available as a style option on the Group widget.
+ */
+
+.form-group {
+    margin-bottom: $spacing-large;
+    width: 100%;
+}
