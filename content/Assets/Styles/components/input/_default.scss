@@ -4,6 +4,6 @@
 
 .input {
     &--underlined {
-        border-bottom: $form-border-size solid var(--inputUnderlineColor);
+        border-bottom: var(--formBorderSize) solid var(--inputUnderlineColor);
     }
 }

@@ -2,7 +2,8 @@
    #FORM
    ========================================================================== */
 
-$form-border-size: 0.2rem;
-
-$form-element-padding-horizontal: 0.5rem;
-$form-element-padding-vertical: 0.5rem;
+:root {
+    --formBorderSize: var(--borderWidth);
+    --formElementPaddingHorizontal: 0.5rem;
+    --formElementPaddingVertical: 0.5rem;
+}

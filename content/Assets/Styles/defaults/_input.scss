@@ -3,9 +3,10 @@
    ========================================================================== */
 
 input {
-    border: $form-border-size solid var(--colorTextLight);
+    border: var(--formBorderSize) solid var(--colorTextLight);
     display: block;
-    padding: $form-element-padding-vertical $form-element-padding-horizontal;
+    padding: var(--formElementPaddingVertical)
+        var(--formElementPaddingHorizontal);
     width: 100%;
 
     background-color: transparent;

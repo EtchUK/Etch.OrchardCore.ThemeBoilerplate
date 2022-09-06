@@ -10,6 +10,6 @@
     $box-shadow-blur: 6px;
     $box-shadow-spread: 1px;
 
-    border: $form-border-size solid var(--colorTextDefault);
+    border: var(--formBorderSize) solid var(--colorTextDefault);
     box-shadow: 0 0 $box-shadow-blur $box-shadow-spread var(--colorPrimary);
 }

@@ -3,14 +3,15 @@
    ========================================================================== */
 
 textarea {
-    border: $form-border-size solid var(--colorTextLight);
+    border: var(--formBorderSize) solid var(--colorTextLight);
     display: block;
     min-height: $textarea-min-height;
-    padding: $form-element-padding-vertical $form-element-padding-horizontal;
+    padding: var(--formElementPaddingVertical)
+        var(--formElementPaddingHorizontal);
     width: 100%;
 
     .has-error & {
-        border: $form-border-size solid var(--colorError);
+        border: var(--formBorderSize) solid var(--colorError);
     }
 
     &:focus {
