@@ -10,9 +10,6 @@ $carousel-indicator-size: 2rem;
 $carousel-nav-btn-x: 35px;
 $carousel-nav-btn-x-mobile: 15px;
 
-$carousel-nav-svg-height: 5rem;
-$carousel-nav-svg-width: 2.7rem;
-
 $carousel-button-hover-translate-x: -1rem;
 
 $carousel-item-translateX-desktop-medium: 17rem;
@@ -33,4 +30,11 @@ $carousel-item-background-scale: scale3d(1, 1, 1);
 $carousel-item-background-scale-hover: scale3d(1, 1, 1);
 $carousel-item-background-transition: all 3s ease-in-out;
 
-@include mq-add-breakpoint(carouselNextPreviousReposition, 480px);
+:root {
+    --carouselPagerHoverDuration: var(--animationDuration);
+    --carouselPagerNextPrevBtnHeight: 5rem;
+    --carouselPagerNextPrevBtnWidth: 2.7rem;
+    --carouselPagerBtnFill: var(--colorPrimary);
+
+    --carouselRevealDuration: var(--animationDuration);
+}
