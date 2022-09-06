@@ -7,7 +7,7 @@ $color-grey-light: #efefef;
 :root {
     --colorBlack: #070f26;
     --colorGrey: #cccccc;
-    --colorGreyLight: $color-grey-light;
+    --colorGreyLight: #{$color-grey-light};
     --colorWhite: #ffffff;
 
     --colorAlertBackground: var(--colorGreyLight);
