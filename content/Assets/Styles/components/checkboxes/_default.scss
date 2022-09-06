@@ -30,7 +30,7 @@
         touch-action: manipulation;
 
         &:before {
-            border: $form-border-size solid var(--colorTextLight);
+            border: var(--formBorderSize) solid var(--colorTextLight);
             box-sizing: border-box;
             height: $form-checkbox-height;
             left: 0;
