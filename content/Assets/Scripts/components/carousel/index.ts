@@ -2,6 +2,8 @@
  * Handles showing multiple featured items within a carousel.
  */
 
+import debounce from '../../utils/debounce';
+
 const CSS = {
     active: 'is-active',
 };
@@ -12,7 +14,8 @@ const defaults = {
 
 const instance = ($el: Element) => {
     const dom = {
-        $items: $el.querySelectorAll('.js-carousel-items > li'),
+        $items: $el.querySelectorAll('.js-carousel-item'),
+        $track: $el.querySelector('.js-carousel-track') as HTMLElement,
         $nextBtn: $el.querySelector('.js-next-btn'),
         $prevBtn: $el.querySelector('.js-prev-btn'),
         $changeBtns: $el.querySelectorAll('.js-change-to-btn'),
@@ -31,7 +34,9 @@ const instance = ($el: Element) => {
     let timer: number;
 
     const changeTo = (event: Event) => {
-        const index: string | null = (event.currentTarget as HTMLButtonElement).getAttribute('data-index');
+        const index: string | null = (
+            event.currentTarget as HTMLButtonElement
+        ).getAttribute('data-index');
 
         if (index !== null) {
             setActive(parseInt(index, 10));
@@ -63,6 +68,7 @@ const instance = ($el: Element) => {
 
     const setActive = (index: number) => {
         clearTimeout(timer);
+        const itemWidth = dom.$items[0].clientWidth;
 
         if (index >= itemCount) {
             index = 0;
@@ -72,16 +78,20 @@ const instance = ($el: Element) => {
             index = itemCount - 1;
         }
 
+        const offset = itemWidth * index * -1;
+
         dom.$items[activeIndex].classList.remove(CSS.active);
+        dom.$track.style.transform = `translateX(${offset}px)`;
         dom.$items[index].classList.add(CSS.active);
 
-        let parentElement: HTMLElement | null = dom.$changeBtns[activeIndex].parentElement;
+        let parentElement: HTMLElement | null =
+            dom.$changeBtns[activeIndex].parentElement;
 
         if (parentElement !== null) {
             parentElement.classList.remove(CSS.active);
         }
 
-        parentElement = dom.$changeBtns[index].parentElement
+        parentElement = dom.$changeBtns[index].parentElement;
 
         if (parentElement !== null) {
             parentElement.classList.add(CSS.active);
@@ -104,13 +114,22 @@ const instance = ($el: Element) => {
         $btn.addEventListener('click', changeTo);
     }
 
+    window.addEventListener(
+        'resize',
+        debounce(() => {
+            // Reset on resize
+            // (as item width will otherwise cause layout issues)
+            dom.$track.style.transform = 'translateX(0)';
+        })
+    );
+
     enableTimer();
 };
 
 const carousel = () => {
     const SELECTOR = '.js-carousel';
 
-    document.querySelectorAll(SELECTOR).forEach($el => {
+    document.querySelectorAll(SELECTOR).forEach(($el) => {
         instance($el);
     });
 };

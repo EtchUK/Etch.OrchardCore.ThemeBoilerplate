@@ -2,7 +2,7 @@
     #CAROUSEL/DEFAULT
     ========================================================================== */
 
-@use "sass:math";
+@use 'sass:math';
 
 .carousel {
     display: block;
@@ -33,117 +33,132 @@
     margin-right: $spacing-default;
     width: $carousel-indicator-size;
 
-    .btn {
-        border: 0;
-        height: 100%;
-        padding: 0;
-        width: 100%;
-
-        background-color: var(--colorCarouselIndicator);
-        border-radius: math.div($carousel-indicator-size, 2);
-
-        &:focus,
-        &:hover {
-            background-color: var(--colorCarouselIndicatorFocus);
-        }
-    }
-
     &:last-child {
         margin-right: 0;
     }
+}
 
-    &.is-active .btn {
+.carousel__indicator-button {
+    border: 0;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+
+    background-color: var(--colorCarouselIndicator);
+    border-radius: math.div($carousel-indicator-size, 2);
+
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+        background-color: var(--colorCarouselIndicatorFocus);
+    }
+
+    .is-active & {
         background-color: var(--colorCarouselIndicatorActive);
-    }
-}
-
-.carousel__next-btn {
-    right: $carousel-nav-btn-x-mobile;
-    transform: translateX(0) translateY(-50%) rotate(180deg);
-
-    @include mq($from: carouselNextPreviousReposition) {
-        right: $carousel-nav-btn-x;
-    }
-}
-
-.carousel__previous-btn {
-    left: $carousel-nav-btn-x-mobile;
-    transform: translateX(0) translateY(-50%);
-
-    @include mq($from: carouselNextPreviousReposition) {
-        left: $carousel-nav-btn-x;
-    }
-}
-
-.carousel__next-btn,
-.carousel__previous-btn {
-    svg {
-        display: block;
-        height: $carousel-nav-svg-height;
-        width: $carousel-nav-svg-width;
     }
 }
 
 /**
  * 1. Position indicators above the line effect containers.
- * 2. Animation is added to the SVG so the button hit area does not also move.
- * 3. Negative margin used on the psuedo element to increase hit area.
  */
-.carousel__next-btn,
-.carousel__previous-btn {
+.carousel__prev-next {
+    border: 0;
+    padding: 0;
     position: absolute;
     top: 50%;
+
+    background: none;
+
+    cursor: pointer;
+    transform: translateX(0) translateY(-50%);
+    transition: transform var(--carouselPagerHoverDuration) ease-in-out,
+        padding var(--carouselPagerHoverDuration) ease-in-out;
     z-index: 100; /* 1. */
 
-    /* 2. */
-    &:focus,
-    &:hover {
-        svg {
-            animation-duration: $carousel-button-animation-duration;
-            animation-iteration-count: infinite;
-            animation-name: carouselButtonHover;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: backwards;
+    svg {
+        display: block;
+        height: var(--carouselPagerNextPrevBtnHeight);
+        width: var(--carouselPagerNextPrevBtnWidth);
+
+        path {
+            fill: var(--carouselPagerBtnFill);
         }
     }
 
-    /* 3. */
-    &:after {
-        bottom: $carousel-button-hit-area;
-        content: '';
-        left: $carousel-button-hit-area;
-        position: absolute;
-        right: $carousel-button-hit-area;
-        top: $carousel-button-hit-area;
+    &:focus,
+    &:hover {
+        svg path {
+            fill: var(--colorCarouselIndicatorActive);
+        }
+    }
+}
+
+.carousel__next-btn {
+    right: $carousel-nav-btn-x-mobile;
+
+    &:focus,
+    &:hover {
+        padding-left: $spacing-small;
+        transform: translateX($spacing-small) translateY(-50%);
+    }
+
+    @include mq($from: tablet) {
+        right: $carousel-nav-btn-x;
+
+        &:focus,
+        &:hover {
+            padding-left: $spacing-default;
+            transform: translateX($spacing-default) translateY(-50%);
+        }
+    }
+}
+
+.carousel__previous-btn {
+    left: $carousel-nav-btn-x-mobile;
+
+    &:focus,
+    &:hover {
+        padding-right: $spacing-small;
+        transform: translateX(-$spacing-small) translateY(-50%);
+    }
+
+    @include mq($from: tablet) {
+        left: $carousel-nav-btn-x;
+
+        &:focus,
+        &:hover {
+            padding-right: $spacing-default;
+            transform: translateX(-$spacing-default) translateY(-50%);
+        }
     }
 }
 
 .carousel__items {
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.carousel__track {
+    align-items: stretch;
     display: flex;
     flex-wrap: nowrap;
     list-style: none;
     margin: 0;
     min-width: 100%;
     padding: 0;
+    position: relative;
+
+    transition: transform var(--carouselRevealDuration) ease-in-out;
 }
 
 .carousel__item {
     border-radius: 0;
-    display: none;
+    display: block;
     min-width: 100%;
     position: relative;
 
     overflow: hidden;
-
-    color: var(--colorWhite);
-
-    @include mq($from: tablet) {
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    &.is-active {
-        display: block;
-    }
 
     &:hover {
         .carousel__item-background img {
@@ -152,17 +167,33 @@
     }
 }
 
-.carousel__item-background {
-    grid-column: span 6;
-    height: auto;
-    margin-left: -$content-gutter-small;
-    margin-right: -$content-gutter-small;
-    width: auto;
+.carousel__item-content {
+    padding: $spacing-large;
+
+    opacity: 0;
+    transform: translateX(-$spacing-large);
+    transition: opacity var(--carouselRevealDuration) ease-in-out,
+        transform var(--carouselRevealDuration) ease-in-out;
+    transition-delay: var(--carouselRevealDuration);
 
     @include mq($from: tablet) {
-        margin-left: -$content-gutter;
-        margin-right: -$content-gutter;
+        padding: $spacing-x-large;
     }
+
+    .is-active & {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.carousel__item-background {
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: $z-index-under;
 
     img {
         display: block;
@@ -172,17 +203,5 @@
         object-fit: cover;
         transform: $carousel-item-background-scale;
         transition: $carousel-item-background-transition;
-    }
-}
-
-@keyframes carouselButtonHover {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX($carousel-button-hover-translate-x);
-    }
-    100% {
-        transform: translateX(0);
     }
 }
