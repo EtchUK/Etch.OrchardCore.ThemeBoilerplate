@@ -1,9 +1,8 @@
 /* ==========================================================================
-   #FORM/FIELDSET
+   #REQUIRED/VARIABLES
    ========================================================================== */
 
-.fieldset {
-    &__heading {
-        margin-bottom: 0;
-    }
+:root {
+    --requiredColor: var(--colorPrimary);
+    --requiredFontWeight: var(--fontWeightDefault);
 }
