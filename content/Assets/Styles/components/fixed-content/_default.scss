@@ -1,0 +1,68 @@
+/* ==========================================================================
+   #FIXED CONTENT/DEFAULT
+   ========================================================================== */
+
+.fixed-content {
+    padding: var(--fixedContentEdgeDistance);
+    position: fixed;
+    z-index: $z-index-front;
+
+    &--reveal-on-scroll {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity var(--fixedContentTransitionDuration) ease-in-out;
+
+        &.page-scrolled {
+            opacity: 1;
+            pointer-events: initial;
+        }
+    }
+
+    &--bottom-left {
+        bottom: 0;
+        left: 0;
+
+        background: radial-gradient(
+            at bottom left,
+            rgba(0, 0, 0, var(--fixedContentGradientStartOpacity)) 0%,
+            rgba(0, 0, 0, 0) var(--fixedContentGradientDistance),
+            rgba(0, 0, 0, 0) 100%
+        );
+    }
+
+    &--bottom-right {
+        bottom: 0;
+        right: 0;
+
+        background: radial-gradient(
+            at bottom right,
+            rgba(0, 0, 0, var(--fixedContentGradientStartOpacity)) 0%,
+            rgba(0, 0, 0, 0) var(--fixedContentGradientDistance),
+            rgba(0, 0, 0, 0) 100%
+        );
+    }
+
+    &--top-left {
+        left: 0;
+        top: 0;
+
+        background: radial-gradient(
+            at top left,
+            rgba(0, 0, 0, var(--fixedContentGradientStartOpacity)) 0%,
+            rgba(0, 0, 0, 0) var(--fixedContentGradientDistance),
+            rgba(0, 0, 0, 0) 100%
+        );
+    }
+
+    &--top-right {
+        right: 0;
+        top: 0;
+
+        background: radial-gradient(
+            at top right,
+            rgba(0, 0, 0, var(--fixedContentGradientStartOpacity)) 0%,
+            rgba(0, 0, 0, 0) var(--fixedContentGradientDistance),
+            rgba(0, 0, 0, 0) 100%
+        );
+    }
+}

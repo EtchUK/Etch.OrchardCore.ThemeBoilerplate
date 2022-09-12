@@ -1,5 +1,6 @@
 import 'picturefill';
 
+import addClassOnScroll from './components/addClassOnScroll';
 import carousel from './components/carousel';
 import gallery from './components/gallery';
 import inViewport from './components/inViewport';
@@ -8,12 +9,12 @@ import parallax from './components/parallax';
 import scrollbarWidth from './components/scrollbarWidth';
 import toggleNav from './components/toggleNav';
 
-
 /**
  * Called once the page is loaded and handles initialising
  * the different components.
  */
 const init = () => {
+    addClassOnScroll();
     carousel();
     gallery();
     inViewport();
