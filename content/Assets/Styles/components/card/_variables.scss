@@ -19,7 +19,9 @@ $card-overlay-media-height-tablet: 34rem;
     --cardMetaTextTransform: uppercase;
     --cardTextColor: inherit;
     --cardTitleMarginBottom: 0.2rem;
+    --cardMediaImageOverlayScaleHover: 1.03;
     --cardMediaImageScale: 1;
-    --cardMediaImageScaleHover: 1.2;
+    --cardMediaImageScaleHover: 1.01;
     --cardMediaImageTransitionDuration: var(--animationDuration);
+    --cardMediaImageTransitionEasing: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }

@@ -4,6 +4,10 @@
 
 @use 'sass:math';
 
+/*
+ * 1. Force 4:3 aspect ratio on media overlay cards
+ */
+
 .card {
     border-radius: var(--cardBorderRadius);
     display: block;
@@ -20,20 +24,18 @@
 
     overflow: hidden;
 
-    &--inverted {
+    @include mq($from: desktopSmall) {
+        margin-bottom: 0;
+    }
+
+    &--inverted,
+    .content-feed--inverted & {
         color: var(--colorTextInverted);
     }
 
-    /*
-     * 1. Force 7:4 aspect ratio on media overlay cards
-     */
     &--media-overlay {
         height: 0;
-        padding-bottom: math.div(4, 7) * 100%; /* 1 */
-    }
-
-    @include mq($from: desktopSmall) {
-        margin-bottom: 0;
+        padding-bottom: math.div(3, 4) * 100%; /* 1 */
     }
 
     &__media {
@@ -44,18 +46,21 @@
 
         overflow: hidden;
 
+        .card--media-overlay & {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+
+            z-index: 1;
+        }
+
         &-image {
             display: block;
             min-width: 100%;
 
             .card--media-overlay & {
-                width: 100%;
+                min-height: 100%;
             }
-        }
-
-        .card--media-overlay & {
-            position: relative;
-            z-index: 1;
         }
     }
 
@@ -75,6 +80,13 @@
             padding: var(--cardBodyPadding);
             position: absolute;
             width: 100%;
+
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0) 0,
+                var(--cardBackground) 75%,
+                var(--cardBackground) 100%
+            );
         }
 
         p,
@@ -143,6 +155,25 @@
         &:hover {
             .card__media-image {
                 transform: scale(var(--cardMediaImageScaleHover));
+            }
+        }
+    }
+
+    &--media-overlay[href] {
+        transform: scale(var(--cardMediaImageScale));
+        transition: transform var(--cardMediaImageTransitionDuration)
+            var(--cardMediaImageTransitionEasing);
+
+        .card__media-image {
+            transform: none;
+            transition: none;
+        }
+
+        &:hover {
+            transform: scale(var(--cardMediaImageOverlayScaleHover));
+
+            .card__media-image {
+                transform: none;
             }
         }
     }
