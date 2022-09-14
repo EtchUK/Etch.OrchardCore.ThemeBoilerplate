@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #ANIMATIONS/VARIABLES
+   ========================================================================== */
+
+/* 
+ * Variables specific to the re-usable helper animation classes.
+ *
+ * For generic variables used on all animations, see variables/_animation.scss
+ */
+
+:root {
+    --growAnimationInitScale: 0.01;
+    --growAnimationOpacityDuration: 0.1s;
+}
