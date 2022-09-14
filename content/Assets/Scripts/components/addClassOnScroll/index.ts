@@ -4,9 +4,10 @@
 const SELECTOR = '.js-add-class-on-scroll';
 const defaultCSS = 'page-scrolled';
 let pageHeight = window.innerHeight;
+const $scrollElements = document.querySelectorAll(SELECTOR);
 
 const scrollBehaviour = () => {
-    document.querySelectorAll(SELECTOR).forEach(($el: Element) => {
+    $scrollElements.forEach(($el: Element) => {
         const $htmlEl = $el as HTMLElement;
         let cssClass = defaultCSS;
 
@@ -24,7 +25,7 @@ const scrollBehaviour = () => {
 };
 
 const addClassOnScroll = () => {
-    if (!document.querySelector(SELECTOR)) {
+    if (!$scrollElements.length) {
         return;
     }
 
