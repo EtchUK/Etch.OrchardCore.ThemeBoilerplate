@@ -3,8 +3,8 @@
  */
 const SELECTOR = '.js-add-class-on-scroll';
 const defaultCSS = 'page-scrolled';
-let pageHeight = window.innerHeight;
-const $scrollElements = document.querySelectorAll(SELECTOR);
+let pageHeight: number;
+let $scrollElements: NodeListOf<Element>;
 
 const scrollBehaviour = () => {
     $scrollElements.forEach(($el: Element) => {
@@ -25,12 +25,16 @@ const scrollBehaviour = () => {
 };
 
 const addClassOnScroll = () => {
+    $scrollElements = document.querySelectorAll(SELECTOR);
     if (!$scrollElements.length) {
         return;
     }
 
-    document.addEventListener('scroll', scrollBehaviour);
+    pageHeight = window.innerHeight;
+
     scrollBehaviour();
+
+    document.addEventListener('scroll', scrollBehaviour);
 
     window.addEventListener('resize', () => {
         pageHeight = window.innerHeight;
