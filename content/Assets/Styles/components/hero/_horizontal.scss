@@ -2,7 +2,7 @@
    #HERO/HORIZONTAL
    ========================================================================== */
 
-@use "sass:math";
+@use 'sass:math';
 
 .hero--horizontal-center {
     @each $width in $widths {
