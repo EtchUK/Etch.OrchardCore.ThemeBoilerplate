@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Etch.OrchardCore.ThemeBoilerplate</id>
-    <version>1.5.0</version>
+    <version>1.5.1</version>
     <title>Etch Orchard Core Theme Boilerplate</title>
     <description>
       Creates Orchard Core theme using boilerplate.
