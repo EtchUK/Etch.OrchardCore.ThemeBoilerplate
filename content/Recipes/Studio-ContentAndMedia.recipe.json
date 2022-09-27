@@ -6,8 +6,12 @@
     "website": "https://etchuk.com",
     "version": "1.5.1",
     "issetuprecipe": false,
-    "categories": ["studio"],
-    "tags": ["studio"],
+    "categories": [
+        "studio"
+    ],
+    "tags": [
+        "studio"
+    ],
     "steps": [
         {
             "name": "Content",
@@ -142,7 +146,9 @@
                     "Author": "[js: parameters('AdminUsername')]",
                     "NewsPost": {
                         "Thumbnail": {
-                            "Paths": ["News/Default/example-news-400w.jpg"]
+                            "Paths": [
+                                "News/Default/example-news-400w.jpg"
+                            ]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -151,9 +157,13 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": ["Featured"],
+                            "TagNames": [
+                                "Featured"
+                            ],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
-                            "TermContentItemIds": ["4rf9s6d6qtjpas84f52sg2qhc2"]
+                            "TermContentItemIds": [
+                                "4rf9s6d6qtjpas84f52sg2qhc2"
+                            ]
                         }
                     },
                     "AutoroutePart": {
@@ -208,7 +218,9 @@
                     "Author": "[js: parameters('AdminUsername')]",
                     "NewsPost": {
                         "Thumbnail": {
-                            "Paths": ["News/Default/example-news-400w.jpg"]
+                            "Paths": [
+                                "News/Default/example-news-400w.jpg"
+                            ]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -217,7 +229,10 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": ["Games", "Mobile"],
+                            "TagNames": [
+                                "Games",
+                                "Mobile"
+                            ],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
                             "TermContentItemIds": [
                                 "42zsbct55dcvk0sj3xk0jas0dt",
@@ -277,7 +292,9 @@
                     "Author": "[js: parameters('AdminUsername')]",
                     "NewsPost": {
                         "Thumbnail": {
-                            "Paths": ["News/Default/example-news-400w.jpg"]
+                            "Paths": [
+                                "News/Default/example-news-400w.jpg"
+                            ]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -286,9 +303,13 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": ["Featured"],
+                            "TagNames": [
+                                "Featured"
+                            ],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
-                            "TermContentItemIds": ["4rf9s6d6qtjpas84f52sg2qhc2"]
+                            "TermContentItemIds": [
+                                "4rf9s6d6qtjpas84f52sg2qhc2"
+                            ]
                         }
                     },
                     "AutoroutePart": {
@@ -920,7 +941,9 @@
                                                     "Paths": [
                                                         "Backgrounds/Default/unsplash-1444090542259-1024w.jpg"
                                                     ],
-                                                    "MediaTexts": [""]
+                                                    "MediaTexts": [
+                                                        ""
+                                                    ]
                                                 },
                                                 "AlternateText": {
                                                     "Text": "Example image."
@@ -3345,7 +3368,9 @@
                                                     "Paths": [
                                                         "Team/team-placeholder-1-768w.jpg"
                                                     ],
-                                                    "MediaTexts": [""]
+                                                    "MediaTexts": [
+                                                        ""
+                                                    ]
                                                 },
                                                 "AlternateText": {
                                                     "Text": "Photo of Joe Bloggs"
@@ -3743,16 +3768,22 @@
                     "Author": "[js: parameters('AdminUsername')]",
                     "Banner": {
                         "Logo": {
-                            "Paths": ["Logos/logo-play@1x.svg"]
+                            "Paths": [
+                                "Logos/logo-play@1x.svg"
+                            ]
                         },
                         "LogoSmall": {
-                            "Paths": ["Logos/logo-play-short@1x.svg"]
+                            "Paths": [
+                                "Logos/logo-play-short@1x.svg"
+                            ]
                         },
                         "LogoAlternateText": {
                             "Text": "Logo for Etch Play"
                         },
                         "Menu": {
-                            "ContentItemIds": ["4enkkc6t2b7hvrw0swx4n5bdw9"]
+                            "ContentItemIds": [
+                                "4enkkc6t2b7hvrw0swx4n5bdw9"
+                            ]
                         },
                         "MenuToggleButtonLabel": {
                             "Text": "Menu"
@@ -3775,52 +3806,64 @@
                     "DisplayText": "Footer",
                     "Latest": true,
                     "Published": true,
-                    "ModifiedUtc": "2020-08-04T22:08:34.4628057Z",
-                    "PublishedUtc": "2020-08-04T22:08:34.4832274Z",
-                    "CreatedUtc": "2020-07-08T23:19:42.7395705Z",
-                    "Owner": "[js: parameters('AdminUsername')]",
-                    "Author": "[js: parameters('AdminUsername')]",
+                    "ModifiedUtc": "2022-09-27T14:48:54.8382078Z",
+                    "PublishedUtc": "2022-09-27T14:48:54.8576458Z",
+                    "CreatedUtc": "2022-09-27T14:48:54.8382078Z",
+                    "Owner": "4er5wqvgngp4qwjrd312gpfrnw",
+                    "Author": "etch-play",
                     "Footer": {
-                        "Logo": {
-                            "Paths": ["Logos/logo-play@1x.svg"]
+                        "ContentWidth": {
+                            "Text": "default"
+                        }
+                    },
+                    "BackgroundPart": {
+                        "BackgroundColour": {
+                            "Value": "transparent"
                         },
-                        "LogoSmall": {
-                            "Paths": ["Logos/logo-play-short@1x.svg"]
+                        "BackgroundPattern": {
+                            "Text": null
                         },
-                        "Menu": {
-                            "ContentItemIds": ["4enkkc6t2b7hvrw0swx4n5bdw9"]
+                        "InvertTextColour": {
+                            "Value": false
                         },
-                        "LogoAlternateText": {
-                            "Text": "Company logo."
+                        "BackgroundFixed": {
+                            "Value": false
+                        },
+                        "BackgroundFill": {
+                            "Value": false
                         }
                     },
                     "Content": {
                         "Widgets": [
                             {
-                                "ContentItemId": "4m4p7zmkdpk31xmr3akk9s8zd8",
+                                "ContentItemId": "41bfjhs3w075j43h361hhvcxm1",
                                 "ContentItemVersionId": null,
                                 "ContentType": "Html",
                                 "DisplayText": null,
                                 "Latest": false,
                                 "Published": false,
-                                "ModifiedUtc": "2020-08-04T22:08:34.4741416Z",
+                                "ModifiedUtc": "2022-09-27T14:48:54.7937284Z",
                                 "PublishedUtc": null,
                                 "CreatedUtc": null,
                                 "Owner": null,
-                                "Author": "[js: parameters('AdminUsername')]",
+                                "Author": "etch-play",
                                 "Html": {
                                     "Content": {
-                                        "Value": "<p>© 2020 Etch Play. <a href=\"#\">Privacy policy</a></p>"
+                                        "Value": "<p>© 2020 Etch Play. <a href=\\\"#\\\">Privacy policy</a></p>"
                                     }
+                                },
+                                "FlowMetadata": {
+                                    "Alignment": 3,
+                                    "Size": 100
                                 }
                             }
                         ]
                     },
                     "LayerMetadata": {
+                        "RenderTitle": false,
                         "Position": 1.0,
                         "Zone": "Footer",
-                        "Layer": "Default",
-                        "RenderTitle": false
+                        "Layer": "Default"
                     }
                 },
                 {
@@ -9830,7 +9873,9 @@
                                                     "Paths": [
                                                         "Backgrounds/Default/unsplash-1444090542259-1280w.jpg"
                                                     ],
-                                                    "MediaTexts": [""]
+                                                    "MediaTexts": [
+                                                        ""
+                                                    ]
                                                 },
                                                 "AlternateText": {
                                                     "Text": "A mountain range during sunset"
@@ -11027,7 +11072,9 @@
                                                     "Paths": [
                                                         "Logos/Age Ratings/ESRB/esrb-10.svg"
                                                     ],
-                                                    "MediaTexts": [""]
+                                                    "MediaTexts": [
+                                                        ""
+                                                    ]
                                                 },
                                                 "Link": {
                                                     "Url": "https://www.esrb.org/",
