@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #SPACE/DEFAULT
+   ========================================================================== */
+
+.space {
+    height: var(--spaceDefault);
+
+    &--small {
+        height: var(--spaceSmall);
+    }
+
+    &--large {
+        height: var(--spaceLarge);
+    }
+
+    &--x-large {
+        height: var(--spaceXLarge);
+    }
+}
