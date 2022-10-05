@@ -1,63 +1,75 @@
 {
-    "name": "etch.orchardcore.themeboilerplate",
-    "version": "1.5.1",
-    "description": "Theme boilerplate is our starting point for building Orchard Core themes.",
-    "license": "MIT",
-    "author": "Etch UK",
+    "private": true,
+    "engines": {
+        "node": ">=14"
+    },
     "scripts": {
-        "build": "npm install --no-audit && npm run bundle:prod",
-        "bundle:dev": "npm install && webpack --config ./BuildConfigs/webpack.config.js --mode development",
-        "bundle:prod": "webpack --config ./BuildConfigs/webpack.config.prod.js --mode production",
-        "bundle:watch": "webpack --config ./BuildConfigs/webpack.config.js --mode development --watch",
-        "develop": "npm run bundle:watch",
-        "start": "npm install && npm run develop"
+        "build": "npm i --no-audit && npm run clean && parcel build --no-cache --no-content-hash",
+        "clean": "rimraf wwwroot/scripts wwwroot/css",
+        "develop": "npm run clean && parcel watch --https --no-content-hash",
+        "install-git-hooks": "cd .. && husky install",
+        "lint": "lint-staged",
+        "prepare": "npm run install-git-hooks",
+        "start": "npm i && npm run develop"
     },
     "devDependencies": {
-        "@babel/core": "^7.17.9",
-        "@babel/preset-env": "^7.16.11",
-        "@types/rellax": "^1.7.2",
-        "autoprefixer": "^10.4.4",
-        "babel-loader": "^8.2.5",
-        "clean-webpack-plugin": "^4.0.0",
-        "copy-webpack-plugin": "^10.2.4",
-        "copyfiles": "^2.1.0",
-        "core-js": "^3.22.2",
-        "css-loader": "^6.7.1",
-        "css-minimizer-webpack-plugin": "^3.4.1",
-        "image-minimizer-webpack-plugin": "^3.2.3",
-        "imagemin": "^8.0.1",
-        "imagemin-mozjpeg": "^10.0.0",
-        "imagemin-optipng": "^8.0.0",
-        "imagemin-pngquant": "^9.0.1",
-        "imagemin-svgo": "^10.0.1",
-        "mini-css-extract-plugin": "^2.6.0",
-        "npm-run-all": "^4.1.5",
-        "postcss": "^8.3.6",
-        "postcss-loader": "^6.1.1",
-        "postcss-scss": "^4.0.3",
-        "prettier": "^2.6.2",
-        "sass": "^1.50.1",
-        "sass-loader": "^12.6.0",
+        "@parcel/transformer-sass": "^2.7.0",
+        "eslint": "^8.24.0",
+        "eslint-config-prettier": "^8.5.0",
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "parcel": "^2.7.0",
+        "parcel-namer-hashless": "^1.0.3",
+        "prettier": "^2.7.1",
+        "rimraf": "^3.0.2",
         "sass-mq": "^6.0.0",
-        "stylelint": "^14.7.1",
-        "stylelint-config-prettier": "^9.0.3",
-        "stylelint-config-recommended": "^7.0.0",
-        "stylelint-prettier": "^2.0.0",
-        "stylelint-webpack-plugin": "^3.2.0",
-        "svgo": "^2.5.0",
-        "ts-loader": "^9.2.8",
-        "tslint": "^6.1.1",
-        "tslint-loader": "^3.5.4",
-        "typescript": "^4.6.3",
-        "webpack": "^5.72.0",
-        "webpack-cli": "^4.9.2",
-        "webpack-remove-empty-scripts": "^0.8.0"
+        "stylelint": "^14.13.0",
+        "stylelint-config-prettier-scss": "^0.0.1",
+        "stylelint-config-recommended-scss": "^7.0.0"
     },
     "dependencies": {
-        "lg-video.js": "^1.0.0",
-        "lightgallery.js": "^1.1.3",
+        "lg-video.js": "^1.3.0",
+        "lightgallery.js": "^1.4.0",
         "normalize.css": "^8.0.1",
         "picturefill": "^3.0.3",
         "rellax": "^1.10.0"
+    },
+    "scriptTarget": "wwwroot/scripts/index.js",
+    "styleTarget": "wwwroot/css/styles.css",
+    "targets": {
+        "scriptTarget": {
+            "source": "Assets/Scripts/index.ts",
+            "outputFormat": "esmodule",
+            "context": "browser",
+            "isLibrary": false
+        },
+        "styleTarget": {
+            "source": "Assets/Styles/index.scss",
+            "context": "browser",
+            "isLibrary": false
+        }
+    },
+    "@parcel/transformer-css": {
+        "errorRecovery": true
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx,jsx}": [
+            "eslint --quiet --fix"
+        ],
+        "*.scss": [
+            "stylelint --quiet --fix"
+        ],
+        "*.{scss,json,md,html,js,jsx,ts,tsx}": [
+            "prettier --write"
+        ]
+    },
+    "browserslist": [
+        "> 0.5%",
+        "Firefox ESR",
+        "last 2 versions",
+        "not dead"
+    ],
+    "prettier": {
+        "editorconfig": true
     }
 }
