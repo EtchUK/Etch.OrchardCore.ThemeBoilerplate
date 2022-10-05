@@ -35,8 +35,10 @@ msbuild.wrn
 
 # Build artifacts
 
-wwwroot/
+wwwroot/css
+wwwroot/scripts
 dist/
+**/.parcel-cache/
 
 # Dependencies
 

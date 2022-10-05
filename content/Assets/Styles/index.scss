@@ -15,8 +15,8 @@
 * https://necolas.github.io/normalize.css/
 */
 
-@import '../../node_modules/normalize.css/normalize';
-@import '../../node_modules/lightgallery.js/src/sass/lightgallery';
+@import url('../../node_modules/normalize.css/normalize.css');
+@import url('../../node_modules/lightgallery.js/src/sass/lightgallery.scss');
 
 @import 'defaults/all';
 
