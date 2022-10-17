@@ -4,7 +4,7 @@ Theme boilerplate is our starting point for building Orchard Core themes.
 
 ## Orchard Core Reference
 
-This theme is referencing a stable build of Orchard Core ([`1.1.0`](https://www.nuget.org/packages/OrchardCore.Theme.Targets/1.1.0)).
+This theme is referencing a stable build of Orchard Core ([`1.4.0`](https://www.nuget.org/packages/OrchardCore.Theme.Targets/1.4.0)).
 
 ## Prerequisities
 
@@ -42,4 +42,4 @@ When the theme is compiled (using `dotnet build`) it's configured to generate a 
 
 ## Notes
 
-This theme was created using `v1.5.1` of [Etch.OrchardCore.ThemeBoilerplate](https://github.com/EtchUK/Etch.OrchardCore.ThemeBoilerplate) template.
+This theme was created using `v1.6.0` of [our boilerplate template](https://github.com/EtchUK/etch.orchardcore.themeboilerplate).

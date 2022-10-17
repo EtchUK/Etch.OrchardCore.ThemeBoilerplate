@@ -1,9 +1,8 @@
 {
-    "name": "etch.orchardcore.themeboilerplate",
-    "version": "1.5.1",
-    "description": "Theme boilerplate is our starting point for building Orchard Core themes.",
-    "license": "MIT",
-    "author": "Etch UK",
+    "private": true,
+    "engines": {
+        "node": ">=14"
+    },
     "scripts": {
         "build": "npm install --no-audit && npm run bundle:prod",
         "bundle:dev": "npm install && webpack --config ./BuildConfigs/webpack.config.js --mode development",
