@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+cd "$(dirname "$(find . -maxdepth 2 -type f -name package.json | head -1)")" && npm run lint
