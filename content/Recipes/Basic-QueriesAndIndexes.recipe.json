@@ -14,7 +14,7 @@
             "Queries": [
                 {
                     "Index": "ContentItems",
-                    "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"{{contentType}}\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.PublishedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n  \"from\": {{from}},\r\n  \"size\": {{size}}\r\n}",
+                    "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"{{contentType}}\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.PublishedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n    \r\n  {% if from != blank %}\r\n    \"from\": {{from}},\r\n  {% endif %}\r\n    \r\n  {% if size != blank %}\r\n    \"size\": {{size}}\r\n  {% endif %}\r\n}",
                     "ReturnContentItems": true,
                     "Name": "ContentItems",
                     "Source": "Lucene",
