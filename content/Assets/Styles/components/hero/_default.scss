@@ -71,12 +71,6 @@
 
         overflow: hidden;
 
-        @each $width in $widths {
-            .width--#{math.floor($width)} & {
-                min-height: 0;
-            }
-        }
-
         .embed {
             margin-bottom: 0;
             position: absolute;
