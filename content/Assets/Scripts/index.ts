@@ -1,54 +1,52 @@
-import 'picturefill';
-
-import addClassOnScroll from './components/addClassOnScroll';
-import carousel from './components/carousel';
-import gallery from './components/gallery';
-import inViewport from './components/inViewport';
-import nav from './components/nav';
-import parallax from './components/parallax';
-import scrollbarWidth from './components/scrollbarWidth';
-import toggleNav from './components/toggleNav';
+import addClassOnScroll from "./components/addClassOnScroll";
+import carousel from "./components/carousel";
+import gallery from "./components/gallery";
+import inViewport from "./components/inViewport";
+import nav from "./components/nav";
+import parallax from "./components/parallax";
+import scrollbarWidth from "./components/scrollbarWidth";
+import toggleNav from "./components/toggleNav";
 
 /**
  * Called once the page is loaded and handles initialising
  * the different components.
  */
 const init = () => {
-    addClassOnScroll();
-    carousel();
-    gallery();
-    inViewport();
-    nav();
-    parallax();
-    scrollbarWidth();
-    toggleNav();
+  addClassOnScroll();
+  carousel();
+  gallery();
+  inViewport();
+  nav();
+  parallax();
+  scrollbarWidth();
+  toggleNav();
 };
 
 const canInit = () => {
-    const regReady = (window as any).attachEvent ? /d$|^c/ : /d$|^c|^i/;
-    return regReady.test(document.readyState || '');
+  const regReady = (window as any).attachEvent ? /d$|^c/ : /d$|^c|^i/;
+  return regReady.test(document.readyState || "");
 };
 
 let timer: NodeJS.Timeout;
 
 const checkCanInit = () => {
-    if (canInit()) {
-        if (timer) {
-            clearTimeout(timer);
-        }
-
-        init();
-        return;
+  if (canInit()) {
+    if (timer) {
+      clearTimeout(timer);
     }
 
-    timer = setTimeout(checkCanInit, 100);
+    init();
+    return;
+  }
+
+  timer = setTimeout(checkCanInit, 100);
 };
 
 // update DOM to indicate JavaScript is available
 // https://www.paulirish.com/2009/avoiding-the-fouc-v3/
 document.documentElement.className = document.documentElement.className.replace(
-    /\bno-js\b/,
-    'js'
+  /\bno-js\b/,
+  "js"
 );
 
 checkCanInit();
