@@ -4,61 +4,64 @@
  * -----------------------------------------------------------------------------
  */
 
-.columns--two > div {
-    @include mq($from: desktop) {
-        flex-basis: 50%;
-        max-width: 50%;
-    }
+.columns--two > div,
+.columns--two > li {
+  @include mq($from: desktop) {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
 
-    .constrain--extra-thin & {
-        @include mq($from: desktop) {
-            flex-basis: 100%;
-            max-width: 100%;
-        }
+  .constrain--extra-thin & {
+    @include mq($from: desktop) {
+      flex-basis: 100%;
+      max-width: 100%;
     }
+  }
 }
 
-.columns--three > div {
+.columns--three > div,
+.columns--three > li {
+  @include mq($from: desktopSmall) {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+
+  .constrain--extra-thin & {
     @include mq($from: desktopSmall) {
-        flex-basis: 33.33%;
-        max-width: 33.33%;
+      flex-basis: 100%;
+      max-width: 100%;
     }
-
-    .constrain--extra-thin & {
-        @include mq($from: desktopSmall) {
-            flex-basis: 100%;
-            max-width: 100%;
-        }
-    }
+  }
 }
 
-.columns--four > div {
+.columns--four > div,
+.columns--four > li {
+  @include mq($from: tablet) {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  @include mq($from: desktop) {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .constrain--thin & {
+    @include mq($from: desktop) {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+
+  .constrain--extra-thin & {
     @include mq($from: tablet) {
-        flex-basis: 50%;
-        max-width: 50%;
+      flex-basis: 100%;
+      max-width: 100%;
     }
 
     @include mq($from: desktop) {
-        flex-basis: 25%;
-        max-width: 25%;
+      flex-basis: 100%;
+      max-width: 100%;
     }
-
-    .constrain--thin & {
-        @include mq($from: desktop) {
-            flex-basis: 50%;
-            max-width: 50%;
-        }
-    }
-
-    .constrain--extra-thin & {
-        @include mq($from: tablet) {
-            flex-basis: 100%;
-            max-width: 100%;
-        }
-
-        @include mq($from: desktop) {
-            flex-basis: 100%;
-            max-width: 100%;
-        }
-    }
+  }
 }
