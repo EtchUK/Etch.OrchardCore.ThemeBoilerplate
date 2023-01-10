@@ -2,6 +2,8 @@
    #COLOURS
    ========================================================================== */
 
+@use "sass:color";
+
 $color-grey-light: #efefef;
 
 :root {
@@ -23,12 +25,13 @@ $color-grey-light: #efefef;
     --colorError: #e20000;
 
     --colorPrimary: #3ce854;
-    --colorPrimaryActive: #{darken(#3ce854, 10%)};
+    --colorPrimaryActive: #{color.adjust(#3ce854, $lightness: -10%)};
     --colorSecondary: #070f26;
-    --colorSecondaryActive: #{darken(#070f26, 10%)};
+    --colorSecondaryActive: #{color.adjust(#070f26, $lightness: -10%)};
 
     --colorSiteBackground: var(--colorWhite);
     --colorTextDefault: var(--colorBlack);
     --colorTextInverted: var(--colorWhite);
     --colorTextLight: var(--colorGrey);
 }
+   
