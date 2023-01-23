@@ -6,6 +6,8 @@
  * 1. Only apply this above desktopSmall, when width-- classes would actually 
  *    place things side by side otherwise, it makes spacing on mobile tricky 
  *    when they stack.
+ * 2. Use alternative sizing method when card has media - as body should not
+ *    then be 100% of the total height (the image is some % of the height)
  */
 
 .card--equal-height {
@@ -13,11 +15,18 @@
     @include mq($from: desktopSmall) {
         height: 100%;
 
-        .card {
-            &__body {
-                display: flex;
-                flex-direction: column;
-                height: 100%;
+        .card__body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        &.card--has-media {
+            display: flex;
+            flex-direction: column;
+
+            .card__body {
+                height: auto;
             }
         }
     }
