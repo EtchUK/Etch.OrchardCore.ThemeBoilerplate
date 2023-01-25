@@ -3,14 +3,8 @@
    ========================================================================== */
 
 .nav--primary {
-    .nav__item a {
-        @include mq($from: tablet) {
-            padding: var(--navPrimaryAnchorPaddingDesktop);
-        }
-    }
-
-    .nav__sub {
-        background-color: var(--headerBackgroundColor);
-        background-image: var(--headerBackgroundPattern);
-    }
+  .nav__sub {
+    background-color: var(--headerBackgroundColor);
+    background-image: var(--headerBackgroundPattern);
+  }
 }

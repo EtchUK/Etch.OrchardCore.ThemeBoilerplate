@@ -3,155 +3,156 @@
    ========================================================================== */
 
 .nav {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 }
 
 .nav__items {
-    @include list-reset();
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
-    @include mq($from: tablet) {
-        display: flex;
-        flex-direction: row;
+  .section--center &,
+  .align--center & {
+    justify-content: center;
+  }
+
+  .section--right &,
+  .align--right & {
+    justify-content: flex-end;
+  }
+
+  .nav--display-mobile-horizontal & {
+    flex-direction: row;
+  }
+
+  .nav--display-mobile-vertical & {
+    flex-direction: column;
+  }
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+
+    .nav--display-horizontal & {
+      flex-direction: row;
     }
+
+    .nav--display-vertical & {
+      flex-direction: column;
+    }
+  }
 }
 
 .nav__item {
-    border-bottom: $nav-border-width solid var(--navBorderColor);
-    margin-bottom: 0;
+  margin-bottom: 0;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  a {
+    display: block;
+    padding: var(--navAnchorPadding);
+
+    color: var(--navColor);
+    font-size: var(--navFontSize);
+    font-weight: var(--navFontWeight);
+    text-align: center;
+    text-decoration: none;
+    text-transform: var(--navTextTransform);
 
     @include mq($from: tablet) {
-        border-bottom: 0;
+      text-align: left;
     }
 
-    &:last-child {
-        border-bottom: 0;
-    }
-
-    a {
-        display: block;
-        padding-bottom: $nav-anchor-padding-bottom;
-        padding-left: $content-gutter-small;
-        padding-right: $content-gutter-small;
-        padding-top: $nav-anchor-padding-top;
-
-        color: var(--navColor);
-        font-size: var(--navFontSize);
-        font-weight: var(--navFontWeight);
-        text-decoration: none;
-        text-transform: var(--navTextTransform);
-
-        svg {
-            fill: var(--navColor);
-        }
-
-        @include mq($from: tablet) {
-            padding: var(--navAnchorPaddingDesktop);
-        }
-
-        &.is-current-page {
-            color: var(--navColorActive);
-
-            svg {
-                fill: var(--navColorActive);
-            }
-        }
-
-        .inverted & {
-            color: var(--navColorInverted);
-
-            svg {
-                fill: var(--navColorInverted);
-            }
-
-            &:focus,
-            &:hover {
-                color: var(--navColorInvertedActive);
-
-                svg {
-                    fill: var(--navColorInvertedActive);
-                }
-            }
-        }
-
-        &:focus,
-        &:hover {
-            color: var(--navColorActive);
-            text-decoration: var(--navTextDecorationHover);
-
-            svg {
-                fill: var(--navColorActive);
-            }
-        }
-    }
-}
-
-.nav__item--parent {
     svg {
-        display: inline-block;
-        height: $nav-chevron-height;
-        margin-bottom: $nav-chevron-margin-bottom;
-        margin-left: $nav-chevron-margin-left;
-        width: $nav-chevron-width;
-        vertical-align: middle;
-
-        fill: var(--navColor);
+      fill: var(--navColor);
     }
 
-    a:hover svg {
+    &.is-current-page {
+      color: var(--navColorActive);
+
+      svg {
         fill: var(--navColorActive);
+      }
     }
 
     .inverted & {
+      color: var(--navColorInverted);
+
+      svg {
+        fill: var(--navColorInverted);
+      }
+
+      &:focus,
+      &:hover {
+        color: var(--navColorInvertedActive);
+
         svg {
-            fill: var(--navColorInverted);
+          fill: var(--navColorInvertedActive);
         }
-        a:hover svg {
-            fill: var(--navColorInvertedActive);
-        }
+      }
     }
+
+    &:focus,
+    &:hover {
+      color: var(--navColorActive);
+      text-decoration: var(--navTextDecorationHover);
+
+      svg {
+        fill: var(--navColorActive);
+      }
+    }
+  }
+}
+
+.nav__item--parent {
+  svg {
+    display: inline-block;
+    height: $nav-chevron-height;
+    margin-bottom: $nav-chevron-margin-bottom;
+    margin-left: $nav-chevron-margin-left;
+    width: $nav-chevron-width;
+    vertical-align: middle;
+
+    fill: var(--navColor);
+  }
+
+  a:hover svg {
+    fill: var(--navColorActive);
+  }
+
+  .inverted & {
+    svg {
+      fill: var(--navColorInverted);
+    }
+    a:hover svg {
+      fill: var(--navColorInvertedActive);
+    }
+  }
 }
 
 .nav__sub {
-    display: none;
+  display: none;
 
-    background-color: var(--colorGrey);
+  background-color: var(--colorGrey);
 
-    @include mq($from: tablet) {
-        position: absolute;
+  @include mq($from: tablet) {
+    position: absolute;
 
-        background-color: var(--colorWhite);
+    background-color: var(--colorWhite);
 
-        .inverted & {
-            background-color: var(--colorBlack);
-        }
+    .inverted & {
+      background-color: var(--colorBlack);
     }
+  }
 
-    a {
-        padding-left: $content-gutter;
-        padding-right: $content-gutter;
-
-        @include mq($from: tablet) {
-            padding: $nav-anchor-padding-tablet;
-        }
-    }
-
-    .is-selected & {
-        display: block;
-    }
+  .is-selected & {
+    display: block;
+  }
 }
 
 .nav__sub-items {
-    @include list-reset();
-
-    .nav__item {
-        border-bottom: $nav-border-width solid var(--navBorderColorLight);
-
-        &:last-child {
-            border-bottom: 0;
-        }
-    }
+  @include list-reset();
 }

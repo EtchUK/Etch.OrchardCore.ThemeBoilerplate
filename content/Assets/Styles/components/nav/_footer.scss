@@ -3,40 +3,40 @@
    ========================================================================== */
 
 .footer {
-    .nav__item a {
-        font-size: var(--footerFontSize);
-        font-weight: var(--navFooterFontWeight);
-        text-transform: var(--navFooterTextTransform);
-    }
+  .nav__item a {
+    font-size: var(--footerFontSize);
+    font-weight: var(--navFooterFontWeight);
+    text-transform: var(--navFooterTextTransform);
+  }
 
-    .nav__sub {
-        background: transparent;
-    }
+  .nav__sub {
+    background: transparent;
+  }
 }
 
 .footer--inverted {
-    .nav__item a {
-        color: var(--footerColorInverted);
+  .nav__item a {
+    color: var(--footerColorInverted);
 
-        svg {
-            fill: var(--footerColorInverted);
-        }
-
-        &:focus,
-        &:hover {
-            color: var(--footerColorInvertedActive);
-
-            svg {
-                fill: var(--footerColorInvertedActive);
-            }
-        }
+    svg {
+      fill: var(--footerColorInverted);
     }
 
-    .nav__item--parent {
-        > a {
-            &:after {
-                background-image: url('../content/icon-chevron-inverted.svg');
-            }
-        }
+    &:focus,
+    &:hover {
+      color: var(--footerColorInvertedActive);
+
+      svg {
+        fill: var(--footerColorInvertedActive);
+      }
     }
+  }
+
+  .nav__item--parent {
+    > a {
+      &:after {
+        background-image: url("../content/icon-chevron-inverted.svg");
+      }
+    }
+  }
 }

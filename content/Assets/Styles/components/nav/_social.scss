@@ -3,7 +3,21 @@
    ========================================================================== */
 
 .nav--social {
-    .nav__item {
-        border-bottom: 0;
+  margin-top: $spacing-large;
+
+  @include mq($from: desktopSmall) {
+    margin-top: 0;
+  }
+
+  .nav__items {
+    justify-content: center;
+
+    a {
+      padding: var(--navAnchorSocialPadding);
+
+      svg {
+        display: block;
+      }
     }
+  }
 }
