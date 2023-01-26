@@ -1,0 +1,21 @@
+/* ==========================================================================
+   #RESPONSIVE DISPLAY
+   ========================================================================== */
+
+.responsive-display {
+    &--large-only {
+        display: none;
+
+        @include mq($from: desktopSmall) {
+            display: block;
+        }
+    }
+
+    &--small-only {
+        display: block;
+
+        @include mq($from: desktopSmall) {
+            display: none;
+        }
+    }
+}
