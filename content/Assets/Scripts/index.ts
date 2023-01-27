@@ -1,6 +1,7 @@
 import addClassOnScroll from "./components/addClassOnScroll";
 import carousel from "./components/carousel";
 import gallery from "./components/gallery";
+import iframeModal from './components/iframeModal';
 import inViewport from "./components/inViewport";
 import nav from "./components/nav";
 import parallax from "./components/parallax";
@@ -15,6 +16,7 @@ const init = () => {
   addClassOnScroll();
   carousel();
   gallery();
+  iframeModal();
   inViewport();
   nav();
   parallax();
