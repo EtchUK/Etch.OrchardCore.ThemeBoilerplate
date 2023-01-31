@@ -2,29 +2,10 @@
     #CAROUSEL/VARIABLES
     ========================================================================== */
 
-$carousel-button-animation-duration: 0.8s;
-$carousel-button-hit-area: -1rem;
-
 $carousel-indicator-size: 2rem;
 
 $carousel-nav-btn-x: 35px;
 $carousel-nav-btn-x-mobile: 15px;
-
-$carousel-button-hover-translate-x: -1rem;
-
-$carousel-item-translateX-desktop-medium: 17rem;
-$carousel-item-translateX-desktop: 14rem;
-$carousel-item-translateX-desktop-small: 11rem;
-$carousel-item-translateX-tablet: 7rem;
-
-$carousel-item-fade-duration: 0.2s;
-$carousel-item-fade-child-1-delay: 0s;
-$carousel-item-fade-child-2-delay: 0.1s;
-$carousel-item-fade-child-3-delay: 0.2s;
-$carousel-item-fade-translateY: -2rem;
-
-$carousel-item-background-intro-blur: 5px;
-$carousel-item-background-intro-duration: 0.3s;
 
 $carousel-item-background-scale: scale3d(1, 1, 1);
 $carousel-item-background-scale-hover: scale3d(1, 1, 1);
