@@ -52,19 +52,19 @@
         }
 
         &:after {
-            bottom: -$header-nav-button-after-offset;
+            bottom: -var(--headerNavButtonAfterOffset);
             content: "";
-            left: -$header-nav-button-after-offset;
-            right: -$header-nav-button-after-offset;
-            top: -$header-nav-button-after-offset;
+            left: -var(--headerNavButtonAfterOffset);
+            right: -var(--headerNavButtonAfterOffset);
+            top: -var(--headerNavButtonAfterOffset);
             position: absolute;
         }
 
         &:before {
             content: "";
-            height: $header-nav-button-height;
-            margin-right: $header-nav-button-margin-right;
-            width: $header-nav-button-width;
+            height: var(--headerNavButtonHeight);
+            margin-right: var(--headerNavButtonMarginRight);
+            width: var(--headerNavButtonWidth);
 
             background-image: url("../content/icon-menu.svg");
             background-repeat: no-repeat;

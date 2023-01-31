@@ -2,6 +2,8 @@
    #VARIABLES
    ========================================================================== */
 
-$alert-pos-y: 2rem;
-$alert-message-padding-bottom: 1.6rem;
-$alert-message-padding-top: 1.4rem;
+:root {
+    --alertPosY: 2rem;
+    --alertMessagePaddingBottom: 1.6rem;
+    --alertMessagePaddingTop: 1.4rem;
+}

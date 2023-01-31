@@ -2,10 +2,12 @@
    #RADIOS/VARIABLES
    ========================================================================== */
 
-$form-radio-height: 2.2rem;
-$form-radio-width: 2.2rem;
+:root {
+    --formRadioHeight: 2.2rem;
+    --formRadioWidth: 2.2rem;
 
-$form-radio-label-padding-left: 3rem;
-$form-radio-label-after-border-width: 0.6rem;
-$form-radio-label-after-x-pos: 0.5rem;
-$form-radio-label-after-y-pos: 0.5rem;
+    --formRadioLabelPaddingLeft: 3rem;
+    --formRadioLabelAfterBorderWidth: 0.6rem;
+    --formRadioLabelAfterXPos: 0.5rem;
+    --formRadioLabelAfterYPos: 0.5rem;
+}

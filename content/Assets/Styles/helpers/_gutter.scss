@@ -16,10 +16,10 @@
 
 .gutter--large {
     .flow__content {
-        margin-left: -$flow-gutter * 2;
+        margin-left: calc(var(--flowGutter) * 2);
 
         > * {
-            padding: 0 0 0 $flow-gutter * 2;
+            padding: 0 0 0 calc(var(--flowGutter) * 2);
         }
     }
 }

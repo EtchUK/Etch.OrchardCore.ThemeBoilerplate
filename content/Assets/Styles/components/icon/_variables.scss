@@ -2,6 +2,8 @@
    #ICON/VARIABLES
    ========================================================================== */
 
-$icon-flag-border-radius: 0.3rem;
-$icon-flag-margin-right: 0.5rem;
-$icon-flag-width: 2rem;
+:root {
+    --iconFlagBorderRadius: 0.3rem;
+    --iconFlagMarginRight: 0.5rem;
+    --iconFlagWidth: 2rem;
+}

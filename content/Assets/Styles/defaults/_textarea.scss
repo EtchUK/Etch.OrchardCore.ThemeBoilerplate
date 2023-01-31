@@ -5,7 +5,7 @@
 textarea {
     border: var(--formBorderSize) solid var(--colorTextLight);
     display: block;
-    min-height: $textarea-min-height;
+    min-height: var(--textareaMinHeight);
     padding: var(--formElementPaddingVertical)
         var(--formElementPaddingHorizontal);
     width: 100%;

@@ -2,12 +2,12 @@
    #HEADER/VARIABLES
    ========================================================================== */
 
-$header-nav-button-after-offset: 1rem;
-$header-nav-button-height: 2.4rem;
-$header-nav-button-margin-right: 0.6rem;
-$header-nav-button-width: 2.4rem;
-
 :root {
+    --headerNavButtonAfterOffset: 1rem;
+    --headerNavButtonHeight: 2.4rem;
+    --headerNavButtonMarginRight: 0.6rem;
+    --headerNavButtonWidth: 2.4rem;
+
     --headerBackgroundColor: transparent;
     --headerBackgroundPattern: none;
     --headerLogoMaxHeight: 5rem;

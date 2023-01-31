@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .icon--flag {
-    margin-right: $icon-flag-margin-right;
-    width: $icon-flag-width;
+    margin-right: var(--iconFlagMarginRight);
+    width: var(--iconFlagWidth);
 
-    border-radius: $icon-flag-border-radius;
+    border-radius: var(--iconFlagBorderRadius);
 }

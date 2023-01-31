@@ -2,6 +2,8 @@
    #EDITOR-TOOLBAR/VARIABLES
    ========================================================================== */
 
-$editor-toolbar-border-radius: 6px;
-$editor-toolbar-max-width: 40rem;
-$editor-toolbar-z-index: 150;
+:root {
+    --editorToolbarBorderRadius: 6px;
+    --editorToolbarMaxWidth: 40rem;
+    --editorToolbarZIndex: 150;
+}

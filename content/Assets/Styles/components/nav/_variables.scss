@@ -2,19 +2,17 @@
    #NAV/VARIABLES
    ========================================================================== */
 
-$nav-anchor-padding-bottom: 1.5rem;
-$nav-anchor-padding-tablet: 0.5rem 1rem;
-$nav-anchor-padding-top: 1.5rem;
-
-$nav-border-width: 0.4rem;
-
-$nav-chevron-height: 0.6rem;
-$nav-chevron-margin-bottom: 0.4rem;
-$nav-chevron-margin-left: 0.5rem;
-$nav-chevron-width: 1rem;
-
 :root {
-    --navAnchorPaddingDesktop: 0.5rem 1rem;
+    --navChevronHeight: 0.6rem;
+    --navChevronMarginBottom: 0.4rem;
+    --navChevronMarginLeft: 0.5rem;
+    --navChevronWidth: 1rem;
+
+    --navAnchorPaddingBottom: 1.5rem;
+    --navAnchorPaddingTablet: 0.5rem 1rem;
+    --navAnchorPaddingTop: 1.5rem;
+
+    --navBorderWidth: 0.4rem;
     --navBorderColor: #d7d7d7;
     --navBorderColorLight: #eaeaea;
     --navColor: var(--colorTextDefault);

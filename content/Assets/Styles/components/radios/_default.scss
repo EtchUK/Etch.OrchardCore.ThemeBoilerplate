@@ -20,7 +20,7 @@
     &__label {
         display: inline-block;
         margin-bottom: 0;
-        padding-left: $form-radio-label-padding-left;
+        padding-left: var(--formRadioLabelPaddingLeft);
 
         font-family: var(--fontFamilyDefault);
         font-size: var(--fontSizeBase);
@@ -32,42 +32,42 @@
         &:before {
             border: var(--formBorderSize) solid var(--colorTextLight);
             box-sizing: border-box;
-            height: $form-radio-height;
+            height: var(--formRadioHeight);
             left: 0;
             position: absolute;
             top: 0;
-            width: $form-radio-width;
+            width: var(--formRadioWidth);
 
             background: transparent;
             border-radius: 50%;
 
-            content: '';
+            content: "";
         }
 
         &:after {
-            border: $form-radio-label-after-border-width solid
+            border: var(--formRadioLabelAfterBorderWidth) solid
                 var(--colorTextDefault);
             height: 0;
-            left: $form-radio-label-after-x-pos;
+            left: var(--formRadioLabelAfterXPos);
             position: absolute;
-            top: $form-radio-label-after-y-pos;
+            top: var(--formRadioLabelAfterYPos);
             width: 0;
 
             background: transparent;
             border-radius: 50%;
             opacity: 0;
 
-            content: '';
+            content: "";
         }
     }
 
     &__input {
-        height: $form-radio-height;
+        height: var(--formRadioHeight);
         left: 0;
         margin: 0;
         position: absolute;
         top: 0;
-        width: $form-radio-width;
+        width: var(--formRadioWidth);
         z-index: $z-index-default;
 
         cursor: pointer;
