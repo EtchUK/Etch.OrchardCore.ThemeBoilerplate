@@ -2,7 +2,7 @@
     #CAROUSEL/DEFAULT
     ========================================================================== */
 
-@use 'sass:math';
+@use "sass:math";
 
 .carousel {
     display: block;
@@ -23,15 +23,16 @@
     padding: 0;
     position: absolute;
     width: 100%;
-    z-index: 100; /* 1. */
+    z-index: 100;
+    /* 1. */
 
     list-style: none;
 }
 
 .carousel__indicator {
-    height: $carousel-indicator-size;
+    height: var(--carouselIndicatorSize);
     margin-right: $spacing-default;
-    width: $carousel-indicator-size;
+    width: var(--carouselIndicatorSize);
 
     &:last-child {
         margin-right: 0;
@@ -45,7 +46,7 @@
     width: 100%;
 
     background-color: var(--colorCarouselIndicator);
-    border-radius: math.div($carousel-indicator-size, 2);
+    border-radius: calc(var(--carouselIndicatorSize) / 2);
 
     cursor: pointer;
 
@@ -74,7 +75,8 @@
     transform: translateX(0) translateY(-50%);
     transition: transform var(--carouselPagerHoverDuration) ease-in-out,
         padding var(--carouselPagerHoverDuration) ease-in-out;
-    z-index: 100; /* 1. */
+    z-index: 100;
+    /* 1. */
 
     svg {
         display: block;
@@ -95,7 +97,7 @@
 }
 
 .carousel__next-btn {
-    right: $carousel-nav-btn-x-mobile;
+    right: var(--carouselNavBtnXMobile);
 
     &:focus,
     &:hover {
@@ -104,7 +106,7 @@
     }
 
     @include mq($from: tablet) {
-        right: $carousel-nav-btn-x;
+        right: var(--carouselNavBtnX);
 
         &:focus,
         &:hover {
@@ -115,7 +117,7 @@
 }
 
 .carousel__previous-btn {
-    left: $carousel-nav-btn-x-mobile;
+    left: var(--carouselNavBtnXMobile);
 
     &:focus,
     &:hover {
@@ -124,7 +126,7 @@
     }
 
     @include mq($from: tablet) {
-        left: $carousel-nav-btn-x;
+        left: var(--carouselNavBtnX);
 
         &:focus,
         &:hover {
@@ -162,7 +164,7 @@
 
     &:hover {
         .carousel__item-background img {
-            transform: $carousel-item-background-scale-hover;
+            transform: var(--carouselItemBackgroundScaleHover);
         }
     }
 }
@@ -201,7 +203,7 @@
         width: 100%;
 
         object-fit: cover;
-        transform: $carousel-item-background-scale;
-        transition: $carousel-item-background-transition;
+        transform: var(--carouselItemBackgroundScale);
+        transition: var(--carouselItemBackgroundTransition);
     }
 }

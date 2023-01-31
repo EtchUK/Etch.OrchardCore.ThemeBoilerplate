@@ -20,7 +20,7 @@
     &__label {
         display: inline-block;
         margin-bottom: 0;
-        padding-left: $form-checkbox-label-padding-left;
+        padding-left: var(--formCheckboxLabelPaddingLeft);
 
         font-family: var(--fontFamilyDefault);
         font-size: var(--fontSizeBase);
@@ -32,42 +32,42 @@
         &:before {
             border: var(--formBorderSize) solid var(--colorTextLight);
             box-sizing: border-box;
-            height: $form-checkbox-height;
+            height: var(--formCheckboxHeight);
             left: 0;
             position: absolute;
             top: 0;
-            width: $form-checkbox-width;
+            width: var(--formCheckboxWidth);
 
             background: transparent;
 
-            content: '';
+            content: "";
         }
 
         &:after {
-            height: $form-checkbox-label-after-height;
-            left: $form-checkbox-label-after-x-pos;
+            height: var(--formCheckboxLabelAfterHeight);
+            left: var(--formCheckboxLabelAfterXPos);
             position: absolute;
-            top: $form-checkbox-label-after-y-pos;
-            width: $form-checkbox-label-after-width;
+            top: var(--formCheckboxLabelAfterYPos);
+            width: var(--formCheckboxLabelAfterWidth);
 
             background: transparent;
             border: solid;
-            border-width: $form-checkbox-label-after-border-width;
+            border-width: var(--formCheckboxLabelAfterBorderWidth);
             border-top-color: transparent;
             transform: rotate(-45deg);
             opacity: 0;
 
-            content: '';
+            content: "";
         }
     }
 
     &__input {
-        height: $form-checkbox-height;
+        height: var(--formCheckboxHeight);
         left: 0;
         margin: 0;
         position: absolute;
         top: 0;
-        width: $form-checkbox-width;
+        width: var(--formCheckboxWidth);
         z-index: $z-index-default;
 
         cursor: pointer;

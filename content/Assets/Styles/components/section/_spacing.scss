@@ -2,7 +2,7 @@
    #SECTION/SPACING
    ========================================================================== */
 
-@use 'sass:math';
+@use "sass:math";
 
 .section--spaced-after-none {
     margin-bottom: 0;
@@ -64,29 +64,29 @@
 
 .section--large-flow-gutter {
     .flow__content {
-        margin-left: -$flow-gutter * 2;
+        margin-left: calc(var(--flowGutter) * 2);
 
         > * {
-            padding: 0 0 0 $flow-gutter * 2;
+            padding: 0 0 0 calc(var(--flowGutter) * 2);
         }
     }
 }
 
 .section--small-vertical-flow-gutter {
     .flow__content > * {
-        margin-bottom: math.div($flow-gutter, 2);
+        margin-bottom: calc(var(--flowGutter) / 2);
     }
 }
 
 .section--medium-vertical-flow-gutter {
     .flow__content > * {
-        margin-bottom: $flow-gutter;
+        margin-bottom: var(--flowGutter);
     }
 }
 
 .section--large-vertical-flow-gutter {
     .flow__content > * {
-        margin-bottom: ($flow-gutter * 2);
+        margin-bottom: calc(var(--flowGutter) * 2);
     }
 }
 
@@ -101,7 +101,7 @@
 .section--small-stacked-vertical-flow-gutter {
     @include mq($until: desktopSmall) {
         .flow__content > * {
-            margin-bottom: math.div($flow-gutter, 2);
+            margin-bottom: calc(var(--flowGutter) / 2);
         }
     }
 }
@@ -109,7 +109,7 @@
 .section--medium-stacked-vertical-flow-gutter {
     @include mq($until: desktopSmall) {
         .flow__content > * {
-            margin-bottom: $flow-gutter;
+            margin-bottom: var(--flowGutter);
         }
     }
 }
@@ -117,7 +117,7 @@
 .section--large-stacked-vertical-flow-gutter {
     @include mq($until: desktopSmall) {
         .flow__content > * {
-            margin-bottom: ($flow-gutter * 2);
+            margin-bottom: calc(var(--flowGutter) * 2);
         }
     }
 }

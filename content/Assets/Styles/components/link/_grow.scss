@@ -31,14 +31,14 @@
 
         &:before {
             bottom: 0;
-            content: '';
-            height: $link-line-height;
+            content: "";
+            height: var(--linkLineHeight);
             position: absolute;
             width: 0;
 
             background-color: var(--colorPrimary);
 
-            transition: width $link-transition-duration ease-in-out;
+            transition: width var(--linkTransitionDuration) ease-in-out;
         }
 
         &:hover {

@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .alert {
-    padding-bottom: $alert-message-padding-bottom;
-    padding-top: $alert-message-padding-top;
+    padding-bottom: var(--alertMessagePaddingBottom);
+    padding-top: var(--alertMessagePaddingTop);
 
     background-color: var(--colorAlertBackground);
 

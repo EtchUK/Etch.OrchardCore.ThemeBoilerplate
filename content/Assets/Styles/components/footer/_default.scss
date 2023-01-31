@@ -13,8 +13,8 @@
     font-size: var(--footerFontSize);
 
     &__content {
-        padding-bottom: $footer-content-padding-bottom;
-        padding-top: $footer-content-padding-top;
+        padding-bottom: var(--footerContentPaddingBottom);
+        padding-top: var(--footerContentPaddingTop);
 
         .flow__content {
             display: flex;

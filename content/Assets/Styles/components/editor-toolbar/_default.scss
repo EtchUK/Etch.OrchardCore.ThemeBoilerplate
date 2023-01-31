@@ -8,7 +8,7 @@
     padding: $spacing-default;
     position: fixed;
     width: 100%;
-    z-index: $editor-toolbar-z-index;
+    z-index: var(--editorToolbarZIndex);
 
     background-color: var(--colorBlack);
 
@@ -17,10 +17,10 @@
     @include mq($from: tablet) {
         bottom: $content-gutter-small;
         left: $content-gutter-small;
-        max-width: $editor-toolbar-max-width;
+        max-width: var(--editorToolbarMaxWidth);
         width: auto;
 
-        border-radius: $editor-toolbar-border-radius;
+        border-radius: var(--editorToolbarBorderRadius);
     }
 }
 

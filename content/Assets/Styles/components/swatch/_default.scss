@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .swatch {
-    padding-top: $swatch-height;
+    padding-top: var(--swatchHeight);
 
     pre {
         margin-bottom: 0;

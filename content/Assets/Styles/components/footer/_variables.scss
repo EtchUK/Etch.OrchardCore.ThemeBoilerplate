@@ -2,9 +2,6 @@
    #FOOTER/VARIABLES
    ========================================================================== */
 
-$footer-content-padding-bottom: 3rem;
-$footer-content-padding-top: 2rem;
-
 :root {
     --footerBackgroundColor: transparent;
     --footerBackgroundPattern: none;
@@ -12,5 +9,9 @@ $footer-content-padding-top: 2rem;
     --footerColorInvertedActive: var(--colorPrimary);
     --footerFontSize: var(--fontSizeSmall);
     --footerHeadingFontSize: var(--fontSizeBase);
+
+    --footerContentPaddingBottom: 3rem;
+    --footerContentPaddingTop: 3rem;
+
     --footerPaddingVertical: 8rem;
 }

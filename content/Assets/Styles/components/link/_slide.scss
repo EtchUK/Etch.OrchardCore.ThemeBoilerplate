@@ -26,8 +26,8 @@
         text-decoration: none;
 
         &:before {
-            content: '';
-            height: $link-line-height;
+            content: "";
+            height: var(--linkLineHeight);
             left: 0;
             position: absolute;
             width: 100%;
@@ -35,8 +35,8 @@
             background-color: var(--colorPrimary);
             opacity: 0;
 
-            transition: opacity $link-transition-duration,
-                transform $link-transition-duration;
+            transition: opacity var(--linkTransitionDuration),
+                transform var(--linkTransitionDuration);
         }
 
         &:hover {

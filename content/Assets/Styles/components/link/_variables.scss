@@ -2,6 +2,8 @@
    #LINK/VARIABLES
    ========================================================================== */
 
-$link-line-height: 1px;
+:root {
+    --linkLineHeight: 1px;
 
-$link-transition-duration: 0.3s;
+    --linkTransitionDuration: 0.3s;
+}
