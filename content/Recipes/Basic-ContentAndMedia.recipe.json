@@ -6,12 +6,8 @@
     "website": "https://etchuk.com",
     "version": "1.5.1",
     "issetuprecipe": false,
-    "categories": [
-        "basic"
-    ],
-    "tags": [
-        "basic"
-    ],
+    "categories": ["basic"],
+    "tags": ["basic"],
     "steps": [
         {
             "name": "Content",
@@ -88,7 +84,7 @@
                 {
                     "ContentItemId": "45re9jnzasab30k923k4vg2dmd",
                     "ContentItemVersionId": "44naeyyfhq3mqr9b3j0x48kq45",
-                    "ContentType": "Banner",
+                    "ContentType": "PageHeader",
                     "DisplayText": "Header",
                     "Latest": true,
                     "Published": true,
@@ -97,16 +93,12 @@
                     "CreatedUtc": "2020-07-14T23:56:36.0270688Z",
                     "Owner": "etch-play",
                     "Author": "etch-play",
-                    "Banner": {
+                    "PageHeader": {
                         "Logo": {
-                            "Paths": [
-                                "Logos/logo-play@1x.svg"
-                            ]
+                            "Paths": ["Logos/logo-play@1x.svg"]
                         },
                         "LogoSmall": {
-                            "Paths": [
-                                "Logos/logo-play-short@1x.svg"
-                            ]
+                            "Paths": ["Logos/logo-play-short@1x.svg"]
                         },
                         "LogoAlternateText": {
                             "Text": "Logo for Etch Play"
@@ -246,7 +238,7 @@
                 {
                     "ContentItemId": "4x98nyjd22b4pta22vv9t85gm3",
                     "ContentItemVersionId": "49s97bg6km9bj6689jsrf1tjn8",
-                    "ContentType": "Footer",
+                    "ContentType": "PageFooter",
                     "DisplayText": "Footer",
                     "Latest": true,
                     "Published": true,
@@ -4993,9 +4985,7 @@
                                                     "Paths": [
                                                         "Backgrounds/Default/unsplash-1444090542259-1280w.jpg"
                                                     ],
-                                                    "MediaTexts": [
-                                                        ""
-                                                    ]
+                                                    "MediaTexts": [""]
                                                 },
                                                 "AlternateText": {
                                                     "Text": "A mountain range during sunset"
@@ -6192,9 +6182,7 @@
                                                     "Paths": [
                                                         "Logos/Age Ratings/ESRB/esrb-10.svg"
                                                     ],
-                                                    "MediaTexts": [
-                                                        ""
-                                                    ]
+                                                    "MediaTexts": [""]
                                                 },
                                                 "Link": {
                                                     "Url": "https://www.esrb.org/",

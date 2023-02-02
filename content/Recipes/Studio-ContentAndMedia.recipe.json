@@ -6,12 +6,8 @@
     "website": "https://etchuk.com",
     "version": "1.5.1",
     "issetuprecipe": false,
-    "categories": [
-        "studio"
-    ],
-    "tags": [
-        "studio"
-    ],
+    "categories": ["studio"],
+    "tags": ["studio"],
     "steps": [
         {
             "name": "Content",
@@ -146,9 +142,7 @@
                     "Author": "[js: parameters('AdminUsername')]",
                     "NewsPost": {
                         "Thumbnail": {
-                            "Paths": [
-                                "News/Default/example-news-400w.jpg"
-                            ]
+                            "Paths": ["News/Default/example-news-400w.jpg"]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -157,13 +151,9 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": [
-                                "Featured"
-                            ],
+                            "TagNames": ["Featured"],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
-                            "TermContentItemIds": [
-                                "4rf9s6d6qtjpas84f52sg2qhc2"
-                            ]
+                            "TermContentItemIds": ["4rf9s6d6qtjpas84f52sg2qhc2"]
                         }
                     },
                     "AutoroutePart": {
@@ -218,9 +208,7 @@
                     "Author": "[js: parameters('AdminUsername')]",
                     "NewsPost": {
                         "Thumbnail": {
-                            "Paths": [
-                                "News/Default/example-news-400w.jpg"
-                            ]
+                            "Paths": ["News/Default/example-news-400w.jpg"]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -229,10 +217,7 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": [
-                                "Games",
-                                "Mobile"
-                            ],
+                            "TagNames": ["Games", "Mobile"],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
                             "TermContentItemIds": [
                                 "42zsbct55dcvk0sj3xk0jas0dt",
@@ -292,9 +277,7 @@
                     "Author": "[js: parameters('AdminUsername')]",
                     "NewsPost": {
                         "Thumbnail": {
-                            "Paths": [
-                                "News/Default/example-news-400w.jpg"
-                            ]
+                            "Paths": ["News/Default/example-news-400w.jpg"]
                         },
                         "ThumbnailAlt": {
                             "Text": "Description of image"
@@ -303,13 +286,9 @@
                             "ContentItemIds": []
                         },
                         "Tags": {
-                            "TagNames": [
-                                "Featured"
-                            ],
+                            "TagNames": ["Featured"],
                             "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
-                            "TermContentItemIds": [
-                                "4rf9s6d6qtjpas84f52sg2qhc2"
-                            ]
+                            "TermContentItemIds": ["4rf9s6d6qtjpas84f52sg2qhc2"]
                         }
                     },
                     "AutoroutePart": {
@@ -941,9 +920,7 @@
                                                     "Paths": [
                                                         "Backgrounds/Default/unsplash-1444090542259-1024w.jpg"
                                                     ],
-                                                    "MediaTexts": [
-                                                        ""
-                                                    ]
+                                                    "MediaTexts": [""]
                                                 },
                                                 "AlternateText": {
                                                     "Text": "Example image."
@@ -3368,9 +3345,7 @@
                                                     "Paths": [
                                                         "Team/team-placeholder-1-768w.jpg"
                                                     ],
-                                                    "MediaTexts": [
-                                                        ""
-                                                    ]
+                                                    "MediaTexts": [""]
                                                 },
                                                 "AlternateText": {
                                                     "Text": "Photo of Joe Bloggs"
@@ -3757,7 +3732,7 @@
                 {
                     "ContentItemId": "45re9jnzasab30k923k4vg2dmd",
                     "ContentItemVersionId": "44naeyyfhq3mqr9b3j0x48kq45",
-                    "ContentType": "Banner",
+                    "ContentType": "PageHeader",
                     "DisplayText": "Header",
                     "Latest": true,
                     "Published": true,
@@ -3766,24 +3741,18 @@
                     "CreatedUtc": "2020-07-08T23:19:42.7040205Z",
                     "Owner": "[js: parameters('AdminUsername')]",
                     "Author": "[js: parameters('AdminUsername')]",
-                    "Banner": {
+                    "PageHeader": {
                         "Logo": {
-                            "Paths": [
-                                "Logos/logo-play@1x.svg"
-                            ]
+                            "Paths": ["Logos/logo-play@1x.svg"]
                         },
                         "LogoSmall": {
-                            "Paths": [
-                                "Logos/logo-play-short@1x.svg"
-                            ]
+                            "Paths": ["Logos/logo-play-short@1x.svg"]
                         },
                         "LogoAlternateText": {
                             "Text": "Logo for Etch Play"
                         },
                         "Menu": {
-                            "ContentItemIds": [
-                                "4enkkc6t2b7hvrw0swx4n5bdw9"
-                            ]
+                            "ContentItemIds": ["4enkkc6t2b7hvrw0swx4n5bdw9"]
                         },
                         "MenuToggleButtonLabel": {
                             "Text": "Menu"
@@ -3802,7 +3771,7 @@
                 {
                     "ContentItemId": "4x98nyjd22b4pta22vv9t85gm3",
                     "ContentItemVersionId": "49s97bg6km9bj6689jsrf1tjn8",
-                    "ContentType": "Footer",
+                    "ContentType": "PageFooter",
                     "DisplayText": "Footer",
                     "Latest": true,
                     "Published": true,
@@ -9873,9 +9842,7 @@
                                                     "Paths": [
                                                         "Backgrounds/Default/unsplash-1444090542259-1280w.jpg"
                                                     ],
-                                                    "MediaTexts": [
-                                                        ""
-                                                    ]
+                                                    "MediaTexts": [""]
                                                 },
                                                 "AlternateText": {
                                                     "Text": "A mountain range during sunset"
@@ -11072,9 +11039,7 @@
                                                     "Paths": [
                                                         "Logos/Age Ratings/ESRB/esrb-10.svg"
                                                     ],
-                                                    "MediaTexts": [
-                                                        ""
-                                                    ]
+                                                    "MediaTexts": [""]
                                                 },
                                                 "Link": {
                                                     "Url": "https://www.esrb.org/",
