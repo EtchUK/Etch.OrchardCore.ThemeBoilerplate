@@ -8,3 +8,13 @@
 .lg-outer .lg-video-cont {
     max-width: var(--lightGalleryVideoMaxWidth) !important; /* 1. */
 }
+
+.lg-video {
+    &.lg-iframe {
+        height: var(--lightGalleryIframeHeight);
+        margin: var(--lightGalleryIframeMargin);
+        max-height: var(--lightGalleryIframeMaxHeight);
+        max-width: var(--lightGalleryIframeMaxWidth);
+        padding: 0;
+    }
+}
