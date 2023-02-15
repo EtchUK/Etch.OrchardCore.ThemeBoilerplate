@@ -86,6 +86,7 @@
         },
         {
             "name": "Settings",
+            "PageSize": 50,
             "HomeRoute": {},
             "LayerSettings": {
                 "Zones": ["Header", "Footer"]
