@@ -5,4 +5,12 @@
 .group {
     background-color: var(--groupBackgroundColor);
     background-image: var(--groupBackgroundPattern);
+
+    &--padded {
+        padding: var(--groupPaddedPadding);
+    }
+
+    &--padded-large {
+        padding: var(--groupPaddedPaddingLarge);
+    }
 }
