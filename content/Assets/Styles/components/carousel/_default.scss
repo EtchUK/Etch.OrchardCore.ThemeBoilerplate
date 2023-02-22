@@ -4,6 +4,10 @@
 
 @use "sass:math";
 
+/**
+  * 1. Position indicators above the line effect containers.
+  */
+
 .carousel {
     display: block;
     overflow: hidden;
@@ -11,9 +15,6 @@
     width: 100%;
 }
 
-/**
- * 1. Position indicators above the line effect containers.
- */
 .carousel__indicators {
     bottom: var(--spacingLarge);
     display: flex;
@@ -23,8 +24,7 @@
     padding: 0;
     position: absolute;
     width: 100%;
-    z-index: var(--zIndexFront);
-    /* 1. */
+    z-index: var(--zIndexFront); /* 1. */
 
     list-style: none;
 }
@@ -60,9 +60,6 @@
     }
 }
 
-/**
- * 1. Position indicators above the line effect containers.
- */
 .carousel__prev-next {
     border: 0;
     padding: 0;
@@ -75,8 +72,7 @@
     transform: translateX(0) translateY(-50%);
     transition: transform var(--carouselPagerHoverDuration) ease-in-out,
         padding var(--carouselPagerHoverDuration) ease-in-out;
-    z-index: var(--zIndexFront);
-    /* 1. */
+    z-index: var(--zIndexFront); /* 1. */
 
     svg {
         display: block;
