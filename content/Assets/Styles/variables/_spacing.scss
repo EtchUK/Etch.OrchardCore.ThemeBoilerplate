@@ -6,12 +6,15 @@
  * Control dimensions & spacing, favouring `rem` unit.
  */
 
-$gutter: 3.2rem;
+:root {
+    --spacingSmall: 0.8rem;
+    --spacingDefault: 1.6rem;
+    --spacingLarge: 3.2rem;
+    --spacingXLarge: 5.4rem;
 
-$spacing-small: 0.8rem;
-$spacing-default: 1.6rem;
-$spacing-large: 3.2rem;
-$spacing-x-large: 5.4rem;
+    --spacingText: 1.6rem;
 
-$spacing-text-default: 1.6rem;
-$spacing-text-desktop: 2.4rem;
+    @include mq($from: mobileLarge) {
+        --spacingText: 2.4rem;
+    }
+}

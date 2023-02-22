@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: $spacing-text-default;
+    margin-bottom: var(--spacingText);
     margin-top: 0;
 
     @include mq($from: mobileLarge) {

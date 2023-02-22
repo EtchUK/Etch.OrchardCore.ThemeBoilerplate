@@ -11,7 +11,7 @@
 .card {
     border-radius: var(--cardBorderRadius);
     display: block;
-    margin-bottom: $spacing-default;
+    margin-bottom: var(--spacingDefault);
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -71,7 +71,7 @@
         z-index: var(--cardBodyZIndex);
 
         .card--has-media & {
-            padding-top: $spacing-default;
+            padding-top: var(--spacingDefault);
         }
 
         .card--media-overlay & {

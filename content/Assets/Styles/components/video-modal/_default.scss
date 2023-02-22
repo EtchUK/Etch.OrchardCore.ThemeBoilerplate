@@ -47,7 +47,7 @@
     &__link-text {
         left: 50%;
         max-width: 100%;
-        padding: $spacing-default;
+        padding: var(--spacingDefault);
         position: absolute;
         top: 50%;
 

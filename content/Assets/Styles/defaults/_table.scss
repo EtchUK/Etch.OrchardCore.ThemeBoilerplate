@@ -24,8 +24,8 @@ table {
     tr {
         border-bottom: var(--tableBorderWidth) solid var(--colorGrey);
         display: block;
-        margin-bottom: $spacing-default;
-        padding-bottom: $spacing-default;
+        margin-bottom: var(--spacingDefault);
+        padding-bottom: var(--spacingDefault);
 
         @include mq($from: tablet) {
             display: table-row;

@@ -9,7 +9,7 @@
     --heroColorInverted: var(--colorTextInverted);
     --heroGradientHeight: 20rem;
     --heroGradientMaxOpacity: 0.5;
-    --heroHeadingMarginBottom: #{$spacing-large};
+    --heroHeadingMarginBottom: var(--spacingLarge);
     --heroHeadingTextTransform: uppercase;
     --heroPullDistance: 8rem;
     --heroSpacingAfterLarge: 9rem;

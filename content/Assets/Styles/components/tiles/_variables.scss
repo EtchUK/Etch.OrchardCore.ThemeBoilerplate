@@ -7,6 +7,6 @@
 :root {
     --tilesBackgroundColor: transparent;
     --tilesBackgroundPattern: none;
-    --tilesGap: #{math.div($spacing-default, 2)};
-    --tilesPadding: #{$spacing-default};
+    --tilesGap: #{math.div(var(--spacingDefault), 2)};
+    --tilesPadding: var(--spacingDefault);
 }

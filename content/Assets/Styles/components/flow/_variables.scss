@@ -2,4 +2,6 @@
    #FLOW/VARIABLES
    ========================================================================== */
 
-$flow-gutter: $gutter;
+:root {
+    --flowGutter: var(--gutter);
+}

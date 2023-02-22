@@ -6,7 +6,7 @@
 
 .hint {
     display: block;
-    margin-bottom: $spacing-default;
+    margin-bottom: var(--spacingDefault);
 
     color: var(--colorTextLight);
 }

@@ -7,13 +7,13 @@
 
     &__item {
         display: block;
-        margin-bottom: $spacing-default;
+        margin-bottom: var(--spacingDefault);
         position: relative;
 
         .radios--inline & {
             display: inline-block;
             margin-bottom: 0;
-            margin-right: $spacing-default;
+            margin-right: var(--spacingDefault);
         }
     }
 

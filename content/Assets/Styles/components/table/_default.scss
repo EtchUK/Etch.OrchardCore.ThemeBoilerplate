@@ -4,6 +4,6 @@
 
 .table {
     &__caption {
-        margin-bottom: $spacing-default;
+        margin-bottom: var(--spacingDefault);
     }
 }

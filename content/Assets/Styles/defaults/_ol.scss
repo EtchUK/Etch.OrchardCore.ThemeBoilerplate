@@ -8,8 +8,8 @@
 
 ol {
     margin: 0;
-    margin-bottom: $spacing-default;
-    padding-left: $spacing-large;
+    margin-bottom: var(--spacingDefault);
+    padding-left: var(--spacingLarge);
 
     ol {
         margin-bottom: 0;

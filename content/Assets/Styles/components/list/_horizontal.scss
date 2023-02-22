@@ -10,7 +10,7 @@
 
 .list--horizontal-spaced {
     > li {
-        margin-right: $spacing-default;
+        margin-right: var(--spacingDefault);
 
         &:last-child {
             margin-right: 0;

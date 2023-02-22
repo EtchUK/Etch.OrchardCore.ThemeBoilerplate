@@ -37,7 +37,7 @@
 
     &__meta {
         display: block;
-        margin-bottom: $spacing-large;
+        margin-bottom: var(--spacingLarge);
         color: var(--colorTextLight);
         font-family: var(--fontFamilyHeading);
         font-weight: var(--cardMetaWeight);
