@@ -195,7 +195,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    z-index: $z-index-under;
+    z-index: var(--zIndexUnder);
 
     img {
         display: block;

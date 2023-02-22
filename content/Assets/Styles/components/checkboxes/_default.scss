@@ -68,7 +68,7 @@
         position: absolute;
         top: 0;
         width: var(--formCheckboxWidth);
-        z-index: $z-index-default;
+        z-index: var(--zIndexDefault);
 
         cursor: pointer;
         opacity: 0;

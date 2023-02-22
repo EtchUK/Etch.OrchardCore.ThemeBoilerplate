@@ -7,12 +7,12 @@
     .hero-responsive-media--background-image {
         &:before,
         &:after {
-            content: ' ';
+            content: " ";
             height: var(--heroGradientHeight);
             position: absolute;
             width: 100%;
 
-            z-index: $z-index-mid;
+            z-index: var(--zIndexMid);
         }
 
         &:before {

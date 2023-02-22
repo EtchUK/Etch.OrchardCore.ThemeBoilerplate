@@ -33,7 +33,7 @@
         border-top: 0;
         margin-bottom: $content-gutter;
         width: 100%;
-        z-index: $z-index-default;
+        z-index: var(--zIndexDefault);
 
         background-color: transparent;
 
