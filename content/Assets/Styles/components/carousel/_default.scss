@@ -23,7 +23,7 @@
     padding: 0;
     position: absolute;
     width: 100%;
-    z-index: 100;
+    z-index: var(--zIndexFront);
     /* 1. */
 
     list-style: none;
@@ -75,7 +75,7 @@
     transform: translateX(0) translateY(-50%);
     transition: transform var(--carouselPagerHoverDuration) ease-in-out,
         padding var(--carouselPagerHoverDuration) ease-in-out;
-    z-index: 100;
+    z-index: var(--zIndexFront);
     /* 1. */
 
     svg {
