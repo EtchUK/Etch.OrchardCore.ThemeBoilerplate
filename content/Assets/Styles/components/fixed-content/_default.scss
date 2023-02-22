@@ -5,7 +5,7 @@
 .fixed-content {
     padding: var(--fixedContentEdgeDistance);
     position: fixed;
-    z-index: $z-index-front;
+    z-index: var(--zIndexFront);
 
     &--reveal-on-scroll {
         opacity: 0;
