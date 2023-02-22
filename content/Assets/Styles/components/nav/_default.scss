@@ -34,8 +34,8 @@
     a {
         display: block;
         padding-bottom: var(--navAnchorPaddingBottom);
-        padding-left: $content-gutter-small;
-        padding-right: $content-gutter-small;
+        padding-left: var(--gutterSmall);
+        padding-right: var(--gutterSmall);
         padding-top: var(--navAnchorPaddingTop);
 
         color: var(--navColor);
@@ -132,8 +132,8 @@
     }
 
     a {
-        padding-left: $content-gutter;
-        padding-right: $content-gutter;
+        padding-left: var(--gutter);
+        padding-right: var(--gutter);
 
         @include mq($from: tablet) {
             padding: var(--navAnchorPaddingTablet);

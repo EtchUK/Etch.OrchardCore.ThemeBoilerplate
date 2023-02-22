@@ -31,7 +31,7 @@
     nav,
     &__nav {
         border-top: 0;
-        margin-bottom: $content-gutter;
+        margin-bottom: var(--gutter);
         width: 100%;
         z-index: var(--zIndexDefault);
 

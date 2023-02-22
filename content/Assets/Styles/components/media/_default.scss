@@ -13,10 +13,10 @@
     }
 
     &__body {
-        padding-top: $content-gutter-small;
+        padding-top: var(--gutterSmall);
 
         @include mq($from: tablet) {
-            margin-left: $content-gutter;
+            margin-left: var(--gutter);
             padding-top: 0;
         }
     }
