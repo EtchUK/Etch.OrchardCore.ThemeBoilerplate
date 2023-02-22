@@ -1,4 +1,4 @@
-/**
+/*
  * Makes the scrollbar width available as a CSS variable.
  *
  * vw units return viewport width but assumes that scrollbars do not exist:
@@ -13,7 +13,7 @@
 
 const scrollbarWidth = () => {
     document.documentElement.style.setProperty(
-        '--scrollbarWidth',
+        "--scrollbarWidth",
         `${window.innerWidth - document.documentElement.clientWidth}px`
     );
 };

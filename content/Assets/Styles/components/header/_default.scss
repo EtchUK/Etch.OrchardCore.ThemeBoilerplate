@@ -2,10 +2,11 @@
    #HEADER/DEFAULT
    ========================================================================== */
 
-/**
+/*
  * 1. Prevents navigation submenus from appearing below any other z-indexed
  *    components.
  */
+
 .header {
     position: relative; /* 1. */
     z-index: var(--zIndexFront); /* 1. */

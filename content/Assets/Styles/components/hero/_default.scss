@@ -2,11 +2,11 @@
    #HERO/DEFAULT
    ========================================================================== */
 
-/**
-  * 1. The rough space of a spacebar push, ensures that despite liquid output,
-  *    anything with a span wrapped is appropriately spaced to the next item
-  * 2. Vertically center the embed if it is taller than .hero__media
-  */
+/*
+ * 1. The rough space of a spacebar push, ensures that despite liquid output,
+ *    anything with a span wrapped is appropriately spaced to the next item
+ * 2. Vertically center the embed if it is taller than .hero__media
+ */
 
 @use "sass:math";
 
