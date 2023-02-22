@@ -2,6 +2,12 @@
    #GUTTER
    ========================================================================== */
 
+/**
+  * Spacing between items and content
+  */
+
 :root {
-    --gutter: 3.2rem;
+    --gutterSmall: var(--spacingDefault);
+    --gutter: var(--spacingLarge);
+    --gutterLarge: var(--spacingXLarge);
 }

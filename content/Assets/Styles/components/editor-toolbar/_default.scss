@@ -15,8 +15,8 @@
     color: var(--colorWhite);
 
     @include mq($from: tablet) {
-        bottom: $content-gutter-small;
-        left: $content-gutter-small;
+        bottom: var(--gutterSmall);
+        left: var(--gutterSmall);
         max-width: var(--editorToolbarMaxWidth);
         width: auto;
 

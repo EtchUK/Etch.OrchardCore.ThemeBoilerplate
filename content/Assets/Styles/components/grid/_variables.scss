@@ -2,10 +2,10 @@
    #GRID/VARIABLES
    ========================================================================== */
 
-$grid-gap-master: $content-gutter;
-$grid-gap-master-small: $content-gutter-small;
+$grid-gap-master: var(--gutter);
+$grid-gap-master-small: var(--gutterSmall);
 
-$grid-default-item-margin-bottom: $content-gutter * 2;
+$grid-default-item-margin-bottom: var(--gutter) * 2;
 
-$grid-gutter-large-margin-bottom: $content-gutter-large * 2;
-$grid-gutter-small-margin-bottom: $content-gutter;
+$grid-gutter-large-margin-bottom: var(--gutterLarge) * 2;
+$grid-gutter-small-margin-bottom: var(--gutter);

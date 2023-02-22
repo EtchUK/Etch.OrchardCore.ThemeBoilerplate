@@ -20,12 +20,12 @@
     /* 1 */
     article > &,
     main > & {
-        padding-left: $content-gutter-small;
-        padding-right: $content-gutter-small;
+        padding-left: var(--gutterSmall);
+        padding-right: var(--gutterSmall);
 
         @include mq($from: mobile) {
-            padding-left: $content-gutter;
-            padding-right: $content-gutter;
+            padding-left: var(--gutter);
+            padding-right: var(--gutter);
         }
 
         @include mq($from: desktop) {

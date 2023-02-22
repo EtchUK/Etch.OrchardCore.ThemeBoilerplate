@@ -7,12 +7,12 @@
  */
 
 .grid--gutter-large {
-    margin-left: -$content-gutter-large;
-    margin-right: -$content-gutter-large;
+    margin-left: -var(--gutterLarge);
+    margin-right: -var(--gutterLarge);
 
     .grid__item {
         margin-bottom: $grid-gutter-large-margin-bottom;
-        padding-left: $content-gutter-large;
-        padding-right: $content-gutter-large;
+        padding-left: var(--gutterLarge);
+        padding-right: var(--gutterLarge);
     }
 }
