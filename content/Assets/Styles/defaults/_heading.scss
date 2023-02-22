@@ -11,10 +11,6 @@ h6 {
     margin-bottom: var(--spacingText);
     margin-top: 0;
 
-    @include mq($from: mobileLarge) {
-        margin-bottom: $spacing-text-desktop;
-    }
-
     > a {
         text-decoration: none;
     }
