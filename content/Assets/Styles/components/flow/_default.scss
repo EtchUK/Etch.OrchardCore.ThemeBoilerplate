@@ -71,7 +71,7 @@
     }
 
     .constrain--wide & {
-        max-width: $content-width-wide;
+        max-width: var(--contentWidthWide);
     }
 
     .constrain--full & {

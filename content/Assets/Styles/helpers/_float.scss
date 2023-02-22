@@ -21,20 +21,20 @@
     &--left-content {
         float: left;
         margin-right: var(--spacingDefault);
-        max-width: $content-float-aligned-width;
+        max-width: var(--contentWidthFloatedContent);
     }
 
     &--right-content {
         float: right;
         margin-left: var(--spacingDefault);
-        max-width: $content-float-aligned-width;
+        max-width: var(--contentWidthFloatedContent);
     }
 
     &--left-content-tablet {
         @include mq($from: tablet) {
             float: left;
             margin-right: var(--spacingDefault);
-            max-width: $content-float-aligned-width;
+            max-width: var(--contentWidthFloatedContent);
         }
     }
 
@@ -42,7 +42,7 @@
         @include mq($from: tablet) {
             float: right;
             margin-left: var(--spacingDefault);
-            max-width: $content-float-aligned-width;
+            max-width: var(--contentWidthFloatedContent);
         }
     }
 }

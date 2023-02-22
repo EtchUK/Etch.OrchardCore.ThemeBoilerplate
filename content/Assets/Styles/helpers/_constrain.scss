@@ -23,15 +23,15 @@
 }
 
 .constrain--extra-thin {
-    max-width: $content-width-extra-thin;
+    max-width: var(--contentWidthExtraThin);
 }
 
 .constrain--thin {
-    max-width: $content-width-thin;
+    max-width: var(--contentWidthThin);
 }
 
 .constrain--wide {
-    max-width: $content-width-wide;
+    max-width: var(--contentWidthWide);
 }
 
 .constrain--full-with-gutter {
