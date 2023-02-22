@@ -1,11 +1,11 @@
-/**
+/*
  * Handles showing multiple featured items within a carousel.
  */
 
-import debounce from '../../utils/debounce';
+import debounce from "../../utils/debounce";
 
 const CSS = {
-    active: 'is-active',
+    active: "is-active",
 };
 
 const defaults = {
@@ -14,29 +14,29 @@ const defaults = {
 
 const instance = ($el: Element) => {
     const dom = {
-        $items: $el.querySelectorAll('.js-carousel-item'),
-        $track: $el.querySelector('.js-carousel-track') as HTMLElement,
-        $nextBtn: $el.querySelector('.js-next-btn'),
-        $prevBtn: $el.querySelector('.js-prev-btn'),
-        $changeBtns: $el.querySelectorAll('.js-change-to-btn'),
+        $items: $el.querySelectorAll(".js-carousel-item"),
+        $track: $el.querySelector(".js-carousel-track") as HTMLElement,
+        $nextBtn: $el.querySelector(".js-next-btn"),
+        $prevBtn: $el.querySelector(".js-prev-btn"),
+        $changeBtns: $el.querySelectorAll(".js-change-to-btn"),
     };
 
     const itemCount: number = dom.$items.length;
 
-    const configurdDuration: string | null = $el.getAttribute('data-duration');
+    const configurdDuration: string | null = $el.getAttribute("data-duration");
     let duration: number = defaults.duration;
 
     if (configurdDuration !== null) {
         duration = parseInt(configurdDuration, 10);
     }
 
-    let activeIndex: number = 0;
+    let activeIndex = 0;
     let timer: number;
 
     const changeTo = (event: Event) => {
         const index: string | null = (
             event.currentTarget as HTMLButtonElement
-        ).getAttribute('data-index');
+        ).getAttribute("data-index");
 
         if (index !== null) {
             setActive(parseInt(index, 10));
@@ -103,23 +103,23 @@ const instance = ($el: Element) => {
     };
 
     if (dom.$nextBtn) {
-        dom.$nextBtn.addEventListener('click', next);
+        dom.$nextBtn.addEventListener("click", next);
     }
 
     if (dom.$prevBtn) {
-        dom.$prevBtn.addEventListener('click', previous);
+        dom.$prevBtn.addEventListener("click", previous);
     }
 
     for (const $btn of dom.$changeBtns) {
-        $btn.addEventListener('click', changeTo);
+        $btn.addEventListener("click", changeTo);
     }
 
     window.addEventListener(
-        'resize',
+        "resize",
         debounce(() => {
             // Reset on resize
             // (as item width will otherwise cause layout issues)
-            dom.$track.style.transform = 'translateX(0)';
+            dom.$track.style.transform = "translateX(0)";
         })
     );
 
@@ -127,7 +127,7 @@ const instance = ($el: Element) => {
 };
 
 const carousel = () => {
-    const SELECTOR = '.js-carousel';
+    const SELECTOR = ".js-carousel";
 
     document.querySelectorAll(SELECTOR).forEach(($el) => {
         instance($el);

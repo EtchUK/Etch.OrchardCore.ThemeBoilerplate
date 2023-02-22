@@ -14,10 +14,11 @@
     flex-basis: 50%;
 }
 
-/**
+/*
  * 1. Using `margin-top` to make the height of the tile the same
  *    size as the width.
  */
+
 .tiles__item-skeleton {
     margin-top: 100%; /* 1. */
 }

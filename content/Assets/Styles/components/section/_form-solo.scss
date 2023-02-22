@@ -1,5 +1,5 @@
 /* ==========================================================================
-   #SECTION/FORM-SOLO
+   #SECTION/FORM SOLO
    ========================================================================== */
 
 .section--form-solo {
@@ -20,6 +20,8 @@
         padding-left: 0;
         padding-right: 0;
         width: 100%;
+
+        background: var(--colorSiteBackground);
     }
 
     .form {

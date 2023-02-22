@@ -1,17 +1,17 @@
-import { KEY_DOWN, KEY_UP, SPACE } from '../../utils/keyCode';
+import { KEY_DOWN, KEY_UP, SPACE } from "../../utils/keyCode";
 
-/**
+/*
  * Initialises the toggle nav button that's responsible for showing/hiding
  * the main menu (likely on smaller devices).
  */
 const toggleNav = () => {
-    const CSS_VISIBLE = 'is-nav-visible';
-    const SELECTOR = '.js-nav-button';
+    const CSS_VISIBLE = "is-nav-visible";
+    const SELECTOR = ".js-nav-button";
 
     const validHideKeyCodes = [KEY_UP];
     const validShowKeyCodes = [KEY_DOWN, SPACE];
 
-    const $html = document.querySelector('html') as HTMLHtmlElement;
+    const $html = document.querySelector("html") as HTMLHtmlElement;
 
     const checkKeyboardShortcutForToggle = (e: KeyboardEvent) => {
         if (validShowKeyCodes.indexOf(e.keyCode) >= 0) {
@@ -29,7 +29,7 @@ const toggleNav = () => {
         $html.classList.remove(CSS_VISIBLE);
 
         if ($el) {
-            $el.setAttribute('aria-expanded', 'false');
+            $el.setAttribute("aria-expanded", "false");
         }
     };
 
@@ -37,7 +37,7 @@ const toggleNav = () => {
         $html.classList.add(CSS_VISIBLE);
 
         if ($el) {
-            $el.setAttribute('aria-expanded', 'true');
+            $el.setAttribute("aria-expanded", "true");
         }
     };
 
@@ -60,9 +60,9 @@ const toggleNav = () => {
     document.querySelectorAll(SELECTOR).forEach(($el: Element) => {
         const $htmlElement = $el as HTMLElement;
 
-        $htmlElement.addEventListener('click', toggleVisibility);
+        $htmlElement.addEventListener("click", toggleVisibility);
         $htmlElement.addEventListener(
-            'keydown',
+            "keydown",
             checkKeyboardShortcutForToggle
         );
     });

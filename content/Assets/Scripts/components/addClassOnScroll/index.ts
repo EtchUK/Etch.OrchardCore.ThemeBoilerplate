@@ -1,8 +1,8 @@
-/**
+/*
  * Applies a class when page height has been scrolled
  */
-const SELECTOR = '.js-add-class-on-scroll';
-const defaultCSS = 'page-scrolled';
+const SELECTOR = ".js-add-class-on-scroll";
+const defaultCSS = "page-scrolled";
 let pageHeight: number;
 let $scrollElements: NodeListOf<Element>;
 
@@ -34,9 +34,9 @@ const addClassOnScroll = () => {
 
     scrollBehaviour();
 
-    document.addEventListener('scroll', scrollBehaviour);
+    document.addEventListener("scroll", scrollBehaviour);
 
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
         pageHeight = window.innerHeight;
     });
 };

@@ -1,19 +1,19 @@
-const CSS_SELECTED = 'is-selected';
+const CSS_SELECTED = "is-selected";
 
-/**
+/*
  * Reverts selected state on provided item.
  */
 const deselectItem = ($el: Element) => {
     $el.classList.remove(CSS_SELECTED);
 
-    const $anchor = $el.querySelector('a');
+    const $anchor = $el.querySelector("a");
 
     if ($anchor) {
-        $anchor.setAttribute('aria-expanded', 'false');
+        $anchor.setAttribute("aria-expanded", "false");
     }
 };
 
-/**
+/*
  * Returns whether the navigation item has any sub items.
  */
 const hasSubItems = ($el: Element): boolean => {
@@ -24,7 +24,7 @@ const hasSubItems = ($el: Element): boolean => {
     return $el.parentNode.children.length > 1;
 };
 
-/**
+/*
  * Sets the selected state on provided item.
  */
 const selectItem = ($el: Element) => {
@@ -35,10 +35,10 @@ const selectItem = ($el: Element) => {
     }
 
     $parent.classList.add(CSS_SELECTED);
-    $el.setAttribute('aria-expanded', 'true');
+    $el.setAttribute("aria-expanded", "true");
 };
 
-/**
+/*
  * Initialises a new navigation component.
  */
 const instance = ($el: Element) => {
@@ -64,20 +64,20 @@ const instance = ($el: Element) => {
         }
     };
 
-    $el.querySelectorAll('.js-nav-parent-link').forEach(($anchor: Element) => {
+    $el.querySelectorAll(".js-nav-parent-link").forEach(($anchor: Element) => {
         if (!hasSubItems($anchor)) {
             return;
         }
 
-        $anchor.addEventListener('click', onItemSelect);
+        $anchor.addEventListener("click", onItemSelect);
     });
 };
 
-/**
+/*
  * Initialises each element matching the selector.
  */
 const nav = () => {
-    const SELECTOR = '.js-nav';
+    const SELECTOR = ".js-nav";
 
     document.querySelectorAll(SELECTOR).forEach(($el: Element) => {
         instance($el);
