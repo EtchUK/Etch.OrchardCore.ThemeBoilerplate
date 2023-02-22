@@ -7,10 +7,8 @@
  *    components.
  */
 .header {
-    position: relative;
-    /* 1. */
-    z-index: var(--zIndexFront);
-    /* 1. */
+    position: relative; /* 1. */
+    z-index: var(--zIndexFront); /* 1. */
 
     background-color: var(--headerBackgroundColor);
     background-image: var(--headerBackgroundPattern);
