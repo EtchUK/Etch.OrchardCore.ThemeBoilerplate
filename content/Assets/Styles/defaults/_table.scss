@@ -49,18 +49,16 @@ table {
     th,
     td {
         display: block;
-        padding-bottom: $table-cell-padding-vertical-mobile;
+        padding-bottom: var(--tableCellPaddingVertical);
         padding-left: var(--tableCellPaddingHorizontal);
         padding-right: var(--tableCellPaddingHorizontal);
-        padding-top: $table-cell-padding-vertical-mobile;
+        padding-top: var(--tableCellPaddingVertical);
 
         text-align: right;
 
         @include mq($from: tablet) {
             display: table-cell;
-            padding-bottom: $table-cell-padding-vertical;
             padding-right: 0;
-            padding-top: $table-cell-padding-vertical;
             vertical-align: top;
 
             text-align: left;
