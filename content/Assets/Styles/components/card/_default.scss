@@ -2,7 +2,7 @@
    #CARD/DEFAULT
    ========================================================================== */
 
-@use 'sass:math';
+@use "sass:math";
 
 /*
  * 1. Force 4:3 aspect ratio on media overlay cards
@@ -51,7 +51,7 @@
             position: absolute;
             width: 100%;
 
-            z-index: 1;
+            z-index: var(--zIndexDefault);
         }
 
         &-image {
