@@ -30,7 +30,8 @@
         touch-action: manipulation;
 
         &:before {
-            border: var(--formBorderSize) solid var(--colorTextLight);
+            border: var(--formFieldBorderWidth) solid
+                var(--formFieldBorderColor);
             box-sizing: border-box;
             height: var(--formCheckboxHeight);
             left: 0;
@@ -38,12 +39,20 @@
             top: 0;
             width: var(--formCheckboxWidth);
 
-            background: transparent;
+            background: var(--formFieldBackgroundColor);
 
             content: "";
+
+            .inverted & {
+                border-color: var(--formFieldBorderColorInverted);
+                background: var(--formFieldBackgroundColorInverted);
+            }
         }
 
         &:after {
+            border-width: var(--formCheckboxLabelAfterBorderWidth);
+            border: solid;
+
             height: var(--formCheckboxLabelAfterHeight);
             left: var(--formCheckboxLabelAfterXPos);
             position: absolute;
@@ -51,13 +60,16 @@
             width: var(--formCheckboxLabelAfterWidth);
 
             background: transparent;
-            border: solid;
-            border-width: var(--formCheckboxLabelAfterBorderWidth);
-            border-top-color: transparent;
+            border-color: var(--formFieldBorderColor);
+
             transform: rotate(-45deg);
             opacity: 0;
 
             content: "";
+
+            .inverted & {
+                border-color: var(--formFieldBorderColorInverted);
+            }
         }
     }
 
@@ -78,9 +90,13 @@
             opacity: 1;
         }
 
-        /* Change checkbox border colour when checked */
+        /* Change checkbox border colour when checked, if desired */
         &:checked + .checkboxes__label:before {
-            border-color: var(--colorTextDefault);
+            border-color: var(--formFieldBorderColor);
+
+            .inverted & {
+                border-color: var(--formFieldBorderColorInverted);
+            }
         }
 
         /* Show focus colour */

@@ -3,7 +3,15 @@
    ========================================================================== */
 
 :root {
-    --formBorderSize: var(--borderWidth);
-    --formElementPaddingHorizontal: 0.5rem;
-    --formElementPaddingVertical: 0.5rem;
+    --formFieldBackgroundColor: transparent;
+    --formFieldBackgroundColorInverted: var(--formFieldBackgroundColor);
+    --formFieldBorderColor: var(--colorTextDefault);
+    --formFieldBorderColorInverted: var(--colorTextInverted);
+    --formFieldBorderWidth: var(--borderWidth);
+    --formFieldFocusBoxShadowBlur: 0.6rem;
+    --formFieldFocusBoxShadowSpread: var(--formFieldBorderWidth);
+    --formFieldPaddingHorizontal: 0.5rem;
+    --formFieldPaddingVertical: 0.5rem;
+    --formFieldTextColor: var(--colorTextDefault);
+    --formFieldTextColorInverted: var(--colorTextInverted);
 }

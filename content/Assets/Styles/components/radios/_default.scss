@@ -30,7 +30,8 @@
         touch-action: manipulation;
 
         &:before {
-            border: var(--formBorderSize) solid var(--colorTextLight);
+            border: var(--formFieldBorderWidth) solid
+                var(--formFieldBorderColor);
             box-sizing: border-box;
             height: var(--formRadioHeight);
             left: 0;
@@ -38,15 +39,20 @@
             top: 0;
             width: var(--formRadioWidth);
 
-            background: transparent;
+            background: var(--formFieldBackgroundColor);
             border-radius: 50%;
 
             content: "";
+
+            .inverted & {
+                border-color: var(--formFieldBorderColorInverted);
+                background: var(--formFieldBackgroundColorInverted);
+            }
         }
 
         &:after {
             border: var(--formRadioLabelAfterBorderWidth) solid
-                var(--colorTextDefault);
+                var(--formFieldBorderColor);
             height: 0;
             left: var(--formRadioLabelAfterXPos);
             position: absolute;
@@ -58,6 +64,10 @@
             opacity: 0;
 
             content: "";
+
+            .inverted & {
+                border-color: var(--formFieldBorderColorInverted);
+            }
         }
     }
 
@@ -78,9 +88,13 @@
             opacity: 1;
         }
 
-        /* Change radio border colour when checked */
+        /* Change radio border colour when checked, if desired */
         &:checked + .radios__label:before {
-            border-color: var(--colorTextDefault);
+            border-color: var(--formFieldBorderColor);
+
+            .inverted & {
+                border-color: var(--formFieldBorderColorInverted);
+            }
         }
 
         /* Show focus colour */
