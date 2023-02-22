@@ -3,11 +3,19 @@
    ========================================================================== */
 
 select {
-    border: var(--formBorderSize) solid var(--colorTextLight);
+    border: var(--formFieldBorderWidth) solid var(--colorTextLight);
     display: block;
-    padding: var(--formElementPaddingVertical)
-        var(--formElementPaddingHorizontal);
+    padding: var(--formFieldPaddingVertical) var(--formFieldPaddingHorizontal);
     width: auto;
+
+    background: var(--formFieldBackgroundColor);
+    color: var(--formFieldTextColor);
+
+    .inverted & {
+        border-color: var(--formFieldBorderColorInverted);
+        background: var(--formFieldBackgroundColorInverted);
+        color: var(--formFieldTextColorInverted);
+    }
 
     &:focus {
         @include focus-form-element;

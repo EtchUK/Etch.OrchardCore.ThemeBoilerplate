@@ -7,9 +7,7 @@
  */
 
 @mixin focus-form-element {
-    $box-shadow-blur: 6px;
-    $box-shadow-spread: 1px;
-
-    border: var(--formBorderSize) solid var(--colorTextDefault);
-    box-shadow: 0 0 $box-shadow-blur $box-shadow-spread var(--colorPrimary);
+    border: var(--formFieldBorderWidth) solid var(--colorTextDefault);
+    box-shadow: 0 0 var(--formFieldFocusBoxShadowBlur)
+        var(--formFieldFocusBoxShadowSpread) var(--colorPrimary);
 }

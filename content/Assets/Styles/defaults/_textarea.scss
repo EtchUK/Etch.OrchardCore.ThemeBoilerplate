@@ -3,15 +3,24 @@
    ========================================================================== */
 
 textarea {
-    border: var(--formBorderSize) solid var(--colorTextLight);
+    border: var(--formFieldBorderWidth) solid var(--formFieldBorderColor);
     display: block;
     min-height: var(--textareaMinHeight);
-    padding: var(--formElementPaddingVertical)
-        var(--formElementPaddingHorizontal);
+    padding: var(--formFieldPaddingVertical) var(--formFieldPaddingHorizontal);
     width: 100%;
 
+    background: var(--formFieldBackgroundColor);
+
+    color: var(--formFieldTextColor);
+
+    .inverted & {
+        border-color: var(--formFieldBorderColorInverted);
+        background: var(--formFieldBackgroundColorInverted);
+        color: var(--formFieldTextColorInverted);
+    }
+
     .has-error & {
-        border: var(--formBorderSize) solid var(--colorError);
+        border: var(--formFieldBorderWidth) solid var(--colorError);
     }
 
     &:focus {

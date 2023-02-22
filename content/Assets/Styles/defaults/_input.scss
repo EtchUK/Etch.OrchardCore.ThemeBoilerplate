@@ -3,22 +3,28 @@
    ========================================================================== */
 
 input {
-    border: var(--formBorderSize) solid var(--colorTextLight);
+    border: var(--formFieldBorderWidth) solid var(--formFieldBorderColor);
     display: block;
-    padding: var(--formElementPaddingVertical)
-        var(--formElementPaddingHorizontal);
+    padding: var(--formFieldPaddingVertical) var(--formFieldPaddingHorizontal);
     width: 100%;
 
-    background-color: transparent;
+    background-color: var(--formFieldBackgroundColor);
     outline: none;
 
     text-indent: 0;
+    color: var(--formFieldTextColor);
+
+    .inverted & {
+        border-color: var(--formFieldBorderColorInverted);
+        background-color: var(--formFieldBackgroundColorInverted);
+        color: var(--formFieldTextColorInverted);
+    }
 
     &:focus {
         @include focus-form-element;
     }
 
-    &[type='file'] {
+    &[type="file"] {
         border: 0;
     }
 }
