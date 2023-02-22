@@ -3,5 +3,5 @@
    ========================================================================== */
 
 .table--bordered {
-    border: $table-border-width solid var(--colorGrey);
+    border: var(--tableBorderWidth) solid var(--colorGrey);
 }

@@ -2,8 +2,13 @@
    #TABLE
    ========================================================================== */
 
-$table-border-width: 0.1rem;
+:root {
+    --tableBorderWidth: var(--borderWidth);
 
-$table-cell-padding-horizontal: 2rem;
-$table-cell-padding-vertical: 1.1rem;
-$table-cell-padding-vertical-mobile: 0.5rem;
+    --tableCellPaddingHorizontal: 2rem;
+    --tableCellPaddingVertical: 0.5rem;
+
+    @include mq($from: tablet) {
+        --tableCellPaddingVertical: 1.1rem;
+    }
+}

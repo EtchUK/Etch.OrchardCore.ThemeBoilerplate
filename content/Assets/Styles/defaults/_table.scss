@@ -22,7 +22,7 @@ table {
     }
 
     tr {
-        border-bottom: $table-border-width solid var(--colorGrey);
+        border-bottom: var(--tableBorderWidth) solid var(--colorGrey);
         display: block;
         margin-bottom: $spacing-default;
         padding-bottom: $spacing-default;
@@ -38,7 +38,7 @@ table {
             content: attr(data-label);
             float: left;
             font-weight: bold;
-            margin-right: $table-cell-padding-horizontal;
+            margin-right: var(--tableCellPaddingHorizontal);
 
             @include mq($from: tablet) {
                 display: none;
@@ -50,8 +50,8 @@ table {
     td {
         display: block;
         padding-bottom: $table-cell-padding-vertical-mobile;
-        padding-left: $table-cell-padding-horizontal;
-        padding-right: $table-cell-padding-horizontal;
+        padding-left: var(--tableCellPaddingHorizontal);
+        padding-right: var(--tableCellPaddingHorizontal);
         padding-top: $table-cell-padding-vertical-mobile;
 
         text-align: right;
@@ -67,7 +67,7 @@ table {
         }
 
         &:last-child {
-            padding-right: $table-cell-padding-horizontal;
+            padding-right: var(--tableCellPaddingHorizontal);
         }
     }
 }
