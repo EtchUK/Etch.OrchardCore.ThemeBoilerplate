@@ -11,14 +11,14 @@
 
     display: flex;
     flex-wrap: wrap;
-    margin-left: -var(--gutter);
-    margin-right: -var(--gutter);
+    margin-left: calc(var(--gutter) * -1);
+    margin-right: calc(var(--gutter) * -1);
 
     list-style: none;
 }
 
 .grid__item {
-    margin-bottom: $grid-default-item-margin-bottom;
+    margin-bottom: var(--gridItemMarginBottom);
     padding-left: var(--gutter);
     padding-right: var(--gutter);
     width: 100%;

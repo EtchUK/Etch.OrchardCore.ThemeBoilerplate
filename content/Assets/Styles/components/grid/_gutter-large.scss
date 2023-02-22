@@ -7,11 +7,11 @@
  */
 
 .grid--gutter-large {
-    margin-left: -var(--gutterLarge);
-    margin-right: -var(--gutterLarge);
+    margin-left: calc(var(--gutterLarge) * -1);
+    margin-right: calc(var(--gutterLarge) * -1);
 
     .grid__item {
-        margin-bottom: $grid-gutter-large-margin-bottom;
+        margin-bottom: var(--gridItemMarginBottomLarge);
         padding-left: var(--gutterLarge);
         padding-right: var(--gutterLarge);
     }
