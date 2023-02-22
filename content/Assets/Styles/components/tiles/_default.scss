@@ -5,7 +5,7 @@
 .tiles {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 calc(var(--tilesGap) * -1) $spacing-default;
+    margin: 0 calc(var(--tilesGap) * -1) var(--spacingDefault);
 }
 
 .tiles__item {

@@ -4,14 +4,14 @@
 
 .margin {
     &--bottom {
-        margin-bottom: $spacing-default;
+        margin-bottom: var(--spacingDefault);
 
         &-large {
-            margin-bottom: $spacing-large;
+            margin-bottom: var(--spacingLarge);
         }
 
         &-small {
-            margin-bottom: $spacing-small;
+            margin-bottom: var(--spacingSmall);
         }
 
         &-none {
@@ -20,14 +20,14 @@
     }
 
     &--left {
-        margin-left: $spacing-default;
+        margin-left: var(--spacingDefault);
 
         &-large {
-            margin-left: $spacing-large;
+            margin-left: var(--spacingLarge);
         }
 
         &-small {
-            margin-left: $spacing-small;
+            margin-left: var(--spacingSmall);
         }
 
         &-none {
@@ -40,14 +40,14 @@
     }
 
     &--right {
-        margin-right: $spacing-default;
+        margin-right: var(--spacingDefault);
 
         &-large {
-            margin-right: $spacing-large;
+            margin-right: var(--spacingLarge);
         }
 
         &-small {
-            margin-right: $spacing-small;
+            margin-right: var(--spacingSmall);
         }
 
         &-none {
@@ -60,14 +60,14 @@
     }
 
     &--top {
-        margin-top: $spacing-default;
+        margin-top: var(--spacingDefault);
 
         &-large {
-            margin-top: $spacing-large;
+            margin-top: var(--spacingLarge);
         }
 
         &-small {
-            margin-top: $spacing-small;
+            margin-top: var(--spacingSmall);
         }
 
         &-none {
@@ -78,14 +78,14 @@
 
 .padding {
     &--bottom {
-        padding-bottom: $spacing-default;
+        padding-bottom: var(--spacingDefault);
 
         &-large {
-            padding-bottom: $spacing-large;
+            padding-bottom: var(--spacingLarge);
         }
 
         &-small {
-            padding-bottom: $spacing-small;
+            padding-bottom: var(--spacingSmall);
         }
 
         &-none {
@@ -94,14 +94,14 @@
     }
 
     &--left {
-        padding-left: $spacing-default;
+        padding-left: var(--spacingDefault);
 
         &-large {
-            padding-left: $spacing-large;
+            padding-left: var(--spacingLarge);
         }
 
         &-small {
-            padding-left: $spacing-small;
+            padding-left: var(--spacingSmall);
         }
 
         &-none {
@@ -114,14 +114,14 @@
     }
 
     &--right {
-        padding-right: $spacing-default;
+        padding-right: var(--spacingDefault);
 
         &-large {
-            padding-right: $spacing-large;
+            padding-right: var(--spacingLarge);
         }
 
         &-small {
-            padding-right: $spacing-small;
+            padding-right: var(--spacingSmall);
         }
 
         &-none {
@@ -134,14 +134,14 @@
     }
 
     &--top {
-        padding-top: $spacing-default;
+        padding-top: var(--spacingDefault);
 
         &-large {
-            padding-top: $spacing-large;
+            padding-top: var(--spacingLarge);
         }
 
         &-small {
-            padding-top: $spacing-small;
+            padding-top: var(--spacingSmall);
         }
 
         &-none {

@@ -3,13 +3,13 @@
    ========================================================================== */
 
 .logos {
-    margin-bottom: $spacing-default;
+    margin-bottom: var(--spacingDefault);
 
     &__title {
         display: block;
-        margin: $spacing-default 0;
+        margin: var(--spacingDefault) 0;
 
-        @include text-heading('H5');
+        @include text-heading("H5");
     }
 
     &__items {

@@ -9,7 +9,7 @@
     --buttonFontSize: var(--fontSizeBase);
     --buttonFontWeight: normal;
     --buttonLineHeight: var(--lineHeightDefault);
-    --buttonPaddingHorizontal: #{$spacing-large};
-    --buttonPaddingVertical: #{$spacing-default};
+    --buttonPaddingHorizontal: var(--spacingLarge);
+    --buttonPaddingVertical: var(--spacingDefault);
     --buttonTextTransform: none;
 }

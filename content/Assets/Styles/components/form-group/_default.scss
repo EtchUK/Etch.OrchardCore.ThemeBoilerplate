@@ -9,6 +9,6 @@
  */
 
 .form-group {
-    margin-bottom: $spacing-large;
+    margin-bottom: var(--spacingLarge);
     width: 100%;
 }

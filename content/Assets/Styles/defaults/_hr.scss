@@ -11,7 +11,7 @@ hr {
     display: block;
     height: 1px;
     margin-top: 0;
-    margin-bottom: $spacing-default;
+    margin-bottom: var(--spacingDefault);
 
     background-color: var(--colorGrey);
 

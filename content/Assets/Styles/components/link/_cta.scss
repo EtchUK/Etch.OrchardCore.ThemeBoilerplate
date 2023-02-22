@@ -4,10 +4,10 @@
 
 .link--cta {
     &-large {
-        padding-bottom: $spacing-small;
-        padding-left: $spacing-default;
-        padding-right: $spacing-default;
-        padding-top: $spacing-small;
+        padding-bottom: var(--spacingSmall);
+        padding-left: var(--spacingDefault);
+        padding-right: var(--spacingDefault);
+        padding-top: var(--spacingSmall);
 
         font-size: var(--fontSizeH3);
     }

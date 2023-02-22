@@ -23,7 +23,7 @@
     }
 
     .form {
-        padding: $spacing-large;
+        padding: var(--spacingLarge);
 
         background-color: var(--colorWhite);
     }

@@ -5,7 +5,7 @@
 .dictionary {
     &__item {
         display: block;
-        margin-bottom: $spacing-default;
+        margin-bottom: var(--spacingDefault);
     }
 
     &__key {

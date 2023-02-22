@@ -5,7 +5,7 @@
 .editor-toolbar {
     bottom: 0;
     left: 0;
-    padding: $spacing-default;
+    padding: var(--spacingDefault);
     position: fixed;
     width: 100%;
     z-index: var(--editorToolbarZIndex);

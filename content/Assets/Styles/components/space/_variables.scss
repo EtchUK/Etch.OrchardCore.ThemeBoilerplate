@@ -3,8 +3,8 @@
    ========================================================================== */
 
 :root {
-    --spaceSmall: #{$spacing-small};
-    --spaceDefault: #{$spacing-default};
-    --spaceLarge: #{$spacing-large};
-    --spaceXLarge: #{$spacing-x-large};
+    --spaceSmall: #{var(--spacingSmall)};
+    --spaceDefault: var(--spacingDefault);
+    --spaceLarge: var(--spacingLarge);
+    --spaceXLarge: #{var(--spacingXLarge)};
 }

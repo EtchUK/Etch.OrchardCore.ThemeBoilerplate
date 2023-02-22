@@ -5,6 +5,6 @@
 :root {
     --groupBackgroundColor: transparent;
     --groupBackgroundPattern: none;
-    --groupPaddedPadding: #{$spacing-default};
-    --groupPaddedPaddingLarge: #{$spacing-large};
+    --groupPaddedPadding: var(--spacingDefault);
+    --groupPaddedPaddingLarge: var(--spacingLarge);
 }

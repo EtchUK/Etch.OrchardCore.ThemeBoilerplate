@@ -15,7 +15,7 @@
  * 1. Position indicators above the line effect containers.
  */
 .carousel__indicators {
-    bottom: $spacing-large;
+    bottom: var(--spacingLarge);
     display: flex;
     left: 0;
     justify-content: center;
@@ -31,7 +31,7 @@
 
 .carousel__indicator {
     height: var(--carouselIndicatorSize);
-    margin-right: $spacing-default;
+    margin-right: var(--spacingDefault);
     width: var(--carouselIndicatorSize);
 
     &:last-child {
@@ -101,8 +101,8 @@
 
     &:focus,
     &:hover {
-        padding-left: $spacing-small;
-        transform: translateX($spacing-small) translateY(-50%);
+        padding-left: var(--spacingSmall);
+        transform: translateX(var(--spacingSmall)) translateY(-50%);
     }
 
     @include mq($from: tablet) {
@@ -110,8 +110,8 @@
 
         &:focus,
         &:hover {
-            padding-left: $spacing-default;
-            transform: translateX($spacing-default) translateY(-50%);
+            padding-left: var(--spacingDefault);
+            transform: translateX(var(--spacingDefault)) translateY(-50%);
         }
     }
 }
@@ -121,8 +121,8 @@
 
     &:focus,
     &:hover {
-        padding-right: $spacing-small;
-        transform: translateX(-$spacing-small) translateY(-50%);
+        padding-right: var(--spacingSmall);
+        transform: translateX(-var(--spacingSmall)) translateY(-50%);
     }
 
     @include mq($from: tablet) {
@@ -130,8 +130,9 @@
 
         &:focus,
         &:hover {
-            padding-right: $spacing-default;
-            transform: translateX(-$spacing-default) translateY(-50%);
+            padding-right: var(--spacingDefault);
+            transform: translateX(calc(var(--spacingDefault) * -1))
+                translateY(-50%);
         }
     }
 }
@@ -170,16 +171,16 @@
 }
 
 .carousel__item-content {
-    padding: $spacing-large;
+    padding: var(--spacingLarge);
 
     opacity: 0;
-    transform: translateX(-$spacing-large);
+    transform: translateX(-var(--spacingLarge));
     transition: opacity var(--carouselRevealDuration) ease-in-out,
         transform var(--carouselRevealDuration) ease-in-out;
     transition-delay: var(--carouselRevealDuration);
 
     @include mq($from: tablet) {
-        padding: $spacing-x-large;
+        padding: var(--spacingXLarge);
     }
 
     .is-active & {

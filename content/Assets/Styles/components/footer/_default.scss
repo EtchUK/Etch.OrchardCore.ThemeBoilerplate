@@ -65,9 +65,9 @@
 
         img {
             display: block;
-            margin-bottom: $spacing-large;
-            margin-right: $spacing-large;
-            margin-top: $spacing-large;
+            margin-bottom: var(--spacingLarge);
+            margin-right: var(--spacingLarge);
+            margin-top: var(--spacingLarge);
 
             @include mq($from: desktopSmall) {
                 margin-top: 0;

@@ -6,7 +6,7 @@
 
 figure {
     position: relative;
-    margin: 0 0 $spacing-default 0;
+    margin: 0 0 var(--spacingDefault) 0;
 
     img,
     picture {
@@ -16,7 +16,7 @@ figure {
     }
 
     figcaption {
-        padding-top: $spacing-small;
+        padding-top: var(--spacingSmall);
 
         font-style: italic;
         text-align: center;
