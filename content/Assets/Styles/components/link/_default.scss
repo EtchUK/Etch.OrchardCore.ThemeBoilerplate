@@ -1,0 +1,60 @@
+/* ==========================================================================
+   #LINK/DEFAULT
+   ========================================================================== */
+
+/*
+ * 1. Re-usable link styles - change in one place (here) and it affects both
+ *    .link component and anchor defaults
+ * 2. Re-usable hover states - change in one place (here) and it affects all 
+ *    link scenarios
+ * 3. The link styles can be applied to non-link elements - usually a fake link
+ *    inside an existing anchor tag (e.g a linked card). This applies hover
+ *    behaviour for those scenarios
+ */
+
+/* 1 */
+%link-styles {
+    color: var(--linkColor);
+    text-decoration: underline;
+
+    &:hover {
+        @extend %link-hover-styles;
+    }
+
+    .inverted & {
+        color: var(--linkColorInverted);
+
+        &:hover {
+            @extend %link-hover-styles-inverted;
+        }
+    }
+}
+
+/* 2 */
+%link-hover-styles {
+    color: var(--linkColorHover);
+    text-decoration: none;
+}
+
+%link-hover-styles-inverted {
+    color: var(--linkColorInvertedHover);
+    text-decoration: none;
+}
+
+.link {
+    @extend %link;
+}
+
+/* 3 */
+a:hover .link {
+    @extend %link-hover-styles;
+
+    .inverted & {
+        @extend %link-hover-styles-inverted;
+    }
+}
+
+/* 3 */
+a.inverted:hover .link {
+    @extend %link-hover-styles-inverted;
+}

@@ -2,12 +2,11 @@
    #LINK
    ========================================================================== */
 
-@import 'variables';
+@import "variables";
 
-@import 'breakout';
-@import 'cta';
-@import 'grow';
-@import 'plain';
-@import 'shrink';
-@import 'slide';
-@import 'text';
+@import "default";
+
+@import "breakout";
+@import "emphasis";
+@import "plain-text";
+@import "underline-animation";

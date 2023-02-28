@@ -1,0 +1,16 @@
+/* ==========================================================================
+   #LINK/EMPHASISS
+   ========================================================================== */
+
+/* 
+ * 1. Necessary because of nested tag styles in nav component 
+ */
+
+.link--emphasis {
+    font-weight: var(--linkEmphasisFontWeight);
+    text-transform: var(--linkEmphasisTextTransform);
+
+    &:hover {
+        color: var(--colorPrimaryActive) !important; /* 1 */
+    }
+}

@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .footer {
-    .nav__item a {
+    .nav__item-link--default {
         font-size: var(--footerFontSize);
         font-weight: var(--navFooterFontWeight);
         text-transform: var(--navFooterTextTransform);
@@ -15,7 +15,7 @@
 }
 
 .footer--inverted {
-    .nav__item a {
+    .nav__item-link--default {
         color: var(--footerColorInverted);
 
         svg {
@@ -33,9 +33,9 @@
     }
 
     .nav__item--parent {
-        > a {
+        > .nav__item-link {
             &:after {
-                background-image: url('../content/icon-chevron-inverted.svg');
+                background-image: url("../content/icon-chevron-inverted.svg");
             }
         }
     }
