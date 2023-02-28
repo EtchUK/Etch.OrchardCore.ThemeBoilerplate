@@ -12,7 +12,7 @@
     --navAnchorPaddingTablet: 0.5rem 1rem;
     --navAnchorPaddingTop: 1.5rem;
 
-    --navBorderWidth: 0.4rem;
+    --navBorderWidth: var(--borderWidth);
     --navBorderColor: #d7d7d7;
     --navBorderColorLight: #eaeaea;
     --navColor: var(--colorTextDefault);

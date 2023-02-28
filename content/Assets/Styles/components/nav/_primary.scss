@@ -3,7 +3,8 @@
    ========================================================================== */
 
 .nav--primary {
-    .nav__item a {
+    .nav__item .link,
+    .nav__item-link--default {
         @include mq($from: tablet) {
             padding: var(--navPrimaryAnchorPaddingDesktop);
         }

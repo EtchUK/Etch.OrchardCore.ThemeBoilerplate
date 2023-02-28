@@ -1,0 +1,18 @@
+/* ==========================================================================
+   #LINK/PLAIN TEXT
+   ========================================================================== */
+
+/*
+ * 1. !important required to override nesting - e.g inversion, or nested .link
+ *    inside anchor tags
+ */
+
+.link--plain-text {
+    color: inherit !important;
+    text-decoration: none !important;
+
+    &:hover {
+        color: inherit !important;
+        text-decoration: none !important;
+    }
+}

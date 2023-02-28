@@ -1,0 +1,145 @@
+/* ==========================================================================
+   #LINK/UNDERLINE ANIMATION
+   ========================================================================== */
+
+.link--underline-animation {
+    text-decoration: none;
+
+    &--grow {
+        &-center {
+            &:before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &-ltr {
+            &:before {
+                left: 0;
+            }
+        }
+
+        &-rtl {
+            &:before {
+                right: 0;
+            }
+        }
+
+        &-center,
+        &-ltr,
+        &-rtl {
+            position: relative;
+
+            text-decoration: none;
+
+            &:before {
+                bottom: 0;
+                content: "";
+                height: var(--linkUnderlineHeight);
+                position: absolute;
+                width: 0;
+
+                background-color: var(--linkColor);
+
+                transition: width var(--linkTransitionDuration)
+                    var(--linkTransitionTiming);
+
+                .inverted & {
+                    background-color: var(--linkColorInverted);
+                }
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &--shrink {
+        &-center {
+            &:before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &-ltr {
+            &:before {
+                right: 0;
+            }
+        }
+
+        &-rtl {
+            &:before {
+                left: 0;
+            }
+        }
+
+        &-center,
+        &-ltr,
+        &-rtl {
+            position: relative;
+
+            text-decoration: none;
+
+            &:before {
+                bottom: 0;
+                content: "";
+                height: var(--linkUnderlineHeight);
+                position: absolute;
+                width: 100%;
+
+                background-color: var(--linkColor);
+
+                transition: width var(--linkTransitionDuration)
+                    var(--linkTransitionTiming);
+
+                .inverted & {
+                    background-color: var(--linkColorInverted);
+                }
+            }
+
+            &:hover {
+                &:before {
+                    width: 0;
+                }
+            }
+        }
+    }
+
+    &--slide {
+        position: relative;
+
+        &:before {
+            content: "";
+            height: var(--linkUnderlineHeight);
+            left: 0;
+            position: absolute;
+            top: 100%;
+            transform: translateY(var(--linkUnderlineSlideTransformDistance));
+            width: 100%;
+
+            background-color: var(--linkColor);
+            opacity: 0;
+
+            transition: opacity var(--linkTransitionDuration)
+                    var(--linkTransitionTiming),
+                transform var(--linkTransitionDuration)
+                    var(--linkTransitionTiming);
+
+            .inverted & {
+                background-color: var(--linkColorInverted);
+            }
+        }
+
+        &:hover {
+            &:before {
+                transform: translateY(0px);
+
+                opacity: 1;
+            }
+        }
+    }
+}

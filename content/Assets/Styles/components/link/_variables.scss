@@ -3,7 +3,14 @@
    ========================================================================== */
 
 :root {
-    --linkLineHeight: 1px;
-
-    --linkTransitionDuration: 0.3s;
+    --linkColor: var(--colorPrimary);
+    --linkColorHover: var(--colorPrimaryActive);
+    --linkColorInverted: var(--colorTextInverted);
+    --linkColorInvertedHover: var(--colorPrimaryActive);
+    --linkEmphasisFontWeight: var(--fontWeightBold);
+    --linkEmphasisTextTransform: uppercase;
+    --linkTransitionDuration: var(--animationDuration);
+    --linkTransitionTiming: var(--animationTiming);
+    --linkUnderlineHeight: var(--borderWidth);
+    --linkUnderlineSlideTransformDistance: 1rem;
 }

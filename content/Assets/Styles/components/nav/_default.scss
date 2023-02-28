@@ -2,6 +2,15 @@
    #NAV/DEFAULT
    ========================================================================== */
 
+/*
+ * 1. Some styles (e.g spacing between items) should apply to any .link in the
+ *    navigation, including e.g link--emphasis, but not apply to e.g a .btn if
+ *    used in the same navigation.
+ *    Meanwhile, other styles, such as color, should only apply if no style is 
+ *    specified - e.g, if link--emphasis is used, the default will not apply 
+ *    and override the color, weight, or transform.
+ */
+
 .nav {
     display: block;
     position: relative;
@@ -13,9 +22,47 @@
     flex-direction: column;
     width: 100%;
 
+    .section--center &,
+    .align--center & {
+        justify-content: center;
+    }
+
+    .section--right &,
+    .align--right & {
+        justify-content: flex-end;
+    }
+
+    .nav--display-mobile-horizontal & {
+        flex-flow: row wrap;
+    }
+
+    .nav--display-mobile-vertical & {
+        flex-direction: column;
+    }
+
+    @include mq($from: desktopSmall) {
+        flex-flow: row wrap;
+
+        .nav--display-horizontal & {
+            flex-flow: row wrap;
+        }
+
+        .nav--display-vertical & {
+            flex-direction: column;
+        }
+    }
+}
+
+%nav-item-link-spacing {
+    display: block;
+
+    padding-bottom: var(--navAnchorPaddingBottom);
+    padding-left: var(--gutterSmall);
+    padding-right: var(--gutterSmall);
+    padding-top: var(--navAnchorPaddingTop);
+
     @include mq($from: tablet) {
-        display: flex;
-        flex-direction: row;
+        padding: var(--navAnchorPaddingTablet);
     }
 }
 
@@ -31,59 +78,57 @@
         border-bottom: 0;
     }
 
-    a {
-        display: block;
-        padding-bottom: var(--navAnchorPaddingBottom);
-        padding-left: var(--gutterSmall);
-        padding-right: var(--gutterSmall);
-        padding-top: var(--navAnchorPaddingTop);
+    /* 1 */
+    .link {
+        @extend %nav-item-link-spacing;
+    }
+}
 
-        color: var(--navColor);
-        font-size: var(--navFontSize);
-        font-weight: var(--navFontWeight);
-        text-decoration: none;
-        text-transform: var(--navTextTransform);
+/* 1 */
+.nav__item-link--default {
+    @extend %nav-item-link-spacing;
+
+    color: var(--navColor);
+    font-size: var(--navFontSize);
+    font-weight: var(--navFontWeight);
+    text-decoration: none;
+    text-transform: var(--navTextTransform);
+
+    svg {
+        fill: var(--navColor);
+    }
+
+    &:focus,
+    &:hover {
+        color: var(--navColorActive);
+        text-decoration: var(--navTextDecorationHover);
 
         svg {
-            fill: var(--navColor);
+            fill: var(--navColorActive);
         }
+    }
 
-        @include mq($from: tablet) {
-            padding: var(--navAnchorPaddingTablet);
+    &.is-current-page {
+        color: var(--navColorActive);
+
+        svg {
+            fill: var(--navColorActive);
         }
+    }
 
-        &.is-current-page {
-            color: var(--navColorActive);
+    .inverted & {
+        color: var(--navColorInverted);
 
-            svg {
-                fill: var(--navColorActive);
-            }
-        }
-
-        .inverted & {
-            color: var(--navColorInverted);
-
-            svg {
-                fill: var(--navColorInverted);
-            }
-
-            &:focus,
-            &:hover {
-                color: var(--navColorInvertedActive);
-
-                svg {
-                    fill: var(--navColorInvertedActive);
-                }
-            }
+        svg {
+            fill: var(--navColorInverted);
         }
 
         &:focus,
         &:hover {
-            color: var(--navColorActive);
-            text-decoration: var(--navTextDecorationHover);
+            color: var(--navColorInvertedActive);
 
             svg {
-                fill: var(--navColorActive);
+                fill: var(--navColorInvertedActive);
             }
         }
     }
@@ -101,7 +146,7 @@
         fill: var(--navColor);
     }
 
-    a:hover svg {
+    .nav__item-link:hover svg {
         fill: var(--navColorActive);
     }
 
@@ -131,7 +176,7 @@
         }
     }
 
-    a {
+    .nav__item-link {
         padding-left: var(--gutter);
         padding-right: var(--gutter);
 
