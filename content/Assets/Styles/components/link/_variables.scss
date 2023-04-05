@@ -2,15 +2,14 @@
    #LINK/VARIABLES
    ========================================================================== */
 
+/*
+ * Global link variables, used by other components as well as this one, are 
+ * defined in variables/_link.scss
+ */
+
 :root {
-    --linkColor: var(--colorPrimary);
-    --linkColorHover: var(--colorPrimaryActive);
-    --linkColorInverted: var(--colorTextInverted);
-    --linkColorInvertedHover: var(--colorPrimaryActive);
     --linkEmphasisFontWeight: var(--fontWeightBold);
     --linkEmphasisTextTransform: uppercase;
-    --linkTransitionDuration: var(--animationDuration);
-    --linkTransitionTiming: var(--animationTiming);
     --linkUnderlineHeight: var(--borderWidth);
     --linkUnderlineSlideTransformDistance: 1rem;
 }
