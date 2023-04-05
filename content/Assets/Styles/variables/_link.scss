@@ -1,0 +1,12 @@
+/* ==========================================================================
+   #LINK
+   ========================================================================== */
+
+:root {
+    --linkColor: var(--colorPrimary);
+    --linkColorHover: var(--colorPrimaryActive);
+    --linkColorInverted: var(--colorTextInverted);
+    --linkColorInvertedHover: var(--colorPrimaryActive);
+    --linkTransitionDuration: var(--animationDuration);
+    --linkTransitionTiming: var(--animationTiming);
+}

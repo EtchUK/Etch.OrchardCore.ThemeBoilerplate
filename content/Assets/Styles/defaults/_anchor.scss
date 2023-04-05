@@ -3,9 +3,11 @@
    ========================================================================== */
 
 /*
- * Base styling for anchor links. See component 'link' for modifying further
+ *    Base styling for anchor links. 
+ *
+ * 1. Re-usable link styles can be found in tools/_link-styles.scss
  */
 
 a {
-    @extend %link-styles;
+    @extend %link-styles; /* 1 */
 }
