@@ -38,13 +38,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Media" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Menu" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Themes" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Users" Version="1.4.0" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Media" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Menu" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Themes" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Users" Version="1.5.0" />
   </ItemGroup>
 
   <ItemGroup>
