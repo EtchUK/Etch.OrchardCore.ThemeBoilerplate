@@ -11,6 +11,7 @@ trigger:
 
 variables:
   buildConfiguration: "Release"
+  VersionNumber: "1.0.0"
 
 stages:
   - stage: build
@@ -22,6 +23,21 @@ stages:
         pool:
           vmImage: "windows-latest"
         steps:
+          - script: |
+              echo ##vso[task.setvariable variable=VersionNumber;]$(Build.SourceBranchName)
+            condition: startsWith(variables['build.sourceBranch'], 'refs/tags/')
+
+          - task: replacetokens@5
+            displayName: 'Replace tokens'
+            inputs:
+              rootDirectory: '$(System.DefaultWorkingDirectory)'
+              targetFiles: |
+                **/*Etch.OrchardCore.ThemeBoilerplate.nuspec
+                **/content/README.md
+              actionOnMissing: "fail"
+              writeBOM: false
+              encoding: 'utf-8'
+
           - task: SonarCloudPrepare@1
             displayName: "Prepare SonarCloud Analysis"
             inputs:
