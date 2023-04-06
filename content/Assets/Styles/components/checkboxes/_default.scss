@@ -101,7 +101,7 @@
 
         /* Show focus colour */
         &:focus + .checkboxes__label::before {
-            @include focus-form-element;
+            @extend %focus-form-element;
         }
     }
 }
