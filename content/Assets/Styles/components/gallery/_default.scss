@@ -3,8 +3,6 @@
    ========================================================================== */
 
 .gallery {
-    @extend %list-reset;
-
     display: flex;
     flex-wrap: wrap;
     margin-left: calc((var(--galleryGutter) / 2) * -1);
