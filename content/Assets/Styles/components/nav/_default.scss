@@ -17,7 +17,7 @@
 }
 
 .nav__items {
-    @include list-reset();
+    @extend %list-reset;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -185,7 +185,7 @@
 }
 
 .nav__sub-items {
-    @include list-reset();
+    @extend %list-reset;
 
     .nav__item {
         border-bottom: var(--navBorderWidth) solid var(--navBorderColorLight);

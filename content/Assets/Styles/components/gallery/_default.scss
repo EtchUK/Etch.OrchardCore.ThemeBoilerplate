@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .gallery {
-    @include list-reset();
+    @extend %list-reset;
 
     display: flex;
     flex-wrap: wrap;
