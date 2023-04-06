@@ -1,12 +1,13 @@
 /* ==========================================================================
-   #LISTS
+   #LIST RESET
    ========================================================================== */
 
 /*
- * Mixins & functions for working with lists.
+ * For resetting default list styles, useful for e.g navigation and unstyled
+ * list components
  */
 
-@mixin list-reset() {
+%list-reset {
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
