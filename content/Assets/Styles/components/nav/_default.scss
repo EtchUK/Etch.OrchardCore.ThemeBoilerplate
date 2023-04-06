@@ -17,7 +17,6 @@
 }
 
 .nav__items {
-    @extend %list-reset;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -184,14 +183,10 @@
     }
 }
 
-.nav__sub-items {
-    @extend %list-reset;
+.nav__sub-items .nav__item {
+    border-bottom: var(--navBorderWidth) solid var(--navBorderColorLight);
 
-    .nav__item {
-        border-bottom: var(--navBorderWidth) solid var(--navBorderColorLight);
-
-        &:last-child {
-            border-bottom: 0;
-        }
+    &:last-child {
+        border-bottom: 0;
     }
 }
