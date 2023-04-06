@@ -2,12 +2,17 @@
    #HERO/RATIO
    ========================================================================== */
 
-@use 'sass:math';
+@use "sass:math";
 
 /*
- * 1. With a 100vh hero, and a 16:9 asset, the media width should scale 
- *    based on the viewport height, to ensure it covers. 
- *    16/9 = 1.7777 recurring, which we round to 178%
+ * 1. Formula example: ((16 / 9) * 100) / ((3 / 2) * 100)) * 100
+ *    Where 16/9 is the required aspect ratio of the video, and 3/2 is the 
+ *    current ratio of the hero
+ * 2. When the formula produces a number < 100, we just let it be 100, which
+ *    is the default
+ * 3. With a 100vh hero, and a 16:9 asset, the media width should scale based 
+ *    on the viewport height, to ensure it covers. 
+ *    16/9 = 1.7777 recurring, which we round to 178
  */
 
 .hero {
@@ -26,7 +31,7 @@
         &-9-16 {
             .hero__media {
                 .embed {
-                    width: 320vw;
+                    width: 317%; /* 1 */
                 }
             }
             .hero__space {
@@ -37,7 +42,7 @@
         &-4-3 {
             .hero__media {
                 .embed {
-                    width: 140vw;
+                    width: 134%; /* 1 */
                 }
             }
             .hero__space {
@@ -48,7 +53,7 @@
         &-3-2 {
             .hero__media {
                 .embed {
-                    width: 120vw;
+                    width: 119%; /* 1 */
                 }
             }
             .hero__space {
@@ -59,7 +64,7 @@
         &-2-3 {
             .hero__media {
                 .embed {
-                    width: 270vw;
+                    width: 267%; /* 1 */
                 }
             }
             .hero__space {
@@ -70,7 +75,7 @@
         &-1-1 {
             .hero__media {
                 .embed {
-                    width: 180vw;
+                    width: 178%; /* 1 */
                 }
             }
             .hero__space {
@@ -81,7 +86,7 @@
         &-2-1 {
             .hero__media {
                 .embed {
-                    width: 100vw;
+                    width: 100%; /* 2 */
                 }
             }
             .hero__space {
@@ -92,7 +97,7 @@
         &-3-1 {
             .hero__media {
                 .embed {
-                    width: 100vw;
+                    width: 100%; /* 2 */
                 }
             }
             .hero__space {
@@ -103,7 +108,7 @@
         &-4-1 {
             .hero__media {
                 .embed {
-                    width: 100vw;
+                    width: 100%; /* 2 */
                 }
             }
             .hero__space {
@@ -116,7 +121,7 @@
             .hero-responsive-media--background-image {
                 .embed,
                 img {
-                    width: 178vh; /* 1 */
+                    width: 178vh; /* 3 */
                     max-width: none;
                     min-width: 100%;
                 }
@@ -143,7 +148,7 @@
             &-9-16 {
                 .hero__media {
                     .embed {
-                        width: 320vw;
+                        width: 317%; /* 1 */
                     }
                 }
                 .hero__space {
@@ -154,7 +159,7 @@
             &-4-3 {
                 .hero__media {
                     .embed {
-                        width: 140vw;
+                        width: 134%; /* 1 */
                     }
                 }
                 .hero__space {
@@ -165,7 +170,7 @@
             &-3-2 {
                 .hero__media {
                     .embed {
-                        width: 120vw;
+                        width: 119%; /* 1 */
                     }
                 }
                 .hero__space {
@@ -176,7 +181,7 @@
             &-2-3 {
                 .hero__media {
                     .embed {
-                        width: 270vw;
+                        width: 267%; /* 1 */
                     }
                 }
                 .hero__space {
@@ -187,7 +192,7 @@
             &-1-1 {
                 .hero__media {
                     .embed {
-                        width: 180vw;
+                        width: 178%; /* 1 */
                     }
                 }
                 .hero__space {
@@ -198,7 +203,7 @@
             &-2-1 {
                 .hero__media {
                     .embed {
-                        width: 100vw;
+                        width: 100%; /* 2 */
                     }
                 }
                 .hero__space {
@@ -209,7 +214,7 @@
             &-3-1 {
                 .hero__media {
                     .embed {
-                        width: 100vw;
+                        width: 100%; /* 2 */
                     }
                 }
                 .hero__space {
@@ -220,7 +225,7 @@
             &-4-1 {
                 .hero__media {
                     .embed {
-                        width: 100vw;
+                        width: 100%; /* 2 */
                     }
                 }
                 .hero__space {
@@ -233,7 +238,7 @@
                 .hero-responsive-media--background-image {
                     .embed,
                     img {
-                        width: 178vh; /* 1 */
+                        width: 178vh; /* 3 */
                         max-width: none;
                         min-width: 100%;
                     }
@@ -253,6 +258,7 @@
                         width: 100%;
                     }
                 }
+
                 .hero__space {
                     padding-bottom: math.div(9, 16) * 100%;
                 }
@@ -261,7 +267,7 @@
             &-9-16 {
                 .hero__media {
                     .embed {
-                        width: 320vw;
+                        width: 317%; /* 1 */
                     }
                 }
                 .hero__space {
@@ -272,7 +278,7 @@
             &-4-3 {
                 .hero__media {
                     .embed {
-                        width: 140vw;
+                        width: 134%; /* 1 */
                     }
                 }
                 .hero__space {
@@ -283,7 +289,7 @@
             &-3-2 {
                 .hero__media {
                     .embed {
-                        width: 120vw;
+                        width: 119%; /* 1 */
                     }
                 }
                 .hero__space {
@@ -294,7 +300,7 @@
             &-2-3 {
                 .hero__media {
                     .embed {
-                        width: 270vw;
+                        width: 267%; /* 1 */
                     }
                 }
                 .hero__space {
@@ -305,7 +311,7 @@
             &-1-1 {
                 .hero__media {
                     .embed {
-                        width: 180vw;
+                        width: 178%; /* 1 */
                     }
                 }
                 .hero__space {
@@ -316,7 +322,7 @@
             &-2-1 {
                 .hero__media {
                     .embed {
-                        width: 100vw;
+                        width: 100%; /* 2 */
                     }
                 }
                 .hero__space {
@@ -327,7 +333,7 @@
             &-3-1 {
                 .hero__media {
                     .embed {
-                        width: 100vw;
+                        width: 100%; /* 2 */
                     }
                 }
                 .hero__space {
@@ -338,7 +344,7 @@
             &-4-1 {
                 .hero__media {
                     .embed {
-                        width: 100vw;
+                        width: 100%; /* 2 */
                     }
                 }
                 .hero__space {
@@ -351,7 +357,7 @@
                 .hero-responsive-media--background-image {
                     .embed,
                     img {
-                        width: 178vh; /* 1 */
+                        width: 178vh; /* 3 */
                         max-width: none;
                         min-width: 100%;
                     }
