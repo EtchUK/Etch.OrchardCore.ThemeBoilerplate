@@ -3,13 +3,12 @@
    ========================================================================== */
 
 /*
- * Collection of functions/mixins used throughout the Sass project to promote
- * good coding practices.
+ * Collection of mixins and extendable placeholders used throughout 
+ * to promote good coding practices.
  */
 
-@import "focus";
-@import "grid";
-@import "ie";
+@import "focus-form-element";
 @import "link-styles";
-@import "lists";
-@import "text";
+@import "list-reset";
+@import "text-default";
+@import "text-heading";
