@@ -99,7 +99,7 @@
 
         /* Show focus colour */
         &:focus + .radios__label::before {
-            @include focus-form-element;
+            @extend %focus-form-element;
         }
     }
 }

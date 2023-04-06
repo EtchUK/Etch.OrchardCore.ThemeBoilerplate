@@ -21,7 +21,7 @@ input {
     }
 
     &:focus {
-        @include focus-form-element;
+        @extend %focus-form-element;
     }
 
     &[type="file"] {

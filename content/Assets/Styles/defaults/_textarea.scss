@@ -24,6 +24,6 @@ textarea {
     }
 
     &:focus {
-        @include focus-form-element;
+        @extend %focus-form-element;
     }
 }

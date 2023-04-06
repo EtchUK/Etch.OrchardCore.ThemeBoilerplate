@@ -1,12 +1,12 @@
 /* ==========================================================================
-   #FOCUS
+   #FOCUS FORM ELEMENT
    ========================================================================== */
 
 /*
- * Mixin for adding :focus styling to elements.
+ * For adding :focus styling to elements.
  */
 
-@mixin focus-form-element {
+%focus-form-element {
     border: var(--formFieldBorderWidth) solid var(--colorTextDefault);
     box-shadow: 0 0 var(--formFieldFocusBoxShadowBlur)
         var(--formFieldFocusBoxShadowSpread) var(--colorPrimary);
