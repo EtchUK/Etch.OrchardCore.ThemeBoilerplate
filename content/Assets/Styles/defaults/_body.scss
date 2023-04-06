@@ -17,8 +17,11 @@ body {
     background-color: var(--colorSiteBackground);
 
     color: var(--colorTextDefault);
+    font-family: var(--fontFamilyDefault);
     font-size: var(--fontSizeBaseEm); /* 1. */
-    @include text-default;
+    font-style: var(--fontStyleDefault);
+    font-weight: var(--fontWeightDefault);
+    line-height: var(--lineHeightDefault);
 
     overflow-x: hidden;
 
