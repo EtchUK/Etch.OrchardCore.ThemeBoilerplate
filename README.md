@@ -4,7 +4,7 @@ Theme boilerplate is our starting point for building [Orchard Core](https://orch
 
 ## Build Status
 
-[![Build Status](https://secure.travis-ci.org/etchuk/Etch.OrchardCore.ThemeBoilerplate.png?branch=main)](http://travis-ci.org/etchuk/Etch.OrchardCore.ThemeBoilerplate) [![NuGet](https://img.shields.io/nuget/v/Etch.OrchardCore.ThemeBoilerplate.svg)](https://www.nuget.org/packages/Etch.OrchardCore.ThemeBoilerplate)
+[![NuGet](https://img.shields.io/nuget/v/Etch.OrchardCore.ThemeBoilerplate.svg)](https://www.nuget.org/packages/Etch.OrchardCore.ThemeBoilerplate)
 
 ## Getting Started
 
