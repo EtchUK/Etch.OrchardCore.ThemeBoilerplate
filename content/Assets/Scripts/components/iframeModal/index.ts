@@ -18,6 +18,7 @@ const instance = ($el: Element) => {
         counter: false,
         download: false,
         height: "100%",
+        hideBarsDelay: 0,
         iframeMaxWidth: "100%",
         selector: "this",
         videoMaxWidth: "100%",
