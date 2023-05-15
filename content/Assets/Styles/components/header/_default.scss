@@ -138,6 +138,10 @@
 
         &--close {
             display: flex;
+
+            @include mq($from: tablet) {
+                display: none;
+            }
         }
     }
 }
