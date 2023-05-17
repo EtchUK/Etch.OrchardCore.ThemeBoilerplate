@@ -7,10 +7,14 @@
  * list components
  */
 
-.list-reset {
+%list-reset {
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
 
     list-style: none;
+}
+
+.list-reset {
+    @extend %list-reset;
 }
