@@ -17,6 +17,7 @@ const instance = ($el: Element) => {
     lightGallery($el, {
         counter: false,
         download: false,
+        getCaptionFromTitleOrAlt: false,
         height: "100%",
         hideBarsDelay: 0,
         iframeMaxWidth: "100%",

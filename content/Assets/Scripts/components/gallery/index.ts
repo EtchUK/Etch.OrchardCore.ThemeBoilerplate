@@ -15,6 +15,7 @@ const lightGallery = (window as any).lightGallery;
 const instance = ($el: Element) => {
     // Handle multiple images/links
     lightGallery($el, {
+        getCaptionFromTitleOrAlt: false,
         hideBarsDelay: 0,
         selector: "a",
         videoMaxWidth: "100%",
