@@ -27,6 +27,13 @@
         padding: var(--heroBodyPadding) 0;
         z-index: var(--zIndexNudgeForward);
 
+        .hero--encourage-scrolling & {
+            padding-bottom: calc(
+                var(--heroBodyPadding) + var(--heroScrollIndicatorHeight) +
+                    var(--heroScrollIndicatorBottom)
+            );
+        }
+
         @each $width in $widths {
             .width--#{math.floor($width)} & {
                 padding-left: var(--heroBodyPadding);
@@ -116,9 +123,51 @@
         text-transform: var(--heroHeadingTextTransform);
     }
 
-    &--encourage-scrolling {
-        &:after {
-            content: "Scroll down";
+    &__scroll-encouragement {
+        border: 0;
+        bottom: var(--heroScrollIndicatorBottom);
+        height: var(--heroScrollIndicatorHeight);
+        left: 50%;
+        margin-left: calc(var(--heroScrollIndicatorWidth) / 2 * -1);
+        position: absolute;
+        width: var(--heroScrollIndicatorWidth);
+
+        background: url("../content/icon-chevron.svg") 0 0 no-repeat transparent;
+        background-size: var(--heroScrollIndicatorWidth)
+            var(--heroScrollIndicatorHeight);
+
+        animation: bounceThrice var(--heroScrollIndicatorAnimationDuration)
+            var(--animationTiming) forwards;
+        animation-delay: var(--heroScrollIndicatorAnimationDelay);
+        cursor: pointer;
+        z-index: var(--zIndexNudgeForward);
+
+        .hero--inverted & {
+            background-image: url("../content/icon-chevron-inverted.svg");
         }
+    }
+}
+
+@keyframes bounceThrice {
+    0% {
+        transform: translateY(0);
+    }
+    16% {
+        transform: translateY(var(--heroScrollIndicatorAnimationDistance));
+    }
+    33% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(var(--heroScrollIndicatorAnimationDistance));
+    }
+    66% {
+        transform: translateY(0);
+    }
+    83% {
+        transform: translateY(var(--heroScrollIndicatorAnimationDistance));
+    }
+    100% {
+        transform: translateY(0);
     }
 }

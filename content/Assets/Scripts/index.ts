@@ -7,6 +7,7 @@ import inViewport from "./components/inViewport";
 import nav from "./components/nav";
 import parallax from "./components/parallax";
 import scrollbarWidth from "./components/scrollbarWidth";
+import scrollDown from "./components/scrollDown";
 import toggleNav from "./components/toggleNav";
 
 /*
@@ -23,6 +24,7 @@ const init = () => {
     nav();
     parallax();
     scrollbarWidth();
+    scrollDown();
     toggleNav();
 };
 
