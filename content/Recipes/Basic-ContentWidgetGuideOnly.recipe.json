@@ -1,7 +1,7 @@
 {
-    "name": "Basic-ContentAndMedia",
-    "displayName": "Basic Content & Media",
-    "description": "Configures content & media for basic site.",
+    "name": "Basic-ContentWidgetGuideOnly",
+    "displayName": "Basic Content Widget Guide",
+    "description": "Configures initial widget guide for basic site.",
     "author": "Etch UK",
     "website": "https://etchuk.com",
     "version": "1.5.1",
@@ -12,293 +12,6 @@
         {
             "name": "Content",
             "data": [
-                {
-                    "ContentItemId": "4q200ssff5g74zsf073rjsfgw7",
-                    "ContentItemVersionId": "47exyvq7pwzdvx0q0bw134hfcn",
-                    "ContentType": "Page",
-                    "DisplayText": "Homepage",
-                    "Latest": true,
-                    "Published": true,
-                    "ModifiedUtc": "2020-07-14T23:56:35.9615166Z",
-                    "PublishedUtc": "2020-07-14T23:56:36.0029022Z",
-                    "CreatedUtc": "2020-07-14T23:56:35.8683626Z",
-                    "Owner": "etch-play",
-                    "Author": "etch-play",
-                    "Homepage": {},
-                    "AutoroutePart": {
-                        "Path": "homepage",
-                        "SetHomepage": true,
-                        "Disabled": false,
-                        "RouteContainedItems": false,
-                        "Absolute": false
-                    },
-                    "CommonPart": {},
-                    "TitlePart": {
-                        "Title": "Homepage"
-                    },
-                    "Content": {
-                        "Widgets": [
-                            {
-                                "ContentItemId": "4vjh60x1ws8r8svbvtcxcf5xcq",
-                                "ContentItemVersionId": null,
-                                "ContentType": "Hero",
-                                "DisplayText": null,
-                                "Latest": false,
-                                "Published": false,
-                                "Owner": null,
-                                "Author": "etch-play",
-                                "Hero": {
-                                    "BackgroundType": {
-                                        "Text": "image"
-                                    },
-                                    "BackgroundImage": {
-                                        "Data": "{\"sources\":[{\"breakpoint\":2560,\"path\":\"Backgrounds/Default/unsplash-1444090542259-2560w.jpg\"},{\"breakpoint\":1920,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1920w.jpg\"},{\"breakpoint\":1440,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1440w.jpg\"},{\"breakpoint\":1280,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1280w.jpg\"},{\"breakpoint\":1024,\"path\":\"Backgrounds/Default/unsplash-1444090542259-1024w.jpg\"},{\"breakpoint\":768,\"path\":\"Backgrounds/Default/unsplash-1444090542259-768w.jpg\"},{\"breakpoint\":425,\"path\":\"Backgrounds/Default/unsplash-1444090542259-425w.jpg\"},{\"breakpoint\":375,\"path\":\"Backgrounds/Default/unsplash-1444090542259-375w.jpg\"}]}",
-                                        "HasData": true
-                                    },
-                                    "BackgroundEmbed": {
-                                        "Text": null
-                                    },
-                                    "DisplayText": {
-                                        "Text": "Welcome"
-                                    },
-                                    "CTALabel": {
-                                        "Text": null
-                                    },
-                                    "CTAUrl": {
-                                        "Text": null
-                                    }
-                                },
-                                "FlowMetadata": {
-                                    "Alignment": 3,
-                                    "Size": 100
-                                }
-                            }
-                        ]
-                    },
-                    "MetaTagsPart": {
-                        "Description": null,
-                        "Images": [],
-                        "Title": null
-                    }
-                },
-                {
-                    "ContentItemId": "45re9jnzasab30k923k4vg2dmd",
-                    "ContentItemVersionId": "44naeyyfhq3mqr9b3j0x48kq45",
-                    "ContentType": "PageHeader",
-                    "DisplayText": "Header",
-                    "Latest": true,
-                    "Published": true,
-                    "ModifiedUtc": "2020-07-14T23:56:36.0327124Z",
-                    "PublishedUtc": "2020-07-14T23:56:36.0352759Z",
-                    "CreatedUtc": "2020-07-14T23:56:36.0270688Z",
-                    "Owner": "etch-play",
-                    "Author": "etch-play",
-                    "PageHeader": {
-                        "Logo": {
-                            "Paths": ["Logos/logo-play@1x.svg"]
-                        },
-                        "LogoSmall": {
-                            "Paths": ["Logos/logo-play-short@1x.svg"]
-                        },
-                        "LogoAlternateText": {
-                            "Text": "Logo for Etch Play"
-                        },
-                        "Menu": {
-                            "ContentItemIds": []
-                        },
-                        "MenuToggleButtonLabel": {
-                            "Text": "Menu"
-                        },
-                        "MenuCloseButtonLabel": {
-                            "Text": "Close"
-                        }
-                    },
-                    "LayerMetadata": {
-                        "Position": 1.0,
-                        "Zone": "Header",
-                        "Layer": "Default"
-                    }
-                },
-                {
-                    "ContentItemId": "40948mkxsw3nprscztg95hq4w6",
-                    "ContentItemVersionId": "4pveapvv13kt6twvrpn3291qxc",
-                    "ContentType": "Page",
-                    "DisplayText": "Page not found",
-                    "Latest": true,
-                    "Published": true,
-                    "ModifiedUtc": "2020-07-14T23:56:36.0437856Z",
-                    "PublishedUtc": "2020-07-14T23:56:36.0612086Z",
-                    "CreatedUtc": "2020-07-14T23:56:36.0391821Z",
-                    "Owner": "etch-play",
-                    "Author": "etch-play",
-                    "Page": {
-                        "DisplayTitle": {
-                            "Value": false
-                        }
-                    },
-                    "AliasPart": {
-                        "Alias": "404"
-                    },
-                    "AutoroutePart": {
-                        "Path": "page-not-found",
-                        "SetHomepage": false,
-                        "Disabled": false,
-                        "RouteContainedItems": false,
-                        "Absolute": false
-                    },
-                    "TitlePart": {
-                        "Title": "Page not found"
-                    },
-                    "Content": {
-                        "Widgets": [
-                            {
-                                "ContentItemId": "4qtd9awt4bj4tz8q1k1nmhdhxa",
-                                "ContentItemVersionId": null,
-                                "ContentType": "Section",
-                                "DisplayText": "Sorry, we couldn't find that",
-                                "Latest": false,
-                                "Published": false,
-                                "Owner": null,
-                                "Author": "etch-play",
-                                "Section": {
-                                    "BackgroundColour": {
-                                        "Text": "default"
-                                    },
-                                    "Alignment": {
-                                        "Text": "default"
-                                    }
-                                },
-                                "Content": {
-                                    "Widgets": [
-                                        {
-                                            "ContentItemId": "4zr9kq2tnm89frj0t1k688nn4j",
-                                            "ContentItemVersionId": null,
-                                            "ContentType": "Heading",
-                                            "DisplayText": null,
-                                            "Latest": false,
-                                            "Published": false,
-                                            "Owner": null,
-                                            "Author": "etch-play",
-                                            "Heading": {
-                                                "Text": {
-                                                    "Text": "Sorry, we couldn't find that"
-                                                },
-                                                "Level": {
-                                                    "Text": "h1"
-                                                }
-                                            },
-                                            "FlowMetadata": {
-                                                "Alignment": 3,
-                                                "Size": 100
-                                            }
-                                        },
-                                        {
-                                            "ContentItemId": "4fzfv7jra4gkavhaedsyb1x7d8",
-                                            "ContentItemVersionId": null,
-                                            "ContentType": "Paragraph",
-                                            "DisplayText": null,
-                                            "Latest": false,
-                                            "Published": false,
-                                            "Owner": null,
-                                            "Author": "etch-play",
-                                            "Paragraph": {
-                                                "Text": {
-                                                    "Text": "The page you are looking for may no longer exist. Please use the menu to find the page you are looking for."
-                                                }
-                                            },
-                                            "FlowMetadata": {
-                                                "Alignment": 3,
-                                                "Size": 100
-                                            }
-                                        }
-                                    ]
-                                },
-                                "TitlePart": {
-                                    "Title": "Sorry, we couldn't find that"
-                                },
-                                "FlowMetadata": {
-                                    "Alignment": 3,
-                                    "Size": 100
-                                }
-                            }
-                        ]
-                    },
-                    "MetaTagsPart": {
-                        "Description": null,
-                        "Images": [],
-                        "Title": null
-                    },
-                    "SitemapPart": {
-                        "OverrideSitemapConfig": true,
-                        "ChangeFrequency": 0,
-                        "Priority": 5,
-                        "Exclude": true
-                    }
-                },
-                {
-                    "ContentItemId": "4x98nyjd22b4pta22vv9t85gm3",
-                    "ContentItemVersionId": "49s97bg6km9bj6689jsrf1tjn8",
-                    "ContentType": "PageFooter",
-                    "DisplayText": "Footer",
-                    "Latest": true,
-                    "Published": true,
-                    "ModifiedUtc": "2022-09-27T14:48:54.8382078Z",
-                    "PublishedUtc": "2022-09-27T14:48:54.8576458Z",
-                    "CreatedUtc": "2022-09-27T14:48:54.8382078Z",
-                    "Owner": "4er5wqvgngp4qwjrd312gpfrnw",
-                    "Author": "etch-play",
-                    "Footer": {
-                        "ContentWidth": {
-                            "Text": "default"
-                        }
-                    },
-                    "BackgroundPart": {
-                        "BackgroundColour": {
-                            "Value": "transparent"
-                        },
-                        "BackgroundPattern": {
-                            "Text": null
-                        },
-                        "InvertTextColour": {
-                            "Value": false
-                        },
-                        "BackgroundFixed": {
-                            "Value": false
-                        },
-                        "BackgroundFill": {
-                            "Value": false
-                        }
-                    },
-                    "Content": {
-                        "Widgets": []
-                    },
-                    "LayerMetadata": {
-                        "RenderTitle": false,
-                        "Position": 1.0,
-                        "Zone": "Footer",
-                        "Layer": "Default"
-                    }
-                },
-                {
-                    "ContentItemId": "45bwgvj8s06qhr6b6wqpd7fvmg",
-                    "ContentItemVersionId": "4r2phxmrvsamfr7ktqt5s30tww",
-                    "ContentType": "ContextualEditControl",
-                    "DisplayText": "Contextual Edit",
-                    "Latest": true,
-                    "Published": true,
-                    "ModifiedUtc": "2021-09-04T11:57:52.1466996Z",
-                    "PublishedUtc": "2021-09-04T11:57:52.1894103Z",
-                    "CreatedUtc": "2021-09-04T11:57:52.1466996Z",
-                    "Owner": "4s7r8wvsndcey4f41bzzr8c7dj",
-                    "Author": "etch-play",
-                    "ContextualEditPart": {},
-                    "LayerMetadata": {
-                        "RenderTitle": false,
-                        "Position": 2.0,
-                        "Zone": "Footer",
-                        "Layer": "Default"
-                    }
-                },
                 {
                     "ContentItemId": "438mj1fpntkq5zj1m6f39strwx",
                     "ContentItemVersionId": "462cxf9z1tc7yx44zqjmksvw5z",
@@ -558,7 +271,7 @@
                                 },
                                 "BackgroundPart": {
                                     "BackgroundColour": {
-                                        "Value": "#eae8e5"
+                                        "Value": "transparent"
                                     },
                                     "BackgroundPattern": {
                                         "Text": null
@@ -571,12 +284,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -775,12 +482,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -983,12 +684,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--cutout-top-right"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -1067,12 +762,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--cutout-top-right"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -1151,12 +840,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--cutout-top-right"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -1171,7 +854,7 @@
                                 },
                                 "BackgroundPart": {
                                     "BackgroundColour": {
-                                        "Value": "#eae8e5"
+                                        "Value": "transparent"
                                     },
                                     "BackgroundPattern": {
                                         "Text": null
@@ -1184,12 +867,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -1345,12 +1022,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "Content": {
@@ -1411,45 +1082,6 @@
                                                                         "Alignment": 0,
                                                                         "Size": 50
                                                                     }
-                                                                },
-                                                                {
-                                                                    "ContentItemId": "4vz86gj7na63mthgqttx4mw9n2",
-                                                                    "ContentItemVersionId": null,
-                                                                    "ContentType": "Link",
-                                                                    "DisplayText": "",
-                                                                    "Latest": false,
-                                                                    "Published": false,
-                                                                    "ModifiedUtc": "2022-03-18T16:08:17.881692Z",
-                                                                    "PublishedUtc": null,
-                                                                    "CreatedUtc": null,
-                                                                    "Owner": "",
-                                                                    "Author": "etch-play",
-                                                                    "Link": {
-                                                                        "Text": {
-                                                                            "Text": "Learn more"
-                                                                        },
-                                                                        "Url": {
-                                                                            "Text": "#"
-                                                                        },
-                                                                        "OpenInNewWindow": {
-                                                                            "Value": false
-                                                                        }
-                                                                    },
-                                                                    "LinkVisualPart": {
-                                                                        "Style": {
-                                                                            "Text": null
-                                                                        },
-                                                                        "AddRaquo": {
-                                                                            "Value": true
-                                                                        },
-                                                                        "SVGPrefix": {
-                                                                            "Value": null
-                                                                        }
-                                                                    },
-                                                                    "FlowMetadata": {
-                                                                        "Alignment": 3,
-                                                                        "Size": 100
-                                                                    }
                                                                 }
                                                             ]
                                                         }
@@ -1487,12 +1119,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "Content": {
@@ -1532,12 +1158,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "Content": {
@@ -1575,45 +1195,6 @@
                                                                         "Alignment": 3,
                                                                         "Size": 100
                                                                     }
-                                                                },
-                                                                {
-                                                                    "ContentItemId": "4rf9cyh904sbpw7vr68va9kncy",
-                                                                    "ContentItemVersionId": null,
-                                                                    "ContentType": "Link",
-                                                                    "DisplayText": "",
-                                                                    "Latest": false,
-                                                                    "Published": false,
-                                                                    "ModifiedUtc": "2022-03-18T16:08:18.009565Z",
-                                                                    "PublishedUtc": null,
-                                                                    "CreatedUtc": null,
-                                                                    "Owner": "",
-                                                                    "Author": "etch-play",
-                                                                    "Link": {
-                                                                        "Text": {
-                                                                            "Text": "Learn more"
-                                                                        },
-                                                                        "Url": {
-                                                                            "Text": "#"
-                                                                        },
-                                                                        "OpenInNewWindow": {
-                                                                            "Value": false
-                                                                        }
-                                                                    },
-                                                                    "LinkVisualPart": {
-                                                                        "Style": {
-                                                                            "Text": null
-                                                                        },
-                                                                        "AddRaquo": {
-                                                                            "Value": true
-                                                                        },
-                                                                        "SVGPrefix": {
-                                                                            "Value": null
-                                                                        }
-                                                                    },
-                                                                    "FlowMetadata": {
-                                                                        "Alignment": 3,
-                                                                        "Size": 100
-                                                                    }
                                                                 }
                                                             ]
                                                         }
@@ -1645,12 +1226,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -1765,7 +1340,7 @@
                                             "Author": "etch-play",
                                             "VisualEditor": {
                                                 "Content": {
-                                                    "Data": "{\"time\":1647619696166,\"blocks\":[{\"id\":\"kuz6Cvy6Ox\",\"type\":\"header\",\"data\":{\"text\":\"News feed\",\"level\":3}},{\"id\":\"Sp9hxlGc8B\",\"type\":\"paragraph\",\"data\":{\"text\":\"Displaying the latest 3 news items in a 3 column grid.<br>\"}}],\"version\":\"2.22.2\"}",
+                                                    "Data": "{\"time\":1647619696166,\"blocks\":[{\"id\":\"kuz6Cvy6Ox\",\"type\":\"header\",\"data\":{\"text\":\"News feed\",\"level\":3}},{\"id\":\"Sp9hxlGc8B\",\"type\":\"paragraph\",\"data\":{\"text\":\"Displaying the latest 3 news items in a 3 column grid. Items here are depicted without any background, but the background options used on cards can also be applied here (to the entire group at once)<br>\"}}],\"version\":\"2.22.2\"}",
                                                     "Html": null
                                                 }
                                             },
@@ -1805,7 +1380,7 @@
                                             },
                                             "BackgroundPart": {
                                                 "BackgroundColour": {
-                                                    "Value": "#ffffff"
+                                                    "Value": "transparent"
                                                 },
                                                 "BackgroundPattern": {
                                                     "Text": null
@@ -1818,12 +1393,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--cutout-top-right"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "TitlePart": {
@@ -1856,7 +1425,7 @@
                                             "Author": "etch-play",
                                             "VisualEditor": {
                                                 "Content": {
-                                                    "Data": "{\"time\":1647619696171,\"blocks\":[{\"id\":\"oo_Ckn14t8\",\"type\":\"header\",\"data\":{\"text\":\"Featured content feed\",\"level\":3}},{\"id\":\"8L3FV_iICE\",\"type\":\"paragraph\",\"data\":{\"text\":\"Displaying 2 chosen content items in a two column grid.<br>\"}}],\"version\":\"2.22.2\"}",
+                                                    "Data": "{\"time\":1647619696171,\"blocks\":[{\"id\":\"oo_Ckn14t8\",\"type\":\"header\",\"data\":{\"text\":\"Featured content feed\",\"level\":3}},{\"id\":\"8L3FV_iICE\",\"type\":\"paragraph\",\"data\":{\"text\":\"Displaying 2 chosen content items in a two column grid. Items here are depicted without any background, but the background options used on cards can also be applied here (to the entire group at once)<br>\"}}],\"version\":\"2.22.2\"}",
                                                     "Html": null
                                                 }
                                             },
@@ -1887,7 +1456,7 @@
                                             },
                                             "BackgroundPart": {
                                                 "BackgroundColour": {
-                                                    "Value": "#ffffff"
+                                                    "Value": "transparent"
                                                 },
                                                 "BackgroundPattern": {
                                                     "Text": null
@@ -1900,12 +1469,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--cutout-top-right"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "TitlePart": {
@@ -1931,7 +1494,7 @@
                                 },
                                 "BackgroundPart": {
                                     "BackgroundColour": {
-                                        "Value": "#eae8e5"
+                                        "Value": "transparent"
                                     },
                                     "BackgroundPattern": {
                                         "Text": null
@@ -1944,12 +1507,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -2070,7 +1627,7 @@
                                                     "Text": "YouTube embed"
                                                 },
                                                 "Ratio": {
-                                                    "Text": null
+                                                    "Text": "16-9"
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -2098,7 +1655,7 @@
                                                     "Text": "Vimeo embed"
                                                 },
                                                 "Ratio": {
-                                                    "Text": null
+                                                    "Text": "16-9"
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -2154,7 +1711,7 @@
                                                     "Text": "Google Map embed with 16:9 aspect ratio"
                                                 },
                                                 "Ratio": {
-                                                    "Text": null
+                                                    "Text": "16-9"
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -2182,12 +1739,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -2427,12 +1978,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "FlowMetadata": {
@@ -2522,12 +2067,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "FlowMetadata": {
@@ -2674,12 +2213,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "FlowMetadata": {
@@ -2826,12 +2359,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "FlowMetadata": {
@@ -2978,12 +2505,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "FlowMetadata": {
@@ -3130,12 +2651,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "FlowMetadata": {
@@ -3241,12 +2756,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "FlowMetadata": {
@@ -3336,12 +2845,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "FlowMetadata": {
@@ -3408,12 +2911,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "FlowMetadata": {
@@ -3435,7 +2932,7 @@
                                 },
                                 "BackgroundPart": {
                                     "BackgroundColour": {
-                                        "Value": "#eae8e5"
+                                        "Value": "transparent"
                                     },
                                     "BackgroundPattern": {
                                         "Text": null
@@ -3448,12 +2945,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -3566,17 +3057,6 @@
                                             "CreatedUtc": null,
                                             "Owner": "",
                                             "Author": "etch-play",
-                                            "Gallery": {
-                                                "ThumbnailAspectRatio": {
-                                                    "Text": "none"
-                                                },
-                                                "HideTitles": {
-                                                    "Value": false
-                                                },
-                                                "RemoveShape": {
-                                                    "Value": false
-                                                }
-                                            },
                                             "ColumnablePart": {
                                                 "Columns": {
                                                     "Text": "three"
@@ -3782,12 +3262,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -3902,7 +3376,7 @@
                                             "Author": "etch-play",
                                             "VisualEditor": {
                                                 "Content": {
-                                                    "Data": "{\"time\":1647619696174,\"blocks\":[{\"id\":\"o6KPjblOUv\",\"type\":\"paragraph\",\"data\":{\"text\":\"Page semantics is important when using headings. Ensure that only one H1 is used per page.<br>\"}}],\"version\":\"2.22.2\"}",
+                                                    "Data": "{\"time\":1647619696174,\"blocks\":[{\"id\":\"o6KPjblOUv\",\"type\":\"paragraph\",\"data\":{\"text\":\"Page semantics is important when using headings. Ideally, ensure that only one H1 is used per page, and the other levels follow in sequential order. If necessary, you can tell a Heading to look like a different level to the actual level it is.<br>\"}}],\"version\":\"2.22.2\"}",
                                                     "Html": null
                                                 }
                                             },
@@ -4122,7 +3596,7 @@
                                 },
                                 "BackgroundPart": {
                                     "BackgroundColour": {
-                                        "Value": "#eae8e5"
+                                        "Value": "transparent"
                                     },
                                     "BackgroundPattern": {
                                         "Text": null
@@ -4135,12 +3609,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -4364,12 +3832,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "BleedPart": {
@@ -4451,9 +3913,6 @@
                                                 },
                                                 "AspectRatioMobile": {
                                                     "Text": "3-1"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "TitlePart": {
@@ -4509,7 +3968,7 @@
                                                         "Author": "etch-play",
                                                         "VisualEditor": {
                                                             "Content": {
-                                                                "Data": "{\"time\":1647619696179,\"blocks\":[{\"id\":\"JMLMFhyJHY\",\"type\":\"paragraph\",\"data\":{\"text\":\"Alignment: Left (horizontal) / Top (vertical)<br>\"}},{\"id\":\"e6Ih-uFEz7\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aspect ratio: 3:1<br>\"}},{\"id\":\"-ljoVztFIU\",\"type\":\"paragraph\",\"data\":{\"text\":\"Background: Color\"}},{\"id\":\"FuI7CG-Qdq\",\"type\":\"paragraph\",\"data\":{\"text\":\"Text color: Inverted\"}}],\"version\":\"2.22.2\"}",
+                                                                "Data": "{\"time\":1647619696179,\"blocks\":[{\"id\":\"JMLMFhyJHY\",\"type\":\"paragraph\",\"data\":{\"text\":\"Alignment: Left (horizontal) / Top (vertical)<br>\"}},{\"id\":\"e6Ih-uFEz7\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aspect ratio: 3:1<br>\"}},{\"id\":\"-ljoVztFIU\",\"type\":\"paragraph\",\"data\":{\"text\":\"Background: Color (#37343d)\"}},{\"id\":\"FuI7CG-Qdq\",\"type\":\"paragraph\",\"data\":{\"text\":\"Text color: Inverted\"}}],\"version\":\"2.22.2\"}",
                                                                 "Html": null
                                                             }
                                                         },
@@ -4589,9 +4048,6 @@
                                                 },
                                                 "AspectRatioMobile": {
                                                     "Text": "16-9"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "TitlePart": {
@@ -4727,9 +4183,6 @@
                                                 },
                                                 "AspectRatioMobile": {
                                                     "Text": "16-9"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "TitlePart": {
@@ -4822,12 +4275,6 @@
                                                             },
                                                             "BackgroundFill": {
                                                                 "Value": false
-                                                            },
-                                                            "Shape": {
-                                                                "Text": "shape--none"
-                                                            },
-                                                            "Interlay": {
-                                                                "Text": "interlay--none"
                                                             }
                                                         },
                                                         "FlowMetadata": {
@@ -4862,12 +4309,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -5133,12 +4574,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -5153,7 +4588,7 @@
                                 },
                                 "BackgroundPart": {
                                     "BackgroundColour": {
-                                        "Value": "#eae8e5"
+                                        "Value": "transparent"
                                     },
                                     "BackgroundPattern": {
                                         "Text": null
@@ -5166,12 +4601,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -5324,14 +4753,11 @@
                                                 },
                                                 "OpenInNewWindow": {
                                                     "Value": false
-                                                },
-                                                "Style": {
-                                                    "Text": "default"
                                                 }
                                             },
                                             "LinkVisualPart": {
                                                 "Style": {
-                                                    "Text": null
+                                                    "Text": "link"
                                                 },
                                                 "AddRaquo": {
                                                     "Value": false
@@ -5342,45 +4768,6 @@
                                             },
                                             "JavaScriptEventsPart": {
                                                 "OnClick": {
-                                                    "Value": null
-                                                }
-                                            },
-                                            "FlowMetadata": {
-                                                "Alignment": 3,
-                                                "Size": 100
-                                            }
-                                        },
-                                        {
-                                            "ContentItemId": "4e6qb6wmh37pax6h1y1tz36cxc",
-                                            "ContentItemVersionId": null,
-                                            "ContentType": "Link",
-                                            "DisplayText": "",
-                                            "Latest": false,
-                                            "Published": false,
-                                            "ModifiedUtc": "2022-03-18T16:08:21.53465Z",
-                                            "PublishedUtc": null,
-                                            "CreatedUtc": null,
-                                            "Owner": "",
-                                            "Author": "etch-play",
-                                            "Link": {
-                                                "Text": {
-                                                    "Text": "Default link with chevron"
-                                                },
-                                                "Url": {
-                                                    "Text": "#"
-                                                },
-                                                "OpenInNewWindow": {
-                                                    "Value": false
-                                                }
-                                            },
-                                            "LinkVisualPart": {
-                                                "Style": {
-                                                    "Text": null
-                                                },
-                                                "AddRaquo": {
-                                                    "Value": true
-                                                },
-                                                "SVGPrefix": {
                                                     "Value": null
                                                 }
                                             },
@@ -5410,67 +4797,11 @@
                                                 },
                                                 "OpenInNewWindow": {
                                                     "Value": false
-                                                },
-                                                "Style": {
-                                                    "Text": "btn--primary"
                                                 }
                                             },
                                             "LinkVisualPart": {
                                                 "Style": {
-                                                    "Text": null
-                                                },
-                                                "AddRaquo": {
-                                                    "Value": false
-                                                },
-                                                "SVGPrefix": {
-                                                    "Value": null
-                                                }
-                                            },
-                                            "JavaScriptEventsPart": {
-                                                "OnClick": {
-                                                    "Value": null
-                                                }
-                                            },
-                                            "FlowMetadata": {
-                                                "Alignment": 3,
-                                                "Size": 100
-                                            }
-                                        },
-                                        {
-                                            "ContentItemId": "4f3fq6wqsh83exsc250189mvdj",
-                                            "ContentItemVersionId": null,
-                                            "ContentType": "Link",
-                                            "DisplayText": "",
-                                            "Latest": false,
-                                            "Published": false,
-                                            "ModifiedUtc": "2022-03-18T16:08:21.604678Z",
-                                            "PublishedUtc": null,
-                                            "CreatedUtc": null,
-                                            "Owner": "",
-                                            "Author": "etch-play",
-                                            "Link": {
-                                                "Text": {
-                                                    "Text": "Primary link with chevron"
-                                                },
-                                                "Url": {
-                                                    "Text": "#"
-                                                },
-                                                "OpenInNewWindow": {
-                                                    "Value": false
-                                                },
-                                                "Style": {
-                                                    "Text": "btn--secondary"
-                                                }
-                                            },
-                                            "LinkVisualPart": {
-                                                "Style": {
-                                                    "Text": null
-                                                },
-                                                "AddRaquo": {
-                                                    "Value": true
-                                                },
-                                                "SVGPrefix": {
-                                                    "Value": null
+                                                    "Text": "btn btn--secondary"
                                                 }
                                             },
                                             "JavaScriptEventsPart": {
@@ -5508,130 +4839,7 @@
                                             },
                                             "LinkVisualPart": {
                                                 "Style": {
-                                                    "Text": null
-                                                },
-                                                "AddRaquo": {
-                                                    "Value": false
-                                                },
-                                                "SVGPrefix": {
-                                                    "Value": null
-                                                }
-                                            },
-                                            "FlowMetadata": {
-                                                "Alignment": 3,
-                                                "Size": 100
-                                            }
-                                        },
-                                        {
-                                            "ContentItemId": "4evn3c1eakng4tacjk0dxh9xn7",
-                                            "ContentItemVersionId": null,
-                                            "ContentType": "Link",
-                                            "DisplayText": "",
-                                            "Latest": false,
-                                            "Published": false,
-                                            "ModifiedUtc": "2022-03-18T16:08:21.678577Z",
-                                            "PublishedUtc": null,
-                                            "CreatedUtc": null,
-                                            "Owner": "",
-                                            "Author": "etch-play",
-                                            "Link": {
-                                                "Text": {
-                                                    "Text": "Secondary link with chevron"
-                                                },
-                                                "Url": {
-                                                    "Text": "#"
-                                                },
-                                                "OpenInNewWindow": {
-                                                    "Value": false
-                                                }
-                                            },
-                                            "LinkVisualPart": {
-                                                "Style": {
-                                                    "Text": null
-                                                },
-                                                "AddRaquo": {
-                                                    "Value": true
-                                                },
-                                                "SVGPrefix": {
-                                                    "Value": null
-                                                }
-                                            },
-                                            "FlowMetadata": {
-                                                "Alignment": 3,
-                                                "Size": 100
-                                            }
-                                        },
-                                        {
-                                            "ContentItemId": "4j9a8nysvqbvfxh0nnjaaxm55a",
-                                            "ContentItemVersionId": null,
-                                            "ContentType": "Link",
-                                            "DisplayText": "",
-                                            "Latest": false,
-                                            "Published": false,
-                                            "ModifiedUtc": "2022-03-18T16:08:21.713732Z",
-                                            "PublishedUtc": null,
-                                            "CreatedUtc": null,
-                                            "Owner": "",
-                                            "Author": "etch-play",
-                                            "Link": {
-                                                "Text": {
-                                                    "Text": "Tertiary link"
-                                                },
-                                                "Url": {
-                                                    "Text": "#"
-                                                },
-                                                "OpenInNewWindow": {
-                                                    "Value": false
-                                                }
-                                            },
-                                            "LinkVisualPart": {
-                                                "Style": {
-                                                    "Text": null
-                                                },
-                                                "AddRaquo": {
-                                                    "Value": true
-                                                },
-                                                "SVGPrefix": {
-                                                    "Value": null
-                                                }
-                                            },
-                                            "FlowMetadata": {
-                                                "Alignment": 3,
-                                                "Size": 100
-                                            }
-                                        },
-                                        {
-                                            "ContentItemId": "4t34hp11zbb7n4j02pvg95yv5b",
-                                            "ContentItemVersionId": null,
-                                            "ContentType": "Link",
-                                            "DisplayText": "",
-                                            "Latest": false,
-                                            "Published": false,
-                                            "ModifiedUtc": "2022-03-18T16:08:21.749203Z",
-                                            "PublishedUtc": null,
-                                            "CreatedUtc": null,
-                                            "Owner": "",
-                                            "Author": "etch-play",
-                                            "Link": {
-                                                "Text": {
-                                                    "Text": "Tertiary link with chevron"
-                                                },
-                                                "Url": {
-                                                    "Text": "#"
-                                                },
-                                                "OpenInNewWindow": {
-                                                    "Value": false
-                                                }
-                                            },
-                                            "LinkVisualPart": {
-                                                "Style": {
-                                                    "Text": null
-                                                },
-                                                "AddRaquo": {
-                                                    "Value": true
-                                                },
-                                                "SVGPrefix": {
-                                                    "Value": null
+                                                    "Text": "btn btn--secondary"
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -5659,12 +4867,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -5881,12 +5083,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -5979,12 +5175,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "FlowMetadata": {
@@ -5999,7 +5189,7 @@
                                 },
                                 "BackgroundPart": {
                                     "BackgroundColour": {
-                                        "Value": "#eae8e5"
+                                        "Value": "transparent"
                                     },
                                     "BackgroundPattern": {
                                         "Text": null
@@ -6012,12 +5202,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -6665,12 +5849,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "BleedPart": {
@@ -6779,12 +5957,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "BleedPart": {
@@ -6893,12 +6065,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "BleedPart": {
@@ -7007,12 +6173,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "BleedPart": {
@@ -7121,12 +6281,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "BleedPart": {
@@ -7235,12 +6389,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "BleedPart": {
@@ -7349,12 +6497,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "BleedPart": {
@@ -7463,12 +6605,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "BleedPart": {
@@ -7577,12 +6713,6 @@
                                                 },
                                                 "BackgroundFill": {
                                                     "Value": false
-                                                },
-                                                "Shape": {
-                                                    "Text": "shape--none"
-                                                },
-                                                "Interlay": {
-                                                    "Text": "interlay--none"
                                                 }
                                             },
                                             "BleedPart": {
@@ -7620,12 +6750,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -7787,7 +6911,7 @@
                                 },
                                 "BackgroundPart": {
                                     "BackgroundColour": {
-                                        "Value": "#eae8e5"
+                                        "Value": "transparent"
                                     },
                                     "BackgroundPattern": {
                                         "Text": null
@@ -7800,12 +6924,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -8134,12 +7252,6 @@
                                     },
                                     "BackgroundFill": {
                                         "Value": false
-                                    },
-                                    "Shape": {
-                                        "Text": "shape--none"
-                                    },
-                                    "Interlay": {
-                                        "Text": "interlay--none"
                                     }
                                 },
                                 "BleedPart": {
@@ -8190,103 +7302,6 @@
                         "Priority": 5,
                         "Exclude": true
                     }
-                }
-            ]
-        },
-        {
-            "name": "media",
-            "Files": [
-                {
-                    "SourcePath": "Logos/logo-play-short@1x.svg",
-                    "TargetPath": "Logos/logo-play-short@1x.svg"
-                },
-                {
-                    "SourcePath": "Logos/logo-play@1x.svg",
-                    "TargetPath": "Logos/logo-play@1x.svg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-1-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-1-768w.jpg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-10-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-10-768w.jpg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-11-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-11-768w.jpg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-12-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-12-768w.jpg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-2-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-2-768w.jpg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-3-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-3-768w.jpg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-4-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-4-768w.jpg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-5-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-5-768w.jpg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-6-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-6-768w.jpg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-7-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-7-768w.jpg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-8-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-8-768w.jpg"
-                },
-                {
-                    "SourcePath": "Team/team-placeholder-9-768w.jpg",
-                    "TargetPath": "Team/team-placeholder-9-768w.jpg"
-                },
-                {
-                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1024w.jpg",
-                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1024w.jpg"
-                },
-                {
-                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1280w.jpg",
-                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1280w.jpg"
-                },
-                {
-                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1440w.jpg",
-                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1440w.jpg"
-                },
-                {
-                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-1920w.jpg",
-                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-1920w.jpg"
-                },
-                {
-                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-2560w.jpg",
-                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-2560w.jpg"
-                },
-                {
-                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-375w.jpg",
-                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-375w.jpg"
-                },
-                {
-                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-400w.jpg",
-                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-400w.jpg"
-                },
-                {
-                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-425w.jpg",
-                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-425w.jpg"
-                },
-                {
-                    "SourcePath": "Backgrounds/Default/unsplash-1444090542259-768w.jpg",
-                    "TargetPath": "Backgrounds/Default/unsplash-1444090542259-768w.jpg"
                 }
             ]
         }
