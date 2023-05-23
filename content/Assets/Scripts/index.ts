@@ -1,5 +1,6 @@
 import addClassOnScroll from "./components/addClassOnScroll";
 import carousel from "./components/carousel";
+import closeMenuOnAnchorClick from "./components/closeMenuOnAnchorClick";
 import gallery from "./components/gallery";
 import iframeModal from "./components/iframeModal";
 import inViewport from "./components/inViewport";
@@ -15,6 +16,7 @@ import toggleNav from "./components/toggleNav";
 const init = () => {
     addClassOnScroll();
     carousel();
+    closeMenuOnAnchorClick();
     gallery();
     iframeModal();
     inViewport();
