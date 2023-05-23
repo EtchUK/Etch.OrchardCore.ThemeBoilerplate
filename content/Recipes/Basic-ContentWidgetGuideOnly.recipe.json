@@ -4801,7 +4801,7 @@
                                             },
                                             "LinkVisualPart": {
                                                 "Style": {
-                                                    "Text": "btn btn--secondary"
+                                                    "Text": "btn btn--primary"
                                                 }
                                             },
                                             "JavaScriptEventsPart": {
