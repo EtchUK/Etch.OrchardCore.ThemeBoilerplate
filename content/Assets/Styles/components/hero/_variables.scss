@@ -13,6 +13,12 @@
     --heroHeadingMarginBottom: var(--spacingLarge);
     --heroHeadingTextTransform: uppercase;
     --heroPullDistance: 8rem;
+    --heroScrollIndicatorAnimationDelay: 1s;
+    --heroScrollIndicatorAnimationDistance: calc(var(--spacingSmall) * -1);
+    --heroScrollIndicatorAnimationDuration: 3s;
+    --heroScrollIndicatorBottom: var(--spacingLarge);
+    --heroScrollIndicatorHeight: 2rem;
+    --heroScrollIndicatorWidth: 3.2rem;
     --heroSpacingAfterLarge: 9rem;
     --heroSpacingAfterLargeMobile: 6rem;
 
