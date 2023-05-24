@@ -23,13 +23,14 @@
     RenderTitleSegments(T["Login"]);
 }
 
-<section class="section section--form-solo">
-    <div class="section__content">
-        <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" class="form text--align-left" method="POST">
+<section class="hero hero--desktop-ratio-100vh hero--tablet-ratio-100vh hero--mobile-ratio-100vh hero--horizontal-center hero--vertical-center hero--contains-users-form">
+    <div class="hero__body constrain constrain--extra-thin">
+        <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" class="form form--users-form" method="POST">
+            <h1 class="text--h3">@T["Log in"]</h1>
             @if (!ViewData.ModelState.IsValid)
             {
                 <div class="form-group">
-                    <p class="text--danger">Failed to login.</p>
+                    <p class="text--error">Failed to login.</p>
                 </div>
             }
 
@@ -49,12 +50,13 @@
 
             @await RenderSectionAsync("AfterLogin", required: false)
 
-            <button type="submit" class="btn btn--primary width-100" tabindex="3">@T["Login"]</button>
+            <button type="submit" class="btn btn--primary" tabindex="3">@T["Login"]</button>
 
             @if (allowResetPassword)
             {
-                <p class="margin--bottom-none padding--top"><a asp-controller="ResetPassword" asp-action="ForgotPassword" asp-area="OrchardCore.Users" class="link link--plain">@T["Forgot password?"]</a></p>
+                <p class="margin--top-large"><a asp-controller="ResetPassword" asp-action="ForgotPassword" asp-area="OrchardCore.Users" class="link link--plain">@T["Forgot password?"]</a></p>
             }
         </form>
     </div>
+    <div class="hero__space"></div>
 </section>
