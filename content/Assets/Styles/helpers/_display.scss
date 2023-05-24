@@ -2,14 +2,29 @@
    #DISPLAY
    ========================================================================== */
 
+/*
+ *  Used to apply a display method, including "display--none" which can be used
+ *  to hide content that needs to be hidden.
+ */
+
 .display {
     &--none {
         display: none;
     }
+
     &--block {
         display: block;
     }
+
     &--inline-block {
         display: inline-block;
+    }
+
+    &--flex {
+        display: flex;
+    }
+
+    &--inline-flex {
+        display: inline-flex;
     }
 }

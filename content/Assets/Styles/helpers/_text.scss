@@ -6,16 +6,6 @@
  * Classes to style text in various different ways.
  */
 
-.font {
-    &--default {
-        font-family: var(--fontFamilyDefault);
-    }
-
-    &--heading {
-        font-family: var(--fontFamilyHeading);
-    }
-}
-
 .text {
     &--align {
         &-left {
@@ -65,28 +55,6 @@
 
     &--uppercase {
         text-transform: uppercase;
-    }
-
-    &--size {
-        &-h1 {
-            font-size: var(--fontSizeH1);
-            line-height: var(--lineHeightHeading);
-        }
-
-        &-h2 {
-            font-size: var(--fontSizeH2);
-            line-height: var(--lineHeightHeading);
-        }
-
-        &-h3 {
-            font-size: var(--fontSizeH3);
-            line-height: var(--lineHeightHeading);
-        }
-
-        &-h4 {
-            font-size: var(--fontSizeH4);
-            line-height: var(--lineHeightHeading);
-        }
     }
 
     &--weight {
