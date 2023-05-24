@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #FONT
+   ========================================================================== */
+
+/*
+ * Classes to apply fonts
+ */
+
+.font {
+    &--default {
+        font-family: var(--fontFamilyDefault);
+    }
+
+    &--heading {
+        font-family: var(--fontFamilyHeading);
+    }
+}

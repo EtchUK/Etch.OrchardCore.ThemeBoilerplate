@@ -1,0 +1,77 @@
+/* ==========================================================================
+   #MARGIN
+   ========================================================================== */
+
+.margin {
+    &--bottom {
+        margin-bottom: var(--spacingDefault);
+
+        &-large {
+            margin-bottom: var(--spacingLarge);
+        }
+
+        &-small {
+            margin-bottom: var(--spacingSmall);
+        }
+
+        &-none {
+            margin-bottom: 0;
+        }
+    }
+
+    &--left {
+        margin-left: var(--spacingDefault);
+
+        &-large {
+            margin-left: var(--spacingLarge);
+        }
+
+        &-small {
+            margin-left: var(--spacingSmall);
+        }
+
+        &-none {
+            margin-left: 0;
+        }
+
+        &-auto {
+            margin-left: auto;
+        }
+    }
+
+    &--right {
+        margin-right: var(--spacingDefault);
+
+        &-large {
+            margin-right: var(--spacingLarge);
+        }
+
+        &-small {
+            margin-right: var(--spacingSmall);
+        }
+
+        &-none {
+            margin-right: 0;
+        }
+
+        &-auto {
+            margin-right: auto;
+        }
+    }
+
+    &--top {
+        margin-top: var(--spacingDefault);
+
+        &-large {
+            margin-top: var(--spacingLarge);
+        }
+
+        &-small {
+            margin-top: var(--spacingSmall);
+        }
+
+        &-none {
+            margin-top: 0;
+        }
+    }
+}
