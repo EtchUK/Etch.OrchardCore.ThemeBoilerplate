@@ -98,4 +98,8 @@
             font-weight: var(--fontWeightDefault);
         }
     }
+
+    &--error {
+        color: var(--colorError);
+    }
 }
