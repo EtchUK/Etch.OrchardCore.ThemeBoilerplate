@@ -4,7 +4,7 @@ Theme boilerplate is our starting point for building Orchard Core themes.
 
 ## Orchard Core Reference
 
-This theme is referencing a stable build of Orchard Core ([`1.5.0`](https://www.nuget.org/packages/OrchardCore.Theme.Targets/1.5.0)).
+This theme is referencing a stable build of Orchard Core ([`1.6.0`](https://www.nuget.org/packages/OrchardCore.Theme.Targets/1.6.0)).
 
 ## Prerequisities
 
@@ -28,7 +28,7 @@ When working with the theme within a develoment environment the following comman
 
 When the theme is deployed to a production environment assets will be compiled for optimial delivery to improve page load times. The command below will compile assets and place them within the `wwwroot` folder of the theme. Requests to `./Etch.OrchardCore.ThemeBoilerplate` will serve the assets.
 
-    npm run bundle:prod
+    npm run build
 
 ### Packaging
 
