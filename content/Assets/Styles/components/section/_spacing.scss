@@ -3,11 +3,12 @@
    ========================================================================== */
 
 @use "sass:math";
+@use "sass-mq/mq";
 
 .section--spaced-after-none {
     margin-bottom: 0;
 
-    @include mq($from: desktop) {
+    @include mq.mq($from: desktop) {
         margin-bottom: 0;
     }
 }
@@ -15,7 +16,7 @@
 .section--spaced-after-large {
     margin-bottom: var(--sectionVerticalPaddingMobileLarge);
 
-    @include mq($from: desktop) {
+    @include mq.mq($from: desktop) {
         margin-bottom: var(--sectionVerticalPaddingLarge);
     }
 }
@@ -23,7 +24,7 @@
 .section--padding-top-none {
     padding-top: 0;
 
-    @include mq($from: desktop) {
+    @include mq.mq($from: desktop) {
         padding-top: 0;
     }
 }
@@ -31,7 +32,7 @@
 .section--padding-top-large {
     padding-top: var(--sectionVerticalPaddingMobileLarge);
 
-    @include mq($from: desktop) {
+    @include mq.mq($from: desktop) {
         padding-top: var(--sectionVerticalPaddingLarge);
     }
 }
@@ -39,7 +40,7 @@
 .section--padding-bottom-none {
     padding-bottom: 0;
 
-    @include mq($from: desktop) {
+    @include mq.mq($from: desktop) {
         padding-bottom: 0;
     }
 }
@@ -47,7 +48,7 @@
 .section--padding-bottom-large {
     padding-bottom: var(--sectionVerticalPaddingMobileLarge);
 
-    @include mq($from: desktop) {
+    @include mq.mq($from: desktop) {
         padding-bottom: var(--sectionVerticalPaddingLarge);
     }
 }
@@ -91,7 +92,7 @@
 }
 
 .section--no-stacked-vertical-flow-gutter {
-    @include mq($until: desktopSmall) {
+    @include mq.mq($until: desktopSmall) {
         .flow__content > * {
             margin-bottom: 0;
         }
@@ -99,7 +100,7 @@
 }
 
 .section--small-stacked-vertical-flow-gutter {
-    @include mq($until: desktopSmall) {
+    @include mq.mq($until: desktopSmall) {
         .flow__content > * {
             margin-bottom: calc(var(--flowGutter) / 2);
         }
@@ -107,7 +108,7 @@
 }
 
 .section--medium-stacked-vertical-flow-gutter {
-    @include mq($until: desktopSmall) {
+    @include mq.mq($until: desktopSmall) {
         .flow__content > * {
             margin-bottom: var(--flowGutter);
         }
@@ -115,7 +116,7 @@
 }
 
 .section--large-stacked-vertical-flow-gutter {
-    @include mq($until: desktopSmall) {
+    @include mq.mq($until: desktopSmall) {
         .flow__content > * {
             margin-bottom: calc(var(--flowGutter) * 2);
         }

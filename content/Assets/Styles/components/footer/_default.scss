@@ -2,6 +2,8 @@
    #FOOTER/DEFAULT
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 .footer {
     padding-bottom: var(--footerPaddingVertical);
     padding-top: var(--footerPaddingVertical);
@@ -20,7 +22,7 @@
             display: flex;
             flex-flow: column wrap;
 
-            @include mq($from: tablet) {
+            @include mq.mq($from: tablet) {
                 align-items: center;
                 flex-flow: row;
                 justify-content: space-between;
@@ -37,7 +39,7 @@
 
         background-color: transparent;
 
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             margin-bottom: 0;
             width: auto;
         }
@@ -69,7 +71,7 @@
             margin-right: var(--spacingLarge);
             margin-top: var(--spacingLarge);
 
-            @include mq($from: desktopSmall) {
+            @include mq.mq($from: desktopSmall) {
                 margin-top: 0;
             }
         }

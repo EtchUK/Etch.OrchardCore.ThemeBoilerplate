@@ -2,6 +2,8 @@
    #HEADER/DEFAULT
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 /*
  * 1. Prevents navigation submenus from appearing below any other z-indexed
  *    components.
@@ -46,7 +48,7 @@
         background-color: transparent;
         border: 0;
 
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             display: none;
         }
 
@@ -108,7 +110,7 @@
         border-top-style: solid;
         border-top-width: var(--headerNavPaddingTop);
 
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             border-top: 0;
             display: flex;
             height: auto;
@@ -139,7 +141,7 @@
         &--close {
             display: flex;
 
-            @include mq($from: tablet) {
+            @include mq.mq($from: tablet) {
                 display: none;
             }
         }

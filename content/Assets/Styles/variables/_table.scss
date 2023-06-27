@@ -2,13 +2,15 @@
    #TABLE
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 :root {
     --tableBorderWidth: var(--borderWidth);
 
     --tableCellPaddingHorizontal: 2rem;
     --tableCellPaddingVertical: 0.5rem;
 
-    @include mq($from: tablet) {
+    @include mq.mq($from: tablet) {
         --tableCellPaddingVertical: 1.1rem;
     }
 }

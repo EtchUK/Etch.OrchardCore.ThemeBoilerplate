@@ -2,9 +2,11 @@
    #TYPOGRAPHY
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 :root {
-    --fontFamilyDefault: 'Work Sans', sans-serif;
-    --fontFamilyHeading: 'Manuale', sans-serif;
+    --fontFamilyDefault: "Work Sans", sans-serif;
+    --fontFamilyHeading: "Manuale", sans-serif;
     --fontSizeBase: 1.6rem;
     --fontSizeBaseEm: 1.6em;
     --fontSizeHero: var(--fontSizeH1);
@@ -47,7 +49,7 @@
     --textTransformH5: none;
     --textTransformH6: none;
 
-    @include mq($from: desktopSmall) {
+    @include mq.mq($from: desktopSmall) {
         --fontSizeBase: 1.8rem;
         --fontSizeBaseEm: 1.8em;
         --fontSizeH1: calc(var(--fontSizeBase) * 2.666); // 48

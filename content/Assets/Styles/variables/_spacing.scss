@@ -6,6 +6,8 @@
  * Control dimensions & spacing, favouring `rem` unit.
  */
 
+@use "sass-mq/mq";
+
 :root {
     --spacingSmall: 0.8rem;
     --spacingDefault: 1.6rem;
@@ -14,7 +16,7 @@
 
     --spacingText: 1.6rem;
 
-    @include mq($from: mobileLarge) {
+    @include mq.mq($from: mobileLarge) {
         --spacingText: 2.4rem;
     }
 }

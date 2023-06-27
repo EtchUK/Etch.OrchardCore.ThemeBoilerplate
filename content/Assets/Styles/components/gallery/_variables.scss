@@ -2,11 +2,13 @@
    #GALLERY/VARIABLES
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 :root {
     --galleryBorderRadius: var(--borderRadius);
     --galleryGutter: 1.5rem;
 
-    @include mq($from: mobile) {
+    @include mq.mq($from: mobile) {
         --galleryGutter: 2rem;
     }
 }

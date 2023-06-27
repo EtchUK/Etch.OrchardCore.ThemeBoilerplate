@@ -2,10 +2,12 @@
    #HERO/SPACING
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 .hero--spaced-after-large {
     margin-bottom: var(--heroSpacingAfterLargeMobile);
 
-    @include mq($from: desktop) {
+    @include mq.mq($from: desktop) {
         margin-bottom: var(--heroSpacingAfterLarge);
     }
 }

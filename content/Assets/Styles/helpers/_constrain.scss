@@ -6,6 +6,8 @@
  * Helper classes for restricted width of a container.
  */
 
+@use "sass-mq/mq";
+
 .constrain {
     margin-left: auto;
     margin-right: auto;
@@ -14,7 +16,7 @@
     padding-right: var(--gutterSmall);
     width: 100%;
 
-    @include mq($from: mobile) {
+    @include mq.mq($from: mobile) {
         padding-left: var(--gutter);
         padding-right: var(--gutter);
     }

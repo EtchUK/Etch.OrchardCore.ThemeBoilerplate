@@ -2,6 +2,8 @@
    #ALIGNMENT
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 .align {
     &--full,
     &--wide {
@@ -15,7 +17,7 @@
     }
 
     &--wide {
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             left: 0%;
             margin-left: calc(25% - 25vw);
             margin-right: calc(25% - 25vw);

@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "sass:math";
+@use "sass-mq/mq";
 
 /*
  * 1. Formula example: ((16 / 9) * 100) / ((3 / 2) * 100)) * 100
@@ -132,7 +133,7 @@
         }
     }
 
-    @include mq($from: tablet) {
+    @include mq.mq($from: tablet) {
         &--tablet-ratio {
             &-16-9 {
                 .hero__media {
@@ -250,7 +251,7 @@
         }
     }
 
-    @include mq($from: desktopSmall) {
+    @include mq.mq($from: desktopSmall) {
         &--desktop-ratio {
             &-16-9 {
                 .hero__media {

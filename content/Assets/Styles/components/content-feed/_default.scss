@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "sass:math";
+@use "sass-mq/mq";
 
 .content-feed {
     &__header {
@@ -11,13 +12,13 @@
         margin-right: auto;
         max-width: var(--contentWidthWide);
 
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             align-items: center;
             display: flex;
             justify-content: space-between;
         }
 
-        @include mq($from: desktop) {
+        @include mq.mq($from: desktop) {
             margin-bottom: var(--spacingXLarge);
         }
     }
@@ -27,7 +28,7 @@
 
         text-transform: var(--contentFeedTitleTextTransform);
 
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             margin: 0;
         }
     }

@@ -7,10 +7,7 @@
  */
 
 @use "sass:math";
-
-/*
- * Classes to control width of element.
- */
+@use "sass-mq/mq";
 
 .width--100 {
     width: 100%;
@@ -20,7 +17,7 @@
     .width--#{math.floor($width)} {
         width: 100%;
 
-        @include mq($from: desktopSmall) {
+        @include mq.mq($from: desktopSmall) {
             width: #{math.percentage(math.div($width, 100))};
         }
     }

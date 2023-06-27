@@ -2,6 +2,8 @@
    #TABLE
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 /*
  * 1. The border-collapse property sets whether cells inside a <table> have
  *    shared or separate borders. 
@@ -16,7 +18,7 @@ table {
     thead {
         display: none;
 
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             display: table-header-group;
         }
     }
@@ -27,7 +29,7 @@ table {
         margin-bottom: var(--spacingDefault);
         padding-bottom: var(--spacingDefault);
 
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             display: table-row;
             margin-bottom: 0;
         }
@@ -40,7 +42,7 @@ table {
             font-weight: bold;
             margin-right: var(--tableCellPaddingHorizontal);
 
-            @include mq($from: tablet) {
+            @include mq.mq($from: tablet) {
                 display: none;
             }
         }
@@ -56,7 +58,7 @@ table {
 
         text-align: right;
 
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             display: table-cell;
             padding-right: 0;
             vertical-align: top;

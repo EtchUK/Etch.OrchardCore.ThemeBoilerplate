@@ -2,6 +2,8 @@
    #HERO/DEFAULT
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 /*
  * 1. The rough space of a spacebar push, ensures that despite liquid output,
  *    anything with a span wrapped is appropriately spaced to the next item
@@ -83,7 +85,7 @@
             position: absolute;
             width: 100%;
 
-            @include mq($from: desktopSmall) {
+            @include mq.mq($from: desktopSmall) {
                 position: relative;
             }
 

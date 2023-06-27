@@ -2,6 +2,8 @@
    #HERO/VERTICAL
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 .hero--vertical-bottom {
     align-items: flex-end;
 }
@@ -14,7 +16,7 @@
     align-items: flex-start;
 }
 
-@include mq($until: tablet) {
+@include mq.mq($until: tablet) {
     .hero--vertical-mobile-bottom {
         align-items: flex-end;
     }

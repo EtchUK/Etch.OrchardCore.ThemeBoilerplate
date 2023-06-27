@@ -2,9 +2,11 @@
    #SECTION/REVERSE STACKING ORDER
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 .section--reverse-stacking-order {
     .flow__content {
-        @include mq($until: desktopSmall) {
+        @include mq.mq($until: desktopSmall) {
             flex-direction: column-reverse;
         }
     }

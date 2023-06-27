@@ -2,6 +2,8 @@
    #HERO/GRADIENT
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 .hero--with-media-gradient {
     .hero__media,
     .hero-responsive-media--background-image {
@@ -17,7 +19,7 @@
 
             z-index: var(--zIndexMid);
 
-            @include mq($from: desktopSmall) {
+            @include mq.mq($from: desktopSmall) {
                 background: linear-gradient(
                     180deg,
                     rgba(0, 0, 0, 0) var(--heroGradientDefaultStop),
@@ -31,7 +33,7 @@
         .hero__media,
         .hero-responsive-media--background-image {
             &:before {
-                @include mq($from: desktopSmall) {
+                @include mq.mq($from: desktopSmall) {
                     background: linear-gradient(
                         90deg,
                         rgba(0, 0, 0, var(--heroGradientOpacity)) 0%,
@@ -46,7 +48,7 @@
         .hero__media,
         .hero-responsive-media--background-image {
             &:before {
-                @include mq($from: desktopSmall) {
+                @include mq.mq($from: desktopSmall) {
                     background: linear-gradient(
                         -90deg,
                         rgba(0, 0, 0, var(--heroGradientOpacity)) 0%,
@@ -62,7 +64,7 @@
             .hero__media,
             .hero-responsive-media--background-image {
                 &:before {
-                    @include mq($from: desktopSmall) {
+                    @include mq.mq($from: desktopSmall) {
                         background: linear-gradient(
                             180deg,
                             rgba(0, 0, 0, 0) var(--heroGradientDefaultStop),
@@ -77,7 +79,7 @@
             .hero__media,
             .hero-responsive-media--background-image {
                 &:before {
-                    @include mq($from: desktopSmall) {
+                    @include mq.mq($from: desktopSmall) {
                         background: radial-gradient(
                             circle,
                             rgba(0, 0, 0, var(--heroGradientOpacity)) 0%,
