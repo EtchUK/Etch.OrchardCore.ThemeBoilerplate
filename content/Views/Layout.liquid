@@ -8,18 +8,24 @@
         <title>{% page_title "", position: "after", separator: "" %}</title>
         {% resources type: "Meta" %}
         
-        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/css/manuale-v8-latin-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
-        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/css/manuale-v8-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/css/manuale-v8-latin-700.woff" as="font" type="font/woff" crossorigin="anonymous">
-        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/css/manuale-v8-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/css/work-sans-v9-latin-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
-        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/css/work-sans-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/css/work-sans-v9-latin-700.woff" as="font" type="font/woff" crossorigin="anonymous">
-        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/css/work-sans-v9-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/manuale-v8-latin-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/manuale-v8-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/manuale-v8-latin-700.woff" as="font" type="font/woff" crossorigin="anonymous">
+        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/manuale-v8-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/work-sans-v9-latin-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/work-sans-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/work-sans-v9-latin-700.woff" as="font" type="font/woff" crossorigin="anonymous">
+        <link rel="preload" href="/Etch.OrchardCore.ThemeBoilerplate/work-sans-v9-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-		{% style src:"/Etch.OrchardCore.ThemeBoilerplate/css/styles.css", append_version:"true" %}
-		{% script src:"/Etch.OrchardCore.ThemeBoilerplate/scripts/index.js", append_version:"true", async: "true" %}
-
+        {% if Environment.IsDevelopment %}
+            <script type="module" defer src="https://localhost:5173/@vite/client"></script>
+            <script type="module" defer src="https://localhost:5173/Assets/Scripts/index.ts"></script>
+            <link rel="stylesheet" href="https://localhost:5173/Assets/Styles/index.scss">
+        {% else %}
+            {% style src:"/Etch.OrchardCore.ThemeBoilerplate/styles.css", append_version:"true" %}
+		    {% script src:"/Etch.OrchardCore.ThemeBoilerplate/scripts.js", append_version:"true", async: "true" %}
+        {% endif %}
+        
         {% resources type: "HeadLink" %}
         {% resources type: "Stylesheet" %}
         {% resources type: "HeadScript" %}
