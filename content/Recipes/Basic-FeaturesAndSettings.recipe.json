@@ -32,7 +32,7 @@
                 "Etch.OrchardCore.Fields.ResponsiveMedia",
                 "Etch.OrchardCore.Liquid",
                 "OrchardCore.Indexing",
-                "OrchardCore.Lucene",
+                "OrchardCore.Search.Lucene",
                 "OrchardCore.Queries",
                 "OrchardCore.Taxonomies",
                 "OrchardCore.Autoroute",
