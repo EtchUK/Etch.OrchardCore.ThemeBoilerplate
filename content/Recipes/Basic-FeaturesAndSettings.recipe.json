@@ -30,6 +30,7 @@
                 "OrchardCore.Flows",
                 "OrchardCore.Alias",
                 "Etch.OrchardCore.Fields.ResponsiveMedia",
+                "Etch.OrchardCore.Liquid",
                 "OrchardCore.Indexing",
                 "OrchardCore.Lucene",
                 "OrchardCore.Queries",

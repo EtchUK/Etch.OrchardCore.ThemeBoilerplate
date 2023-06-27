@@ -23,8 +23,6 @@
     <Compile Remove="BuildConfigs\**" />
     <EmbeddedResource Remove="BuildConfigs\**" />
     <None Remove="BuildConfigs\**" />
-    <PackageAssetFiles Remove="BuildConfigs\**" />
-    <Folder Include="BuildConfigs\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,12 +52,4 @@
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
-
-  <Target Name="BuildStaticAssets" AfterTargets="PreBuildEvent" Condition="'$(Configuration)' == 'Debug'">
-    <Exec Command="npm run build" />
-  </Target>
-
-  <Target Name="BuildStaticAssetsForRelease" AfterTargets="PreBuildEvent" Condition="'$(Configuration)' == 'Release'">
-    <Exec Command="npm run build" />
-  </Target>
 </Project>

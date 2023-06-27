@@ -14,25 +14,19 @@ Orchard Core runs on the .NET Core. Download the latest version from [https://ww
 
 ### [NodeJS](https://nodejs.org/en/)
 
-The theme requires NodeJS 14.15.5 or higher to assist with gathering third party front-end dependencies and compiles front-end assets. Compilation of front-end assets is handled by [Webpack](https://webpack.js.org/).
+It's recommended to use the latest LTS version of NodeJS. NodeJS used is for handling compilation of source code in to front-end assets that are served to the user. Compilation of front-end assets is handled by [Vite](https://vitejs.dev/).
 
 ## Commands
 
 ### Developing
 
-When developing on the theme it's likely you're be working with HTML and static assets (CSS & JavaScript). Running the command below will set up compilation of front end assets.
+When working with the theme within a develoment environment the following command must be run because the front-assets will be loaded via a local development server spun up by Vite. Vite uses [hot module replacement](https://vitejs.dev/guide/features.html#hot-module-replacement) to automatically display CSS changes or reload the browser when there is a change to the JavaScript.
 
     npm run start
 
 ### Compiling Front-end Assets
 
-When developing, it's likely you'll be working with front-end assets (located in `/Assets`) that need to be compiled in to files that are referenced by the theme (in `Views/Layout.cshtml`). The command shown below will compile CSS & JavaScript assets via Webpack and keep watch of files that will trigger compilation.
-
-    npm run bundle:watch
-
-_Hint: Running `npm start` will run the command above after running `npm install`._
-
-When the theme is deployed to a production environment we need to serve compressed assets for optimial delivery to improve page load times. The command below will compile assets ready for optimal delivery. This command ia automatically run when the project is compiled with `--configuration Release`.
+When the theme is deployed to a production environment assets will be compiled for optimial delivery to improve page load times. The command below will compile assets and place them within the `wwwroot` folder of the theme. Requests to `./Etch.OrchardCore.ThemeBoilerplate` will serve the assets.
 
     npm run bundle:prod
 

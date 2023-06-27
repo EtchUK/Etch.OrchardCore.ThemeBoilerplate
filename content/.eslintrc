@@ -6,5 +6,8 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "prettier"
-    ]
+    ],
+    "globals": {
+        "__dirname": true
+    }
 }

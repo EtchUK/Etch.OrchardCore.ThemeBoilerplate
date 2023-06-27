@@ -4,53 +4,33 @@
         "node": ">=14"
     },
     "scripts": {
-        "build": "npm i --no-audit && npm run clean && parcel build --no-cache --no-content-hash",
-        "clean": "rimraf wwwroot/scripts wwwroot/css",
-        "develop": "npm run clean && parcel watch --https --no-content-hash",
+        "build": "npm i --no-audit && vite build",
+        "develop": "vite",
         "install-git-hooks": "cd .. && husky install",
         "lint": "lint-staged",
         "prepare": "npm run install-git-hooks",
         "start": "npm i && npm run develop"
     },
     "devDependencies": {
-        "@parcel/transformer-sass": "^2.7.0",
-        "@typescript-eslint/eslint-plugin": "^5.44.0",
-        "eslint": "^8.24.0",
-        "eslint-config-prettier": "^8.5.0",
-        "husky": "^8.0.1",
-        "lint-staged": "^13.0.3",
-        "parcel": "^2.7.0",
-        "parcel-namer-hashless": "^1.0.3",
-        "prettier": "^2.7.1",
-        "rimraf": "^3.0.2",
+        "@typescript-eslint/eslint-plugin": "^5.60.1",
+        "eslint": "^8.43.0",
+        "eslint-config-prettier": "^8.8.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.2.2",
+        "prettier": "^2.8.8",
+        "sass": "^1.63.6",
         "sass-mq": "^6.0.0",
-        "stylelint": "^14.13.0",
-        "stylelint-config-prettier-scss": "^0.0.1",
-        "stylelint-config-recommended-scss": "^7.0.0"
+        "stylelint": "^15.2.0",
+        "stylelint-config-prettier-scss": "^1.0.0",
+        "stylelint-config-recommended-scss": "^12.0.0",
+        "vite": "^4.1.4",
+        "vite-plugin-mkcert": "^1.13.3"
     },
     "dependencies": {
         "lg-video.js": "^1.3.0",
         "lightgallery.js": "^1.4.0",
         "normalize.css": "^8.0.1",
         "rellax": "^1.10.0"
-    },
-    "scriptTarget": "wwwroot/scripts/index.js",
-    "styleTarget": "wwwroot/css/styles.css",
-    "targets": {
-        "scriptTarget": {
-            "source": "Assets/Scripts/index.ts",
-            "outputFormat": "esmodule",
-            "context": "browser",
-            "isLibrary": false
-        },
-        "styleTarget": {
-            "source": "Assets/Styles/index.scss",
-            "context": "browser",
-            "isLibrary": false
-        }
-    },
-    "@parcel/transformer-css": {
-        "errorRecovery": true
     },
     "lint-staged": {
         "*.{js,ts,tsx,jsx}": [
