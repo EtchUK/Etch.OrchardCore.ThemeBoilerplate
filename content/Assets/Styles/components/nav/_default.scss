@@ -2,6 +2,8 @@
    #NAV/DEFAULT
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 /*
  * 1. Some styles (e.g spacing between items) should apply to any .link in the
  *    navigation, including e.g link--emphasis, but not apply to e.g a .btn if
@@ -39,7 +41,7 @@
         flex-direction: column;
     }
 
-    @include mq($from: desktopSmall) {
+    @include mq.mq($from: desktopSmall) {
         flex-flow: row wrap;
 
         .nav--display-horizontal & {
@@ -56,7 +58,7 @@
     border-bottom: var(--navBorderWidth) solid var(--navBorderColor);
     margin-bottom: 0;
 
-    @include mq($from: tablet) {
+    @include mq.mq($from: tablet) {
         border-bottom: 0;
     }
 
@@ -73,7 +75,7 @@
         padding-right: var(--gutterSmall);
         padding-top: var(--navAnchorPaddingTop);
 
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             padding: var(--navAnchorPaddingTablet);
         }
     }
@@ -159,7 +161,7 @@
 
     background-color: var(--colorGrey);
 
-    @include mq($from: tablet) {
+    @include mq.mq($from: tablet) {
         position: absolute;
 
         background-color: var(--colorWhite);
@@ -173,7 +175,7 @@
         padding-left: var(--gutter);
         padding-right: var(--gutter);
 
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             padding: var(--navAnchorPaddingTablet);
         }
     }

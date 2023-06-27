@@ -2,6 +2,8 @@
    #CARD/EQUAL-HEIGHT
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 /*
  * 1. Only apply this above desktopSmall, when width-- classes would actually 
  *    place things side by side otherwise, it makes spacing on mobile tricky 
@@ -12,7 +14,7 @@
 
 .card--equal-height {
     /* 1 */
-    @include mq($from: desktopSmall) {
+    @include mq.mq($from: desktopSmall) {
         height: 100%;
 
         .card__body {

@@ -2,6 +2,8 @@
    #HERO/VARIABLES
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 :root {
     --heroBackgroundColor: transparent;
     --heroBodyPadding: 4.7rem;
@@ -22,7 +24,7 @@
     --heroSpacingAfterLarge: 9rem;
     --heroSpacingAfterLargeMobile: 6rem;
 
-    @include mq($from: tablet) {
+    @include mq.mq($from: tablet) {
         --heroPullDistance: 10rem;
     }
 }

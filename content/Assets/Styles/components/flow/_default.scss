@@ -2,6 +2,8 @@
    #FLOW/DEFAULT
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 /* 
  * 1. For when content is directly added without a section. Ensures
  *    non-full-width content (e.g paragraph) does not touch sides of viewport.
@@ -23,12 +25,12 @@
         padding-left: var(--gutterSmall);
         padding-right: var(--gutterSmall);
 
-        @include mq($from: mobile) {
+        @include mq.mq($from: mobile) {
             padding-left: var(--gutter);
             padding-right: var(--gutter);
         }
 
-        @include mq($from: desktop) {
+        @include mq.mq($from: desktop) {
             padding-left: 0;
             padding-right: 0;
         }

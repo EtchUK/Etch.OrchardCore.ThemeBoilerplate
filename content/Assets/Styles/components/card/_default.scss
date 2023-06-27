@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "sass:math";
+@use "sass-mq/mq";
 
 /*
  * 1. Force 4:3 aspect ratio on media overlay cards
@@ -24,7 +25,7 @@
 
     overflow: hidden;
 
-    @include mq($from: desktopSmall) {
+    @include mq.mq($from: desktopSmall) {
         margin-bottom: 0;
     }
 

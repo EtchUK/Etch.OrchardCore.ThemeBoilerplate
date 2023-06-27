@@ -3,6 +3,7 @@
    ========================================================================== */
 
 @use "sass:math";
+@use "sass-mq/mq";
 
 /*
  * 1. Position indicators above the line effect containers.
@@ -101,7 +102,7 @@
         transform: translateX(var(--spacingSmall)) translateY(-50%);
     }
 
-    @include mq($from: tablet) {
+    @include mq.mq($from: tablet) {
         right: var(--carouselNavBtnX);
 
         &:focus,
@@ -121,7 +122,7 @@
         transform: translateX(-var(--spacingSmall)) translateY(-50%);
     }
 
-    @include mq($from: tablet) {
+    @include mq.mq($from: tablet) {
         left: var(--carouselNavBtnX);
 
         &:focus,
@@ -175,7 +176,7 @@
         transform var(--carouselRevealDuration) ease-in-out;
     transition-delay: var(--carouselRevealDuration);
 
-    @include mq($from: tablet) {
+    @include mq.mq($from: tablet) {
         padding: var(--spacingXLarge);
     }
 

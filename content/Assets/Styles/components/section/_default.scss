@@ -2,6 +2,8 @@
    #SECTION/DEFAULT
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 .section {
     display: block;
     position: relative;
@@ -13,7 +15,7 @@
     background-image: var(--sectionBackgroundPattern);
     overflow: hidden;
 
-    @include mq($from: desktop) {
+    @include mq.mq($from: desktop) {
         margin-bottom: var(--sectionVerticalPadding);
         padding-bottom: var(--sectionVerticalPadding);
         padding-top: var(--sectionVerticalPadding);

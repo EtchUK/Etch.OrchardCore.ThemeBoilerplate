@@ -2,10 +2,12 @@
    #NAV/PRIMARY
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 .nav--primary {
     .nav__item .link,
     .nav__item-link--default {
-        @include mq($from: tablet) {
+        @include mq.mq($from: tablet) {
             padding: var(--navPrimaryAnchorPaddingDesktop);
         }
     }
