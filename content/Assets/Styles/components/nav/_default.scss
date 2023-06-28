@@ -75,7 +75,7 @@
         padding-right: var(--gutterSmall);
         padding-top: var(--navAnchorPaddingTop);
 
-        @include mq.mq($from: tablet) {
+        @include mq.mq($from: desktopSmall) {
             padding: var(--navAnchorPaddingTablet);
         }
     }
@@ -161,7 +161,7 @@
 
     background-color: var(--colorGrey);
 
-    @include mq.mq($from: tablet) {
+    @include mq.mq($from: desktopSmall) {
         position: absolute;
 
         background-color: var(--colorWhite);
@@ -175,7 +175,7 @@
         padding-left: var(--gutter);
         padding-right: var(--gutter);
 
-        @include mq.mq($from: tablet) {
+        @include mq.mq($from: desktopSmall) {
             padding: var(--navAnchorPaddingTablet);
         }
     }

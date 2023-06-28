@@ -48,7 +48,7 @@
         background-color: transparent;
         border: 0;
 
-        @include mq.mq($from: tablet) {
+        @include mq.mq($from: desktopSmall) {
             display: none;
         }
 
@@ -110,7 +110,7 @@
         border-top-style: solid;
         border-top-width: var(--headerNavPaddingTop);
 
-        @include mq.mq($from: tablet) {
+        @include mq.mq($from: desktopSmall) {
             border-top: 0;
             display: flex;
             height: auto;
@@ -141,7 +141,7 @@
         &--close {
             display: flex;
 
-            @include mq.mq($from: tablet) {
+            @include mq.mq($from: desktopSmall) {
                 display: none;
             }
         }
