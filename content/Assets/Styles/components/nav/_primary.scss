@@ -7,7 +7,7 @@
 .nav--primary {
     .nav__item .link,
     .nav__item-link--default {
-        @include mq.mq($from: tablet) {
+        @include mq.mq($from: desktopSmall) {
             padding: var(--navPrimaryAnchorPaddingDesktop);
         }
     }
