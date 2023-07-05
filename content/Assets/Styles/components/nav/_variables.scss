@@ -8,9 +8,9 @@
     --navChevronMarginLeft: 0.5rem;
     --navChevronWidth: 1rem;
 
-    --navAnchorPaddingBottom: 1.5rem;
-    --navAnchorPaddingTablet: 0.5rem 1rem;
-    --navAnchorPaddingTop: 1.5rem;
+    --navAnchorPaddingBottom: 1rem;
+    --navAnchorPaddingHorz: var(--gutterSmall);
+    --navAnchorPaddingTop: 1rem;
 
     --navBorderWidth: var(--borderWidth);
     --navBorderColor: #d7d7d7;
@@ -23,7 +23,16 @@
     --navFontWeight: normal;
     --navFooterFontWeight: normal;
     --navFooterTextTransform: initial;
-    --navPrimaryAnchorPaddingDesktop: 1rem 2rem;
+    --navPrimaryAnchorPadding: var(--navAnchorPaddingTop)
+        var(--navAnchorPaddingHorz) var(--navAnchorPaddingBottom);
     --navTextDecorationHover: none;
     --navTextTransform: none;
+
+    @include mq($from: desktopSmall) {
+        --navAnchorPaddingBottom: 0.5rem;
+        --navAnchorPaddingHorz: 1rem;
+        --navAnchorPaddingTop: 0.5rem;
+
+        --navPrimaryAnchorPadding: 1rem 2rem;
+    }
 }
