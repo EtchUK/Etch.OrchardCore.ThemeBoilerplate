@@ -11,7 +11,8 @@ ol {
     margin-bottom: var(--spacingDefault);
     padding-left: var(--spacingLarge);
 
-    ol {
+    ol,
+    &:last-child {
         margin-bottom: 0;
     }
 }

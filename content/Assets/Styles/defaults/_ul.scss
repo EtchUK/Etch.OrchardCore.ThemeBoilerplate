@@ -12,7 +12,8 @@ ul {
     margin-bottom: var(--spacingDefault);
     padding-left: var(--spacingLarge);
 
-    ul {
+    ul,
+    &:last-child {
         margin-bottom: 0;
     }
 }
