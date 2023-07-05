@@ -14,7 +14,7 @@
     --heroGradientOpacity: 0.7;
     --heroHeadingMarginBottom: var(--spacingLarge);
     --heroHeadingTextTransform: uppercase;
-    --heroPullDistance: 8rem;
+    --heroPullDistance: var(--headerContentHeight);
     --heroScrollIndicatorAnimationDelay: 1s;
     --heroScrollIndicatorAnimationDistance: calc(var(--spacingSmall) * -1);
     --heroScrollIndicatorAnimationDuration: 3s;
