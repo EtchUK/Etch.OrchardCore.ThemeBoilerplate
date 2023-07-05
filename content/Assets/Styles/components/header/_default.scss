@@ -48,6 +48,8 @@
         background-color: transparent;
         border: 0;
 
+        color: var(--colorTextDefault);
+
         @include mq.mq($from: desktopSmall) {
             display: none;
         }
