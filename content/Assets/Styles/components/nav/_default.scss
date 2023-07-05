@@ -71,12 +71,12 @@
         display: block;
 
         padding-bottom: var(--navAnchorPaddingBottom);
-        padding-left: var(--gutterSmall);
-        padding-right: var(--gutterSmall);
+        padding-left: var(--navAnchorPaddingHorz);
+        padding-right: var(--navAnchorPaddingHorz);
         padding-top: var(--navAnchorPaddingTop);
 
         @include mq.mq($from: desktopSmall) {
-            padding: var(--navAnchorPaddingTablet);
+            padding: var(--navAnchorPaddingHorz);
         }
     }
 }
@@ -172,12 +172,10 @@
     }
 
     .nav__item-link {
-        padding-left: var(--gutter);
-        padding-right: var(--gutter);
-
-        @include mq.mq($from: desktopSmall) {
-            padding: var(--navAnchorPaddingTablet);
-        }
+        padding-bottom: var(--navAnchorPaddingBottom);
+        padding-left: var(--navAnchorPaddingHorz);
+        padding-right: var(--navAnchorPaddingHorz);
+        padding-top: var(--navAnchorPaddingTop);
     }
 
     .is-selected & {
