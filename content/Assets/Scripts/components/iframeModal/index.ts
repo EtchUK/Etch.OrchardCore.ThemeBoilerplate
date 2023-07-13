@@ -29,7 +29,8 @@ const instance = ($el: Element) => {
         "onAfterOpen",
         (e) => {
             const $wrapper = document.getElementsByClassName("lg-video");
-            if ($wrapper.length < 0) {
+            
+            if ($wrapper.length === 0) {
                 return;
             }
 
@@ -41,10 +42,11 @@ const instance = ($el: Element) => {
     );
 
     $el.addEventListener(
-        "onAfterClose",
+        "onCloseAfter",
         (e) => {
             const $wrapper = document.getElementsByClassName("lg-video");
-            if ($wrapper.length < 0) {
+            
+            if ($wrapper.length === 0) {
                 return;
             }
 
