@@ -33,7 +33,7 @@ const canInit = () => {
     return regReady.test(document.readyState || "");
 };
 
-let timer: NodeJS.Timeout;
+let timer: number;
 
 const checkCanInit = () => {
     if (canInit()) {
