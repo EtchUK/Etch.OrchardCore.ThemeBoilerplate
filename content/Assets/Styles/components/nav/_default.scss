@@ -52,6 +52,22 @@
             flex-direction: column;
         }
     }
+
+    .nav--item-gap-none & {
+        gap: 0;
+    }
+
+    .nav--item-gap-small & {
+        gap: var(--spacingSmall);
+    }
+
+    .nav--item-gap-default & {
+        gap: var(--spacingDefault);
+    }
+
+    .nav--item-gap-large & {
+        gap: var(--spacingLarge);
+    }
 }
 
 .nav__item {
