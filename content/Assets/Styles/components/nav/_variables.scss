@@ -2,6 +2,8 @@
    #NAV/VARIABLES
    ========================================================================== */
 
+@use "sass-mq/mq";
+
 :root {
     --navChevronHeight: 0.6rem;
     --navChevronMarginBottom: 0.4rem;
@@ -28,7 +30,7 @@
     --navTextDecorationHover: none;
     --navTextTransform: none;
 
-    @include mq($from: desktopSmall) {
+    @include mq.mq($from: desktopSmall) {
         --navAnchorPaddingBottom: 0.5rem;
         --navAnchorPaddingHorz: 1rem;
         --navAnchorPaddingTop: 0.5rem;
