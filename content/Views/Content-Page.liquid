@@ -3,9 +3,3 @@
 {% endif %}
 
 {{ Model.Content | shape_render }}
-
-{{ Model.ContentItem.CreatedUtc | ordinal_day }}
-
-{% if Environment.IsDevelopment %}
-    <p>This is a development environment.</p>
-{% endif %}
