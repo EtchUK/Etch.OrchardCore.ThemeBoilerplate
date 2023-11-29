@@ -18,8 +18,6 @@
 
     var returnUrl = Context.Request.Query.ContainsKey("returnUrl") ? (string)Context.Request.Query["returnUrl"] : string.Empty;
 
-    var currentThemeName = await SiteThemeService.GetSiteThemeNameAsync();
-
     RenderTitleSegments(T["Login"]);
 }
 
