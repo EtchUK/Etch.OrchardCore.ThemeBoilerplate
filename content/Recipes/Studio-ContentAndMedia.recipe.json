@@ -4644,7 +4644,7 @@
                                                                     "Owner": null,
                                                                     "Author": "etch-play",
                                                                     "ValidationPart": {
-                                                                        "For": null
+                                                                        "For": "Surname"
                                                                     }
                                                                 }
                                                             ]
