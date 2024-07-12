@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <Version>0.0.1</Version>
     <PackageId>Etch.OrchardCore.ThemeBoilerplate</PackageId>
@@ -36,13 +36,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.7.2" />
-    <PackageReference Include="OrchardCore.Media" Version="1.7.2" />
-    <PackageReference Include="OrchardCore.Menu" Version="1.7.2" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.7.2" />
-    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.7.2" />
-    <PackageReference Include="OrchardCore.Themes" Version="1.7.2" />
-    <PackageReference Include="OrchardCore.Users" Version="1.7.2" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.8.3" />
+    <PackageReference Include="OrchardCore.Media" Version="1.8.3" />
+    <PackageReference Include="OrchardCore.Menu" Version="1.8.3" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.8.3" />
+    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.8.3" />
+    <PackageReference Include="OrchardCore.Themes" Version="1.8.3" />
+    <PackageReference Include="OrchardCore.Users" Version="1.8.3" />
   </ItemGroup>
 
   <ItemGroup>
