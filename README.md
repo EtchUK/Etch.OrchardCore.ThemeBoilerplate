@@ -1,3 +1,7 @@
+> ⚠️ **Archived – No Longer Maintained**
+>
+> This repository is no longer maintained due to a change in the technologies used by our organisation. No further updates, fixes, or security patches will be provided. The project is archived to prevent the expectation of ongoing support. The code remains available as-is for reference or forking.
+
 # Theme Boilerplate
 
 Theme boilerplate is our starting point for building [Orchard Core](https://orchardcore.readthedocs.io/en/latest/) themes.
@@ -41,3 +45,4 @@ URL for your website.
 This template has been made available on NuGet. To create the `.nupkg` file that can be published to NuGet, run the command shown below.
 
     nuget pack ./Etch.OrchardCore.ThemeBoilerplate.nuspec
+
